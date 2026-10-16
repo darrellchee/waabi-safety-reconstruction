@@ -1,0 +1,29 @@
+rea inspect-web-page — Passively inspect one page through CDP, defaulting to its current origin
+
+Usage: rea inspect-web-page <endpoint> <targetId> [options]
+
+Arguments:
+  endpoint  Loopback CDP HTTP endpoint or browser WebSocket URL
+  targetId  Target ID from list-browser-targets
+
+Options:
+  --allowed-origins <array>       Optional exact-origin filter
+  --observation-ms <number>       Observation duration in milliseconds (default: 500)
+  --include-accessibility-text    Include accessibility text
+  --include-console-text          Include console message text
+  --include-json-body-shapes      Include structural shapes of JSON response bodies
+  --include-websocket-shapes      Include structural shapes of WebSocket payloads
+  --include-script-sources        Include JavaScript source text
+  --include-storage-keys          Include storage key names without values
+  --include-storage-fingerprints  Include content-derived storage fingerprints
+
+Global Options:
+  --filter-output <keys>              Filter output by key paths (e.g. foo,bar.baz,a[0,3])
+  --format <toon|json|yaml|md|jsonl>  Output format
+  --full-output                       Show full output envelope
+  --help                              Show help
+  --llms, --llms-full                 Print LLM-readable manifest
+  --schema                            Show JSON Schema for command
+  --token-count                       Print token count of output (instead of output)
+  --token-limit <n>                   Limit output to n tokens
+  --token-offset <n>                  Skip first n tokens of output

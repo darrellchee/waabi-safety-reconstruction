@@ -1,0 +1,130 @@
+Let's talk autonomous trucking
+
+Get in touch
+Safety
+Redefining safety. 
+The stakes are real and rising.
+It’s time for an approach to safety that is designed for the realities of our roads and the possibilities of Physical AI.
+number of lives lost each year in vehicle accidents in the United States.
+39,345
+number of lives lost each year in large truck crashes in the United States.
+5,472
+percent of fatal truck crashes where human error was a critical factor.
+87%
+Safety is core to our DNA.
+The future of autonomous transportation requires us to build on established safety constructs and leverage transformative technologies that allow us to do more than what’s previously been possible.
+
+03
+
+/3
+
+Safety from the inside out.
+Our governance structure ensures that every decision prioritizes safety. Every team member, from engineers to operators, has the authority to raise a concern. Our publicly shared VSSA openly documents our strategy—giving everyone access to the approaches that guide our operations.
+Built different. Built safer.
+Our simulation-first approach tests thousands of safety-critical scenarios before they ever happen on public roads, making every mile driven more valuable and safe.
+Pioneering new standards.
+We rigorously adhere to many established industry best practices while pioneering new methodologies where existing standards fall short. Our work in simulation realism and Mixed Reality Testing is establishing benchmarks for the entire industry.
+Technology designed to protect.
+Learn how our technology is delivering a safer path forward and setting a new standard for the entire AV industry.
+Explore our approach
+Waabi Driver
+
+Our end-to-end trained system is fully interpretable, and can see exactly why a decision was made. Designed for generalizability, Waabi Driver adapts to new scenarios while maintaining multiple layers of redundancy across both hardware and software. This ensures that if a fault ever occurs, the system defaults to minimal-risk maneuvers.
+
+Waabi World
+
+Our high-fidelity neural simulator is capable of replicating both routine situations and rare edge cases with a high degree of realism.. Efficient, comprehensive testing allows us to launch responsibly and continually improve performance in the highest-risk scenarios.
+
+Mixed Reality Testing
+
+By combining real trucks with real-time synthetic scenarios, we’re unlocking unlimited testing possibilities that were previously impossible to achieve safely or practically. MRT allows us to inject rare and dangerous situations into live operations without putting people or cargo at risk.
+
+01
+
+/4
+
+Safety-first best practices.
+Design
+
+Well-defined requirements for each capability, with multiple layers of hardware and software redundancy.
+
+02
+
+/4
+
+Safety-first best practices.
+Testing & Validation
+
+From simulation to closed course testing to low exposure driving, and finally, the public road. We only advance when safety criteria are met.
+
+03
+
+/4
+
+Safety-first best practices.
+Deployment
+
+Structured releases to ensure readiness before any expansion.
+
+04
+
+/4
+
+Safety-first best practices.
+Monitoring
+
+Continuous performance tracking and immediate safety-critical handling within the onboard system.
+
+Insights
+
+Explore product deep dives, behind-the-scenes perspectives, and the ideas shaping the future of autonomy.
+
+View all
+Company news
+Trucks
+October 14, 2026
+Waabi and Warrior Logistics partner on autonomous trucking operations in Texas
+Company news
+October 5, 2026
+Volvo and Waabi Kick Off Customer Operations in Texas, Starting with Warp
+Company news
+September 22, 2026
+Built to generalize. Proven on I-35.
+Company news
+September 15, 2026
+80% Growth on Long Haul's Toughest Corridor
+June 26, 2026
+Waabi crosses the next frontier of generalization, unlocking truly scalable AVs
+Research
+April 22, 2026
+All You Need to Know About Self-Driving | CVPR Tutorial 2026
+Company news
+January 28, 2026
+Waabi secures $1 Billion in new funding to lead Physical AI revolution
+Technology
+Company news
+December 19, 2025
+From closed course to public roads: The path to driverless
+Technology
+Company news
+November 25, 2025
+Waabi unlocks direct-to-customer model with surface street driving capabilities
+We're just getting started
+
+Follow along or reach out directly at
+press@waabi.ai|info@waabi.ai
+
+About us
+Home
+Safety
+Research
+Company
+Careers
+Insights
+© 2026 Waabi. All Rights Reserved.
+Privacy Policy
+We value your privacy
+This site uses cookies to improve your browsing experience, analyze site traffic, and show personalized content.
+Reject All
+Accept All
+Customize

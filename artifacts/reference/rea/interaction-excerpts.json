@@ -1,0 +1,44 @@
+[
+  {
+    "feature": "word reveal",
+    "url": "https://waabi.ai/_next/static/chunks/0nqb4gsffynqw.js",
+    "source_sha256": "ad5fa00d02ffd5d16b16a4d56559a5ca6d48b61a534161b88d6d35b9de31f2d4",
+    "offset": 345,
+    "excerpt": "=e.i(69348),a=e.i(59163),i=e.i(46368);let r=e=>e.split(/(\\r\\n|\\n|[^\\S\\r\\n]+|<br\\s*\\/?>)/).filter(e=>\"\"!==e.trim()||\"\\n\"===e||\"\\r\\n\"===e);e.s([\"Paragraph\",0,({paragraph:e,delay:n=0,stagger:c=.07,opacity:d=.1,color:o=\"\",colorTo:m=\"rgba(0,0,0,1)\",useColor:u=!1,useInView:x=!0,useAnimate:p=!1,className:h=\"\"})=>{let f=(0,a.useMemo)(()=>\"string\"==typeof e?r(e):a.Children.toArray(e).flatMap(e=>\"string\"==typeof e?r(e):e),[e]),g=(0,a.useMemo)(()=>{var e=function(e){let t=!1,l=!1,s=[];for(let a of e){if(\"string\"!=typeof a)continue;if(\"<span></span>\"===a||\"\\n\"===a||\"\\r\\n\"===a||\"<br/>\"===a||\"<br>\"===a){s.push({word:\"\",opt:{breakline:!0}});continue}a.includes(\"<s>\")&&(t=!0),a.includes("
+  },
+  {
+    "feature": "technology accordion",
+    "url": "https://waabi.ai/_next/static/chunks/0nqb4gsffynqw.js",
+    "source_sha256": "ad5fa00d02ffd5d16b16a4d56559a5ca6d48b61a534161b88d6d35b9de31f2d4",
+    "offset": 93570,
+    "excerpt": "),h=e.i(30397);let f=({item:e,current:l,index:s,setCurrent:i,fadeIn:n,sizes:c})=>{let o=s===l,x=(0,p.getInternalLink)(e.internalLink);return(0,t.jsxs)(r.motion.div,{...n,layout:!0,onMouseEnter:()=>i(s),style:{borderRadius:12},className:(0,a.default)(\"group relative grid w-full place-items-center justify-center overflow-clip bg-black text-white md:h-720\",o&&\"w-full max-md:h-600\",!o&&\"max-md:h-112 md:w-[15.7%]\"),children:[(0,t.jsx)(v,{...e.image,alt:e.title,active:o,sizes:c}),(0,t.jsxs)(r.motion.div,{layout:!0,className:(0,a.default)(\"absolute flex flex-col gap-16\",\"md:bottom-48 md:left-48 md:w-400\",\"bottom-40 max-md:px-28\"),initial:{opacity:0},animate:{opacity:+!!o},childr"
+  },
+  {
+    "feature": "accordion collapsed dimensions",
+    "url": "https://waabi.ai/_next/static/chunks/0nqb4gsffynqw.js",
+    "source_sha256": "ad5fa00d02ffd5d16b16a4d56559a5ca6d48b61a534161b88d6d35b9de31f2d4",
+    "offset": 93776,
+    "excerpt": "e:{borderRadius:12},className:(0,a.default)(\"group relative grid w-full place-items-center justify-center overflow-clip bg-black text-white md:h-720\",o&&\"w-full max-md:h-600\",!o&&\"max-md:h-112 md:w-[15.7%]\"),children:[(0,t.jsx)(v,{...e.image,alt:e.title,active:o,sizes:c}),(0,t.jsxs)(r.motion.div,{layout:!0,className:(0,a.default)(\"absolute flex flex-col gap-16\",\"md:bottom-48 md:left-48 md:w-400\",\"bottom-40 max-md:px-28\"),initial:{opacity:0},animate:{opacity:+!!o},children:[e.title&&(0,t.jsx)(r.motion.h2,{layout:!0,className:\"type-z-24 md:type-z-40 text-balance md:pr-50\",children:e.title}),e.description&&(0,t.jsx)(r.motion.p,{layout:!0,className:\"type-s-14 md:type-s-15 tex"
+  },
+  {
+    "feature": "card entrance timing",
+    "url": "https://waabi.ai/_next/static/chunks/0nqb4gsffynqw.js",
+    "source_sha256": "ad5fa00d02ffd5d16b16a4d56559a5ca6d48b61a534161b88d6d35b9de31f2d4",
+    "offset": 75537,
+    "excerpt": "ar t=e.i(56242),l=e.i(7284),s=e.i(69348),a=e.i(27550),i=e.i(20856),r=e.i(17827),n=e.i(87648),c=e.i(59163);let d={duration:.6,ease:e.i(30397).eases.IN_OUT_CUBIC},o={hidden:(e=0)=>({clipPath:\"inset(0% 0% 100% 0% round 12px)\",transition:{...d,delay:.15*e}}),visible:(e=0)=>({clipPath:\"inset(0% 0% 0% 0% round 12px)\",transition:{...d,delay:.15*e}})},m=({children:e,as:l=\"div\",ref:a,...i})=>{let d,m=(0,c.useRef)(null),u=(0,c.useMemo)(()=>s.motion.create(l),[l]),x=\"function\"==typeof e,p=(d=(0,n.useInView)(m,{once:!0,amount:.3}),(e=0)=>({custom:e,variants:o,initial:\"hidden\",animate:d?\"visible\":\"hidden\"}));return(0,t.jsx)(u,{...i,ref:(0,r.default)(m,a),...x?{}:p(0),children:x?e(p):e"
+  },
+  {
+    "feature": "insights image hover",
+    "url": "https://waabi.ai/_next/static/chunks/0nqb4gsffynqw.js",
+    "source_sha256": "ad5fa00d02ffd5d16b16a4d56559a5ca6d48b61a534161b88d6d35b9de31f2d4",
+    "offset": 76598,
+    "excerpt": "0,t.jsx)(a.VideoWithImage,{...e.media,alt:e.title,className:(0,l.default)(\"absolute inset-0 h-full w-full object-cover\",\"ease-snappy object-cover transition-transform duration-500 group-hover:scale-120\",\"opacity-80\")}),(0,t.jsx)(\"div\",{className:\"relative z-2 px-28 pb-24 text-white md:px-48 md:pb-36\",children:(0,t.jsxs)(\"div\",{className:\"relative flex flex-col gap-4 md:gap-8\",children:[(0,t.jsx)(\"p\",{className:\"type-s-11 md:type-s-12\",children:e.eyebrow}),(0,t.jsx)(\"h2\",{className:\"type-z-24 md:type-z-40 text-balance md:pr-50\",children:e.title}),(0,t.jsx)(i.Right,{className:\"absolute right-0 bottom-0\"})]})})]})})};e.s([\"ThreeUp\",0,({data:e=[],animation:l=\"fade-in\"})=>{let"
+  },
+  {
+    "feature": "rotating testimonials",
+    "url": "https://waabi.ai/_next/static/chunks/0nqb4gsffynqw.js",
+    "source_sha256": "ad5fa00d02ffd5d16b16a4d56559a5ca6d48b61a534161b88d6d35b9de31f2d4",
+    "offset": 37567,
+    "excerpt": ",d.useAnimate)(),z=(0,o.useInView)(C),L=(0,a.useMediaQuery)(\"(min-width: 768px)\"),T=(0,l.useRef)(null);(0,l.useEffect)(()=>{z&&L&&N.current&&k(\".motion-circle\",{pathLength:[0,1]},{duration:10,ease:\"easeInOut\"}).then(()=>{x(t=>(t+1)%e.length)})},[z,L,s]),(0,l.useEffect)(()=>{z&&T.current&&T.current.scrollIntoView({behavior:\"smooth\",block:\"nearest\",inline:\"center\"})},[z,s]);let M=b.downloadCtaLabel&&b.pdf?.url;return(0,t.jsx)(n.LayoutGroup,{children:(0,t.jsxs)(w,{ref:C,className:\"gap-24 overflow-clip md:gap-36\",layout:L,...y,children:[(0,t.jsx)(f.Carousel,{className:\"relative flex h-32 w-full items-center gap-24 border-b border-current/10\",children:e.map((e,l)=>(0,t.jsx)(\"b"
+  }
+]

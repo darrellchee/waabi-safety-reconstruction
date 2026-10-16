@@ -1,0 +1,659 @@
+[
+  {
+    "area": "stats",
+    "width": 1440,
+    "reaEvidence": "ev_e27409be5817cc1c1eaf8ab283bd023ab630995c00129b3b7112743b8503c50f",
+    "metricsProvider": "Playwright computed CSS fallback",
+    "section": "<section id=\"\" class=\"relative flex w-full flex-col gap-[var(--padding-y)] overflow-clip bg-white\"><div class=\"w-calc flex gap-30 max-lg:flex-col md:gap-48 xl:gap-240\"><div class=\"flex flex-col gap-y-48\"><div class=\"flex w-full text-balance\"><h2 class=\"type-z-34 md:type-z-80 text-balance\"><span clas",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "scrollY": 642,
+    "rootFont": "10px",
+    "nodes": [
+      {
+        "tag": "SECTION",
+        "text": "The stakes are real and rising.\nIt\u2019s time for an approach to safety that is designed for the realiti",
+        "class": "relative flex w-full flex-col gap-[var(--padding-y)] overflow-clip bg-white",
+        "rect": {
+          "x": 0,
+          "y": 378,
+          "width": 1440,
+          "height": 957,
+          "top": 378,
+          "right": 1440,
+          "bottom": 1335,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "normal",
+        "padding": "0px",
+        "gap": "120px",
+        "width": "1440px",
+        "maxWidth": "none"
+      },
+      {
+        "tag": "H2",
+        "text": "The stakes are real and rising.",
+        "class": "type-z-34 md:type-z-80 text-balance",
+        "rect": {
+          "x": 103,
+          "y": 378,
+          "width": 546.984375,
+          "height": 144,
+          "top": 378,
+          "right": 649.984375,
+          "bottom": 522,
+          "left": 103
+        },
+        "font": "80px / 72px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "-3.2px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "546.984px",
+        "maxWidth": "none"
+      }
+    ]
+  },
+  {
+    "area": "philosophy",
+    "width": 1440,
+    "reaEvidence": "ev_9bd5d1b97565a48e9e6a334c91ccc4120a98e7a6db3a7f8d11833aa9eafaf5a3",
+    "metricsProvider": "Playwright computed CSS fallback",
+    "section": "<section id=\"\" class=\"bg-cream relative w-full pt-(--padding-y) text-black md:pt-[calc(var(--padding-y)*1.5)]\"><div class=\"w-calc flex flex-col items-center gap-48\"><div class=\"flex w-full justify-center text-balance md:max-w-525\"><h2 class=\"w-calc type-z-34 md:type-z-80 text-balance\"><span class=\"f",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "scrollY": 1899,
+    "rootFont": "10px",
+    "nodes": [
+      {
+        "tag": "SECTION",
+        "text": "Safety is core to our DNA.\nThe future of autonomous transportation requires us to build on establish",
+        "class": "bg-cream relative w-full pt-(--padding-y) text-black md:pt-[calc(var(--padding-y)*1.5)]",
+        "rect": {
+          "x": 0,
+          "y": 198,
+          "width": 1440,
+          "height": 2674,
+          "top": 198,
+          "right": 1440,
+          "bottom": 2872,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "normal",
+        "padding": "180px 0px 0px",
+        "gap": "normal",
+        "width": "1440px",
+        "maxWidth": "none"
+      },
+      {
+        "tag": "H2",
+        "text": "Safety is core to our DNA.",
+        "class": "w-calc type-z-34 md:type-z-80 text-balance",
+        "rect": {
+          "x": 457.484375,
+          "y": 378,
+          "width": 525,
+          "height": 144,
+          "top": 378,
+          "right": 982.484375,
+          "bottom": 522,
+          "left": 457.484375
+        },
+        "font": "80px / 72px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "-3.2px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "525px",
+        "maxWidth": "none"
+      },
+      {
+        "tag": "P",
+        "text": "03",
+        "class": "area type-z-24 md:type-z-40",
+        "rect": {
+          "x": 103,
+          "y": 1520,
+          "width": 48,
+          "height": 44,
+          "top": 1520,
+          "right": 151,
+          "bottom": 1564,
+          "left": 103
+        },
+        "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "-1.2px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "48px",
+        "maxWidth": "none"
+      },
+      {
+        "tag": "P",
+        "text": "/3",
+        "class": "type-s-12 text-current/50",
+        "rect": {
+          "x": 163,
+          "y": 1540,
+          "width": 13.015625,
+          "height": 16.796875,
+          "top": 1540,
+          "right": 176.015625,
+          "bottom": 1556.796875,
+          "left": 163
+        },
+        "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif",
+        "tracking": "0.24px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "13.0156px",
+        "maxWidth": "none"
+      },
+      {
+        "tag": "H2",
+        "text": "Safety from the inside out.",
+        "class": "type-z-40 pointer-events-auto max-w-290 max-md:text-center",
+        "rect": {
+          "x": 266.015625,
+          "y": 1614,
+          "width": 290,
+          "height": 88,
+          "top": 1614,
+          "right": 556.015625,
+          "bottom": 1702,
+          "left": 266.015625
+        },
+        "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "-1.2px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "290px",
+        "maxWidth": "290px"
+      },
+      {
+        "tag": "H2",
+        "text": "Built different. Built safer.",
+        "class": "type-z-40 pointer-events-auto max-w-290 max-md:text-center",
+        "rect": {
+          "x": 266.015625,
+          "y": 2178,
+          "width": 290,
+          "height": 88,
+          "top": 2178,
+          "right": 556.015625,
+          "bottom": 2266,
+          "left": 266.015625
+        },
+        "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "-1.2px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "290px",
+        "maxWidth": "290px"
+      },
+      {
+        "tag": "H2",
+        "text": "Pioneering new standards.",
+        "class": "type-z-40 pointer-events-auto max-w-290 max-md:text-center",
+        "rect": {
+          "x": 266.015625,
+          "y": 2894,
+          "width": 290,
+          "height": 88,
+          "top": 2894,
+          "right": 556.015625,
+          "bottom": 2982,
+          "left": 266.015625
+        },
+        "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "-1.2px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "290px",
+        "maxWidth": "290px"
+      }
+    ]
+  },
+  {
+    "area": "stats",
+    "width": 1920,
+    "reaEvidence": "ev_4ac95c3137085a99fc036dc82a7022b0d13ba4bc52fc64aa77bb546b5488256a",
+    "metricsProvider": "Playwright computed CSS fallback",
+    "section": "<section id=\"\" class=\"relative flex w-full flex-col gap-[var(--padding-y)] overflow-clip bg-white\"><div class=\"w-calc flex gap-30 max-lg:flex-col md:gap-48 xl:gap-240\"><div class=\"flex flex-col gap-y-48\"><div class=\"flex w-full text-balance\"><h2 class=\"type-z-34 md:type-z-80 text-balance\"><span clas",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "scrollY": 732,
+    "rootFont": "10px",
+    "nodes": [
+      {
+        "tag": "SECTION",
+        "text": "The stakes are real and rising.\nIt\u2019s time for an approach to safety that is designed for the realiti",
+        "class": "relative flex w-full flex-col gap-[var(--padding-y)] overflow-clip bg-white",
+        "rect": {
+          "x": 0,
+          "y": 468,
+          "width": 1920,
+          "height": 957,
+          "top": 468,
+          "right": 1920,
+          "bottom": 1425,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "normal",
+        "padding": "0px",
+        "gap": "120px",
+        "width": "1920px",
+        "maxWidth": "none"
+      },
+      {
+        "tag": "H2",
+        "text": "The stakes are real and rising.",
+        "class": "type-z-34 md:type-z-80 text-balance",
+        "rect": {
+          "x": 343,
+          "y": 468,
+          "width": 547,
+          "height": 144,
+          "top": 468,
+          "right": 890,
+          "bottom": 612,
+          "left": 343
+        },
+        "font": "80px / 72px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "-3.2px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "547px",
+        "maxWidth": "none"
+      }
+    ]
+  },
+  {
+    "area": "philosophy",
+    "width": 1920,
+    "reaEvidence": "ev_7585b4b9be37cfa390a2816df0faa630bec18f076c011a7fae58abd523d38939",
+    "metricsProvider": "Playwright computed CSS fallback",
+    "section": "<section id=\"\" class=\"bg-cream relative w-full pt-(--padding-y) text-black md:pt-[calc(var(--padding-y)*1.5)]\"><div class=\"w-calc flex flex-col items-center gap-48\"><div class=\"flex w-full justify-center text-balance md:max-w-525\"><h2 class=\"w-calc type-z-34 md:type-z-80 text-balance\"><span class=\"f",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "scrollY": 1989,
+    "rootFont": "10px",
+    "nodes": [
+      {
+        "tag": "SECTION",
+        "text": "Safety is core to our DNA.\nThe future of autonomous transportation requires us to build on establish",
+        "class": "bg-cream relative w-full pt-(--padding-y) text-black md:pt-[calc(var(--padding-y)*1.5)]",
+        "rect": {
+          "x": 0,
+          "y": 288,
+          "width": 1920,
+          "height": 3034,
+          "top": 288,
+          "right": 1920,
+          "bottom": 3322,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "normal",
+        "padding": "180px 0px 0px",
+        "gap": "normal",
+        "width": "1920px",
+        "maxWidth": "none"
+      },
+      {
+        "tag": "H2",
+        "text": "Safety is core to our DNA.",
+        "class": "w-calc type-z-34 md:type-z-80 text-balance",
+        "rect": {
+          "x": 697.5,
+          "y": 468,
+          "width": 525,
+          "height": 144,
+          "top": 468,
+          "right": 1222.5,
+          "bottom": 612,
+          "left": 697.5
+        },
+        "font": "80px / 72px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "-3.2px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "525px",
+        "maxWidth": "none"
+      },
+      {
+        "tag": "P",
+        "text": "03",
+        "class": "area type-z-24 md:type-z-40",
+        "rect": {
+          "x": 343,
+          "y": 1700,
+          "width": 48,
+          "height": 44,
+          "top": 1700,
+          "right": 391,
+          "bottom": 1744,
+          "left": 343
+        },
+        "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "-1.2px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "48px",
+        "maxWidth": "none"
+      },
+      {
+        "tag": "P",
+        "text": "/3",
+        "class": "type-s-12 text-current/50",
+        "rect": {
+          "x": 403,
+          "y": 1720,
+          "width": 13.015625,
+          "height": 16.796875,
+          "top": 1720,
+          "right": 416.015625,
+          "bottom": 1736.796875,
+          "left": 403
+        },
+        "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif",
+        "tracking": "0.24px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "13.0156px",
+        "maxWidth": "none"
+      },
+      {
+        "tag": "H2",
+        "text": "Safety from the inside out.",
+        "class": "type-z-40 pointer-events-auto max-w-290 max-md:text-center",
+        "rect": {
+          "x": 506.015625,
+          "y": 1794,
+          "width": 290,
+          "height": 88,
+          "top": 1794,
+          "right": 796.015625,
+          "bottom": 1882,
+          "left": 506.015625
+        },
+        "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "-1.2px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "290px",
+        "maxWidth": "290px"
+      },
+      {
+        "tag": "H2",
+        "text": "Built different. Built safer.",
+        "class": "type-z-40 pointer-events-auto max-w-290 max-md:text-center",
+        "rect": {
+          "x": 506.015625,
+          "y": 2448,
+          "width": 290,
+          "height": 88,
+          "top": 2448,
+          "right": 796.015625,
+          "bottom": 2536,
+          "left": 506.015625
+        },
+        "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "-1.2px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "290px",
+        "maxWidth": "290px"
+      },
+      {
+        "tag": "H2",
+        "text": "Pioneering new standards.",
+        "class": "type-z-40 pointer-events-auto max-w-290 max-md:text-center",
+        "rect": {
+          "x": 506.015625,
+          "y": 3254,
+          "width": 290,
+          "height": 88,
+          "top": 3254,
+          "right": 796.015625,
+          "bottom": 3342,
+          "left": 506.015625
+        },
+        "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "-1.2px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "290px",
+        "maxWidth": "290px"
+      }
+    ]
+  },
+  {
+    "area": "stats",
+    "width": 768,
+    "reaEvidence": "ev_1ad422c7d72b224b2e77a1ee44ced14756e8745df6c84af63a2f7cc73dd4a918",
+    "metricsProvider": "Playwright computed CSS fallback",
+    "section": "<section id=\"\" class=\"relative flex w-full flex-col gap-[var(--padding-y)] overflow-clip bg-white\"><div class=\"w-calc flex gap-30 max-lg:flex-col md:gap-48 xl:gap-240\"><div class=\"flex flex-col gap-y-48\"><div class=\"flex w-full text-balance\"><h2 class=\"type-z-34 md:type-z-80 text-balance\"><span clas",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "scrollY": 644,
+    "rootFont": "10px",
+    "nodes": [
+      {
+        "tag": "SECTION",
+        "text": "The stakes are real and rising.\nIt\u2019s time for an approach to safety that is designed for the realiti",
+        "class": "relative flex w-full flex-col gap-[var(--padding-y)] overflow-clip bg-white",
+        "rect": {
+          "x": 0,
+          "y": 440,
+          "width": 768,
+          "height": 1005,
+          "top": 440,
+          "right": 768,
+          "bottom": 1445,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "normal",
+        "padding": "0px",
+        "gap": "60px",
+        "width": "768px",
+        "maxWidth": "none"
+      },
+      {
+        "tag": "H2",
+        "text": "The stakes are real and rising.",
+        "class": "type-z-34 md:type-z-80 text-balance",
+        "rect": {
+          "x": 54.9375,
+          "y": 440,
+          "width": 658.125,
+          "height": 144,
+          "top": 440,
+          "right": 713.0625,
+          "bottom": 584,
+          "left": 54.9375
+        },
+        "font": "80px / 72px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "-3.2px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "658.125px",
+        "maxWidth": "none"
+      }
+    ]
+  },
+  {
+    "area": "philosophy",
+    "width": 768,
+    "reaEvidence": "ev_6aea00ee871e24e609a3267454a0f69020d62d589d5bb1c0ca2ab50bf6e956a7",
+    "metricsProvider": "Playwright computed CSS fallback",
+    "section": "<section id=\"\" class=\"bg-cream relative w-full pt-(--padding-y) text-black md:pt-[calc(var(--padding-y)*1.5)]\"><div class=\"w-calc flex flex-col items-center gap-48\"><div class=\"flex w-full justify-center text-balance md:max-w-525\"><h2 class=\"w-calc type-z-34 md:type-z-80 text-balance\"><span class=\"f",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "scrollY": 1799,
+    "rootFont": "10px",
+    "nodes": [
+      {
+        "tag": "SECTION",
+        "text": "Safety is core to our DNA.\nThe future of autonomous transportation requires us to build on establish",
+        "class": "bg-cream relative w-full pt-(--padding-y) text-black md:pt-[calc(var(--padding-y)*1.5)]",
+        "rect": {
+          "x": 0,
+          "y": 350,
+          "width": 768,
+          "height": 2832,
+          "top": 350,
+          "right": 768,
+          "bottom": 3182,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "normal",
+        "padding": "90px 0px 0px",
+        "gap": "normal",
+        "width": "768px",
+        "maxWidth": "none"
+      },
+      {
+        "tag": "H2",
+        "text": "Safety is core to our DNA.",
+        "class": "w-calc type-z-34 md:type-z-80 text-balance",
+        "rect": {
+          "x": 121.5,
+          "y": 440,
+          "width": 525,
+          "height": 144,
+          "top": 440,
+          "right": 646.5,
+          "bottom": 584,
+          "left": 121.5
+        },
+        "font": "80px / 72px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "-3.2px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "525px",
+        "maxWidth": "none"
+      },
+      {
+        "tag": "P",
+        "text": "03",
+        "class": "area type-z-24 md:type-z-40",
+        "rect": {
+          "x": 54.9375,
+          "y": 1644,
+          "width": 48,
+          "height": 44,
+          "top": 1644,
+          "right": 102.9375,
+          "bottom": 1688,
+          "left": 54.9375
+        },
+        "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "-1.2px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "48px",
+        "maxWidth": "none"
+      },
+      {
+        "tag": "P",
+        "text": "/3",
+        "class": "type-s-12 text-current/50",
+        "rect": {
+          "x": 114.9375,
+          "y": 1664,
+          "width": 13.015625,
+          "height": 16.796875,
+          "top": 1664,
+          "right": 127.953125,
+          "bottom": 1680.796875,
+          "left": 114.9375
+        },
+        "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif",
+        "tracking": "0.24px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "13.0156px",
+        "maxWidth": "none"
+      },
+      {
+        "tag": "H2",
+        "text": "Safety from the inside out.",
+        "class": "type-z-40 pointer-events-auto max-w-290 max-md:text-center",
+        "rect": {
+          "x": 217.953125,
+          "y": 1632,
+          "width": 188.25,
+          "height": 132,
+          "top": 1632,
+          "right": 406.203125,
+          "bottom": 1764,
+          "left": 217.953125
+        },
+        "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "-1.2px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "188.25px",
+        "maxWidth": "290px"
+      },
+      {
+        "tag": "H2",
+        "text": "Built different. Built safer.",
+        "class": "type-z-40 pointer-events-auto max-w-290 max-md:text-center",
+        "rect": {
+          "x": 217.953125,
+          "y": 2294,
+          "width": 188.25,
+          "height": 132,
+          "top": 2294,
+          "right": 406.203125,
+          "bottom": 2426,
+          "left": 217.953125
+        },
+        "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "-1.2px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "188.25px",
+        "maxWidth": "290px"
+      },
+      {
+        "tag": "H2",
+        "text": "Pioneering new standards.",
+        "class": "type-z-40 pointer-events-auto max-w-290 max-md:text-center",
+        "rect": {
+          "x": 217.953125,
+          "y": 3060,
+          "width": 188.25,
+          "height": 132,
+          "top": 3060,
+          "right": 406.203125,
+          "bottom": 3192,
+          "left": 217.953125
+        },
+        "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+        "tracking": "-1.2px",
+        "padding": "0px",
+        "gap": "normal",
+        "width": "188.25px",
+        "maxWidth": "290px"
+      }
+    ]
+  }
+]

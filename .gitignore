@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.next-build/
+test-results/
+playwright-report/
+*.tsbuildinfo
+.DS_Store
+artifacts/reference/js/
+artifacts/reference/original-styles.css
+artifacts/reference/rea/browser-*.txt
+.next-final/
+scripts/__pycache__/

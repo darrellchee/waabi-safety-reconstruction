@@ -1,0 +1,123 @@
+{
+  "version": "6.5.0",
+  "static": {
+    "evidence_id": "ev_0f2166f6b0fd13df5c2d88d7d97ecf96c5b0d1145d5089f878c49892ab7716e5",
+    "statistics": {
+      "relevant_files": 17,
+      "nested_asar_containers": 0,
+      "text_bytes_read": 106868,
+      "invalid_utf8_files": 0,
+      "parsed_javascript_files": 2,
+      "visited_ast_nodes": 22451,
+      "findings": 1,
+      "modules": 0,
+      "parse_failures": 0
+    },
+    "source_selection": {
+      "requested_paths": [
+        "0nqb4gsffynqw.js",
+        "0-vu8s34k5js5.js"
+      ],
+      "unselected_files": 15
+    },
+    "limitations": [
+      "Caller-selected source analysis leaves 15 inventoried files outside analysis scope. Inventory identity covers the complete artifact; relationships through unselected sources remain unknown.",
+      "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+      "Graph coverage is incomplete; unavailable facts remain explicit and must not be read as absence.",
+      "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+      "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+      "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+      "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code."
+    ]
+  },
+  "live": {
+    "evidence_id": "ev_b38027663bfac4aa97a0ee239b6e40a02c88fe1c9340f1bbbdef4d99c2daa92b",
+    "dom_nodes": 783,
+    "accessibility_nodes": 795,
+    "scripts": 33,
+    "resources": 20,
+    "completeness": {
+      "status": "policy_filtered",
+      "conditions": [
+        "attach_limited",
+        "policy_filtered"
+      ],
+      "policy_filtered_sections": [
+        "json_body_shapes",
+        "metadata",
+        "resources",
+        "scripts",
+        "storage_keys",
+        "websocket_shapes"
+      ],
+      "attach_limited_sections": [
+        "console_events",
+        "metadata",
+        "network_requests",
+        "websocket_connections",
+        "websocket_frames"
+      ],
+      "truncated_sections": [],
+      "unavailable_sections": [],
+      "excluded": [
+        {
+          "section": "json_body_shapes",
+          "reason": "not_approved",
+          "count": null
+        },
+        {
+          "section": "metadata",
+          "reason": "disallowed_origin",
+          "count": 11
+        },
+        {
+          "section": "metadata",
+          "reason": "unsupported_url",
+          "count": 2
+        },
+        {
+          "section": "resources",
+          "reason": "disallowed_origin",
+          "count": 1
+        },
+        {
+          "section": "scripts",
+          "reason": "disallowed_origin",
+          "count": 1
+        },
+        {
+          "section": "scripts",
+          "reason": "unattributed_origin",
+          "count": 2
+        },
+        {
+          "section": "storage_keys",
+          "reason": "not_approved",
+          "count": null
+        },
+        {
+          "section": "websocket_shapes",
+          "reason": "not_approved",
+          "count": null
+        }
+      ],
+      "dropped_events": {
+        "scripts": 0,
+        "network_requests": 0,
+        "console_events": 0,
+        "websocket_connections": 0,
+        "websocket_frames": 0,
+        "webmcp_tools": 0,
+        "timeline_events": 0,
+        "total": 0
+      }
+    }
+  },
+  "screenshot": {
+    "evidence_id": "ev_1c7cc62cbd57b5e8ddf0fa2ffa7d10ad94a6f220f960029d0aa96dce970841c3",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    }
+  }
+}

@@ -1,0 +1,1558 @@
+[
+  {
+    "tag": "P",
+    "text": "Let's talk autonomous trucking",
+    "rect": {
+      "x": 48.046875,
+      "y": 12,
+      "width": 167.59375,
+      "height": 15.40625,
+      "top": 12,
+      "right": 215.640625,
+      "bottom": 27.40625,
+      "left": 48.046875
+    },
+    "font": "500 11px / 15.4px NeueHaas, \"NeueHaas Fallback\", serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "H1",
+    "text": "Redefining safety. ",
+    "rect": {
+      "x": 40,
+      "y": 120,
+      "width": 310,
+      "height": 99,
+      "top": 120,
+      "right": 350,
+      "bottom": 219,
+      "left": 40
+    },
+    "font": "55px / 49.5px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "SECTION",
+    "text": "The stakes are real and rising.\nIt\u2019s time for an approach to",
+    "rect": {
+      "x": 0,
+      "y": 904,
+      "width": 390,
+      "height": 696.625,
+      "top": 904,
+      "right": 390,
+      "bottom": 1600.625,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "H2",
+    "text": "The stakes are real and rising.",
+    "rect": {
+      "x": 40,
+      "y": 904,
+      "width": 310,
+      "height": 61.1875,
+      "top": 904,
+      "right": 350,
+      "bottom": 965.1875,
+      "left": 40
+    },
+    "font": "34px / 30.6px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "SECTION",
+    "text": "Safety is core to our DNA.\nThe future of autonomous transpor",
+    "rect": {
+      "x": 0,
+      "y": 1660.625,
+      "width": 390,
+      "height": 1259.1875,
+      "top": 1660.625,
+      "right": 390,
+      "bottom": 2919.8125,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "60px 0px 0px"
+  },
+  {
+    "tag": "H2",
+    "text": "Safety is core to our DNA.",
+    "rect": {
+      "x": 40,
+      "y": 1720.625,
+      "width": 310,
+      "height": 61.1875,
+      "top": 1720.625,
+      "right": 350,
+      "bottom": 1781.8125,
+      "left": 40
+    },
+    "font": "34px / 30.6px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "P",
+    "text": "00",
+    "rect": {
+      "x": 171.484375,
+      "y": 2501.8125,
+      "width": 30,
+      "height": 30,
+      "top": 2501.8125,
+      "right": 201.484375,
+      "bottom": 2531.8125,
+      "left": 171.484375
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "P",
+    "text": "/3",
+    "rect": {
+      "x": 205.484375,
+      "y": 2509.8125,
+      "width": 13.015625,
+      "height": 16.796875,
+      "top": 2509.8125,
+      "right": 218.5,
+      "bottom": 2526.609375,
+      "left": 205.484375
+    },
+    "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "H2",
+    "text": "Safety from the inside out.",
+    "rect": {
+      "x": 40,
+      "y": 2555.8125,
+      "width": 290,
+      "height": 88,
+      "top": 2555.8125,
+      "right": 330,
+      "bottom": 2643.8125,
+      "left": 40
+    },
+    "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "H2",
+    "text": "Built different. Built safer.",
+    "rect": {
+      "x": 454,
+      "y": 2591.8125,
+      "width": 290,
+      "height": 88,
+      "top": 2591.8125,
+      "right": 744,
+      "bottom": 2679.8125,
+      "left": 454
+    },
+    "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "H2",
+    "text": "Pioneering new standards.",
+    "rect": {
+      "x": 868,
+      "y": 2567.8125,
+      "width": 290,
+      "height": 88,
+      "top": 2567.8125,
+      "right": 1158,
+      "bottom": 2655.8125,
+      "left": 868
+    },
+    "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "SECTION",
+    "text": "Technology designed to protect.\nLearn how our technology is ",
+    "rect": {
+      "x": 0,
+      "y": 2979.8125,
+      "width": 390,
+      "height": 1196.578125,
+      "top": 2979.8125,
+      "right": 390,
+      "bottom": 4176.390625,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "H2",
+    "text": "Technology designed to protect.",
+    "rect": {
+      "x": 40,
+      "y": 2979.8125,
+      "width": 310,
+      "height": 61.1875,
+      "top": 2979.8125,
+      "right": 350,
+      "bottom": 3041,
+      "left": 40
+    },
+    "font": "34px / 30.6px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "SECTION",
+    "text": "Waabi Driver\n\nOur end-to-end trained system is fully interpr",
+    "rect": {
+      "x": 0,
+      "y": 3256.390625,
+      "width": 390,
+      "height": 920,
+      "top": 3256.390625,
+      "right": 390,
+      "bottom": 4176.390625,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "24px"
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi Driver",
+    "rect": {
+      "x": 52,
+      "y": 3592.734375,
+      "width": 286,
+      "height": 30,
+      "top": 3592.734375,
+      "right": 338,
+      "bottom": 3622.734375,
+      "left": 52
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "P",
+    "text": "Our end-to-end trained system is fully interpretable, and ca",
+    "rect": {
+      "x": 52,
+      "y": 3638.734375,
+      "width": 286,
+      "height": 201.65625,
+      "top": 3638.734375,
+      "right": 338,
+      "bottom": 3840.390625,
+      "left": 52
+    },
+    "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi World",
+    "rect": {
+      "x": 52,
+      "y": 3751.140625,
+      "width": 286,
+      "height": 30,
+      "top": 3751.140625,
+      "right": 338,
+      "bottom": 3781.140625,
+      "left": 52
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "P",
+    "text": "Our high-fidelity neural simulator is capable of replicating",
+    "rect": {
+      "x": 52,
+      "y": 3797.140625,
+      "width": 286,
+      "height": 179.25,
+      "top": 3797.140625,
+      "right": 338,
+      "bottom": 3976.390625,
+      "left": 52
+    },
+    "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "H2",
+    "text": "Mixed Reality Testing",
+    "rect": {
+      "x": 52,
+      "y": 3887.140625,
+      "width": 286,
+      "height": 30,
+      "top": 3887.140625,
+      "right": 338,
+      "bottom": 3917.140625,
+      "left": 52
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "P",
+    "text": "By combining real trucks with real-time synthetic scenarios,",
+    "rect": {
+      "x": 52,
+      "y": 3933.140625,
+      "width": 286,
+      "height": 179.25,
+      "top": 3933.140625,
+      "right": 338,
+      "bottom": 4112.390625,
+      "left": 52
+    },
+    "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "SECTION",
+    "text": "01\n\n/4\n\nSafety-first best practices.\nDesign\n\nWell-defined re",
+    "rect": {
+      "x": 0,
+      "y": 4236.390625,
+      "width": 390,
+      "height": 844,
+      "top": 4236.390625,
+      "right": 390,
+      "bottom": 5080.390625,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "P",
+    "text": "01",
+    "rect": {
+      "x": 40,
+      "y": 4797.171875,
+      "width": 30,
+      "height": 30,
+      "top": 4797.171875,
+      "right": 70,
+      "bottom": 4827.171875,
+      "left": 40
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "P",
+    "text": "/4",
+    "rect": {
+      "x": 74,
+      "y": 4805.171875,
+      "width": 12.640625,
+      "height": 16.796875,
+      "top": 4805.171875,
+      "right": 86.640625,
+      "bottom": 4821.96875,
+      "left": 74
+    },
+    "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "P",
+    "text": "Well-defined requirements for each capability, with multiple",
+    "rect": {
+      "x": 40,
+      "y": 4903.171875,
+      "width": 310,
+      "height": 67.21875,
+      "top": 4903.171875,
+      "right": 350,
+      "bottom": 4970.390625,
+      "left": 40
+    },
+    "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "P",
+    "text": "02",
+    "rect": {
+      "x": 430,
+      "y": 4774.765625,
+      "width": 30,
+      "height": 30,
+      "top": 4774.765625,
+      "right": 460,
+      "bottom": 4804.765625,
+      "left": 430
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "P",
+    "text": "/4",
+    "rect": {
+      "x": 464,
+      "y": 4782.765625,
+      "width": 12.640625,
+      "height": 16.796875,
+      "top": 4782.765625,
+      "right": 476.640625,
+      "bottom": 4799.5625,
+      "left": 464
+    },
+    "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "P",
+    "text": "From simulation to closed course testing to low exposure dri",
+    "rect": {
+      "x": 430,
+      "y": 4880.765625,
+      "width": 310,
+      "height": 89.625,
+      "top": 4880.765625,
+      "right": 740,
+      "bottom": 4970.390625,
+      "left": 430
+    },
+    "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "P",
+    "text": "03",
+    "rect": {
+      "x": 820,
+      "y": 4819.578125,
+      "width": 30,
+      "height": 30,
+      "top": 4819.578125,
+      "right": 850,
+      "bottom": 4849.578125,
+      "left": 820
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "P",
+    "text": "/4",
+    "rect": {
+      "x": 854,
+      "y": 4827.578125,
+      "width": 12.640625,
+      "height": 16.796875,
+      "top": 4827.578125,
+      "right": 866.640625,
+      "bottom": 4844.375,
+      "left": 854
+    },
+    "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "P",
+    "text": "Structured releases to ensure readiness before any expansion",
+    "rect": {
+      "x": 820,
+      "y": 4925.578125,
+      "width": 310,
+      "height": 44.8125,
+      "top": 4925.578125,
+      "right": 1130,
+      "bottom": 4970.390625,
+      "left": 820
+    },
+    "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "P",
+    "text": "04",
+    "rect": {
+      "x": 1210,
+      "y": 4797.171875,
+      "width": 30,
+      "height": 30,
+      "top": 4797.171875,
+      "right": 1240,
+      "bottom": 4827.171875,
+      "left": 1210
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "P",
+    "text": "/4",
+    "rect": {
+      "x": 1244,
+      "y": 4805.171875,
+      "width": 12.640625,
+      "height": 16.796875,
+      "top": 4805.171875,
+      "right": 1256.640625,
+      "bottom": 4821.96875,
+      "left": 1244
+    },
+    "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "P",
+    "text": "Continuous performance tracking and immediate safety-critica",
+    "rect": {
+      "x": 1210,
+      "y": 4903.171875,
+      "width": 310,
+      "height": 67.21875,
+      "top": 4903.171875,
+      "right": 1520,
+      "bottom": 4970.390625,
+      "left": 1210
+    },
+    "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "SECTION",
+    "text": "Insights\n\nExplore product deep dives, behind-the-scenes pers",
+    "rect": {
+      "x": 0,
+      "y": 5140.390625,
+      "width": 390,
+      "height": 600.84375,
+      "top": 5140.390625,
+      "right": 390,
+      "bottom": 5741.234375,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "H2",
+    "text": "Insights",
+    "rect": {
+      "x": 40,
+      "y": 5140.390625,
+      "width": 155,
+      "height": 30.59375,
+      "top": 5140.390625,
+      "right": 195,
+      "bottom": 5170.984375,
+      "left": 40
+    },
+    "font": "34px / 30.6px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "P",
+    "text": "Explore product deep dives, behind-the-scenes perspectives, ",
+    "rect": {
+      "x": 40,
+      "y": 5196.390625,
+      "width": 310,
+      "height": 67.21875,
+      "top": 5196.390625,
+      "right": 350,
+      "bottom": 5263.609375,
+      "left": 40
+    },
+    "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi and Warrior Logistics partner on autonomous trucking o",
+    "rect": {
+      "x": 40,
+      "y": 5575.84375,
+      "width": 310,
+      "height": 59.390625,
+      "top": 5575.84375,
+      "right": 350,
+      "bottom": 5635.234375,
+      "left": 40
+    },
+    "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "H2",
+    "text": "Volvo and Waabi Kick Off Customer Operations in Texas, Start",
+    "rect": {
+      "x": 378,
+      "y": 5575.84375,
+      "width": 310,
+      "height": 39.59375,
+      "top": 5575.84375,
+      "right": 688,
+      "bottom": 5615.4375,
+      "left": 378
+    },
+    "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "H2",
+    "text": "Built to generalize. Proven on I-35.",
+    "rect": {
+      "x": 716,
+      "y": 5576.41064453125,
+      "width": 264.34375,
+      "height": 19.796875,
+      "top": 5576.41064453125,
+      "right": 980.34375,
+      "bottom": 5596.20751953125,
+      "left": 716
+    },
+    "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "H2",
+    "text": "80% Growth on Long Haul's Toughest Corridor",
+    "rect": {
+      "x": 1054,
+      "y": 5576.599609375,
+      "width": 310,
+      "height": 39.59375,
+      "top": 5576.599609375,
+      "right": 1364,
+      "bottom": 5616.193359375,
+      "left": 1054
+    },
+    "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi crosses the next frontier of generalization, unlocking",
+    "rect": {
+      "x": 1392,
+      "y": 5566.1943359375,
+      "width": 310,
+      "height": 59.390625,
+      "top": 5566.1943359375,
+      "right": 1702,
+      "bottom": 5625.5849609375,
+      "left": 1392
+    },
+    "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "H2",
+    "text": "All You Need to Know About Self-Driving | CVPR Tutorial 2026",
+    "rect": {
+      "x": 1730,
+      "y": 5576.97705078125,
+      "width": 310,
+      "height": 39.59375,
+      "top": 5576.97705078125,
+      "right": 2040,
+      "bottom": 5616.57080078125,
+      "left": 1730
+    },
+    "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi secures $1 Billion in new funding to lead Physical AI ",
+    "rect": {
+      "x": 2068,
+      "y": 5577.166015625,
+      "width": 310,
+      "height": 39.59375,
+      "top": 5577.166015625,
+      "right": 2378,
+      "bottom": 5616.759765625,
+      "left": 2068
+    },
+    "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "H2",
+    "text": "From closed course to public roads: The path to driverless",
+    "rect": {
+      "x": 2406,
+      "y": 5577.35498046875,
+      "width": 310,
+      "height": 39.59375,
+      "top": 5577.35498046875,
+      "right": 2716,
+      "bottom": 5616.94873046875,
+      "left": 2406
+    },
+    "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi unlocks direct-to-customer model with surface street d",
+    "rect": {
+      "x": 2744,
+      "y": 5577.5439453125,
+      "width": 310,
+      "height": 59.390625,
+      "top": 5577.5439453125,
+      "right": 3054,
+      "bottom": 5636.9345703125,
+      "left": 2744
+    },
+    "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "H2",
+    "text": "We're just getting started",
+    "rect": {
+      "x": 40,
+      "y": 5601.234375,
+      "width": 310,
+      "height": 26.40625,
+      "top": 5601.234375,
+      "right": 350,
+      "bottom": 5627.640625,
+      "left": 40
+    },
+    "font": "24px / 26.4px Zagma, \"Zagma Fallback\", sans-serif",
+    "pad": "0px"
+  },
+  {
+    "tag": "P",
+    "text": "Follow along or reach out directly at\npress@waabi.ai|info@wa",
+    "rect": {
+      "x": 40,
+      "y": 5643.640625,
+      "width": 310,
+      "height": 39.1875,
+      "top": 5643.640625,
+      "right": 350,
+      "bottom": 5682.828125,
+      "left": 40
+    },
+    "font": "14px / 19.6px NeueHaas, \"NeueHaas Fallback\", serif",
+    "pad": "0px"
+  },
+  {
+    "statsChildren": [
+      {
+        "cls": "w-calc flex gap-30 max-lg:flex-col md:gap-48 xl:gap-240",
+        "text": "The stakes are real and rising.\nIt\u2019s time for an a",
+        "rect": {
+          "x": 40,
+          "y": 904,
+          "width": 310,
+          "height": 150.578125,
+          "top": 904,
+          "right": 350,
+          "bottom": 1054.578125,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "flex flex-col gap-y-48",
+        "text": "The stakes are real and rising.",
+        "rect": {
+          "x": 40,
+          "y": 904,
+          "width": 310,
+          "height": 61.1875,
+          "top": 904,
+          "right": 350,
+          "bottom": 965.1875,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "flex w-full text-balance",
+        "text": "The stakes are real and rising.",
+        "rect": {
+          "x": 40,
+          "y": 904,
+          "width": 310,
+          "height": 61.1875,
+          "top": 904,
+          "right": 350,
+          "bottom": 965.1875,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "max-lg:w-calc flex flex-col justify-end gap-30 lg:max-w-447 lg:gap-48 lg:pl-48",
+        "text": "It\u2019s time for an approach to safety that is design",
+        "rect": {
+          "x": 40,
+          "y": 995.1875,
+          "width": 310,
+          "height": 59.390625,
+          "top": 995.1875,
+          "right": 350,
+          "bottom": 1054.578125,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "whitespace-pre-line type-z-18 md:type-z-24 text-current/50",
+        "text": "It\u2019s time for an approach to safety that is design",
+        "rect": {
+          "x": 40,
+          "y": 995.1875,
+          "width": 310,
+          "height": 59.390625,
+          "top": 995.1875,
+          "right": 350,
+          "bottom": 1054.578125,
+          "left": 40
+        },
+        "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "w-calc",
+        "text": "number of lives lost each year in vehicle accident",
+        "rect": {
+          "x": 40,
+          "y": 1114.578125,
+          "width": 310,
+          "height": 486.046875,
+          "top": 1114.578125,
+          "right": 350,
+          "bottom": 1600.625,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "flex w-full flex-col",
+        "text": "number of lives lost each year in vehicle accident",
+        "rect": {
+          "x": 40,
+          "y": 1114.578125,
+          "width": 310,
+          "height": 486.046875,
+          "top": 1114.578125,
+          "right": 350,
+          "bottom": 1600.625,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "relative flex w-full border-t border-black/15 flex-col gap-20 pt-20 md:flex-row md:items-start md:justify-between md:gap-0 md:pt-40 pb-15 md:pb-30",
+        "text": "number of lives lost each year in vehicle accident",
+        "rect": {
+          "x": 40,
+          "y": 1114.578125,
+          "width": 310,
+          "height": 162.015625,
+          "top": 1114.578125,
+          "right": 350,
+          "bottom": 1276.59375,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "md:flex-1",
+        "text": "number of lives lost each year in vehicle accident",
+        "rect": {
+          "x": 40,
+          "y": 1135.578125,
+          "width": 310,
+          "height": 44.8125,
+          "top": 1135.578125,
+          "right": 350,
+          "bottom": 1180.390625,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "type-s-14 text-balance text-black/50 md:max-w-200",
+        "text": "number of lives lost each year in vehicle accident",
+        "rect": {
+          "x": 40,
+          "y": 1135.578125,
+          "width": 310,
+          "height": 44.8125,
+          "top": 1135.578125,
+          "right": 350,
+          "bottom": 1180.390625,
+          "left": 40
+        },
+        "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif"
+      },
+      {
+        "cls": "md:flex-1 md:text-right",
+        "text": "39,345",
+        "rect": {
+          "x": 40,
+          "y": 1200.390625,
+          "width": 310,
+          "height": 61.203125,
+          "top": 1200.390625,
+          "right": 350,
+          "bottom": 1261.59375,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "type-z-72 md:type-z-200 text-[#191818]",
+        "text": "39,345",
+        "rect": {
+          "x": 40,
+          "y": 1200.390625,
+          "width": 310,
+          "height": 61.203125,
+          "top": 1200.390625,
+          "right": 350,
+          "bottom": 1261.59375,
+          "left": 40
+        },
+        "font": "72px / 61.2px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "relative flex w-full border-t border-black/15 flex-col gap-20 pt-20 md:flex-row md:items-start md:justify-between md:gap-0 md:pt-40 pb-15 md:pb-30",
+        "text": "number of lives lost each year in large truck cras",
+        "rect": {
+          "x": 40,
+          "y": 1276.59375,
+          "width": 310,
+          "height": 162.015625,
+          "top": 1276.59375,
+          "right": 350,
+          "bottom": 1438.609375,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "md:flex-1",
+        "text": "number of lives lost each year in large truck cras",
+        "rect": {
+          "x": 40,
+          "y": 1297.59375,
+          "width": 310,
+          "height": 44.8125,
+          "top": 1297.59375,
+          "right": 350,
+          "bottom": 1342.40625,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "type-s-14 text-balance text-black/50 md:max-w-200",
+        "text": "number of lives lost each year in large truck cras",
+        "rect": {
+          "x": 40,
+          "y": 1297.59375,
+          "width": 310,
+          "height": 44.8125,
+          "top": 1297.59375,
+          "right": 350,
+          "bottom": 1342.40625,
+          "left": 40
+        },
+        "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif"
+      },
+      {
+        "cls": "md:flex-1 md:text-right",
+        "text": "5,472",
+        "rect": {
+          "x": 40,
+          "y": 1362.40625,
+          "width": 310,
+          "height": 61.203125,
+          "top": 1362.40625,
+          "right": 350,
+          "bottom": 1423.609375,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "type-z-72 md:type-z-200 text-[#191818]",
+        "text": "5,472",
+        "rect": {
+          "x": 40,
+          "y": 1362.40625,
+          "width": 310,
+          "height": 61.203125,
+          "top": 1362.40625,
+          "right": 350,
+          "bottom": 1423.609375,
+          "left": 40
+        },
+        "font": "72px / 61.2px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "relative flex w-full border-t border-black/15 flex-col gap-20 pt-20 md:flex-row md:items-start md:justify-between md:gap-0 md:pt-40 pb-15 md:pb-0",
+        "text": "percent of fatal truck crashes where human error w",
+        "rect": {
+          "x": 40,
+          "y": 1438.609375,
+          "width": 310,
+          "height": 162.015625,
+          "top": 1438.609375,
+          "right": 350,
+          "bottom": 1600.625,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "md:flex-1",
+        "text": "percent of fatal truck crashes where human error w",
+        "rect": {
+          "x": 40,
+          "y": 1459.609375,
+          "width": 310,
+          "height": 44.8125,
+          "top": 1459.609375,
+          "right": 350,
+          "bottom": 1504.421875,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "type-s-14 text-balance text-black/50 md:max-w-200",
+        "text": "percent of fatal truck crashes where human error w",
+        "rect": {
+          "x": 40,
+          "y": 1459.609375,
+          "width": 310,
+          "height": 44.8125,
+          "top": 1459.609375,
+          "right": 350,
+          "bottom": 1504.421875,
+          "left": 40
+        },
+        "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif"
+      },
+      {
+        "cls": "md:flex-1 md:text-right",
+        "text": "87%",
+        "rect": {
+          "x": 40,
+          "y": 1524.421875,
+          "width": 310,
+          "height": 61.203125,
+          "top": 1524.421875,
+          "right": 350,
+          "bottom": 1585.625,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "type-z-72 md:type-z-200 text-[#191818]",
+        "text": "87%",
+        "rect": {
+          "x": 40,
+          "y": 1524.421875,
+          "width": 310,
+          "height": 61.203125,
+          "top": 1524.421875,
+          "right": 350,
+          "bottom": 1585.625,
+          "left": 40
+        },
+        "font": "72px / 61.2px Zagma, \"Zagma Fallback\", sans-serif"
+      }
+    ]
+  },
+  {
+    "html": "<section id=\"\" class=\"bg-cream relative w-full pt-(--padding-y) text-black md:pt-[calc(var(--padding-y)*1.5)]\"><div class=\"w-calc flex flex-col items-center gap-48\"><div class=\"flex w-full justify-center text-balance md:max-w-525\"><h2 class=\"w-calc type-z-34 md:type-z-80 text-balance\"><span class=\"flex flex-col\"><span class=\"text-center\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Safety</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">is</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">core</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">our</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">DNA.</span><span></span></span></span></span></h2></div><div class=\"whitespace-pre-line type-z-24 mx-auto max-w-670 text-center text-current/50\"><span>The future of autonomous transportation requires us to build on established safety </span><span>constructs and leverage&nbsp;</span><span>transformative technologies that allow us to do more than what\u2019s previously been possible.</span></div></div><div class=\"w-calc relative flex gap-180 md:mt-102 md:pt-100 max-md:w-full max-md:flex-col-reverse max-md:gap-48 max-md:pt-48\"><div class=\"absolute top-0 left-1/2 h-full -translate-x-1/2 overflow-clip pb-[50svh] max-md:hidden\"><div class=\"flex items-center h-full flex-col justify-center\" style=\"transform:translateY(-100%)\"><div class=\"bg-pink h-full w-2 translate-y-12\"></div><div class=\"bg-pink size-12 rounded-full -mb-full translate-y-12\"></div></div></div><div class=\"flex h-full w-full gap-24 max-md:flex-col max-md:overflow-x-clip md:gap-90\"><div class=\"w-full pr-12 md:hidden\"><div class=\"flex items-center\" style=\"transform:translateX(-100%)\"><div class=\"bg-pink h-2 w-full\"></div><div class=\"bg-pink size-12 rounded-full -ml-full absolute right-0\"></div></div></div><div class=\"flex-center top-0 md:sticky md:h-svh\"><div class=\"flex items-baseline gap-4 md:gap-12\" style=\"transform: none;\"><div class=\"relative grid w-30 overflow-clip md:w-48\"><p class=\"area type-z-24 md:type-z-40\" style=\"transform:none\">0<!-- -->0</p></div><p class=\"type-s-12 text-current/50\">/<!-- -->3</p></div></div><div class=\"no-scrollbar flex gap-24 max-md:overflow-scroll max-md:pb-60 md:flex-col md:gap-90\"><div class=\"pointer-events-none flex w-full items-center md:min-h-[100svh] max-md:w-full max-md:shrink-0 max-md:px-40\" style=\"transform: none;\"><div class=\"flex h-fit flex-col gap-24 max-md:opacity-100!\" style=\"opacity: 0.15;\"><h2 class=\"type-z-40 pointer-events-auto max-w-290 max-md:text-center\">Safety from the inside out.</h2><div class=\"whitespace-pre-line type-s-15 prose-links pointer-events-auto text-current/50 max-md:text-center\"><span>Our governance structure ensures that every decision prioritizes safety. Every team member, from engineers to operators, has the authority to raise a concern. Our publicly shared </span><a href=\"https://research-assets.waabi.ai/Waabi%20VSSA/231030%20StAn%20Waabi%20Voluntary%20Safety%20Self-Assessment%2A.pdf\" target=\"_blank\" rel=\"noopener\"><span>VSSA</span></a><span> openly documents our strategy\u2014</span><span>giving everyone access to the approaches that guide our operations.</span></div></div></div><div class=\"pointer-events-none flex w-full items-center md:min-h-[100svh] max-md:w-full max-md:shrink-0 max-md:px-40 md:mt-[-50svh]\" style=\"transform: none;\"><div class=\"flex h-fit flex-col gap-24 max-md:opacity-100!\" style=\"opacity:0.15\"><h2 class=\"type-z-40 pointer-events-auto max-w-290 max-md:text-center\">Built different. Built safer.</h2><div class=\"whitespace-pre-line type-s-15 prose-links pointer-events-auto text-current/50 max-md:text-center\">Our simulation-first approach tests thousands of safety-critical scenarios before they ever happen on public roads, making every mile driven more valuable and safe.</div></div></div><div class=\"pointer-events-none flex w-full items-center md:min-h-[100svh] max-md:w-full max-md:shrink-0 max-md:px-40 md:mt-[-50svh]\" style=\"transform: none;\"><div class=\"flex h-fit flex-col gap-24 max-md:opacity-100!\" style=\"opacity:0.15\"><h2 class=\"type-z-40 pointer-events-auto max-w-290 max-md:text-center\">Pioneering new standards.</h2><div class=\"whitespace-pre-line type-s-15 prose-links pointer-events-auto text-current/50 max-md:text-center\"><span>We rigorously adhere to many established industry best practices while pioneering new methodologies where existing standards fall short. </span>Our work in simulation realism and Mixed Reality Testing is establishing benchmarks for the entire industry.</div></div></div></div></div><div class=\"flex-center w-full max-md:px-40 md:sticky md:top-0 md:h-svh md:py-100\"><div class=\"relative aspect-square w-full md:aspect-[525/600]\"><div class=\"relative grid h-full w-full overflow-clip rounded-[1.2rem] bg-black\" style=\"transform: none;\"></div></div></div></div></section>",
+    "children": [
+      {
+        "cls": "w-calc flex flex-col items-center gap-48",
+        "text": "Safety is core to our DNA.\nThe future of",
+        "rect": {
+          "x": 40,
+          "y": 1720.625,
+          "width": 310,
+          "height": 349.1875,
+          "top": 1720.625,
+          "right": 350,
+          "bottom": 2069.8125,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "flex w-full justify-center text-balance md:max-w-525",
+        "text": "Safety is core to our DNA.",
+        "rect": {
+          "x": 40,
+          "y": 1720.625,
+          "width": 310,
+          "height": 61.1875,
+          "top": 1720.625,
+          "right": 350,
+          "bottom": 1781.8125,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "whitespace-pre-line type-z-24 mx-auto max-w-670 text-center text-current/50",
+        "text": "The future of autonomous transportation ",
+        "rect": {
+          "x": 40,
+          "y": 1829.8125,
+          "width": 310,
+          "height": 240,
+          "top": 1829.8125,
+          "right": 350,
+          "bottom": 2069.8125,
+          "left": 40
+        },
+        "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "w-calc relative flex gap-180 md:mt-102 md:pt-100 max-md:w-full max-md:flex-col-reverse max-md:gap-48 max-md:pt-48",
+        "text": "00\n\n/3\n\nSafety from the inside out.\nOur ",
+        "rect": {
+          "x": 0,
+          "y": 2069.8125,
+          "width": 390,
+          "height": 850,
+          "top": 2069.8125,
+          "right": 390,
+          "bottom": 2919.8125,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "absolute top-0 left-1/2 h-full -translate-x-1/2 overflow-clip pb-[50svh] max-md:hidden",
+        "text": "",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "flex items-center h-full flex-col justify-center",
+        "text": "",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "bg-pink h-full w-2 translate-y-12",
+        "text": "",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "bg-pink size-12 rounded-full -mb-full translate-y-12",
+        "text": "",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "flex h-full w-full gap-24 max-md:flex-col max-md:overflow-x-clip md:gap-90",
+        "text": "00\n\n/3\n\nSafety from the inside out.\nOur ",
+        "rect": {
+          "x": 0,
+          "y": 2475.8125,
+          "width": 390,
+          "height": 444,
+          "top": 2475.8125,
+          "right": 390,
+          "bottom": 2919.8125,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "w-full pr-12 md:hidden",
+        "text": "",
+        "rect": {
+          "x": 0,
+          "y": 2475.8125,
+          "width": 390,
+          "height": 2,
+          "top": 2475.8125,
+          "right": 390,
+          "bottom": 2477.8125,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "flex items-center",
+        "text": "",
+        "rect": {
+          "x": -378,
+          "y": 2475.8125,
+          "width": 378,
+          "height": 2,
+          "top": 2475.8125,
+          "right": 0,
+          "bottom": 2477.8125,
+          "left": -378
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "bg-pink h-2 w-full",
+        "text": "",
+        "rect": {
+          "x": -378,
+          "y": 2475.8125,
+          "width": 378,
+          "height": 2,
+          "top": 2475.8125,
+          "right": 0,
+          "bottom": 2477.8125,
+          "left": -378
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "bg-pink size-12 rounded-full -ml-full absolute right-0",
+        "text": "",
+        "rect": {
+          "x": -12,
+          "y": 2470.8125,
+          "width": 12,
+          "height": 12,
+          "top": 2470.8125,
+          "right": 0,
+          "bottom": 2482.8125,
+          "left": -12
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "flex-center top-0 md:sticky md:h-svh",
+        "text": "00\n\n/3",
+        "rect": {
+          "x": 0,
+          "y": 2501.8125,
+          "width": 390,
+          "height": 30,
+          "top": 2501.8125,
+          "right": 390,
+          "bottom": 2531.8125,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "flex items-baseline gap-4 md:gap-12",
+        "text": "00\n\n/3",
+        "rect": {
+          "x": 171.484375,
+          "y": 2501.8125,
+          "width": 47.015625,
+          "height": 30,
+          "top": 2501.8125,
+          "right": 218.5,
+          "bottom": 2531.8125,
+          "left": 171.484375
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "relative grid w-30 overflow-clip md:w-48",
+        "text": "00",
+        "rect": {
+          "x": 171.484375,
+          "y": 2501.8125,
+          "width": 30,
+          "height": 30,
+          "top": 2501.8125,
+          "right": 201.484375,
+          "bottom": 2531.8125,
+          "left": 171.484375
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "area type-z-24 md:type-z-40",
+        "text": "00",
+        "rect": {
+          "x": 171.484375,
+          "y": 2501.8125,
+          "width": 30,
+          "height": 30,
+          "top": 2501.8125,
+          "right": 201.484375,
+          "bottom": 2531.8125,
+          "left": 171.484375
+        },
+        "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "type-s-12 text-current/50",
+        "text": "/3",
+        "rect": {
+          "x": 205.484375,
+          "y": 2509.8125,
+          "width": 13.015625,
+          "height": 16.796875,
+          "top": 2509.8125,
+          "right": 218.5,
+          "bottom": 2526.609375,
+          "left": 205.484375
+        },
+        "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif"
+      },
+      {
+        "cls": "no-scrollbar flex gap-24 max-md:overflow-scroll max-md:pb-60 md:flex-col md:gap-90",
+        "text": "Safety from the inside out.\nOur governan",
+        "rect": {
+          "x": 0,
+          "y": 2555.8125,
+          "width": 390,
+          "height": 364,
+          "top": 2555.8125,
+          "right": 390,
+          "bottom": 2919.8125,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "pointer-events-none flex w-full items-center md:min-h-[100svh] max-md:w-full max-md:shrink-0 max-md:px-40",
+        "text": "Safety from the inside out.\nOur governan",
+        "rect": {
+          "x": 0,
+          "y": 2555.8125,
+          "width": 390,
+          "height": 304,
+          "top": 2555.8125,
+          "right": 390,
+          "bottom": 2859.8125,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "flex h-fit flex-col gap-24 max-md:opacity-100!",
+        "text": "Safety from the inside out.\nOur governan",
+        "rect": {
+          "x": 40,
+          "y": 2555.8125,
+          "width": 310,
+          "height": 304,
+          "top": 2555.8125,
+          "right": 350,
+          "bottom": 2859.8125,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "whitespace-pre-line type-s-15 prose-links pointer-events-auto text-current/50 max-md:text-center",
+        "text": "Our governance structure ensures that ev",
+        "rect": {
+          "x": 40,
+          "y": 2667.8125,
+          "width": 310,
+          "height": 192,
+          "top": 2667.8125,
+          "right": 350,
+          "bottom": 2859.8125,
+          "left": 40
+        },
+        "font": "500 15px / 24px NeueHaas, \"NeueHaas Fallback\", serif"
+      },
+      {
+        "cls": "pointer-events-none flex w-full items-center md:min-h-[100svh] max-md:w-full max-md:shrink-0 max-md:px-40 md:mt-[-50svh]",
+        "text": "Built different. Built safer.\nOur simula",
+        "rect": {
+          "x": 414,
+          "y": 2555.8125,
+          "width": 390,
+          "height": 304,
+          "top": 2555.8125,
+          "right": 804,
+          "bottom": 2859.8125,
+          "left": 414
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "flex h-fit flex-col gap-24 max-md:opacity-100!",
+        "text": "Built different. Built safer.\nOur simula",
+        "rect": {
+          "x": 454,
+          "y": 2591.8125,
+          "width": 310,
+          "height": 232,
+          "top": 2591.8125,
+          "right": 764,
+          "bottom": 2823.8125,
+          "left": 454
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "whitespace-pre-line type-s-15 prose-links pointer-events-auto text-current/50 max-md:text-center",
+        "text": "Our simulation-first approach tests thou",
+        "rect": {
+          "x": 454,
+          "y": 2703.8125,
+          "width": 310,
+          "height": 120,
+          "top": 2703.8125,
+          "right": 764,
+          "bottom": 2823.8125,
+          "left": 454
+        },
+        "font": "500 15px / 24px NeueHaas, \"NeueHaas Fallback\", serif"
+      },
+      {
+        "cls": "pointer-events-none flex w-full items-center md:min-h-[100svh] max-md:w-full max-md:shrink-0 max-md:px-40 md:mt-[-50svh]",
+        "text": "Pioneering new standards.\nWe rigorously ",
+        "rect": {
+          "x": 828,
+          "y": 2555.8125,
+          "width": 390,
+          "height": 304,
+          "top": 2555.8125,
+          "right": 1218,
+          "bottom": 2859.8125,
+          "left": 828
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "flex h-fit flex-col gap-24 max-md:opacity-100!",
+        "text": "Pioneering new standards.\nWe rigorously ",
+        "rect": {
+          "x": 868,
+          "y": 2567.8125,
+          "width": 310,
+          "height": 280,
+          "top": 2567.8125,
+          "right": 1178,
+          "bottom": 2847.8125,
+          "left": 868
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "whitespace-pre-line type-s-15 prose-links pointer-events-auto text-current/50 max-md:text-center",
+        "text": "We rigorously adhere to many established",
+        "rect": {
+          "x": 868,
+          "y": 2679.8125,
+          "width": 310,
+          "height": 168,
+          "top": 2679.8125,
+          "right": 1178,
+          "bottom": 2847.8125,
+          "left": 868
+        },
+        "font": "500 15px / 24px NeueHaas, \"NeueHaas Fallback\", serif"
+      },
+      {
+        "cls": "flex-center w-full max-md:px-40 md:sticky md:top-0 md:h-svh md:py-100",
+        "text": "",
+        "rect": {
+          "x": 0,
+          "y": 2117.8125,
+          "width": 390,
+          "height": 310,
+          "top": 2117.8125,
+          "right": 390,
+          "bottom": 2427.8125,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "relative aspect-square w-full md:aspect-[525/600]",
+        "text": "",
+        "rect": {
+          "x": 40,
+          "y": 2117.8125,
+          "width": 310,
+          "height": 310,
+          "top": 2117.8125,
+          "right": 350,
+          "bottom": 2427.8125,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      },
+      {
+        "cls": "relative grid h-full w-full overflow-clip rounded-[1.2rem] bg-black",
+        "text": "",
+        "rect": {
+          "x": 40,
+          "y": 2117.8125,
+          "width": 310,
+          "height": 310,
+          "top": 2117.8125,
+          "right": 350,
+          "bottom": 2427.8125,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif"
+      }
+    ]
+  }
+]

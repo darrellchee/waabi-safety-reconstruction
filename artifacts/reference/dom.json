@@ -1,0 +1,1124 @@
+[
+  {
+    "tag": "P",
+    "text": "Let's talk autonomous trucking",
+    "class": "type-s-11 md:type-s-12 text-dark whitespace-nowrap",
+    "rect": {
+      "x": 562.421875,
+      "y": 12,
+      "width": 182.828125,
+      "height": 16.796875,
+      "top": 12,
+      "right": 745.25,
+      "bottom": 28.796875,
+      "left": 562.421875
+    },
+    "css": {
+      "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif",
+      "color": "rgb(25, 24, 24)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "HEADER",
+    "text": "Safety",
+    "class": "css-header fixed right-0 left-0 z-500 mx-auto flex flex-col items-center justify-center sm:top-34 sm:w-338 sm:gap-10 top-24 w-[calc(100vw-2.4rem)]",
+    "rect": {
+      "x": 551,
+      "y": 76,
+      "width": 338,
+      "height": 55,
+      "top": 76,
+      "right": 889,
+      "bottom": 131,
+      "left": 551
+    },
+    "css": {
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(25, 24, 24)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H1",
+    "text": "Redefining safety. ",
+    "class": "text-[5.5rem] leading-[90%] tracking-[-0.22rem] md:text-[max(9rem,min(9vw,13rem))] md:tracking-[max(-0.6rem,min(-0.3vw,-0.52rem))] text-balance",
+    "rect": {
+      "x": 103,
+      "y": 120,
+      "width": 822.65625,
+      "height": 233.28125,
+      "top": 120,
+      "right": 925.65625,
+      "bottom": 353.28125,
+      "left": 103
+    },
+    "css": {
+      "font": "129.6px / 116.64px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "SECTION",
+    "text": "The stakes are real and rising.\nIt\u2019s time for an approach to safety that is designed for the realities of our roads and the possibilities of Physical AI.\nnumber of lives lost each year in vehicle accidents in the United States.\n39,345\nnumber of lives lost each year in large truck crashes in the United States.\n5,472\npercent of fatal truck crashes where human error was a critical factor.\n87%",
+    "class": "relative flex w-full flex-col gap-[var(--padding-y)] overflow-clip bg-white",
+    "rect": {
+      "x": 0,
+      "y": 1020,
+      "width": 1440,
+      "height": 957,
+      "top": 1020,
+      "right": 1440,
+      "bottom": 1977,
+      "left": 0
+    },
+    "css": {
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(25, 24, 24)",
+      "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "The stakes are real and rising.",
+    "class": "type-z-34 md:type-z-80 text-balance",
+    "rect": {
+      "x": 103,
+      "y": 1020,
+      "width": 546.984375,
+      "height": 144,
+      "top": 1020,
+      "right": 649.984375,
+      "bottom": 1164,
+      "left": 103
+    },
+    "css": {
+      "font": "80px / 72px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(25, 24, 24)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "SECTION",
+    "text": "Safety is core to our DNA.\nThe future of autonomous transportation requires us to build on established safety constructs and leverage\u00a0transformative technologies that allow us to do more than what\u2019s previously been possible.\n\n03\n\n/3\n\nSafety from the inside out.\nOur governance structure ensures that every decision prioritizes safety. Every team member, from engineers to operators, has the authority to raise a concern. Our publicly shared VSSA openly documents our strategy\u2014giving everyone access to the approaches that guide our operations.\nBuilt different. Built safer.\nOur simulation-first approach tests thousands of safety-critical scenarios before they ever happen on public roads, making every mile driven more valuable and safe.\nPioneering new standards.\nWe rigorously adhere to many established industry best practices while pioneering new methodologies where existing standards fall short. Our work in simulation realism and Mixed Reality Testing is establishing benchmarks for the entire",
+    "class": "bg-cream relative w-full pt-(--padding-y) text-black md:pt-[calc(var(--padding-y)*1.5)]",
+    "rect": {
+      "x": 0,
+      "y": 2097,
+      "width": 1440,
+      "height": 2674,
+      "top": 2097,
+      "right": 1440,
+      "bottom": 4771,
+      "left": 0
+    },
+    "css": {
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(0, 0, 0)",
+      "background": "rgb(232, 230, 227) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "180px 0px 0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Safety is core to our DNA.",
+    "class": "w-calc type-z-34 md:type-z-80 text-balance",
+    "rect": {
+      "x": 457.484375,
+      "y": 2277,
+      "width": 525,
+      "height": 144,
+      "top": 2277,
+      "right": 982.484375,
+      "bottom": 2421,
+      "left": 457.484375
+    },
+    "css": {
+      "font": "80px / 72px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "03",
+    "class": "area type-z-24 md:type-z-40",
+    "rect": {
+      "x": 103,
+      "y": 3419,
+      "width": 48,
+      "height": 44,
+      "top": 3419,
+      "right": 151,
+      "bottom": 3463,
+      "left": 103
+    },
+    "css": {
+      "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "/3",
+    "class": "type-s-12 text-current/50",
+    "rect": {
+      "x": 163,
+      "y": 3439,
+      "width": 13.015625,
+      "height": 16.796875,
+      "top": 3439,
+      "right": 176.015625,
+      "bottom": 3455.796875,
+      "left": 163
+    },
+    "css": {
+      "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif",
+      "color": "oklab(0 0 0 / 0.5)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Safety from the inside out.",
+    "class": "type-z-40 pointer-events-auto max-w-290 max-md:text-center",
+    "rect": {
+      "x": 266.015625,
+      "y": 3513,
+      "width": 290,
+      "height": 88,
+      "top": 3513,
+      "right": 556.015625,
+      "bottom": 3601,
+      "left": 266.015625
+    },
+    "css": {
+      "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Built different. Built safer.",
+    "class": "type-z-40 pointer-events-auto max-w-290 max-md:text-center",
+    "rect": {
+      "x": 266.015625,
+      "y": 4077,
+      "width": 290,
+      "height": 88,
+      "top": 4077,
+      "right": 556.015625,
+      "bottom": 4165,
+      "left": 266.015625
+    },
+    "css": {
+      "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Pioneering new standards.",
+    "class": "type-z-40 pointer-events-auto max-w-290 max-md:text-center",
+    "rect": {
+      "x": 266.015625,
+      "y": 4793,
+      "width": 290,
+      "height": 88,
+      "top": 4793,
+      "right": 556.015625,
+      "bottom": 4881,
+      "left": 266.015625
+    },
+    "css": {
+      "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "SECTION",
+    "text": "Technology designed to protect.\nLearn how our technology is delivering a safer path forward and setting a new standard for the entire AV industry.\nExplore our approach\nWaabi Driver\n\nOur end-to-end trained system is fully interpretable, and can see exactly why a decision was made. Designed for generalizability, Waabi Driver adapts to new scenarios while maintaining multiple layers of redundancy across both hardware and software. This ensures that if a fault ever occurs, the system defaults to minimal-risk maneuvers.\n\nWaabi World\n\nOur high-fidelity neural simulator is capable of replicating both routine situations and rare edge cases with a high degree of realism.. Efficient, comprehensive testing allows us to launch responsibly and continually improve performance in the highest-risk scenarios.\n\nMixed Reality Testing\n\nBy combining real trucks with real-time synthetic scenarios, we\u2019re unlocking unlimited testing possibilities that were previously impossible to achieve safely or practicall",
+    "class": "relative flex w-full flex-col gap-(--padding-y) overflow-clip bg-white",
+    "rect": {
+      "x": 0,
+      "y": 4891,
+      "width": 1440,
+      "height": 1104,
+      "top": 4891,
+      "right": 1440,
+      "bottom": 5995,
+      "left": 0
+    },
+    "css": {
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(25, 24, 24)",
+      "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Technology designed to protect.",
+    "class": "type-z-34 md:type-z-80 text-balance",
+    "rect": {
+      "x": 103,
+      "y": 4891,
+      "width": 546.984375,
+      "height": 216,
+      "top": 4891,
+      "right": 649.984375,
+      "bottom": 5107,
+      "left": 103
+    },
+    "css": {
+      "font": "80px / 72px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(25, 24, 24)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "SECTION",
+    "text": "Waabi Driver\n\nOur end-to-end trained system is fully interpretable, and can see exactly why a decision was made. Designed for generalizability, Waabi Driver adapts to new scenarios while maintaining multiple layers of redundancy across both hardware and software. This ensures that if a fault ever occurs, the system defaults to minimal-risk maneuvers.\n\nWaabi World\n\nOur high-fidelity neural simulator is capable of replicating both routine situations and rare edge cases with a high degree of realism.. Efficient, comprehensive testing allows us to launch responsibly and continually improve performance in the highest-risk scenarios.\n\nMixed Reality Testing\n\nBy combining real trucks with real-time synthetic scenarios, we\u2019re unlocking unlimited testing possibilities that were previously impossible to achieve safely or practically. MRT allows us to inject rare and dangerous situations into live operations without putting people or cargo at risk.",
+    "class": "flex w-full gap-24 p-24 max-md:flex-col",
+    "rect": {
+      "x": 0,
+      "y": 5227,
+      "width": 1440,
+      "height": 768,
+      "top": 5227,
+      "right": 1440,
+      "bottom": 5995,
+      "left": 0
+    },
+    "css": {
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(25, 24, 24)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "24px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi Driver",
+    "class": "type-z-24 md:type-z-40 text-balance md:pr-50",
+    "rect": {
+      "x": 72,
+      "y": 5895,
+      "width": 400,
+      "height": 44,
+      "top": 5895,
+      "right": 472,
+      "bottom": 5939,
+      "left": 72
+    },
+    "css": {
+      "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px 50px 0px 0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "Our end-to-end trained system is fully interpretable, and can see exactly why a decision was made. Designed for generalizability, Waabi Driver adapts to new scenarios while maintaining multiple layers of redundancy across both hardware and software. This ensures that if a fault ever occurs, the system defaults to minimal-risk maneuvers.",
+    "class": "type-s-14 md:type-s-15 text-white/60",
+    "rect": {
+      "x": 72,
+      "y": 5955,
+      "width": 400,
+      "height": 168,
+      "top": 5955,
+      "right": 472,
+      "bottom": 6123,
+      "left": 72
+    },
+    "css": {
+      "font": "500 15px / 24px NeueHaas, \"NeueHaas Fallback\", serif",
+      "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi World",
+    "class": "type-z-24 md:type-z-40 text-balance md:pr-50",
+    "rect": {
+      "x": 1118.84375,
+      "y": 6119,
+      "width": 400,
+      "height": 44,
+      "top": 6119,
+      "right": 1518.84375,
+      "bottom": 6163,
+      "left": 1118.84375
+    },
+    "css": {
+      "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px 50px 0px 0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "Our high-fidelity neural simulator is capable of replicating both routine situations and rare edge cases with a high degree of realism.. Efficient, comprehensive testing allows us to launch responsibly and continually improve performance in the highest-risk scenarios.",
+    "class": "type-s-14 md:type-s-15 text-white/60",
+    "rect": {
+      "x": 1118.84375,
+      "y": 6179,
+      "width": 400,
+      "height": 144,
+      "top": 6179,
+      "right": 1518.84375,
+      "bottom": 6323,
+      "left": 1118.84375
+    },
+    "css": {
+      "font": "500 15px / 24px NeueHaas, \"NeueHaas Fallback\", serif",
+      "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Mixed Reality Testing",
+    "class": "type-z-24 md:type-z-40 text-balance md:pr-50",
+    "rect": {
+      "x": 1303.421875,
+      "y": 6275,
+      "width": 400,
+      "height": 88,
+      "top": 6275,
+      "right": 1703.421875,
+      "bottom": 6363,
+      "left": 1303.421875
+    },
+    "css": {
+      "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px 50px 0px 0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "By combining real trucks with real-time synthetic scenarios, we\u2019re unlocking unlimited testing possibilities that were previously impossible to achieve safely or practically. MRT allows us to inject rare and dangerous situations into live operations without putting people or cargo at risk.",
+    "class": "type-s-14 md:type-s-15 text-white/60",
+    "rect": {
+      "x": 1303.421875,
+      "y": 6379,
+      "width": 400,
+      "height": 144,
+      "top": 6379,
+      "right": 1703.421875,
+      "bottom": 6523,
+      "left": 1303.421875
+    },
+    "css": {
+      "font": "500 15px / 24px NeueHaas, \"NeueHaas Fallback\", serif",
+      "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "SECTION",
+    "text": "01\n\n/4\n\nSafety-first best practices.\nDesign\n\nWell-defined requirements for each capability, with multiple layers of hardware and software redundancy.\n\n02\n\n/4\n\nSafety-first best practices.\nTesting & Validation\n\nFrom simulation to closed course testing to low exposure driving, and finally, the public road. We only advance when safety criteria are met.\n\n03\n\n/4\n\nSafety-first best practices.\nDeployment\n\nStructured releases to ensure readiness before any expansion.\n\n04\n\n/4\n\nSafety-first best practices.\nMonitoring\n\nContinuous performance tracking and immediate safety-critical handling within the onboard system.",
+    "class": "flex flex-col bg-black text-white",
+    "rect": {
+      "x": 0,
+      "y": 6115,
+      "width": 1440,
+      "height": 900,
+      "top": 6115,
+      "right": 1440,
+      "bottom": 7015,
+      "left": 0
+    },
+    "css": {
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "01",
+    "class": "area type-z-24 md:type-z-40",
+    "rect": {
+      "x": 103,
+      "y": 6629,
+      "width": 48,
+      "height": 44,
+      "top": 6629,
+      "right": 151,
+      "bottom": 6673,
+      "left": 103
+    },
+    "css": {
+      "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "/4",
+    "class": "type-s-12 text-current/50",
+    "rect": {
+      "x": 163,
+      "y": 6649,
+      "width": 12.640625,
+      "height": 16.796875,
+      "top": 6649,
+      "right": 175.640625,
+      "bottom": 6665.796875,
+      "left": 163
+    },
+    "css": {
+      "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "Well-defined requirements for each capability, with multiple layers of hardware and software redundancy.",
+    "class": "type-s-14 md:type-s-15 text-current/60 md:max-w-368",
+    "rect": {
+      "x": 103,
+      "y": 6785,
+      "width": 368,
+      "height": 72,
+      "top": 6785,
+      "right": 471,
+      "bottom": 6857,
+      "left": 103
+    },
+    "css": {
+      "font": "500 15px / 24px NeueHaas, \"NeueHaas Fallback\", serif",
+      "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "02",
+    "class": "area type-z-24 md:type-z-40",
+    "rect": {
+      "x": 1543,
+      "y": 6629,
+      "width": 48,
+      "height": 44,
+      "top": 6629,
+      "right": 1591,
+      "bottom": 6673,
+      "left": 1543
+    },
+    "css": {
+      "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "/4",
+    "class": "type-s-12 text-current/50",
+    "rect": {
+      "x": 1603,
+      "y": 6649,
+      "width": 12.640625,
+      "height": 16.796875,
+      "top": 6649,
+      "right": 1615.640625,
+      "bottom": 6665.796875,
+      "left": 1603
+    },
+    "css": {
+      "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "From simulation to closed course testing to low exposure driving, and finally, the public road. We only advance when safety criteria are met.",
+    "class": "type-s-14 md:type-s-15 text-current/60 md:max-w-368",
+    "rect": {
+      "x": 1543,
+      "y": 6785,
+      "width": 368,
+      "height": 72,
+      "top": 6785,
+      "right": 1911,
+      "bottom": 6857,
+      "left": 1543
+    },
+    "css": {
+      "font": "500 15px / 24px NeueHaas, \"NeueHaas Fallback\", serif",
+      "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "03",
+    "class": "area type-z-24 md:type-z-40",
+    "rect": {
+      "x": 2983,
+      "y": 6653,
+      "width": 48,
+      "height": 44,
+      "top": 6653,
+      "right": 3031,
+      "bottom": 6697,
+      "left": 2983
+    },
+    "css": {
+      "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "/4",
+    "class": "type-s-12 text-current/50",
+    "rect": {
+      "x": 3043,
+      "y": 6673,
+      "width": 12.640625,
+      "height": 16.796875,
+      "top": 6673,
+      "right": 3055.640625,
+      "bottom": 6689.796875,
+      "left": 3043
+    },
+    "css": {
+      "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "Structured releases to ensure readiness before any expansion.",
+    "class": "type-s-14 md:type-s-15 text-current/60 md:max-w-368",
+    "rect": {
+      "x": 2983,
+      "y": 6809,
+      "width": 368,
+      "height": 48,
+      "top": 6809,
+      "right": 3351,
+      "bottom": 6857,
+      "left": 2983
+    },
+    "css": {
+      "font": "500 15px / 24px NeueHaas, \"NeueHaas Fallback\", serif",
+      "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "04",
+    "class": "area type-z-24 md:type-z-40",
+    "rect": {
+      "x": 4423,
+      "y": 6653,
+      "width": 48.453125,
+      "height": 44,
+      "top": 6653,
+      "right": 4471.453125,
+      "bottom": 6697,
+      "left": 4423
+    },
+    "css": {
+      "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "/4",
+    "class": "type-s-12 text-current/50",
+    "rect": {
+      "x": 4483,
+      "y": 6673,
+      "width": 12.640625,
+      "height": 16.796875,
+      "top": 6673,
+      "right": 4495.640625,
+      "bottom": 6689.796875,
+      "left": 4483
+    },
+    "css": {
+      "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif",
+      "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "Continuous performance tracking and immediate safety-critical handling within the onboard system.",
+    "class": "type-s-14 md:type-s-15 text-current/60 md:max-w-368",
+    "rect": {
+      "x": 4423,
+      "y": 6809,
+      "width": 368,
+      "height": 48,
+      "top": 6809,
+      "right": 4791,
+      "bottom": 6857,
+      "left": 4423
+    },
+    "css": {
+      "font": "500 15px / 24px NeueHaas, \"NeueHaas Fallback\", serif",
+      "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "SECTION",
+    "text": "Insights\n\nExplore product deep dives, behind-the-scenes perspectives, and the ideas shaping the future of autonomy.\n\nView all\nCompany news\nTrucks\nOctober 14, 2026\nWaabi and Warrior Logistics partner on autonomous trucking operations in Texas\nCompany news\nOctober 5, 2026\nVolvo and Waabi Kick Off Customer Operations in Texas, Starting with Warp\nCompany news\nSeptember 22, 2026\nBuilt to generalize. Proven on I-35.\nCompany news\nSeptember 15, 2026\n80% Growth on Long Haul's Toughest Corridor\nJune 26, 2026\nWaabi crosses the next frontier of generalization, unlocking truly scalable AVs\nResearch\nApril 22, 2026\nAll You Need to Know About Self-Driving | CVPR Tutorial 2026\nCompany news\nJanuary 28, 2026\nWaabi secures $1 Billion in new funding to lead Physical AI revolution\nTechnology\nCompany news\nDecember 19, 2025\nFrom closed course to public roads: The path to driverless\nTechnology\nCompany news\nNovember 25, 2025\nWaabi unlocks direct-to-customer model with surface street driving capabilities",
+    "class": "relative flex w-full flex-col relative w-full overflow-clip bg-(--background)",
+    "rect": {
+      "x": 0,
+      "y": 7135,
+      "width": 1440,
+      "height": 698.5,
+      "top": 7135,
+      "right": 1440,
+      "bottom": 7833.5,
+      "left": 0
+    },
+    "css": {
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(25, 24, 24)",
+      "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Insights",
+    "class": "w-calc type-z-34 md:type-z-80 text-balance",
+    "rect": {
+      "x": 103,
+      "y": 7135,
+      "width": 1233.984375,
+      "height": 72,
+      "top": 7135,
+      "right": 1336.984375,
+      "bottom": 7207,
+      "left": 103
+    },
+    "css": {
+      "font": "80px / 72px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(25, 24, 24)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "Explore product deep dives, behind-the-scenes perspectives, and the ideas shaping the future of autonomy.",
+    "class": "type-s-14 md:type-s-15 text-balance text-black/50",
+    "rect": {
+      "x": 103,
+      "y": 7255,
+      "width": 616.984375,
+      "height": 48,
+      "top": 7255,
+      "right": 719.984375,
+      "bottom": 7303,
+      "left": 103
+    },
+    "css": {
+      "font": "500 15px / 24px NeueHaas, \"NeueHaas Fallback\", serif",
+      "color": "oklab(0 0 0 / 0.5)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi and Warrior Logistics partner on autonomous trucking operations in Texas",
+    "class": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+    "rect": {
+      "x": 103,
+      "y": 7948.5,
+      "width": 450,
+      "height": 60,
+      "top": 7948.5,
+      "right": 553,
+      "bottom": 8008.5,
+      "left": 103
+    },
+    "css": {
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(25, 24, 24)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Volvo and Waabi Kick Off Customer Operations in Texas, Starting with Warp",
+    "class": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+    "rect": {
+      "x": 577,
+      "y": 8148.5,
+      "width": 450,
+      "height": 60,
+      "top": 8148.5,
+      "right": 1027,
+      "bottom": 8208.5,
+      "left": 577
+    },
+    "css": {
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(25, 24, 24)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Built to generalize. Proven on I-35.",
+    "class": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+    "rect": {
+      "x": 1051,
+      "y": 8348.5,
+      "width": 352.453125,
+      "height": 30,
+      "top": 8348.5,
+      "right": 1403.453125,
+      "bottom": 8378.5,
+      "left": 1051
+    },
+    "css": {
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(25, 24, 24)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "80% Growth on Long Haul's Toughest Corridor",
+    "class": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+    "rect": {
+      "x": 1525,
+      "y": 8548.5,
+      "width": 450,
+      "height": 60,
+      "top": 8548.5,
+      "right": 1975,
+      "bottom": 8608.5,
+      "left": 1525
+    },
+    "css": {
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(25, 24, 24)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi crosses the next frontier of generalization, unlocking truly scalable AVs",
+    "class": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+    "rect": {
+      "x": 1999,
+      "y": 8739.296875,
+      "width": 450,
+      "height": 60,
+      "top": 8739.296875,
+      "right": 2449,
+      "bottom": 8799.296875,
+      "left": 1999
+    },
+    "css": {
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(25, 24, 24)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "All You Need to Know About Self-Driving | CVPR Tutorial 2026",
+    "class": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+    "rect": {
+      "x": 2473,
+      "y": 8948.5,
+      "width": 450,
+      "height": 60,
+      "top": 8948.5,
+      "right": 2923,
+      "bottom": 9008.5,
+      "left": 2473
+    },
+    "css": {
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(25, 24, 24)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi secures $1 Billion in new funding to lead Physical AI revolution",
+    "class": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+    "rect": {
+      "x": 2947,
+      "y": 9148.5,
+      "width": 450,
+      "height": 60,
+      "top": 9148.5,
+      "right": 3397,
+      "bottom": 9208.5,
+      "left": 2947
+    },
+    "css": {
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(25, 24, 24)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "From closed course to public roads: The path to driverless",
+    "class": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+    "rect": {
+      "x": 3421,
+      "y": 9348.5,
+      "width": 450,
+      "height": 60,
+      "top": 9348.5,
+      "right": 3871,
+      "bottom": 9408.5,
+      "left": 3421
+    },
+    "css": {
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(25, 24, 24)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi unlocks direct-to-customer model with surface street driving capabilities",
+    "class": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+    "rect": {
+      "x": 3895,
+      "y": 9548.5,
+      "width": 450,
+      "height": 60,
+      "top": 9548.5,
+      "right": 4345,
+      "bottom": 9608.5,
+      "left": 3895
+    },
+    "css": {
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(25, 24, 24)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "FOOTER",
+    "text": "We're just getting started\n\nFollow along or reach out directly at\npress@waabi.ai|info@waabi.ai\n\nAbout us\nHome\nSafety\nResearch\nCompany\nCareers\nInsights\n\u00a9 2026 Waabi. All Rights Reserved.\nPrivacy Policy",
+    "class": "relative w-full overflow-clip",
+    "rect": {
+      "x": 0,
+      "y": 7953.5,
+      "width": 1440,
+      "height": 600,
+      "top": 7953.5,
+      "right": 1440,
+      "bottom": 8553.5,
+      "left": 0
+    },
+    "css": {
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(25, 24, 24)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "VIDEO",
+    "text": "",
+    "class": "size-full object-fill",
+    "rect": {
+      "x": 0,
+      "y": 7753.5,
+      "width": 1440,
+      "height": 600,
+      "top": 7753.5,
+      "right": 1440,
+      "bottom": 8353.5,
+      "left": 0
+    },
+    "css": {
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": "https://static.ext.waabi.ai/Waabi_System_LightTunnel_1.mp4"
+  },
+  {
+    "tag": "CANVAS",
+    "text": "",
+    "class": "pointer-events-none size-full",
+    "rect": {
+      "x": 0,
+      "y": 7753.5,
+      "width": 1440,
+      "height": 600,
+      "top": 7753.5,
+      "right": 1440,
+      "bottom": 8353.5,
+      "left": 0
+    },
+    "css": {
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "We're just getting started",
+    "class": "text-[2.4rem] leading-[110%] tracking-[-0.072rem] text-balance md:max-w-[40%] md:text-[4rem] md:tracking-[-0.12rem]",
+    "rect": {
+      "x": 103,
+      "y": 7833.5,
+      "width": 273.59375,
+      "height": 88,
+      "top": 7833.5,
+      "right": 376.59375,
+      "bottom": 7921.5,
+      "left": 103
+    },
+    "css": {
+      "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "Follow along or reach out directly at\npress@waabi.ai|info@waabi.ai",
+    "class": "font-neue text-[1.4rem] leading-[140%] tracking-[0.028rem] md:text-[1.5rem] md:tracking-[0.015rem]",
+    "rect": {
+      "x": 103,
+      "y": 7937.5,
+      "width": 684,
+      "height": 42,
+      "top": 7937.5,
+      "right": 787,
+      "bottom": 7979.5,
+      "left": 103
+    },
+    "css": {
+      "font": "15px / 21px NeueHaas, \"NeueHaas Fallback\", serif",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "padding": "0px"
+    },
+    "src": null
+  }
+]

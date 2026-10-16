@@ -1,0 +1,203 @@
+[
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "name": "desktop-1440",
+    "sections": [
+      {
+        "id": "top",
+        "y": 0,
+        "height": 900
+      },
+      {
+        "id": "stakes",
+        "y": 1020,
+        "height": 957
+      },
+      {
+        "id": "philosophy",
+        "y": 2097,
+        "height": 2674
+      },
+      {
+        "id": "technology",
+        "y": 4891,
+        "height": 1104
+      },
+      {
+        "id": "practices",
+        "y": 6115,
+        "height": 900
+      },
+      {
+        "id": "insights",
+        "y": 7135,
+        "height": 717
+      }
+    ]
+  },
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "name": "desktop-1920",
+    "sections": [
+      {
+        "id": "top",
+        "y": 0,
+        "height": 1080
+      },
+      {
+        "id": "stakes",
+        "y": 1200,
+        "height": 957
+      },
+      {
+        "id": "philosophy",
+        "y": 2277,
+        "height": 3034
+      },
+      {
+        "id": "technology",
+        "y": 5431,
+        "height": 1104
+      },
+      {
+        "id": "practices",
+        "y": 6655,
+        "height": 1080
+      },
+      {
+        "id": "insights",
+        "y": 7855,
+        "height": 717
+      }
+    ]
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "name": "tablet",
+    "sections": [
+      {
+        "id": "top",
+        "y": 0,
+        "height": 1024
+      },
+      {
+        "id": "stakes",
+        "y": 1084,
+        "height": 1005
+      },
+      {
+        "id": "philosophy",
+        "y": 2149,
+        "height": 2832
+      },
+      {
+        "id": "technology",
+        "y": 5041,
+        "height": 1230
+      },
+      {
+        "id": "practices",
+        "y": 6331,
+        "height": 1024
+      },
+      {
+        "id": "insights",
+        "y": 7415,
+        "height": 731
+      }
+    ]
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "name": "mobile",
+    "sections": [
+      {
+        "id": "top",
+        "y": 0,
+        "height": 844
+      },
+      {
+        "id": "stakes",
+        "y": 904,
+        "height": 697
+      },
+      {
+        "id": "philosophy",
+        "y": 1661,
+        "height": 1259
+      },
+      {
+        "id": "technology",
+        "y": 2980,
+        "height": 1197
+      },
+      {
+        "id": "practices",
+        "y": 4236,
+        "height": 844
+      },
+      {
+        "id": "insights",
+        "y": 5140,
+        "height": 602
+      }
+    ]
+  },
+  {
+    "comparison": "desktop-1440-initial",
+    "mean_absolute_rgb_error": 2.781173096707819,
+    "note": "Raw pixel error; includes independent animation/loading/cookie states, not a fidelity percentage."
+  },
+  {
+    "comparison": "desktop-1440-02",
+    "mean_absolute_rgb_error": 1.964298096707819,
+    "note": "Raw pixel error; includes independent animation/loading/cookie states, not a fidelity percentage."
+  },
+  {
+    "comparison": "desktop-1440-03",
+    "mean_absolute_rgb_error": 3.9546005658436214,
+    "note": "Raw pixel error; includes independent animation/loading/cookie states, not a fidelity percentage."
+  },
+  {
+    "comparison": "desktop-1440-06",
+    "mean_absolute_rgb_error": 20.628540380658436,
+    "note": "Raw pixel error; includes independent animation/loading/cookie states, not a fidelity percentage."
+  },
+  {
+    "comparison": "desktop-1440-07",
+    "mean_absolute_rgb_error": 9.931908693415638,
+    "note": "Raw pixel error; includes independent animation/loading/cookie states, not a fidelity percentage."
+  },
+  {
+    "comparison": "desktop-1440-09",
+    "mean_absolute_rgb_error": 16.143962191358025,
+    "note": "Raw pixel error; includes independent animation/loading/cookie states, not a fidelity percentage."
+  },
+  {
+    "comparison": "desktop-1920-initial",
+    "mean_absolute_rgb_error": 2.5126512667181067,
+    "note": "Raw pixel error; includes independent animation/loading/cookie states, not a fidelity percentage."
+  },
+  {
+    "comparison": "tablet-initial",
+    "mean_absolute_rgb_error": 3.3345854017469616,
+    "note": "Raw pixel error; includes independent animation/loading/cookie states, not a fidelity percentage."
+  },
+  {
+    "comparison": "mobile-initial",
+    "mean_absolute_rgb_error": 5.246537651395472,
+    "note": "Raw pixel error; includes independent animation/loading/cookie states, not a fidelity percentage."
+  }
+]

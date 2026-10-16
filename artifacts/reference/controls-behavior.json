@@ -1,0 +1,208 @@
+{
+  "initial": [
+    {
+      "rect": {
+        "x": 24,
+        "y": 90,
+        "width": 1022.84375,
+        "height": 720,
+        "top": 90,
+        "right": 1046.84375,
+        "bottom": 810,
+        "left": 24
+      },
+      "text": "Waabi Driver\n\nOur end-to-end trained system is fully interpretable, and can see exactly wh"
+    },
+    {
+      "rect": {
+        "x": 1070.84375,
+        "y": 90,
+        "width": 160.578125,
+        "height": 720,
+        "top": 90,
+        "right": 1231.421875,
+        "bottom": 810,
+        "left": 1070.84375
+      },
+      "text": "Waabi World\n\nOur high-fidelity neural simulator is capable of replicating both routine sit"
+    },
+    {
+      "rect": {
+        "x": 1255.421875,
+        "y": 90,
+        "width": 160.578125,
+        "height": 720,
+        "top": 90,
+        "right": 1416,
+        "bottom": 810,
+        "left": 1255.421875
+      },
+      "text": "Mixed Reality Testing\n\nBy combining real trucks with real-time synthetic scenarios, we\u2019re "
+    }
+  ],
+  "hoverSecond": [
+    {
+      "rect": {
+        "x": 24,
+        "y": 90,
+        "width": 160.578125,
+        "height": 720,
+        "top": 90,
+        "right": 184.578125,
+        "bottom": 810,
+        "left": 24
+      },
+      "text": "Waabi Driver\n\nOur end-to-end trained system is fully interpretable, and can see exactly wh"
+    },
+    {
+      "rect": {
+        "x": 208.578125,
+        "y": 90,
+        "width": 1022.84375,
+        "height": 720,
+        "top": 90,
+        "right": 1231.421875,
+        "bottom": 810,
+        "left": 208.578125
+      },
+      "text": "Waabi World\n\nOur high-fidelity neural simulator is capable of replicating both routine sit"
+    },
+    {
+      "rect": {
+        "x": 1255.421875,
+        "y": 90,
+        "width": 160.578125,
+        "height": 720,
+        "top": 90,
+        "right": 1416,
+        "bottom": 810,
+        "left": 1255.421875
+      },
+      "text": "Mixed Reality Testing\n\nBy combining real trucks with real-time synthetic scenarios, we\u2019re "
+    }
+  ],
+  "bestInitial": {
+    "left": 0,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "top": 0,
+      "right": 1440,
+      "bottom": 900,
+      "left": 0
+    }
+  },
+  "bestNext": {
+    "left": 1440,
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "top": 0,
+      "right": 1440,
+      "bottom": 900,
+      "left": 0
+    }
+  },
+  "bestAtEnd": {
+    "left": 4320,
+    "scrollWidth": 5760
+  },
+  "endButtons": [
+    {
+      "aria": "Previous",
+      "disabled": false,
+      "opacity": "1"
+    },
+    {
+      "aria": "Next",
+      "disabled": false,
+      "opacity": "1"
+    }
+  ],
+  "mobileInitial": [
+    {
+      "rect": {
+        "x": 24,
+        "y": -13.609375,
+        "width": 342,
+        "height": 112,
+        "top": -13.609375,
+        "right": 366,
+        "bottom": 98.390625,
+        "left": 24
+      },
+      "text": "Waabi Driver\n\nOur end-to-end trained system is fully interpretable, and can see exactly wh"
+    },
+    {
+      "rect": {
+        "x": 24,
+        "y": 122.390625,
+        "width": 342,
+        "height": 112,
+        "top": 122.390625,
+        "right": 366,
+        "bottom": 234.390625,
+        "left": 24
+      },
+      "text": "Waabi World\n\nOur high-fidelity neural simulator is capable of replicating both routine sit"
+    },
+    {
+      "rect": {
+        "x": 24,
+        "y": 258.390625,
+        "width": 342,
+        "height": 600,
+        "top": 258.390625,
+        "right": 366,
+        "bottom": 858.390625,
+        "left": 24
+      },
+      "text": "Mixed Reality Testing\n\nBy combining real trucks with real-time synthetic scenarios, we\u2019re "
+    }
+  ],
+  "mobileClickSecond": [
+    {
+      "rect": {
+        "x": 24,
+        "y": -13.609375,
+        "width": 342,
+        "height": 112,
+        "top": -13.609375,
+        "right": 366,
+        "bottom": 98.390625,
+        "left": 24
+      },
+      "text": "Waabi Driver\n\nOur end-to-end trained system is fully interpretable, and can see exactly wh"
+    },
+    {
+      "rect": {
+        "x": 24,
+        "y": 122.390625,
+        "width": 342,
+        "height": 600,
+        "top": 122.390625,
+        "right": 366,
+        "bottom": 722.390625,
+        "left": 24
+      },
+      "text": "Waabi World\n\nOur high-fidelity neural simulator is capable of replicating both routine sit"
+    },
+    {
+      "rect": {
+        "x": 24,
+        "y": 746.390625,
+        "width": 342,
+        "height": 112,
+        "top": 746.390625,
+        "right": 366,
+        "bottom": 858.390625,
+        "left": 24
+      },
+      "text": "Mixed Reality Testing\n\nBy combining real trucks with real-time synthetic scenarios, we\u2019re "
+    }
+  ]
+}
