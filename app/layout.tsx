@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 export const metadata: Metadata = {
-  title: "Safety — Waabi | Educational Prototype",
-  description: "A private educational reconstruction of Waabi’s Safety page.",
+  icons: { icon: "/assets/1774553027-favicon-32x32.webp" },
+  title: "Waabi | Educational Prototype",
+  description:
+    "An educational reconstruction of Waabi’s Home, Safety, and Company pages.",
 };
 export default function RootLayout({
   children,

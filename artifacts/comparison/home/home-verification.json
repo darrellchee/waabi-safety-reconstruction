@@ -1,0 +1,206 @@
+[
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "sections": [
+      {
+        "cls": "home-hero-scroll",
+        "y": 0,
+        "height": 2250
+      },
+      {
+        "cls": "home-road",
+        "y": 1575,
+        "height": 1350
+      },
+      {
+        "cls": "home-scale",
+        "y": 2925,
+        "height": 1800
+      },
+      {
+        "cls": "home-tech",
+        "y": 4725,
+        "height": 1568
+      },
+      {
+        "cls": "home-safety",
+        "y": 6293,
+        "height": 900
+      },
+      {
+        "cls": "home-partners ",
+        "y": 7193,
+        "height": 1359
+      },
+      {
+        "cls": "home-insights",
+        "y": 8552,
+        "height": 941
+      },
+      {
+        "cls": "home-careers",
+        "y": 9493,
+        "height": 1165
+      }
+    ],
+    "runtimeErrors": [],
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "sections": [
+      {
+        "cls": "home-hero-scroll",
+        "y": 0,
+        "height": 2700
+      },
+      {
+        "cls": "home-road",
+        "y": 1890,
+        "height": 1620
+      },
+      {
+        "cls": "home-scale",
+        "y": 3510,
+        "height": 2160
+      },
+      {
+        "cls": "home-tech",
+        "y": 5670,
+        "height": 1748
+      },
+      {
+        "cls": "home-safety",
+        "y": 7418,
+        "height": 1080
+      },
+      {
+        "cls": "home-partners ",
+        "y": 8498,
+        "height": 1359
+      },
+      {
+        "cls": "home-insights",
+        "y": 9857,
+        "height": 941
+      },
+      {
+        "cls": "home-careers",
+        "y": 10798,
+        "height": 1166
+      }
+    ],
+    "runtimeErrors": [],
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "sections": [
+      {
+        "cls": "home-hero-scroll",
+        "y": 0,
+        "height": 2560
+      },
+      {
+        "cls": "home-road",
+        "y": 1792,
+        "height": 1536
+      },
+      {
+        "cls": "home-scale",
+        "y": 3328,
+        "height": 2048
+      },
+      {
+        "cls": "home-tech",
+        "y": 5376,
+        "height": 2480
+      },
+      {
+        "cls": "home-safety",
+        "y": 7856,
+        "height": 1024
+      },
+      {
+        "cls": "home-partners ",
+        "y": 8880,
+        "height": 1309
+      },
+      {
+        "cls": "home-insights",
+        "y": 10189,
+        "height": 827
+      },
+      {
+        "cls": "home-careers",
+        "y": 11015,
+        "height": 950
+      }
+    ],
+    "runtimeErrors": [],
+    "overflow": false,
+    "brokenImages": []
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "sections": [
+      {
+        "cls": "home-hero-scroll",
+        "y": 0,
+        "height": 2110
+      },
+      {
+        "cls": "home-road",
+        "y": 1477,
+        "height": 1266
+      },
+      {
+        "cls": "home-scale",
+        "y": 2743,
+        "height": 1317
+      },
+      {
+        "cls": "home-tech",
+        "y": 4060,
+        "height": 1586
+      },
+      {
+        "cls": "home-safety",
+        "y": 5646,
+        "height": 844
+      },
+      {
+        "cls": "home-partners ",
+        "y": 6490,
+        "height": 1014
+      },
+      {
+        "cls": "home-insights",
+        "y": 7504,
+        "height": 721
+      },
+      {
+        "cls": "home-careers",
+        "y": 8225,
+        "height": 538
+      }
+    ],
+    "runtimeErrors": [],
+    "overflow": false,
+    "brokenImages": []
+  }
+]

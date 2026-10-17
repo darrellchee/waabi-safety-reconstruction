@@ -1,0 +1,1424 @@
+{
+  "height": 8508,
+  "text": "Let's talk autonomous trucking\n\nGet in touch\nCompany\nWe built our own road.\n\nIn 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how humanity moves and connects. \n\n\nWhat began as a bold dream has become something far greater. Waabi is a global force pioneering a breakthrough approach that demonstrates autonomous vehicles can be scalable, efficient, and safe.\n\n\"When this technology is at scale, it will save so many lives. Improving safety on the road is one of the most important motivators for me.\"\n\nRaquel Urtasun\nFounder & CEO of Waabi\n\nThe people moving us forward.\n\nBehind every breakthrough at Waabi are people who care deeply about reshaping the physical world through diverse perspectives, from AI researchers and roboticists to trucking experts and operators.\u00a0\n\nLearn more\nInvestors\n\nOur approach to Physical AI has earned the backing of world-class investors who share our vision for efficient, safe, and scalable autonomous solutions.\n\nThe latest from Waabi.\n\nWe\u2019re leading conversations across AI, autonomy, freight, and transportation. Explore our latest news, insights, and milestones.\n\nCompany news\nTrucks\nOctober 14, 2026\nWaabi and Warrior Logistics partner on autonomous trucking operations in Texas\nCompany news\nOctober 5, 2026\nVolvo and Waabi Kick Off Customer Operations in Texas, Starting with Warp\nCompany news\nSeptember 22, 2026\nBuilt to generalize. Proven on I-35.\nCompany news\nSeptember 15, 2026\n80% Growth on Long Haul's Toughest Corridor\nJune 26, 2026\nWaabi crosses the next frontier of generalization, unlocking truly scalable AVs\nResearch\nApril 22, 2026\nAll You Need to Know About Self-Driving | CVPR Tutorial 2026\nCompany news\nJanuary 28, 2026\nWaabi secures $1 Billion in new funding to lead Physical AI revolution\nTechnology\nCompany news\nDecember 19, 2025\nFrom closed course to public roads: The path to driverless\nTechnology\nCompany news\nNovember 25, 2025\nWaabi unlocks direct-to-customer model with surface street driving capabilities\nUpcoming events\nOctober 17, 2026\n\nATA Management Conference & Exhibition\n\nCharlotte, NC\nOctober 26, 2026\n\nFreightWaves F3: Future of Freight Festival\n\nChattanooga, TN\nOctober 28, 2026\n\nNASTC Annual Conference\n\nNashville, TN\nOur locations.\nWith teams across Toronto, San Francisco, Dallas, Phoenix, and Pittsburgh, Waabi is expanding within major tech and logistics centers.\nWe're just getting started\n\nFollow along or reach out directly at\npress@waabi.ai|info@waabi.ai\n\nAbout us\nHome\nSafety\nResearch\nCompany\nCareers\nInsights\n\u00a9 2026 Waabi. All Rights Reserved.\nPrivacy Policy\nWe value your privacy\nThis site uses cookies to improve your browsing experience, analyze site traffic, and show personalized content.\nReject All\nAccept All\nCustomize",
+  "sections": [
+    {
+      "cls": "relative w-full overflow-clip bg-white py-50 md:py-40",
+      "rect": {
+        "x": 0,
+        "y": 1200,
+        "width": 1920,
+        "height": 564,
+        "top": 1200,
+        "right": 1920,
+        "bottom": 1764,
+        "left": 0
+      },
+      "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how humanity moves and connects. \n\n\nWhat began as a bold dream has become something far greater. Waabi is a global force pioneering a breakthrough approach that demonstrates autonomous vehicles can be scalable, efficient, and safe."
+    },
+    {
+      "cls": "relative w-full text-white md:px-24",
+      "rect": {
+        "x": 0,
+        "y": 1884,
+        "width": 1920,
+        "height": 1170,
+        "top": 1884,
+        "right": 1920,
+        "bottom": 3054,
+        "left": 0
+      },
+      "text": "\"When this technology is at scale, it will save so many lives. Improving safety on the road is one of the most important motivators for me.\"\n\nRaquel Urtasun\nFounder & CEO of Waabi"
+    },
+    {
+      "cls": "w-calc flex flex-col gap-60 py-[calc(var(--padding-y)+4rem)] md:flex-row md:items-center md:justify-between",
+      "rect": {
+        "x": 343,
+        "y": 3174,
+        "width": 1234,
+        "height": 1020,
+        "top": 3174,
+        "right": 1577,
+        "bottom": 4194,
+        "left": 343
+      },
+      "text": "The people moving us forward.\n\nBehind every breakthrough at Waabi are people who care deeply about reshaping the physical world through diverse perspectives, from AI researchers and roboticists to trucking experts and operators.\u00a0\n\nLearn more"
+    },
+    {
+      "cls": "bg-cream-light relative w-full overflow-clip py-[var(--padding-y)]",
+      "rect": {
+        "x": 0,
+        "y": 4314,
+        "width": 1920,
+        "height": 761,
+        "top": 4314,
+        "right": 1920,
+        "bottom": 5075,
+        "left": 0
+      },
+      "text": "Investors\n\nOur approach to Physical AI has earned the backing of world-class investors who share our vision for efficient, safe, and scalable autonomous solutions."
+    },
+    {
+      "cls": "relative flex w-full flex-col relative w-full overflow-clip bg-(--background)",
+      "rect": {
+        "x": 0,
+        "y": 5195,
+        "width": 1920,
+        "height": 698.5,
+        "top": 5195,
+        "right": 1920,
+        "bottom": 5893.5,
+        "left": 0
+      },
+      "text": "The latest from Waabi.\n\nWe\u2019re leading conversations across AI, autonomy, freight, and transportation. Explore our latest news, insights, and milestones.\n\nCompany news\nTrucks\nOctober 14, 2026\nWaabi and Warrior Logistics partner on autonomous trucking operations in Texas\nCompany news\nOctober 5, 2026\nVolvo and Waabi Kick Off Customer Operations in Texas, Starting with Warp\nCompany news\nSeptember 22, 2026\nBuilt to generalize. Proven on I-35.\nCompany news\nSeptember 15, 2026\n80% Growth on Long Haul's Toughest Corridor\nJune 26, 2026\nWaabi crosses the next frontier of generalization, unlocking truly scalable AVs\nResearch\nApril 22, 2026\nAll You Need to Know About Self-Driving | CVPR Tutorial 2026\nCompany news\nJanuary 28, 2026\nWaabi secures $1 Billion in new funding to lead Physical AI revolution\nTechnology\nCompany news\nDecember 19, 2025\nFrom closed course to public roads: The path to driverless\nTechnology\nCompany news\nNovember 25, 2025\nWaabi unlocks direct-to-customer model with surface street driving capabilities"
+    },
+    {
+      "cls": "relative flex w-full flex-col overflow-clip bg-cream-light py-60 md:py-120",
+      "rect": {
+        "x": 0,
+        "y": 6013.5,
+        "width": 1920,
+        "height": 654.796875,
+        "top": 6013.5,
+        "right": 1920,
+        "bottom": 6668.296875,
+        "left": 0
+      },
+      "text": "Upcoming events\nOctober 17, 2026\n\nATA Management Conference & Exhibition\n\nCharlotte, NC\nOctober 26, 2026\n\nFreightWaves F3: Future of Freight Festival\n\nChattanooga, TN\nOctober 28, 2026\n\nNASTC Annual Conference\n\nNashville, TN"
+    },
+    {
+      "cls": "relative w-full md:px-24",
+      "rect": {
+        "x": 0,
+        "y": 6788.296875,
+        "width": 1920,
+        "height": 1080,
+        "top": 6788.296875,
+        "right": 1920,
+        "bottom": 7868.296875,
+        "left": 0
+      },
+      "text": "Our locations.\nWith teams across Toronto, San Francisco, Dallas, Phoenix, and Pittsburgh, Waabi is expanding within major tech and logistics centers."
+    }
+  ],
+  "nodes": [
+    {
+      "tag": "P",
+      "text": "Let's talk autonomous trucking",
+      "cls": "type-s-11 md:type-s-12 text-dark whitespace-nowrap",
+      "rect": {
+        "x": 802.421875,
+        "y": 12,
+        "width": 182.828125,
+        "height": 16.796875,
+        "top": 12,
+        "right": 985.25,
+        "bottom": 28.796875,
+        "left": 802.421875
+      },
+      "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif",
+      "tracking": "0.24px"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "cls": "p-10",
+      "rect": {
+        "x": 1880,
+        "y": 7,
+        "width": 28,
+        "height": 28,
+        "top": 7,
+        "right": 1908,
+        "bottom": 35,
+        "left": 1880
+      },
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "normal"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "cls": "flex-center mt-[0.95rem] h-36 w-36 rounded-full",
+      "rect": {
+        "x": 1079,
+        "y": 86.5,
+        "width": 36,
+        "height": 36,
+        "top": 86.5,
+        "right": 1115,
+        "bottom": 122.5,
+        "left": 1079
+      },
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "normal"
+    },
+    {
+      "tag": "H1",
+      "text": "We built our own road.",
+      "cls": "text-[5.5rem] leading-[90%] tracking-[-0.22rem] md:text-[max(9rem,min(9vw,13rem))] md:tracking-[max(-0.6rem,min(-0.3vw,-0.52rem))] text-balance",
+      "rect": {
+        "x": 343,
+        "y": 120,
+        "width": 822.65625,
+        "height": 234,
+        "top": 120,
+        "right": 1165.65625,
+        "bottom": 354,
+        "left": 343
+      },
+      "font": "130px / 117px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-5.76px"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "cls": "flex-center bg-pink h-24 w-24 cursor-pointer rounded-full",
+      "rect": {
+        "x": 343,
+        "y": 936,
+        "width": 24,
+        "height": 24,
+        "top": 936,
+        "right": 367,
+        "bottom": 960,
+        "left": 343
+      },
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "normal"
+    },
+    {
+      "tag": "P",
+      "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how humanity moves and connects. \n\n\nWhat began as a bold dream has become something far greater. Waabi is a global force pioneering a breakthrough approach that demonstrates autonomous vehicles can be scalable, efficient, and safe.",
+      "cls": "type-z-24 md:type-z-40",
+      "rect": {
+        "x": 580,
+        "y": 1240,
+        "width": 760,
+        "height": 484,
+        "top": 1240,
+        "right": 1340,
+        "bottom": 1724,
+        "left": 580
+      },
+      "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-1.2px"
+    },
+    {
+      "tag": "P",
+      "text": "\"When this technology is at scale, it will save so many lives. Improving safety on the road is one of the most important motivators for me.\"",
+      "cls": "type-z-24",
+      "rect": {
+        "x": 1272,
+        "y": 2079,
+        "width": 370,
+        "height": 120,
+        "top": 2079,
+        "right": 1642,
+        "bottom": 2199,
+        "left": 1272
+      },
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-0.72px"
+    },
+    {
+      "tag": "P",
+      "text": "The people moving us forward.",
+      "cls": "type-z-34 md:type-z-80",
+      "rect": {
+        "x": 343,
+        "y": 3422,
+        "width": 448,
+        "height": 216,
+        "top": 3422,
+        "right": 791,
+        "bottom": 3638,
+        "left": 343
+      },
+      "font": "80px / 72px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-3.2px"
+    },
+    {
+      "tag": "P",
+      "text": "Behind every breakthrough at Waabi are people who care deeply about reshaping the physical world through diverse perspectives, from AI researchers and roboticists to trucking experts and operators.\u00a0",
+      "cls": "type-s-14 md:type-z-24 text-balance text-current/60",
+      "rect": {
+        "x": 343,
+        "y": 3670,
+        "width": 403.1875,
+        "height": 180,
+        "top": 3670,
+        "right": 746.1875,
+        "bottom": 3850,
+        "left": 343
+      },
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-0.72px"
+    },
+    {
+      "tag": "P",
+      "text": "Our approach to Physical AI has earned the backing of world-class investors who share our vision for efficient, safe, and scalable autonomous solutions.",
+      "cls": "type-z-18 md:type-z-24 text-current/50",
+      "rect": {
+        "x": 625,
+        "y": 4554,
+        "width": 670,
+        "height": 90,
+        "top": 4554,
+        "right": 1295,
+        "bottom": 4644,
+        "left": 625
+      },
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-0.72px"
+    },
+    {
+      "tag": "H2",
+      "text": "The latest from Waabi.",
+      "cls": "w-calc type-z-34 md:type-z-80 text-balance",
+      "rect": {
+        "x": 343,
+        "y": 5195,
+        "width": 1234,
+        "height": 72,
+        "top": 5195,
+        "right": 1577,
+        "bottom": 5267,
+        "left": 343
+      },
+      "font": "80px / 72px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-3.2px"
+    },
+    {
+      "tag": "P",
+      "text": "We\u2019re leading conversations across AI, autonomy, freight, and transportation. Explore our latest news, insights, and milestones.",
+      "cls": "type-s-14 md:type-s-15 text-balance text-black/50",
+      "rect": {
+        "x": 343,
+        "y": 5315,
+        "width": 617,
+        "height": 48,
+        "top": 5315,
+        "right": 960,
+        "bottom": 5363,
+        "left": 343
+      },
+      "font": "500 15px / 24px NeueHaas, \"NeueHaas Fallback\", serif",
+      "tracking": "0.15px"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "cls": "flex-center size-32 rounded-full border-1 border-current/15 md:size-50 group-hover/arrow:bg-pink group-hover/arrow:border-current/0 hover:bg-pink hover:border-current/0 hover:text-white hover:text-white",
+      "rect": {
+        "x": 1465,
+        "y": 5315,
+        "width": 50,
+        "height": 50,
+        "top": 5315,
+        "right": 1515,
+        "bottom": 5365,
+        "left": 1465
+      },
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "normal"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "cls": "flex-center size-32 rounded-full border-1 border-current/15 md:size-50 group-hover/arrow:bg-pink group-hover/arrow:border-current/0 hover:bg-pink hover:border-current/0 hover:text-white hover:text-white",
+      "rect": {
+        "x": 1527,
+        "y": 5315,
+        "width": 50,
+        "height": 50,
+        "top": 5315,
+        "right": 1577,
+        "bottom": 5365,
+        "left": 1527
+      },
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "normal"
+    },
+    {
+      "tag": "H2",
+      "text": "Waabi and Warrior Logistics partner on autonomous trucking operations in Texas",
+      "cls": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+      "rect": {
+        "x": 343,
+        "y": 5808.5,
+        "width": 450,
+        "height": 60,
+        "top": 5808.5,
+        "right": 793,
+        "bottom": 5868.5,
+        "left": 343
+      },
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-0.72px"
+    },
+    {
+      "tag": "H2",
+      "text": "Volvo and Waabi Kick Off Customer Operations in Texas, Starting with Warp",
+      "cls": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+      "rect": {
+        "x": 817,
+        "y": 5808.5,
+        "width": 450,
+        "height": 60,
+        "top": 5808.5,
+        "right": 1267,
+        "bottom": 5868.5,
+        "left": 817
+      },
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-0.72px"
+    },
+    {
+      "tag": "H2",
+      "text": "Built to generalize. Proven on I-35.",
+      "cls": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+      "rect": {
+        "x": 1291,
+        "y": 5808.5,
+        "width": 352.453125,
+        "height": 30,
+        "top": 5808.5,
+        "right": 1643.453125,
+        "bottom": 5838.5,
+        "left": 1291
+      },
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-0.72px"
+    },
+    {
+      "tag": "H2",
+      "text": "80% Growth on Long Haul's Toughest Corridor",
+      "cls": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+      "rect": {
+        "x": 1765,
+        "y": 5808.5,
+        "width": 450,
+        "height": 60,
+        "top": 5808.5,
+        "right": 2215,
+        "bottom": 5868.5,
+        "left": 1765
+      },
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-0.72px"
+    },
+    {
+      "tag": "H2",
+      "text": "Waabi crosses the next frontier of generalization, unlocking truly scalable AVs",
+      "cls": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+      "rect": {
+        "x": 2239,
+        "y": 5799.296875,
+        "width": 450,
+        "height": 60,
+        "top": 5799.296875,
+        "right": 2689,
+        "bottom": 5859.296875,
+        "left": 2239
+      },
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-0.72px"
+    },
+    {
+      "tag": "H2",
+      "text": "All You Need to Know About Self-Driving | CVPR Tutorial 2026",
+      "cls": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+      "rect": {
+        "x": 2713,
+        "y": 5808.5,
+        "width": 450,
+        "height": 60,
+        "top": 5808.5,
+        "right": 3163,
+        "bottom": 5868.5,
+        "left": 2713
+      },
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-0.72px"
+    },
+    {
+      "tag": "H2",
+      "text": "Waabi secures $1 Billion in new funding to lead Physical AI revolution",
+      "cls": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+      "rect": {
+        "x": 3187,
+        "y": 5808.5,
+        "width": 450,
+        "height": 60,
+        "top": 5808.5,
+        "right": 3637,
+        "bottom": 5868.5,
+        "left": 3187
+      },
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-0.72px"
+    },
+    {
+      "tag": "H2",
+      "text": "From closed course to public roads: The path to driverless",
+      "cls": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+      "rect": {
+        "x": 3661,
+        "y": 5808.5,
+        "width": 450,
+        "height": 60,
+        "top": 5808.5,
+        "right": 4111,
+        "bottom": 5868.5,
+        "left": 3661
+      },
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-0.72px"
+    },
+    {
+      "tag": "H2",
+      "text": "Waabi unlocks direct-to-customer model with surface street driving capabilities",
+      "cls": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+      "rect": {
+        "x": 4135,
+        "y": 5808.5,
+        "width": 450,
+        "height": 60,
+        "top": 5808.5,
+        "right": 4585,
+        "bottom": 5868.5,
+        "left": 4135
+      },
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-0.72px"
+    },
+    {
+      "tag": "H3",
+      "text": "Upcoming events",
+      "cls": "type-z-28 md:type-z-60",
+      "rect": {
+        "x": 343,
+        "y": 6133.5,
+        "width": 457.625,
+        "height": 54,
+        "top": 6133.5,
+        "right": 800.625,
+        "bottom": 6187.5,
+        "left": 343
+      },
+      "font": "60px / 54px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-1.8px"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "cls": "flex-center size-32 rounded-full border-1 border-current/15 md:size-50 group-hover/arrow:bg-pink group-hover/arrow:border-current/0 hover:bg-pink hover:border-current/0 hover:text-white hover:text-white",
+      "rect": {
+        "x": 1465,
+        "y": 6135.5,
+        "width": 50,
+        "height": 50,
+        "top": 6135.5,
+        "right": 1515,
+        "bottom": 6185.5,
+        "left": 1465
+      },
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "normal"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "cls": "flex-center size-32 rounded-full border-1 border-current/15 md:size-50 group-hover/arrow:bg-pink group-hover/arrow:border-current/0 hover:bg-pink hover:border-current/0 hover:text-white hover:text-white",
+      "rect": {
+        "x": 1527,
+        "y": 6135.5,
+        "width": 50,
+        "height": 50,
+        "top": 6135.5,
+        "right": 1577,
+        "bottom": 6185.5,
+        "left": 1527
+      },
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "normal"
+    },
+    {
+      "tag": "P",
+      "text": "ATA Management Conference & Exhibition",
+      "cls": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy transition-colors duration-500",
+      "rect": {
+        "x": 343,
+        "y": 6465.5,
+        "width": 315,
+        "height": 60,
+        "top": 6465.5,
+        "right": 658,
+        "bottom": 6525.5,
+        "left": 343
+      },
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-0.72px"
+    },
+    {
+      "tag": "P",
+      "text": "FreightWaves F3: Future of Freight Festival",
+      "cls": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy transition-colors duration-500",
+      "rect": {
+        "x": 682,
+        "y": 6465.5,
+        "width": 315,
+        "height": 60,
+        "top": 6465.5,
+        "right": 997,
+        "bottom": 6525.5,
+        "left": 682
+      },
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-0.72px"
+    },
+    {
+      "tag": "P",
+      "text": "NASTC Annual Conference",
+      "cls": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy transition-colors duration-500",
+      "rect": {
+        "x": 1021,
+        "y": 6465.5,
+        "width": 315,
+        "height": 30,
+        "top": 6465.5,
+        "right": 1336,
+        "bottom": 6495.5,
+        "left": 1021
+      },
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-0.72px"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "cls": "bg-pink absolute size-12 z-3",
+      "rect": {
+        "x": 126.140625,
+        "y": 7301.578125,
+        "width": 12,
+        "height": 12,
+        "top": 7301.578125,
+        "right": 138.140625,
+        "bottom": 7313.578125,
+        "left": 126.140625
+      },
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "normal"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "cls": "bg-pink absolute size-12 z-3",
+      "rect": {
+        "x": 864.09375,
+        "y": 7598.859375,
+        "width": 12,
+        "height": 12,
+        "top": 7598.859375,
+        "right": 876.09375,
+        "bottom": 7610.859375,
+        "left": 864.09375
+      },
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "normal"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "cls": "bg-pink absolute size-12 z-3",
+      "rect": {
+        "x": 419.375,
+        "y": 7491.59375,
+        "width": 12,
+        "height": 12,
+        "top": 7491.59375,
+        "right": 431.375,
+        "bottom": 7503.59375,
+        "left": 419.375
+      },
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "normal"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "cls": "bg-pink absolute size-12 z-3",
+      "rect": {
+        "x": 1382.28125,
+        "y": 7259.9375,
+        "width": 12,
+        "height": 12,
+        "top": 7259.9375,
+        "right": 1394.28125,
+        "bottom": 7271.9375,
+        "left": 1382.28125
+      },
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "normal"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "cls": "bg-pink absolute size-12 z-3",
+      "rect": {
+        "x": 1360.921875,
+        "y": 7120.484375,
+        "width": 12,
+        "height": 12,
+        "top": 7120.484375,
+        "right": 1372.921875,
+        "bottom": 7132.484375,
+        "left": 1360.921875
+      },
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "normal"
+    },
+    {
+      "tag": "H2",
+      "text": "Our locations.",
+      "cls": "type-z-34 md:type-z-80 text-balance",
+      "rect": {
+        "x": 343,
+        "y": 6838.296875,
+        "width": 470.03125,
+        "height": 72,
+        "top": 6838.296875,
+        "right": 813.03125,
+        "bottom": 6910.296875,
+        "left": 343
+      },
+      "font": "80px / 72px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-3.2px"
+    },
+    {
+      "tag": "H2",
+      "text": "We're just getting started",
+      "cls": "text-[2.4rem] leading-[110%] tracking-[-0.072rem] text-balance md:max-w-[40%] md:text-[4rem] md:tracking-[-0.12rem]",
+      "rect": {
+        "x": 343,
+        "y": 7788.296875,
+        "width": 273.59375,
+        "height": 88,
+        "top": 7788.296875,
+        "right": 616.59375,
+        "bottom": 7876.296875,
+        "left": 343
+      },
+      "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-1.2px"
+    },
+    {
+      "tag": "P",
+      "text": "Follow along or reach out directly at\npress@waabi.ai|info@waabi.ai",
+      "cls": "font-neue text-[1.4rem] leading-[140%] tracking-[0.028rem] md:text-[1.5rem] md:tracking-[0.015rem]",
+      "rect": {
+        "x": 343,
+        "y": 7892.296875,
+        "width": 684,
+        "height": 42,
+        "top": 7892.296875,
+        "right": 1027,
+        "bottom": 7934.296875,
+        "left": 343
+      },
+      "font": "15px / 21px NeueHaas, \"NeueHaas Fallback\", serif",
+      "tracking": "0.15px"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Reject All",
+      "cls": "c15t-button-YKOgW c15t-button-small-n5LJg c15t-button-neutral-stroke-EAzCC",
+      "rect": {
+        "x": 28.5,
+        "y": 1031.5,
+        "width": 52.3125,
+        "height": 22.5,
+        "top": 1031.5,
+        "right": 80.8125,
+        "bottom": 1054,
+        "left": 28.5
+      },
+      "font": "500 8.75px / 12.5px system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "tracking": "normal"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Accept All",
+      "cls": "c15t-button-YKOgW c15t-button-small-n5LJg c15t-button-neutral-stroke-EAzCC",
+      "rect": {
+        "x": 90.8125,
+        "y": 1031.5,
+        "width": 54.859375,
+        "height": 22.5,
+        "top": 1031.5,
+        "right": 145.671875,
+        "bottom": 1054,
+        "left": 90.8125
+      },
+      "font": "500 8.75px / 12.5px system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "tracking": "normal"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Customize",
+      "cls": "c15t-button-YKOgW c15t-button-small-n5LJg c15t-button-primary-stroke-TWzjH",
+      "rect": {
+        "x": 383.421875,
+        "y": 1031.5,
+        "width": 58.078125,
+        "height": 22.5,
+        "top": 1031.5,
+        "right": 441.5,
+        "bottom": 1054,
+        "left": 383.421875
+      },
+      "font": "500 8.75px / 12.5px system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+      "tracking": "normal"
+    }
+  ],
+  "images": [
+    {
+      "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1760350326-waabi_washstation_03082_final.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+      "alt": "",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761183960-waabi_portrait_raquel_02880.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=1920&q=75",
+      "alt": "Raquel Urtasun",
+      "width": 1872,
+      "height": 1170
+    },
+    {
+      "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761188599-251006_waabi_ashwin_kumar_0866.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+      "alt": "",
+      "width": 320,
+      "height": 427
+    },
+    {
+      "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761700499-251006_waabi_collab_02_0612.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+      "alt": "",
+      "width": 525,
+      "height": 701
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1761842750-investor-logos-1.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "",
+      "width": 200,
+      "height": 25
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1769751291-investor-logos-13.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "G2 Venture Partners",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1760431047-uber-logo.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "Uber",
+      "width": 100,
+      "height": 34
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1760431057-nvidia-logo.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "Nvidia",
+      "width": 78,
+      "height": 60
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1760431072-volvo-logo.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "Volvo",
+      "width": 96,
+      "height": 96
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1769593390-blk_big-d.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "BlackRock",
+      "width": 200,
+      "height": 29
+    },
+    {
+      "src": "",
+      "alt": "Porsche SE",
+      "width": 200,
+      "height": 18
+    },
+    {
+      "src": "",
+      "alt": "Scania",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "",
+      "alt": "Harbourvest",
+      "width": 200,
+      "height": 54
+    },
+    {
+      "src": "",
+      "alt": "BDC",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "",
+      "alt": "EDC",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "",
+      "alt": "Radical",
+      "width": 100,
+      "height": 116
+    },
+    {
+      "src": "",
+      "alt": "Ingka",
+      "width": 200,
+      "height": 54
+    },
+    {
+      "src": "",
+      "alt": "Incharge ",
+      "width": 200,
+      "height": 54
+    },
+    {
+      "src": "",
+      "alt": "BMO",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1761842750-investor-logos-1.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "",
+      "width": 200,
+      "height": 25
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1769751291-investor-logos-13.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "G2 Venture Partners",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1760431047-uber-logo.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "Uber",
+      "width": 100,
+      "height": 34
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1760431057-nvidia-logo.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "Nvidia",
+      "width": 78,
+      "height": 60
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1760431072-volvo-logo.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "Volvo",
+      "width": 96,
+      "height": 96
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1769593390-blk_big-d.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "BlackRock",
+      "width": 200,
+      "height": 29
+    },
+    {
+      "src": "",
+      "alt": "Porsche SE",
+      "width": 200,
+      "height": 18
+    },
+    {
+      "src": "",
+      "alt": "Scania",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "",
+      "alt": "Harbourvest",
+      "width": 200,
+      "height": 54
+    },
+    {
+      "src": "",
+      "alt": "BDC",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "",
+      "alt": "EDC",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "",
+      "alt": "Radical",
+      "width": 100,
+      "height": 116
+    },
+    {
+      "src": "",
+      "alt": "Ingka",
+      "width": 200,
+      "height": 54
+    },
+    {
+      "src": "",
+      "alt": "Incharge ",
+      "width": 200,
+      "height": 54
+    },
+    {
+      "src": "",
+      "alt": "BMO",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1761842750-investor-logos-1.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "",
+      "width": 200,
+      "height": 25
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1769751291-investor-logos-13.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "G2 Venture Partners",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1760431047-uber-logo.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "Uber",
+      "width": 100,
+      "height": 34
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1760431057-nvidia-logo.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "Nvidia",
+      "width": 78,
+      "height": 60
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1760431072-volvo-logo.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "Volvo",
+      "width": 96,
+      "height": 96
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1769593390-blk_big-d.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "BlackRock",
+      "width": 200,
+      "height": 29
+    },
+    {
+      "src": "",
+      "alt": "Porsche SE",
+      "width": 200,
+      "height": 18
+    },
+    {
+      "src": "",
+      "alt": "Scania",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "",
+      "alt": "Harbourvest",
+      "width": 200,
+      "height": 54
+    },
+    {
+      "src": "",
+      "alt": "BDC",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "",
+      "alt": "EDC",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "",
+      "alt": "Radical",
+      "width": 100,
+      "height": 116
+    },
+    {
+      "src": "",
+      "alt": "Ingka",
+      "width": 200,
+      "height": 54
+    },
+    {
+      "src": "",
+      "alt": "Incharge ",
+      "width": 200,
+      "height": 54
+    },
+    {
+      "src": "",
+      "alt": "BMO",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1761842750-investor-logos-1.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "",
+      "width": 200,
+      "height": 25
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1769751291-investor-logos-13.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "G2 Venture Partners",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1760431047-uber-logo.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "Uber",
+      "width": 100,
+      "height": 34
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1760431057-nvidia-logo.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "Nvidia",
+      "width": 78,
+      "height": 60
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1760431072-volvo-logo.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "Volvo",
+      "width": 96,
+      "height": 96
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1769593390-blk_big-d.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "BlackRock",
+      "width": 200,
+      "height": 29
+    },
+    {
+      "src": "",
+      "alt": "Porsche SE",
+      "width": 200,
+      "height": 18
+    },
+    {
+      "src": "",
+      "alt": "Scania",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "",
+      "alt": "Harbourvest",
+      "width": 200,
+      "height": 54
+    },
+    {
+      "src": "",
+      "alt": "BDC",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "",
+      "alt": "EDC",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "",
+      "alt": "Radical",
+      "width": 100,
+      "height": 116
+    },
+    {
+      "src": "",
+      "alt": "Ingka",
+      "width": 200,
+      "height": 54
+    },
+    {
+      "src": "",
+      "alt": "Incharge ",
+      "width": 200,
+      "height": 54
+    },
+    {
+      "src": "",
+      "alt": "BMO",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1761842750-investor-logos-1.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "",
+      "width": 200,
+      "height": 25
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1769751291-investor-logos-13.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "G2 Venture Partners",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1760431047-uber-logo.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "Uber",
+      "width": 100,
+      "height": 34
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1760431057-nvidia-logo.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "Nvidia",
+      "width": 78,
+      "height": 60
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1760431072-volvo-logo.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "Volvo",
+      "width": 96,
+      "height": 96
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1769593390-blk_big-d.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "BlackRock",
+      "width": 200,
+      "height": 29
+    },
+    {
+      "src": "",
+      "alt": "Porsche SE",
+      "width": 200,
+      "height": 18
+    },
+    {
+      "src": "",
+      "alt": "Scania",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "",
+      "alt": "Harbourvest",
+      "width": 200,
+      "height": 54
+    },
+    {
+      "src": "",
+      "alt": "BDC",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "",
+      "alt": "EDC",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "",
+      "alt": "Radical",
+      "width": 100,
+      "height": 116
+    },
+    {
+      "src": "",
+      "alt": "Ingka",
+      "width": 200,
+      "height": 54
+    },
+    {
+      "src": "",
+      "alt": "Incharge ",
+      "width": 200,
+      "height": 54
+    },
+    {
+      "src": "",
+      "alt": "BMO",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1761842750-investor-logos-1.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "",
+      "width": 200,
+      "height": 25
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1769751291-investor-logos-13.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "G2 Venture Partners",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1760431047-uber-logo.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "Uber",
+      "width": 100,
+      "height": 34
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1760431057-nvidia-logo.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "Nvidia",
+      "width": 78,
+      "height": 60
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1760431072-volvo-logo.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "Volvo",
+      "width": 96,
+      "height": 96
+    },
+    {
+      "src": "https://www.datocms-assets.com/163962/1769593390-blk_big-d.svg?fit=max&h=3000&q=90&w=2000",
+      "alt": "BlackRock",
+      "width": 200,
+      "height": 29
+    },
+    {
+      "src": "",
+      "alt": "Porsche SE",
+      "width": 200,
+      "height": 18
+    },
+    {
+      "src": "",
+      "alt": "Scania",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "",
+      "alt": "Harbourvest",
+      "width": 200,
+      "height": 54
+    },
+    {
+      "src": "",
+      "alt": "BDC",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "",
+      "alt": "EDC",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "",
+      "alt": "Radical",
+      "width": 100,
+      "height": 116
+    },
+    {
+      "src": "",
+      "alt": "Ingka",
+      "width": 200,
+      "height": 54
+    },
+    {
+      "src": "",
+      "alt": "Incharge ",
+      "width": 200,
+      "height": 54
+    },
+    {
+      "src": "",
+      "alt": "BMO",
+      "width": 100,
+      "height": 57
+    },
+    {
+      "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1791944791-edit-1-1.png&w=2048&q=75",
+      "alt": "",
+      "width": 450,
+      "height": 338
+    },
+    {
+      "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1790974044-vas-waabi-warp.png&w=1200&q=75",
+      "alt": "",
+      "width": 450,
+      "height": 338
+    },
+    {
+      "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1790628632-blog-dallas-sanantonio.png&w=3840&q=75",
+      "alt": "",
+      "width": 450,
+      "height": 338
+    },
+    {
+      "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1790628632-blog-dallas-houston.png&w=3840&q=75",
+      "alt": "",
+      "width": 450,
+      "height": 338
+    },
+    {
+      "src": "",
+      "alt": "",
+      "width": 450,
+      "height": 338
+    },
+    {
+      "src": "",
+      "alt": "",
+      "width": 450,
+      "height": 338
+    },
+    {
+      "src": "",
+      "alt": "",
+      "width": 450,
+      "height": 338
+    },
+    {
+      "src": "",
+      "alt": "",
+      "width": 450,
+      "height": 338
+    },
+    {
+      "src": "",
+      "alt": "",
+      "width": 450,
+      "height": 338
+    },
+    {
+      "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1788170473-f3.jpeg&w=640&q=75",
+      "alt": "",
+      "width": 315,
+      "height": 214
+    },
+    {
+      "src": "https://waabi.ai/images/company/map.svg",
+      "alt": "Map",
+      "width": 1942,
+      "height": 1532
+    }
+  ],
+  "videos": [
+    {
+      "src": "https://static.ext.waabi.ai/Waabi_System_LightTunnel_1.mp4",
+      "poster": ""
+    }
+  ]
+}

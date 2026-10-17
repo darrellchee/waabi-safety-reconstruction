@@ -1,0 +1,410 @@
+[
+  {
+    "page": "home",
+    "viewport": [
+      1440,
+      900
+    ],
+    "height": 11258,
+    "footerHeight": 600,
+    "sections": [
+      {
+        "class": "home-hero-scroll",
+        "y": 0,
+        "height": 2250
+      },
+      {
+        "class": "home-road",
+        "y": 1575,
+        "height": 1350
+      },
+      {
+        "class": "home-scale",
+        "y": 2925,
+        "height": 1800
+      },
+      {
+        "class": "home-tech",
+        "y": 4725,
+        "height": 1568
+      },
+      {
+        "class": "home-safety",
+        "y": 6293,
+        "height": 900
+      },
+      {
+        "class": "home-partners ",
+        "y": 7193,
+        "height": 1359
+      },
+      {
+        "class": "home-insights",
+        "y": 8552,
+        "height": 941
+      },
+      {
+        "class": "home-careers",
+        "y": 9493,
+        "height": 1165
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "viewport": [
+      1920,
+      1080
+    ],
+    "height": 12564,
+    "footerHeight": 600,
+    "sections": [
+      {
+        "class": "home-hero-scroll",
+        "y": 0,
+        "height": 2700
+      },
+      {
+        "class": "home-road",
+        "y": 1890,
+        "height": 1620
+      },
+      {
+        "class": "home-scale",
+        "y": 3510,
+        "height": 2160
+      },
+      {
+        "class": "home-tech",
+        "y": 5670,
+        "height": 1748
+      },
+      {
+        "class": "home-safety",
+        "y": 7418,
+        "height": 1080
+      },
+      {
+        "class": "home-partners ",
+        "y": 8498,
+        "height": 1359
+      },
+      {
+        "class": "home-insights",
+        "y": 9857,
+        "height": 941
+      },
+      {
+        "class": "home-careers",
+        "y": 10798,
+        "height": 1166
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "viewport": [
+      768,
+      1024
+    ],
+    "height": 12688,
+    "footerHeight": 723,
+    "sections": [
+      {
+        "class": "home-hero-scroll",
+        "y": 0,
+        "height": 2560
+      },
+      {
+        "class": "home-road",
+        "y": 1792,
+        "height": 1536
+      },
+      {
+        "class": "home-scale",
+        "y": 3328,
+        "height": 2048
+      },
+      {
+        "class": "home-tech",
+        "y": 5376,
+        "height": 2480
+      },
+      {
+        "class": "home-safety",
+        "y": 7856,
+        "height": 1024
+      },
+      {
+        "class": "home-partners ",
+        "y": 8880,
+        "height": 1309
+      },
+      {
+        "class": "home-insights",
+        "y": 10189,
+        "height": 827
+      },
+      {
+        "class": "home-careers",
+        "y": 11015,
+        "height": 950
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "viewport": [
+      390,
+      844
+    ],
+    "height": 9418,
+    "footerHeight": 654,
+    "sections": [
+      {
+        "class": "home-hero-scroll",
+        "y": 0,
+        "height": 2110
+      },
+      {
+        "class": "home-road",
+        "y": 1477,
+        "height": 1266
+      },
+      {
+        "class": "home-scale",
+        "y": 2743,
+        "height": 1317
+      },
+      {
+        "class": "home-tech",
+        "y": 4060,
+        "height": 1586
+      },
+      {
+        "class": "home-safety",
+        "y": 5646,
+        "height": 844
+      },
+      {
+        "class": "home-partners ",
+        "y": 6490,
+        "height": 1014
+      },
+      {
+        "class": "home-insights",
+        "y": 7504,
+        "height": 721
+      },
+      {
+        "class": "home-careers",
+        "y": 8225,
+        "height": 538
+      }
+    ]
+  },
+  {
+    "page": "company",
+    "viewport": [
+      1440,
+      900
+    ],
+    "height": 7848,
+    "footerHeight": 600,
+    "sections": [
+      {
+        "class": "co-hero",
+        "y": 0,
+        "height": 900
+      },
+      {
+        "class": "co-story",
+        "y": 1020,
+        "height": 564
+      },
+      {
+        "class": "co-quote",
+        "y": 1704,
+        "height": 870
+      },
+      {
+        "class": "co-people co-width",
+        "y": 2694,
+        "height": 1020
+      },
+      {
+        "class": "co-investors",
+        "y": 3834,
+        "height": 761
+      },
+      {
+        "class": "co-news",
+        "y": 4715,
+        "height": 699
+      },
+      {
+        "class": "co-events",
+        "y": 5534,
+        "height": 655
+      },
+      {
+        "class": "co-locations",
+        "y": 6308,
+        "height": 900
+      }
+    ]
+  },
+  {
+    "page": "company",
+    "viewport": [
+      1920,
+      1080
+    ],
+    "height": 8508,
+    "footerHeight": 600,
+    "sections": [
+      {
+        "class": "co-hero",
+        "y": 0,
+        "height": 1080
+      },
+      {
+        "class": "co-story",
+        "y": 1200,
+        "height": 564
+      },
+      {
+        "class": "co-quote",
+        "y": 1884,
+        "height": 1170
+      },
+      {
+        "class": "co-people co-width",
+        "y": 3174,
+        "height": 1020
+      },
+      {
+        "class": "co-investors",
+        "y": 4314,
+        "height": 761
+      },
+      {
+        "class": "co-news",
+        "y": 5195,
+        "height": 699
+      },
+      {
+        "class": "co-events",
+        "y": 6014,
+        "height": 655
+      },
+      {
+        "class": "co-locations",
+        "y": 6788,
+        "height": 1080
+      }
+    ]
+  },
+  {
+    "page": "company",
+    "viewport": [
+      768,
+      1024
+    ],
+    "height": 6926,
+    "footerHeight": 723,
+    "sections": [
+      {
+        "class": "co-hero",
+        "y": 0,
+        "height": 1024
+      },
+      {
+        "class": "co-story",
+        "y": 1084,
+        "height": 652
+      },
+      {
+        "class": "co-quote",
+        "y": 1796,
+        "height": 450
+      },
+      {
+        "class": "co-people co-width",
+        "y": 2306,
+        "height": 988
+      },
+      {
+        "class": "co-investors",
+        "y": 3354,
+        "height": 641
+      },
+      {
+        "class": "co-news",
+        "y": 4055,
+        "height": 817
+      },
+      {
+        "class": "co-events",
+        "y": 4932,
+        "height": 655
+      },
+      {
+        "class": "co-locations",
+        "y": 5646,
+        "height": 517
+      }
+    ]
+  },
+  {
+    "page": "company",
+    "viewport": [
+      390,
+      844
+    ],
+    "height": 6278,
+    "footerHeight": 654,
+    "sections": [
+      {
+        "class": "co-hero",
+        "y": 0,
+        "height": 844
+      },
+      {
+        "class": "co-story",
+        "y": 904,
+        "height": 580
+      },
+      {
+        "class": "co-quote",
+        "y": 1544,
+        "height": 693
+      },
+      {
+        "class": "co-people co-width",
+        "y": 2297,
+        "height": 840
+      },
+      {
+        "class": "co-investors",
+        "y": 3197,
+        "height": 454
+      },
+      {
+        "class": "co-news",
+        "y": 3711,
+        "height": 683
+      },
+      {
+        "class": "co-events",
+        "y": 4454,
+        "height": 466
+      },
+      {
+        "class": "co-locations",
+        "y": 4979,
+        "height": 645
+      }
+    ]
+  }
+]

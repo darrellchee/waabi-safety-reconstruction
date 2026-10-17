@@ -15,9 +15,11 @@ export default defineConfig({
   use: {
     baseURL,
     browserName: "chromium",
+    ignoreHTTPSErrors: process.env.PLAYWRIGHT_IGNORE_HTTPS_ERRORS === "true",
     launchOptions: {
       executablePath: process.env.CHROMIUM_PATH || "/usr/bin/chromium",
       args: ["--no-sandbox"],
+      proxy: process.env.PLAYWRIGHT_PROXY ? { server: process.env.PLAYWRIGHT_PROXY } : undefined,
     },
     viewport: { width: 1440, height: 900 },
     reducedMotion: "reduce",

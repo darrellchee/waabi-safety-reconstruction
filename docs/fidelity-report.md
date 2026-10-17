@@ -1,5 +1,7 @@
 # Fidelity report
 
+This records the initial Safety-only release. Home now renders at `/`, and `/company` has been added. See `pages-qa.md` and the Home/Company fidelity reports for the current three-page verification.
+
 ## Delivered
 
 The complete `/safety` page is implemented with the original public photos, logo, fonts and footer video. Layout covers all four requested viewport sizes. Menus, cookie preferences, technology accordion, philosophy sequence, practices slider, insight navigation and hover states work. The root redirects locally to `/safety`.

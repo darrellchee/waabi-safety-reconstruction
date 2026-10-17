@@ -1,0 +1,830 @@
+[
+  {
+    "width": 1440,
+    "height": 600,
+    "nodes": [
+      {
+        "tag": "FOOTER",
+        "text": "We're just getting started\n\nFollow along or reach ",
+        "cl": "relative w-full overflow-clip",
+        "r": {
+          "x": 0,
+          "y": 300.296875,
+          "width": 1440,
+          "height": 600,
+          "top": 300.296875,
+          "right": 1440,
+          "bottom": 900.296875,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "H2",
+        "text": "We're just getting started",
+        "cl": "text-[2.4rem] leading-[110%] tracking-[-0.072rem] text-balance md:max-w-[40%] md:text-[4rem] md:tracking-[-0.12rem]",
+        "r": {
+          "x": 103,
+          "y": 380.296875,
+          "width": 273.59375,
+          "height": 88,
+          "top": 380.296875,
+          "right": 376.59375,
+          "bottom": 468.296875,
+          "left": 103
+        },
+        "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "P",
+        "text": "Follow along or reach out directly at\npress@waabi.",
+        "cl": "font-neue text-[1.4rem] leading-[140%] tracking-[0.028rem] md:text-[1.5rem] md:tracking-[0.015rem]",
+        "r": {
+          "x": 103,
+          "y": 484.296875,
+          "width": 684,
+          "height": 42,
+          "top": 484.296875,
+          "right": 787,
+          "bottom": 526.296875,
+          "left": 103
+        },
+        "font": "15px / 21px NeueHaas, \"NeueHaas Fallback\", serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "NAV",
+        "text": "Home\nSafety\nResearch\nCompany\nCareers\nInsights",
+        "cl": "flex flex-col gap-4",
+        "r": {
+          "x": 812.5,
+          "y": 421.09375,
+          "width": 325,
+          "height": 146.4375,
+          "top": 421.09375,
+          "right": 1137.5,
+          "bottom": 567.53125,
+          "left": 812.5
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "4px",
+        "pad": "0px"
+      },
+      {
+        "tag": "UL",
+        "text": "Home\nSafety\nResearch\nCompany\nCareers\nInsights",
+        "cl": "",
+        "r": {
+          "x": 812.5,
+          "y": 421.09375,
+          "width": 325,
+          "height": 146.4375,
+          "top": 421.09375,
+          "right": 1137.5,
+          "bottom": 567.53125,
+          "left": 812.5
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "LI",
+        "text": "Home",
+        "cl": "",
+        "r": {
+          "x": 812.5,
+          "y": 421.09375,
+          "width": 325,
+          "height": 24.40625,
+          "top": 421.09375,
+          "right": 1137.5,
+          "bottom": 445.5,
+          "left": 812.5
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "LI",
+        "text": "Safety",
+        "cl": "",
+        "r": {
+          "x": 812.5,
+          "y": 445.5,
+          "width": 325,
+          "height": 24.40625,
+          "top": 445.5,
+          "right": 1137.5,
+          "bottom": 469.90625,
+          "left": 812.5
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "LI",
+        "text": "Research",
+        "cl": "",
+        "r": {
+          "x": 812.5,
+          "y": 469.90625,
+          "width": 325,
+          "height": 24.40625,
+          "top": 469.90625,
+          "right": 1137.5,
+          "bottom": 494.3125,
+          "left": 812.5
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "LI",
+        "text": "Company",
+        "cl": "",
+        "r": {
+          "x": 812.5,
+          "y": 494.3125,
+          "width": 325,
+          "height": 24.40625,
+          "top": 494.3125,
+          "right": 1137.5,
+          "bottom": 518.71875,
+          "left": 812.5
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "LI",
+        "text": "Careers",
+        "cl": "",
+        "r": {
+          "x": 812.5,
+          "y": 518.71875,
+          "width": 325,
+          "height": 24.40625,
+          "top": 518.71875,
+          "right": 1137.5,
+          "bottom": 543.125,
+          "left": 812.5
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "LI",
+        "text": "Insights",
+        "cl": "",
+        "r": {
+          "x": 812.5,
+          "y": 543.125,
+          "width": 325,
+          "height": 24.40625,
+          "top": 543.125,
+          "right": 1137.5,
+          "bottom": 567.53125,
+          "left": 812.5
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "svg",
+        "text": null,
+        "cl": {},
+        "r": {
+          "x": 1181.984375,
+          "y": 399.296875,
+          "width": 12,
+          "height": 12,
+          "top": 399.296875,
+          "right": 1193.984375,
+          "bottom": 411.296875,
+          "left": 1181.984375
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "svg",
+        "text": null,
+        "cl": {},
+        "r": {
+          "x": 1241.984375,
+          "y": 397.296875,
+          "width": 16,
+          "height": 16,
+          "top": 397.296875,
+          "right": 1257.984375,
+          "bottom": 413.296875,
+          "left": 1241.984375
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "svg",
+        "text": null,
+        "cl": {},
+        "r": {
+          "x": 1303.984375,
+          "y": 397.296875,
+          "width": 16,
+          "height": 16,
+          "top": 397.296875,
+          "right": 1319.984375,
+          "bottom": 413.296875,
+          "left": 1303.984375
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "svg",
+        "text": null,
+        "cl": "lg:h-[14rem] lg:w-[52.6rem]",
+        "r": {
+          "x": 810.984375,
+          "y": 680.296875,
+          "width": 526,
+          "height": 140,
+          "top": 680.296875,
+          "right": 1336.984375,
+          "bottom": 820.296875,
+          "left": 810.984375
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "height": 723,
+    "nodes": [
+      {
+        "tag": "FOOTER",
+        "text": "We're just getting started\n\nFollow along or reach ",
+        "cl": "relative w-full overflow-clip",
+        "r": {
+          "x": 0,
+          "y": 301.53125,
+          "width": 768,
+          "height": 722.828125,
+          "top": 301.53125,
+          "right": 768,
+          "bottom": 1024.359375,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "H2",
+        "text": "We're just getting started",
+        "cl": "text-[2.4rem] leading-[110%] tracking-[-0.072rem] text-balance md:max-w-[40%] md:text-[4rem] md:tracking-[-0.12rem]",
+        "r": {
+          "x": 54.9375,
+          "y": 361.254638671875,
+          "width": 263.25,
+          "height": 88,
+          "top": 361.254638671875,
+          "right": 318.1875,
+          "bottom": 449.254638671875,
+          "left": 54.9375
+        },
+        "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "P",
+        "text": "Follow along or reach out directly at\npress@waabi.",
+        "cl": "font-neue text-[1.4rem] leading-[140%] tracking-[0.028rem] md:text-[1.5rem] md:tracking-[0.015rem]",
+        "r": {
+          "x": 54.9375,
+          "y": 465.254638671875,
+          "width": 658.125,
+          "height": 42,
+          "top": 465.254638671875,
+          "right": 713.0625,
+          "bottom": 507.254638671875,
+          "left": 54.9375
+        },
+        "font": "15px / 21px NeueHaas, \"NeueHaas Fallback\", serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "NAV",
+        "text": "Home\nSafety\nResearch\nCompany\nCareers\nInsights",
+        "cl": "flex flex-col gap-4",
+        "r": {
+          "x": 54.9375,
+          "y": 566.051513671875,
+          "width": 658.125,
+          "height": 146.4375,
+          "top": 566.051513671875,
+          "right": 713.0625,
+          "bottom": 712.489013671875,
+          "left": 54.9375
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "4px",
+        "pad": "0px"
+      },
+      {
+        "tag": "UL",
+        "text": "Home\nSafety\nResearch\nCompany\nCareers\nInsights",
+        "cl": "",
+        "r": {
+          "x": 54.9375,
+          "y": 566.051513671875,
+          "width": 658.125,
+          "height": 146.4375,
+          "top": 566.051513671875,
+          "right": 713.0625,
+          "bottom": 712.489013671875,
+          "left": 54.9375
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "LI",
+        "text": "Home",
+        "cl": "",
+        "r": {
+          "x": 54.9375,
+          "y": 566.051513671875,
+          "width": 658.125,
+          "height": 24.40625,
+          "top": 566.051513671875,
+          "right": 713.0625,
+          "bottom": 590.457763671875,
+          "left": 54.9375
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "LI",
+        "text": "Safety",
+        "cl": "",
+        "r": {
+          "x": 54.9375,
+          "y": 590.457763671875,
+          "width": 658.125,
+          "height": 24.40625,
+          "top": 590.457763671875,
+          "right": 713.0625,
+          "bottom": 614.864013671875,
+          "left": 54.9375
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "LI",
+        "text": "Research",
+        "cl": "",
+        "r": {
+          "x": 54.9375,
+          "y": 614.864013671875,
+          "width": 658.125,
+          "height": 24.40625,
+          "top": 614.864013671875,
+          "right": 713.0625,
+          "bottom": 639.270263671875,
+          "left": 54.9375
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "LI",
+        "text": "Company",
+        "cl": "",
+        "r": {
+          "x": 54.9375,
+          "y": 639.270263671875,
+          "width": 658.125,
+          "height": 24.40625,
+          "top": 639.270263671875,
+          "right": 713.0625,
+          "bottom": 663.676513671875,
+          "left": 54.9375
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "LI",
+        "text": "Careers",
+        "cl": "",
+        "r": {
+          "x": 54.9375,
+          "y": 663.676513671875,
+          "width": 658.125,
+          "height": 24.40625,
+          "top": 663.676513671875,
+          "right": 713.0625,
+          "bottom": 688.082763671875,
+          "left": 54.9375
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "LI",
+        "text": "Insights",
+        "cl": "",
+        "r": {
+          "x": 54.9375,
+          "y": 688.082763671875,
+          "width": 658.125,
+          "height": 24.40625,
+          "top": 688.082763671875,
+          "right": 713.0625,
+          "bottom": 712.489013671875,
+          "left": 54.9375
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "svg",
+        "text": null,
+        "cl": {},
+        "r": {
+          "x": 66.9375,
+          "y": 754.489013671875,
+          "width": 12,
+          "height": 12,
+          "top": 754.489013671875,
+          "right": 78.9375,
+          "bottom": 766.489013671875,
+          "left": 66.9375
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "svg",
+        "text": null,
+        "cl": {},
+        "r": {
+          "x": 112.9375,
+          "y": 752.489013671875,
+          "width": 16,
+          "height": 16,
+          "top": 752.489013671875,
+          "right": 128.9375,
+          "bottom": 768.489013671875,
+          "left": 112.9375
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "svg",
+        "text": null,
+        "cl": {},
+        "r": {
+          "x": 160.9375,
+          "y": 752.489013671875,
+          "width": 16,
+          "height": 16,
+          "top": 752.489013671875,
+          "right": 176.9375,
+          "bottom": 768.489013671875,
+          "left": 160.9375
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "svg",
+        "text": null,
+        "cl": "lg:h-[14rem] lg:w-[52.6rem]",
+        "r": {
+          "x": 54.9375,
+          "y": 842.489013671875,
+          "width": 300,
+          "height": 80,
+          "top": 842.489013671875,
+          "right": 354.9375,
+          "bottom": 922.489013671875,
+          "left": 54.9375
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "height": 654,
+    "nodes": [
+      {
+        "tag": "FOOTER",
+        "text": "We're just getting started\n\nFollow along or reach ",
+        "cl": "relative w-full overflow-clip",
+        "r": {
+          "x": 0,
+          "y": 189.953125,
+          "width": 390,
+          "height": 654.25,
+          "top": 189.953125,
+          "right": 390,
+          "bottom": 844.203125,
+          "left": 0
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "H2",
+        "text": "We're just getting started",
+        "cl": "text-[2.4rem] leading-[110%] tracking-[-0.072rem] text-balance md:max-w-[40%] md:text-[4rem] md:tracking-[-0.12rem]",
+        "r": {
+          "x": 40,
+          "y": 249.953125,
+          "width": 310,
+          "height": 26.40625,
+          "top": 249.953125,
+          "right": 350,
+          "bottom": 276.359375,
+          "left": 40
+        },
+        "font": "24px / 26.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "P",
+        "text": "Follow along or reach out directly at\npress@waabi.",
+        "cl": "font-neue text-[1.4rem] leading-[140%] tracking-[0.028rem] md:text-[1.5rem] md:tracking-[0.015rem]",
+        "r": {
+          "x": 40,
+          "y": 292.359375,
+          "width": 310,
+          "height": 39.1875,
+          "top": 292.359375,
+          "right": 350,
+          "bottom": 331.546875,
+          "left": 40
+        },
+        "font": "14px / 19.6px NeueHaas, \"NeueHaas Fallback\", serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "NAV",
+        "text": "Home\nSafety\nResearch\nCompany\nCareers\nInsights",
+        "cl": "flex flex-col gap-4",
+        "r": {
+          "x": 40,
+          "y": 388.953125,
+          "width": 310,
+          "height": 146.4375,
+          "top": 388.953125,
+          "right": 350,
+          "bottom": 535.390625,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "4px",
+        "pad": "0px"
+      },
+      {
+        "tag": "UL",
+        "text": "Home\nSafety\nResearch\nCompany\nCareers\nInsights",
+        "cl": "",
+        "r": {
+          "x": 40,
+          "y": 388.953125,
+          "width": 310,
+          "height": 146.4375,
+          "top": 388.953125,
+          "right": 350,
+          "bottom": 535.390625,
+          "left": 40
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "LI",
+        "text": "Home",
+        "cl": "",
+        "r": {
+          "x": 40,
+          "y": 388.953125,
+          "width": 310,
+          "height": 24.40625,
+          "top": 388.953125,
+          "right": 350,
+          "bottom": 413.359375,
+          "left": 40
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "LI",
+        "text": "Safety",
+        "cl": "",
+        "r": {
+          "x": 40,
+          "y": 413.359375,
+          "width": 310,
+          "height": 24.40625,
+          "top": 413.359375,
+          "right": 350,
+          "bottom": 437.765625,
+          "left": 40
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "LI",
+        "text": "Research",
+        "cl": "",
+        "r": {
+          "x": 40,
+          "y": 437.765625,
+          "width": 310,
+          "height": 24.40625,
+          "top": 437.765625,
+          "right": 350,
+          "bottom": 462.171875,
+          "left": 40
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "LI",
+        "text": "Company",
+        "cl": "",
+        "r": {
+          "x": 40,
+          "y": 462.171875,
+          "width": 310,
+          "height": 24.40625,
+          "top": 462.171875,
+          "right": 350,
+          "bottom": 486.578125,
+          "left": 40
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "LI",
+        "text": "Careers",
+        "cl": "",
+        "r": {
+          "x": 40,
+          "y": 486.578125,
+          "width": 310,
+          "height": 24.40625,
+          "top": 486.578125,
+          "right": 350,
+          "bottom": 510.984375,
+          "left": 40
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "LI",
+        "text": "Insights",
+        "cl": "",
+        "r": {
+          "x": 40,
+          "y": 510.984375,
+          "width": 310,
+          "height": 24.40625,
+          "top": 510.984375,
+          "right": 350,
+          "bottom": 535.390625,
+          "left": 40
+        },
+        "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "svg",
+        "text": null,
+        "cl": {},
+        "r": {
+          "x": 52,
+          "y": 577.390625,
+          "width": 12,
+          "height": 12,
+          "top": 577.390625,
+          "right": 64,
+          "bottom": 589.390625,
+          "left": 52
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "svg",
+        "text": null,
+        "cl": {},
+        "r": {
+          "x": 98,
+          "y": 575.390625,
+          "width": 16,
+          "height": 16,
+          "top": 575.390625,
+          "right": 114,
+          "bottom": 591.390625,
+          "left": 98
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "svg",
+        "text": null,
+        "cl": {},
+        "r": {
+          "x": 146,
+          "y": 575.390625,
+          "width": 16,
+          "height": 16,
+          "top": 575.390625,
+          "right": 162,
+          "bottom": 591.390625,
+          "left": 146
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      },
+      {
+        "tag": "svg",
+        "text": null,
+        "cl": "lg:h-[14rem] lg:w-[52.6rem]",
+        "r": {
+          "x": 40,
+          "y": 665.390625,
+          "width": 300,
+          "height": 80,
+          "top": 665.390625,
+          "right": 340,
+          "bottom": 745.390625,
+          "left": 40
+        },
+        "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+        "gap": "normal",
+        "pad": "0px"
+      }
+    ]
+  }
+]

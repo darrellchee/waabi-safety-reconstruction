@@ -1,0 +1,82 @@
+[
+  {
+    "page": "home",
+    "viewport": [
+      1440,
+      900
+    ],
+    "height": 11332,
+    "runtime_errors": [],
+    "mean_absolute_rgb_error": 58.272
+  },
+  {
+    "page": "home",
+    "viewport": [
+      1920,
+      1080
+    ],
+    "height": 12625,
+    "runtime_errors": [],
+    "mean_absolute_rgb_error": 80.083
+  },
+  {
+    "page": "home",
+    "viewport": [
+      768,
+      1024
+    ],
+    "height": 13220,
+    "runtime_errors": [],
+    "mean_absolute_rgb_error": 76.372
+  },
+  {
+    "page": "home",
+    "viewport": [
+      390,
+      844
+    ],
+    "height": 9309,
+    "runtime_errors": [],
+    "mean_absolute_rgb_error": 72.828
+  },
+  {
+    "page": "company",
+    "viewport": [
+      1440,
+      900
+    ],
+    "height": 7840,
+    "runtime_errors": [],
+    "mean_absolute_rgb_error": 2.448
+  },
+  {
+    "page": "company",
+    "viewport": [
+      1920,
+      1080
+    ],
+    "height": 8500,
+    "runtime_errors": [],
+    "mean_absolute_rgb_error": 3.32
+  },
+  {
+    "page": "company",
+    "viewport": [
+      768,
+      1024
+    ],
+    "height": 6647,
+    "runtime_errors": [],
+    "mean_absolute_rgb_error": 2.894
+  },
+  {
+    "page": "company",
+    "viewport": [
+      390,
+      844
+    ],
+    "height": 6354,
+    "runtime_errors": [],
+    "mean_absolute_rgb_error": 3.555
+  }
+]

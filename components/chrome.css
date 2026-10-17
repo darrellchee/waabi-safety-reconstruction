@@ -576,3 +576,74 @@ a:focus-visible {
 .cookie-modal h2 {
   letter-spacing: normal;
 }
+/* Shared footer geometry measured from the original at desktop, tablet and mobile. */
+.footer-video {
+  object-fit: fill;
+}
+.footer-contact h2 {
+  margin-bottom: 16px;
+}
+.footer-navigation p {
+  margin-bottom: 24px;
+}
+.footer-legal p {
+  margin-bottom: 8px;
+}
+@media (max-width: 1023px) {
+  .site-footer {
+    height: auto;
+    min-height: 0;
+    padding: 60px var(--gutter) 30px;
+  }
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-navigation p {
+    margin-bottom: 12px;
+  }
+  .footer-socials > a {
+    width: 36px;
+    height: 36px;
+  }
+  .footer-bottom {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 30px;
+  }
+  .footer-logo {
+    width: 300px;
+    height: 80px;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: left;
+    align-self: flex-start;
+  }
+  .footer-legal {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  .footer-contact h2 {
+    max-width: 40%;
+  }
+}
+@media (max-width: 639px) {
+  .footer-contact p {
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.28px;
+  }
+  .footer-navigation p {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+  .footer-legal {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+}

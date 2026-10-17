@@ -16,3 +16,11 @@ Next.js15 App Router renders `/safety`; the root route uses Next’s redirect. R
 CSS replaces heavyweight animation/3D dependencies where equivalent layout and interactions are practical. Footer video supplies the original animated tunnel. Reduced-motion users see its pink fallback and no entrance/transition animation. Exact original per-word reveal orchestration and canvas logo treatment remain approximations, as documented in the fidelity report.
 
 Responsive rules preserve the measured mobile, tablet and desktop typography and proportions. Later CSS corrections are annotated with their evidence source. `NEXT_DIST_DIR` optionally isolates production builds from the active dev server. Playwright runs in installed Chromium; tests cover responsive overflow, interactions, persistent consent, assets and runtime errors.
+
+## Home and Company extension
+
+The root now renders `HomePage`; `/company` renders `CompanyPage`. Route metadata, shared header labels, logo navigation and footer links cover all three local routes. Insights content is shared in `insights-data.ts` while page-specific classes keep Home and Company styling isolated.
+
+Home combines local films and extracted poster frames, viewport-aware playback, native sticky sections, three product strengths, article links, four original partner quotes with a 10-second rotation, a snapping Insights rail and a careers collage. The timer pauses for hover/focus and reduced motion. Company contains scroll-linked text coloring and portrait movement, original investor logos, news/events rails and focus/touch/pointer office details on the original SVG map. Both use the original fonts and media. The shared footer now follows the measured tablet/mobile stacked layout and source dimensions.
+
+`tests/pages.spec.ts` supplements the Safety regression suite. `PLAYWRIGHT_BASE_URL` selects a running production build; `PLAYWRIGHT_PROXY` and `PLAYWRIGHT_IGNORE_HTTPS_ERRORS` are optional browser-test settings for this managed environment's outbound proxy and CA handling. They are not application configuration.

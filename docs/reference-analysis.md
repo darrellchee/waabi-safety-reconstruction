@@ -30,3 +30,7 @@ Reference screenshots were taken after fonts and media initialized and after scr
 REA source evidence found paragraph opacity reveals with0.07s word stagger and0.1s transitions, plus shared clipped card reveals with0.6s easing and0.15s index stagger. These shared-source findings are distinguished from directly observed page behavior in the REA report.
 
 No page-specific interactive WebGL scene was observed. Exact private implementation details are not inferred from unrelated bundled components. Additional interaction evidence: [reference-interactions.md](reference-interactions.md). Public asset map and inaccessible mobile tunnel resource: [asset-inventory.md](asset-inventory.md).
+
+## Additional routes
+
+Home and Company evidence, original media, page-specific measurements and refinement reports are documented in `home-reference-analysis.md`, `home-fidelity.md`, `company-reference-analysis.md`, and `company-fidelity.md`. REA native captures remain the primary inspection evidence for those routes; Playwright supplements interaction and computed-style measurement.

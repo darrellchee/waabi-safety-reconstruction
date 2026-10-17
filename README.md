@@ -1,6 +1,6 @@
-# Waabi Safety — educational reconstruction
+# Waabi — educational reconstruction
 
-A standalone Next.js App Router / React / TypeScript reconstruction of https://waabi.ai/safety. This private educational prototype is not an official Waabi product. Original trademarks, fonts and media remain their owners’ property; no redistribution license is asserted.
+A standalone Next.js App Router / React / TypeScript reconstruction of Waabi’s Home, Safety, and Company pages. This private educational prototype is not an official Waabi product. Original trademarks, fonts and media remain their owners’ property; no redistribution license is asserted.
 
 ## Run locally
 
@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000/safety. `/` redirects to `/safety`.
+Open http://localhost:3000/ for Home, `/safety` for Safety, or `/company` for Company. Shared navigation connects these three local routes.
 
 ```bash
 npm run build
@@ -25,10 +25,13 @@ Playwright uses `/usr/bin/chromium` by default; set `CHROMIUM_PATH` to an instal
 
 ## Included
 
-- Complete hero, statistics, safety philosophy, technology accordion, practices slider, nine insight cards and footer.
+- Complete Home, Safety, and Company pages with original photography, video, typography, shared navigation and footer.
+- Home video hero, collage, product strengths, technology panels, safety showcase, partners, insights and careers.
+- Company founder story, team, investors, latest news, events and locations map.
+- Safety statistics, philosophy, technology accordion and practices slider.
 - Desktop sticky story and mobile swipeable story, hover/tap technology panels, bounded practices carousel, horizontally scrollable insights.
 - Responsive global navigation, original brand/media/font assets, cookie preference UI, keyboard controls and reduced motion.
-- All non-Safety routes and article links lead to their known official public destinations. The prototype sends no analytics or cookie preference data.
+- Routes outside Home, Safety, and Company and article links lead to their known official public destinations. The prototype sends no analytics or cookie preference data.
 
 ## Evidence and validation
 
@@ -36,4 +39,6 @@ REA 6.5.0 inspected the live page through CDP and analyzed public JavaScript. Pl
 
 Screenshots: `artifacts/reference/` and `artifacts/comparison/`. Rerun local screenshot comparison with `python scripts/validate_visuals.py` after starting the server (Python Playwright and Pillow required). Reference captures require network access through the environment proxy. `scripts/download-assets.py` records public asset provenance.
 
-See `docs/implementation-notes.md` and `docs/fidelity-report.md` for architecture and remaining differences. No external deployment is included.
+See `docs/implementation-notes.md` and `docs/fidelity-report.md` for architecture and remaining differences. The project is deployed through the connected Vercel project `waabi-safety-reconstruction`; production is https://waabi-safety-reconstruction.vercel.app/.
+
+New page inspection and fidelity evidence: `docs/home-reference-analysis.md`, `docs/home-fidelity.md`, `docs/company-reference-analysis.md`, `docs/company-fidelity.md`, and `docs/pages-qa.md`.

@@ -1,0 +1,32 @@
+[
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "status": 200,
+    "url": "https://waabi-safety-reconstruction.vercel.app/safety",
+    "sections": 6,
+    "overflow": false,
+    "menu": true,
+    "technology": true,
+    "practices": true,
+    "brokenImages": [],
+    "pageErrors": []
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "status": 200,
+    "url": "https://waabi-safety-reconstruction.vercel.app/safety",
+    "sections": 6,
+    "overflow": false,
+    "menu": true,
+    "technology": true,
+    "practices": true,
+    "brokenImages": [],
+    "pageErrors": []
+  }
+]

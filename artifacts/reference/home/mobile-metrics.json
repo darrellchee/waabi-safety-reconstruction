@@ -1,0 +1,514 @@
+[
+  {
+    "tag": "SECTION",
+    "text": "Waabi is pioneering the future of Physical AI.\n\nBuilt to think.\nBorn to haul.\n\nWe built our own road.\n\nOur revolutionary",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 4059.65625,
+      "top": 0,
+      "right": 390,
+      "bottom": 4059.65625,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "normal"
+  },
+  {
+    "tag": "SECTION",
+    "text": "Waabi is pioneering the future of Physical AI.\n\nBuilt to think.\nBorn to haul.",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 2110,
+      "top": 0,
+      "right": 390,
+      "bottom": 2110,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "normal"
+  },
+  {
+    "tag": "H1",
+    "text": "Built to think.\nBorn to haul.",
+    "rect": {
+      "x": 40,
+      "y": 539.1875,
+      "width": 286,
+      "height": 244.8125,
+      "top": 539.1875,
+      "right": 326,
+      "bottom": 784,
+      "left": 40
+    },
+    "font": "72px / 61.2px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-2.88px"
+  },
+  {
+    "tag": "SECTION",
+    "text": "We built our own road.\n\nOur revolutionary Physical AI Platform enables\u2014for the first time ever\u2014true scale, generalizing ",
+    "rect": {
+      "x": 0,
+      "y": 1477,
+      "width": 390,
+      "height": 1266,
+      "top": 1477,
+      "right": 390,
+      "bottom": 2743,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "normal"
+  },
+  {
+    "tag": "SECTION",
+    "text": "Unlocking scale in the real world.\n\nWe deliver a product that's faster, safer, more scalable, and efficient\u2014unlocking th",
+    "rect": {
+      "x": 0,
+      "y": 2743,
+      "width": 390,
+      "height": 1316.65625,
+      "top": 2743,
+      "right": 390,
+      "bottom": 4059.65625,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "normal"
+  },
+  {
+    "tag": "H2",
+    "text": "Unlocking scale in the real world.",
+    "rect": {
+      "x": 40,
+      "y": 3153,
+      "width": 310,
+      "height": 50.40625,
+      "top": 3153,
+      "right": 350,
+      "bottom": 3203.40625,
+      "left": 40
+    },
+    "font": "28px / 25.2px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-0.84px"
+  },
+  {
+    "tag": "SECTION",
+    "text": "The technology behind Waabi.\nExplore the tech\n\nExperience\n\nWaabi World\n\nDive into\n\nMixed Reality Testing\n\nMeet the\n\nWaab",
+    "rect": {
+      "x": 0,
+      "y": 4059.65625,
+      "width": 390,
+      "height": 1585.984375,
+      "top": 4059.65625,
+      "right": 390,
+      "bottom": 5645.640625,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "normal"
+  },
+  {
+    "tag": "SECTION",
+    "text": "The technology behind Waabi.\nExplore the tech",
+    "rect": {
+      "x": 0,
+      "y": 4059.65625,
+      "width": 390,
+      "height": 844,
+      "top": 4059.65625,
+      "right": 390,
+      "bottom": 4903.65625,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "normal"
+  },
+  {
+    "tag": "H2",
+    "text": "The technology behind Waabi.",
+    "rect": {
+      "x": 40,
+      "y": 4605.65625,
+      "width": 310,
+      "height": 198,
+      "top": 4605.65625,
+      "right": 350,
+      "bottom": 4803.65625,
+      "left": 40
+    },
+    "font": "55px / 49.5px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-2.2px"
+  },
+  {
+    "tag": "SECTION",
+    "text": "Experience\n\nWaabi World\n\nDive into\n\nMixed Reality Testing\n\nMeet the\n\nWaabi Driver",
+    "rect": {
+      "x": 0,
+      "y": 4903.65625,
+      "width": 390,
+      "height": 741.984375,
+      "top": 4903.65625,
+      "right": 390,
+      "bottom": 5645.640625,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "normal"
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi World",
+    "rect": {
+      "x": 52,
+      "y": 5088.984375,
+      "width": 286,
+      "height": 30,
+      "top": 5088.984375,
+      "right": 338,
+      "bottom": 5118.984375,
+      "left": 52
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-0.72px"
+  },
+  {
+    "tag": "H2",
+    "text": "Mixed Reality Testing",
+    "rect": {
+      "x": 52,
+      "y": 5328.3125,
+      "width": 286,
+      "height": 30,
+      "top": 5328.3125,
+      "right": 338,
+      "bottom": 5358.3125,
+      "left": 52
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-0.72px"
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi Driver",
+    "rect": {
+      "x": 52,
+      "y": 5567.640625,
+      "width": 286,
+      "height": 30,
+      "top": 5567.640625,
+      "right": 338,
+      "bottom": 5597.640625,
+      "left": 52
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-0.72px"
+  },
+  {
+    "tag": "SECTION",
+    "text": "Setting new standards for AV safety.\nFor us, safety isn't a box to check\u2014it's a commitment we strengthen daily with a si",
+    "rect": {
+      "x": 0,
+      "y": 5645.640625,
+      "width": 390,
+      "height": 844,
+      "top": 5645.640625,
+      "right": 390,
+      "bottom": 6489.640625,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "normal"
+  },
+  {
+    "tag": "H2",
+    "text": "Setting new standards for AV safety.",
+    "rect": {
+      "x": 40,
+      "y": 5705.640625,
+      "width": 310,
+      "height": 91.78125,
+      "top": 5705.640625,
+      "right": 350,
+      "bottom": 5797.421875,
+      "left": 40
+    },
+    "font": "34px / 30.6px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-1.02px"
+  },
+  {
+    "tag": "SECTION",
+    "text": "Trusted by the best in the industry.\nFrom hardware providers and OEMs to retailers, logistics providers and carriers, th",
+    "rect": {
+      "x": 0,
+      "y": 6489.640625,
+      "width": 390,
+      "height": 1013.625,
+      "top": 6489.640625,
+      "right": 390,
+      "bottom": 7503.265625,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "normal"
+  },
+  {
+    "tag": "SECTION",
+    "text": "Trusted by the best in the industry.\nFrom hardware providers and OEMs to retailers, logistics providers and carriers, th",
+    "rect": {
+      "x": 0,
+      "y": 6489.640625,
+      "width": 390,
+      "height": 1013.625,
+      "top": 6489.640625,
+      "right": 390,
+      "bottom": 7503.265625,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "normal"
+  },
+  {
+    "tag": "H2",
+    "text": "Trusted by the best in the industry.",
+    "rect": {
+      "x": 40,
+      "y": 6549.640625,
+      "width": 310,
+      "height": 61.1875,
+      "top": 6549.640625,
+      "right": 350,
+      "bottom": 6610.828125,
+      "left": 40
+    },
+    "font": "34px / 30.6px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-1.02px"
+  },
+  {
+    "tag": "SECTION",
+    "text": "Insights.\n\nExplore technology deep dives, behind-the-scenes perspectives, and the ideas shaping the future of autonomy.\n",
+    "rect": {
+      "x": 0,
+      "y": 7503.265625,
+      "width": 390,
+      "height": 720.84375,
+      "top": 7503.265625,
+      "right": 390,
+      "bottom": 8224.109375,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "normal"
+  },
+  {
+    "tag": "H2",
+    "text": "Insights.",
+    "rect": {
+      "x": 40,
+      "y": 7563.265625,
+      "width": 155,
+      "height": 30.59375,
+      "top": 7563.265625,
+      "right": 195,
+      "bottom": 7593.859375,
+      "left": 40
+    },
+    "font": "34px / 30.6px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-1.02px"
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi and Warrior Logistics partner on autonomous trucking operations in Texas",
+    "rect": {
+      "x": 40,
+      "y": 8198.71875,
+      "width": 310,
+      "height": 59.390625,
+      "top": 8198.71875,
+      "right": 350,
+      "bottom": 8258.109375,
+      "left": 40
+    },
+    "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-0.54px"
+  },
+  {
+    "tag": "H2",
+    "text": "Volvo and Waabi Kick Off Customer Operations in Texas, Starting with Warp",
+    "rect": {
+      "x": 378,
+      "y": 8398.71875,
+      "width": 310,
+      "height": 39.59375,
+      "top": 8398.71875,
+      "right": 688,
+      "bottom": 8438.3125,
+      "left": 378
+    },
+    "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-0.54px"
+  },
+  {
+    "tag": "H2",
+    "text": "Built to generalize. Proven on I-35.",
+    "rect": {
+      "x": 716,
+      "y": 8598.71875,
+      "width": 264.34375,
+      "height": 19.796875,
+      "top": 8598.71875,
+      "right": 980.34375,
+      "bottom": 8618.515625,
+      "left": 716
+    },
+    "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-0.54px"
+  },
+  {
+    "tag": "H2",
+    "text": "80% Growth on Long Haul's Toughest Corridor",
+    "rect": {
+      "x": 1054,
+      "y": 8798.71875,
+      "width": 310,
+      "height": 39.59375,
+      "top": 8798.71875,
+      "right": 1364,
+      "bottom": 8838.3125,
+      "left": 1054
+    },
+    "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-0.54px"
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi crosses the next frontier of generalization, unlocking truly scalable AVs",
+    "rect": {
+      "x": 1392,
+      "y": 8988.125,
+      "width": 310,
+      "height": 59.390625,
+      "top": 8988.125,
+      "right": 1702,
+      "bottom": 9047.515625,
+      "left": 1392
+    },
+    "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-0.54px"
+  },
+  {
+    "tag": "H2",
+    "text": "All You Need to Know About Self-Driving | CVPR Tutorial 2026",
+    "rect": {
+      "x": 1730,
+      "y": 9198.71875,
+      "width": 310,
+      "height": 39.59375,
+      "top": 9198.71875,
+      "right": 2040,
+      "bottom": 9238.3125,
+      "left": 1730
+    },
+    "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-0.54px"
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi secures $1 Billion in new funding to lead Physical AI revolution",
+    "rect": {
+      "x": 2068,
+      "y": 9398.71875,
+      "width": 310,
+      "height": 39.59375,
+      "top": 9398.71875,
+      "right": 2378,
+      "bottom": 9438.3125,
+      "left": 2068
+    },
+    "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-0.54px"
+  },
+  {
+    "tag": "H2",
+    "text": "From closed course to public roads: The path to driverless",
+    "rect": {
+      "x": 2406,
+      "y": 9598.71875,
+      "width": 310,
+      "height": 39.59375,
+      "top": 9598.71875,
+      "right": 2716,
+      "bottom": 9638.3125,
+      "left": 2406
+    },
+    "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-0.54px"
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi unlocks direct-to-customer model with surface street driving capabilities",
+    "rect": {
+      "x": 2744,
+      "y": 9798.71875,
+      "width": 310,
+      "height": 59.390625,
+      "top": 9798.71875,
+      "right": 3054,
+      "bottom": 9858.109375,
+      "left": 2744
+    },
+    "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-0.54px"
+  },
+  {
+    "tag": "SECTION",
+    "text": "Build Physical AI with us.\nJoin the team",
+    "rect": {
+      "x": 0,
+      "y": 8224.109375,
+      "width": 390,
+      "height": 538,
+      "top": 8224.109375,
+      "right": 390,
+      "bottom": 8762.109375,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "normal"
+  },
+  {
+    "tag": "H2",
+    "text": "Build Physical AI with us.",
+    "rect": {
+      "x": 40,
+      "y": 8284.109375,
+      "width": 310,
+      "height": 148.5,
+      "top": 8284.109375,
+      "right": 350,
+      "bottom": 8432.609375,
+      "left": 40
+    },
+    "font": "55px / 49.5px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-2.2px"
+  },
+  {
+    "tag": "H2",
+    "text": "We're just getting started",
+    "rect": {
+      "x": 40,
+      "y": 8622.109375,
+      "width": 310,
+      "height": 26.40625,
+      "top": 8622.109375,
+      "right": 350,
+      "bottom": 8648.515625,
+      "left": 40
+    },
+    "font": "24px / 26.4px Zagma, \"Zagma Fallback\", sans-serif",
+    "tracking": "-0.72px"
+  }
+]

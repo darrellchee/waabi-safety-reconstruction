@@ -1,0 +1,99 @@
+[
+  {
+    "id": "RDp0c1yyTXqdGrtbmyTpgQ",
+    "_modelApiKey": "partner_item",
+    "__typename": "PartnerItemRecord",
+    "name": "Volvo",
+    "review": "Partnerships like the one between Volvo Autonomous Solutions and Waabi play an important role not only in advancing autonomous technology, but also in building the broader ecosystem required to support commercial deployment.",
+    "image": "1761262941-fya_one-1.jpg",
+    "logo": "1760431072-volvo-logo.svg",
+    "author": "Nils Jaeger",
+    "authorTitle": "CEO of Volvo Autonomous Solutions",
+    "button": {
+      "id": "AEx8op6OQGGC8BjPF-Fucg",
+      "_modelApiKey": "button",
+      "__typename": "ButtonRecord",
+      "label": "See the details",
+      "link": {
+        "id": "RflscwXJS5WVrqPPYL8ZVg",
+        "_modelApiKey": "internal_link",
+        "__typename": "InternalLinkRecord",
+        "anchor": "",
+        "link": {
+          "__typename": "ArticleRecord",
+          "slug": "waabi-and-volvo-demonstrate-the-future-of-autonomous-trucking"
+        }
+      }
+    },
+    "slug": "waabi-and-volvo-demonstrate-the-future-of-autonomous-trucking"
+  },
+  {
+    "id": "T9kYgjQ9QfOBJHlDBCGEtA",
+    "_modelApiKey": "partner_item",
+    "__typename": "PartnerItemRecord",
+    "name": "Uber",
+    "review": "Waabi's expanded focus on robotaxis marks an important milestone for their team and the AV industry more broadly. We’re very excited to deepen our partnership with Waabi as they significantly scale their Physical AI Platform and enter a new phase of an already remarkable journey.",
+    "image": "1769592036-logo-partner.png",
+    "logo": "1769597315-investor-logos-11.svg",
+    "author": "Dara Khosrowshahi",
+    "authorTitle": "CEO of Uber",
+    "button": null,
+    "slug": null
+  },
+  {
+    "id": "cMuqSnnCQ9mAsshK-KP7ig",
+    "_modelApiKey": "partner_item",
+    "__typename": "PartnerItemRecord",
+    "name": "Uber Freight",
+    "review": "Our partnership with Waabi represents the power of combining cutting-edge technology with a vast logistics network to drive meaningful industry impact. By advancing operational excellence and scaling real-world applications, this collaboration underscores our joint commitment to transforming autonomous freight.",
+    "image": "1756426717-waabi_road2_04115.jpg",
+    "logo": "1761945971-investor-logos-9.svg",
+    "author": "Olivia Hu",
+    "authorTitle": "Head of Autonomous Trucking & Electrification at Uber Freight",
+    "button": {
+      "id": "OhjUQE5mQryZnlZQdN0o9w",
+      "_modelApiKey": "button",
+      "__typename": "ButtonRecord",
+      "label": "See the details",
+      "link": {
+        "id": "Bawp9F2_SECFuLd6OpYDAA",
+        "_modelApiKey": "internal_link",
+        "__typename": "InternalLinkRecord",
+        "anchor": "",
+        "link": {
+          "__typename": "ArticleRecord",
+          "slug": "waabi-uber-freight"
+        }
+      }
+    },
+    "slug": "waabi-uber-freight"
+  },
+  {
+    "id": "Gt9vEZluSjGuf-VZ4LAhaA",
+    "_modelApiKey": "partner_item",
+    "__typename": "PartnerItemRecord",
+    "name": "NVIDIA",
+    "review": "Waabi represents a true breakthrough by treating autonomy as a scalable intelligence problem. Built on NVIDIA compute, Waabi is unlocking real deployment—and we’re proud to support them as one of the future giants of AI.",
+    "image": "1761186315-nvidia-waabi_logos_2x_final.png",
+    "logo": "1760431057-nvidia-logo.svg",
+    "author": "Jensen Huang",
+    "authorTitle": "Founder and CEO of NVIDIA",
+    "button": {
+      "id": "MnrouAoeT-Ge5DWn-xfbbA",
+      "_modelApiKey": "button",
+      "__typename": "ButtonRecord",
+      "label": "See the details",
+      "link": {
+        "id": "EUUwsqp1S3iqlBOC58-HqA",
+        "_modelApiKey": "internal_link",
+        "__typename": "InternalLinkRecord",
+        "anchor": "",
+        "link": {
+          "__typename": "ArticleRecord",
+          "slug": "nvidia-drivethor"
+        }
+      }
+    },
+    "slug": "nvidia-drivethor"
+  }
+]

@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("root redirects to complete Safety page with healthy local assets", async ({
+test("Safety route contains complete page with healthy local assets", async ({
   page,
 }) => {
   const errors: string[] = [];
@@ -13,7 +13,7 @@ test("root redirects to complete Safety page with healthy local assets", async (
     )
       failedAssets.push(`${response.status()} ${response.url()}`);
   });
-  await page.goto("/");
+  await page.goto("/safety");
   await expect(page).toHaveURL(/\/safety$/);
   await expect(
     page.getByRole("heading", { name: "Redefining safety." }),

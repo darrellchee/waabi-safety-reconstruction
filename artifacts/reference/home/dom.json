@@ -1,0 +1,1922 @@
+[
+  {
+    "tag": "P",
+    "text": "Let's talk autonomous trucking",
+    "class": "type-s-11 md:type-s-12 text-dark whitespace-nowrap",
+    "rect": {
+      "x": 562.421875,
+      "y": 12,
+      "width": 182.828125,
+      "height": 16.796875,
+      "top": 12,
+      "right": 745.25,
+      "bottom": 28.796875,
+      "left": 562.421875
+    },
+    "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "SECTION",
+    "text": "Waabi is pioneering the future of Physical AI.\n\nBuilt to think.\nBorn to haul.\n\nWe built our own road.\n\nOur revolutionary Physical AI Platform enables\u2014for the first time ever\u2014true scale, generalizing to different form factors, geographies, and environments. This breakthrough is powered by the same AI model acting as a shared brain for both autonomous trucks and robotaxis.\n\nUnlocking scale in the real world.\n\nWe deliver a product that's faster, safer, more scalable, and efficient\u2014unlocking the true potential of autonomous transportation.\n\nSafe\n\nThe combination of advanced AI and neural simulation sets a new standard for the entire industry.\n\nScalable\n\nPractical",
+    "class": "relative flex w-full flex-col",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 4725,
+      "top": 0,
+      "right": 1440,
+      "bottom": 4725,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "SECTION",
+    "text": "Waabi is pioneering the future of Physical AI.\n\nBuilt to think.\nBorn to haul.",
+    "class": "text-background relative z-50 mb-[-75vh] h-[250vh] w-full md:h-[250vh]",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 2250,
+      "top": 0,
+      "right": 1440,
+      "bottom": 2250,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "VIDEO",
+    "text": "",
+    "class": "size-full object-cover",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "top": 0,
+      "right": 1440,
+      "bottom": 900,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://static.ext.waabi.ai/WAABI_27s_2K_antinomy_export_250823.mp4"
+  },
+  {
+    "tag": "P",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "class": "type-z-24 md:type-z-40 max-w-295 text-balance md:max-w-495",
+    "rect": {
+      "x": 103,
+      "y": 722,
+      "width": 495,
+      "height": 88,
+      "top": 722,
+      "right": 598,
+      "bottom": 810,
+      "left": 103
+    },
+    "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "H1",
+    "text": "Built to think.\nBorn to haul.",
+    "class": "text-[7.2rem] leading-[85%] tracking-[-0.288rem] md:text-[min(14vw,15rem)] md:tracking-[min(-0.5vw,-0.6rem)] text-balance",
+    "rect": {
+      "x": 103,
+      "y": 525,
+      "width": 831.0625,
+      "height": 255,
+      "top": 525,
+      "right": 934.0625,
+      "bottom": 780,
+      "left": 103
+    },
+    "font": "150px / 127.5px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "SECTION",
+    "text": "We built our own road.\n\nOur revolutionary Physical AI Platform enables\u2014for the first time ever\u2014true scale, generalizing to different form factors, geographies, and environments. This breakthrough is powered by the same AI model acting as a shared brain for both autonomous trucks and robotaxis.",
+    "class": "bg-background relative w-full overflow-clip h-[150vh]",
+    "rect": {
+      "x": 0,
+      "y": 1575,
+      "width": 1440,
+      "height": 1350,
+      "top": 1575,
+      "right": 1440,
+      "bottom": 2925,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "h-full w-full object-cover",
+    "rect": {
+      "x": 24,
+      "y": 2175,
+      "width": 132.984375,
+      "height": 132.984375,
+      "top": 2175,
+      "right": 156.984375,
+      "bottom": 2307.984375,
+      "left": 24
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1760006286-kevin-wang-1gwy7no_nr4-unsplash_edited_final.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+  },
+  {
+    "tag": "VIDEO",
+    "text": "",
+    "class": "size-full object-cover",
+    "rect": {
+      "x": 24,
+      "y": 2580.671875,
+      "width": 132.984375,
+      "height": 132.984375,
+      "top": 2580.671875,
+      "right": 156.984375,
+      "bottom": 2713.65625,
+      "left": 24
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://static.ext.waabi.ai/Scenario_3_4k_FINAL.mp4"
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "h-full w-full object-cover",
+    "rect": {
+      "x": 24,
+      "y": 2986.34375,
+      "width": 132.984375,
+      "height": 132.984375,
+      "top": 2986.34375,
+      "right": 156.984375,
+      "bottom": 3119.328125,
+      "left": 24
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761183718-waabi_road1_01902.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "h-full w-full object-cover",
+    "rect": {
+      "x": 24,
+      "y": 3392.015625,
+      "width": 132.984375,
+      "height": 132.984375,
+      "top": 3392.015625,
+      "right": 156.984375,
+      "bottom": 3525,
+      "left": 24
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761183902-waabi_exterior_morning_00857.png%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "h-full w-full object-cover",
+    "rect": {
+      "x": 240,
+      "y": 1575,
+      "width": 132.984375,
+      "height": 132.984375,
+      "top": 1575,
+      "right": 372.984375,
+      "bottom": 1707.984375,
+      "left": 240
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761183903-waabi_road2_04462.png%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=384&q=75"
+  },
+  {
+    "tag": "VIDEO",
+    "text": "",
+    "class": "size-full object-cover",
+    "rect": {
+      "x": 240,
+      "y": 1980.671875,
+      "width": 132.984375,
+      "height": 132.984375,
+      "top": 1980.671875,
+      "right": 372.984375,
+      "bottom": 2113.65625,
+      "left": 240
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://static.ext.waabi.ai/Sim_demo_scenario_4_slow_camera-SUDDEN_BRAKE_FINAL.mp4"
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "h-full w-full object-cover",
+    "rect": {
+      "x": 240,
+      "y": 2386.34375,
+      "width": 132.984375,
+      "height": 132.984375,
+      "top": 2386.34375,
+      "right": 372.984375,
+      "bottom": 2519.328125,
+      "left": 240
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761184004-251006_waabi_val_fakhrutdinova_0214.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "h-full w-full object-cover",
+    "rect": {
+      "x": 240,
+      "y": 2792.015625,
+      "width": 132.984375,
+      "height": 132.984375,
+      "top": 2792.015625,
+      "right": 372.984375,
+      "bottom": 2925,
+      "left": 240
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761183902-waabi_road2_05483.png%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "h-full w-full object-cover",
+    "rect": {
+      "x": 1067.015625,
+      "y": 1575,
+      "width": 132.984375,
+      "height": 132.984375,
+      "top": 1575,
+      "right": 1200,
+      "bottom": 1707.984375,
+      "left": 1067.015625
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761183903-waabi_scout_00826.png%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=384&q=75"
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "h-full w-full object-cover",
+    "rect": {
+      "x": 1067.015625,
+      "y": 1980.671875,
+      "width": 132.984375,
+      "height": 132.984375,
+      "top": 1980.671875,
+      "right": 1200,
+      "bottom": 2113.65625,
+      "left": 1067.015625
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1760006943-waabi_scout_00286_final.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=384&q=75"
+  },
+  {
+    "tag": "VIDEO",
+    "text": "",
+    "class": "size-full object-cover",
+    "rect": {
+      "x": 1067.015625,
+      "y": 2386.34375,
+      "width": 132.984375,
+      "height": 132.984375,
+      "top": 2386.34375,
+      "right": 1200,
+      "bottom": 2519.328125,
+      "left": 1067.015625
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://static.ext.waabi.ai/Sim_construction_camera_slow_trimmed_w_actors_FINAL.mp4"
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "h-full w-full object-cover",
+    "rect": {
+      "x": 1067.015625,
+      "y": 2792.015625,
+      "width": 132.984375,
+      "height": 132.984375,
+      "top": 2792.015625,
+      "right": 1200,
+      "bottom": 2925,
+      "left": 1067.015625
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761184004-251006_waabi_ashwin_kumar_0866.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "h-full w-full object-cover",
+    "rect": {
+      "x": 1283.015625,
+      "y": 2175,
+      "width": 132.984375,
+      "height": 132.984375,
+      "top": 2175,
+      "right": 1416,
+      "bottom": 2307.984375,
+      "left": 1283.015625
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761183902-waabi_portrait_neiel_00646.png%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+  },
+  {
+    "tag": "VIDEO",
+    "text": "",
+    "class": "size-full object-cover",
+    "rect": {
+      "x": 1283.015625,
+      "y": 2580.671875,
+      "width": 132.984375,
+      "height": 132.984375,
+      "top": 2580.671875,
+      "right": 1416,
+      "bottom": 2713.65625,
+      "left": 1283.015625
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://static.ext.waabi.ai/Scenario_1_4k_FINAL.mp4"
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "h-full w-full object-cover",
+    "rect": {
+      "x": 1283.015625,
+      "y": 2986.34375,
+      "width": 132.984375,
+      "height": 132.984375,
+      "top": 2986.34375,
+      "right": 1416,
+      "bottom": 3119.328125,
+      "left": 1283.015625
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761184005-251006_waabi_lunch_room_0489.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "h-full w-full object-cover",
+    "rect": {
+      "x": 1283.015625,
+      "y": 3392.015625,
+      "width": 132.984375,
+      "height": 132.984375,
+      "top": 3392.015625,
+      "right": 1416,
+      "bottom": 3525,
+      "left": 1283.015625
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761183980-waabi_inspection_02285.png%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+  },
+  {
+    "tag": "P",
+    "text": "We built our own road.",
+    "class": "type-z-18 md:type-z-24 relative text-black/50",
+    "rect": {
+      "x": 604.75,
+      "y": 1869.5,
+      "width": 230.5,
+      "height": 30,
+      "top": 1869.5,
+      "right": 835.25,
+      "bottom": 1899.5,
+      "left": 604.75
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "oklab(0 0 0 / 0.5)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "Our revolutionary Physical AI Platform enables\u2014for the first time ever\u2014true scale, generalizing to different form factors, geographies, and environments. This breakthrough is powered by the same AI model acting as a shared brain for both autonomous trucks and robotaxis.",
+    "class": "type-z-18 md:type-z-24 text-dark relative max-w-558 overflow-clip",
+    "rect": {
+      "x": 441,
+      "y": 1917.5,
+      "width": 558,
+      "height": 180,
+      "top": 1917.5,
+      "right": 999,
+      "bottom": 2097.5,
+      "left": 441
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "h-full w-full object-cover",
+    "rect": {
+      "x": 653.5,
+      "y": 2697.5,
+      "width": 132.984375,
+      "height": 132.984375,
+      "top": 2697.5,
+      "right": 786.484375,
+      "bottom": 2830.484375,
+      "left": 653.5
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761218404-waabi_inspection_02344.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+  },
+  {
+    "tag": "SECTION",
+    "text": "Unlocking scale in the real world.\n\nWe deliver a product that's faster, safer, more scalable, and efficient\u2014unlocking the true potential of autonomous transportation.\n\nSafe\n\nThe combination of advanced AI and neural simulation sets a new standard for the entire industry.\n\nScalable\n\nPractical",
+    "class": "bg-background text-foreground relative w-full max-md:py-(--padding-y) md:h-[200vh]",
+    "rect": {
+      "x": 0,
+      "y": 2925,
+      "width": 1440,
+      "height": 1800,
+      "top": 2925,
+      "right": 1440,
+      "bottom": 4725,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "h-full w-full object-cover",
+    "rect": {
+      "x": 240.00001525878906,
+      "y": 2792.015625,
+      "width": 132.98435974121094,
+      "height": 132.984375,
+      "top": 2792.015625,
+      "right": 372.984375,
+      "bottom": 2925,
+      "left": 240.00001525878906
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761183902-waabi_road2_05483.png%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+  },
+  {
+    "tag": "VIDEO",
+    "text": "",
+    "class": "size-full object-cover",
+    "rect": {
+      "x": 193,
+      "y": 4011.5,
+      "width": 527,
+      "height": 527,
+      "top": 4011.5,
+      "right": 720,
+      "bottom": 4538.5,
+      "left": 193
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://static.ext.waabi.ai/scene_1_v2_HD_FINAL.mp4"
+  },
+  {
+    "tag": "VIDEO",
+    "text": "",
+    "class": "size-full object-cover",
+    "rect": {
+      "x": 179.82501220703125,
+      "y": 3998.324951171875,
+      "width": 553.3499755859375,
+      "height": 553.349853515625,
+      "top": 3998.324951171875,
+      "right": 733.1749877929688,
+      "bottom": 4551.6748046875,
+      "left": 179.82501220703125
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://static.ext.waabi.ai/Scalable.mp4"
+  },
+  {
+    "tag": "VIDEO",
+    "text": "",
+    "class": "size-full object-cover",
+    "rect": {
+      "x": 166.64999389648438,
+      "y": 3985.14990234375,
+      "width": 579.699951171875,
+      "height": 579.7001953125,
+      "top": 3985.14990234375,
+      "right": 746.3499450683594,
+      "bottom": 4564.85009765625,
+      "left": 166.64999389648438
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://static.ext.waabi.ai/scene_3_v5_HD_FINAL-small.mp4"
+  },
+  {
+    "tag": "H2",
+    "text": "Unlocking scale in the real world.",
+    "class": "w-calc type-z-28 md:type-z-60 text-balance",
+    "rect": {
+      "x": 876.984375,
+      "y": 3248.390625,
+      "width": 370,
+      "height": 162,
+      "top": 3248.390625,
+      "right": 1246.984375,
+      "bottom": 3410.390625,
+      "left": 876.984375
+    },
+    "font": "60px / 54px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "We deliver a product that's faster, safer, more scalable, and efficient\u2014unlocking the true potential of autonomous transportation.",
+    "class": "text-s-14 md:text-s-15 text-pretty text-black/55",
+    "rect": {
+      "x": 876.984375,
+      "y": 3434.390625,
+      "width": 370,
+      "height": 67.21875,
+      "top": 3434.390625,
+      "right": 1246.984375,
+      "bottom": 3501.609375,
+      "left": 876.984375
+    },
+    "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "oklab(0 0 0 / 0.55)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "Safe",
+    "class": "type-z-24 md:type-z-40",
+    "rect": {
+      "x": 876.984375,
+      "y": 3695.390625,
+      "width": 370,
+      "height": 44,
+      "top": 3695.390625,
+      "right": 1246.984375,
+      "bottom": 3739.390625,
+      "left": 876.984375
+    },
+    "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "The combination of advanced AI and neural simulation sets a new standard for the entire industry.",
+    "class": "text-s-14 md:text-s-15 text-pretty text-black/55",
+    "rect": {
+      "x": 876.984375,
+      "y": 3759.390625,
+      "width": 370,
+      "height": 67.21875,
+      "top": 3759.390625,
+      "right": 1246.984375,
+      "bottom": 3826.609375,
+      "left": 876.984375
+    },
+    "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "oklab(0 0 0 / 0.55)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "Scalable",
+    "class": "type-z-24 md:type-z-40",
+    "rect": {
+      "x": 876.984375,
+      "y": 3846.609375,
+      "width": 370,
+      "height": 44,
+      "top": 3846.609375,
+      "right": 1246.984375,
+      "bottom": 3890.609375,
+      "left": 876.984375
+    },
+    "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "Practical",
+    "class": "type-z-24 md:type-z-40",
+    "rect": {
+      "x": 876.984375,
+      "y": 3910.609375,
+      "width": 370,
+      "height": 44,
+      "top": 3910.609375,
+      "right": 1246.984375,
+      "bottom": 3954.609375,
+      "left": 876.984375
+    },
+    "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "VIDEO",
+    "text": "",
+    "class": "size-full object-cover",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://static.ext.waabi.ai/scene_1_v2_HD_FINAL.mp4"
+  },
+  {
+    "tag": "P",
+    "text": "Safe",
+    "class": "type-z-24",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "The combination of advanced AI and neural simulation sets a new standard for the entire industry. ",
+    "class": "area text-s-14 text-pretty text-black/50",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "oklab(0 0 0 / 0.5)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "A single, verifiable end-to-end AI model capable of reasoning serves as a shared brain powering multiple verticals.",
+    "class": "area text-s-14 text-pretty text-black/50",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "oklab(0 0 0 / 0.5)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "Our highway and surface street capabilities enable an unprecedented Direct to Customer trucking model and seamless entry into the robotaxi market.",
+    "class": "area text-s-14 text-pretty text-black/50",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0,
+      "left": 0
+    },
+    "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "oklab(0 0 0 / 0.5)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "SECTION",
+    "text": "The technology behind Waabi.\nExplore the tech\n\nExperience\n\nWaabi World\n\nDive into\n\nMixed Reality Testing\n\nMeet the\n\nWaabi Driver",
+    "class": "relative flex w-full flex-col",
+    "rect": {
+      "x": 0,
+      "y": 4725,
+      "width": 1440,
+      "height": 1568,
+      "top": 4725,
+      "right": 1440,
+      "bottom": 6293,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "SECTION",
+    "text": "The technology behind Waabi.\nExplore the tech",
+    "class": "relative h-svh w-full overflow-clip px-24",
+    "rect": {
+      "x": 0,
+      "y": 4725,
+      "width": 1440,
+      "height": 900,
+      "top": 4725,
+      "right": 1440,
+      "bottom": 5625,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px 24px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "absolute inset-0 h-full w-full object-cover",
+    "rect": {
+      "x": 24,
+      "y": 4617,
+      "width": 1392,
+      "height": 900,
+      "top": 4617,
+      "right": 1416,
+      "bottom": 5517,
+      "left": 24
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1756426717-waabi_road1_00928.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+  },
+  {
+    "tag": "H2",
+    "text": "The technology behind Waabi.",
+    "class": "w-calc text-[5.5rem] leading-[90%] tracking-[-0.22rem] md:text-[max(9rem,min(9vw,13rem))] md:tracking-[max(-0.6rem,min(-0.3vw,-0.52rem))] text-balance",
+    "rect": {
+      "x": 103.015625,
+      "y": 5190.71875,
+      "width": 1233.984375,
+      "height": 233.28125,
+      "top": 5190.71875,
+      "right": 1337,
+      "bottom": 5424,
+      "left": 103.015625
+    },
+    "font": "129.6px / 116.64px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "SECTION",
+    "text": "Experience\n\nWaabi World\n\nDive into\n\nMixed Reality Testing\n\nMeet the\n\nWaabi Driver",
+    "class": "flex w-full gap-24 p-24 max-lg:flex-col",
+    "rect": {
+      "x": 0,
+      "y": 5625,
+      "width": 1440,
+      "height": 668,
+      "top": 5625,
+      "right": 1440,
+      "bottom": 6293,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "24px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "VIDEO",
+    "text": "",
+    "class": "size-full object-cover",
+    "rect": {
+      "x": 24,
+      "y": 5649,
+      "width": 448,
+      "height": 620,
+      "top": 5649,
+      "right": 472,
+      "bottom": 6269,
+      "left": 24
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://static.ext.waabi.ai/intersection-trimmed.mp4"
+  },
+  {
+    "tag": "P",
+    "text": "Experience",
+    "class": "type-s-11 md:type-s-12",
+    "rect": {
+      "x": 72,
+      "y": 6164.203125,
+      "width": 352,
+      "height": 16.796875,
+      "top": 6164.203125,
+      "right": 424,
+      "bottom": 6181,
+      "left": 72
+    },
+    "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif",
+    "padding": "0px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi World",
+    "class": "type-z-24 md:type-z-40 text-balance md:pr-50",
+    "rect": {
+      "x": 72,
+      "y": 6189,
+      "width": 352,
+      "height": 44,
+      "top": 6189,
+      "right": 424,
+      "bottom": 6233,
+      "left": 72
+    },
+    "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px 50px 0px 0px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "VIDEO",
+    "text": "",
+    "class": "size-full object-cover",
+    "rect": {
+      "x": 496,
+      "y": 5649,
+      "width": 448,
+      "height": 620,
+      "top": 5649,
+      "right": 944,
+      "bottom": 6269,
+      "left": 496
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://static.ext.waabi.ai/Crash_variant_1.mp4"
+  },
+  {
+    "tag": "P",
+    "text": "Dive into",
+    "class": "type-s-11 md:type-s-12",
+    "rect": {
+      "x": 544,
+      "y": 6120.203125,
+      "width": 352,
+      "height": 16.796875,
+      "top": 6120.203125,
+      "right": 896,
+      "bottom": 6137,
+      "left": 544
+    },
+    "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif",
+    "padding": "0px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Mixed Reality Testing",
+    "class": "type-z-24 md:type-z-40 text-balance md:pr-50",
+    "rect": {
+      "x": 544,
+      "y": 6145,
+      "width": 352,
+      "height": 88,
+      "top": 6145,
+      "right": 896,
+      "bottom": 6233,
+      "left": 544
+    },
+    "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px 50px 0px 0px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "VIDEO",
+    "text": "",
+    "class": "size-full object-cover",
+    "rect": {
+      "x": 968,
+      "y": 5649,
+      "width": 448,
+      "height": 620,
+      "top": 5649,
+      "right": 1416,
+      "bottom": 6269,
+      "left": 968
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://static.ext.waabi.ai/Copy_of_Copy_of_Full_Video_-_Solution_Ready_Blog-VEED__1_.mp4"
+  },
+  {
+    "tag": "P",
+    "text": "Meet the",
+    "class": "type-s-11 md:type-s-12",
+    "rect": {
+      "x": 1016,
+      "y": 6164.203125,
+      "width": 352,
+      "height": 16.796875,
+      "top": 6164.203125,
+      "right": 1368,
+      "bottom": 6181,
+      "left": 1016
+    },
+    "font": "500 12px / 16.8px NeueHaas, \"NeueHaas Fallback\", serif",
+    "padding": "0px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi Driver",
+    "class": "type-z-24 md:type-z-40 text-balance md:pr-50",
+    "rect": {
+      "x": 1016,
+      "y": 6189,
+      "width": 352,
+      "height": 44,
+      "top": 6189,
+      "right": 1368,
+      "bottom": 6233,
+      "left": 1016
+    },
+    "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px 50px 0px 0px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "SECTION",
+    "text": "Setting new standards for AV safety.\nFor us, safety isn't a box to check\u2014it's a commitment we strengthen daily with a simulation-first approach, rigorous validation, and a culture where safety is everyone\u2019s job.\nExplore our approach",
+    "class": "relative min-h-svh w-full overflow-clip text-white",
+    "rect": {
+      "x": 0,
+      "y": 6293,
+      "width": 1440,
+      "height": 900,
+      "top": 6293,
+      "right": 1440,
+      "bottom": 7193,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "h-full w-full object-cover",
+    "rect": {
+      "x": 0,
+      "y": 6185,
+      "width": 1440,
+      "height": 900,
+      "top": 6185,
+      "right": 1440,
+      "bottom": 7085,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761185044-waabi_road2_05683.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+  },
+  {
+    "tag": "H2",
+    "text": "Setting new standards for AV safety.",
+    "class": "type-z-34 md:type-z-80 text-pretty",
+    "rect": {
+      "x": 103,
+      "y": 6396,
+      "width": 525,
+      "height": 216,
+      "top": 6396,
+      "right": 628,
+      "bottom": 6612,
+      "left": 103
+    },
+    "font": "80px / 72px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "SECTION",
+    "text": "Trusted by the best in the industry.\nFrom hardware providers and OEMs to retailers, logistics providers and carriers, the best in the business count on Waabi to deliver real results.\nVolvo\nUber\nUber Freight\nNVIDIA\n\nPartnerships like the one between Volvo Autonomous Solutions and Waabi play an important role not only in advancing autonomous technology, but also in building the broader ecosystem required to support commercial deployment.\n\nNils Jaeger\nCEO of Volvo Autonomous Solutions\nSee the details",
+    "class": "relative flex w-full flex-col",
+    "rect": {
+      "x": 0,
+      "y": 7193,
+      "width": 1440,
+      "height": 1359,
+      "top": 7193,
+      "right": 1440,
+      "bottom": 8552,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "SECTION",
+    "text": "Trusted by the best in the industry.\nFrom hardware providers and OEMs to retailers, logistics providers and carriers, the best in the business count on Waabi to deliver real results.\nVolvo\nUber\nUber Freight\nNVIDIA\n\nPartnerships like the one between Volvo Autonomous Solutions and Waabi play an important role not only in advancing autonomous technology, but also in building the broader ecosystem required to support commercial deployment.\n\nNils Jaeger\nCEO of Volvo Autonomous Solutions\nSee the details",
+    "class": "relative min-h-screen w-full overflow-clip bg-white py-[var(--padding-y)]",
+    "rect": {
+      "x": 0,
+      "y": 7193,
+      "width": 1440,
+      "height": 1359,
+      "top": 7193,
+      "right": 1440,
+      "bottom": 8552,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "120px 0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Trusted by the best in the industry.",
+    "class": "type-z-34 md:type-z-80 text-balance",
+    "rect": {
+      "x": 103,
+      "y": 7313,
+      "width": 546.984375,
+      "height": 216,
+      "top": 7313,
+      "right": 649.984375,
+      "bottom": 7529,
+      "left": 103
+    },
+    "font": "80px / 72px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "h-full w-full object-cover",
+    "rect": {
+      "x": 51.5843505859375,
+      "y": 7687.81005859375,
+      "width": 1131.143798828125,
+      "height": 887.69970703125,
+      "top": 7687.81005859375,
+      "right": 1182.7281494140625,
+      "bottom": 8575.509765625,
+      "left": 51.5843505859375
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761262941-fya_one-1.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+  },
+  {
+    "tag": "P",
+    "text": "Partnerships like the one between Volvo Autonomous Solutions and Waabi play an important role not only in advancing autonomous technology, but also in building the broader ecosystem required to support commercial deployment.",
+    "class": "type-h-18 md:type-z-24",
+    "rect": {
+      "x": 937.984375,
+      "y": 8213.703125,
+      "width": 351,
+      "height": 270,
+      "top": 8213.703125,
+      "right": 1288.984375,
+      "bottom": 8483.703125,
+      "left": 937.984375
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "",
+    "rect": {
+      "x": 957.984375,
+      "y": 8651.296875,
+      "width": 40,
+      "height": 40,
+      "top": 8651.296875,
+      "right": 997.984375,
+      "bottom": 8691.296875,
+      "left": 957.984375
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://www.datocms-assets.com/163962/1760431072-volvo-logo.svg?fit=max&h=3000&q=90&w=2000"
+  },
+  {
+    "tag": "SECTION",
+    "text": "Insights.\n\nExplore technology deep dives, behind-the-scenes perspectives, and the ideas shaping the future of autonomy.\n\nView all\nCompany news\nTrucks\nOctober 14, 2026\nWaabi and Warrior Logistics partner on autonomous trucking operations in Texas\nCompany news\nOctober 5, 2026\nVolvo and Waabi Kick Off Customer Operations in Texas, Starting with Warp\nCompany news\nSeptember 22, 2026\nBuilt to generalize. Proven on I-35.\nCompany news\nSeptember 15, 2026\n80% Growth on Long Haul's Toughest Corridor\nJune 26, 2026\nWaabi crosses the next frontier of generalization, unlocking truly scalable AVs\nResearch\nApril 22, 2026\nAll You Need to Know About Self-Driving | CVPR Tutorial 2026\nCompany news\nJanuary 28, 2026\nWaabi secures $1 Billion in new funding to lead Physical AI revolution\nTechnology\nCompany news\nDecember 19, 2025\nFrom closed course to public roads: The path to driverless\nTechnology\nCompany news\nN",
+    "class": "relative flex w-full flex-col relative w-full overflow-clip bg-cream py-(--padding-y)",
+    "rect": {
+      "x": 0,
+      "y": 8552,
+      "width": 1440,
+      "height": 938.5,
+      "top": 8552,
+      "right": 1440,
+      "bottom": 9490.5,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "120px 0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgb(232, 230, 227) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Insights.",
+    "class": "w-calc type-z-34 md:type-z-80 text-balance",
+    "rect": {
+      "x": 103,
+      "y": 8672,
+      "width": 1233.984375,
+      "height": 72,
+      "top": 8672,
+      "right": 1336.984375,
+      "bottom": 8744,
+      "left": 103
+    },
+    "font": "80px / 72px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "Explore technology deep dives, behind-the-scenes perspectives, and the ideas shaping the future of autonomy.",
+    "class": "type-s-14 md:type-s-15 text-balance text-black/50",
+    "rect": {
+      "x": 103,
+      "y": 8792,
+      "width": 616.984375,
+      "height": 48,
+      "top": 8792,
+      "right": 719.984375,
+      "bottom": 8840,
+      "left": 103
+    },
+    "font": "500 15px / 24px NeueHaas, \"NeueHaas Fallback\", serif",
+    "padding": "0px",
+    "color": "oklab(0 0 0 / 0.5)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "absolute h-full w-full object-cover",
+    "rect": {
+      "x": 103,
+      "y": 9090,
+      "width": 450,
+      "height": 337.5,
+      "top": 9090,
+      "right": 553,
+      "bottom": 9427.5,
+      "left": 103
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1791944791-edit-1-1.png&w=3840&q=75"
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi and Warrior Logistics partner on autonomous trucking operations in Texas",
+    "class": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+    "rect": {
+      "x": 103,
+      "y": 9485.5,
+      "width": 450,
+      "height": 60,
+      "top": 9485.5,
+      "right": 553,
+      "bottom": 9545.5,
+      "left": 103
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "absolute h-full w-full object-cover",
+    "rect": {
+      "x": 577,
+      "y": 9290,
+      "width": 450,
+      "height": 337.5,
+      "top": 9290,
+      "right": 1027,
+      "bottom": 9627.5,
+      "left": 577
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1790974044-vas-waabi-warp.png&w=3840&q=75"
+  },
+  {
+    "tag": "H2",
+    "text": "Volvo and Waabi Kick Off Customer Operations in Texas, Starting with Warp",
+    "class": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+    "rect": {
+      "x": 577,
+      "y": 9685.5,
+      "width": 450,
+      "height": 60,
+      "top": 9685.5,
+      "right": 1027,
+      "bottom": 9745.5,
+      "left": 577
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "absolute h-full w-full object-cover",
+    "rect": {
+      "x": 1051,
+      "y": 9490,
+      "width": 450,
+      "height": 337.5,
+      "top": 9490,
+      "right": 1501,
+      "bottom": 9827.5,
+      "left": 1051
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1790628632-blog-dallas-sanantonio.png&w=3840&q=75"
+  },
+  {
+    "tag": "H2",
+    "text": "Built to generalize. Proven on I-35.",
+    "class": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+    "rect": {
+      "x": 1051,
+      "y": 9885.5,
+      "width": 352.453125,
+      "height": 30,
+      "top": 9885.5,
+      "right": 1403.453125,
+      "bottom": 9915.5,
+      "left": 1051
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "absolute h-full w-full object-cover",
+    "rect": {
+      "x": 1525,
+      "y": 9690,
+      "width": 450,
+      "height": 337.5,
+      "top": 9690,
+      "right": 1975,
+      "bottom": 10027.5,
+      "left": 1525
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1790628632-blog-dallas-houston.png&w=3840&q=75"
+  },
+  {
+    "tag": "H2",
+    "text": "80% Growth on Long Haul's Toughest Corridor",
+    "class": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+    "rect": {
+      "x": 1525,
+      "y": 10085.5,
+      "width": 450,
+      "height": 60,
+      "top": 10085.5,
+      "right": 1975,
+      "bottom": 10145.5,
+      "left": 1525
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "absolute h-full w-full object-cover",
+    "rect": {
+      "x": 1999,
+      "y": 9890,
+      "width": 450,
+      "height": 337.5,
+      "top": 9890,
+      "right": 2449,
+      "bottom": 10227.5,
+      "left": 1999
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1790628632-blog.png&w=3840&q=75"
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi crosses the next frontier of generalization, unlocking truly scalable AVs",
+    "class": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+    "rect": {
+      "x": 1999,
+      "y": 10276.296875,
+      "width": 450,
+      "height": 60,
+      "top": 10276.296875,
+      "right": 2449,
+      "bottom": 10336.296875,
+      "left": 1999
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "absolute h-full w-full object-cover",
+    "rect": {
+      "x": 2473,
+      "y": 10090,
+      "width": 450,
+      "height": 337.5,
+      "top": 10090,
+      "right": 2923,
+      "bottom": 10427.5,
+      "left": 2473
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1756264338-png-image-2.png&w=3840&q=75"
+  },
+  {
+    "tag": "H2",
+    "text": "All You Need to Know About Self-Driving | CVPR Tutorial 2026",
+    "class": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+    "rect": {
+      "x": 2473,
+      "y": 10485.5,
+      "width": 450,
+      "height": 60,
+      "top": 10485.5,
+      "right": 2923,
+      "bottom": 10545.5,
+      "left": 2473
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "absolute h-full w-full object-cover",
+    "rect": {
+      "x": 2947,
+      "y": 10290,
+      "width": 450,
+      "height": 337.5,
+      "top": 10290,
+      "right": 3397,
+      "bottom": 10627.5,
+      "left": 2947
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1769595209-screenshot-2026-01-28-at-2-12-00-am.png&w=3840&q=75"
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi secures $1 Billion in new funding to lead Physical AI revolution",
+    "class": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+    "rect": {
+      "x": 2947,
+      "y": 10685.5,
+      "width": 450,
+      "height": 60,
+      "top": 10685.5,
+      "right": 3397,
+      "bottom": 10745.5,
+      "left": 2947
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "absolute h-full w-full object-cover",
+    "rect": {
+      "x": 3421,
+      "y": 10490,
+      "width": 450,
+      "height": 337.5,
+      "top": 10490,
+      "right": 3871,
+      "bottom": 10827.5,
+      "left": 3421
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1767826472-screenshot-2026-01-07-at-12-54-15-pm.png&w=3840&q=75"
+  },
+  {
+    "tag": "H2",
+    "text": "From closed course to public roads: The path to driverless",
+    "class": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+    "rect": {
+      "x": 3421,
+      "y": 10885.5,
+      "width": 450,
+      "height": 60,
+      "top": 10885.5,
+      "right": 3871,
+      "bottom": 10945.5,
+      "left": 3421
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "absolute h-full w-full object-cover",
+    "rect": {
+      "x": 3895,
+      "y": 10690,
+      "width": 450,
+      "height": 337.5,
+      "top": 10690,
+      "right": 4345,
+      "bottom": 11027.5,
+      "left": 3895
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1756426717-waabi_road2_04115.jpg&w=3840&q=75"
+  },
+  {
+    "tag": "H2",
+    "text": "Waabi unlocks direct-to-customer model with surface street driving capabilities",
+    "class": "type-z-18 md:type-z-24 group-hover:text-pink ease-snappy max-w-600 text-current transition-colors duration-500",
+    "rect": {
+      "x": 3895,
+      "y": 11085.5,
+      "width": 450,
+      "height": 60,
+      "top": 11085.5,
+      "right": 4345,
+      "bottom": 11145.5,
+      "left": 3895
+    },
+    "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "SECTION",
+    "text": "Build Physical AI with us.\nJoin the team",
+    "class": "relative flex w-full flex-col overflow-clip bg-white py-[var(--padding-y)] lg:min-h-screen",
+    "rect": {
+      "x": 0,
+      "y": 9490.5,
+      "width": 1440,
+      "height": 1153.28125,
+      "top": 9490.5,
+      "right": 1440,
+      "bottom": 10643.78125,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "120px 0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "Build Physical AI with us.",
+    "class": "w-calc text-[5.5rem] leading-[90%] tracking-[-0.22rem] md:text-[max(9rem,min(9vw,13rem))] md:tracking-[max(-0.6rem,min(-0.3vw,-0.52rem))] text-balance",
+    "rect": {
+      "x": 103.015625,
+      "y": 9610.5,
+      "width": 1233.984375,
+      "height": 233.28125,
+      "top": 9610.5,
+      "right": 1337,
+      "bottom": 9843.78125,
+      "left": 103.015625
+    },
+    "font": "129.6px / 116.64px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(25, 24, 24)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "size-full object-cover",
+    "rect": {
+      "x": 24,
+      "y": 10149.375,
+      "width": 331.1875,
+      "height": 244.796875,
+      "top": 10149.375,
+      "right": 355.1875,
+      "bottom": 10394.171875,
+      "left": 24
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1760350326-waabi_portrait_felicia_00336_final.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "size-full object-cover",
+    "rect": {
+      "x": 235.1875,
+      "y": 10106.1875,
+      "width": 446.390625,
+      "height": 331.1875,
+      "top": 10106.1875,
+      "right": 681.578125,
+      "bottom": 10437.375,
+      "left": 235.1875
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1760350326-waabi_scout_00761_final.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "size-full object-cover",
+    "rect": {
+      "x": 458.390625,
+      "y": 10062.984375,
+      "width": 561.59375,
+      "height": 417.59375,
+      "top": 10062.984375,
+      "right": 1019.984375,
+      "bottom": 10480.578125,
+      "left": 458.390625
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761184004-251006_waabi_collab_05_1012_a.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=2048&q=75"
+  },
+  {
+    "tag": "IMG",
+    "text": "",
+    "class": "size-full object-cover",
+    "rect": {
+      "x": 739.1875,
+      "y": 10019.78125,
+      "width": 676.796875,
+      "height": 504,
+      "top": 10019.78125,
+      "right": 1415.984375,
+      "bottom": 10523.78125,
+      "left": 739.1875
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1760350326-waabi_inspection_02613_final.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+  },
+  {
+    "tag": "VIDEO",
+    "text": "",
+    "class": "size-full object-fill",
+    "rect": {
+      "x": 0,
+      "y": 10443.78125,
+      "width": 1440,
+      "height": 600,
+      "top": 10443.78125,
+      "right": 1440,
+      "bottom": 11043.78125,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": "https://static.ext.waabi.ai/Waabi_System_LightTunnel_1.mp4"
+  },
+  {
+    "tag": "CANVAS",
+    "text": "",
+    "class": "pointer-events-none size-full",
+    "rect": {
+      "x": 0,
+      "y": 10443.78125,
+      "width": 1440,
+      "height": 600,
+      "top": 10443.78125,
+      "right": 1440,
+      "bottom": 11043.78125,
+      "left": 0
+    },
+    "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "H2",
+    "text": "We're just getting started",
+    "class": "text-[2.4rem] leading-[110%] tracking-[-0.072rem] text-balance md:max-w-[40%] md:text-[4rem] md:tracking-[-0.12rem]",
+    "rect": {
+      "x": 103,
+      "y": 10523.78125,
+      "width": 273.59375,
+      "height": 88,
+      "top": 10523.78125,
+      "right": 376.59375,
+      "bottom": 10611.78125,
+      "left": 103
+    },
+    "font": "40px / 44px Zagma, \"Zagma Fallback\", sans-serif",
+    "padding": "0px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  },
+  {
+    "tag": "P",
+    "text": "Follow along or reach out directly at\npress@waabi.ai|info@waabi.ai",
+    "class": "font-neue text-[1.4rem] leading-[140%] tracking-[0.028rem] md:text-[1.5rem] md:tracking-[0.015rem]",
+    "rect": {
+      "x": 103,
+      "y": 10627.78125,
+      "width": 684,
+      "height": 42,
+      "top": 10627.78125,
+      "right": 787,
+      "bottom": 10669.78125,
+      "left": 103
+    },
+    "font": "15px / 21px NeueHaas, \"NeueHaas Fallback\", serif",
+    "padding": "0px",
+    "color": "rgb(255, 255, 255)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "src": null
+  }
+]

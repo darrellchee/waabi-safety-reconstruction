@@ -1,0 +1,9 @@
+# Home reference analysis
+
+Primary evidence is the official REA 6.5.0 CLI's native `capture-web-screenshot` outputs in `artifacts/reference/home/rea-{width}-{index}.png`, with original gzip JSON envelopes alongside them. Inspection covers 1440×900, 1920×1080, 768×1024 and 390×844. `rea-inspection.json.gz`, saved public HTML/RSC, `dom.json`, and `mobile-metrics.json` supply content, assets, computed styles and section geometry. Playwright positioned the caller-owned Chromium instance and supplemented passive REA evidence with computed styles and limited interaction checks.
+
+The sequence is a pinned film hero, an overlapping road montage, a pinned introduction/strengths transition, a truck technology image and three linked film cards, a full viewport safety image, rotating partner testimonials, a horizontal Insights rail, and a careers image collage. The technology cards link to original Waabi articles, rather than opening dialogs. Video content and testimonial selection change with elapsed time; full-page stitched screenshots do not represent every pinned animation state accurately.
+
+Measured 1440 section origins: hero 0, road 1575, strengths 2925, technology 4725, safety 6293, partners 7193, Insights 8552, careers 9490.5. At 390 they are 0, 1477, 2743, 4059.66, 5645.64, 6489.64, 7503.27 and 8224.11. Desktop content caps at 1234px, resulting in a 343px inset at 1920; mobile copy uses 40px insets and media often uses 12px or 24px.
+
+Testimonials change from Volvo to Uber/Uber Freight across native captures. Public shared-component inspection records a 10,000ms progress animation (`artifacts/reference/rea/interaction-excerpts.json`); this and the changing Home selections support timed rotation. Original quote data and article slugs are preserved. Desktop quotes compute to 24px/30px Zagma. A supplementary live 390px computed-style check on 2026-10-17 returned 16px/22.4px Zagma for the Volvo paragraph.

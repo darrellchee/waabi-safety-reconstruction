@@ -1,0 +1,47 @@
+{
+  "height": 6764,
+  "sections": [
+    {
+      "class": "co-hero",
+      "y": 0,
+      "height": 1024
+    },
+    {
+      "class": "co-story",
+      "y": 1084,
+      "height": 652
+    },
+    {
+      "class": "co-quote",
+      "y": 1796,
+      "height": 450
+    },
+    {
+      "class": "co-people co-width",
+      "y": 2306,
+      "height": 988
+    },
+    {
+      "class": "co-investors",
+      "y": 3354,
+      "height": 641
+    },
+    {
+      "class": "co-news",
+      "y": 4055,
+      "height": 817
+    },
+    {
+      "class": "co-events",
+      "y": 4931.5,
+      "height": 655
+    },
+    {
+      "class": "co-locations",
+      "y": 5646.296875,
+      "height": 517
+    }
+  ],
+  "broken": [],
+  "overflow": 0
+}

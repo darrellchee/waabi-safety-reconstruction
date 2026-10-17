@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 import "./chrome.css";
 
 const pages = [
@@ -12,9 +14,12 @@ const pages = [
   ["Insights", "/insights", "1761183903-waabi_road2_04225.webp"],
 ];
 const destination = (url: string) =>
-  url === "/safety" ? "/safety" : `https://waabi.ai${url}`;
+  ["/", "/safety", "/company"].includes(url) ? url : `https://waabi.ai${url}`;
 
 export function Header() {
+  const pathname = usePathname();
+  const currentPage =
+    pages.find(([, href]) => href === pathname)?.[0] || "Home";
   const [banner, setBanner] = useState(true);
   const [open, setOpen] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -74,7 +79,11 @@ export function Header() {
         <div className="announcement">
           <span>
             Let&apos;s talk autonomous trucking{" "}
-            <a href="mailto:info@waabi.ai">
+            <a
+              href="https://42di74.share-na2.hsforms.com/2iMiF5OoTRLWyYPBKhOxpsg"
+              target="_blank"
+              rel="noreferrer"
+            >
               Get in touch<span aria-hidden="true">↗</span>
             </a>
           </span>
@@ -91,14 +100,14 @@ export function Header() {
         className={`site-header ${open ? "menu-is-open" : ""} ${banner ? "with-announcement" : ""}`}
       >
         <div className="nav-bar">
-          <a href="https://waabi.ai/" aria-label="Waabi home">
+          <Link href="/" aria-label="Waabi home">
             <img
               className="nav-logo"
               src="/assets/waabi-logo.svg"
               alt="Waabi"
             />
-          </a>
-          <span className="nav-page">Safety</span>
+          </Link>
+          <span className="nav-page">{currentPage}</span>
           <button
             ref={toggle}
             className="menu-toggle"
@@ -124,15 +133,16 @@ export function Header() {
             <span className="menu-caption">Menu</span>
             <div className="menu-links">
               {pages.map(([label, href, image]) => (
-                <a
+                <Link
                   key={label}
-                  className={label === "Safety" ? "active" : ""}
+                  className={href === pathname ? "active" : ""}
+                  aria-current={href === pathname ? "page" : undefined}
                   href={destination(href)}
                   onClick={() => setOpen(false)}
                 >
                   <img src={`/assets/${image}`} alt="" />
                   <span>{label}</span>
-                </a>
+                </Link>
               ))}
             </div>
           </nav>
@@ -205,9 +215,9 @@ export function Footer() {
         <nav className="footer-navigation" aria-label="Footer navigation">
           <p>About us</p>
           {pages.map(([label, href]) => (
-            <a key={label} href={destination(href)}>
+            <Link key={label} href={destination(href)}>
               {label}
-            </a>
+            </Link>
           ))}
         </nav>
         <div className="footer-socials">

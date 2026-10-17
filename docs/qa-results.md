@@ -1,5 +1,7 @@
 # QA results
 
+This records the initial Safety-only release. Home now renders at `/`, and `/company` has been added. See `pages-qa.md` and the Home/Company fidelity reports for the current three-page verification.
+
 Environment: Codex Cloud, Node.js, Next.js 15.5.28, system Chromium `/usr/bin/chromium`. Local application URL: `http://127.0.0.1:3000/safety`. Tests run with reduced motion to make state assertions deterministic.
 
 ## Verified commands

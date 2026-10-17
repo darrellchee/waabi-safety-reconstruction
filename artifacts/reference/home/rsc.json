@@ -1,0 +1,28 @@
+[
+  "$",
+  "$L38",
+  "NTv3H0x_SUOo_ZkeyPTEPA",
+  {
+    "children": [
+      "$",
+      "$L2b",
+      null,
+      {
+        "name": "Partnerships",
+        "children": [
+          "$",
+          "$L3c",
+          null,
+          {
+            "id": "NTv3H0x_SUOo_ZkeyPTEPA",
+            "_modelApiKey": "partnerships_section",
+            "__typename": "PartnershipsSectionRecord",
+            "hideFromMenu": false,
+            "headline": "$2f:0:props:sections:2:headline",
+            "items": "$2f:0:props:sections:2:items"
+          }
+        ]
+      }
+    ]
+  }
+]
