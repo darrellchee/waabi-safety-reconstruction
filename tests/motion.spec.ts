@@ -4,7 +4,7 @@ test.describe("normal motion", () => {
   test.use({ reducedMotion: "no-preference" });
 
   test("Home scroll scene returns to its initial pose when scrolling back", async ({ page }) => {
-    await page.goto("/");
+    await page.goto("/", { waitUntil: "domcontentloaded" });
     await page.getByRole("button", { name: "Reject All", exact: true }).click();
     await page.waitForTimeout(1200);
     const scene = page.locator(".home-road");
@@ -27,7 +27,7 @@ test.describe("normal motion", () => {
   });
 
   test("wheel scrolling eases to its target instead of jumping", async ({ page }) => {
-    await page.goto("/company");
+    await page.goto("/company", { waitUntil: "domcontentloaded" });
     await page.getByRole("button", { name: "Reject All", exact: true }).click();
     await page.waitForTimeout(600);
     await page.mouse.move(1200, 700);
@@ -42,7 +42,7 @@ test.describe("normal motion", () => {
   });
 
   test("Company word reveals remain visible after scrolling back", async ({ page }) => {
-    await page.goto("/company");
+    await page.goto("/company", { waitUntil: "domcontentloaded" });
     await page.getByRole("button", { name: "Reject All", exact: true }).click();
     const words = page.locator(".co-word");
     const pose = () => words.evaluateAll((elements) => elements.map((element) => {
@@ -64,7 +64,7 @@ test.describe("normal motion", () => {
     expect(await pose()).toEqual(revealed);
   });
   test("Company portraits rotate in view and pause outside the viewport", async ({ page }) => {
-    await page.goto("/company");
+    await page.goto("/company", { waitUntil: "domcontentloaded" });
     await page.getByRole("button", { name: "Reject All", exact: true }).click();
     await page.locator(".co-portraits").scrollIntoViewIfNeeded();
     const generations = () => page.locator(".co-portrait").evaluateAll((portraits) => portraits.map((portrait) => portrait.getAttribute("data-generation")));
@@ -83,7 +83,7 @@ test.describe("normal motion", () => {
 test.describe("reduced motion", () => {
   test.use({ reducedMotion: "reduce" });
   test("Home starts with readable content and paused background films", async ({ page }) => {
-    await page.goto("/");
+    await page.goto("/", { waitUntil: "domcontentloaded" });
     await page.getByRole("button", { name: "Reject All", exact: true }).click();
     await expect(page.locator("h1")).toBeVisible();
     await page.waitForTimeout(800);

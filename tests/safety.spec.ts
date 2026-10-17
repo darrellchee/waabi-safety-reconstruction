@@ -13,7 +13,7 @@ test("Safety route contains complete page with healthy local assets", async ({
     )
       failedAssets.push(`${response.status()} ${response.url()}`);
   });
-  await page.goto("/safety");
+  await page.goto("/safety", { waitUntil: "domcontentloaded" });
   await expect(page).toHaveURL(/\/safety$/);
   await expect(
     page.getByRole("heading", { name: "Redefining safety." }),
@@ -63,7 +63,7 @@ test("Safety route contains complete page with healthy local assets", async ({
 test("navigation opens, closes with Escape, and links Safety locally", async ({
   page,
 }) => {
-  await page.goto("/safety");
+  await page.goto("/safety", { waitUntil: "domcontentloaded" });
   const menu = page.getByRole("button", { name: "Menu", exact: true });
   await menu.focus();
   await page.keyboard.press("Enter");
@@ -85,7 +85,7 @@ test("navigation opens, closes with Escape, and links Safety locally", async ({
 test("technology panels and safety practices respond to keyboard and click", async ({
   page,
 }) => {
-  await page.goto("/safety");
+  await page.goto("/safety", { waitUntil: "domcontentloaded" });
   await page.getByRole("button", { name: "Reject All", exact: true }).click();
   const world = page.getByRole("button", {
     name: "Explore Waabi World",
@@ -122,7 +122,7 @@ test("technology panels and safety practices respond to keyboard and click", asy
 test("cookie choices persist and custom preferences can be saved", async ({
   page,
 }) => {
-  await page.goto("/safety");
+  await page.goto("/safety", { waitUntil: "domcontentloaded" });
   await page.getByRole("button", { name: "Customize", exact: true }).click();
   const dialog = page.getByRole("dialog", {
     name: "Customize consent preferences",
@@ -133,7 +133,7 @@ test("cookie choices persist and custom preferences can be saved", async ({
   await expect(
     page.getByRole("complementary", { name: "Cookie privacy preferences" }),
   ).toHaveCount(0);
-  await page.reload();
+  await page.reload({ waitUntil: "domcontentloaded" });
   await expect(
     page.getByRole("complementary", { name: "Cookie privacy preferences" }),
   ).toHaveCount(0);
@@ -154,7 +154,7 @@ for (const viewport of [
     page,
   }) => {
     await page.setViewportSize(viewport);
-    await page.goto("/safety");
+    await page.goto("/safety", { waitUntil: "domcontentloaded" });
     await page.getByRole("button", { name: "Reject All", exact: true }).click();
     await page.evaluate(() => document.fonts.ready);
     expect(

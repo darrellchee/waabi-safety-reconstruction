@@ -25,7 +25,7 @@ for (const path of ["/", "/company"]) {
         )
           failedAssets.push(`${response.status()} ${response.url()}`);
       });
-      const response = await page.goto(path);
+      const response = await page.goto(path, { waitUntil: "domcontentloaded" });
       expect(response?.status()).toBe(200);
       await expect(page).toHaveURL(
         new RegExp(path === "/" ? "/$" : "/company$"),
@@ -94,7 +94,7 @@ for (const path of ["/", "/company"]) {
 }
 
 test("menu connects Home, Company and Safety locally", async ({ page }) => {
-  await page.goto("/");
+  await page.goto("/", { waitUntil: "domcontentloaded" });
   await page.getByRole("button", { name: "Reject All", exact: true }).click();
   for (const [name, path] of [
     ["Company", "/company"],
@@ -115,7 +115,7 @@ test("menu connects Home, Company and Safety locally", async ({ page }) => {
 test("Home strengths, partner quotes, technology links and insights work", async ({
   page,
 }) => {
-  await page.goto("/");
+  await page.goto("/", { waitUntil: "domcontentloaded" });
   await page.getByRole("button", { name: "Reject All", exact: true }).click();
   const strengths = page.getByRole("tablist", { name: "Our strengths" });
   await strengths.getByRole("tab", { name: "Scalable", exact: true }).click();
@@ -156,7 +156,7 @@ test("Home strengths, partner quotes, technology links and insights work", async
 test("Company scroll action, news carousel and location controls work", async ({
   page,
 }) => {
-  await page.goto("/company");
+  await page.goto("/company", { waitUntil: "domcontentloaded" });
   await page.getByRole("button", { name: "Reject All", exact: true }).click();
   await page.getByRole("button", { name: "Scroll Down", exact: true }).click();
   await expect.poll(() => page.evaluate(() => scrollY)).toBeGreaterThan(100);
