@@ -1,5 +1,7 @@
 # Company fidelity review
 
+> Historical layout review. The animation approximations described below were subsequently replaced; see [animation refinement](animation-refinement.md) and the page-specific motion report for current behavior and verification.
+
 Two local visual passes were made against the native reference screenshots, using Chromium for local screenshots and computed layout measurements. The comparison includes 1440px, 1920px, 768px and 390px layouts. Evidence and repeatable capture script: `artifacts/reference/company/`, `artifacts/comparison/company/`, and `scripts/company_compare.py`.
 
 The refinement corrects the tablet story width and section height, tablet people columns, desktop portrait alignment, balanced heading/copy wrapping, mobile line heights, investor logo dimensions, news pill sizes and spacing, event spacing and type, quote image framing/scroll movement, and map copy alignment. News/event hover titles and touch/keyboard office details are implemented.

@@ -72,7 +72,8 @@ for (const path of ["/", "/company"]) {
       expect(errors).toEqual([]);
       expect(failedAssets).toEqual([]);
       await page.evaluate(() => window.scrollTo(0, 0));
-      await page.getByRole("button", { name: "Menu", exact: true }).click();
+      await page.getByRole("button", { name: "Menu", exact: true }).focus();
+      await page.keyboard.press("Enter");
       const navigation = page.getByRole("navigation", {
         name: "Global navigation",
       });
@@ -100,7 +101,8 @@ test("menu connects Home, Company and Safety locally", async ({ page }) => {
     ["Safety", "/safety"],
     ["Home", "/"],
   ]) {
-    await page.getByRole("button", { name: "Menu", exact: true }).click();
+    await page.getByRole("button", { name: "Menu", exact: true }).focus();
+      await page.keyboard.press("Enter");
     await page
       .getByRole("navigation", { name: "Global navigation" })
       .getByRole("link", { name, exact: true })

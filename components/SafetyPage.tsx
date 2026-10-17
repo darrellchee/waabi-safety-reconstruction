@@ -85,21 +85,123 @@ export default function SafetyPage() {
     [slide, setSlide] = useState(0);
   const story = useRef<HTMLDivElement>(null),
     rail = useRef<HTMLDivElement>(null);
-  const touch = useRef(0);
+  const page = useRef<HTMLElement>(null);
+  const practicesRail = useRef<HTMLDivElement>(null);
+  const direction = useRef(1);
+  const previousActive = useRef(0);
+  // Analytic damped spring samples reproduce the reference Framer spring without
+  // introducing a second animation runtime.
+  const springFrames = (stiffness: number, damping: number, from: number, unit = "px") => {
+    const rate = damping / 2, frequencySquared = stiffness - rate * rate;
+    const omega = Math.sqrt(Math.abs(frequencySquared));
+    return Array.from({ length: 91 }, (_, i) => {
+      const t = i / 60;
+      const remaining = Math.exp(-rate * t) * (frequencySquared > 0
+        ? Math.cos(omega * t) + rate / omega * Math.sin(omega * t)
+        : Math.cosh(omega * t) + rate / omega * Math.sinh(omega * t));
+      return { transform: `translateY(${from * remaining}${unit})`, offset: i / 90 };
+    });
+  };
+  useEffect(() => {
+    if (!page.current || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const root = page.current;
+    const animations: Animation[] = [];
+    const words: HTMLElement[] = [];
+    page.current.querySelectorAll<HTMLElement>("h1, .section-heading h2, .philosophy-intro h2, .insights > .container > h2").forEach(heading => {
+      let wordIndex = 0, lineIndex = 0;
+      const walker = document.createTreeWalker(heading, NodeFilter.SHOW_TEXT);
+      const nodes: Text[] = [];
+      while (walker.nextNode()) nodes.push(walker.currentNode as Text);
+      nodes.forEach(node => {
+        if (node.previousSibling?.nodeName === "BR") wordIndex = ++lineIndex;
+        const fragment = document.createDocumentFragment();
+        node.textContent?.split(/(\s+)/).forEach(word => {
+          if (!word.trim()) { fragment.append(word); return; }
+          const span = document.createElement("span");
+          span.textContent = word;
+          span.className = "safety-motion-word";
+          span.style.setProperty("--word-delay", `${wordIndex++ * .07}s`);
+          fragment.append(span); words.push(span);
+        });
+        node.replaceWith(fragment);
+      });
+    });
+    const wordObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add("motion-visible"); wordObserver.unobserve(entry.target); }
+    }));
+    words.forEach(word => wordObserver.observe(word));
+    const revealObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const group = entry.target as HTMLElement;
+      const items = group.matches(".stats") ? group.querySelectorAll<HTMLElement>(".stat") : group.matches(".technology-panels") ? group.children : group.querySelectorAll<HTMLElement>(".insight-card");
+      Array.from(items).forEach((item, index) => {
+        (item as HTMLElement).style.transform = "";
+        animations.push(item.animate(springFrames(80, 20, 200 * (index + 1)), { duration: 1500, fill: "both" }));
+      });
+      revealObserver.unobserve(group);
+    }), { threshold: .2 });
+    page.current.querySelectorAll<HTMLElement>(".stats, .technology-panels, .insights-rail").forEach(group => {
+      Array.from(group.children).forEach((item, index) => (item as HTMLElement).style.transform = `translateY(${200 * (index + 1)}px)`);
+      revealObserver.observe(group);
+    });
+    return () => {
+      wordObserver.disconnect(); revealObserver.disconnect();
+      animations.forEach(animation => animation.cancel());
+      words.forEach(word => word.replaceWith(document.createTextNode(word.textContent || "")));
+      root.querySelectorAll<HTMLElement>(".stat, .technology-panel, .insight-card").forEach(item => { item.style.transform = ""; });
+    };
+  }, []);
+  useEffect(() => {
+    const image = story.current?.querySelector<HTMLElement>(".story-visual img.is-active");
+    const counter = story.current?.querySelector<HTMLElement>(".story-number > span");
+    const previous = previousActive.current;
+    previousActive.current = active;
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const frames = Array.from({ length: 91 }, (_, i) => {
+      const t = i / 60, rate = 11, omega = Math.sqrt(19);
+      const remaining = Math.exp(-rate * t) * (Math.cos(omega * t) + rate / omega * Math.sin(omega * t));
+      return { transform: `scale(${1 + .2 * remaining})`, opacity: Math.max(0, Math.min(1, 1 - remaining)), offset: i / 90 };
+    });
+    const animations = [image?.animate(frames, { duration: 1500 })];
+    if (previous !== active) {
+      const oldImage = story.current?.querySelectorAll<HTMLElement>(".story-visual img")[previous];
+      animations.push(oldImage?.animate(frames.map(frame => ({ opacity: 1 - frame.opacity, offset: frame.offset })), { duration: 1500 }));
+    }
+    let outgoing: HTMLElement | undefined;
+    if (counter && previous !== active) {
+      animations.push(counter.animate(springFrames(140, 22, 120 * direction.current, "%"), { duration: 1500 }));
+      outgoing = document.createElement("span");
+      outgoing.textContent = `0${previous + 1}`;
+      outgoing.className = "story-number-exit";
+      outgoing.setAttribute("aria-hidden", "true");
+      counter.parentElement?.append(outgoing);
+      const outgoingFrames = springFrames(140, 22, 120 * direction.current, "%").map(frame => ({
+        ...frame, transform: `${frame.transform} translateY(${-120 * direction.current}%)`,
+      }));
+      const exitAnimation = outgoing.animate(outgoingFrames, { duration: 1500, fill: "forwards" });
+      exitAnimation.finished.then(() => outgoing?.remove()).catch(() => {});
+      animations.push(exitAnimation);
+    }
+    return () => { animations.forEach(animation => animation?.cancel()); outgoing?.remove(); };
+  }, [active]);
   useEffect(() => {
     let frame = 0;
     const update = () => {
       cancelAnimationFrame(frame);
       frame = requestAnimationFrame(() => {
-        const rows =
-          story.current?.querySelectorAll<HTMLElement>(".story-copy");
-        if (rows && innerWidth >= 768) {
-          let selected = 0;
-          rows.forEach((el, i) => {
-            if (el.getBoundingClientRect().top < innerHeight * 0.62)
-              selected = i;
-          });
-          setActive(selected);
+        const element = story.current;
+        if (element && innerWidth >= 768) {
+          const rect = element.getBoundingClientRect();
+          const progress = Math.max(0, Math.min(1, (innerHeight / 2 - rect.top) / (rect.height - innerHeight / 2)));
+          const selected = Math.max(1, Math.min(3, Math.round(progress * 3))) - 1;
+          setActive(previous => { direction.current = selected >= previous ? 1 : -1; return selected; });
+          element.style.setProperty("--story-progress", `${progress}`);
+        }
+        const hero = page.current?.querySelector<HTMLElement>(".hero");
+        if (hero) {
+          const rect = hero.getBoundingClientRect();
+          const progress = Math.max(0, Math.min(1, (innerHeight - rect.top) / (rect.height + innerHeight)));
+          hero.style.setProperty("--safety-parallax", `${-12 + progress * 24}%`);
         }
       });
     };
@@ -110,11 +212,14 @@ export default function SafetyPage() {
       cancelAnimationFrame(frame);
     };
   }, []);
-  const move = (d: number) => setSlide((s) => Math.max(0, Math.min(3, s + d)));
+  const move = (d: number) => {
+    const element = practicesRail.current;
+    element?.scrollBy({ left: d * element.clientWidth, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
+  };
   return (
     <>
       <Header />
-      <main>
+      <main ref={page} className="safety-page">
         <section className="hero" id="top">
           <img
             src={A + "1760007662-e65a0af926da45b75ba890d3d0a5bb24469ce5be.webp"}
@@ -177,17 +282,19 @@ export default function SafetyPage() {
           </div>
           <div className="story container" ref={story}>
             <div className="story-counter">
-              <span>0{active + 1}</span>
+              <div className="story-number"><span>0{active + 1}</span></div>
               <small>/3</small>
             </div>
-            <div className="story-line">
-              <i />
+            <div className="story-line" aria-hidden="true">
+              <div className="story-line-track"><i /></div>
             </div>
             <div
               className="story-copies"
               onScroll={(e) => {
                 if (innerWidth < 768) {
                   const el = e.currentTarget;
+                  const progress = el.scrollLeft / Math.max(1, el.scrollWidth - el.clientWidth);
+                  story.current?.style.setProperty("--story-progress", `${progress}`);
                   setActive(Math.round(el.scrollLeft / (el.clientWidth + 24)));
                 }
               }}
@@ -276,15 +383,12 @@ export default function SafetyPage() {
           className="practices"
           id="practices"
           aria-label="Safety-first best practices"
-          onTouchStart={(e) => (touch.current = e.touches[0].clientX)}
-          onTouchEnd={(e) => {
-            const dx = e.changedTouches[0].clientX - touch.current;
-            if (Math.abs(dx) > 40) move(dx < 0 ? 1 : -1);
-          }}
+
         >
           <div
             className="practice-slides"
-            style={{ transform: `translateX(-${slide * 100}%)` }}
+            ref={practicesRail}
+            onScroll={(event) => setSlide(Math.round(event.currentTarget.scrollLeft / event.currentTarget.clientWidth))}
           >
             {practices.map((item, i) => (
               <article
@@ -331,7 +435,7 @@ export default function SafetyPage() {
                 key={x.title}
                 aria-label={"Show " + x.title}
                 aria-current={slide === i}
-                onClick={() => setSlide(i)}
+                onClick={() => practicesRail.current?.scrollTo({ left: i * practicesRail.current.clientWidth, behavior: "smooth" })}
               />
             ))}
           </div>

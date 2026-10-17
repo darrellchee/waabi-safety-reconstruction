@@ -1,0 +1,58 @@
+{
+  "hero": [
+    {
+      "text": "Redefining",
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "text": "safety.",
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    }
+  ],
+  "stories": [
+    {
+      "y": 2600,
+      "count": "01\n/3",
+      "invalid": false
+    },
+    {
+      "y": 3000,
+      "count": "01\n/3",
+      "invalid": false
+    },
+    {
+      "y": 3400,
+      "count": "02\n01\n/3",
+      "invalid": false
+    },
+    {
+      "y": 3800,
+      "count": "03\n/3",
+      "invalid": false
+    },
+    {
+      "y": 4200,
+      "count": "03\n/3",
+      "invalid": false
+    },
+    {
+      "y": 4600,
+      "count": "03\n/3",
+      "invalid": false
+    },
+    {
+      "y": 3400,
+      "count": "02\n/3",
+      "invalid": false
+    },
+    {
+      "y": 3000,
+      "count": "01\n/3",
+      "invalid": false
+    }
+  ],
+  "practice": "02\n/4\nSafety-first best practices.\nTesting & Validation\n\nFrom simulation to closed course testing to low exposure driving, and finally, the public road. We only advance when safety criteria are met.",
+  "errors": []
+}

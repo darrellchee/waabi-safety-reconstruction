@@ -1,0 +1,32 @@
+[
+  {
+    "width": 1440,
+    "menu": {
+      "height": 438.796875,
+      "opacity": "1",
+      "blur": "none"
+    },
+    "footer": {
+      "height": 600,
+      "y": "matrix(1, 0, 0, 1, 0, -0.0989583)",
+      "opacity": "0.998021",
+      "canvas": "visible",
+      "documentHeight": 7848
+    }
+  },
+  {
+    "width": 390,
+    "menu": {
+      "height": 701,
+      "opacity": "1",
+      "blur": "none"
+    },
+    "footer": {
+      "height": 654,
+      "y": "matrix(1, 0, 0, 1, 0, 0)",
+      "opacity": "1",
+      "canvas": "hidden",
+      "documentHeight": 6278
+    }
+  }
+]

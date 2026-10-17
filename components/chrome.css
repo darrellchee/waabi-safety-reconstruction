@@ -647,3 +647,90 @@ a:focus-visible {
     line-height: 1.4;
   }
 }
+
+/* Motion constants measured from the reference shared chrome chunk. */
+.site-header {
+  transition: top .4s cubic-bezier(.19,1,.22,1), width .4s cubic-bezier(.19,1,.22,1);
+}
+.nav-bar {
+  transition: height .4s cubic-bezier(.19,1,.22,1), border-radius .4s cubic-bezier(.19,1,.22,1), padding .4s cubic-bezier(.19,1,.22,1);
+}
+.menu-toggle { background: none; }
+.menu-toggle:hover { background: none; }
+.menu-toggle span { transition: transform .3s cubic-bezier(.34,1.56,.64,1); }
+.menu-panel {
+  overflow: clip;
+  animation: none;
+}
+.menu-panel > * {
+  animation: menu-content-in .4s .15s cubic-bezier(.19,1,.22,1) backwards;
+}
+.menu-links img, .menu-links a:hover img { transform: none; transition: none; }
+@keyframes menu-content-in {
+  from { opacity: 0; transform: scale(1.1); filter: blur(10px); }
+  to { opacity: 1; transform: scale(1); filter: blur(0); }
+}
+.site-footer { padding: 0; }
+.footer-motion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  padding: 80px max(40px, 7.15vw);
+  isolation: isolate;
+  transform: translateY(var(--footer-y, 0px));
+  will-change: transform;
+}
+.footer-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  visibility: hidden;
+  z-index: 0;
+}
+.footer-top, .footer-bottom {
+  position: relative;
+  z-index: 1;
+  opacity: var(--footer-opacity, 1);
+}
+.footer-socials > a { transition: color .15s, background-color .15s; }
+.footer-socials > a:hover { transform: none; background: white; }
+.cookie-notice { animation: cookie-in .15s ease-out; }
+@keyframes cookie-in { from { opacity: 0; transform: scale(.95); } to { opacity: 1; transform: scale(1); } }
+@media (max-width: 1023px) {
+  .site-footer { padding: 0; }
+  .footer-motion { min-height: 0; height: auto; padding: 60px var(--gutter) 30px; }
+}
+@media (max-width: 639px) {
+  .menu-panel { overflow-y: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-header, .nav-bar, .menu-toggle span { transition: none; }
+  .menu-panel > *, .cookie-notice { animation: none; }
+  .footer-motion { transform: none; will-change: auto; }
+  .footer-top, .footer-bottom { opacity: 1; }
+  .footer-canvas { display: none; }
+}
+/* Both hamburger bars converge on the SVG's center line (y=3). */
+.menu-is-open .menu-toggle { gap: 4px; }
+.menu-is-open .menu-toggle span:first-child { transform: translateY(3px); }
+.menu-is-open .menu-toggle span:last-child { transform: translateY(-3px); }
+
+/* The serialized root MotionConfig overrides library spring defaults. */
+.menu-toggle span { transition: transform .4s cubic-bezier(.19,1,.22,1); }
+@media (prefers-reduced-motion: reduce) { .menu-toggle span { transition: none; } }
+
+.announcement { animation: announcement-in .4s cubic-bezier(.19,1,.22,1) both; }
+.announcement-closing { animation: announcement-out .4s cubic-bezier(.19,1,.22,1) both; }
+@keyframes announcement-in { from { transform: translateY(-100%); } to { transform: translateY(0); } }
+@keyframes announcement-out { from { transform: translateY(0); } to { transform: translateY(-100%); } }
+@media (prefers-reduced-motion: reduce) { .announcement { animation: none; } }
+/* The reference reserves 48px for dismissal and tracks its small sans text. */
+.announcement { letter-spacing: .02em; }
+.announcement > span { margin-right: 48px; }
+.announcement a span { font-size: 9px; width: 6px; line-height: 1; }

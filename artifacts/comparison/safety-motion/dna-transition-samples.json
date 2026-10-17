@@ -1,0 +1,65 @@
+[
+  {
+    "y": 3000,
+    "progress": "0.4656441717791411",
+    "count": [
+      {
+        "text": "01",
+        "hidden": null,
+        "transform": "none"
+      }
+    ],
+    "line": "matrix(1, 0, 0, 1, 0, -871)"
+  },
+  {
+    "y": 3400,
+    "progress": "0.7110429447852761",
+    "count": [
+      {
+        "text": "02",
+        "hidden": null,
+        "transform": "matrix(1, 0, 0, 1, 0, 15.0541)"
+      },
+      {
+        "text": "01",
+        "hidden": "true",
+        "transform": "matrix(1, 0, 0, 1, 0, -37.7459)"
+      }
+    ],
+    "line": "matrix(1, 0, 0, 1, 0, -471)"
+  },
+  {
+    "y": 3800,
+    "progress": "0.9564417177914111",
+    "count": [
+      {
+        "text": "03",
+        "hidden": null,
+        "transform": "matrix(1, 0, 0, 1, 0, 10.8298)"
+      },
+      {
+        "text": "02",
+        "hidden": "true",
+        "transform": "matrix(1, 0, 0, 1, 0, -41.9702)"
+      }
+    ],
+    "line": "matrix(1, 0, 0, 1, 0, -71)"
+  },
+  {
+    "y": 3400,
+    "progress": "0.7110429447852761",
+    "count": [
+      {
+        "text": "02",
+        "hidden": null,
+        "transform": "matrix(1, 0, 0, 1, 0, -5.25131)"
+      },
+      {
+        "text": "03",
+        "hidden": "true",
+        "transform": "matrix(1, 0, 0, 1, 0, 47.5487)"
+      }
+    ],
+    "line": "matrix(1, 0, 0, 1, 0, -471)"
+  }
+]

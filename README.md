@@ -41,4 +41,6 @@ Screenshots: `artifacts/reference/` and `artifacts/comparison/`. Rerun local scr
 
 See `docs/implementation-notes.md` and `docs/fidelity-report.md` for architecture and remaining differences. The project is deployed through the connected Vercel project `waabi-safety-reconstruction`; production is https://waabi-safety-reconstruction.vercel.app/.
 
+Animation refinement and normal-motion verification: `docs/animation-refinement.md` and `docs/motion-validation.md`. Rerun motion checks with `npx playwright test tests/motion.spec.ts`; normal motion is enabled explicitly for those tests.
+
 New page inspection and fidelity evidence: `docs/home-reference-analysis.md`, `docs/home-fidelity.md`, `docs/company-reference-analysis.md`, `docs/company-fidelity.md`, and `docs/pages-qa.md`.

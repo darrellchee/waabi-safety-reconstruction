@@ -1,0 +1,36 @@
+[
+  {
+    "menuOpen": {
+      "nav": {
+        "x": 551,
+        "y": 141,
+        "width": 338,
+        "height": 438.796875,
+        "top": 141,
+        "right": 889,
+        "bottom": 579.796875,
+        "left": 551
+      },
+      "transform": "matrix(1, 0, 0, 1, 0, 42)"
+    }
+  },
+  {
+    "footer": {
+      "rect": {
+        "x": 0,
+        "y": 300.296875,
+        "width": 1440,
+        "height": 600,
+        "top": 300.296875,
+        "right": 1440,
+        "bottom": 900.296875,
+        "left": 0
+      },
+      "transform": "none",
+      "canvas": true
+    }
+  },
+  {
+    "captureEvidence": "ev_65e2993a78941e99710cf79f8eb06da56498a989f82e718cc84c1026467cd292"
+  }
+]

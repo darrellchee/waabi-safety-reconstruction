@@ -12,3 +12,6 @@ artifacts/reference/rea/browser-*.txt
 scripts/__pycache__/
 
 .next-*/
+
+# Public source bundles are inspected locally; retain REA hashes/evidence instead.
+artifacts/reference/home/js/

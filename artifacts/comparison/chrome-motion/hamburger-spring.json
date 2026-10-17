@@ -1,0 +1,134 @@
+{
+  "reference": [
+    {
+      "time": 32.100000001490116,
+      "transform": "none"
+    },
+    {
+      "time": 116.60000000149012,
+      "transform": "none"
+    },
+    {
+      "time": 135.40000000037253,
+      "transform": "matrix(1, 0, 0, 1, 0, 0.311545)"
+    },
+    {
+      "time": 145,
+      "transform": "matrix(1, 0, 0, 1, 0, 0.875401)"
+    },
+    {
+      "time": 198.90000000037253,
+      "transform": "matrix(1, 0, 0, 1, 0, 2.25636)"
+    },
+    {
+      "time": 213.7000000011176,
+      "transform": "matrix(1, 0, 0, 1, 0, 2.42836)"
+    },
+    {
+      "time": 344.5,
+      "transform": "matrix(1, 0, 0, 1, 0, 2.95828)"
+    },
+    {
+      "time": 404.80000000074506,
+      "transform": "matrix(1, 0, 0, 1, 0, 2.9908)"
+    },
+    {
+      "time": 502.30000000074506,
+      "transform": "matrix(1, 0, 0, 1, 0, 2.99997)"
+    },
+    {
+      "time": 533.3000000007451,
+      "transform": "matrix(1, 0, 0, 1, 0, 3)"
+    },
+    {
+      "time": 636.1000000014901,
+      "transform": "matrix(1, 0, 0, 1, 0, 3)"
+    },
+    {
+      "time": 696,
+      "transform": "matrix(1, 0, 0, 1, 0, 3)"
+    },
+    {
+      "time": 707.7000000011176,
+      "transform": "matrix(1, 0, 0, 1, 0, 3)"
+    },
+    {
+      "time": 734.3000000007451,
+      "transform": "matrix(1, 0, 0, 1, 0, 3)"
+    },
+    {
+      "time": 797.2000000011176,
+      "transform": "matrix(1, 0, 0, 1, 0, 3)"
+    },
+    {
+      "time": 819.6000000014901,
+      "transform": "matrix(1, 0, 0, 1, 0, 3)"
+    }
+  ],
+  "local": [
+    {
+      "time": 89.69999999925494,
+      "transform": "none"
+    },
+    {
+      "time": 107.19999999925494,
+      "transform": "none"
+    },
+    {
+      "time": 211.19999999925494,
+      "transform": "none"
+    },
+    {
+      "time": 217.59999999962747,
+      "transform": "none"
+    },
+    {
+      "time": 225,
+      "transform": "none"
+    },
+    {
+      "time": 273.59999999962747,
+      "transform": "none"
+    },
+    {
+      "time": 288.30000000074506,
+      "transform": "none"
+    },
+    {
+      "time": 312.69999999925494,
+      "transform": "none"
+    },
+    {
+      "time": 324.90000000037253,
+      "transform": "none"
+    },
+    {
+      "time": 371.5,
+      "transform": "none"
+    },
+    {
+      "time": 394.30000000074506,
+      "transform": "none"
+    },
+    {
+      "time": 527.0999999996275,
+      "transform": "none"
+    },
+    {
+      "time": 596.4000000003725,
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "time": 674.5,
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "time": 786.5999999996275,
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "time": 832.3000000007451,
+      "transform": "matrix(1, 0, 0, 1, 0, 1.98966)"
+    }
+  ]
+}

@@ -1,5 +1,15 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import {
+  useEffect,
+  useRef,
+  useState,
+  type CSSProperties,
+  Children,
+  cloneElement,
+  isValidElement,
+  type ReactNode,
+  type ReactElement,
+} from "react";
 import { Header, Footer, CookieConsent } from "./SiteChrome";
 import partners from "./home-data.json";
 import { insights } from "./insights-data";
@@ -38,6 +48,61 @@ function Film({ name, className = "" }: { name: string; className?: string }) {
       aria-hidden="true"
       tabIndex={-1}
     />
+  );
+}
+function MotionCopy({
+  children,
+  as: Tag = "h2",
+}: {
+  children: ReactNode;
+  as?: "h2" | "p";
+}) {
+  const ref = useRef<HTMLHeadingElement & HTMLParagraphElement>(null);
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setVisible(true);
+      return;
+    }
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setVisible(true);
+        observer.disconnect();
+      }
+    });
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+  let index = 0;
+  const wrap = (nodes: ReactNode): ReactNode =>
+    Children.map(nodes, (node) => {
+      if (typeof node === "string")
+        return node.split(/(\s+)/).map((word, i) =>
+          /\S/.test(word) ? (
+            <span
+              className="home-motion-word"
+              style={{ "--word-delay": `${index++ * 0.07}s` } as CSSProperties}
+              key={i}
+            >
+              {word}
+            </span>
+          ) : (
+            word
+          ),
+        );
+      if (isValidElement(node) && node.type !== "br") {
+        const element = node as ReactElement<{ children?: ReactNode }>;
+        return cloneElement(element, undefined, wrap(element.props.children));
+      }
+      return node;
+    });
+  return (
+    <Tag
+      ref={ref}
+      className={`home-motion-copy ${visible ? "is-revealed" : ""}`}
+    >
+      {wrap(children)}
+    </Tag>
   );
 }
 const scaleItems = [
@@ -94,62 +159,244 @@ const technology = [
 export default function HomePage() {
   const [scale, setScale] = useState(0),
     [partner, setPartner] = useState(0),
-    [heroIntro, setHeroIntro] = useState(true),
     [scaleEntered, setScaleEntered] = useState(false),
-    [partnerPaused, setPartnerPaused] = useState(false);
+    [partnerPaused, setPartnerPaused] = useState(false),
+    [partnersVisible, setPartnersVisible] = useState(false);
   const scaleSection = useRef<HTMLElement>(null),
     rail = useRef<HTMLDivElement>(null),
     hero = useRef<HTMLElement>(null),
-    road = useRef<HTMLElement>(null);
+    road = useRef<HTMLElement>(null),
+    careers = useRef<HTMLDivElement>(null),
+    partnerSection = useRef<HTMLElement>(null);
+  const [careerIndex, setCareerIndex] = useState(0);
   useEffect(() => {
-    const timer = setTimeout(() => setHeroIntro(false), 1900);
-    return () => clearTimeout(timer);
-  }, []);
-  useEffect(() => {
-    let ticking = false;
-    const scroll = () => {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(() => {
-        const rect = scaleSection.current?.getBoundingClientRect();
-        if (rect && innerWidth >= 768) {
-          const p = Math.max(0, Math.min(0.999, -rect.top / innerHeight));
-          setScaleEntered(p > 0.18);
-          setScale(Math.min(2, Math.floor((Math.max(0, p - 0.3) / 0.7) * 3)));
-        }
-        const h = hero.current?.getBoundingClientRect();
-        if (h)
-          hero.current?.style.setProperty(
-            "--hero-fade",
-            String(Math.max(0, Math.min(1, 1 + h.top / innerHeight / 1.2))),
-          );
-        const r = road.current?.getBoundingClientRect();
-        if (r)
-          road.current?.style.setProperty(
-            "--road-progress",
-            String(
-              Math.max(
-                0,
-                Math.min(1, (innerHeight - r.top) / (innerHeight * 1.1)),
-              ),
-            ),
-          );
-        ticking = false;
-      });
+    const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+    const clamp = (value: number) => Math.max(0, Math.min(1, value));
+    // Solve the same cubic Bezier used by the source's useTransform easing.
+    const ease = (
+      progress: number,
+      x1: number,
+      y1: number,
+      x2: number,
+      y2: number,
+    ) => {
+      const value = (t: number, a: number, b: number) =>
+        3 * (1 - t) ** 2 * t * a + 3 * (1 - t) * t * t * b + t * t * t;
+      let lo = 0,
+        hi = 1;
+      for (let i = 0; i < 16; i++) {
+        const mid = (lo + hi) / 2;
+        if (value(mid, x1, x2) < clamp(progress)) lo = mid;
+        else hi = mid;
+      }
+      return value((lo + hi) / 2, y1, y2);
     };
-    window.addEventListener("scroll", scroll, { passive: true });
-    scroll();
-    return () => window.removeEventListener("scroll", scroll);
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const vh = innerHeight;
+      const h = hero.current;
+      if (h) {
+        const y = -h.getBoundingClientRect().top;
+        const shrink = clamp((y - vh) / (vh * 0.5));
+        const target = innerWidth >= 768 ? (innerWidth * 133) / 1440 : 133;
+        const targetScale = target / Math.min(innerWidth, vh);
+        const scale = 1 + (targetScale - 1) * ease(shrink, 0.25, 0.1, 0.25, 1);
+        const clip = (Math.max(innerWidth, vh) - Math.min(innerWidth, vh)) / 2;
+        h.style.setProperty(
+          "--hero-scale",
+          String(reduced.matches ? 1 : scale),
+        );
+        h.style.setProperty(
+          "--hero-clip-x",
+          `${innerWidth > vh ? clip * ease(shrink, 0.19, 1, 0.22, 1) : 0}px`,
+        );
+        h.style.setProperty(
+          "--hero-clip-y",
+          `${innerWidth <= vh ? clip * ease(shrink, 0.19, 1, 0.22, 1) : 0}px`,
+        );
+        h.style.setProperty(
+          "--hero-radius",
+          `${(16 * (1 - clamp((scale - 0.95) / 0.05))) / scale}px`,
+        );
+        h.style.setProperty(
+          "--hero-shade",
+          String(1 - clamp((shrink - 0.35) / 0.65)),
+        );
+        h.style.setProperty("--hero-title-y", `${-Math.min(y, vh * 1.5)}px`);
+        h.style.setProperty(
+          "--hero-title-x",
+          `${innerWidth >= 768 ? clamp(y / (vh * 1.85)) * 50 : 0}px`,
+        );
+        h.style.setProperty(
+          "--hero-intro",
+          String(
+            clamp((y / (vh * 1.5) - 0.1) / 0.1) *
+              (1 - clamp((y - vh * 0.875) / (vh * 0.125))),
+          ),
+        );
+        h.style.setProperty("--hero-dot", String(1 - clamp(y / (vh * 0.15))));
+        h.classList.toggle("intro-entered", y > vh * 0.225);
+      }
+      const r = road.current;
+      if (r) {
+        const top = r.getBoundingClientRect().top;
+        const progress = clamp((vh - top) / (vh + r.offsetHeight));
+        r.style.setProperty("--road-outer-y", `${600 - 1200 * progress}px`);
+        const textProgress = clamp(
+          (vh - top - r.offsetHeight * 0.5) / (r.offsetHeight * 0.5),
+        );
+        r.style.setProperty(
+          "--road-copy-y",
+          `${innerWidth >= 768 ? -200 + 400 * textProgress : 0}px`,
+        );
+      }
+      const section = scaleSection.current;
+      if (section && innerWidth >= 768) {
+        const top = section.getBoundingClientRect().top;
+        // Native source trigger: sticky benefits list start center → end end,
+        // with visibility crossing .5, equivalent to section top = -25vh.
+        setScaleEntered(top < -vh * 0.25);
+        section.style.setProperty(
+          "--strength-heading-y",
+          `${Math.max(-vh, Math.min(0, top))}px`,
+        );
+        section.style.setProperty(
+          "--strength-tabs-y",
+          `${Math.max(0, vh * 0.5 + top)}px`,
+        );
+        const stackProgress = clamp((-top - vh * 0.5) / (vh * 0.5));
+        section.style.setProperty(
+          "--strength-stack-y",
+          `${-50 * stackProgress}px`,
+        );
+        section.style.setProperty(
+          "--strength-stack-scale",
+          String(1 - 0.1 * stackProgress),
+        );
+        const intro = clamp((vh * 0.75 - top) / (vh * 0.75));
+        const eased = ease(intro, 0.645, 0.045, 0.355, 1);
+        const image = section.querySelector<HTMLElement>(".home-scale-media");
+        if (image) {
+          const size = image.offsetWidth;
+          const target = (innerWidth * 133) / 1440;
+          const finalScale = target / size;
+          const x =
+            innerWidth / 6 +
+            target / 2 -
+            (image.offsetLeft +
+              (innerWidth >= 1600
+                ? innerWidth / 2 - 543
+                : innerWidth * 0.1389) +
+              size / 2);
+          const y = (-innerWidth * 133) / 1440 - (vh - size) / 2;
+          image.style.setProperty(
+            "--strength-scale",
+            String(finalScale + (1 - finalScale) * eased),
+          );
+          image.style.setProperty("--strength-x", `${x * (1 - eased)}px`);
+          image.style.setProperty("--strength-y", `${y * (1 - eased)}px`);
+        }
+      }
+    };
+    const scroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    addEventListener("scroll", scroll, { passive: true });
+    addEventListener("resize", scroll);
+    update();
+    return () => {
+      removeEventListener("scroll", scroll);
+      removeEventListener("resize", scroll);
+      cancelAnimationFrame(frame);
+    };
   }, []);
   useEffect(() => {
-    if (partnerPaused || matchMedia("(prefers-reduced-motion: reduce)").matches)
+    const node = careers.current;
+    if (!node || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    let timer: ReturnType<typeof setInterval> | undefined;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (timer) clearInterval(timer);
+      if (entry.isIntersecting)
+        timer = setInterval(() => {
+          if (!document.hidden) setCareerIndex((value) => value + 1);
+        }, 2000);
+    });
+    observer.observe(node);
+    return () => {
+      observer.disconnect();
+      if (timer) clearInterval(timer);
+    };
+  }, []);
+  useEffect(() => {
+    const section = scaleSection.current;
+    if (
+      !section ||
+      innerWidth >= 768 ||
+      matchMedia("(prefers-reduced-motion: reduce)").matches
+    )
+      return;
+    let timer: ReturnType<typeof setInterval> | undefined;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (timer) clearInterval(timer);
+        if (entry.isIntersecting)
+          timer = setInterval(() => setScale((value) => (value + 1) % 3), 5000);
+      },
+      { threshold: 0.5 },
+    );
+    observer.observe(section.querySelector(".home-scale-media") || section);
+    return () => {
+      observer.disconnect();
+      if (timer) clearInterval(timer);
+    };
+  }, []);
+  useEffect(() => {
+    if (
+      !partnersVisible ||
+      innerWidth < 768 ||
+      partnerPaused ||
+      matchMedia("(prefers-reduced-motion: reduce)").matches
+    )
       return;
     const timer = setInterval(
       () => setPartner((value) => (value + 1) % partners.length),
       10000,
     );
     return () => clearInterval(timer);
-  }, [partner, partnerPaused]);
+  }, [partner, partnerPaused, partnersVisible]);
+  useEffect(() => {
+    const node = partnerSection.current;
+    const observer = new IntersectionObserver(([entry]) =>
+      setPartnersVisible(entry.isIntersecting),
+    );
+    if (node)
+      observer.observe(node.querySelector(".home-partner-card") || node);
+    return () => observer.disconnect();
+  }, []);
+  useEffect(() => {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const nodes = document.querySelectorAll(
+      ".home-tech-cards > a,.home-insight-card",
+    );
+    const observer = new IntersectionObserver((entries) =>
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-revealed");
+          observer.unobserve(entry.target);
+        }
+      }),
+    );
+    nodes.forEach((node, index) => {
+      node.classList.add("home-clip-reveal");
+      (node as HTMLElement).style.setProperty(
+        "--clip-delay",
+        `${(index % 3) * 0.15}s`,
+      );
+      observer.observe(node);
+    });
+    return () => observer.disconnect();
+  }, []);
   const current = partners[partner];
   const moveInsights = (direction: number) => {
     const element = rail.current;
@@ -171,19 +418,48 @@ export default function HomePage() {
       <main className="home-page">
         <section ref={hero} className="home-hero-scroll">
           <div className="home-hero">
-            <Film name="WAABI_27s_2K_antinomy_export_250823.mp4" />
-            <div className="home-hero-shade" />
-            <p className={`home-hero-intro ${heroIntro ? "is-visible" : ""}`}>
+            <div className="home-hero-film">
+              <Film name="WAABI_27s_2K_antinomy_export_250823.mp4" />
+              <div className="home-hero-shade" />
+            </div>
+            <p className="home-hero-intro">
               Waabi is pioneering the future of Physical AI.
             </p>
-            <h1 className={heroIntro ? "is-entering" : ""}>
-              Built to think.
+            <h1>
+              <span className="home-title-line">
+                {["Built", "to", "think."].map((word, i) => (
+                  <span key={word} style={{ animationDelay: `${i * 0.07}s` }}>
+                    {word}
+                    {i < 2 ? " " : ""}
+                  </span>
+                ))}
+              </span>
               <br />
-              Born to haul.
+              <span className="home-title-line">
+                {["Born", "to", "haul."].map((word, i) => (
+                  <span
+                    key={word}
+                    style={{ animationDelay: `${0.07 + i * 0.07}s` }}
+                  >
+                    {word}
+                    {i < 2 ? " " : ""}
+                  </span>
+                ))}
+              </span>
             </h1>
             <a
               className="home-scroll-dot"
               href="#our-road"
+              onClick={(event) => {
+                event.preventDefault();
+                window.scrollTo({
+                  top: innerHeight * 1.65,
+                  behavior: matchMedia("(prefers-reduced-motion: reduce)")
+                    .matches
+                    ? "instant"
+                    : "smooth",
+                });
+              }}
               aria-label="Discover Waabi"
             />
           </div>
@@ -210,6 +486,11 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
+            <img
+              className="home-road-center-tile"
+              src={media("1761218404-waabi_inspection_02344.webp")}
+              alt=""
+            />
             <div className="home-road-copy">
               <p>We built our own road.</p>
               <p>
@@ -233,14 +514,25 @@ export default function HomePage() {
                 alt="Waabi truck on a highway"
               />
               {scaleItems.map((item, i) => (
-                <div key={item[0]} className={i === scale ? "is-active" : ""}>
+                <div
+                  key={item[0]}
+                  className={
+                    i === scale ? "is-active" : i < scale ? "is-stacked" : ""
+                  }
+                  style={
+                    {
+                      "--stack-index": i,
+                      "--stack-offset": scale - i,
+                    } as CSSProperties
+                  }
+                >
                   <Film name={item[2]} />
                 </div>
               ))}
             </div>
             <div className="home-scale-copy">
               <div className="home-scale-heading">
-                <h2>Unlocking scale in the real world.</h2>
+                <MotionCopy>Unlocking scale in the real world.</MotionCopy>
                 <p className="home-sans">
                   We deliver a product that&apos;s faster, safer, more scalable,
                   and efficient—unlocking the true potential of autonomous
@@ -285,7 +577,7 @@ export default function HomePage() {
             />
             <div className="home-cover-shade" />
             <div>
-              <h2>The technology behind Waabi.</h2>
+              <MotionCopy>The technology behind Waabi.</MotionCopy>
               <a className="home-pill" href="https://waabi.ai/insights">
                 Explore the tech
               </a>
@@ -316,26 +608,27 @@ export default function HomePage() {
           />
           <div className="home-cover-shade" />
           <div>
-            <h2>
+            <MotionCopy>
               Setting new
               <br />
               standards for
               <br />
               AV safety.
-            </h2>
-            <p>
+            </MotionCopy>
+            <MotionCopy as="p">
               For us, safety isn&apos;t a box to check—it&apos;s a commitment we{" "}
               <strong>strengthen daily with</strong> a simulation-first
               approach, rigorous validation, and a culture where safety is
               everyone&apos;s job.
-            </p>
+            </MotionCopy>
             <a className="home-pill" href="/safety">
               Explore our approach
             </a>
           </div>
         </section>
         <section
-          className={`home-partners ${partnerPaused ? "is-paused" : ""}`}
+          ref={partnerSection}
+          className={`home-partners ${partnerPaused || !partnersVisible ? "is-paused" : ""}`}
           onMouseEnter={() => setPartnerPaused(true)}
           onMouseLeave={() => setPartnerPaused(false)}
           onFocusCapture={() => setPartnerPaused(true)}
@@ -345,10 +638,10 @@ export default function HomePage() {
           }}
         >
           <div className="home-partners-intro">
-            <h2>
+            <MotionCopy>
               <span>Trusted by</span> <span>the best in</span>{" "}
               <span>the industry.</span>
-            </h2>
+            </MotionCopy>
             <p>
               From hardware providers and OEMs to retailers, logistics providers
               and carriers, the best in the business count on Waabi to deliver
@@ -380,9 +673,23 @@ export default function HomePage() {
                 ))}
               </div>
               <blockquote id="home-partner-quote" role="tabpanel" key={partner}>
-                {current.review}
+                {current.review.split(/(\s+)/).map((word, index) =>
+                  /\S/.test(word) ? (
+                    <span
+                      className="home-quote-word"
+                      key={`${partner}-${index}`}
+                      style={{
+                        animationDelay: `${0.4 + Math.floor(index / 2) * 0.03}s`,
+                      }}
+                    >
+                      {word}
+                    </span>
+                  ) : (
+                    word
+                  ),
+                )}
               </blockquote>
-              <p className="home-partner-author">
+              <p className="home-partner-author" key={`author-${partner}`}>
                 {current.author}
                 <br />
                 <span>{current.authorTitle}</span>
@@ -414,7 +721,7 @@ export default function HomePage() {
         </section>
         <section className="home-insights">
           <div className="home-insights-top">
-            <h2>Insights.</h2>
+            <MotionCopy>Insights.</MotionCopy>
             <div>
               <p>
                 Explore technology deep dives, behind-the-scenes perspectives,
@@ -464,30 +771,43 @@ export default function HomePage() {
           </div>
         </section>
         <section className="home-careers">
-          <h2>Build Physical AI with us.</h2>
+          <MotionCopy>Build Physical AI with us.</MotionCopy>
           <a className="home-pill" href="https://waabi.ai/careers">
             Join the team
           </a>
-          <div className="home-careers-collage">
+          <div className="home-careers-collage" ref={careers}>
             {[
               "1760350326-waabi_portrait_felicia_00336_final.webp",
               "1760350326-waabi_scout_00761_final.webp",
               "1761184004-251006_waabi_collab_05_1012_a.webp",
               "1760350326-waabi_inspection_02613_final.webp",
-            ].map((name, i) => (
-              <img
-                src={media(name)}
-                key={name}
-                alt={
-                  [
-                    "A Waabi team member",
-                    "Waabi trucks on the road",
-                    "The Waabi team collaborating",
-                    "A team member inspecting a Waabi truck",
-                  ][i]
-                }
-              />
-            ))}
+              "1760350326-waabi_portrait_felicia_00336_final.webp",
+              "1760350326-waabi_scout_00761_final.webp",
+            ].map((name, i) =>
+              (i - (careerIndex % 6) + 6) % 6 < 4 ? (
+                <img
+                  src={media(name)}
+                  key={`${name}-${i}`}
+                  style={
+                    {
+                      "--career-slot": (i - (careerIndex % 6) + 6) % 6,
+                    } as CSSProperties
+                  }
+                  data-slot={(i - (careerIndex % 6) + 6) % 6}
+                  data-entering={
+                    careerIndex > 0 && (i - (careerIndex % 6) + 6) % 6 === 3
+                  }
+                  alt={
+                    [
+                      "A Waabi team member",
+                      "Waabi trucks on the road",
+                      "The Waabi team collaborating",
+                      "A team member inspecting a Waabi truck",
+                    ][i % 4]
+                  }
+                />
+              ) : null,
+            )}
           </div>
         </section>
       </main>

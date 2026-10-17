@@ -1,5 +1,7 @@
 # Home fidelity and verification
 
+> Historical layout review. The animation approximations described below were subsequently replaced; see [animation refinement](animation-refinement.md) and the page-specific motion report for current behavior and verification.
+
 The Home page uses the reference fonts, original media, content, quotes and link destinations. Refinements include the original close-up truck technology image, the desktop content width cap, separate pinned introduction and strengths states, montage clipping, responsive testimonial geometry, decoded apostrophes/em dashes, and Insights metadata beneath images. Original article links remain normal anchors. The Insights controls move by one measured card and gap, and the rail accounts for its inset when snapping.
 
 Film playback starts near the viewport and pauses offscreen. Local poster frames provide content before playback and when reduced motion is requested. Reduced motion suppresses the hero introduction, film playback, testimonial timer and transitions. The ten-second partner rotation pauses on pointer hover and keyboard focus. Quotes retain their original author attribution and destination. No technology dialogs were invented.

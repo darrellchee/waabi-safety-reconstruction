@@ -65,7 +65,8 @@ test("navigation opens, closes with Escape, and links Safety locally", async ({
 }) => {
   await page.goto("/safety");
   const menu = page.getByRole("button", { name: "Menu", exact: true });
-  await menu.click();
+  await menu.focus();
+  await page.keyboard.press("Enter");
   const navigation = page.getByRole("navigation", {
     name: "Global navigation",
   });
@@ -161,7 +162,8 @@ for (const viewport of [
         () => document.documentElement.scrollWidth - innerWidth,
       ),
     ).toBeLessThanOrEqual(1);
-    await page.getByRole("button", { name: "Menu", exact: true }).click();
+    await page.getByRole("button", { name: "Menu", exact: true }).focus();
+      await page.keyboard.press("Enter");
     await expect(
       page.getByRole("navigation", { name: "Global navigation" }),
     ).toBeVisible();

@@ -1,0 +1,2138 @@
+[
+  {
+    "sample": "local-company-1440-scroll-00-0.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 27.344,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-00-0.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -308
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-00-0.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-01-630.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.031,
+      "width": 27.344,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-01-630.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -308
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-01-630.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-02-945.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.031,
+      "width": 27.344,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-02-945.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -308
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-02-945.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-03-1170.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.031,
+      "width": 27.344,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-03-1170.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -308
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-03-1170.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-04-1440.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.031,
+      "width": 27.344,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-04-1440.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -308
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-04-1440.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-05-1980.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.031,
+      "width": 27.344,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-05-1980.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -308
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-05-1980.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-06-2520.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.031,
+      "width": 27.344,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-06-2520.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -308
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-06-2520.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-07-1980.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.031,
+      "width": 27.344,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-07-1980.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -308
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-07-1980.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-08-1440.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.031,
+      "width": 27.344,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-08-1440.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -308
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-08-1440.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-09-945.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.031,
+      "width": 27.344,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-09-945.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -308
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-09-945.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-10-0.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 27.344,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-10-0.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -308
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-1440-scroll-10-0.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-00-0.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-00-0.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -300
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-00-0.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.0,
+      "width": 0,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-01-591.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-01-591.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -300
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-01-591.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.0,
+      "width": 0,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-02-886.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-02-886.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -300
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-02-886.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.0,
+      "width": 0,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-03-1097.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-03-1097.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -300
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-03-1097.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.0,
+      "width": 0,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-04-1350.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-04-1350.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -300
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-04-1350.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.0,
+      "width": 0,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-05-1857.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-05-1857.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -300
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-05-1857.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.0,
+      "width": 0,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-06-2363.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-06-2363.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -300
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-06-2363.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.0,
+      "width": 0,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-07-1857.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-07-1857.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -300
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-07-1857.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.0,
+      "width": 0,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-08-1350.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-08-1350.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -300
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-08-1350.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.0,
+      "width": 0,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-09-886.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-09-886.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -300
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-09-886.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.0,
+      "width": 0,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-10-0.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-10-0.json.gz",
+    "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how hu",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -300
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-company-390-scroll-10-0.json.gz",
+    "text": "The people moving us forward.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.0,
+      "width": 0,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-00-0.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": -0.047,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-1440-scroll-00-0.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": -0.047,
+      "y": 0,
+      "width": 17.984,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-00-0.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -163.75,
+      "y": 0.0,
+      "width": 327.5,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-00-0.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0.016,
+      "y": 0.609,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-01-450.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": -0.047,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-01-450.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 13.467,
+      "y": 0,
+      "width": 17.984,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-01-450.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -163.75,
+      "y": 0.0,
+      "width": 327.5,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-01-450.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0.016,
+      "y": 0.609,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-02-900.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": -0.047,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-1440-scroll-02-900.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 26.98,
+      "y": 0,
+      "width": 17.984,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-02-900.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -163.75,
+      "y": 0.0,
+      "width": 327.5,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-02-900.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0.016,
+      "y": 0.609,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-03-1575.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": -0.047,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-1440-scroll-03-1575.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 47.25,
+      "y": 0,
+      "width": 17.984,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-03-1575.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -163.75,
+      "y": 0.0,
+      "width": 327.5,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-03-1575.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0.016,
+      "y": 0.609,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-04-2025.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": -0.047,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-1440-scroll-04-2025.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 49.953,
+      "y": 0,
+      "width": 17.984,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-04-2025.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -163.75,
+      "y": 0.0,
+      "width": 327.5,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-04-2025.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0.016,
+      "y": 0.609,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-05-2925.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": -0.047,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-1440-scroll-05-2925.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 49.953,
+      "y": 0,
+      "width": 17.984,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-05-2925.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -163.75,
+      "y": 0.0,
+      "width": 327.5,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-05-2925.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0.016,
+      "y": 0.609,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-06-3240.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": -0.047,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-1440-scroll-06-3240.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 49.953,
+      "y": 0,
+      "width": 17.984,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-06-3240.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -163.75,
+      "y": 0.0,
+      "width": 327.5,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-06-3240.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0.016,
+      "y": 0.609,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-07-3600.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": -0.047,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-1440-scroll-07-3600.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 49.953,
+      "y": 0,
+      "width": 17.984,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-07-3600.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -163.75,
+      "y": 0.0,
+      "width": 327.5,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-07-3600.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0.016,
+      "y": 0.609,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-08-3915.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": -0.047,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-1440-scroll-08-3915.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 49.953,
+      "y": 0,
+      "width": 17.984,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-08-3915.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -163.75,
+      "y": 0.0,
+      "width": 327.5,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-08-3915.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0.016,
+      "y": 0.609,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-09-3600.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": -0.047,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-1440-scroll-09-3600.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 49.953,
+      "y": 0,
+      "width": 17.984,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-09-3600.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -163.75,
+      "y": 0.0,
+      "width": 327.5,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-09-3600.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0.016,
+      "y": 0.609,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-10-3240.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": -0.047,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-1440-scroll-10-3240.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 49.953,
+      "y": 0,
+      "width": 17.984,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-10-3240.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -163.75,
+      "y": 0.0,
+      "width": 327.5,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-10-3240.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0.016,
+      "y": 0.609,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-11-2925.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": -0.047,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-1440-scroll-11-2925.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 49.953,
+      "y": 0,
+      "width": 17.984,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-11-2925.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -163.75,
+      "y": 0.0,
+      "width": 327.5,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-11-2925.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0.016,
+      "y": 0.609,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-12-2025.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": -0.047,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-1440-scroll-12-2025.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 49.953,
+      "y": 0,
+      "width": 17.984,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-12-2025.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -163.75,
+      "y": 0.0,
+      "width": 327.5,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-12-2025.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0.016,
+      "y": 0.609,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-13-0.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": -0.047,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-1440-scroll-13-0.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": -0.047,
+      "y": 0,
+      "width": 17.984,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-13-0.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -163.75,
+      "y": 0.0,
+      "width": 327.5,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-1440-scroll-13-0.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0.016,
+      "y": 0.609,
+      "width": 0,
+      "height": 0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-00-0.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 7.219,
+      "width": 0,
+      "height": -7.219
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-390-scroll-00-0.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.062,
+      "width": 0,
+      "height": -0.062
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-00-0.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -61.062,
+      "y": 0.008,
+      "width": 122.125,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-00-0.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-01-422.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 7.219,
+      "width": 0,
+      "height": -7.219
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-01-422.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.062,
+      "width": 0,
+      "height": -0.062
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-01-422.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -61.062,
+      "y": 0.008,
+      "width": 122.125,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-01-422.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-02-844.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 7.219,
+      "width": 0,
+      "height": -7.219
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-390-scroll-02-844.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.062,
+      "width": 0,
+      "height": -0.062
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-02-844.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -61.062,
+      "y": 0.008,
+      "width": 122.125,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-02-844.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-03-1477.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 7.219,
+      "width": 0,
+      "height": -7.219
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-390-scroll-03-1477.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.062,
+      "width": 0,
+      "height": -0.062
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-03-1477.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -61.062,
+      "y": 0.008,
+      "width": 122.125,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-03-1477.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-04-1899.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 7.219,
+      "width": 0,
+      "height": -7.219
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-390-scroll-04-1899.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.062,
+      "width": 0,
+      "height": -0.062
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-04-1899.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -61.062,
+      "y": 0.008,
+      "width": 122.125,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-04-1899.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-05-2743.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 7.219,
+      "width": 0,
+      "height": -7.219
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-390-scroll-05-2743.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.062,
+      "width": 0,
+      "height": -0.062
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-05-2743.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -61.062,
+      "y": 0.008,
+      "width": 122.125,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-05-2743.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-06-3038.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 7.219,
+      "width": 0,
+      "height": -7.219
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-390-scroll-06-3038.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.062,
+      "width": 0,
+      "height": -0.062
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-06-3038.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -61.062,
+      "y": 0.008,
+      "width": 122.125,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-06-3038.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-07-3376.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 7.219,
+      "width": 0,
+      "height": -7.219
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-390-scroll-07-3376.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.062,
+      "width": 0,
+      "height": -0.062
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-07-3376.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -61.062,
+      "y": 0.008,
+      "width": 122.125,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-07-3376.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-08-3671.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 7.219,
+      "width": 0,
+      "height": -7.219
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-390-scroll-08-3671.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.062,
+      "width": 0,
+      "height": -0.062
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-08-3671.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -61.062,
+      "y": 0.008,
+      "width": 122.125,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-08-3671.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-09-3376.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 7.219,
+      "width": 0,
+      "height": -7.219
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-390-scroll-09-3376.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.062,
+      "width": 0,
+      "height": -0.062
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-09-3376.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -61.062,
+      "y": 0.008,
+      "width": 122.125,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-09-3376.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-10-3038.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 7.219,
+      "width": 0,
+      "height": -7.219
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-390-scroll-10-3038.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.062,
+      "width": 0,
+      "height": -0.062
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-10-3038.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -61.062,
+      "y": 0.008,
+      "width": 122.125,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-10-3038.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-11-2743.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 7.219,
+      "width": 0,
+      "height": -7.219
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-390-scroll-11-2743.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.062,
+      "width": 0,
+      "height": -0.062
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-11-2743.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -61.062,
+      "y": 0.008,
+      "width": 122.125,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-11-2743.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-12-1899.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 7.219,
+      "width": 0,
+      "height": -7.219
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-390-scroll-12-1899.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.062,
+      "width": 0,
+      "height": -0.062
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-12-1899.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -61.062,
+      "y": 0.008,
+      "width": 122.125,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-12-1899.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-13-0.json.gz",
+    "text": "Waabi is pioneering the future of Physical AI.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 7.219,
+      "width": 0,
+      "height": -7.219
+    },
+    "reference_opacity": "1",
+    "local_opacity": "0"
+  },
+  {
+    "sample": "local-home-390-scroll-13-0.json.gz",
+    "text": "Built to think.Born to haul.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0.062,
+      "width": 0,
+      "height": -0.062
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-13-0.json.gz",
+    "text": "We built our own road.",
+    "delta_local_minus_reference": {
+      "x": -61.062,
+      "y": 0.008,
+      "width": 122.125,
+      "height": 0.0
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  },
+  {
+    "sample": "local-home-390-scroll-13-0.json.gz",
+    "text": "Unlocking scale in the real world.",
+    "delta_local_minus_reference": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": -0.031
+    },
+    "reference_opacity": "1",
+    "local_opacity": "1"
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "route": "home",
+    "viewport": [
+      1440,
+      900
+    ],
+    "errors": [],
+    "overflow": 0,
+    "height": 11258,
+    "footer": {
+      "height": 600,
+      "opacity": "1"
+    },
+    "mapAnimations": []
+  },
+  {
+    "route": "company",
+    "viewport": [
+      1440,
+      900
+    ],
+    "errors": [],
+    "overflow": 0,
+    "height": 7848,
+    "footer": {
+      "height": 600,
+      "opacity": "0.998021"
+    },
+    "mapAnimations": [
+      {
+        "opacity": "1",
+        "animations": 1
+      },
+      {
+        "opacity": "1",
+        "animations": 1
+      },
+      {
+        "opacity": "1",
+        "animations": 1
+      },
+      {
+        "opacity": "1",
+        "animations": 1
+      },
+      {
+        "opacity": "1",
+        "animations": 1
+      }
+    ]
+  },
+  {
+    "route": "safety",
+    "viewport": [
+      1440,
+      900
+    ],
+    "errors": [],
+    "overflow": 0,
+    "height": 8572,
+    "footer": {
+      "height": 600,
+      "opacity": "1"
+    },
+    "mapAnimations": []
+  },
+  {
+    "route": "home",
+    "viewport": [
+      390,
+      844
+    ],
+    "errors": [],
+    "overflow": 0,
+    "height": 9418,
+    "footer": {
+      "height": 654.1875,
+      "opacity": "1"
+    },
+    "mapAnimations": []
+  },
+  {
+    "route": "company",
+    "viewport": [
+      390,
+      844
+    ],
+    "errors": [],
+    "overflow": 0,
+    "height": 6278,
+    "footer": {
+      "height": 654.1875,
+      "opacity": "1"
+    },
+    "mapAnimations": [
+      {
+        "opacity": "1",
+        "animations": 1
+      },
+      {
+        "opacity": "1",
+        "animations": 1
+      },
+      {
+        "opacity": "1",
+        "animations": 1
+      },
+      {
+        "opacity": "1",
+        "animations": 1
+      },
+      {
+        "opacity": "1",
+        "animations": 1
+      }
+    ]
+  },
+  {
+    "route": "safety",
+    "viewport": [
+      390,
+      844
+    ],
+    "errors": [],
+    "overflow": 0,
+    "height": 6457,
+    "footer": {
+      "height": 654.1875,
+      "opacity": "1"
+    },
+    "mapAnimations": []
+  }
+]

@@ -1,0 +1,815 @@
+{
+  "reference-1440": {
+    "sections": [
+      {
+        "cls": "relative w-full overflow-clip bg-white py-50 md:py-40",
+        "y": 1020,
+        "h": 564
+      },
+      {
+        "cls": "relative w-full text-white md:px-24",
+        "y": 1704,
+        "h": 870
+      },
+      {
+        "cls": "w-calc flex flex-col gap-60 py-[calc(var(--padding-y)+4rem)] md:flex-row md:items-center md:justify-between",
+        "y": 2694,
+        "h": 1020
+      },
+      {
+        "cls": "bg-cream-light relative w-full overflow-clip py-[var(--padding-y)]",
+        "y": 3834,
+        "h": 761
+      },
+      {
+        "cls": "relative flex w-full flex-col relative w-full overflow-clip bg-(--background)",
+        "y": 4715,
+        "h": 699
+      },
+      {
+        "cls": "relative flex w-full flex-col overflow-clip bg-cream-light py-60 md:py-120",
+        "y": 5533.5,
+        "h": 655
+      },
+      {
+        "cls": "relative w-full md:px-24",
+        "y": 6308.296875,
+        "h": 900
+      }
+    ],
+    "errors": [],
+    "story": [
+      {
+        "text": "In ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "In",
+        "opacity": "1",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": " ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "2021, ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "2021,",
+        "opacity": "1",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": " ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "AI ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "AI",
+        "opacity": "1",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": " ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      }
+    ],
+    "people": [
+      [
+        {
+          "key": "0",
+          "x": 611,
+          "w": 319.953125,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761188599-251006_waabi_ashwin_kumar_0866.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        },
+        {
+          "key": "1",
+          "x": 771.03125,
+          "w": 524.96875,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761700499-251006_waabi_collab_02_0612.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        }
+      ],
+      [
+        {
+          "key": "0",
+          "x": 611,
+          "w": 319.953125,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761188599-251006_waabi_ashwin_kumar_0866.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        },
+        {
+          "key": "1",
+          "x": 771.03125,
+          "w": 524.96875,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761700499-251006_waabi_collab_02_0612.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        }
+      ],
+      [
+        {
+          "key": "0",
+          "x": 611,
+          "w": 319.953125,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761188599-251006_waabi_ashwin_kumar_0866.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        },
+        {
+          "key": "1",
+          "x": 771.03125,
+          "w": 524.96875,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761700499-251006_waabi_collab_02_0612.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        }
+      ],
+      [
+        {
+          "key": "0",
+          "x": 611,
+          "w": 319.953125,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761188599-251006_waabi_ashwin_kumar_0866.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        },
+        {
+          "key": "1",
+          "x": 623.9943237304688,
+          "w": 336.60009765625,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761700499-251006_waabi_collab_02_0612.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "matrix(1.05203, 0, 0, 1.05203, 21.3178, 0)"
+        },
+        {
+          "key": "2",
+          "x": 771.03125,
+          "w": 524.96875,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761700304-251006_waabi_saloni_mulani_0355-1.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        }
+      ],
+      [
+        {
+          "key": "1",
+          "x": 611,
+          "w": 319.953125,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761700499-251006_waabi_collab_02_0612.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        },
+        {
+          "key": "2",
+          "x": 771.03125,
+          "w": 524.96875,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761700304-251006_waabi_saloni_mulani_0355-1.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        }
+      ],
+      [
+        {
+          "key": "1",
+          "x": 611,
+          "w": 319.953125,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761700499-251006_waabi_collab_02_0612.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        },
+        {
+          "key": "2",
+          "x": 640.5853881835938,
+          "w": 357.8548583984375,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761700304-251006_waabi_saloni_mulani_0355-1.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "matrix(1.11846, 0, 0, 1.11847, 48.5363, 0)"
+        },
+        {
+          "key": "3",
+          "x": 771.03125,
+          "w": 524.96875,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761183937-waabi_portrait_dave_00283.png%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        }
+      ]
+    ]
+  },
+  "local-1440": {
+    "sections": [
+      {
+        "cls": "co-hero",
+        "y": 0,
+        "h": 900
+      },
+      {
+        "cls": "co-story",
+        "y": 1020,
+        "h": 564
+      },
+      {
+        "cls": "co-quote",
+        "y": 1704,
+        "h": 870
+      },
+      {
+        "cls": "co-people co-width",
+        "y": 2694,
+        "h": 1020
+      },
+      {
+        "cls": "co-investors",
+        "y": 3834,
+        "h": 761
+      },
+      {
+        "cls": "co-news",
+        "y": 4715,
+        "h": 699
+      },
+      {
+        "cls": "co-events",
+        "y": 5533.5,
+        "h": 655
+      },
+      {
+        "cls": "co-locations",
+        "y": 6308.296875,
+        "h": 900
+      }
+    ],
+    "errors": [],
+    "story": [
+      {
+        "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how humanity moves and connects.",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "In ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "In",
+        "opacity": "1",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "2021, ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "2021,",
+        "opacity": "1",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "AI ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "AI",
+        "opacity": "1",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "visionary ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "visionary",
+        "opacity": "1",
+        "color": "rgb(0, 0, 0)"
+      }
+    ],
+    "people": [
+      [
+        {
+          "key": "0",
+          "x": 611,
+          "w": 319.953125,
+          "src": "/assets/company/1761188599-251006_waabi_ashwin_kumar_0866.webp",
+          "transform": "none"
+        },
+        {
+          "key": "1",
+          "x": 771.03125,
+          "w": 524.96875,
+          "src": "/assets/company/1761700499-251006_waabi_collab_02_0612.webp",
+          "transform": "none"
+        }
+      ],
+      [
+        {
+          "key": "0",
+          "x": 611,
+          "w": 319.953125,
+          "src": "/assets/company/1761188599-251006_waabi_ashwin_kumar_0866.webp",
+          "transform": "none"
+        },
+        {
+          "key": "1",
+          "x": 771.03125,
+          "w": 524.96875,
+          "src": "/assets/company/1761700499-251006_waabi_collab_02_0612.webp",
+          "transform": "none"
+        }
+      ],
+      [
+        {
+          "key": "0",
+          "x": 611,
+          "w": 319.953125,
+          "src": "/assets/company/1761188599-251006_waabi_ashwin_kumar_0866.webp",
+          "transform": "none"
+        },
+        {
+          "key": "1",
+          "x": 771.03125,
+          "w": 524.96875,
+          "src": "/assets/company/1761700499-251006_waabi_collab_02_0612.webp",
+          "transform": "matrix(1.64077, 0, 0, 1.64082, 160.031, -136.789)"
+        },
+        {
+          "key": "2",
+          "x": 771.03125,
+          "w": 524.96875,
+          "src": "/assets/company/1761700304-251006_waabi_saloni_mulani_0355-1.webp",
+          "transform": "none"
+        }
+      ],
+      [
+        {
+          "key": "0",
+          "x": 611,
+          "w": 319.953125,
+          "src": "/assets/company/1761188599-251006_waabi_ashwin_kumar_0866.webp",
+          "transform": "none"
+        },
+        {
+          "key": "1",
+          "x": 770.8656005859375,
+          "w": 524.7564697265625,
+          "src": "/assets/company/1761700499-251006_waabi_collab_02_0612.webp",
+          "transform": "matrix(1.6401, 0, 0, 1.64015, 159.866, -136.647)"
+        },
+        {
+          "key": "2",
+          "x": 771.03125,
+          "w": 524.96875,
+          "src": "/assets/company/1761700304-251006_waabi_saloni_mulani_0355-1.webp",
+          "transform": "none"
+        }
+      ],
+      [
+        {
+          "key": "1",
+          "x": 611,
+          "w": 319.953125,
+          "src": "/assets/company/1761700499-251006_waabi_collab_02_0612.webp",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "key": "2",
+          "x": 771.03125,
+          "w": 524.96875,
+          "src": "/assets/company/1761700304-251006_waabi_saloni_mulani_0355-1.webp",
+          "transform": "none"
+        }
+      ],
+      [
+        {
+          "key": "1",
+          "x": 611,
+          "w": 319.953125,
+          "src": "/assets/company/1761700499-251006_waabi_collab_02_0612.webp",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "key": "2",
+          "x": 613.7036743164062,
+          "w": 323.41680908203125,
+          "src": "/assets/company/1761700304-251006_waabi_saloni_mulani_0355-1.webp",
+          "transform": "matrix(1.01083, 0, 0, 1.01083, 2.70369, -2.31101)"
+        },
+        {
+          "key": "3",
+          "x": 771.03125,
+          "w": 524.96875,
+          "src": "/assets/company/1761183937-waabi_portrait_dave_00283.webp",
+          "transform": "none"
+        }
+      ]
+    ]
+  },
+  "reference-390": {
+    "sections": [
+      {
+        "cls": "relative w-full overflow-clip bg-white py-50 md:py-40",
+        "y": 904,
+        "h": 580
+      },
+      {
+        "cls": "relative w-full text-white md:px-24",
+        "y": 1544,
+        "h": 693
+      },
+      {
+        "cls": "w-calc flex flex-col gap-60 py-[calc(var(--padding-y)+4rem)] md:flex-row md:items-center md:justify-between",
+        "y": 2297.328125,
+        "h": 840
+      },
+      {
+        "cls": "bg-cream-light relative w-full overflow-clip py-[var(--padding-y)]",
+        "y": 3196.953125,
+        "h": 454
+      },
+      {
+        "cls": "relative flex w-full flex-col relative w-full overflow-clip bg-(--background)",
+        "y": 3710.53125,
+        "h": 683
+      },
+      {
+        "cls": "relative flex w-full flex-col overflow-clip bg-cream-light py-60 md:py-120",
+        "y": 4453.5625,
+        "h": 466
+      },
+      {
+        "cls": "relative w-full md:px-24",
+        "y": 4979.15625,
+        "h": 645
+      }
+    ],
+    "errors": [],
+    "story": [
+      {
+        "text": "In ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "In",
+        "opacity": "1",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": " ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "2021, ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "2021,",
+        "opacity": "1",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": " ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "AI ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "AI",
+        "opacity": "1",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": " ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      }
+    ],
+    "people": [
+      [
+        {
+          "key": "0",
+          "x": 40,
+          "w": 144.796875,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761188599-251006_waabi_ashwin_kumar_0866.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        },
+        {
+          "key": "1",
+          "x": 133,
+          "w": 217,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761700499-251006_waabi_collab_02_0612.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        }
+      ],
+      [
+        {
+          "key": "0",
+          "x": 40,
+          "w": 144.796875,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761188599-251006_waabi_ashwin_kumar_0866.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        },
+        {
+          "key": "1",
+          "x": 133,
+          "w": 217,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761700499-251006_waabi_collab_02_0612.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        }
+      ],
+      [
+        {
+          "key": "0",
+          "x": 40,
+          "w": 144.796875,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761188599-251006_waabi_ashwin_kumar_0866.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        },
+        {
+          "key": "1",
+          "x": 133,
+          "w": 217,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761700499-251006_waabi_collab_02_0612.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "matrix(1.49865, 0, 0, 1.49867, 129.102, 0)"
+        }
+      ],
+      [
+        {
+          "key": "0",
+          "x": 40,
+          "w": 144.796875,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761188599-251006_waabi_ashwin_kumar_0866.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        },
+        {
+          "key": "1",
+          "x": 42.596649169921875,
+          "w": 146.81285095214844,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761700499-251006_waabi_collab_02_0612.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "matrix(1.01392, 0, 0, 1.01392, 3.60464, 0)"
+        },
+        {
+          "key": "2",
+          "x": 133,
+          "w": 217,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761700304-251006_waabi_saloni_mulani_0355-1.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        }
+      ],
+      [
+        {
+          "key": "1",
+          "x": 40,
+          "w": 144.796875,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761700499-251006_waabi_collab_02_0612.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        },
+        {
+          "key": "2",
+          "x": 133,
+          "w": 217,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761700304-251006_waabi_saloni_mulani_0355-1.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        }
+      ],
+      [
+        {
+          "key": "1",
+          "x": 40,
+          "w": 144.796875,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761700499-251006_waabi_collab_02_0612.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        },
+        {
+          "key": "2",
+          "x": 40,
+          "w": 144.796875,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761700304-251006_waabi_saloni_mulani_0355-1.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        },
+        {
+          "key": "3",
+          "x": 133,
+          "w": 217,
+          "src": "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761183937-waabi_portrait_dave_00283.png%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+          "transform": "none"
+        }
+      ]
+    ]
+  },
+  "local-390": {
+    "sections": [
+      {
+        "cls": "co-hero",
+        "y": 0,
+        "h": 844
+      },
+      {
+        "cls": "co-story",
+        "y": 904,
+        "h": 580
+      },
+      {
+        "cls": "co-quote",
+        "y": 1544,
+        "h": 693
+      },
+      {
+        "cls": "co-people co-width",
+        "y": 2297.328125,
+        "h": 840
+      },
+      {
+        "cls": "co-investors",
+        "y": 3196.953125,
+        "h": 454
+      },
+      {
+        "cls": "co-news",
+        "y": 3710.53125,
+        "h": 683
+      },
+      {
+        "cls": "co-events",
+        "y": 4453.5625,
+        "h": 466
+      },
+      {
+        "cls": "co-locations",
+        "y": 4979.15625,
+        "h": 645
+      }
+    ],
+    "errors": [],
+    "story": [
+      {
+        "text": "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how humanity moves and connects.",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "In ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "In",
+        "opacity": "1",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "2021, ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "2021,",
+        "opacity": "1",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "AI ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "AI",
+        "opacity": "1",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "visionary ",
+        "opacity": "1",
+        "color": "rgb(25, 24, 24)"
+      },
+      {
+        "text": "visionary",
+        "opacity": "1",
+        "color": "rgb(0, 0, 0)"
+      }
+    ],
+    "people": [
+      [
+        {
+          "key": "0",
+          "x": 40,
+          "w": 144.796875,
+          "src": "/assets/company/1761188599-251006_waabi_ashwin_kumar_0866.webp",
+          "transform": "none"
+        },
+        {
+          "key": "1",
+          "x": 133,
+          "w": 217,
+          "src": "/assets/company/1761700499-251006_waabi_collab_02_0612.webp",
+          "transform": "none"
+        }
+      ],
+      [
+        {
+          "key": "0",
+          "x": 40,
+          "w": 144.796875,
+          "src": "/assets/company/1761188599-251006_waabi_ashwin_kumar_0866.webp",
+          "transform": "none"
+        },
+        {
+          "key": "1",
+          "x": 133,
+          "w": 217,
+          "src": "/assets/company/1761700499-251006_waabi_collab_02_0612.webp",
+          "transform": "none"
+        }
+      ],
+      [
+        {
+          "key": "0",
+          "x": 40,
+          "w": 144.796875,
+          "src": "/assets/company/1761188599-251006_waabi_ashwin_kumar_0866.webp",
+          "transform": "none"
+        },
+        {
+          "key": "1",
+          "x": 133,
+          "w": 217,
+          "src": "/assets/company/1761700499-251006_waabi_collab_02_0612.webp",
+          "transform": "matrix(1.49865, 0, 0, 1.49867, 93, -48.1719)"
+        }
+      ],
+      [
+        {
+          "key": "0",
+          "x": 40,
+          "w": 144.796875,
+          "src": "/assets/company/1761188599-251006_waabi_ashwin_kumar_0866.webp",
+          "transform": "none"
+        },
+        {
+          "key": "1",
+          "x": 125.6000747680664,
+          "w": 211.25485229492188,
+          "src": "/assets/company/1761700499-251006_waabi_collab_02_0612.webp",
+          "transform": "matrix(1.45897, 0, 0, 1.45899, 85.6001, -44.3389)"
+        },
+        {
+          "key": "2",
+          "x": 133,
+          "w": 217,
+          "src": "/assets/company/1761700304-251006_waabi_saloni_mulani_0355-1.webp",
+          "transform": "none"
+        }
+      ],
+      [
+        {
+          "key": "1",
+          "x": 40,
+          "w": 144.796875,
+          "src": "/assets/company/1761700499-251006_waabi_collab_02_0612.webp",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "key": "2",
+          "x": 133,
+          "w": 217,
+          "src": "/assets/company/1761700304-251006_waabi_saloni_mulani_0355-1.webp",
+          "transform": "none"
+        }
+      ],
+      [
+        {
+          "key": "1",
+          "x": 40,
+          "w": 144.796875,
+          "src": "/assets/company/1761700499-251006_waabi_collab_02_0612.webp",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "key": "2",
+          "x": 41.16719055175781,
+          "w": 145.7030487060547,
+          "src": "/assets/company/1761700304-251006_waabi_saloni_mulani_0355-1.webp",
+          "transform": "matrix(1.00626, 0, 0, 1.00626, 1.16719, -0.604577)"
+        },
+        {
+          "key": "3",
+          "x": 133,
+          "w": 217,
+          "src": "/assets/company/1761183937-waabi_portrait_dave_00283.webp",
+          "transform": "none"
+        }
+      ]
+    ]
+  }
+}

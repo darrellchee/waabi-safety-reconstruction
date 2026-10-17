@@ -1,0 +1,2349 @@
+{
+  "records": [
+    {
+      "y": 0,
+      "video": {
+        "x": 0.00140380859375,
+        "y": 0.000885009765625,
+        "width": 1439.9970703125,
+        "height": 899.998291015625,
+        "top": 0.000885009765625,
+        "right": 1439.9984741210938,
+        "bottom": 899.9991760253906,
+        "left": 0.00140380859375
+      },
+      "tiles": [
+        {
+          "class": "home-tile home-tile-0",
+          "rect": {
+            "x": 24,
+            "y": 2175,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2175,
+            "right": 157.1875,
+            "bottom": 2308.1875,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-1",
+          "rect": {
+            "x": 24,
+            "y": 2986.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2986.328125,
+            "right": 157.1875,
+            "bottom": 3119.515625,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-2",
+          "rect": {
+            "x": 24,
+            "y": 3392,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 3392,
+            "right": 157.1875,
+            "bottom": 3525.1875,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-3",
+          "rect": {
+            "x": 240,
+            "y": 1575,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1575,
+            "right": 373.1875,
+            "bottom": 1708.1875,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-4",
+          "rect": {
+            "x": 240,
+            "y": 2386.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2386.328125,
+            "right": 373.1875,
+            "bottom": 2519.515625,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-5",
+          "rect": {
+            "x": 240,
+            "y": 2792,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2792,
+            "right": 373.1875,
+            "bottom": 2925.1875,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-6",
+          "rect": {
+            "x": 1066.8125,
+            "y": 1575,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1575,
+            "right": 1200,
+            "bottom": 1708.1875,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-7",
+          "rect": {
+            "x": 1066.8125,
+            "y": 1980.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1980.65625,
+            "right": 1200,
+            "bottom": 2113.84375,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-8",
+          "rect": {
+            "x": 1066.8125,
+            "y": 2792,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2792,
+            "right": 1200,
+            "bottom": 2925.1875,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-9",
+          "rect": {
+            "x": 1282.8125,
+            "y": 2175,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2175,
+            "right": 1416,
+            "bottom": 2308.1875,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-10",
+          "rect": {
+            "x": 1282.8125,
+            "y": 2986.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2986.328125,
+            "right": 1416,
+            "bottom": 3119.515625,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-11",
+          "rect": {
+            "x": 1282.8125,
+            "y": 3392,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 3392,
+            "right": 1416,
+            "bottom": 3525.1875,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-12",
+          "rect": {
+            "x": 24,
+            "y": 2580.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2580.65625,
+            "right": 157.1875,
+            "bottom": 2713.84375,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-13",
+          "rect": {
+            "x": 240,
+            "y": 1980.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1980.65625,
+            "right": 373.1875,
+            "bottom": 2113.84375,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-14",
+          "rect": {
+            "x": 1066.8125,
+            "y": 2386.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2386.328125,
+            "right": 1200,
+            "bottom": 2519.515625,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-15",
+          "rect": {
+            "x": 1282.8125,
+            "y": 2580.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2580.65625,
+            "right": 1416,
+            "bottom": 2713.84375,
+            "left": 1282.8125
+          }
+        }
+      ],
+      "strength": {
+        "x": 193,
+        "y": 3111.5,
+        "width": 527,
+        "height": 527,
+        "top": 3111.5,
+        "right": 720,
+        "bottom": 3638.5,
+        "left": 193
+      },
+      "titleOpacity": "1"
+    },
+    {
+      "y": 1125,
+      "video": {
+        "x": 492.35821533203125,
+        "y": 307.723876953125,
+        "width": 455.2835693359375,
+        "height": 284.55224609375,
+        "top": 307.723876953125,
+        "right": 947.6417846679688,
+        "bottom": 592.276123046875,
+        "left": 492.35821533203125
+      },
+      "tiles": [
+        {
+          "class": "home-tile home-tile-0",
+          "rect": {
+            "x": 24,
+            "y": 810,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 810,
+            "right": 157.1875,
+            "bottom": 943.1875,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-1",
+          "rect": {
+            "x": 24,
+            "y": 1621.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1621.328125,
+            "right": 157.1875,
+            "bottom": 1754.515625,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-2",
+          "rect": {
+            "x": 24,
+            "y": 2027,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2027,
+            "right": 157.1875,
+            "bottom": 2160.1875,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-3",
+          "rect": {
+            "x": 240,
+            "y": 450,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 450,
+            "right": 373.1875,
+            "bottom": 583.1875,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-4",
+          "rect": {
+            "x": 240,
+            "y": 1261.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1261.328125,
+            "right": 373.1875,
+            "bottom": 1394.515625,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-5",
+          "rect": {
+            "x": 240,
+            "y": 1667,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1667,
+            "right": 373.1875,
+            "bottom": 1800.1875,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-6",
+          "rect": {
+            "x": 1066.8125,
+            "y": 450,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 450,
+            "right": 1200,
+            "bottom": 583.1875,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-7",
+          "rect": {
+            "x": 1066.8125,
+            "y": 855.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 855.65625,
+            "right": 1200,
+            "bottom": 988.84375,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-8",
+          "rect": {
+            "x": 1066.8125,
+            "y": 1667,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1667,
+            "right": 1200,
+            "bottom": 1800.1875,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-9",
+          "rect": {
+            "x": 1282.8125,
+            "y": 810,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 810,
+            "right": 1416,
+            "bottom": 943.1875,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-10",
+          "rect": {
+            "x": 1282.8125,
+            "y": 1621.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1621.328125,
+            "right": 1416,
+            "bottom": 1754.515625,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-11",
+          "rect": {
+            "x": 1282.8125,
+            "y": 2027,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2027,
+            "right": 1416,
+            "bottom": 2160.1875,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-12",
+          "rect": {
+            "x": 24,
+            "y": 1215.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1215.65625,
+            "right": 157.1875,
+            "bottom": 1348.84375,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-13",
+          "rect": {
+            "x": 240,
+            "y": 855.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 855.65625,
+            "right": 373.1875,
+            "bottom": 988.84375,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-14",
+          "rect": {
+            "x": 1066.8125,
+            "y": 1261.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1261.328125,
+            "right": 1200,
+            "bottom": 1394.515625,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-15",
+          "rect": {
+            "x": 1282.8125,
+            "y": 1215.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1215.65625,
+            "right": 1416,
+            "bottom": 1348.84375,
+            "left": 1282.8125
+          }
+        }
+      ],
+      "strength": {
+        "x": 193,
+        "y": 1986.5,
+        "width": 527,
+        "height": 527,
+        "top": 1986.5,
+        "right": 720,
+        "bottom": 2513.5,
+        "left": 193
+      },
+      "titleOpacity": "1"
+    },
+    {
+      "y": 1575,
+      "video": {
+        "x": 613.5999755859375,
+        "y": 158.5,
+        "width": 212.79998779296875,
+        "height": 133,
+        "top": 158.5,
+        "right": 826.3999633789062,
+        "bottom": 291.5,
+        "left": 613.5999755859375
+      },
+      "tiles": [
+        {
+          "class": "home-tile home-tile-0",
+          "rect": {
+            "x": 24,
+            "y": 120,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 120,
+            "right": 157.1875,
+            "bottom": 253.1875,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-1",
+          "rect": {
+            "x": 24,
+            "y": 931.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 931.328125,
+            "right": 157.1875,
+            "bottom": 1064.515625,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-2",
+          "rect": {
+            "x": 24,
+            "y": 1337,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1337,
+            "right": 157.1875,
+            "bottom": 1470.1875,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-3",
+          "rect": {
+            "x": 240,
+            "y": 0,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 0,
+            "right": 373.1875,
+            "bottom": 133.1875,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-4",
+          "rect": {
+            "x": 240,
+            "y": 811.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 811.328125,
+            "right": 373.1875,
+            "bottom": 944.515625,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-5",
+          "rect": {
+            "x": 240,
+            "y": 1217,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1217,
+            "right": 373.1875,
+            "bottom": 1350.1875,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-6",
+          "rect": {
+            "x": 1066.8125,
+            "y": 0,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 0,
+            "right": 1200,
+            "bottom": 133.1875,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-7",
+          "rect": {
+            "x": 1066.8125,
+            "y": 405.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 405.65625,
+            "right": 1200,
+            "bottom": 538.84375,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-8",
+          "rect": {
+            "x": 1066.8125,
+            "y": 1217,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1217,
+            "right": 1200,
+            "bottom": 1350.1875,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-9",
+          "rect": {
+            "x": 1282.8125,
+            "y": 120,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 120,
+            "right": 1416,
+            "bottom": 253.1875,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-10",
+          "rect": {
+            "x": 1282.8125,
+            "y": 931.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 931.328125,
+            "right": 1416,
+            "bottom": 1064.515625,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-11",
+          "rect": {
+            "x": 1282.8125,
+            "y": 1337,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1337,
+            "right": 1416,
+            "bottom": 1470.1875,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-12",
+          "rect": {
+            "x": 24,
+            "y": 525.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 525.65625,
+            "right": 157.1875,
+            "bottom": 658.84375,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-13",
+          "rect": {
+            "x": 240,
+            "y": 405.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 405.65625,
+            "right": 373.1875,
+            "bottom": 538.84375,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-14",
+          "rect": {
+            "x": 1066.8125,
+            "y": 811.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 811.328125,
+            "right": 1200,
+            "bottom": 944.515625,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-15",
+          "rect": {
+            "x": 1282.8125,
+            "y": 525.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 525.65625,
+            "right": 1416,
+            "bottom": 658.84375,
+            "left": 1282.8125
+          }
+        }
+      ],
+      "strength": {
+        "x": 193,
+        "y": 1536.5,
+        "width": 527,
+        "height": 527,
+        "top": 1536.5,
+        "right": 720,
+        "bottom": 2063.5,
+        "left": 193
+      },
+      "titleOpacity": "1"
+    },
+    {
+      "y": 2250,
+      "video": {
+        "x": 613.5999755859375,
+        "y": -516.5,
+        "width": 212.79998779296875,
+        "height": 133,
+        "top": -516.5,
+        "right": 826.3999633789062,
+        "bottom": -383.5,
+        "left": 613.5999755859375
+      },
+      "tiles": [
+        {
+          "class": "home-tile home-tile-0",
+          "rect": {
+            "x": 24,
+            "y": -915,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -915,
+            "right": 157.1875,
+            "bottom": -781.8125,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-1",
+          "rect": {
+            "x": 24,
+            "y": -103.671875,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -103.671875,
+            "right": 157.1875,
+            "bottom": 29.515625,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-2",
+          "rect": {
+            "x": 24,
+            "y": 302,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 302,
+            "right": 157.1875,
+            "bottom": 435.1875,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-3",
+          "rect": {
+            "x": 240,
+            "y": -675,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -675,
+            "right": 373.1875,
+            "bottom": -541.8125,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-4",
+          "rect": {
+            "x": 240,
+            "y": 136.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 136.328125,
+            "right": 373.1875,
+            "bottom": 269.515625,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-5",
+          "rect": {
+            "x": 240,
+            "y": 542,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 542,
+            "right": 373.1875,
+            "bottom": 675.1875,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-6",
+          "rect": {
+            "x": 1066.8125,
+            "y": -675,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -675,
+            "right": 1200,
+            "bottom": -541.8125,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-7",
+          "rect": {
+            "x": 1066.8125,
+            "y": -269.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -269.34375,
+            "right": 1200,
+            "bottom": -136.15625,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-8",
+          "rect": {
+            "x": 1066.8125,
+            "y": 542,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 542,
+            "right": 1200,
+            "bottom": 675.1875,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-9",
+          "rect": {
+            "x": 1282.8125,
+            "y": -915,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -915,
+            "right": 1416,
+            "bottom": -781.8125,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-10",
+          "rect": {
+            "x": 1282.8125,
+            "y": -103.671875,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -103.671875,
+            "right": 1416,
+            "bottom": 29.515625,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-11",
+          "rect": {
+            "x": 1282.8125,
+            "y": 302,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 302,
+            "right": 1416,
+            "bottom": 435.1875,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-12",
+          "rect": {
+            "x": 24,
+            "y": -509.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -509.34375,
+            "right": 157.1875,
+            "bottom": -376.15625,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-13",
+          "rect": {
+            "x": 240,
+            "y": -269.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -269.34375,
+            "right": 373.1875,
+            "bottom": -136.15625,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-14",
+          "rect": {
+            "x": 1066.8125,
+            "y": 136.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 136.328125,
+            "right": 1200,
+            "bottom": 269.515625,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-15",
+          "rect": {
+            "x": 1282.8125,
+            "y": -509.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -509.34375,
+            "right": 1416,
+            "bottom": -376.15625,
+            "left": 1282.8125
+          }
+        }
+      ],
+      "strength": {
+        "x": 193,
+        "y": 861.5,
+        "width": 527,
+        "height": 527,
+        "top": 861.5,
+        "right": 720,
+        "bottom": 1388.5,
+        "left": 193
+      },
+      "titleOpacity": "1"
+    },
+    {
+      "y": 2925,
+      "video": {
+        "x": 613.5999755859375,
+        "y": -1191.5,
+        "width": 212.79998779296875,
+        "height": 133,
+        "top": -1191.5,
+        "right": 826.3999633789062,
+        "bottom": -1058.5,
+        "left": 613.5999755859375
+      },
+      "tiles": [
+        {
+          "class": "home-tile home-tile-0",
+          "rect": {
+            "x": 24,
+            "y": -1950,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1950,
+            "right": 157.1875,
+            "bottom": -1816.8125,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-1",
+          "rect": {
+            "x": 24,
+            "y": -1138.671875,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1138.671875,
+            "right": 157.1875,
+            "bottom": -1005.484375,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-2",
+          "rect": {
+            "x": 24,
+            "y": -733,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -733,
+            "right": 157.1875,
+            "bottom": -599.8125,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-3",
+          "rect": {
+            "x": 240,
+            "y": -1350,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1350,
+            "right": 373.1875,
+            "bottom": -1216.8125,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-4",
+          "rect": {
+            "x": 240,
+            "y": -538.671875,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -538.671875,
+            "right": 373.1875,
+            "bottom": -405.484375,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-5",
+          "rect": {
+            "x": 240,
+            "y": -133,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -133,
+            "right": 373.1875,
+            "bottom": 0.1875,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-6",
+          "rect": {
+            "x": 1066.8125,
+            "y": -1350,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1350,
+            "right": 1200,
+            "bottom": -1216.8125,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-7",
+          "rect": {
+            "x": 1066.8125,
+            "y": -944.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -944.34375,
+            "right": 1200,
+            "bottom": -811.15625,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-8",
+          "rect": {
+            "x": 1066.8125,
+            "y": -133,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -133,
+            "right": 1200,
+            "bottom": 0.1875,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-9",
+          "rect": {
+            "x": 1282.8125,
+            "y": -1950,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1950,
+            "right": 1416,
+            "bottom": -1816.8125,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-10",
+          "rect": {
+            "x": 1282.8125,
+            "y": -1138.671875,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1138.671875,
+            "right": 1416,
+            "bottom": -1005.484375,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-11",
+          "rect": {
+            "x": 1282.8125,
+            "y": -733,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -733,
+            "right": 1416,
+            "bottom": -599.8125,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-12",
+          "rect": {
+            "x": 24,
+            "y": -1544.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1544.34375,
+            "right": 157.1875,
+            "bottom": -1411.15625,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-13",
+          "rect": {
+            "x": 240,
+            "y": -944.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -944.34375,
+            "right": 373.1875,
+            "bottom": -811.15625,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-14",
+          "rect": {
+            "x": 1066.8125,
+            "y": -538.671875,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -538.671875,
+            "right": 1200,
+            "bottom": -405.484375,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-15",
+          "rect": {
+            "x": 1282.8125,
+            "y": -1544.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1544.34375,
+            "right": 1416,
+            "bottom": -1411.15625,
+            "left": 1282.8125
+          }
+        }
+      ],
+      "strength": {
+        "x": 193,
+        "y": 186.5,
+        "width": 527,
+        "height": 527,
+        "top": 186.5,
+        "right": 720,
+        "bottom": 713.5,
+        "left": 193
+      },
+      "titleOpacity": "1"
+    },
+    {
+      "y": 3375,
+      "video": {
+        "x": 613.5999755859375,
+        "y": -1641.5,
+        "width": 212.79998779296875,
+        "height": 133,
+        "top": -1641.5,
+        "right": 826.3999633789062,
+        "bottom": -1508.5,
+        "left": 613.5999755859375
+      },
+      "tiles": [
+        {
+          "class": "home-tile home-tile-0",
+          "rect": {
+            "x": 24,
+            "y": -2400,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -2400,
+            "right": 157.1875,
+            "bottom": -2266.8125,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-1",
+          "rect": {
+            "x": 24,
+            "y": -1588.671875,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1588.671875,
+            "right": 157.1875,
+            "bottom": -1455.484375,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-2",
+          "rect": {
+            "x": 24,
+            "y": -1183,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1183,
+            "right": 157.1875,
+            "bottom": -1049.8125,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-3",
+          "rect": {
+            "x": 240,
+            "y": -1800,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1800,
+            "right": 373.1875,
+            "bottom": -1666.8125,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-4",
+          "rect": {
+            "x": 240,
+            "y": -988.671875,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -988.671875,
+            "right": 373.1875,
+            "bottom": -855.484375,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-5",
+          "rect": {
+            "x": 240,
+            "y": -583,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -583,
+            "right": 373.1875,
+            "bottom": -449.8125,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-6",
+          "rect": {
+            "x": 1066.8125,
+            "y": -1800,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1800,
+            "right": 1200,
+            "bottom": -1666.8125,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-7",
+          "rect": {
+            "x": 1066.8125,
+            "y": -1394.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1394.34375,
+            "right": 1200,
+            "bottom": -1261.15625,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-8",
+          "rect": {
+            "x": 1066.8125,
+            "y": -583,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -583,
+            "right": 1200,
+            "bottom": -449.8125,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-9",
+          "rect": {
+            "x": 1282.8125,
+            "y": -2400,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -2400,
+            "right": 1416,
+            "bottom": -2266.8125,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-10",
+          "rect": {
+            "x": 1282.8125,
+            "y": -1588.671875,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1588.671875,
+            "right": 1416,
+            "bottom": -1455.484375,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-11",
+          "rect": {
+            "x": 1282.8125,
+            "y": -1183,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1183,
+            "right": 1416,
+            "bottom": -1049.8125,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-12",
+          "rect": {
+            "x": 24,
+            "y": -1994.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1994.34375,
+            "right": 157.1875,
+            "bottom": -1861.15625,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-13",
+          "rect": {
+            "x": 240,
+            "y": -1394.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1394.34375,
+            "right": 373.1875,
+            "bottom": -1261.15625,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-14",
+          "rect": {
+            "x": 1066.8125,
+            "y": -988.671875,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -988.671875,
+            "right": 1200,
+            "bottom": -855.484375,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-15",
+          "rect": {
+            "x": 1282.8125,
+            "y": -1994.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1994.34375,
+            "right": 1416,
+            "bottom": -1861.15625,
+            "left": 1282.8125
+          }
+        }
+      ],
+      "strength": {
+        "x": 193,
+        "y": 186.5,
+        "width": 527,
+        "height": 527,
+        "top": 186.5,
+        "right": 720,
+        "bottom": 713.5,
+        "left": 193
+      },
+      "titleOpacity": "1"
+    },
+    {
+      "y": 3600,
+      "video": {
+        "x": 613.5999755859375,
+        "y": -1866.5,
+        "width": 212.79998779296875,
+        "height": 133,
+        "top": -1866.5,
+        "right": 826.3999633789062,
+        "bottom": -1733.5,
+        "left": 613.5999755859375
+      },
+      "tiles": [
+        {
+          "class": "home-tile home-tile-0",
+          "rect": {
+            "x": 24,
+            "y": -2625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -2625,
+            "right": 157.1875,
+            "bottom": -2491.8125,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-1",
+          "rect": {
+            "x": 24,
+            "y": -1813.671875,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1813.671875,
+            "right": 157.1875,
+            "bottom": -1680.484375,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-2",
+          "rect": {
+            "x": 24,
+            "y": -1408,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1408,
+            "right": 157.1875,
+            "bottom": -1274.8125,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-3",
+          "rect": {
+            "x": 240,
+            "y": -2025,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -2025,
+            "right": 373.1875,
+            "bottom": -1891.8125,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-4",
+          "rect": {
+            "x": 240,
+            "y": -1213.671875,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1213.671875,
+            "right": 373.1875,
+            "bottom": -1080.484375,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-5",
+          "rect": {
+            "x": 240,
+            "y": -808,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -808,
+            "right": 373.1875,
+            "bottom": -674.8125,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-6",
+          "rect": {
+            "x": 1066.8125,
+            "y": -2025,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -2025,
+            "right": 1200,
+            "bottom": -1891.8125,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-7",
+          "rect": {
+            "x": 1066.8125,
+            "y": -1619.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1619.34375,
+            "right": 1200,
+            "bottom": -1486.15625,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-8",
+          "rect": {
+            "x": 1066.8125,
+            "y": -808,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -808,
+            "right": 1200,
+            "bottom": -674.8125,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-9",
+          "rect": {
+            "x": 1282.8125,
+            "y": -2625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -2625,
+            "right": 1416,
+            "bottom": -2491.8125,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-10",
+          "rect": {
+            "x": 1282.8125,
+            "y": -1813.671875,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1813.671875,
+            "right": 1416,
+            "bottom": -1680.484375,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-11",
+          "rect": {
+            "x": 1282.8125,
+            "y": -1408,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1408,
+            "right": 1416,
+            "bottom": -1274.8125,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-12",
+          "rect": {
+            "x": 24,
+            "y": -2219.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -2219.34375,
+            "right": 157.1875,
+            "bottom": -2086.15625,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-13",
+          "rect": {
+            "x": 240,
+            "y": -1619.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1619.34375,
+            "right": 373.1875,
+            "bottom": -1486.15625,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-14",
+          "rect": {
+            "x": 1066.8125,
+            "y": -1213.671875,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1213.671875,
+            "right": 1200,
+            "bottom": -1080.484375,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-15",
+          "rect": {
+            "x": 1282.8125,
+            "y": -2219.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -2219.34375,
+            "right": 1416,
+            "bottom": -2086.15625,
+            "left": 1282.8125
+          }
+        }
+      ],
+      "strength": {
+        "x": 206.1750030517578,
+        "y": 174.6750030517578,
+        "width": 500.6500244140625,
+        "height": 500.6500244140625,
+        "top": 174.6750030517578,
+        "right": 706.8250274658203,
+        "bottom": 675.3250274658203,
+        "left": 206.1750030517578
+      },
+      "titleOpacity": "1"
+    },
+    {
+      "y": 3375,
+      "video": {
+        "x": 613.5999755859375,
+        "y": -1641.5,
+        "width": 212.79998779296875,
+        "height": 133,
+        "top": -1641.5,
+        "right": 826.3999633789062,
+        "bottom": -1508.5,
+        "left": 613.5999755859375
+      },
+      "tiles": [
+        {
+          "class": "home-tile home-tile-0",
+          "rect": {
+            "x": 24,
+            "y": -2400,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -2400,
+            "right": 157.1875,
+            "bottom": -2266.8125,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-1",
+          "rect": {
+            "x": 24,
+            "y": -1588.671875,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1588.671875,
+            "right": 157.1875,
+            "bottom": -1455.484375,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-2",
+          "rect": {
+            "x": 24,
+            "y": -1183,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1183,
+            "right": 157.1875,
+            "bottom": -1049.8125,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-3",
+          "rect": {
+            "x": 240,
+            "y": -1800,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1800,
+            "right": 373.1875,
+            "bottom": -1666.8125,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-4",
+          "rect": {
+            "x": 240,
+            "y": -988.671875,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -988.671875,
+            "right": 373.1875,
+            "bottom": -855.484375,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-5",
+          "rect": {
+            "x": 240,
+            "y": -583,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -583,
+            "right": 373.1875,
+            "bottom": -449.8125,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-6",
+          "rect": {
+            "x": 1066.8125,
+            "y": -1800,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1800,
+            "right": 1200,
+            "bottom": -1666.8125,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-7",
+          "rect": {
+            "x": 1066.8125,
+            "y": -1394.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1394.34375,
+            "right": 1200,
+            "bottom": -1261.15625,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-8",
+          "rect": {
+            "x": 1066.8125,
+            "y": -583,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -583,
+            "right": 1200,
+            "bottom": -449.8125,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-9",
+          "rect": {
+            "x": 1282.8125,
+            "y": -2400,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -2400,
+            "right": 1416,
+            "bottom": -2266.8125,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-10",
+          "rect": {
+            "x": 1282.8125,
+            "y": -1588.671875,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1588.671875,
+            "right": 1416,
+            "bottom": -1455.484375,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-11",
+          "rect": {
+            "x": 1282.8125,
+            "y": -1183,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1183,
+            "right": 1416,
+            "bottom": -1049.8125,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-12",
+          "rect": {
+            "x": 24,
+            "y": -1994.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1994.34375,
+            "right": 157.1875,
+            "bottom": -1861.15625,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-13",
+          "rect": {
+            "x": 240,
+            "y": -1394.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1394.34375,
+            "right": 373.1875,
+            "bottom": -1261.15625,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-14",
+          "rect": {
+            "x": 1066.8125,
+            "y": -988.671875,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -988.671875,
+            "right": 1200,
+            "bottom": -855.484375,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-15",
+          "rect": {
+            "x": 1282.8125,
+            "y": -1994.34375,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": -1994.34375,
+            "right": 1416,
+            "bottom": -1861.15625,
+            "left": 1282.8125
+          }
+        }
+      ],
+      "strength": {
+        "x": 193,
+        "y": 186.5,
+        "width": 527,
+        "height": 527,
+        "top": 186.5,
+        "right": 720,
+        "bottom": 713.5,
+        "left": 193
+      },
+      "titleOpacity": "1"
+    },
+    {
+      "y": 1125,
+      "video": {
+        "x": 492.35821533203125,
+        "y": 307.723876953125,
+        "width": 455.2835693359375,
+        "height": 284.55224609375,
+        "top": 307.723876953125,
+        "right": 947.6417846679688,
+        "bottom": 592.276123046875,
+        "left": 492.35821533203125
+      },
+      "tiles": [
+        {
+          "class": "home-tile home-tile-0",
+          "rect": {
+            "x": 24,
+            "y": 810,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 810,
+            "right": 157.1875,
+            "bottom": 943.1875,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-1",
+          "rect": {
+            "x": 24,
+            "y": 1621.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1621.328125,
+            "right": 157.1875,
+            "bottom": 1754.515625,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-2",
+          "rect": {
+            "x": 24,
+            "y": 2027,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2027,
+            "right": 157.1875,
+            "bottom": 2160.1875,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-3",
+          "rect": {
+            "x": 240,
+            "y": 450,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 450,
+            "right": 373.1875,
+            "bottom": 583.1875,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-4",
+          "rect": {
+            "x": 240,
+            "y": 1261.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1261.328125,
+            "right": 373.1875,
+            "bottom": 1394.515625,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-5",
+          "rect": {
+            "x": 240,
+            "y": 1667,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1667,
+            "right": 373.1875,
+            "bottom": 1800.1875,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-6",
+          "rect": {
+            "x": 1066.8125,
+            "y": 450,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 450,
+            "right": 1200,
+            "bottom": 583.1875,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-7",
+          "rect": {
+            "x": 1066.8125,
+            "y": 855.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 855.65625,
+            "right": 1200,
+            "bottom": 988.84375,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-8",
+          "rect": {
+            "x": 1066.8125,
+            "y": 1667,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1667,
+            "right": 1200,
+            "bottom": 1800.1875,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-9",
+          "rect": {
+            "x": 1282.8125,
+            "y": 810,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 810,
+            "right": 1416,
+            "bottom": 943.1875,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-10",
+          "rect": {
+            "x": 1282.8125,
+            "y": 1621.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1621.328125,
+            "right": 1416,
+            "bottom": 1754.515625,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-11",
+          "rect": {
+            "x": 1282.8125,
+            "y": 2027,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2027,
+            "right": 1416,
+            "bottom": 2160.1875,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-12",
+          "rect": {
+            "x": 24,
+            "y": 1215.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1215.65625,
+            "right": 157.1875,
+            "bottom": 1348.84375,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-13",
+          "rect": {
+            "x": 240,
+            "y": 855.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 855.65625,
+            "right": 373.1875,
+            "bottom": 988.84375,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-14",
+          "rect": {
+            "x": 1066.8125,
+            "y": 1261.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1261.328125,
+            "right": 1200,
+            "bottom": 1394.515625,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-15",
+          "rect": {
+            "x": 1282.8125,
+            "y": 1215.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1215.65625,
+            "right": 1416,
+            "bottom": 1348.84375,
+            "left": 1282.8125
+          }
+        }
+      ],
+      "strength": {
+        "x": 193,
+        "y": 1986.5,
+        "width": 527,
+        "height": 527,
+        "top": 1986.5,
+        "right": 720,
+        "bottom": 2513.5,
+        "left": 193
+      },
+      "titleOpacity": "1"
+    },
+    {
+      "y": 0,
+      "video": {
+        "x": 0.00140380859375,
+        "y": 0.000885009765625,
+        "width": 1439.9970703125,
+        "height": 899.998291015625,
+        "top": 0.000885009765625,
+        "right": 1439.9984741210938,
+        "bottom": 899.9991760253906,
+        "left": 0.00140380859375
+      },
+      "tiles": [
+        {
+          "class": "home-tile home-tile-0",
+          "rect": {
+            "x": 24,
+            "y": 2175,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2175,
+            "right": 157.1875,
+            "bottom": 2308.1875,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-1",
+          "rect": {
+            "x": 24,
+            "y": 2986.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2986.328125,
+            "right": 157.1875,
+            "bottom": 3119.515625,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-2",
+          "rect": {
+            "x": 24,
+            "y": 3392,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 3392,
+            "right": 157.1875,
+            "bottom": 3525.1875,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-3",
+          "rect": {
+            "x": 240,
+            "y": 1575,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1575,
+            "right": 373.1875,
+            "bottom": 1708.1875,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-4",
+          "rect": {
+            "x": 240,
+            "y": 2386.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2386.328125,
+            "right": 373.1875,
+            "bottom": 2519.515625,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-5",
+          "rect": {
+            "x": 240,
+            "y": 2792,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2792,
+            "right": 373.1875,
+            "bottom": 2925.1875,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-6",
+          "rect": {
+            "x": 1066.8125,
+            "y": 1575,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1575,
+            "right": 1200,
+            "bottom": 1708.1875,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-7",
+          "rect": {
+            "x": 1066.8125,
+            "y": 1980.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1980.65625,
+            "right": 1200,
+            "bottom": 2113.84375,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-8",
+          "rect": {
+            "x": 1066.8125,
+            "y": 2792,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2792,
+            "right": 1200,
+            "bottom": 2925.1875,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-9",
+          "rect": {
+            "x": 1282.8125,
+            "y": 2175,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2175,
+            "right": 1416,
+            "bottom": 2308.1875,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-10",
+          "rect": {
+            "x": 1282.8125,
+            "y": 2986.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2986.328125,
+            "right": 1416,
+            "bottom": 3119.515625,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-11",
+          "rect": {
+            "x": 1282.8125,
+            "y": 3392,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 3392,
+            "right": 1416,
+            "bottom": 3525.1875,
+            "left": 1282.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-12",
+          "rect": {
+            "x": 24,
+            "y": 2580.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2580.65625,
+            "right": 157.1875,
+            "bottom": 2713.84375,
+            "left": 24
+          }
+        },
+        {
+          "class": "home-tile home-tile-13",
+          "rect": {
+            "x": 240,
+            "y": 1980.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 1980.65625,
+            "right": 373.1875,
+            "bottom": 2113.84375,
+            "left": 240
+          }
+        },
+        {
+          "class": "home-tile home-tile-14",
+          "rect": {
+            "x": 1066.8125,
+            "y": 2386.328125,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2386.328125,
+            "right": 1200,
+            "bottom": 2519.515625,
+            "left": 1066.8125
+          }
+        },
+        {
+          "class": "home-tile home-tile-15",
+          "rect": {
+            "x": 1282.8125,
+            "y": 2580.65625,
+            "width": 133.1875,
+            "height": 133.1875,
+            "top": 2580.65625,
+            "right": 1416,
+            "bottom": 2713.84375,
+            "left": 1282.8125
+          }
+        }
+      ],
+      "strength": {
+        "x": 193,
+        "y": 3111.5,
+        "width": 527,
+        "height": 527,
+        "top": 3111.5,
+        "right": 720,
+        "bottom": 3638.5,
+        "left": 193
+      },
+      "titleOpacity": "1"
+    }
+  ],
+  "errors": [],
+  "careerCycle": [
+    "0",
+    "3"
+  ]
+}

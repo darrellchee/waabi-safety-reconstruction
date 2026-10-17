@@ -1,0 +1,226 @@
+[
+  {
+    "y": 0,
+    "nodes": [
+      {
+        "tag": "P",
+        "text": "03",
+        "top": 3419,
+        "transform": "none",
+        "opacity": "1"
+      },
+      {
+        "tag": "P",
+        "text": "/3",
+        "top": 3439,
+        "transform": "none",
+        "opacity": "1"
+      },
+      {
+        "tag": "IMG",
+        "text": "",
+        "top": 3539.859375,
+        "transform": "none",
+        "opacity": "1"
+      }
+    ]
+  },
+  {
+    "y": 2600,
+    "nodes": [
+      {
+        "tag": "P",
+        "text": "03",
+        "top": 578.996826171875,
+        "transform": "matrix(1, 0, 0, 1, 0, -52.8)",
+        "opacity": "1"
+      },
+      {
+        "tag": "P",
+        "text": "01",
+        "top": 631.8370971679688,
+        "transform": "matrix(1, 0, 0, 1, 0, 0.0402732)",
+        "opacity": "1"
+      },
+      {
+        "tag": "P",
+        "text": "/3",
+        "top": 651.7968139648438,
+        "transform": "none",
+        "opacity": "1"
+      },
+      {
+        "tag": "IMG",
+        "text": "",
+        "top": 378.24981689453125,
+        "transform": "none",
+        "opacity": "0"
+      },
+      {
+        "tag": "IMG",
+        "text": "",
+        "top": 378.24981689453125,
+        "transform": "none",
+        "opacity": "0.999077"
+      }
+    ]
+  },
+  {
+    "y": 3000,
+    "nodes": [
+      {
+        "tag": "P",
+        "text": "01",
+        "top": 428,
+        "transform": "none",
+        "opacity": "1"
+      },
+      {
+        "tag": "P",
+        "text": "/3",
+        "top": 448,
+        "transform": "none",
+        "opacity": "1"
+      },
+      {
+        "tag": "IMG",
+        "text": "",
+        "top": 148.859375,
+        "transform": "none",
+        "opacity": "1"
+      }
+    ]
+  },
+  {
+    "y": 3400,
+    "nodes": [
+      {
+        "tag": "P",
+        "text": "01",
+        "top": 375.20001220703125,
+        "transform": "matrix(1, 0, 0, 1, 0, -52.8)",
+        "opacity": "1"
+      },
+      {
+        "tag": "P",
+        "text": "02",
+        "top": 428.17041015625,
+        "transform": "matrix(1, 0, 0, 1, 0, 0.170421)",
+        "opacity": "1"
+      },
+      {
+        "tag": "P",
+        "text": "/3",
+        "top": 448,
+        "transform": "none",
+        "opacity": "1"
+      },
+      {
+        "tag": "IMG",
+        "text": "",
+        "top": 148.859375,
+        "transform": "none",
+        "opacity": "0.000683077"
+      },
+      {
+        "tag": "IMG",
+        "text": "",
+        "top": 148.66497802734375,
+        "transform": "matrix(1.00065, 0, 0, 1.00065, 0, 0)",
+        "opacity": "0.995222"
+      }
+    ]
+  },
+  {
+    "y": 3800,
+    "nodes": [
+      {
+        "tag": "P",
+        "text": "02",
+        "top": 375.2430419921875,
+        "transform": "matrix(1, 0, 0, 1, 0, -52.7569)",
+        "opacity": "1"
+      },
+      {
+        "tag": "P",
+        "text": "03",
+        "top": 428.0872497558594,
+        "transform": "matrix(1, 0, 0, 1, 0, 0.0872432)",
+        "opacity": "1"
+      },
+      {
+        "tag": "P",
+        "text": "/3",
+        "top": 448,
+        "transform": "none",
+        "opacity": "1"
+      },
+      {
+        "tag": "IMG",
+        "text": "",
+        "top": 148.859375,
+        "transform": "none",
+        "opacity": "0.000999138"
+      },
+      {
+        "tag": "IMG",
+        "text": "",
+        "top": 148.859375,
+        "transform": "none",
+        "opacity": "0.998061"
+      }
+    ]
+  },
+  {
+    "y": 4200,
+    "nodes": [
+      {
+        "tag": "P",
+        "text": "03",
+        "top": 99,
+        "transform": "none",
+        "opacity": "1"
+      },
+      {
+        "tag": "P",
+        "text": "/3",
+        "top": 119,
+        "transform": "none",
+        "opacity": "1"
+      },
+      {
+        "tag": "IMG",
+        "text": "",
+        "top": -180.140625,
+        "transform": "none",
+        "opacity": "1"
+      }
+    ]
+  },
+  {
+    "y": 4600,
+    "nodes": [
+      {
+        "tag": "P",
+        "text": "03",
+        "top": -301,
+        "transform": "none",
+        "opacity": "1"
+      },
+      {
+        "tag": "P",
+        "text": "/3",
+        "top": -281,
+        "transform": "none",
+        "opacity": "1"
+      },
+      {
+        "tag": "IMG",
+        "text": "",
+        "top": -580.140625,
+        "transform": "none",
+        "opacity": "1"
+      }
+    ]
+  }
+]

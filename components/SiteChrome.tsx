@@ -21,10 +21,17 @@ export function Header() {
   const currentPage =
     pages.find(([, href]) => href === pathname)?.[0] || "Home";
   const [banner, setBanner] = useState(true);
+  const [bannerMounted, setBannerMounted] = useState(true);
+  useEffect(() => {
+    if (banner) return;
+    const timeout = window.setTimeout(() => setBannerMounted(false), window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 400);
+    return () => window.clearTimeout(timeout);
+  }, [banner]);
   const [open, setOpen] = useState(false);
   const [progress, setProgress] = useState(0);
   const header = useRef<HTMLElement>(null);
   const toggle = useRef<HTMLButtonElement>(null);
+  const panel = useRef<HTMLElement>(null);
   useEffect(() => {
     const scroll = () =>
       setProgress(
@@ -47,6 +54,10 @@ export function Header() {
   }, []);
   useEffect(() => {
     if (!open) return;
+    const menu = panel.current;
+    if (menu && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      menu.animate([{ height: "0px", opacity: 0 }, { height: `${menu.getBoundingClientRect().height}px`, opacity: 1 }], { duration: 400, delay: 150, easing: "cubic-bezier(.19,1,.22,1)", fill: "backwards" });
+    }
     const previous = document.body.style.overflow;
     if (window.innerWidth < 640) document.body.style.overflow = "hidden";
     const onKey = (event: KeyboardEvent) => {
@@ -75,8 +86,8 @@ export function Header() {
   }, [open]);
   return (
     <>
-      {banner && (
-        <div className="announcement">
+      {bannerMounted && (
+        <div className={`announcement ${banner ? "" : "announcement-closing"}`}>
           <span>
             Let&apos;s talk autonomous trucking{" "}
             <a
@@ -97,6 +108,8 @@ export function Header() {
       )}
       <header
         ref={header}
+        onPointerEnter={(event) => { if (event.pointerType === "mouse") setOpen(true); }}
+        onPointerLeave={(event) => { if (event.pointerType === "mouse") setOpen(false); }}
         className={`site-header ${open ? "menu-is-open" : ""} ${banner ? "with-announcement" : ""}`}
       >
         <div className="nav-bar">
@@ -126,10 +139,13 @@ export function Header() {
         </div>
         {open && (
           <nav
+            ref={panel}
             id="global-navigation"
             aria-label="Global navigation"
             className="menu-panel"
+            data-lenis-prevent
           >
+            <div className="menu-content">
             <span className="menu-caption">Menu</span>
             <div className="menu-links">
               {pages.map(([label, href, image]) => (
@@ -144,6 +160,7 @@ export function Header() {
                   <span>{label}</span>
                 </Link>
               ))}
+            </div>
             </div>
           </nav>
         )}
@@ -186,9 +203,98 @@ function SocialIcon({ kind }: { kind: string }) {
 }
 
 export function Footer() {
+  const footer = useRef<HTMLElement>(null);
+  const canvas = useRef<HTMLCanvasElement>(null);
+  const video = useRef<HTMLVideoElement>(null);
+  useEffect(() => {
+    const root = footer.current;
+    const surface = canvas.current;
+    if (!root || !surface) return;
+    const context = surface.getContext("2d");
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const desktop = window.matchMedia("(min-width: 768px)");
+    let frame = 0;
+    let raf = 0;
+    let visible = false;
+    let started = false;
+    let width = 0;
+    let height = 0;
+    const raw = { x: 0, y: 0 };
+    const smooth = { x: 0, y: 0 };
+    const colors = [[252, 179, 247], [255, 44, 107], [128, 3, 28], [151, 126, 117]];
+    const resize = () => {
+      width = root.clientWidth;
+      height = root.clientHeight;
+      const ratio = window.devicePixelRatio || 1;
+      surface.width = Math.round(width * ratio);
+      surface.height = Math.round(height * ratio);
+      context?.setTransform(ratio, 0, 0, ratio, 0, 0);
+      raw.x = smooth.x = width / 2;
+      raw.y = smooth.y = height / 2;
+    };
+    const scroll = () => {
+      const top = root.getBoundingClientRect().top;
+      const progress = Math.max(0, Math.min(1, (window.innerHeight - top) / height));
+      root.style.setProperty("--footer-y", `${reduced.matches ? 0 : -200 * (1 - progress)}px`);
+      root.style.setProperty("--footer-opacity", `${reduced.matches ? 1 : Math.max(0, Math.min(1, (progress - .75) / .25))}`);
+    };
+    const move = (event: MouseEvent) => {
+      raw.x = width * Math.max(0, Math.min(1, event.clientX / window.innerWidth));
+      raw.y = height * Math.max(0, Math.min(1, event.clientY / window.innerHeight));
+      started = true;
+    };
+    const draw = () => {
+      if (visible && started && desktop.matches && !reduced.matches && context) {
+        surface.style.visibility = "visible";
+        smooth.x += (raw.x - smooth.x) * .15;
+        smooth.y += (raw.y - smooth.y) * .15;
+        context.clearRect(0, 0, width, height);
+        for (let layer = 0; layer < 250; layer++) {
+          const amount = layer / 249;
+          const cycle = amount * 5.5 + frame * .007;
+          const index = Math.floor(cycle) % colors.length;
+          const next = (index + 1) % colors.length;
+          const mix = cycle % 1;
+          const color = colors[index].map((value, channel) => Math.round(value + (colors[next][channel] - value) * mix));
+          const w = width * 4.5 * Math.pow(.99, layer);
+          const h = height * 4.2 * Math.pow(.99, layer);
+          const x = smooth.x + (width / 2 - smooth.x) * amount;
+          const y = smooth.y + (height / 2 - smooth.y) * amount;
+          context.fillStyle = `rgb(${color.join(",")})`;
+          context.fillRect(x - w / 2, y - h / 2, w, h);
+        }
+        frame++;
+      } else if (reduced.matches || !desktop.matches) surface.style.visibility = "hidden";
+      raf = requestAnimationFrame(draw);
+    };
+    const observer = new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting;
+      if (visible && !reduced.matches) void video.current?.play().catch(() => {});
+      else video.current?.pause();
+    });
+    observer.observe(root);
+    const sizeObserver = new ResizeObserver(() => { resize(); scroll(); });
+    sizeObserver.observe(root);
+    resize();
+    scroll();
+    raf = requestAnimationFrame(draw);
+    window.addEventListener("scroll", scroll, { passive: true });
+    window.addEventListener("mousemove", move, { passive: true });
+    reduced.addEventListener("change", scroll);
+    return () => {
+      cancelAnimationFrame(raf);
+      observer.disconnect();
+      sizeObserver.disconnect();
+      window.removeEventListener("scroll", scroll);
+      window.removeEventListener("mousemove", move);
+      reduced.removeEventListener("change", scroll);
+    };
+  }, []);
   return (
-    <footer className="site-footer">
+    <footer ref={footer} className="site-footer">
+      <div className="footer-motion">
       <video
+        ref={video}
         className="footer-video"
         autoPlay
         muted
@@ -198,6 +304,7 @@ export function Footer() {
         tabIndex={-1}
         src="/assets/Waabi_System_LightTunnel_1.mp4"
       />
+      <canvas ref={canvas} className="footer-canvas" aria-hidden="true" />
       <div className="footer-top">
         <div className="footer-contact">
           <h2>
@@ -251,6 +358,7 @@ export function Footer() {
           src="/assets/waabi-logo-footer.svg"
           alt="Waabi"
         />
+      </div>
       </div>
     </footer>
   );
@@ -311,6 +419,7 @@ export function CookieConsent() {
         >
           <section
             className="cookie-modal"
+            data-lenis-prevent
             role="dialog"
             aria-modal="true"
             aria-labelledby="cookie-preferences-title"

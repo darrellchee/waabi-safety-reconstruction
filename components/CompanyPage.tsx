@@ -1,8 +1,9 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Header, Footer, CookieConsent } from "./SiteChrome";
 import "./company.css";
 import { insights } from "./insights-data";
+import roads from "./company-roads.json";
 const A = "/assets/company/";
 const news = insights;
 const logos = [
@@ -87,62 +88,177 @@ function Controls({
     </div>
   );
 }
-function Story() {
-  const ref = useRef<HTMLDivElement>(null);
-  const paragraphs = [
-    "In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how humanity moves and connects.",
-    "What began as a bold dream has become something far greater. Waabi is a global force pioneering a breakthrough approach that demonstrates autonomous vehicles can be scalable, efficient, and safe.",
-  ];
+/** Source Title/Paragraph motions: independent words, once in view. */
+function MotionWords({ text, title = false, wordOffset = 0 }: { text: string; title?: boolean; wordOffset?: number }) {
+  const ref = useRef<HTMLSpanElement>(null);
   useEffect(() => {
-    const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const update = () => {
-      if (!ref.current) return;
-      const words = ref.current.querySelectorAll<HTMLElement>(".co-word");
-      const progress =
-        (innerHeight * 0.9 - ref.current.getBoundingClientRect().top) /
-        (ref.current.offsetHeight + innerHeight * 0.35);
-      words.forEach((word, i) => {
-        word.style.color =
-          reduced || progress > i / words.length ? "#191818" : "#ffe5ee";
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(({ target, isIntersecting }) => {
+        if (!isIntersecting) return;
+        const word = target as HTMLElement;
+        const index = Number(word.dataset.word);
+        word.animate(title ? [
+          { opacity: 0, transform: "translateX(20px)" },
+          { opacity: 1, transform: "translateX(0px)" },
+        ] : [
+          { opacity: 0.1, color: "rgb(255, 44, 107)" },
+          { opacity: 1, color: "rgb(0, 0, 0)" },
+        ], {
+          duration: title ? 400 : 100,
+          delay: (index + wordOffset) * 70,
+          easing: title ? "cubic-bezier(.19,1,.22,1)" : "linear",
+          fill: "both",
+        });
+        observer.unobserve(word);
       });
-    };
-    update();
-    addEventListener("scroll", update, { passive: true });
-    return () => removeEventListener("scroll", update);
-  }, []);
+    });
+    ref.current?.querySelectorAll("[data-word]").forEach((word) => observer.observe(word));
+    return () => observer.disconnect();
+  }, [title, wordOffset]);
+  return <span ref={ref}>{text.split(" ").map((word, index, words) => <span key={index}>
+    <span data-word={index} className={title ? "co-title-word" : "co-word"}>{word}</span>{index < words.length - 1 ? " " : ""}
+  </span>)}</span>;
+}
+function Story() {
   return (
     <section id="our-story" className="co-story">
-      <div ref={ref}>
-        {paragraphs.map((p) => (
-          <p key={p}>
-            {p.split(" ").map((w, i) => (
-              <span className="co-word" key={i}>
-                {w}{" "}
-              </span>
-            ))}
-          </p>
-        ))}
+      <div>
+        <p><MotionWords text="In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how humanity moves and connects." /></p>
+        <p><MotionWords text="What began as a bold dream has become something far greater. Waabi is a global force pioneering a breakthrough approach that demonstrates autonomous vehicles can be scalable, efficient, and safe." /></p>
       </div>
     </section>
   );
 }
+const portraits = [
+  "1761188599-251006_waabi_ashwin_kumar_0866.webp",
+  "1761700499-251006_waabi_collab_02_0612.webp",
+  "1761700304-251006_waabi_saloni_mulani_0355-1.webp",
+  "1761183937-waabi_portrait_dave_00283.webp",
+];
+/** Native FLIP equivalent of the reference's two-slot AnimatePresence layout. */
+function PeoplePortraits() {
+  const ref = useRef<HTMLDivElement>(null);
+  const boxes = useRef(new Map<number, DOMRect>());
+  const [step, setStep] = useState(0);
+  const generationRef = useRef(0);
+  const [exiting, setExiting] = useState<number | null>(null);
+  useEffect(() => {
+    const container = ref.current;
+    if (!container || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    let timer: ReturnType<typeof setInterval> | undefined;
+    let visible = false;
+    const schedule = () => {
+      clearInterval(timer);
+      if (!visible || document.hidden) return;
+      timer = setInterval(() => {
+        boxes.current.clear();
+        container.querySelectorAll<HTMLElement>(".co-portrait").forEach((card) => {
+          boxes.current.set(Number(card.dataset.generation), card.getBoundingClientRect());
+        });
+        setExiting(generationRef.current);
+        generationRef.current += 1;
+        setStep(generationRef.current);
+      }, 2000);
+    };
+    const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; schedule(); });
+    observer.observe(container);
+    document.addEventListener("visibilitychange", schedule);
+    return () => { clearInterval(timer); observer.disconnect(); document.removeEventListener("visibilitychange", schedule); };
+  }, []);
+  useLayoutEffect(() => {
+    if (!step || !ref.current) return;
+    const options = { duration: 800, easing: "cubic-bezier(.77,0,.175,1)", fill: "both" as const };
+    ref.current.querySelectorAll<HTMLElement>(".co-portrait").forEach((card) => {
+      const generation = Number(card.dataset.generation);
+      const before = boxes.current.get(generation);
+      const after = card.getBoundingClientRect();
+      if (generation < step) {
+        card.querySelector(".co-portrait-clip")?.animate([{ transform: "translateX(0) scale(1)" }, { transform: "translateX(20px) scale(.5)" }], options);
+      } else if (before) {
+        card.animate([{ transform: `translate(${before.left - after.left}px, ${before.top - after.top}px) scale(${before.width / after.width}, ${before.height / after.height})` }, { transform: "none" }], options);
+      } else {
+        card.querySelector(".co-portrait-clip")?.animate([{ transform: "translateX(100%)" }, { transform: "translateX(0)" }], options);
+        card.querySelector("img")?.animate([{ transform: "scale(1.5)" }, { transform: "scale(1)" }], options);
+      }
+    });
+    const timeout = setTimeout(() => setExiting(null), 800);
+    return () => clearTimeout(timeout);
+  }, [step]);
+  const cards = [...(exiting === null ? [] : [exiting]), step, step + 1];
+  return <div ref={ref} className="co-portraits">{cards.map((generation) => <div key={generation} data-generation={generation} data-slot={generation === step + 1 ? 1 : 0} className={`co-portrait${generation === exiting ? " co-portrait-exit" : ""}`}>
+    <div className="co-portrait-clip"><img src={A + portraits[generation % portraits.length]} alt="Waabi team member" /></div>
+  </div>)}</div>;
+}
+/** Overdamped spring from source: mass 1, stiffness 3.2, damping 4. */
+const mapSpring = (seconds: number) => 1 - 1.61803398875 * Math.exp(-1.105572809 * seconds) + .61803398875 * Math.exp(-2.894427191 * seconds);
+function MapMotion() {
+  const ref = useRef<SVGSVGElement>(null);
+  useEffect(() => {
+    const svg = ref.current;
+    if (!svg || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const animations: Animation[] = [];
+    const observer = new IntersectionObserver(([entry]) => {
+      animations.splice(0).forEach((animation) => animation.cancel());
+      if (!entry.isIntersecting) return;
+      svg.querySelectorAll<SVGPathElement>("path").forEach((path, index) => {
+        const length = path.getTotalLength();
+        path.style.strokeDasharray = String(length);
+        const total = 18450;
+        const start = index * 2500;
+        const keyframes: Keyframe[] = [{ strokeDashoffset: length, opacity: 1, offset: 0 }];
+        if (start) keyframes.push({ strokeDashoffset: length, opacity: 1, offset: start / total });
+        for (let time = 50; time < 5250; time += 50) keyframes.push({ strokeDashoffset: length * (1 - mapSpring(time / 1000)), opacity: 1, offset: (start + time) / total });
+        keyframes.push({ strokeDashoffset: 0, opacity: 1, offset: (start + 5250) / total, ...(index === 4 ? { easing: "ease-in-out" } : {}) });
+        if (index < 4) keyframes.push({ strokeDashoffset: 0, opacity: 1, offset: 15250 / total, easing: "ease-in-out" });
+        keyframes.push({ strokeDashoffset: 0, opacity: 0, offset: 15950 / total }, { strokeDashoffset: 0, opacity: 0, offset: 1 });
+        animations.push(path.animate(keyframes, { duration: total, iterations: Infinity }));
+      });
+      svg.parentElement?.querySelectorAll<SVGRectElement>(".co-city-pulse rect").forEach((rect, index) => {
+        const frames: Keyframe[] = [{ opacity: 0, transform: "scale(1)", offset: 0 }, { opacity: 0, transform: "scale(1)", offset: 1000 / 3500 }];
+        for (let time = 25; time < 550; time += 25) {
+          const progress = mapSpring(time / 100);
+          frames.push({ opacity: progress, transform: `scale(${1 + 1.5 * progress})`, offset: (1000 + time) / 3500 });
+        }
+        frames.push({ opacity: 1, transform: "scale(2.5)", offset: 1550 / 3500 }, { opacity: 1, transform: "scale(2.5)", offset: .5 });
+        for (let time = 25; time < 550; time += 25) frames.push({ opacity: 1 - mapSpring(time / 100), transform: "scale(2.5)", offset: (1750 + time) / 3500 });
+        frames.push({ opacity: 0, transform: "scale(2.5)", offset: 2300 / 3500 }, { opacity: 0, transform: "scale(2.5)", offset: 1 });
+        animations.push(rect.animate(frames, { duration: 3500, iterations: Infinity, delay: index % 2 * 1750 }));
+      });
+    });
+    observer.observe(svg);
+    return () => { observer.disconnect(); animations.forEach((animation) => animation.cancel()); };
+  }, []);
+  return <svg ref={ref} className="co-map-roads" viewBox="0 0 1465 1156" preserveAspectRatio="none" aria-hidden="true">{roads.map((d, index) => <path key={index} d={d} fill="none" stroke="#ff2c6b" />)}</svg>;
+}
 export default function CompanyPage() {
   const quoteRef = useRef<HTMLElement>(null);
+  const heroRef = useRef<HTMLElement>(null);
+  const marqueeRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const update = () => {
-      const el = quoteRef.current;
-      if (!el) return;
-      const rect = el.getBoundingClientRect();
-      const progress = Math.max(
-        0,
-        Math.min(1, (innerHeight - rect.top) / (innerHeight + rect.height)),
-      );
-      el.style.setProperty("--co-parallax", `${-12 + progress * 24}%`);
+      [quoteRef.current, heroRef.current].forEach((el) => {
+        if (!el) return;
+        const rect = el.getBoundingClientRect();
+        const progress = Math.max(0, Math.min(1, (innerHeight - rect.top) / (innerHeight + rect.height)));
+        el.style.setProperty("--co-parallax", `${-12 + progress * 24}%`);
+      });
     };
-    update();
+    let frame = 0;
+    let lastScroll = -1;
+    const tick = () => {
+      if (lastScroll !== scrollY) { lastScroll = scrollY; update(); }
+      frame = requestAnimationFrame(tick);
+    };
+    tick();
     addEventListener("scroll", update, { passive: true });
-    return () => removeEventListener("scroll", update);
+    addEventListener("resize", update);
+    const observer = new IntersectionObserver(([entry]) => {
+      marqueeRef.current?.classList.toggle("co-marquee-visible", entry.isIntersecting);
+    });
+    if (marqueeRef.current) observer.observe(marqueeRef.current);
+    return () => { cancelAnimationFrame(frame); removeEventListener("scroll", update); removeEventListener("resize", update); observer.disconnect(); };
   }, []);
   const newsRef = useRef<HTMLDivElement>(null);
   const eventsRef = useRef<HTMLDivElement>(null);
@@ -160,29 +276,23 @@ export default function CompanyPage() {
     <>
       <Header />
       <main className="company-page">
-        <section className="co-hero">
+        <section ref={heroRef} className="co-hero">
           <img
             src={A + "1760350326-waabi_washstation_03082_final.webp"}
             alt="Waabi truck being prepared for the road"
           />
           <div className="co-hero-shade" />
           <div className="co-hero-content">
-            <h1>
-              We built our
-              <br className="co-desktop-break" /> own road.
-            </h1>
+            <div className="co-hero-heading"><h1>
+              <MotionWords title text="We built our" />
+              <br className="co-desktop-break" /> <MotionWords title wordOffset={3} text="own road." />
+            </h1></div>
             <button
               aria-label="Scroll Down"
-              onClick={() =>
-                document
-                  .getElementById("our-story")
-                  ?.scrollIntoView({
-                    behavior: matchMedia("(prefers-reduced-motion: reduce)")
-                      .matches
-                      ? "instant"
-                      : "smooth",
-                  })
-              }
+              onClick={() => window.scrollTo({
+                top: innerHeight,
+                behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth",
+              })}
             >
               ↓
             </button>
@@ -222,16 +332,7 @@ export default function CompanyPage() {
               Learn more
             </a>
           </div>
-          <div className="co-portraits">
-            <img
-              src={A + "1761188599-251006_waabi_ashwin_kumar_0866.webp"}
-              alt="Waabi team member"
-            />
-            <img
-              src={A + "1761700499-251006_waabi_collab_02_0612.webp"}
-              alt="Waabi teammates collaborating"
-            />
-          </div>
+          <PeoplePortraits />
         </section>
         <section className="co-investors">
           <div className="co-investor-copy">
@@ -243,17 +344,18 @@ export default function CompanyPage() {
             </p>
           </div>
           <div
+            ref={marqueeRef}
             className="co-logo-window"
             tabIndex={0}
             aria-label="Waabi investors"
           >
-            <div className="co-logo-track">
-              {[...logos, ...logos].map(([file, alt], i) => (
+            {[0, 1].map((group) => <div className="co-logo-track" key={group} aria-hidden={group === 1 ? true : undefined}>
+              {[...logos, ...logos, ...logos].map(([file, alt], i) => (
                 <div className="co-logo" key={i}>
-                  <img src={A + file} alt={i < logos.length ? alt : ""} />
+                  <img src={A + file} alt={group === 0 && i < logos.length ? alt : ""} />
                 </div>
               ))}
-            </div>
+            </div>)}
           </div>
         </section>
         <section className="co-news">
@@ -342,6 +444,7 @@ export default function CompanyPage() {
           <div className="co-map">
             <div className="co-map-art">
               <img src={A + "map.svg"} alt="Map of North America" />
+              <MapMotion />
               {locations.map((l) => (
                 <button
                   key={l.name}
@@ -354,6 +457,7 @@ export default function CompanyPage() {
                   onFocus={() => setLocation(l.name)}
                   onBlur={() => setLocation(null)}
                 >
+                  <svg className="co-city-pulse" viewBox="0 0 100 100" aria-hidden="true"><rect x="0" y="0" width="100" height="100" /><rect x="0" y="0" width="100" height="100" /></svg>
                   {location === l.name && (
                     <span>
                       <strong>{l.name}</strong>

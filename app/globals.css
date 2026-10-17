@@ -1389,3 +1389,76 @@ h3 {
     padding-bottom: 15px;
   }
 }
+
+/* Motion values traced from the public Safety bundle with REA. */
+.safety-page .hero h1 { animation: none; }
+.safety-page .hero > img { transform: translateY(var(--safety-parallax, 0%)); }
+.safety-motion-word {
+  display: inline-flex;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity .4s cubic-bezier(.19,1,.22,1) var(--word-delay),
+    transform .4s cubic-bezier(.19,1,.22,1) var(--word-delay);
+}
+.safety-motion-word.motion-visible { opacity: 1; transform: translateX(0); }
+.safety-page .story-counter > span { display: inline-block; }
+.safety-page .story-counter { overflow: clip; }
+.safety-page .story-copy { transition: opacity .3s ease-out; }
+.safety-page .story-visual img { transition: opacity .4s cubic-bezier(.19,1,.22,1); }
+.safety-page .technology-panel {
+  transition: flex .4s cubic-bezier(.19,1,.22,1), height .4s cubic-bezier(.19,1,.22,1);
+}
+.safety-page .panel-copy { transform: none; transition: opacity .3s ease-out; }
+.safety-page .expanded .panel-copy { transition-delay: 0s; }
+.safety-page .panel-toggle { transition: transform .4s cubic-bezier(.19,1,.22,1), opacity .4s; }
+.safety-page .technology-panel.expanded .panel-toggle { transform: scale(0); opacity: 0; }
+.safety-page .practice-slides {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  transition: none;
+}
+.safety-page .practice-slides::-webkit-scrollbar { display: none; }
+.safety-page .practice-slide { scroll-snap-align: center; }
+@media (max-width: 767px) {
+  .safety-page .story-visual img { opacity: 0; }
+  .safety-page .story-visual img.is-active { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .safety-motion-word { opacity: 1; transform: none; transition: none; }
+  .safety-page .hero > img { transform: none; }
+}
+/* DNA: the line enters from outside its own clipped track, rather than sticking
+   its endpoint to the viewport. Its progress shares the exact section offsets. */
+.safety-page .story-number { position: relative; display: grid; overflow: clip; }
+.safety-page .story-number > span { display: block; grid-area: 1 / 1; }
+.safety-page .story-number-exit { position: absolute; top: 0; left: 0; }
+@media (min-width: 768px) {
+  .safety-page .story-line {
+    top: 0; height: 100%; width: 12px;
+    padding-bottom: 50svh;
+    background: transparent; overflow: clip;
+  }
+  .safety-page .story-line-track {
+    position: relative; height: 100%; width: 2px; margin-inline: 5px;
+    background: var(--pink);
+    transform: translateY(calc((var(--story-progress, 0) - 1) * 100%));
+  }
+  .safety-page .story-line i {
+    position: absolute; top: auto; bottom: -6px; left: 50%;
+    margin: 0; transform: translateX(-50%);
+  }
+}
+@media (max-width: 767px) {
+  .safety-page .story-line { background: transparent; }
+  .safety-page .story-line-track {
+    position: relative; height: 2px; width: 100%; background: var(--pink);
+    transform: translateX(calc((var(--story-progress, 0) - 1) * 100%));
+  }
+}
+.safety-page .story-copy,
+.safety-page .panel-copy,
+.safety-page .panel-shade {
+  transition-timing-function: cubic-bezier(.19,1,.22,1);
+  transition-duration: .4s;
+}
