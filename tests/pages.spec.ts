@@ -124,12 +124,13 @@ test("Home strengths, partner quotes, technology links and insights work", async
   ).toHaveAttribute("aria-selected", "true");
   await expect(strengths.getByRole("tabpanel")).toContainText("shared brain");
   const partnerTabs = page.getByRole("tablist", { name: "Partners" });
-  const firstQuote = await page.locator("blockquote").innerText();
+  const quote = page.locator('blockquote[aria-hidden="false"]');
+  const firstQuote = await quote.innerText();
   await partnerTabs.getByRole("tab", { name: "Uber", exact: true }).click();
   await expect(
     partnerTabs.getByRole("tab", { name: "Uber", exact: true }),
   ).toHaveAttribute("aria-selected", "true");
-  await expect(page.locator("blockquote")).not.toHaveText(firstQuote);
+  await expect(quote).not.toHaveText(firstQuote);
   for (const name of ["Waabi World", "Mixed Reality Testing", "Waabi Driver"]) {
     await expect(
       page.getByRole("link", { name: `Explore ${name}`, exact: true }),

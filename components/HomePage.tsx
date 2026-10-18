@@ -1,6 +1,7 @@
 "use client";
 import {
   useEffect,
+  forwardRef,
   useRef,
   useState,
   type CSSProperties,
@@ -13,43 +14,51 @@ import {
 import { Header, Footer, CookieConsent } from "./SiteChrome";
 import partners from "./home-data.json";
 import { insights } from "./insights-data";
+import { useCarouselMotion } from "./useCarouselMotion";
 import "./home.css";
+import { motion, AnimatePresence, useReducedMotion, useIsPresent } from "motion/react";
+const sourceEase = [0.19, 1, 0.22, 1] as const;
+const careerTransition = { duration: 0.8, ease: [0.77, 0, 0.175, 1] as const };
 const media = (name: string) => `/assets/home/${name}`;
-function Film({ name, className = "" }: { name: string; className?: string }) {
+function Film({ name, className = "", responsiveName, poster }: { name: string; className?: string; responsiveName?: string; poster?: string }) {
   const ref = useRef<HTMLVideoElement>(null);
+  const [visible, setVisible] = useState(false);
+  const [playing, setPlaying] = useState(false);
+  const reduced = useReducedMotion();
   useEffect(() => {
     const video = ref.current;
     if (!video) return;
-    const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduced) {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
       video.pause();
       return;
     }
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) video.play().catch(() => {});
-        else video.pause();
-      },
-      { rootMargin: "200px" },
-    );
+    // Observe once only to reveal media. Native autoplay owns playback;
+    // calling play() here would disable Chromium's offscreen autoplay pause.
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setVisible(true);
+        observer.disconnect();
+      }
+    }, { rootMargin: "200px" });
     observer.observe(video);
     return () => observer.disconnect();
-  }, []);
-  return (
-    <video
-      ref={ref}
-      className={className}
-      src={media(name)}
-      muted
-      loop
-      playsInline
-      poster={media(`${name}.jpg`)}
-      preload="none"
-      aria-hidden="true"
-      tabIndex={-1}
-    />
-  );
+  }, [responsiveName]);
+  return <>
+    <motion.img className={`home-film-poster${poster ? "" : " home-reduced-poster"}`} src={media(poster || `${name}.jpg`)} alt="" initial={false} animate={{opacity:playing && !reduced ? 0 : 1}} transition={{duration:.4,ease:sourceEase}} />
+    <motion.video ref={ref} className={className} src={responsiveName ? undefined : media(name)} muted loop playsInline autoPlay poster={poster ? media(poster) : undefined} preload="auto" aria-hidden="true" tabIndex={-1} onPlay={() => setPlaying(true)} initial={{opacity:0}} animate={{opacity:visible && !reduced ? 1 : 0}} transition={{duration:.4,ease:"linear"}}>
+      {responsiveName && <><source src={media(name)} media="(min-width:768px)" /><source src={media(responsiveName)} /></>}
+    </motion.video>
+  </>;
 }
+
+const PartnerQuote = forwardRef<HTMLQuoteElement, { children: ReactNode }>(function PartnerQuote({ children }, ref) {
+  const present = useIsPresent();
+  return <motion.blockquote ref={ref} layout initial={{ opacity: 0 }}
+    animate={{ opacity: 1, transition: { duration: .4, ease: sourceEase, delay: .4 } }}
+    exit={{ opacity: 0 }} id={present ? "home-partner-quote" : undefined}
+    role="tabpanel" aria-hidden={!present}>{children}</motion.blockquote>;
+});
+
 function MotionCopy({
   children,
   as: Tag = "h2",
@@ -57,35 +66,23 @@ function MotionCopy({
   children: ReactNode;
   as?: "h2" | "p";
 }) {
-  const ref = useRef<HTMLHeadingElement & HTMLParagraphElement>(null);
-  const [visible, setVisible] = useState(false);
-  useEffect(() => {
-    if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setVisible(true);
-      return;
-    }
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setVisible(true);
-        observer.disconnect();
-      }
-    });
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
+  const reduced = useReducedMotion();
   let index = 0;
   const wrap = (nodes: ReactNode): ReactNode =>
     Children.map(nodes, (node) => {
       if (typeof node === "string")
         return node.split(/(\s+)/).map((word, i) =>
           /\S/.test(word) ? (
-            <span
+            <motion.span
               className="home-motion-word"
-              style={{ "--word-delay": `${index++ * 0.07}s` } as CSSProperties}
+              initial={reduced ? false : Tag === "p" ? {opacity:.1} : {opacity:0,x:20}}
+              whileInView={{opacity:1,x:0}}
+              viewport={{once:true}}
+              transition={{duration:Tag === "p" ? .1 : .4,ease:Tag === "p" ? "linear" : sourceEase,delay:index++ * .07}}
               key={i}
             >
               {word}
-            </span>
+            </motion.span>
           ) : (
             word
           ),
@@ -97,10 +94,7 @@ function MotionCopy({
       return node;
     });
   return (
-    <Tag
-      ref={ref}
-      className={`home-motion-copy ${visible ? "is-revealed" : ""}`}
-    >
+    <Tag className="home-motion-copy is-revealed motion-native-copy">
       {wrap(children)}
     </Tag>
   );
@@ -157,17 +151,29 @@ const technology = [
   ],
 ];
 export default function HomePage() {
+  const reducedMotion = useReducedMotion();
+  const [desktop, setDesktop] = useState(true);
+  useEffect(() => {
+    const query = matchMedia("(min-width:768px)");
+    const update = () => setDesktop(query.matches);
+    update(); query.addEventListener("change",update);
+    return () => query.removeEventListener("change",update);
+  }, []);
   const [scale, setScale] = useState(0),
     [partner, setPartner] = useState(0),
     [scaleEntered, setScaleEntered] = useState(false),
+    [introEntered, setIntroEntered] = useState(false),
     [partnerPaused, setPartnerPaused] = useState(false),
     [partnersVisible, setPartnersVisible] = useState(false);
   const scaleSection = useRef<HTMLElement>(null),
     rail = useRef<HTMLDivElement>(null),
+    partnerTabs = useRef<HTMLDivElement>(null),
     hero = useRef<HTMLElement>(null),
     road = useRef<HTMLElement>(null),
     careers = useRef<HTMLDivElement>(null),
     partnerSection = useRef<HTMLElement>(null);
+  useCarouselMotion(rail);
+  useCarouselMotion(partnerTabs);
   const [careerIndex, setCareerIndex] = useState(0);
   useEffect(() => {
     const reduced = matchMedia("(prefers-reduced-motion: reduce)");
@@ -226,7 +232,7 @@ export default function HomePage() {
         h.style.setProperty("--hero-title-y", `${-Math.min(y, vh * 1.5)}px`);
         h.style.setProperty(
           "--hero-title-x",
-          `${innerWidth >= 768 ? clamp(y / (vh * 1.85)) * 50 : 0}px`,
+          `${innerWidth >= 768 ? clamp(((y + vh - (h.querySelector("h1")?.offsetTop || 0)) / (vh + (h.querySelector("h1")?.offsetHeight || 255)) - 0.5) * 2) * 50 : 0}px`,
         );
         h.style.setProperty(
           "--hero-intro",
@@ -236,7 +242,7 @@ export default function HomePage() {
           ),
         );
         h.style.setProperty("--hero-dot", String(1 - clamp(y / (vh * 0.15))));
-        h.classList.toggle("intro-entered", y > vh * 0.225);
+        setIntroEntered(y > vh * 0.225);
       }
       const r = road.current;
       if (r) {
@@ -315,16 +321,21 @@ export default function HomePage() {
     const node = careers.current;
     if (!node || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     let timer: ReturnType<typeof setInterval> | undefined;
-    const observer = new IntersectionObserver(([entry]) => {
+    let inView = false;
+    const refresh = () => {
       if (timer) clearInterval(timer);
-      if (entry.isIntersecting)
-        timer = setInterval(() => {
-          if (!document.hidden) setCareerIndex((value) => value + 1);
-        }, 2000);
+      if (inView && !document.hidden)
+        timer = setInterval(() => setCareerIndex((value) => value + 1), 2000);
+    };
+    const observer = new IntersectionObserver(([entry]) => {
+      inView = entry.isIntersecting;
+      refresh();
     });
     observer.observe(node);
+    document.addEventListener("visibilitychange", refresh);
     return () => {
       observer.disconnect();
+      document.removeEventListener("visibilitychange", refresh);
       if (timer) clearInterval(timer);
     };
   }, []);
@@ -350,7 +361,7 @@ export default function HomePage() {
       observer.disconnect();
       if (timer) clearInterval(timer);
     };
-  }, []);
+  }, [scale, desktop]);
   useEffect(() => {
     if (
       !partnersVisible ||
@@ -419,11 +430,11 @@ export default function HomePage() {
         <section ref={hero} className="home-hero-scroll">
           <div className="home-hero">
             <div className="home-hero-film">
-              <Film name="WAABI_27s_2K_antinomy_export_250823.mp4" />
+              <Film name="WAABI_27s_2K_antinomy_export_250823.mp4" responsiveName="Hero_27Sec_responsive.mp4" />
               <div className="home-hero-shade" />
             </div>
             <p className="home-hero-intro">
-              Waabi is pioneering the future of Physical AI.
+              {"Waabi is pioneering the future of Physical AI.".split(" ").map((word, i) => <span key={i}><motion.span initial={{ opacity: 0 }} animate={{ opacity: reducedMotion || introEntered ? 1 : 0 }} transition={{ duration: .1, ease: "linear", delay: i * .07 }} className="home-intro-word">{word}</motion.span>{i < 8 ? " " : ""}</span>)}
             </p>
             <h1>
               <span className="home-title-line">
@@ -461,7 +472,7 @@ export default function HomePage() {
                 });
               }}
               aria-label="Discover Waabi"
-            />
+            ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 9v6m-3-3 3 3 3-3" stroke="white" strokeWidth=".9" strokeLinecap="round" strokeLinejoin="round" /></svg></a>
           </div>
         </section>
         <section id="our-road" ref={road} className="home-road">
@@ -508,14 +519,19 @@ export default function HomePage() {
             className={`home-scale-sticky ${scaleEntered ? "is-entered" : ""}`}
           >
             <div className="home-scale-media">
+              <motion.div className="home-preview-visibility" animate={{opacity:scaleEntered && desktop ? 0 : 1,scale:scaleEntered && desktop ? .6 : 1}}>
               <img
                 className="home-scale-preview"
                 src={media("1761183902-waabi_road2_05483.webp")}
                 alt="Waabi truck on a highway"
               />
+              </motion.div>
               {scaleItems.map((item, i) => (
-                <div
+                <motion.div
                   key={item[0]}
+                  initial={false}
+                  animate={!desktop ? {y:0,scale:1,opacity:i === scale ? 1 : 0} : reducedMotion ? { y: 0, scale: 1, opacity: i === scale ? 1 : 0 } : { opacity:1, y: !scaleEntered || i > scale ? "100vh" : `${-3 * (scale - i)}vh`, scale: i === scale ? 1 : 1 - .05 * (scale - i) }}
+                  transition={{ duration: 1, ease: sourceEase, delay: scaleEntered ? .07 * i : .07 * (scale - i) - .07 }}
                   className={
                     i === scale ? "is-active" : i < scale ? "is-stacked" : ""
                   }
@@ -527,7 +543,8 @@ export default function HomePage() {
                   }
                 >
                   <Film name={item[2]} />
-                </div>
+                  <motion.div className="home-strength-shade" animate={{ opacity: i === scale ? 0 : 1 }} />
+                </motion.div>
               ))}
             </div>
             <div className="home-scale-copy">
@@ -545,26 +562,30 @@ export default function HomePage() {
                 aria-label="Our strengths"
               >
                 {scaleItems.map((item, i) => (
-                  <div key={item[0]}>
-                    <button
+                  <motion.div layout key={item[0]} data-active={scale===i} initial={{opacity:.3}} animate={{opacity:scale === i ? 1 : .46}}>
+                    <motion.button layout
                       role="tab"
                       aria-selected={scale === i}
                       aria-controls="home-scale-description"
                       onClick={() => setScale(i)}
                     >
                       {item[0]}
-                    </button>
+                    </motion.button>
                     {scale === i && (
-                      <p
+                      <motion.p layout initial={{opacity:0}} animate={{opacity:1}}
                         id="home-scale-description"
                         role="tabpanel"
                         className="home-sans"
                       >
                         {item[1]}
-                      </p>
+                      </motion.p>
                     )}
-                  </div>
+                  </motion.div>
                 ))}
+                <div className="home-mobile-strength-controls">
+                  <div className="home-mobile-strength-track"><motion.div key={scale} initial={{x:"-100%"}} animate={{x:"0%"}} transition={{duration:reducedMotion ? 0 : 5,ease:"easeInOut"}} /></div>
+                  <div className="home-mobile-strength-arrows"><motion.button whileHover={{scale:1.05}} whileTap={{scale:.95}} aria-label="Previous strength" onClick={() => setScale(value=>(value+2)%3)}>←</motion.button><motion.button whileHover={{scale:1.05}} whileTap={{scale:.95}} aria-label="Next strength" onClick={() => setScale(value=>(value+1)%3)}>→</motion.button></div>
+                </div>
               </div>
             </div>
           </div>
@@ -578,9 +599,9 @@ export default function HomePage() {
             <div className="home-cover-shade" />
             <div>
               <MotionCopy>The technology behind Waabi.</MotionCopy>
-              <a className="home-pill" href="https://waabi.ai/insights">
+              <motion.a whileHover={{scale:1.05}} whileTap={{scale:.95}} className="home-pill" href="https://waabi.ai/insights">
                 Explore the tech
-              </a>
+              </motion.a>
             </div>
           </div>
           <div className="home-tech-cards">
@@ -596,7 +617,7 @@ export default function HomePage() {
                   <p>{item[0]}</p>
                   <h3>{item[1]}</h3>
                 </div>
-                <span className="home-card-plus">↗</span>
+                <motion.span whileHover={{scale:1.05}} whileTap={{scale:.95}} className="home-card-plus" aria-hidden="true">→</motion.span>
               </a>
             ))}
           </div>
@@ -621,16 +642,14 @@ export default function HomePage() {
               approach, rigorous validation, and a culture where safety is
               everyone&apos;s job.
             </MotionCopy>
-            <a className="home-pill" href="/safety">
+            <motion.a whileHover={{scale:1.05}} whileTap={{scale:.95}} className="home-pill" href="/safety">
               Explore our approach
-            </a>
+            </motion.a>
           </div>
         </section>
         <section
           ref={partnerSection}
           className={`home-partners ${partnerPaused || !partnersVisible ? "is-paused" : ""}`}
-          onMouseEnter={() => setPartnerPaused(true)}
-          onMouseLeave={() => setPartnerPaused(false)}
           onFocusCapture={() => setPartnerPaused(true)}
           onBlurCapture={(event) => {
             if (!event.currentTarget.contains(event.relatedTarget))
@@ -649,14 +668,13 @@ export default function HomePage() {
             </p>
           </div>
           <div className="home-partner-stage">
-            <img
-              className="home-partner-photo"
-              src={media(current.image)}
-              alt={`${current.name} and Waabi partnership`}
-            />
-            <div className="home-partner-card">
+            <AnimatePresence initial={false}>
+              <motion.img key={current.image} initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:.4,ease:sourceEase}} className="home-partner-photo" src={media(current.image)} alt={`${current.name} and Waabi partnership`} />
+            </AnimatePresence>
+            <motion.div layout className="home-partner-card">
               <div
                 className="home-partner-tabs"
+                ref={partnerTabs}
                 role="tablist"
                 aria-label="Partners"
               >
@@ -672,28 +690,28 @@ export default function HomePage() {
                   </button>
                 ))}
               </div>
-              <blockquote id="home-partner-quote" role="tabpanel" key={partner}>
+              <AnimatePresence mode="popLayout">
+              <PartnerQuote key={partner}>
                 {current.review.split(/(\s+)/).map((word, index) =>
                   /\S/.test(word) ? (
-                    <span
+                    <motion.span initial={{opacity:0}} animate={{opacity:1}} transition={{duration:.1,ease:"linear",delay:Math.floor(index/2)*.03}}
                       className="home-quote-word"
                       key={`${partner}-${index}`}
-                      style={{
-                        animationDelay: `${0.4 + Math.floor(index / 2) * 0.03}s`,
-                      }}
+
                     >
                       {word}
-                    </span>
+                    </motion.span>
                   ) : (
                     word
                   ),
                 )}
-              </blockquote>
-              <p className="home-partner-author" key={`author-${partner}`}>
-                {current.author}
+              </PartnerQuote>
+              <motion.p layout initial={{opacity:0}} animate={{opacity:1,transition:{duration:.4,ease:sourceEase,delay:1}}} exit={{opacity:0}} className="home-partner-author" key={`author-${partner}`}>
+                <motion.span initial={{opacity:0,x:10}} animate={{opacity:1,x:0,transition:{duration:.4,ease:sourceEase,delay:1}}}>{current.author}</motion.span>
                 <br />
-                <span>{current.authorTitle}</span>
-              </p>
+                <motion.span initial={{opacity:0,x:10}} animate={{opacity:1,x:0,transition:{duration:.4,ease:sourceEase,delay:1.1}}}>{current.authorTitle}</motion.span>
+              </motion.p>
+              </AnimatePresence>
               <div className="home-partner-bottom">
                 <div className="home-partner-mark" key={partner}>
                   <svg viewBox="0 0 82 82" aria-hidden="true">
@@ -708,15 +726,15 @@ export default function HomePage() {
                   <img src={media(current.logo)} alt={current.name} />
                 </div>
                 {current.slug && (
-                  <a
+                  <motion.a whileHover={{scale:1.05}} whileTap={{scale:.95}}
                     className="home-pill"
                     href={`https://waabi.ai/insights/${current.slug}`}
                   >
                     See the details
-                  </a>
+                  </motion.a>
                 )}
               </div>
-            </div>
+            </motion.div>
           </div>
         </section>
         <section className="home-insights">
@@ -728,21 +746,21 @@ export default function HomePage() {
                 and the ideas shaping the future of autonomy.
               </p>
               <div className="home-insights-controls">
-                <a className="home-pill" href="https://waabi.ai/insights">
+                <motion.a whileHover={{scale:1.05}} whileTap={{scale:.95}} className="home-pill" href="https://waabi.ai/insights">
                   View all
-                </a>
-                <button
+                </motion.a>
+                <motion.button whileHover={{scale:1.05}} whileTap={{scale:.95}}
                   aria-label="Previous insights"
                   onClick={() => moveInsights(-1)}
                 >
                   ←
-                </button>
-                <button
+                </motion.button>
+                <motion.button whileHover={{scale:1.05}} whileTap={{scale:.95}}
                   aria-label="Next insights"
                   onClick={() => moveInsights(1)}
                 >
                   →
-                </button>
+                </motion.button>
               </div>
             </div>
           </div>
@@ -772,42 +790,29 @@ export default function HomePage() {
         </section>
         <section className="home-careers">
           <MotionCopy>Build Physical AI with us.</MotionCopy>
-          <a className="home-pill" href="https://waabi.ai/careers">
+          <motion.a whileHover={{scale:1.05}} whileTap={{scale:.95}} className="home-pill" href="https://waabi.ai/careers">
             Join the team
-          </a>
+          </motion.a>
           <div className="home-careers-collage" ref={careers}>
-            {[
-              "1760350326-waabi_portrait_felicia_00336_final.webp",
-              "1760350326-waabi_scout_00761_final.webp",
-              "1761184004-251006_waabi_collab_05_1012_a.webp",
-              "1760350326-waabi_inspection_02613_final.webp",
-              "1760350326-waabi_portrait_felicia_00336_final.webp",
-              "1760350326-waabi_scout_00761_final.webp",
-            ].map((name, i) =>
-              (i - (careerIndex % 6) + 6) % 6 < 4 ? (
-                <img
-                  src={media(name)}
-                  key={`${name}-${i}`}
-                  style={
-                    {
-                      "--career-slot": (i - (careerIndex % 6) + 6) % 6,
-                    } as CSSProperties
-                  }
-                  data-slot={(i - (careerIndex % 6) + 6) % 6}
-                  data-entering={
-                    careerIndex > 0 && (i - (careerIndex % 6) + 6) % 6 === 3
-                  }
-                  alt={
-                    [
-                      "A Waabi team member",
-                      "Waabi trucks on the road",
-                      "The Waabi team collaborating",
-                      "A team member inspecting a Waabi truck",
-                    ][i % 4]
-                  }
-                />
-              ) : null,
-            )}
+            <AnimatePresence initial={false}>
+              {[
+                "1760350326-waabi_portrait_felicia_00336_final.webp",
+                "1760350326-waabi_scout_00761_final.webp",
+                "1761184004-251006_waabi_collab_05_1012_a.webp",
+                "1760350326-waabi_inspection_02613_final.webp",
+                "1760350326-waabi_portrait_felicia_00336_final.webp",
+                "1760350326-waabi_scout_00761_final.webp",
+              ].map((name, i) => {
+                const slot = (i - (careerIndex % 6) + 6) % 6;
+                return slot < 4 ? <motion.div layout key={i} data-slot={slot} className="home-career-frame" exit={{zIndex:0}} transition={reducedMotion ? {duration:0} : {layout:careerTransition,...careerTransition,zIndex:{duration:0}}}>
+                  <motion.div layout initial={{x:"100%"}} animate={{x:"0%"}} exit={{scale:.5,x:20}} transition={reducedMotion ? {duration:0} : careerTransition} className="home-career-window" style={{borderRadius:12}}>
+                    <motion.div layout initial={{scale:1.5}} animate={{scale:1}} transition={reducedMotion ? {duration:0} : careerTransition} className="home-career-crop">
+                      <img src={media(name)} alt={["A Waabi team member","Waabi trucks on the road","The Waabi team collaborating","A team member inspecting a Waabi truck"][i%4]} />
+                    </motion.div>
+                  </motion.div>
+                </motion.div> : null;
+              })}
+            </AnimatePresence>
           </div>
         </section>
       </main>

@@ -1,0 +1,95 @@
+{
+  "evidence": "ev_269d0a307aa4f8c531283018779d20117a6fcc2c98b829152c5e84f1e53bb080",
+  "scripts": [
+    {
+      "url": "https://waabi.ai/_next/static/chunks/1555lq1nx0dk3.js",
+      "sha256": "6f2bf462900eebfa39fb9b2ed7f41b666e58b97a19f3d253250ff9e38a8f109e",
+      "bytes": 44841
+    },
+    {
+      "url": "https://waabi.ai/_next/static/chunks/046j9s7-cvonn.js",
+      "sha256": "20ddf902f0fa610c1ecef5051cf14c10f6da4ab8eb083165fb7f789c5e54a2cc",
+      "bytes": 232561
+    },
+    {
+      "url": "https://waabi.ai/_next/static/chunks/0nuunyhno~gde.js",
+      "sha256": "d91b0be3404eec3ec75ffa0f1454a2774d0c8bda0c0806e5fc3b50cc8c9049e0",
+      "bytes": 160793
+    },
+    {
+      "url": "https://waabi.ai/_next/static/chunks/turbopack-0up4j2brt3kh..js",
+      "sha256": "1b0d262aa7bb59590e0e917da45bdb7852389cad78dfb4fcbd4ff7fe578f91b8",
+      "bytes": 10579
+    },
+    {
+      "url": "https://waabi.ai/_next/static/chunks/11jbb01nkl6hp.js",
+      "sha256": "6e7c05d1646968205cfd6d2dd60f51d56e4054af516a58d21341c76405fa6334",
+      "bytes": 10767
+    },
+    {
+      "url": "https://waabi.ai/_next/static/chunks/0qgpligpdhtxv.js",
+      "sha256": "3bfee5a790ca341039b058bd7b331fb21586db6cc334013ede071b149dfe7b0b",
+      "bytes": 21922
+    },
+    {
+      "url": "https://waabi.ai/_next/static/chunks/0ln5tys141le5.js",
+      "sha256": "faac7ff4b3adab8d55c54bf9706d70c61f03c4ae63fdd19c70744a6fc51a44a6",
+      "bytes": 167129
+    },
+    {
+      "url": "https://waabi.ai/_next/static/chunks/09l34yiix_nv9.js",
+      "sha256": "6dd9c7a4a119139e9fee782246b84cbf71a7c57ed994b00458f2e46c0a811200",
+      "bytes": 247941
+    },
+    {
+      "url": "https://waabi.ai/_next/static/chunks/0p6q.4daz3muf.js",
+      "sha256": "f4307d20a50e07541c8ace71034d32fec2d6c3b0c82031e05167ce9e9049188b",
+      "bytes": 217952
+    },
+    {
+      "url": "https://waabi.ai/_next/static/chunks/0ouq3eq9_t.u5.js",
+      "sha256": "f7ef556468a70a312abf237fcf9cddf7d8d040c31577dfda4bb9471b96947b6f",
+      "bytes": 3910
+    },
+    {
+      "url": "https://waabi.ai/_next/static/chunks/09hxebbzt~c7e.js",
+      "sha256": "f9bfc7f4960ed8104b0ec62a4224cd02f537b75ddb81bb3cdd1d70a4303b5675",
+      "bytes": 3377
+    },
+    {
+      "url": "https://waabi.ai/_next/static/chunks/0t11oi0wk8t1j.js",
+      "sha256": "fe05e93ef56473390e643a86f2aeec3c0840d7c650c98035caef159d00e02369",
+      "bytes": 54643
+    },
+    {
+      "url": "https://waabi.ai/_next/static/chunks/0~4x4uo40d~-y.js",
+      "sha256": "e6452a2b102dd0d00843d2c7542e1174e0603640feeb976b301861c7c91329d6",
+      "bytes": 16645
+    },
+    {
+      "url": "https://waabi.ai/_next/static/chunks/0nqb4gsffynqw.js",
+      "sha256": "ad5fa00d02ffd5d16b16a4d56559a5ca6d48b61a534161b88d6d35b9de31f2d4",
+      "bytes": 99713
+    },
+    {
+      "url": "https://waabi.ai/_next/static/chunks/0c.6aort~cu4t.js",
+      "sha256": "c11216fb905a9ab169082e1463338baa9057eae68ef9390e4a7bcfbe8873b09e",
+      "bytes": 31197
+    },
+    {
+      "url": "https://waabi.ai/_next/static/chunks/03~yq9q893hmn.js",
+      "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683",
+      "bytes": 112541
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-1DQN0FRLSK",
+      "sha256": "00fd8e23e0550885171dcb0d9fdb9a9984b29b3f4c929b4b52489857075a32af",
+      "bytes": 566392
+    },
+    {
+      "url": "https://waabi.ai/_next/static/chunks/0-vu8s34k5js5.js",
+      "sha256": "7a19ba145cc480788f3c65ea503865b3abe7dab143cb61be22f5b3efbdf62ddc",
+      "bytes": 7155
+    }
+  ]
+}

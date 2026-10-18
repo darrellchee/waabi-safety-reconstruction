@@ -1,6 +1,8 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { Fragment, forwardRef, useEffect, useRef, useState } from "react";
+import { AnimatePresence, LayoutGroup, MotionConfig, motion, useInView, useMotionValue, useMotionValueEvent, usePresenceData, useReducedMotion, useScroll, useTransform } from "motion/react";
 import { Header, Footer, CookieConsent } from "./SiteChrome";
+import { useCarouselMotion } from "./useCarouselMotion";
 import { insights } from "./insights-data";
 const A = "/assets/";
 const philosophy = [
@@ -79,139 +81,82 @@ const practices = [
     text: "Continuous performance tracking and immediate safety-critical handling within the onboard system.",
   },
 ];
+const ease = [.19, 1, .22, 1] as const;
+const spring = { type: "spring", stiffness: 140, damping: 22 } as const;
+const revealVariants = {
+  hidden: (index: number) => ({ y: 200 * (index + 1) }),
+  visible: { y: 0, transition: { y: { type: "spring" as const, stiffness: 80, damping: 20 } } },
+};
+function SafetyTitle({ lines, mobileJoinLast = false }: { lines: string[]; mobileJoinLast?: boolean }) {
+  const reduced = useReducedMotion();
+  return <>{lines.map((line, lineIndex) => <Fragment key={line}>
+    {line.split(" ").map((word, wordIndex, words) => <Fragment key={`${word}-${wordIndex}`}>
+      <motion.span className="safety-motion-word" initial={reduced ? false : { opacity: 0, x: 20 }}
+        whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}
+        transition={{ duration: .4, ease, delay: reduced ? 0 : (lines.slice(0, lineIndex).reduce((count, text) => count + text.split(" ").length, 0) + wordIndex) * .07 }}>{word}</motion.span>
+      {wordIndex < words.length - 1 && " "}
+    </Fragment>)}{lineIndex < lines.length - 1 && <>{mobileJoinLast && lineIndex === lines.length - 2 && " "}<br className={mobileJoinLast && lineIndex === lines.length - 2 ? "desktop-break" : undefined} /></>}
+  </Fragment>)}</>;
+}
+function TechnologyImage({ image, active, width, mobile }: { image: string; active: boolean; width: number; mobile: boolean }) {
+  const ratio = image.includes("04462") ? 2000 / 1333 : image.includes("10-31") ? 2000 / 1118 : 2000 / 1121;
+  const available = Math.max(1, width - 96);
+  const panelWidth = mobile ? Math.max(1, width - 48) : available / 1.314 * (active ? 1 : .157);
+  const panelHeight = mobile ? (active ? 600 : 120) : 720;
+  const fittedWidth = Math.max(panelWidth, panelHeight * ratio);
+  const percentage = fittedWidth / panelWidth * 100;
+  return <motion.div layout className="panel-media"><motion.div layout style={{
+    aspectRatio: ratio, width: `${percentage}%`, marginLeft: `${-(percentage - 100) * .5}%`,
+    marginTop: `${-(fittedWidth / ratio - panelHeight) * .5}px`,
+  }}><img src={A + image} alt="" /></motion.div></motion.div>;
+}
+const StoryNumber = forwardRef<HTMLSpanElement, { current: number }>(function StoryNumber({ current }, ref) {
+  const direction = usePresenceData() as { get: () => number };
+  return <motion.span ref={ref} initial={{ y: `${120 * direction.get()}%` }} animate={{ y: 0 }}
+    exit={{ y: `${-120 * direction.get()}%` }} transition={spring}>0{current + 1}</motion.span>;
+});
 export default function SafetyPage() {
-  const [active, setActive] = useState(0),
-    [tech, setTech] = useState(0),
-    [slide, setSlide] = useState(0);
-  const story = useRef<HTMLDivElement>(null),
-    rail = useRef<HTMLDivElement>(null);
-  const page = useRef<HTMLElement>(null);
-  const practicesRail = useRef<HTMLDivElement>(null);
-  const direction = useRef(1);
-  const previousActive = useRef(0);
-  // Analytic damped spring samples reproduce the reference Framer spring without
-  // introducing a second animation runtime.
-  const springFrames = (stiffness: number, damping: number, from: number, unit = "px") => {
-    const rate = damping / 2, frequencySquared = stiffness - rate * rate;
-    const omega = Math.sqrt(Math.abs(frequencySquared));
-    return Array.from({ length: 91 }, (_, i) => {
-      const t = i / 60;
-      const remaining = Math.exp(-rate * t) * (frequencySquared > 0
-        ? Math.cos(omega * t) + rate / omega * Math.sin(omega * t)
-        : Math.cosh(omega * t) + rate / omega * Math.sinh(omega * t));
-      return { transform: `translateY(${from * remaining}${unit})`, offset: i / 90 };
-    });
+  const [active, setActive] = useState(-1), [tech, setTech] = useState(0), [slide, setSlide] = useState(0);
+  const [mobile, setMobile] = useState(false);
+  const [narrow, setNarrow] = useState(false);
+  const [panelWidth, setPanelWidth] = useState(1440);
+  const reduced = useReducedMotion();
+  const story = useRef<HTMLDivElement>(null), storyCopies = useRef<HTMLDivElement>(null), rail = useRef<HTMLDivElement>(null);
+  const page = useRef<HTMLElement>(null), hero = useRef<HTMLElement>(null);
+  const practicesRail = useRef<HTMLDivElement>(null), stats = useRef<HTMLDivElement>(null), panels = useRef<HTMLDivElement>(null);
+  useCarouselMotion(practicesRail);
+  useCarouselMotion(rail);
+  const direction = useMotionValue(1);
+  const storyInView = useInView(story, { once: true, amount: .2 });
+  const statsInView = useInView(stats, { once: true, amount: .2 });
+  const panelsInView = useInView(panels, { once: true, amount: .2 });
+  const insightsInView = useInView(rail, { once: true, amount: .2 });
+  const { scrollYProgress, scrollXProgress } = useScroll({ target: story, container: mobile ? storyCopies : undefined, offset: ["start center", "end end"] });
+  const { scrollYProgress: heroProgress } = useScroll({ target: hero, offset: ["start end", "end start"] });
+  const heroY = useTransform(heroProgress, [0, 1], ["-12%", "12%"]);
+  const lineY = useTransform(mobile ? scrollXProgress : scrollYProgress, [0, 1], ["-100%", "0%"]);
+  const lineX = useTransform(scrollXProgress, [0, 1], ["-100%", "0%"]);
+  useEffect(() => {
+    const query = matchMedia("(max-width: 768px)");
+    const update = () => { setMobile(query.matches); setNarrow(innerWidth < 768); };
+    update(); query.addEventListener("change", update); window.addEventListener("resize", update);
+    return () => { query.removeEventListener("change", update); window.removeEventListener("resize", update); };
+  }, []);
+  const updateSection = (progress: number) => {
+    direction.set(progress > (scrollYProgress.getPrevious() ?? 0) ? 1 : -1);
+    setActive(Math.max(1, Math.min(3, Math.round(progress * 3))) - 1);
   };
   useEffect(() => {
-    if (!page.current || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const root = page.current;
-    const animations: Animation[] = [];
-    const words: HTMLElement[] = [];
-    page.current.querySelectorAll<HTMLElement>("h1, .section-heading h2, .philosophy-intro h2, .insights > .container > h2").forEach(heading => {
-      let wordIndex = 0, lineIndex = 0;
-      const walker = document.createTreeWalker(heading, NodeFilter.SHOW_TEXT);
-      const nodes: Text[] = [];
-      while (walker.nextNode()) nodes.push(walker.currentNode as Text);
-      nodes.forEach(node => {
-        if (node.previousSibling?.nodeName === "BR") wordIndex = ++lineIndex;
-        const fragment = document.createDocumentFragment();
-        node.textContent?.split(/(\s+)/).forEach(word => {
-          if (!word.trim()) { fragment.append(word); return; }
-          const span = document.createElement("span");
-          span.textContent = word;
-          span.className = "safety-motion-word";
-          span.style.setProperty("--word-delay", `${wordIndex++ * .07}s`);
-          fragment.append(span); words.push(span);
-        });
-        node.replaceWith(fragment);
-      });
-    });
-    const wordObserver = new IntersectionObserver(entries => entries.forEach(entry => {
-      if (entry.isIntersecting) { entry.target.classList.add("motion-visible"); wordObserver.unobserve(entry.target); }
-    }));
-    words.forEach(word => wordObserver.observe(word));
-    const revealObserver = new IntersectionObserver(entries => entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      const group = entry.target as HTMLElement;
-      const items = group.matches(".stats") ? group.querySelectorAll<HTMLElement>(".stat") : group.matches(".technology-panels") ? group.children : group.querySelectorAll<HTMLElement>(".insight-card");
-      Array.from(items).forEach((item, index) => {
-        (item as HTMLElement).style.transform = "";
-        animations.push(item.animate(springFrames(80, 20, 200 * (index + 1)), { duration: 1500, fill: "both" }));
-      });
-      revealObserver.unobserve(group);
-    }), { threshold: .2 });
-    page.current.querySelectorAll<HTMLElement>(".stats, .technology-panels, .insights-rail").forEach(group => {
-      Array.from(group.children).forEach((item, index) => (item as HTMLElement).style.transform = `translateY(${200 * (index + 1)}px)`);
-      revealObserver.observe(group);
-    });
-    return () => {
-      wordObserver.disconnect(); revealObserver.disconnect();
-      animations.forEach(animation => animation.cancel());
-      words.forEach(word => word.replaceWith(document.createTextNode(word.textContent || "")));
-      root.querySelectorAll<HTMLElement>(".stat, .technology-panel, .insight-card").forEach(item => { item.style.transform = ""; });
-    };
+    if (!panels.current) return;
+    const observer = new ResizeObserver(([entry]) => setPanelWidth(entry.borderBoxSize[0]?.inlineSize || entry.target.getBoundingClientRect().width));
+    observer.observe(panels.current);
+    return () => observer.disconnect();
   }, []);
-  useEffect(() => {
-    const image = story.current?.querySelector<HTMLElement>(".story-visual img.is-active");
-    const counter = story.current?.querySelector<HTMLElement>(".story-number > span");
-    const previous = previousActive.current;
-    previousActive.current = active;
-    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const frames = Array.from({ length: 91 }, (_, i) => {
-      const t = i / 60, rate = 11, omega = Math.sqrt(19);
-      const remaining = Math.exp(-rate * t) * (Math.cos(omega * t) + rate / omega * Math.sin(omega * t));
-      return { transform: `scale(${1 + .2 * remaining})`, opacity: Math.max(0, Math.min(1, 1 - remaining)), offset: i / 90 };
-    });
-    const animations = [image?.animate(frames, { duration: 1500 })];
-    if (previous !== active) {
-      const oldImage = story.current?.querySelectorAll<HTMLElement>(".story-visual img")[previous];
-      animations.push(oldImage?.animate(frames.map(frame => ({ opacity: 1 - frame.opacity, offset: frame.offset })), { duration: 1500 }));
-    }
-    let outgoing: HTMLElement | undefined;
-    if (counter && previous !== active) {
-      animations.push(counter.animate(springFrames(140, 22, 120 * direction.current, "%"), { duration: 1500 }));
-      outgoing = document.createElement("span");
-      outgoing.textContent = `0${previous + 1}`;
-      outgoing.className = "story-number-exit";
-      outgoing.setAttribute("aria-hidden", "true");
-      counter.parentElement?.append(outgoing);
-      const outgoingFrames = springFrames(140, 22, 120 * direction.current, "%").map(frame => ({
-        ...frame, transform: `${frame.transform} translateY(${-120 * direction.current}%)`,
-      }));
-      const exitAnimation = outgoing.animate(outgoingFrames, { duration: 1500, fill: "forwards" });
-      exitAnimation.finished.then(() => outgoing?.remove()).catch(() => {});
-      animations.push(exitAnimation);
-    }
-    return () => { animations.forEach(animation => animation?.cancel()); outgoing?.remove(); };
-  }, [active]);
-  useEffect(() => {
-    let frame = 0;
-    const update = () => {
-      cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => {
-        const element = story.current;
-        if (element && innerWidth >= 768) {
-          const rect = element.getBoundingClientRect();
-          const progress = Math.max(0, Math.min(1, (innerHeight / 2 - rect.top) / (rect.height - innerHeight / 2)));
-          const selected = Math.max(1, Math.min(3, Math.round(progress * 3))) - 1;
-          setActive(previous => { direction.current = selected >= previous ? 1 : -1; return selected; });
-          element.style.setProperty("--story-progress", `${progress}`);
-        }
-        const hero = page.current?.querySelector<HTMLElement>(".hero");
-        if (hero) {
-          const rect = hero.getBoundingClientRect();
-          const progress = Math.max(0, Math.min(1, (innerHeight - rect.top) / (rect.height + innerHeight)));
-          hero.style.setProperty("--safety-parallax", `${-12 + progress * 24}%`);
-        }
-      });
-    };
-    window.addEventListener("scroll", update, { passive: true });
-    update();
-    return () => {
-      window.removeEventListener("scroll", update);
-      cancelAnimationFrame(frame);
-    };
-  }, []);
+  useMotionValueEvent(scrollYProgress, "change", updateSection);
+  useMotionValueEvent(scrollXProgress, "change", updateSection);
+  const reveal = (index: number, visible: boolean) => reduced ? {} : ({
+    custom: index, variants: revealVariants, initial: "hidden", animate: visible ? "visible" : "hidden",
+  });
   const move = (d: number) => {
     const element = practicesRail.current;
     element?.scrollBy({ left: d * element.clientWidth, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
@@ -219,32 +164,29 @@ export default function SafetyPage() {
   return (
     <>
       <Header />
+      <MotionConfig transition={{ duration: .4, ease }} reducedMotion="user">
       <main ref={page} className="safety-page">
-        <section className="hero" id="top">
-          <img
+        <section className="hero" id="top" ref={hero}>
+          <motion.img style={{ y: reduced ? 0 : heroY }}
             src={A + "1760007662-e65a0af926da45b75ba890d3d0a5bb24469ce5be.webp"}
             alt="Waabi truck and safety operators viewed from above"
           />
           <div className="hero-shade" />
           <h1 className="container">
-            Redefining
-            <br />
-            safety.
+            <SafetyTitle lines={["Redefining", "safety."]} />
           </h1>
         </section>
         <section className="stakes section-space" id="stakes">
           <div className="container section-heading">
             <h2>
-              The stakes are
-              <br />
-              real and rising.
+              <SafetyTitle lines={["The stakes are", "real and rising."]} />
             </h2>
             <p className="serif-description">
               It’s time for an approach to safety that is designed for the
               realities of our roads and the possibilities of Physical AI.
             </p>
           </div>
-          <div className="container stats">
+          <div className="container stats" ref={stats}>
             {[
               [
                 "39,345",
@@ -258,20 +200,18 @@ export default function SafetyPage() {
                 "87%",
                 "percent of fatal truck crashes where human error was a critical factor.",
               ],
-            ].map(([n, t]) => (
-              <div className="stat" key={n}>
+            ].map(([n, t], index) => (
+              <motion.div className="stat" key={n} {...reveal(index, statsInView)}>
                 <p>{t}</p>
                 <span>{n}</span>
-              </div>
+              </motion.div>
             ))}
           </div>
         </section>
         <section className="philosophy" id="philosophy">
           <div className="philosophy-intro container">
             <h2>
-              Safety is core
-              <br />
-              to our DNA.
+              <SafetyTitle lines={["Safety is core", "to our DNA."]} />
             </h2>
             <p>
               The future of autonomous transportation requires us to build on
@@ -281,75 +221,71 @@ export default function SafetyPage() {
             </p>
           </div>
           <div className="story container" ref={story}>
-            <div className="story-counter">
-              <div className="story-number"><span>0{active + 1}</span></div>
+            <div className="story-content">
+            <div className="story-counter-positioner">
+            <motion.div className="story-counter" {...reveal(0, storyInView)}>
+              <div className="story-number"><AnimatePresence initial={false} mode="popLayout" custom={direction}>
+                <StoryNumber key={active} current={active} />
+              </AnimatePresence></div>
               <small>/3</small>
+            </motion.div>
             </div>
             <div className="story-line" aria-hidden="true">
-              <div className="story-line-track"><i /></div>
+              <motion.div className="story-line-track" style={narrow ? { x: reduced ? 0 : lineX } : { y: reduced ? 0 : lineY }}><b /><i /></motion.div>
             </div>
             <div
-              className="story-copies"
-              onScroll={(e) => {
-                if (innerWidth < 768) {
-                  const el = e.currentTarget;
-                  const progress = el.scrollLeft / Math.max(1, el.scrollWidth - el.clientWidth);
-                  story.current?.style.setProperty("--story-progress", `${progress}`);
-                  setActive(Math.round(el.scrollLeft / (el.clientWidth + 24)));
-                }
-              }}
+              className="story-copies" ref={storyCopies}
+
             >
               {philosophy.map((item, i) => (
-                <article
+                <motion.article
                   className={"story-copy " + (active === i ? "is-active" : "")}
-                  key={item.title}
+                  key={item.title} {...reveal(i === 0 ? 1 : i, storyInView)}
                 >
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </article>
+                  <motion.div className="story-copy-content" initial={{ opacity: i === 0 ? 1 : .15 }} animate={{ opacity: narrow || active === i ? 1 : .15 }}>
+                    <h3>{item.title}</h3><p>{item.text}</p>
+                  </motion.div>
+                </motion.article>
               ))}
             </div>
+            </div>
             <div className="story-visual">
-              {philosophy.map((item, i) => (
-                <img
-                  key={item.image}
-                  src={A + item.image}
-                  alt={item.title}
-                  className={active === i ? "is-active" : ""}
-                />
-              ))}
+              <div className="story-visual-frame">
+              <motion.div className="story-visual-inner" {...reveal(2, storyInView)}>
+                <AnimatePresence initial={false} mode="popLayout">
+                  {philosophy[active] && <motion.img key={active} src={A + philosophy[active].image} alt={philosophy[active].title}
+                    className="is-active" initial={reduced ? false : { opacity: 0, scale: 1.2 }}
+                    animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} transition={spring} />}
+                </AnimatePresence>
+              </motion.div>
+              </div>
             </div>
           </div>
         </section>
         <section className="technology section-space" id="technology">
           <div className="container section-heading">
             <h2>
-              Technology
-              <br />
-              designed <br className="desktop-break" />
-              to protect.
+              <SafetyTitle lines={["Technology", "designed", "to protect."]} mobileJoinLast />
             </h2>
             <div className="technology-intro">
               <p className="serif-description">
                 Learn how our technology is delivering a safer path forward and
                 setting a new standard for the entire AV industry.
               </p>
-              <a className="pink-button" href="https://waabi.ai/insights">
+              <motion.a className="pink-button" href="https://waabi.ai/insights" whileHover={{ scale: 1.05 }} whileTap={{ scale: .95 }}>
                 Explore our approach
-              </a>
+              </motion.a>
             </div>
           </div>
-          <div className="technology-panels">
+          <div className="technology-panels" ref={panels}><LayoutGroup>
             {technology.map((item, i) => (
-              <article
+              <motion.article layout transition={{ layout: { duration: .4, ease } }} {...reveal(i, panelsInView)}
                 key={item.title}
                 className={"technology-panel " + (tech === i ? "expanded" : "")}
-                onMouseEnter={() => {
-                  if (innerWidth >= 768) setTech(i);
-                }}
+                onMouseEnter={() => setTech(i)}
                 onClick={() => setTech(i)}
               >
-                <img src={A + item.image} alt="" />
+                <TechnologyImage image={item.image} active={tech === i} width={panelWidth} mobile={mobile} />
                 <div className="panel-shade" />
                 <a
                   className="technology-link"
@@ -363,21 +299,21 @@ export default function SafetyPage() {
                     }
                   }}
                 />
-                <div className="panel-copy">
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </div>
-                <button
+                <motion.div layout className="panel-copy" initial={{ opacity: 0 }} animate={{ opacity: tech === i ? 1 : 0 }}>
+                  <motion.h3 layout>{item.title}</motion.h3>
+                  <motion.p layout>{item.text}</motion.p>
+                </motion.div>
+                <motion.button layout animate={{ scale: tech === i ? 0 : 1 }} whileHover={tech === i ? {} : { scale: 1.05 }} whileTap={tech === i ? {} : { scale: .95 }}
                   aria-label={"Explore " + item.title}
                   aria-expanded={tech === i}
                   onClick={() => setTech(i)}
                   className="panel-toggle"
                 >
-                  {tech === i ? "−" : "+"}
-                </button>
-              </article>
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" aria-hidden="true"><rect x="3.5" width="1" height="8" rx=".5" fill="currentColor" /><rect y="4.5" width="1" height="8" rx=".5" transform="rotate(-90 0 4.5)" fill="currentColor" /></svg>
+                </motion.button>
+              </motion.article>
             ))}
-          </div>
+          </LayoutGroup></div>
         </section>
         <section
           className="practices"
@@ -414,20 +350,20 @@ export default function SafetyPage() {
             ))}
           </div>
           <div className="practice-controls">
-            <button
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: .95 }}
               className="circle-button"
               onClick={() => move(-1)}
               aria-label="Previous safety practice"
             >
               ←
-            </button>
-            <button
+            </motion.button>
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: .95 }}
               className="circle-button"
               onClick={() => move(1)}
               aria-label="Next safety practice"
             >
               →
-            </button>
+            </motion.button>
           </div>
           <div className="practice-dots">
             {practices.map((x, i) => (
@@ -442,17 +378,17 @@ export default function SafetyPage() {
         </section>
         <section className="insights section-space" id="insights">
           <div className="container">
-            <h2>Insights</h2>
+            <h2><SafetyTitle lines={["Insights"]} /></h2>
             <div className="insights-intro">
               <p>
                 Explore product deep dives, behind-the-scenes perspectives, and
                 the ideas shaping the future of autonomy.
               </p>
               <div className="insights-controls">
-                <a className="pink-button" href="https://waabi.ai/insights">
+                <motion.a className="pink-button" href="https://waabi.ai/insights" style={{ x: narrow ? "-50%" : "0%" }} whileHover={{ scale: 1.05 }} whileTap={{ scale: .95 }}>
                   View all
-                </a>
-                <button
+                </motion.a>
+                <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: .95 }}
                   className="circle-button"
                   aria-label="Previous insights"
                   onClick={() =>
@@ -460,8 +396,8 @@ export default function SafetyPage() {
                   }
                 >
                   ←
-                </button>
-                <button
+                </motion.button>
+                <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: .95 }}
                   className="circle-button"
                   aria-label="Next insights"
                   onClick={() =>
@@ -469,13 +405,13 @@ export default function SafetyPage() {
                   }
                 >
                   →
-                </button>
+                </motion.button>
               </div>
             </div>
           </div>
           <div className="insights-rail" ref={rail}>
             {insights.map(([image, date, title, slug], i) => (
-              <a
+              <motion.a {...reveal(i, insightsInView)}
                 className="insight-card"
                 href={"https://waabi.ai/insights/" + slug}
                 key={title}
@@ -491,11 +427,12 @@ export default function SafetyPage() {
                   <time>{date}</time>
                 </div>
                 <h3>{title}</h3>
-              </a>
+              </motion.a>
             ))}
           </div>
         </section>
       </main>
+      </MotionConfig>
       <Footer />
       <CookieConsent />
     </>

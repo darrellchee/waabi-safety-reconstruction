@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import SmoothScroll from "../components/SmoothScroll";
+import MotionProvider from "../components/MotionProvider";
 export const metadata: Metadata = {
   icons: { icon: "/assets/1774553027-favicon-32x32.webp" },
   title: "Waabi | Educational Prototype",
@@ -14,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body><SmoothScroll />{children}</body>
+      <body><MotionProvider><SmoothScroll />{children}</MotionProvider></body>
     </html>
   );
 }

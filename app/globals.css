@@ -1390,75 +1390,82 @@ h3 {
   }
 }
 
-/* Motion values traced from the public Safety bundle with REA. */
+/* Motion is performed by the same spring/layout primitives as the reference.
+   Keep CSS transitions off these elements: otherwise they interpolate an already
+   projected transform a second time and lose velocity on reversals. */
 .safety-page .hero h1 { animation: none; }
-.safety-page .hero > img { transform: translateY(var(--safety-parallax, 0%)); }
-.safety-motion-word {
-  display: inline-flex;
-  opacity: 0;
-  transform: translateX(20px);
-  transition: opacity .4s cubic-bezier(.19,1,.22,1) var(--word-delay),
-    transform .4s cubic-bezier(.19,1,.22,1) var(--word-delay);
-}
-.safety-motion-word.motion-visible { opacity: 1; transform: translateX(0); }
-.safety-page .story-counter > span { display: inline-block; }
-.safety-page .story-counter { overflow: clip; }
-.safety-page .story-copy { transition: opacity .3s ease-out; }
-.safety-page .story-visual img { transition: opacity .4s cubic-bezier(.19,1,.22,1); }
-.safety-page .technology-panel {
-  transition: flex .4s cubic-bezier(.19,1,.22,1), height .4s cubic-bezier(.19,1,.22,1);
-}
-.safety-page .panel-copy { transform: none; transition: opacity .3s ease-out; }
-.safety-page .expanded .panel-copy { transition-delay: 0s; }
-.safety-page .panel-toggle { transition: transform .4s cubic-bezier(.19,1,.22,1), opacity .4s; }
-.safety-page .technology-panel.expanded .panel-toggle { transform: scale(0); opacity: 0; }
-.safety-page .practice-slides {
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  transition: none;
-}
-.safety-page .practice-slides::-webkit-scrollbar { display: none; }
-.safety-page .practice-slide { scroll-snap-align: center; }
-@media (max-width: 767px) {
-  .safety-page .story-visual img { opacity: 0; }
-  .safety-page .story-visual img.is-active { opacity: 1; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .safety-motion-word { opacity: 1; transform: none; transition: none; }
-  .safety-page .hero > img { transform: none; }
-}
-/* DNA: the line enters from outside its own clipped track, rather than sticking
-   its endpoint to the viewport. Its progress shares the exact section offsets. */
+.safety-page .hero > img { will-change: transform; }
+.safety-page .safety-motion-word { display: inline-flex; align-items: center; }
 .safety-page .story-number { position: relative; display: grid; overflow: clip; }
 .safety-page .story-number > span { display: block; grid-area: 1 / 1; }
-.safety-page .story-number-exit { position: absolute; top: 0; left: 0; }
+.safety-page .story-counter { overflow: clip; }
+.safety-page .story-copy { opacity: 1; transition: none; }
+.safety-page .story-visual { overflow: visible; }
+.safety-page .story-visual-inner { position: relative; width: 100%; height: 100%; overflow: clip; border-radius: 12px; background: #000; }
+.safety-page .story-visual img { transition: none; opacity: 1; }
+.safety-page .technology-panel { transition: none; }
+.safety-page .panel-copy { transform: none; transition: none; }
+.safety-page .panel-toggle { transition: none; margin-left: -25px; transform: none; }
+.safety-page .technology-panel.expanded .panel-toggle { bottom: 48px; }
+.safety-page .practice-slides { overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; transition: none; }
+.safety-page .practice-slides::-webkit-scrollbar { display: none; }
+.safety-page .practice-slide { scroll-snap-align: center; }
 @media (min-width: 768px) {
-  .safety-page .story-line {
-    top: 0; height: 100%; width: 12px;
-    padding-bottom: 50svh;
-    background: transparent; overflow: clip;
-  }
-  .safety-page .story-line-track {
-    position: relative; height: 100%; width: 2px; margin-inline: 5px;
-    background: var(--pink);
-    transform: translateY(calc((var(--story-progress, 0) - 1) * 100%));
-  }
-  .safety-page .story-line i {
-    position: absolute; top: auto; bottom: -6px; left: 50%;
-    margin: 0; transform: translateX(-50%);
-  }
+  .safety-page .story-line { top: 0; height: 100%; width: 12px; padding-bottom: 50svh; background: transparent; overflow: clip; }
+  .safety-page .story-line-track { position: relative; display: flex; align-items: center; flex-direction: column; justify-content: center; height: 100%; width: 12px; }
+  .safety-page .story-line-track b { height: 100%; width: 2px; background: var(--pink); translate: 0 12px; }
+  .safety-page .story-line i { position: static; width: 12px; height: 12px; margin: 0; transform: none; translate: 0 12px; }
 }
 @media (max-width: 767px) {
+  .safety-page .story-visual-inner { position: absolute; inset: 0; }
   .safety-page .story-line { background: transparent; }
-  .safety-page .story-line-track {
-    position: relative; height: 2px; width: 100%; background: var(--pink);
-    transform: translateX(calc((var(--story-progress, 0) - 1) * 100%));
-  }
+  .safety-page .story-line-track { position: relative; display: flex; align-items: center; height: 2px; width: 100%; }
+  .safety-page .story-line-track b { height: 2px; width: 100%; background: var(--pink); }
+  .safety-page .technology-panel.expanded .panel-toggle { bottom: auto; }
 }
-.safety-page .story-copy,
-.safety-page .panel-copy,
-.safety-page .panel-shade {
-  transition-timing-function: cubic-bezier(.19,1,.22,1);
-  transition-duration: .4s;
+
+@media (min-width: 768px) { .safety-page .technology-panel.expanded { flex: 6.3694267516; } }
+.safety-page .panel-media { position: absolute; inset: 0; overflow: visible; }
+.safety-page .panel-media img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.safety-page .panel-shade { display: none; }
+@media (max-width: 767px) {
+  .safety-page .panel-toggle { margin-left: -16px; }
+}
+
+.safety-page { --pink: #ff2c6b; }
+.safety-page .panel-copy p { margin-top: 16px; }
+.safety-page .panel-toggle { display: flex; align-items: center; justify-content: center; }
+
+/* ButtonRound/Button anchor motion is inherited from the reference MotionConfig. */
+.safety-page .pink-button { transition: none; }
+.safety-page .pink-button:hover { background: var(--pink); transform: none; }
+.safety-page .circle-button { transition: none; }
+.safety-page .circle-button:hover { background: var(--pink); border-color: transparent; }
+.safety-page .insight-image img { transition: transform .5s cubic-bezier(.19,1,.22,1); }
+.safety-page .insight-card:hover img { transform: scale(1.1); }
+.safety-page .insight-card h3, .safety-page .insight-meta span { transition: color .5s cubic-bezier(.19,1,.22,1), background-color .5s cubic-bezier(.19,1,.22,1); }
+.safety-page .insight-card:hover .insight-meta span { color: var(--pink); background: rgb(255 44 107 / 25%); }
+
+@media (hover: hover) and (pointer: fine) {
+  .safety-page .practice-slides, .safety-page .insights-rail { cursor: grab; }
+  .safety-page [data-carousel-dragging="true"] { cursor: grabbing; user-select: none; }
+}
+
+@media (max-width: 767px) { .safety-page .story-copy h3 { margin-inline: 0; } }
+
+/* DNA uses the source's two flex columns and viewport-sized sticky positioners.
+   Fixed image/counter offsets only happened to align at one viewport height. */
+.safety-page .story-content, .safety-page .story-counter-positioner { display: contents; }
+.safety-page .story-visual-frame { position: relative; width: 100%; height: 100%; }
+.safety-page .story-copy h3 { letter-spacing: -1.2px; }
+@media (min-width:768px) {
+  .safety-page .story { display: flex; gap: 180px; }
+  .safety-page .story-content { display: flex; width: 100%; height: 100%; gap: 90px; }
+  .safety-page .story-counter-positioner { display: flex; align-items: center; justify-content: center; position: sticky; top: 0; height: 100svh; }
+  .safety-page .story-counter { position: static; margin: 0; top: auto; height: 44px; flex-shrink: 0; align-self: auto; line-height: 44px; letter-spacing: -1.2px; }
+  .safety-page .story-number { width: 48px; }
+  .safety-page .story-counter small { font: 500 12px/1.4 var(--font-sans); letter-spacing: .24px; }
+  .safety-page .story-copies { width: auto; }
+  .safety-page .story-visual { display: flex; align-items: center; justify-content: center; position: sticky; top: 0; height: 100svh; width: 100%; margin: 0; padding: 100px 0; aspect-ratio: auto; }
+  .safety-page .story-visual-frame { height: auto; aspect-ratio: 525/600; }
 }

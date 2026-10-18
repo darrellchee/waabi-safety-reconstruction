@@ -1,0 +1,10 @@
+{
+  "bestPhaseAlignedFit": {
+    "meanAbsoluteErrorPx": 0.22678579546385888,
+    "maximumAbsoluteErrorPx": 7.168361440604485,
+    "phaseShiftMs": -43
+  },
+  "sourceFrames": 133,
+  "localFrames": 133,
+  "note": "Both video play calls disabled to isolate DOM animation. Local target production port3005. Raw initial/final transforms retained."
+}

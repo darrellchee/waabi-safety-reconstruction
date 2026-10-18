@@ -1,0 +1,71 @@
+{
+  "errors": [],
+  "samples": [
+    [
+      {
+        "class": "home-preview-visibility",
+        "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)",
+        "opacity": "0"
+      },
+      {
+        "class": "is-stacked",
+        "transform": "matrix(0.961004, 0, 0, 0.961004, 0, -19.7055)",
+        "opacity": "1"
+      },
+      {
+        "class": "is-active",
+        "transform": "matrix(1.01943, 0, 0, 1.01943, 0, 349.736)",
+        "opacity": "1"
+      },
+      {
+        "class": "",
+        "transform": "matrix(1.08313, 0, 0, 1.08313, 0, 900)",
+        "opacity": "1"
+      }
+    ],
+    [
+      {
+        "class": "home-preview-visibility",
+        "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)",
+        "opacity": "0"
+      },
+      {
+        "class": "is-stacked",
+        "transform": "matrix(0.950642, 0, 0, 0.950642, 0, -26.5747)",
+        "opacity": "1"
+      },
+      {
+        "class": "is-active",
+        "transform": "matrix(1.00116, 0, 0, 1.00116, 0, 20.9221)",
+        "opacity": "1"
+      },
+      {
+        "class": "",
+        "transform": "matrix(1.05204, 0, 0, 1.05204, 0, 900)",
+        "opacity": "1"
+      }
+    ],
+    [
+      {
+        "class": "home-preview-visibility",
+        "transform": "matrix(0.6, 0, 0, 0.6, 0, 0)",
+        "opacity": "0"
+      },
+      {
+        "class": "is-stacked",
+        "transform": "matrix(0.95, 0, 0, 0.95, 0, -27)",
+        "opacity": "1"
+      },
+      {
+        "class": "is-active",
+        "transform": "none",
+        "opacity": "1"
+      },
+      {
+        "class": "",
+        "transform": "matrix(1.05, 0, 0, 1.05, 0, 900)",
+        "opacity": "1"
+      }
+    ]
+  ]
+}

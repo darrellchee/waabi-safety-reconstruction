@@ -1,0 +1,12 @@
+/* Public Blossom interaction rules, scoped to the reconstructed horizontal rails. */
+[data-carousel-motion="true"] { overscroll-behavior-x: contain; cursor: grab; }
+[data-carousel-motion="true"]:active { cursor: grabbing; }
+[data-carousel-motion="true"] * {
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+@media (pointer: fine) {
+  [data-carousel-motion="true"]:active { scroll-snap-type: none !important; }
+}

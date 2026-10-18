@@ -2286,3 +2286,72 @@
 @media (max-width: 767px) {
   .home-page .home-road-copy { letter-spacing: -.54px; line-height: 1.1; }
 }
+/* Projection uses the same nested moving frame / clipped window / image crop
+   structure as the observed Images component. Exiting frames remain mounted. */
+.home-page .home-career-frame {position:absolute;top:50%;translate:0 -50%;}
+.home-page .home-career-window,.home-page .home-career-crop {width:100%;height:100%;}
+.home-page .home-career-window {overflow:clip;background:#d1d5db;}
+.home-page .home-career-frame[data-slot="0"] {left:0;width:23vw;height:17vw;z-index:1;}
+.home-page .home-career-frame[data-slot="1"] {left:calc(100% - 82vw);width:31vw;height:23vw;z-index:2;}
+.home-page .home-career-frame[data-slot="2"] {left:calc(100% - 66.5vw);width:39vw;height:29vw;z-index:3;}
+.home-page .home-career-frame[data-slot="3"] {left:calc(100% - 47vw);width:47vw;height:35vw;z-index:4;}
+.home-page .home-hero h1 {transform:translateY(var(--hero-title-y,0px));}
+.home-page .home-title-line:first-child {transform:translateX(var(--hero-title-x,0px));}
+.home-page .home-title-line:last-child {transform:translateX(calc(-1 * var(--hero-title-x,0px)));}
+.home-page .home-intro-word {display:inline-flex;}
+.home-page .home-scale-media > div {transition:none;}
+.home-page .home-scale-media > .home-preview-visibility {position:absolute;inset:0;z-index:2;overflow:visible;transform:none;}
+.home-page .is-entered .home-scale-preview {opacity:1;}
+.home-page .home-strength-shade {position:absolute;inset:0;background:rgba(0,0,0,.5);}
+.home-page .home-scale-media > div.is-stacked::after {display:none;}
+.home-page .home-scale-tabs button {color:inherit;}
+.home-page .home-scale-tabs button[aria-selected="true"] {color:inherit;}
+@media (max-width:767px) {.home-page .home-preview-visibility {display:none;}}
+@media (prefers-reduced-motion:reduce) {
+ .home-page .home-title-line:first-child,.home-page .home-title-line:last-child {transform:none;}
+}
+.home-page .motion-native-copy.is-revealed .home-motion-word {animation:none;}
+.home-page .home-mobile-strength-controls {display:none;}
+@media (max-width:767px) {
+ .home-page .home-scale-tabs > div[data-active="false"] {display:none;}
+ .home-page .home-scale-tabs > div[data-active="true"] {opacity:1!important;}
+ .home-page .home-scale-tabs p {border-bottom:0;padding-bottom:0;}
+ .home-page .home-scale-tabs > .home-mobile-strength-controls {display:block;position:absolute;top:130px;left:0;width:100%;}
+ .home-page .home-mobile-strength-track {width:100%;height:1px;background:#0002;overflow:clip;}
+ .home-page .home-mobile-strength-track > div {width:100%;height:2px;background:#ff2c6b;}
+ .home-page .home-mobile-strength-arrows {display:flex;gap:8px;justify-content:flex-end;margin-top:20px;}
+ .home-page .home-mobile-strength-arrows button {height:32px;width:32px;border:1px solid #0002;border-radius:50%;font:16px/1 Arial;color:#181818;display:grid;place-items:center;}
+}
+.home-page blockquote,.home-page .home-quote-word,.home-page .home-partner-author {animation:none;}
+@media (min-width:768px) {
+ .home-page .home-scale-tabs button {font-family:Zagma,Georgia,serif;font-weight:400;}
+ .home-page .home-scale-tabs button[aria-selected="true"] {font-family:var(--font-sans);font-weight:400;}
+}
+.home-page .home-sans {font-family:var(--font-sans);}
+.home-page img.home-film-poster {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;}
+/* Fresh computed styles confirm these source text-s utility names do not
+   override the inherited Zagma family in the published stylesheet. */
+.home-page .home-sans,.home-page .home-scale-tabs button,.home-page .home-scale-tabs button[aria-selected="true"] {font-family:Zagma,Georgia,serif;font-weight:400;}
+/* Source round controls and CTAs animate through Motion's shared transition.
+   Solid CTAs keep their color; Down is a plain, unscaled button. */
+.home-page .home-pill {transition:none;}
+.home-page .home-pill:hover {background:#ff2f7d;color:white;}
+.home-page .home-pill:hover,.home-page .home-pill:active {transform:none;}
+.home-page .home-scroll-dot {width:24px;height:24px;display:grid;place-items:center;transition:none;}
+.home-page .home-scroll-dot:hover {transform:none;}
+.home-page .home-insights-controls > button:hover {background:#ff2f7d;border-color:transparent;color:white;}
+.home-page .home-tech-cards video {transition:transform .5s cubic-bezier(.19,1,.22,1);}
+.home-page .home-tech-cards a:hover video {transform:scale(1.2);}
+.home-page .home-card-plus {opacity:1;width:50px;height:50px;display:grid;place-items:center;border:1px solid #ffffff26;border-radius:50%;font:16px/1 Arial;transition:background .5s cubic-bezier(.19,1,.22,1),border-color .5s cubic-bezier(.19,1,.22,1);right:48px;}
+.home-page .home-tech-cards a:hover .home-card-plus {background:#ff2f7d;border-color:transparent;}
+.home-page .home-tech-cards h3 {padding-right:50px;}
+@media(max-width:767px){.home-page .home-card-plus{width:32px;height:32px;right:28px;}.home-page .home-tech-cards h3{padding-right:35px;}}
+.home-page .home-insights-rail,.home-page .home-partner-tabs {overscroll-behavior-x:contain;}
+.home-page .home-partner-tabs {overflow-x:auto;scrollbar-width:none;}
+.home-page .home-partner-tabs::-webkit-scrollbar {display:none;}
+.home-page .home-partner-tabs button {flex-shrink:0;white-space:nowrap;}
+.home-page [data-carousel-dragging="true"] {cursor:grabbing;user-select:none;}
+
+/* Keep the hydration tree stable; normal playback has no fabricated poster. */
+.home-page .home-reduced-poster {display:none;}
+@media(prefers-reduced-motion:reduce){.home-page .home-reduced-poster{display:block;}}

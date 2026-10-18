@@ -1,0 +1,7580 @@
+[
+  {
+    "scrollY": 0,
+    "time": 7579.10000000149,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": 2149,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 3455,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 3455,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 3153,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 400)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 2753,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 3503,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 3381,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "",
+        "class": "",
+        "y": 0,
+        "x": 0,
+        "w": 768,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Redefining",
+        "class": "safety-motion-word",
+        "y": 120,
+        "x": 54.90625,
+        "w": 402.140625,
+        "h": 81,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "safety.",
+        "class": "safety-motion-word",
+        "y": 201,
+        "x": 54.90625,
+        "w": 240.265625,
+        "h": 81,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "step": 0,
+    "elapsed": 50
+  },
+  {
+    "scrollY": 0,
+    "time": 7698.10000000149,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": 2149,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 3455,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 3455,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 3153,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 400)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 2753,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 3503,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 3381,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "",
+        "class": "",
+        "y": 0,
+        "x": 0,
+        "w": 768,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Redefining",
+        "class": "safety-motion-word",
+        "y": 120,
+        "x": 54.90625,
+        "w": 402.140625,
+        "h": 81,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "safety.",
+        "class": "safety-motion-word",
+        "y": 201,
+        "x": 54.90625,
+        "w": 240.265625,
+        "h": 81,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "step": 0,
+    "elapsed": 100
+  },
+  {
+    "scrollY": 0,
+    "time": 7965.60000000149,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": 2149,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 3455,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 3455,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 3153,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 400)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 2753,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 3503,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 3381,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "",
+        "class": "",
+        "y": 0,
+        "x": 0,
+        "w": 768,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Redefining",
+        "class": "safety-motion-word",
+        "y": 120,
+        "x": 54.90625,
+        "w": 402.140625,
+        "h": 81,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "safety.",
+        "class": "safety-motion-word",
+        "y": 201,
+        "x": 54.90625,
+        "w": 240.265625,
+        "h": 81,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "step": 0,
+    "elapsed": 250
+  },
+  {
+    "scrollY": 0,
+    "time": 8575.10000000149,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": 2149,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 3455,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 3455,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 3153,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 400)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 2753,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 3503,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 3381,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "",
+        "class": "",
+        "y": 0,
+        "x": 0,
+        "w": 768,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Redefining",
+        "class": "safety-motion-word",
+        "y": 120,
+        "x": 54.90625,
+        "w": 402.140625,
+        "h": 81,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "safety.",
+        "class": "safety-motion-word",
+        "y": 201,
+        "x": 54.90625,
+        "w": 240.265625,
+        "h": 81,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "step": 0,
+    "elapsed": 600
+  },
+  {
+    "scrollY": 750,
+    "time": 8636.60000000149,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": 1399,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 2705,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 2705,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 2403,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 400)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 2003,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 2753,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 2631,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "",
+        "class": "",
+        "y": -660,
+        "x": 0,
+        "w": 768,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 90)",
+        "transition": "all"
+      },
+      {
+        "text": "The",
+        "class": "safety-motion-word",
+        "y": 334,
+        "x": 65.11066436767578,
+        "w": 131.609375,
+        "h": 72,
+        "opacity": "0.474753",
+        "transform": "matrix(1, 0, 0, 1, 10.2044, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "stakes",
+        "class": "safety-motion-word",
+        "y": 334,
+        "x": 219.890625,
+        "w": 221.53125,
+        "h": 72,
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 20, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "are",
+        "class": "safety-motion-word",
+        "y": 334,
+        "x": 454.796875,
+        "w": 106.96875,
+        "h": 72,
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 20, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "real",
+        "class": "safety-motion-word",
+        "y": 406,
+        "x": 74.90625,
+        "w": 126.40625,
+        "h": 72,
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 20, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "and",
+        "class": "safety-motion-word",
+        "y": 406,
+        "x": 214.6875,
+        "w": 130.484375,
+        "h": 72,
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 20, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "rising.",
+        "class": "safety-motion-word",
+        "y": 406,
+        "x": 358.546875,
+        "w": 205.84375,
+        "h": 72,
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 20, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "number of lives lost each year in vehicle accidents in the U",
+        "class": "stat",
+        "y": 845.7232666015625,
+        "x": 54.90625,
+        "w": 658.171875,
+        "h": 241,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 199.723)",
+        "transition": "all"
+      }
+    ],
+    "step": 1,
+    "elapsed": 50
+  },
+  {
+    "scrollY": 750,
+    "time": 8747.60000000149,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": 1399,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 2705,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 2705,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 2403,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 400)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 2003,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 2753,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 2631,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "",
+        "class": "",
+        "y": -660,
+        "x": 0,
+        "w": 768,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 90)",
+        "transition": "all"
+      },
+      {
+        "text": "The",
+        "class": "safety-motion-word",
+        "y": 334,
+        "x": 56.32353973388672,
+        "w": 131.609375,
+        "h": 72,
+        "opacity": "0.927079",
+        "transform": "matrix(1, 0, 0, 1, 1.41729, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "stakes",
+        "class": "safety-motion-word",
+        "y": 334,
+        "x": 205.48651123046875,
+        "w": 221.53125,
+        "h": 72,
+        "opacity": "0.711735",
+        "transform": "matrix(1, 0, 0, 1, 5.59588, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "are",
+        "class": "safety-motion-word",
+        "y": 334,
+        "x": 454.51983642578125,
+        "w": 106.96875,
+        "h": 72,
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 19.723, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "real",
+        "class": "safety-motion-word",
+        "y": 406,
+        "x": 60.50212860107422,
+        "w": 126.40625762939453,
+        "h": 72,
+        "opacity": "0.711735",
+        "transform": "matrix(1, 0, 0, 1, 5.59588, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "and",
+        "class": "safety-motion-word",
+        "y": 406,
+        "x": 214.41046142578125,
+        "w": 130.484375,
+        "h": 72,
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 19.723, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "rising.",
+        "class": "safety-motion-word",
+        "y": 406,
+        "x": 358.546875,
+        "w": 205.84375,
+        "h": 72,
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 20, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "number of lives lost each year in vehicle accidents in the U",
+        "class": "stat",
+        "y": 799.4542236328125,
+        "x": 54.90625,
+        "w": 658.171875,
+        "h": 241,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 153.454)",
+        "transition": "all"
+      }
+    ],
+    "step": 1,
+    "elapsed": 100
+  },
+  {
+    "scrollY": 750,
+    "time": 9005.60000000149,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": 1399,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 2705,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 2705,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 2403,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 400)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 2003,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 2753,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 2631,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "",
+        "class": "",
+        "y": -660,
+        "x": 0,
+        "w": 768,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 90)",
+        "transition": "all"
+      },
+      {
+        "text": "The",
+        "class": "safety-motion-word",
+        "y": 334,
+        "x": 54.90625,
+        "w": 131.609375,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "stakes",
+        "class": "safety-motion-word",
+        "y": 334,
+        "x": 199.89810180664062,
+        "w": 221.53125,
+        "h": 72,
+        "opacity": "0.999608",
+        "transform": "matrix(1, 0, 0, 1, 0.0074716, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "are",
+        "class": "safety-motion-word",
+        "y": 334,
+        "x": 434.8904113769531,
+        "w": 106.96871948242188,
+        "h": 72,
+        "opacity": "0.995229",
+        "transform": "matrix(1, 0, 0, 1, 0.0935452, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "real",
+        "class": "safety-motion-word",
+        "y": 406,
+        "x": 54.91372299194336,
+        "w": 126.40625,
+        "h": 72,
+        "opacity": "0.999608",
+        "transform": "matrix(1, 0, 0, 1, 0.0074716, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "and",
+        "class": "safety-motion-word",
+        "y": 406,
+        "x": 194.7810516357422,
+        "w": 130.48439025878906,
+        "h": 72,
+        "opacity": "0.995229",
+        "transform": "matrix(1, 0, 0, 1, 0.0935452, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "rising.",
+        "class": "safety-motion-word",
+        "y": 406,
+        "x": 339.0190124511719,
+        "w": 205.84378051757812,
+        "h": 72,
+        "opacity": "0.976021",
+        "transform": "matrix(1, 0, 0, 1, 0.472132, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "number of lives lost each year in vehicle accidents in the U",
+        "class": "stat",
+        "y": 686.6076049804688,
+        "x": 54.90625,
+        "w": 658.171875,
+        "h": 241,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 40.6076)",
+        "transition": "all"
+      },
+      {
+        "text": "number of lives lost each year in large truck crashes in the",
+        "class": "stat",
+        "y": 968.2152099609375,
+        "x": 54.90625,
+        "w": 658.171875,
+        "h": 241,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 81.2152)",
+        "transition": "all"
+      }
+    ],
+    "step": 1,
+    "elapsed": 250
+  },
+  {
+    "scrollY": 750,
+    "time": 9611.60000000149,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": 1399,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 2705,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 2705,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 2403,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 400)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 2003,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 2753,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 2631,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "",
+        "class": "",
+        "y": -660,
+        "x": 0,
+        "w": 768,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 90)",
+        "transition": "all"
+      },
+      {
+        "text": "The",
+        "class": "safety-motion-word",
+        "y": 334,
+        "x": 54.90625,
+        "w": 131.609375,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "stakes",
+        "class": "safety-motion-word",
+        "y": 334,
+        "x": 199.890625,
+        "w": 221.53125,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "are",
+        "class": "safety-motion-word",
+        "y": 334,
+        "x": 434.796875,
+        "w": 106.96875,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "real",
+        "class": "safety-motion-word",
+        "y": 406,
+        "x": 54.90625,
+        "w": 126.40625,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "and",
+        "class": "safety-motion-word",
+        "y": 406,
+        "x": 194.6875,
+        "w": 130.484375,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "rising.",
+        "class": "safety-motion-word",
+        "y": 406,
+        "x": 338.546875,
+        "w": 205.84375,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "number of lives lost each year in vehicle accidents in the U",
+        "class": "stat",
+        "y": 647.48486328125,
+        "x": 54.90625,
+        "w": 658.171875,
+        "h": 241,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 1.48487)",
+        "transition": "all"
+      },
+      {
+        "text": "number of lives lost each year in large truck crashes in the",
+        "class": "stat",
+        "y": 889.9697265625,
+        "x": 54.90625,
+        "w": 658.171875,
+        "h": 241,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 2.96974)",
+        "transition": "all"
+      }
+    ],
+    "step": 1,
+    "elapsed": 600
+  },
+  {
+    "scrollY": 1450,
+    "time": 9673.5,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": 699,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 2005,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 2005,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 1703,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 400)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 1303,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 2053,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 1931,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "number of lives lost each year in vehicle accidents in the U",
+        "class": "stat",
+        "y": -52.96329879760742,
+        "x": 54.90625,
+        "w": 658.171875,
+        "h": 241,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 1.0367)",
+        "transition": "all"
+      },
+      {
+        "text": "number of lives lost each year in large truck crashes in the",
+        "class": "stat",
+        "y": 189.07339477539062,
+        "x": 54.90625,
+        "w": 658.171875,
+        "h": 241,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 2.0734)",
+        "transition": "all"
+      },
+      {
+        "text": "percent of fatal truck crashes where human error was a criti",
+        "class": "stat",
+        "y": 431.110107421875,
+        "x": 54.90625,
+        "w": 658.171875,
+        "h": 211,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 3.1101)",
+        "transition": "all"
+      },
+      {
+        "text": "Safety",
+        "class": "safety-motion-word",
+        "y": 789,
+        "x": 170.81396484375,
+        "w": 222.09375,
+        "h": 72,
+        "opacity": "0.317067",
+        "transform": "matrix(1, 0, 0, 1, 13.4546, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "is",
+        "class": "safety-motion-word",
+        "y": 789,
+        "x": 412.828125,
+        "w": 55.84375,
+        "h": 72,
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 20, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "core",
+        "class": "safety-motion-word",
+        "y": 789,
+        "x": 482.046875,
+        "w": 148.5625,
+        "h": 72,
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 20, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "to",
+        "class": "safety-motion-word",
+        "y": 861,
+        "x": 210.1875,
+        "w": 69.453125,
+        "h": 72,
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 20, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "our",
+        "class": "safety-motion-word",
+        "y": 861,
+        "x": 293.015625,
+        "w": 112.640625,
+        "h": 72,
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 20, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "DNA.",
+        "class": "safety-motion-word",
+        "y": 861,
+        "x": 419.03125,
+        "w": 178.734375,
+        "h": 72,
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 20, 0)",
+        "transition": "all"
+      }
+    ],
+    "step": 2,
+    "elapsed": 50
+  },
+  {
+    "scrollY": 1450,
+    "time": 9777.20000000298,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": 699,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 2005,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 2005,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 1703,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 400)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 1303,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 2053,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 1931,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "number of lives lost each year in vehicle accidents in the U",
+        "class": "stat",
+        "y": -53.403526306152344,
+        "x": 54.90625,
+        "w": 658.171875,
+        "h": 241,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0.596472)",
+        "transition": "all"
+      },
+      {
+        "text": "number of lives lost each year in large truck crashes in the",
+        "class": "stat",
+        "y": 188.1929473876953,
+        "x": 54.90625,
+        "w": 658.171875,
+        "h": 240.99998474121094,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 1.19294)",
+        "transition": "all"
+      },
+      {
+        "text": "percent of fatal truck crashes where human error was a criti",
+        "class": "stat",
+        "y": 429.7894287109375,
+        "x": 54.90625,
+        "w": 658.171875,
+        "h": 211,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 1.78942)",
+        "transition": "all"
+      },
+      {
+        "text": "Safety",
+        "class": "safety-motion-word",
+        "y": 789,
+        "x": 159.247314453125,
+        "w": 222.09375,
+        "h": 72,
+        "opacity": "0.903874",
+        "transform": "matrix(1, 0, 0, 1, 1.88793, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "is",
+        "class": "safety-motion-word",
+        "y": 789,
+        "x": 400.4143371582031,
+        "w": 55.84375,
+        "h": 72,
+        "opacity": "0.613891",
+        "transform": "matrix(1, 0, 0, 1, 7.5862, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "core",
+        "class": "safety-motion-word",
+        "y": 789,
+        "x": 482.046875,
+        "w": 148.5625,
+        "h": 72,
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 20, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "to",
+        "class": "safety-motion-word",
+        "y": 861,
+        "x": 197.77369689941406,
+        "w": 69.45310974121094,
+        "h": 72,
+        "opacity": "0.613891",
+        "transform": "matrix(1, 0, 0, 1, 7.5862, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "our",
+        "class": "safety-motion-word",
+        "y": 861,
+        "x": 293.015625,
+        "w": 112.640625,
+        "h": 72,
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 20, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "DNA.",
+        "class": "safety-motion-word",
+        "y": 861,
+        "x": 419.03125,
+        "w": 178.734375,
+        "h": 72,
+        "opacity": "0",
+        "transform": "matrix(1, 0, 0, 1, 20, 0)",
+        "transition": "all"
+      }
+    ],
+    "step": 2,
+    "elapsed": 100
+  },
+  {
+    "scrollY": 1450,
+    "time": 10032.300000000745,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": 699,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 2005,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 2005,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 1703,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 400)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 1303,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 2053,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 1931,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "number of lives lost each year in vehicle accidents in the U",
+        "class": "stat",
+        "y": -54,
+        "x": 54.90625,
+        "w": 658.171875,
+        "h": 241,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "number of lives lost each year in large truck crashes in the",
+        "class": "stat",
+        "y": 187,
+        "x": 54.90625,
+        "w": 658.171875,
+        "h": 241,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "percent of fatal truck crashes where human error was a criti",
+        "class": "stat",
+        "y": 428.44683837890625,
+        "x": 54.90625,
+        "w": 658.171875,
+        "h": 211,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0.446824)",
+        "transition": "all"
+      },
+      {
+        "text": "Safety",
+        "class": "safety-motion-word",
+        "y": 789,
+        "x": 157.3596954345703,
+        "w": 222.09373474121094,
+        "h": 72,
+        "opacity": "0.99998",
+        "transform": "matrix(1, 0, 0, 1, 0.000318, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "is",
+        "class": "safety-motion-word",
+        "y": 789,
+        "x": 392.8551940917969,
+        "w": 55.84375,
+        "h": 72,
+        "opacity": "0.998552",
+        "transform": "matrix(1, 0, 0, 1, 0.0270548, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "core",
+        "class": "safety-motion-word",
+        "y": 789,
+        "x": 462.2445373535156,
+        "w": 148.56246948242188,
+        "h": 72,
+        "opacity": "0.989675",
+        "transform": "matrix(1, 0, 0, 1, 0.197659, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "to",
+        "class": "safety-motion-word",
+        "y": 861,
+        "x": 190.2145538330078,
+        "w": 69.45310974121094,
+        "h": 72,
+        "opacity": "0.998552",
+        "transform": "matrix(1, 0, 0, 1, 0.0270548, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "our",
+        "class": "safety-motion-word",
+        "y": 861,
+        "x": 273.2132873535156,
+        "w": 112.640625,
+        "h": 72,
+        "opacity": "0.989675",
+        "transform": "matrix(1, 0, 0, 1, 0.197659, 0)",
+        "transition": "all"
+      },
+      {
+        "text": "DNA.",
+        "class": "safety-motion-word",
+        "y": 861,
+        "x": 399.8912658691406,
+        "w": 178.73434448242188,
+        "h": 72,
+        "opacity": "0.955472",
+        "transform": "matrix(1, 0, 0, 1, 0.860015, 0)",
+        "transition": "all"
+      }
+    ],
+    "step": 2,
+    "elapsed": 250
+  },
+  {
+    "scrollY": 1450,
+    "time": 10643.70000000298,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": 699,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 2005,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 2005,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 1703,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 400)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 1303,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 2053,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 1931,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "number of lives lost each year in vehicle accidents in the U",
+        "class": "stat",
+        "y": -54,
+        "x": 54.90625,
+        "w": 658.171875,
+        "h": 241,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "number of lives lost each year in large truck crashes in the",
+        "class": "stat",
+        "y": 187,
+        "x": 54.90625,
+        "w": 658.171875,
+        "h": 241,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "percent of fatal truck crashes where human error was a criti",
+        "class": "stat",
+        "y": 428,
+        "x": 54.90625,
+        "w": 658.171875,
+        "h": 211,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety",
+        "class": "safety-motion-word",
+        "y": 789,
+        "x": 157.359375,
+        "w": 222.09375,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "is",
+        "class": "safety-motion-word",
+        "y": 789,
+        "x": 392.828125,
+        "w": 55.84375,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "core",
+        "class": "safety-motion-word",
+        "y": 789,
+        "x": 462.046875,
+        "w": 148.5625,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "to",
+        "class": "safety-motion-word",
+        "y": 861,
+        "x": 190.1875,
+        "w": 69.453125,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "our",
+        "class": "safety-motion-word",
+        "y": 861,
+        "x": 273.015625,
+        "w": 112.640625,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "DNA.",
+        "class": "safety-motion-word",
+        "y": 861,
+        "x": 399.03125,
+        "w": 178.734375,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "step": 2,
+    "elapsed": 600
+  },
+  {
+    "scrollY": 2200,
+    "time": 10703.300000000745,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -51,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 1253.779052734375,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 1253.779052734375,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 951.779052734375,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 398.779)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 553,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 1301.1685791015625,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 1180.3895263671875,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "Safety",
+        "class": "safety-motion-word",
+        "y": 39,
+        "x": 157.359375,
+        "w": 222.09375,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "is",
+        "class": "safety-motion-word",
+        "y": 39,
+        "x": 392.828125,
+        "w": 55.84375,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "core",
+        "class": "safety-motion-word",
+        "y": 39,
+        "x": 462.046875,
+        "w": 148.5625,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "to",
+        "class": "safety-motion-word",
+        "y": 111,
+        "x": 190.1875,
+        "w": 69.453125,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "our",
+        "class": "safety-motion-word",
+        "y": 111,
+        "x": 273.015625,
+        "w": 112.640625,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "DNA.",
+        "class": "safety-motion-word",
+        "y": 111,
+        "x": 399.03125,
+        "w": 178.734375,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": 453,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 951.779052734375,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 398.779)",
+        "transition": "none"
+      }
+    ],
+    "step": 3,
+    "elapsed": 50
+  },
+  {
+    "scrollY": 2200,
+    "time": 10808.800000000745,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -51,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 1159.4688720703125,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 1159.4688720703125,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 857.4688720703125,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 304.469)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 553,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 1159.703369140625,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 1133.234375,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "Safety",
+        "class": "safety-motion-word",
+        "y": 39,
+        "x": 157.359375,
+        "w": 222.09375,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "is",
+        "class": "safety-motion-word",
+        "y": 39,
+        "x": 392.828125,
+        "w": 55.84375,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "core",
+        "class": "safety-motion-word",
+        "y": 39,
+        "x": 462.046875,
+        "w": 148.5625,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "to",
+        "class": "safety-motion-word",
+        "y": 111,
+        "x": 190.1875,
+        "w": 69.453125,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "our",
+        "class": "safety-motion-word",
+        "y": 111,
+        "x": 273.015625,
+        "w": 112.640625,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "DNA.",
+        "class": "safety-motion-word",
+        "y": 111,
+        "x": 399.03125,
+        "w": 178.734375,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": 453,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 857.4688720703125,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 304.469)",
+        "transition": "none"
+      }
+    ],
+    "step": 3,
+    "elapsed": 100
+  },
+  {
+    "scrollY": 2200,
+    "time": 11063.900000002235,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -51,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 941.6498413085938,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132.00006103515625,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 941.6498413085938,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420.00006103515625,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 639.6498413085938,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 86.6499)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 553,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 832.9747924804688,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25006103515625,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 1024.324951171875,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "Safety",
+        "class": "safety-motion-word",
+        "y": 39,
+        "x": 157.359375,
+        "w": 222.09375,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "is",
+        "class": "safety-motion-word",
+        "y": 39,
+        "x": 392.828125,
+        "w": 55.84375,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "core",
+        "class": "safety-motion-word",
+        "y": 39,
+        "x": 462.046875,
+        "w": 148.5625,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "to",
+        "class": "safety-motion-word",
+        "y": 111,
+        "x": 190.1875,
+        "w": 69.453125,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "our",
+        "class": "safety-motion-word",
+        "y": 111,
+        "x": 273.015625,
+        "w": 112.640625,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "DNA.",
+        "class": "safety-motion-word",
+        "y": 111,
+        "x": 399.03125,
+        "w": 178.734375,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": 453,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 639.6498413085938,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 86.6499)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 941.6498413085938,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420.00006103515625,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 832.9747924804688,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25006103515625,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 129.975)",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 832.9747924804688,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25006103515625,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 3,
+    "elapsed": 250
+  },
+  {
+    "scrollY": 2200,
+    "time": 11671.800000000745,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -51,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 857.953369140625,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 857.953369140625,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 555.953369140625,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 2.95337)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 553,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 707.4300537109375,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 982.4766845703125,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "Safety",
+        "class": "safety-motion-word",
+        "y": 39,
+        "x": 157.359375,
+        "w": 222.09375,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "is",
+        "class": "safety-motion-word",
+        "y": 39,
+        "x": 392.828125,
+        "w": 55.84375,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "core",
+        "class": "safety-motion-word",
+        "y": 39,
+        "x": 462.046875,
+        "w": 148.5625,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "to",
+        "class": "safety-motion-word",
+        "y": 111,
+        "x": 190.1875,
+        "w": 69.453125,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "our",
+        "class": "safety-motion-word",
+        "y": 111,
+        "x": 273.015625,
+        "w": 112.640625,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "DNA.",
+        "class": "safety-motion-word",
+        "y": 111,
+        "x": 399.03125,
+        "w": 178.734375,
+        "h": 72,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 982.4766845703125,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 1.47668)",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 982.4766845703125,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": 453,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 555.953369140625,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 2.95337)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 857.953369140625,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 707.4300537109375,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 4.43005)",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 707.4300537109375,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 3,
+    "elapsed": 600
+  },
+  {
+    "scrollY": 2600,
+    "time": 11727.800000000745,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -451,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 457.240234375,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 457.240234375,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 155.24021911621094,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 2.24022)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 153,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 306.3603210449219,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.2500305175781,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 582.1201171875,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 582.1201171875,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 1.12011)",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 582.1201171875,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": 53,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 155.24021911621094,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 2.24022)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 457.240234375,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": 757.240234375,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 2.24022)",
+        "transition": "none"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 306.3603210449219,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.2500305175781,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 3.36034)",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 306.3603210449219,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.2500305175781,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 4,
+    "elapsed": 50
+  },
+  {
+    "scrollY": 2600,
+    "time": 11832.5,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -451,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 456.2889404296875,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 456.2889404296875,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 154.28892517089844,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 1.28893)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 153,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 304.93341064453125,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 581.6444702148438,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 581.6444702148438,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0.644465)",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 581.6444702148438,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": 53,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 154.28892517089844,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 1.28893)",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 456.2889404296875,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": 756.2889404296875,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 1.28893)",
+        "transition": "none"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 304.93341064453125,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 1.9334)",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 304.93341064453125,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 4,
+    "elapsed": 100
+  },
+  {
+    "scrollY": 2600,
+    "time": 12088.400000002235,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -451,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 455,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 455,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 153,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 153,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 303.4443664550781,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.2499694824219,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 581,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 581,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 581,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": 53,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 153,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 455,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": 755,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 303.4443664550781,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.2499694824219,
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0.44436)",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 303.4443664550781,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.2499694824219,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 4,
+    "elapsed": 250
+  },
+  {
+    "scrollY": 2600,
+    "time": 12692.60000000149,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -451,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 455,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 455,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 153,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": 153,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 303,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 581,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 581,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 581,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": 53,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": 153,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 455,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": 755,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 303,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 303,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 4,
+    "elapsed": 600
+  },
+  {
+    "scrollY": 3000,
+    "time": 15316.70000000298,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -851,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 55,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 55,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -347,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 55,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": 355,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": 717,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 957,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 5,
+    "elapsed": 50
+  },
+  {
+    "scrollY": 3000,
+    "time": 15421.5,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -851,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 55,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 55,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -347,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 55,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": 355,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": 717,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 957,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 5,
+    "elapsed": 100
+  },
+  {
+    "scrollY": 3000,
+    "time": 15676.800000000745,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -851,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 55,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 55,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -347,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 55,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": 355,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": 717,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 957,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 5,
+    "elapsed": 250
+  },
+  {
+    "scrollY": 3000,
+    "time": 16282.20000000298,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -851,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 55,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 55,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -347,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 55,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": 355,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": 717,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 957,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 5,
+    "elapsed": 600
+  },
+  {
+    "scrollY": 3400,
+    "time": 16338.400000002235,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -1251,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": -345,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -345,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -747,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -345,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": -45,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": 317,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 557,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy-content",
+        "y": 883,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 372,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 6,
+    "elapsed": 50
+  },
+  {
+    "scrollY": 3400,
+    "time": 16444.20000000298,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -1251,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": -345,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -345,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -747,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -345,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": -45,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": 317,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 557,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy-content",
+        "y": 883,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 372,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 6,
+    "elapsed": 100
+  },
+  {
+    "scrollY": 3400,
+    "time": 16698.5,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -1251,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": -345,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -345,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -747,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -345,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": -45,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": 317,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 557,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy-content",
+        "y": 883,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 372,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 6,
+    "elapsed": 250
+  },
+  {
+    "scrollY": 3400,
+    "time": 17306.400000002235,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -1251,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": -345,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -345,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -747,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -345,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": -45,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": 317,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 557,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy-content",
+        "y": 883,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 372,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 6,
+    "elapsed": 600
+  },
+  {
+    "scrollY": 3800,
+    "time": 19007.900000002235,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -1651,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": -745,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -745,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -1047,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -1047,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -1147,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": -445,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": -83,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 157,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy-content",
+        "y": 483,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 372,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 7,
+    "elapsed": 50
+  },
+  {
+    "scrollY": 3800,
+    "time": 19112.10000000149,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -1651,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": -745,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -745,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -1047,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -1047,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -1147,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": -445,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": -83,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 157,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy-content",
+        "y": 483,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 372,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 7,
+    "elapsed": 100
+  },
+  {
+    "scrollY": 3800,
+    "time": 19369,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -1651,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": -745,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -745,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -1047,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -1047,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -1147,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": -445,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": -83,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 157,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy-content",
+        "y": 483,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 372,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 7,
+    "elapsed": 250
+  },
+  {
+    "scrollY": 3800,
+    "time": 19991.10000000149,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -1651,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": -745,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -745,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -1047,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -1047,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -1147,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": -445,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": -83,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 157,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy-content",
+        "y": 483,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 372,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 7,
+    "elapsed": 600
+  },
+  {
+    "scrollY": 3400,
+    "time": 20050.800000000745,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -1251,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": -345,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -345,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -747,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -345,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": -45,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": 317,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 557,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy-content",
+        "y": 883,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 372,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 8,
+    "elapsed": 50
+  },
+  {
+    "scrollY": 3400,
+    "time": 20156.800000000745,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -1251,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": -345,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -345,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -747,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -345,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": -45,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": 317,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 557,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy-content",
+        "y": 883,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 372,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 8,
+    "elapsed": 100
+  },
+  {
+    "scrollY": 3400,
+    "time": 20412.800000000745,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -1251,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": -345,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -345,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -747,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -345,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": -45,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": 317,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 557,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy-content",
+        "y": 883,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 372,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 8,
+    "elapsed": 250
+  },
+  {
+    "scrollY": 3400,
+    "time": 21019.60000000149,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -1251,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": -345,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -345,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -747,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -647,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": -345,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": -45,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": 317,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 557,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy-content",
+        "y": 883,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 372,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 8,
+    "elapsed": 600
+  },
+  {
+    "scrollY": 3000,
+    "time": 23036.300000000745,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -851,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 55,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 55,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -347,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 55,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": 355,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": 717,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 957,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 9,
+    "elapsed": 50
+  },
+  {
+    "scrollY": 3000,
+    "time": 23143.800000000745,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -851,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 55,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 55,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -347,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 55,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": 355,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": 717,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 957,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 9,
+    "elapsed": 100
+  },
+  {
+    "scrollY": 3000,
+    "time": 23400.5,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -851,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 55,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 55,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -347,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 55,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": 355,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": 717,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 957,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 9,
+    "elapsed": 250
+  },
+  {
+    "scrollY": 3000,
+    "time": 24005.70000000298,
+    "dna": {
+      "text": "Safety is coreto our DNA.The future of autonomous transporta",
+      "class": "philosophy",
+      "y": -851,
+      "x": 0,
+      "w": 768,
+      "h": 2832,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "title": {
+      "text": "Safety from the inside out.",
+      "class": "",
+      "y": 55,
+      "x": 129.90625,
+      "w": 224.078125,
+      "h": 132,
+      "opacity": "1",
+      "transform": "none",
+      "transition": "all"
+    },
+    "parents": [
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 55,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copies",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 2228,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "images": [
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "digits": [
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      }
+    ],
+    "moving": [
+      {
+        "text": "03/3",
+        "class": "story-counter",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 45,
+        "h": 45,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "03",
+        "class": "",
+        "y": 491.515625,
+        "x": 54.90625,
+        "w": 48.421875,
+        "h": 44,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "story-line-track",
+        "y": -347,
+        "x": 377.984375,
+        "w": 12,
+        "h": 1816,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy ",
+        "y": -247,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Safety from the inside out.Our governance structure ensures ",
+        "class": "story-copy-content",
+        "y": 55,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 420,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy ",
+        "y": 355,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "Built different. Built safer.Our simulation-first approach t",
+        "class": "story-copy-content",
+        "y": 717,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 300,
+        "opacity": "0.15",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "Pioneering new standards.We rigorously adhere to many establ",
+        "class": "story-copy is-active",
+        "y": 957,
+        "x": 129.90625,
+        "w": 224.078125,
+        "h": 1024,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      },
+      {
+        "text": "",
+        "class": "story-visual-inner",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all"
+      },
+      {
+        "text": "",
+        "class": "is-active",
+        "y": 150,
+        "x": 403.984375,
+        "w": 309.09375,
+        "h": 353.25,
+        "opacity": "1",
+        "transform": "none",
+        "transition": "none"
+      }
+    ],
+    "step": 9,
+    "elapsed": 600
+  }
+]

@@ -44,3 +44,8 @@ See `docs/implementation-notes.md` and `docs/fidelity-report.md` for architectur
 Animation refinement and normal-motion verification: `docs/animation-refinement.md` and `docs/motion-validation.md`. Rerun motion checks with `npx playwright test tests/motion.spec.ts`; normal motion is enabled explicitly for those tests.
 
 New page inspection and fidelity evidence: `docs/home-reference-analysis.md`, `docs/home-fidelity.md`, `docs/company-reference-analysis.md`, `docs/company-fidelity.md`, and `docs/pages-qa.md`.
+
+
+The second measured motion pass uses Motion primitives for source spring/layout/presence behavior and a shared pointer-drag carousel hook. Current evidence and measured regression checks: `docs/home-motion-round2.md`, `docs/safety-motion-round2.md`, and `docs/motion-round2-validation.md`. Run `npx playwright test tests/motion-round2.spec.ts` for source-coordinate, transient, playback and drag checks.
+
+The latest optimized-build verification passed all 34 Playwright cases, lint and TypeScript checks. See `docs/motion-round2-validation.md` for measurements, corrected defects and the limits of independently timed animation comparisons.

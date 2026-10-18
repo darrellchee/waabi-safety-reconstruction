@@ -1,0 +1,2 @@
+/* Match the reference document boundary behavior during wheel/touch motion. */
+html { overscroll-behavior: none; overflow-x: hidden; }

@@ -1,0 +1,149 @@
+[
+  {
+    "scrollY": 0,
+    "section": "<section id=\"\" class=\"bg-cream relative w-full pt-(--padding-y) text-black md:pt-[calc(var(--padding-y)*1.5)]\"><div class=\"w-calc flex flex-col items-",
+    "digits": [
+      {
+        "t": "03",
+        "style": "transform: none;"
+      },
+      {
+        "t": "/3",
+        "style": null
+      }
+    ],
+    "images": [
+      {
+        "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1760350326-shutterstock_1058062604_edited_final.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+        "style": "position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent; opacity: 1; transform: none;"
+      }
+    ],
+    "tracks": [
+      {
+        "class": "flex items-baseline gap-4 md:gap-12",
+        "style": "transform: translateY(200px);"
+      },
+      {
+        "class": "pointer-events-none flex w-full items-center md:min-h-[100svh] max-md:w-full max-md:shrink-0 max-md:px-40",
+        "style": "transform: translateY(400px);"
+      },
+      {
+        "class": "pointer-events-none flex w-full items-center md:min-h-[100svh] max-md:w-full max-md:shrink-0 max-md:px-40 md:mt-[-50svh]",
+        "style": "transform: translateY(400px);"
+      },
+      {
+        "class": "pointer-events-none flex w-full items-center md:min-h-[100svh] max-md:w-full max-md:shrink-0 max-md:px-40 md:mt-[-50svh]",
+        "style": "transform: translateY(600px);"
+      },
+      {
+        "class": "relative grid h-full w-full overflow-clip rounded-[1.2rem] bg-black",
+        "style": "transform:translateY(600px)"
+      }
+    ]
+  },
+  {
+    "scrollY": 2200,
+    "section": "<section id=\"\" class=\"bg-cream relative w-full pt-(--padding-y) text-black md:pt-[calc(var(--padding-y)*1.5)]\"><div class=\"w-calc flex flex-col items-",
+    "digits": [
+      {
+        "t": "03",
+        "style": "transform: none;"
+      },
+      {
+        "t": "/3",
+        "style": null
+      }
+    ],
+    "images": [
+      {
+        "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1760350326-shutterstock_1058062604_edited_final.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+        "style": "position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent; opacity: 1; transform: none;"
+      }
+    ],
+    "tracks": []
+  },
+  {
+    "scrollY": 2600,
+    "section": "<section id=\"\" class=\"bg-cream relative w-full pt-(--padding-y) text-black md:pt-[calc(var(--padding-y)*1.5)]\"><div class=\"w-calc flex flex-col items-",
+    "digits": [
+      {
+        "t": "03",
+        "style": "transform: none;"
+      },
+      {
+        "t": "/3",
+        "style": null
+      }
+    ],
+    "images": [
+      {
+        "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1760350326-shutterstock_1058062604_edited_final.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+        "style": "position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent; opacity: 1; transform: none;"
+      }
+    ],
+    "tracks": []
+  },
+  {
+    "scrollY": 3000,
+    "section": "<section id=\"\" class=\"bg-cream relative w-full pt-(--padding-y) text-black md:pt-[calc(var(--padding-y)*1.5)]\"><div class=\"w-calc flex flex-col items-",
+    "digits": [
+      {
+        "t": "03",
+        "style": "transform: none;"
+      },
+      {
+        "t": "/3",
+        "style": null
+      }
+    ],
+    "images": [
+      {
+        "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1760350326-shutterstock_1058062604_edited_final.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+        "style": "position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent; opacity: 1; transform: none;"
+      }
+    ],
+    "tracks": []
+  },
+  {
+    "scrollY": 3400,
+    "section": "<section id=\"\" class=\"bg-cream relative w-full pt-(--padding-y) text-black md:pt-[calc(var(--padding-y)*1.5)]\"><div class=\"w-calc flex flex-col items-",
+    "digits": [
+      {
+        "t": "03",
+        "style": "transform: none;"
+      },
+      {
+        "t": "/3",
+        "style": null
+      }
+    ],
+    "images": [
+      {
+        "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1760350326-shutterstock_1058062604_edited_final.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+        "style": "position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent; opacity: 1; transform: none;"
+      }
+    ],
+    "tracks": []
+  },
+  {
+    "scrollY": 3800,
+    "section": "<section id=\"\" class=\"bg-cream relative w-full pt-(--padding-y) text-black md:pt-[calc(var(--padding-y)*1.5)]\"><div class=\"w-calc flex flex-col items-",
+    "digits": [
+      {
+        "t": "03",
+        "style": "transform: none;"
+      },
+      {
+        "t": "/3",
+        "style": null
+      }
+    ],
+    "images": [
+      {
+        "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1760350326-shutterstock_1058062604_edited_final.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75",
+        "style": "position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent; opacity: 1; transform: none;"
+      }
+    ],
+    "tracks": []
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "side": "reference",
+    "end": {
+      "x": 1440,
+      "width": 1440,
+      "max": 4320,
+      "attr": null
+    },
+    "frames": 77
+  },
+  {
+    "side": "local",
+    "end": {
+      "x": 1440,
+      "width": 1440,
+      "max": 4320,
+      "attr": "true"
+    },
+    "frames": 97
+  }
+]

@@ -1,0 +1,650 @@
+[
+  {
+    "requestedScroll": 0,
+    "w": 390,
+    "sw": 1218,
+    "text": "00/3Safety from the inside out.Our governance structure ensures that every decision prioritizes safe",
+    "nodes": [
+      {
+        "tag": "DIV",
+        "cls": "flex items-center",
+        "text": "",
+        "rect": {
+          "x": -378,
+          "y": 159.8125,
+          "w": 378,
+          "h": 2
+        },
+        "transform": "matrix(1, 0, 0, 1, -378, 0)",
+        "opacity": "1",
+        "src": null
+      }
+    ]
+  },
+  {
+    "requestedScroll": 100,
+    "w": 390,
+    "sw": 1218,
+    "text": "01/3Safety from the inside out.Our governance structure ensures that every decision prioritizes safe",
+    "nodes": [
+      {
+        "tag": "DIV",
+        "cls": "flex items-center",
+        "text": "",
+        "rect": {
+          "x": -332.3478088378906,
+          "y": 159.8125,
+          "w": 378,
+          "h": 2
+        },
+        "transform": "matrix(1, 0, 0, 1, -332.348, 0)",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "DIV",
+        "cls": "relative grid w-30 overflow-clip md:w-48",
+        "text": "01",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "P",
+        "cls": "area type-z-24 md:type-z-40",
+        "text": "01",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "IMG",
+        "cls": "h-full w-full object-cover",
+        "text": "",
+        "rect": {
+          "x": 40,
+          "y": -198.1875,
+          "w": 310,
+          "h": 310
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761185044-waabi_road2_05683.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+      }
+    ]
+  },
+  {
+    "requestedScroll": 200,
+    "w": 390,
+    "sw": 1218,
+    "text": "01/3Safety from the inside out.Our governance structure ensures that every decision prioritizes safe",
+    "nodes": [
+      {
+        "tag": "DIV",
+        "cls": "flex items-center",
+        "text": "",
+        "rect": {
+          "x": -286.6956787109375,
+          "y": 159.8125,
+          "w": 378,
+          "h": 2
+        },
+        "transform": "matrix(1, 0, 0, 1, -286.696, 0)",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "DIV",
+        "cls": "relative grid w-30 overflow-clip md:w-48",
+        "text": "01",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "P",
+        "cls": "area type-z-24 md:type-z-40",
+        "text": "01",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "IMG",
+        "cls": "h-full w-full object-cover",
+        "text": "",
+        "rect": {
+          "x": 40,
+          "y": -198.1875,
+          "w": 310,
+          "h": 310
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761185044-waabi_road2_05683.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+      }
+    ]
+  },
+  {
+    "requestedScroll": 300,
+    "w": 390,
+    "sw": 1218,
+    "text": "01/3Safety from the inside out.Our governance structure ensures that every decision prioritizes safe",
+    "nodes": [
+      {
+        "tag": "DIV",
+        "cls": "flex items-center",
+        "text": "",
+        "rect": {
+          "x": -241.04347229003906,
+          "y": 159.8125,
+          "w": 378,
+          "h": 2
+        },
+        "transform": "matrix(1, 0, 0, 1, -241.043, 0)",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "DIV",
+        "cls": "relative grid w-30 overflow-clip md:w-48",
+        "text": "01",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "P",
+        "cls": "area type-z-24 md:type-z-40",
+        "text": "01",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "IMG",
+        "cls": "h-full w-full object-cover",
+        "text": "",
+        "rect": {
+          "x": 40,
+          "y": -198.1875,
+          "w": 310,
+          "h": 310
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761185044-waabi_road2_05683.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+      }
+    ]
+  },
+  {
+    "requestedScroll": 390,
+    "w": 390,
+    "sw": 1218,
+    "text": "01/3Safety from the inside out.Our governance structure ensures that every decision prioritizes safe",
+    "nodes": [
+      {
+        "tag": "DIV",
+        "cls": "flex items-center",
+        "text": "",
+        "rect": {
+          "x": -199.95652770996094,
+          "y": 159.8125,
+          "w": 378,
+          "h": 2
+        },
+        "transform": "matrix(1, 0, 0, 1, -199.957, 0)",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "DIV",
+        "cls": "relative grid w-30 overflow-clip md:w-48",
+        "text": "01",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "P",
+        "cls": "area type-z-24 md:type-z-40",
+        "text": "01",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "IMG",
+        "cls": "h-full w-full object-cover",
+        "text": "",
+        "rect": {
+          "x": 40,
+          "y": -198.1875,
+          "w": 310,
+          "h": 310
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761185044-waabi_road2_05683.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+      }
+    ]
+  },
+  {
+    "requestedScroll": 414,
+    "w": 390,
+    "sw": 1218,
+    "text": "02/3Safety from the inside out.Our governance structure ensures that every decision prioritizes safe",
+    "nodes": [
+      {
+        "tag": "DIV",
+        "cls": "flex items-center",
+        "text": "",
+        "rect": {
+          "x": -189,
+          "y": 159.8125,
+          "w": 378,
+          "h": 2
+        },
+        "transform": "matrix(1, 0, 0, 1, -189, 0)",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "DIV",
+        "cls": "relative grid w-30 overflow-clip md:w-48",
+        "text": "02",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "P",
+        "cls": "area type-z-24 md:type-z-40",
+        "text": "02",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "IMG",
+        "cls": "h-full w-full object-cover",
+        "text": "",
+        "rect": {
+          "x": 40,
+          "y": -198.1875,
+          "w": 310,
+          "h": 310
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761183960-waabi_inspection_02285.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+      }
+    ]
+  },
+  {
+    "requestedScroll": 600,
+    "w": 390,
+    "sw": 1218,
+    "text": "02/3Safety from the inside out.Our governance structure ensures that every decision prioritizes safe",
+    "nodes": [
+      {
+        "tag": "DIV",
+        "cls": "flex items-center",
+        "text": "",
+        "rect": {
+          "x": -104.08695220947266,
+          "y": 159.8125,
+          "w": 378,
+          "h": 2
+        },
+        "transform": "matrix(1, 0, 0, 1, -104.087, 0)",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "DIV",
+        "cls": "relative grid w-30 overflow-clip md:w-48",
+        "text": "02",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "P",
+        "cls": "area type-z-24 md:type-z-40",
+        "text": "02",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "IMG",
+        "cls": "h-full w-full object-cover",
+        "text": "",
+        "rect": {
+          "x": 40,
+          "y": -198.1875,
+          "w": 310,
+          "h": 310
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761183960-waabi_inspection_02285.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+      }
+    ]
+  },
+  {
+    "requestedScroll": 828,
+    "w": 390,
+    "sw": 1218,
+    "text": "03/3Safety from the inside out.Our governance structure ensures that every decision prioritizes safe",
+    "nodes": [
+      {
+        "tag": "DIV",
+        "cls": "relative grid w-30 overflow-clip md:w-48",
+        "text": "03",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "P",
+        "cls": "area type-z-24 md:type-z-40",
+        "text": "03",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "IMG",
+        "cls": "h-full w-full object-cover",
+        "text": "",
+        "rect": {
+          "x": 40,
+          "y": -198.1875,
+          "w": 310,
+          "h": 310
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1760350326-shutterstock_1058062604_edited_final.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+      }
+    ]
+  },
+  {
+    "requestedScroll": 600,
+    "w": 390,
+    "sw": 1218,
+    "text": "02/3Safety from the inside out.Our governance structure ensures that every decision prioritizes safe",
+    "nodes": [
+      {
+        "tag": "DIV",
+        "cls": "flex items-center",
+        "text": "",
+        "rect": {
+          "x": -104.08695220947266,
+          "y": 159.8125,
+          "w": 378,
+          "h": 2
+        },
+        "transform": "matrix(1, 0, 0, 1, -104.087, 0)",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "DIV",
+        "cls": "relative grid w-30 overflow-clip md:w-48",
+        "text": "02",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "P",
+        "cls": "area type-z-24 md:type-z-40",
+        "text": "02",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "IMG",
+        "cls": "h-full w-full object-cover",
+        "text": "",
+        "rect": {
+          "x": 40,
+          "y": -198.1875,
+          "w": 310,
+          "h": 310
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761183960-waabi_inspection_02285.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+      }
+    ]
+  },
+  {
+    "requestedScroll": 300,
+    "w": 390,
+    "sw": 1218,
+    "text": "01/3Safety from the inside out.Our governance structure ensures that every decision prioritizes safe",
+    "nodes": [
+      {
+        "tag": "DIV",
+        "cls": "flex items-center",
+        "text": "",
+        "rect": {
+          "x": -241.04347229003906,
+          "y": 159.8125,
+          "w": 378,
+          "h": 2
+        },
+        "transform": "matrix(1, 0, 0, 1, -241.043, 0)",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "DIV",
+        "cls": "relative grid w-30 overflow-clip md:w-48",
+        "text": "01",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "P",
+        "cls": "area type-z-24 md:type-z-40",
+        "text": "01",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "IMG",
+        "cls": "h-full w-full object-cover",
+        "text": "",
+        "rect": {
+          "x": 40,
+          "y": -198.1875,
+          "w": 310,
+          "h": 310
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761185044-waabi_road2_05683.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+      }
+    ]
+  },
+  {
+    "requestedScroll": 0,
+    "w": 390,
+    "sw": 1218,
+    "text": "01/3Safety from the inside out.Our governance structure ensures that every decision prioritizes safe",
+    "nodes": [
+      {
+        "tag": "DIV",
+        "cls": "flex items-center",
+        "text": "",
+        "rect": {
+          "x": -378,
+          "y": 159.8125,
+          "w": 378,
+          "h": 2
+        },
+        "transform": "matrix(1, 0, 0, 1, -378, 0)",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "DIV",
+        "cls": "relative grid w-30 overflow-clip md:w-48",
+        "text": "01",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "P",
+        "cls": "area type-z-24 md:type-z-40",
+        "text": "01",
+        "rect": {
+          "x": 171.484375,
+          "y": 185.8125,
+          "w": 30,
+          "h": 30
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": null
+      },
+      {
+        "tag": "IMG",
+        "cls": "h-full w-full object-cover",
+        "text": "",
+        "rect": {
+          "x": 40,
+          "y": -198.1875,
+          "w": 310,
+          "h": 310
+        },
+        "transform": "none",
+        "opacity": "1",
+        "src": "https://waabi.ai/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F163962%2F1761185044-waabi_road2_05683.jpg%3Ffit%3Dmax%26h%3D3000%26q%3D90%26w%3D2000&w=3840&q=75"
+      }
+    ]
+  }
+]

@@ -1,0 +1,808 @@
+[
+  {
+    "y": 0,
+    "title": [
+      {
+        "box": {
+          "x": 103,
+          "y": 525,
+          "width": 831.0625,
+          "height": 255,
+          "top": 525,
+          "right": 934.0625,
+          "bottom": 780,
+          "left": 103
+        },
+        "html": "<span class=\"flex flex-col\"><span class=\"text-left\" style=\"transform: none;\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Built</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">think.</span><span></span></span></span><span class=\"text-left\" style=\"transform: none;\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Born</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">haul.</span><span></span></span></span></span>"
+      }
+    ],
+    "strengths": [
+      {
+        "text": "Safe",
+        "box": {
+          "x": 876.984375,
+          "y": 3695.390625,
+          "width": 370,
+          "height": 44,
+          "top": 3695.390625,
+          "right": 1246.984375,
+          "bottom": 3739.390625,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Scalable",
+        "box": {
+          "x": 876.984375,
+          "y": 3846.609375,
+          "width": 370,
+          "height": 44,
+          "top": 3846.609375,
+          "right": 1246.984375,
+          "bottom": 3890.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Practical",
+        "box": {
+          "x": 876.984375,
+          "y": 3910.609375,
+          "width": 370,
+          "height": 44,
+          "top": 3910.609375,
+          "right": 1246.984375,
+          "bottom": 3954.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      }
+    ]
+  },
+  {
+    "y": 180,
+    "title": [
+      {
+        "box": {
+          "x": 103,
+          "y": 345,
+          "width": 831.0625,
+          "height": 255,
+          "top": 345,
+          "right": 934.0625,
+          "bottom": 600,
+          "left": 103
+        },
+        "html": "<span class=\"flex flex-col\"><span class=\"text-left\" style=\"transform: none;\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Built</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">think.</span><span></span></span></span><span class=\"text-left\" style=\"transform: none;\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Born</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">haul.</span><span></span></span></span></span>"
+      }
+    ],
+    "strengths": [
+      {
+        "text": "Safe",
+        "box": {
+          "x": 876.984375,
+          "y": 3515.390625,
+          "width": 370,
+          "height": 44,
+          "top": 3515.390625,
+          "right": 1246.984375,
+          "bottom": 3559.390625,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Scalable",
+        "box": {
+          "x": 876.984375,
+          "y": 3666.609375,
+          "width": 370,
+          "height": 44,
+          "top": 3666.609375,
+          "right": 1246.984375,
+          "bottom": 3710.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Practical",
+        "box": {
+          "x": 876.984375,
+          "y": 3730.609375,
+          "width": 370,
+          "height": 44,
+          "top": 3730.609375,
+          "right": 1246.984375,
+          "bottom": 3774.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      }
+    ]
+  },
+  {
+    "y": 360,
+    "title": [
+      {
+        "box": {
+          "x": 103,
+          "y": 165,
+          "width": 831.0625,
+          "height": 255,
+          "top": 165,
+          "right": 934.0625,
+          "bottom": 420,
+          "left": 103
+        },
+        "html": "<span class=\"flex flex-col\"><span class=\"text-left\" style=\"transform: translateX(13.6364px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Built</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">think.</span><span></span></span></span><span class=\"text-left\" style=\"transform: translateX(-13.6364px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Born</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">haul.</span><span></span></span></span></span>"
+      }
+    ],
+    "strengths": [
+      {
+        "text": "Safe",
+        "box": {
+          "x": 876.984375,
+          "y": 3335.390625,
+          "width": 370,
+          "height": 44,
+          "top": 3335.390625,
+          "right": 1246.984375,
+          "bottom": 3379.390625,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Scalable",
+        "box": {
+          "x": 876.984375,
+          "y": 3486.609375,
+          "width": 370,
+          "height": 44,
+          "top": 3486.609375,
+          "right": 1246.984375,
+          "bottom": 3530.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Practical",
+        "box": {
+          "x": 876.984375,
+          "y": 3550.609375,
+          "width": 370,
+          "height": 44,
+          "top": 3550.609375,
+          "right": 1246.984375,
+          "bottom": 3594.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      }
+    ]
+  },
+  {
+    "y": 540,
+    "title": [
+      {
+        "box": {
+          "x": 103,
+          "y": -15,
+          "width": 831.0625,
+          "height": 255,
+          "top": -15,
+          "right": 934.0625,
+          "bottom": 240,
+          "left": 103
+        },
+        "html": "<span class=\"flex flex-col\"><span class=\"text-left\" style=\"transform: translateX(29.2208px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Built</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">think.</span><span></span></span></span><span class=\"text-left\" style=\"transform: translateX(-29.2208px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Born</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">haul.</span><span></span></span></span></span>"
+      }
+    ],
+    "strengths": [
+      {
+        "text": "Safe",
+        "box": {
+          "x": 876.984375,
+          "y": 3155.390625,
+          "width": 370,
+          "height": 44,
+          "top": 3155.390625,
+          "right": 1246.984375,
+          "bottom": 3199.390625,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Scalable",
+        "box": {
+          "x": 876.984375,
+          "y": 3306.609375,
+          "width": 370,
+          "height": 44,
+          "top": 3306.609375,
+          "right": 1246.984375,
+          "bottom": 3350.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Practical",
+        "box": {
+          "x": 876.984375,
+          "y": 3370.609375,
+          "width": 370,
+          "height": 44,
+          "top": 3370.609375,
+          "right": 1246.984375,
+          "bottom": 3414.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      }
+    ]
+  },
+  {
+    "y": 900,
+    "title": [
+      {
+        "box": {
+          "x": 103,
+          "y": -375,
+          "width": 831.0625,
+          "height": 255,
+          "top": -375,
+          "right": 934.0625,
+          "bottom": -120,
+          "left": 103
+        },
+        "html": "<span class=\"flex flex-col\"><span class=\"text-left\" style=\"transform: translateX(50px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Built</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">think.</span><span></span></span></span><span class=\"text-left\" style=\"transform: translateX(-50px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Born</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">haul.</span><span></span></span></span></span>"
+      }
+    ],
+    "strengths": [
+      {
+        "text": "Safe",
+        "box": {
+          "x": 876.984375,
+          "y": 2795.390625,
+          "width": 370,
+          "height": 44,
+          "top": 2795.390625,
+          "right": 1246.984375,
+          "bottom": 2839.390625,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Scalable",
+        "box": {
+          "x": 876.984375,
+          "y": 2946.609375,
+          "width": 370,
+          "height": 44,
+          "top": 2946.609375,
+          "right": 1246.984375,
+          "bottom": 2990.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Practical",
+        "box": {
+          "x": 876.984375,
+          "y": 3010.609375,
+          "width": 370,
+          "height": 44,
+          "top": 3010.609375,
+          "right": 1246.984375,
+          "bottom": 3054.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      }
+    ]
+  },
+  {
+    "y": 1125,
+    "title": [
+      {
+        "box": {
+          "x": 103,
+          "y": -600,
+          "width": 831.0625,
+          "height": 255,
+          "top": -600,
+          "right": 934.0625,
+          "bottom": -345,
+          "left": 103
+        },
+        "html": "<span class=\"flex flex-col\"><span class=\"text-left\" style=\"transform: translateX(50px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Built</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">think.</span><span></span></span></span><span class=\"text-left\" style=\"transform: translateX(-50px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Born</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">haul.</span><span></span></span></span></span>"
+      }
+    ],
+    "strengths": [
+      {
+        "text": "Safe",
+        "box": {
+          "x": 876.984375,
+          "y": 2570.390625,
+          "width": 370,
+          "height": 44,
+          "top": 2570.390625,
+          "right": 1246.984375,
+          "bottom": 2614.390625,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Scalable",
+        "box": {
+          "x": 876.984375,
+          "y": 2721.609375,
+          "width": 370,
+          "height": 44,
+          "top": 2721.609375,
+          "right": 1246.984375,
+          "bottom": 2765.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Practical",
+        "box": {
+          "x": 876.984375,
+          "y": 2785.609375,
+          "width": 370,
+          "height": 44,
+          "top": 2785.609375,
+          "right": 1246.984375,
+          "bottom": 2829.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      }
+    ]
+  },
+  {
+    "y": 1350,
+    "title": [
+      {
+        "box": {
+          "x": 103,
+          "y": -825,
+          "width": 831.0625,
+          "height": 255,
+          "top": -825,
+          "right": 934.0625,
+          "bottom": -570,
+          "left": 103
+        },
+        "html": "<span class=\"flex flex-col\"><span class=\"text-left\" style=\"transform: translateX(50px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Built</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">think.</span><span></span></span></span><span class=\"text-left\" style=\"transform: translateX(-50px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Born</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">haul.</span><span></span></span></span></span>"
+      }
+    ],
+    "strengths": [
+      {
+        "text": "Safe",
+        "box": {
+          "x": 876.984375,
+          "y": 2345.390625,
+          "width": 370,
+          "height": 44,
+          "top": 2345.390625,
+          "right": 1246.984375,
+          "bottom": 2389.390625,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Scalable",
+        "box": {
+          "x": 876.984375,
+          "y": 2496.609375,
+          "width": 370,
+          "height": 44,
+          "top": 2496.609375,
+          "right": 1246.984375,
+          "bottom": 2540.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Practical",
+        "box": {
+          "x": 876.984375,
+          "y": 2560.609375,
+          "width": 370,
+          "height": 44,
+          "top": 2560.609375,
+          "right": 1246.984375,
+          "bottom": 2604.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      }
+    ]
+  },
+  {
+    "y": 2925,
+    "title": [
+      {
+        "box": {
+          "x": 103,
+          "y": -2400,
+          "width": 831.0625,
+          "height": 255,
+          "top": -2400,
+          "right": 934.0625,
+          "bottom": -2145,
+          "left": 103
+        },
+        "html": "<span class=\"flex flex-col\"><span class=\"text-left\" style=\"transform: translateX(50px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Built</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">think.</span><span></span></span></span><span class=\"text-left\" style=\"transform: translateX(-50px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Born</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">haul.</span><span></span></span></span></span>"
+      }
+    ],
+    "strengths": [
+      {
+        "text": "Safe",
+        "box": {
+          "x": 876.984375,
+          "y": 770.390625,
+          "width": 370,
+          "height": 44,
+          "top": 770.390625,
+          "right": 1246.984375,
+          "bottom": 814.390625,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Scalable",
+        "box": {
+          "x": 876.984375,
+          "y": 921.609375,
+          "width": 370,
+          "height": 44,
+          "top": 921.609375,
+          "right": 1246.984375,
+          "bottom": 965.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Practical",
+        "box": {
+          "x": 876.984375,
+          "y": 985.609375,
+          "width": 370,
+          "height": 44,
+          "top": 985.609375,
+          "right": 1246.984375,
+          "bottom": 1029.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      }
+    ]
+  },
+  {
+    "y": 3100,
+    "title": [
+      {
+        "box": {
+          "x": 103,
+          "y": -2575,
+          "width": 831.0625,
+          "height": 255,
+          "top": -2575,
+          "right": 934.0625,
+          "bottom": -2320,
+          "left": 103
+        },
+        "html": "<span class=\"flex flex-col\"><span class=\"text-left\" style=\"transform: translateX(50px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Built</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">think.</span><span></span></span></span><span class=\"text-left\" style=\"transform: translateX(-50px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Born</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">haul.</span><span></span></span></span></span>"
+      }
+    ],
+    "strengths": [
+      {
+        "text": "Safe",
+        "box": {
+          "x": 876.984375,
+          "y": 595.390625,
+          "width": 370,
+          "height": 44,
+          "top": 595.390625,
+          "right": 1246.984375,
+          "bottom": 639.390625,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Scalable",
+        "box": {
+          "x": 876.984375,
+          "y": 746.609375,
+          "width": 370,
+          "height": 44,
+          "top": 746.609375,
+          "right": 1246.984375,
+          "bottom": 790.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Practical",
+        "box": {
+          "x": 876.984375,
+          "y": 810.609375,
+          "width": 370,
+          "height": 44,
+          "top": 810.609375,
+          "right": 1246.984375,
+          "bottom": 854.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      }
+    ]
+  },
+  {
+    "y": 3250,
+    "title": [
+      {
+        "box": {
+          "x": 103,
+          "y": -2725,
+          "width": 831.0625,
+          "height": 255,
+          "top": -2725,
+          "right": 934.0625,
+          "bottom": -2470,
+          "left": 103
+        },
+        "html": "<span class=\"flex flex-col\"><span class=\"text-left\" style=\"transform: translateX(50px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Built</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">think.</span><span></span></span></span><span class=\"text-left\" style=\"transform: translateX(-50px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Born</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">haul.</span><span></span></span></span></span>"
+      }
+    ],
+    "strengths": [
+      {
+        "text": "Safe",
+        "box": {
+          "x": 876.984375,
+          "y": 445.390625,
+          "width": 370,
+          "height": 44,
+          "top": 445.390625,
+          "right": 1246.984375,
+          "bottom": 489.390625,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Scalable",
+        "box": {
+          "x": 876.984375,
+          "y": 596.609375,
+          "width": 370,
+          "height": 44,
+          "top": 596.609375,
+          "right": 1246.984375,
+          "bottom": 640.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Practical",
+        "box": {
+          "x": 876.984375,
+          "y": 660.609375,
+          "width": 370,
+          "height": 44,
+          "top": 660.609375,
+          "right": 1246.984375,
+          "bottom": 704.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      }
+    ]
+  },
+  {
+    "y": 3450,
+    "title": [
+      {
+        "box": {
+          "x": 103,
+          "y": -2925,
+          "width": 831.0625,
+          "height": 255,
+          "top": -2925,
+          "right": 934.0625,
+          "bottom": -2670,
+          "left": 103
+        },
+        "html": "<span class=\"flex flex-col\"><span class=\"text-left\" style=\"transform: translateX(50px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Built</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">think.</span><span></span></span></span><span class=\"text-left\" style=\"transform: translateX(-50px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Born</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">haul.</span><span></span></span></span></span>"
+      }
+    ],
+    "strengths": [
+      {
+        "text": "Safe",
+        "box": {
+          "x": 876.984375,
+          "y": 320.390625,
+          "width": 370,
+          "height": 44,
+          "top": 320.390625,
+          "right": 1246.984375,
+          "bottom": 364.390625,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Scalable",
+        "box": {
+          "x": 876.984375,
+          "y": 471.609375,
+          "width": 370,
+          "height": 44,
+          "top": 471.609375,
+          "right": 1246.984375,
+          "bottom": 515.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Practical",
+        "box": {
+          "x": 876.984375,
+          "y": 535.609375,
+          "width": 370,
+          "height": 44,
+          "top": 535.609375,
+          "right": 1246.984375,
+          "bottom": 579.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      }
+    ]
+  },
+  {
+    "y": 3750,
+    "title": [
+      {
+        "box": {
+          "x": 103,
+          "y": -3225,
+          "width": 831.0625,
+          "height": 255,
+          "top": -3225,
+          "right": 934.0625,
+          "bottom": -2970,
+          "left": 103
+        },
+        "html": "<span class=\"flex flex-col\"><span class=\"text-left\" style=\"transform: translateX(50px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Built</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">think.</span><span></span></span></span><span class=\"text-left\" style=\"transform: translateX(-50px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Born</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">haul.</span><span></span></span></span></span>"
+      }
+    ],
+    "strengths": [
+      {
+        "text": "Safe",
+        "box": {
+          "x": 876.984375,
+          "y": 320.390625,
+          "width": 370,
+          "height": 44,
+          "top": 320.390625,
+          "right": 1246.984375,
+          "bottom": 364.390625,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Scalable",
+        "box": {
+          "x": 876.984375,
+          "y": 471.609375,
+          "width": 370,
+          "height": 44,
+          "top": 471.609375,
+          "right": 1246.984375,
+          "bottom": 515.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Practical",
+        "box": {
+          "x": 876.984375,
+          "y": 535.609375,
+          "width": 370,
+          "height": 44,
+          "top": 535.609375,
+          "right": 1246.984375,
+          "bottom": 579.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      }
+    ]
+  },
+  {
+    "y": 3250,
+    "title": [
+      {
+        "box": {
+          "x": 103,
+          "y": -2725,
+          "width": 831.0625,
+          "height": 255,
+          "top": -2725,
+          "right": 934.0625,
+          "bottom": -2470,
+          "left": 103
+        },
+        "html": "<span class=\"flex flex-col\"><span class=\"text-left\" style=\"transform: translateX(50px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Built</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">think.</span><span></span></span></span><span class=\"text-left\" style=\"transform: translateX(-50px);\"><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">Born</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">to</span><span> </span></span><span><span class=\"no-js:opacity-100! inline-flex items-center\" style=\"opacity: 1; transform: none;\">haul.</span><span></span></span></span></span>"
+      }
+    ],
+    "strengths": [
+      {
+        "text": "Safe",
+        "box": {
+          "x": 876.984375,
+          "y": 445.390625,
+          "width": 370,
+          "height": 44,
+          "top": 445.390625,
+          "right": 1246.984375,
+          "bottom": 489.390625,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Scalable",
+        "box": {
+          "x": 876.984375,
+          "y": 596.609375,
+          "width": 370,
+          "height": 44,
+          "top": 596.609375,
+          "right": 1246.984375,
+          "bottom": 640.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      },
+      {
+        "text": "Practical",
+        "box": {
+          "x": 876.984375,
+          "y": 660.609375,
+          "width": 370,
+          "height": 44,
+          "top": 660.609375,
+          "right": 1246.984375,
+          "bottom": 704.609375,
+          "left": 876.984375
+        },
+        "parent": "none"
+      }
+    ]
+  }
+]

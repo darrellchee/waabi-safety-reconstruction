@@ -1,0 +1,168 @@
+{
+  "line": [
+    {
+      "cls": "",
+      "rect": {
+        "x": 715.453125,
+        "y": -1125,
+        "w": 13.375,
+        "h": 76
+      },
+      "style": {
+        "transform": "none",
+        "margin": "0px",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)",
+        "position": "static",
+        "top": "auto",
+        "bottom": "auto"
+      },
+      "html": "<span> </span>"
+    },
+    {
+      "cls": "",
+      "rect": {
+        "x": 721.65625,
+        "y": -1053,
+        "w": 13.375,
+        "h": 76
+      },
+      "style": {
+        "transform": "none",
+        "margin": "0px",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)",
+        "position": "static",
+        "top": "auto",
+        "bottom": "auto"
+      },
+      "html": "<span> </span>"
+    },
+    {
+      "cls": "absolute top-0 left-1/2 h-full -translate-x-1/2 overflow-clip pb-[50svh] max-md:hidden",
+      "rect": {
+        "x": 713.984375,
+        "y": -709,
+        "w": 12,
+        "h": 2080
+      },
+      "style": {
+        "transform": "none",
+        "margin": "0px",
+        "padding": "0px 0px 450px",
+        "background": "rgba(0, 0, 0, 0)",
+        "position": "absolute",
+        "top": "0px",
+        "bottom": "0px"
+      },
+      "html": "<div class=\"absolute top-0 left-1/2 h-full -translate-x-1/2 overflow-clip pb-[50svh] max-md:hidden\"><div class=\"flex items-center h-full flex-col justify-center\" style=\"transform: translateY(-28.8957%);\"><div class=\"bg-pink h-full w-2 translate-y-12\"></div><div class=\"bg-pink size-12 rounded-full -mb-full translate-y-12\"></div></div></div>"
+    },
+    {
+      "cls": "flex items-center h-full flex-col justify-center",
+      "rect": {
+        "x": 713.984375,
+        "y": -1180,
+        "w": 12,
+        "h": 1630
+      },
+      "style": {
+        "transform": "matrix(1, 0, 0, 1, 0, -471)",
+        "margin": "0px",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)",
+        "position": "static",
+        "top": "auto",
+        "bottom": "auto"
+      },
+      "html": "<div class=\"flex items-center h-full flex-col justify-center\" style=\"transform: translateY(-28.8957%);\"><div class=\"bg-pink h-full w-2 translate-y-12\"></div><div class=\"bg-pink size-12 rounded-full -mb-full translate-y-12\"></div></div>"
+    },
+    {
+      "cls": "bg-pink h-full w-2 translate-y-12",
+      "rect": {
+        "x": 718.984375,
+        "y": -1168,
+        "w": 2,
+        "h": 1618.09375
+      },
+      "style": {
+        "transform": "none",
+        "margin": "0px",
+        "padding": "0px",
+        "background": "rgb(255, 44, 107)",
+        "position": "static",
+        "top": "auto",
+        "bottom": "auto"
+      },
+      "html": "<div class=\"bg-pink h-full w-2 translate-y-12\"></div>"
+    },
+    {
+      "cls": "bg-pink size-12 rounded-full -mb-full translate-y-12",
+      "rect": {
+        "x": 713.984375,
+        "y": 450.09375,
+        "w": 12,
+        "h": 11.90625
+      },
+      "style": {
+        "transform": "none",
+        "margin": "0px",
+        "padding": "0px",
+        "background": "rgb(255, 44, 107)",
+        "position": "static",
+        "top": "auto",
+        "bottom": "auto"
+      },
+      "html": "<div class=\"bg-pink size-12 rounded-full -mb-full translate-y-12\"></div>"
+    }
+  ],
+  "fonts": [
+    {
+      "text": "Safe",
+      "cls": "type-z-24 md:type-z-40",
+      "font": "Zagma, \"Zagma Fallback\", sans-serif",
+      "size": "40px",
+      "line": "44px",
+      "html": "<p class=\"type-z-24 md:type-z-40\">Safe</p>"
+    },
+    {
+      "text": "The combination of advanced AI and neural simulation sets a new standard for the entire industry. ",
+      "cls": "text-s-14 md:text-s-15 text-pretty text-black/55",
+      "font": "Zagma, \"Zagma Fallback\", sans-serif",
+      "size": "16px",
+      "line": "22.4px",
+      "html": "<p class=\"text-s-14 md:text-s-15 text-pretty text-black/55\">The combination of advanced AI and neural simulation sets a new standard for the entire industry. </p>"
+    },
+    {
+      "text": "Scalable",
+      "cls": "type-z-24 md:type-z-40",
+      "font": "Zagma, \"Zagma Fallback\", sans-serif",
+      "size": "40px",
+      "line": "44px",
+      "html": "<p class=\"type-z-24 md:type-z-40\">Scalable</p>"
+    },
+    {
+      "text": "Practical",
+      "cls": "type-z-24 md:type-z-40",
+      "font": "Zagma, \"Zagma Fallback\", sans-serif",
+      "size": "40px",
+      "line": "44px",
+      "html": "<p class=\"type-z-24 md:type-z-40\">Practical</p>"
+    },
+    {
+      "text": "Safe",
+      "cls": "type-z-24",
+      "font": "Zagma, \"Zagma Fallback\", sans-serif",
+      "size": "24px",
+      "line": "30px",
+      "html": "<p class=\"type-z-24\">Safe</p>"
+    },
+    {
+      "text": "The combination of advanced AI and neural simulation sets a new standard for the entire industry. ",
+      "cls": "area text-s-14 text-pretty text-black/50",
+      "font": "Zagma, \"Zagma Fallback\", sans-serif",
+      "size": "16px",
+      "line": "22.4px",
+      "html": "<p class=\"area text-s-14 text-pretty text-black/50\" style=\"opacity: 1;\">The combination of advanced AI and neural simulation sets a new standard for the entire industry. </p>"
+    }
+  ]
+}

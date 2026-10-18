@@ -1,0 +1,42 @@
+[
+  {
+    "wall": 4564,
+    "scroll": 0,
+    "time": 2.46558,
+    "paused": false,
+    "duration": 27.166667,
+    "ready": 4
+  },
+  {
+    "wall": 5070.199999999255,
+    "scroll": 3500,
+    "time": 2.555854,
+    "paused": true,
+    "duration": 27.166667,
+    "ready": 4
+  },
+  {
+    "wall": 6277.199999999255,
+    "scroll": 3500,
+    "time": 2.555854,
+    "paused": true,
+    "duration": 27.166667,
+    "ready": 4
+  },
+  {
+    "wall": 6790.800000000745,
+    "scroll": 0,
+    "time": 2.875806,
+    "paused": false,
+    "duration": 27.166667,
+    "ready": 4
+  },
+  {
+    "wall": 7443.300000000745,
+    "scroll": 0,
+    "time": 3.528426,
+    "paused": false,
+    "duration": 27.166667,
+    "ready": 4
+  }
+]

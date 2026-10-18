@@ -1,0 +1,302 @@
+[
+  {
+    "viewport": 1440,
+    "step": 0,
+    "scrollY": 0,
+    "titleYDelta": 0,
+    "digitsReference": [
+      "03"
+    ],
+    "digitsLocal": [
+      "03"
+    ]
+  },
+  {
+    "viewport": 1440,
+    "step": 1,
+    "scrollY": 750,
+    "titleYDelta": 0,
+    "digitsReference": [
+      "03"
+    ],
+    "digitsLocal": [
+      "03"
+    ]
+  },
+  {
+    "viewport": 1440,
+    "step": 2,
+    "scrollY": 1450,
+    "titleYDelta": 0,
+    "digitsReference": [
+      "03"
+    ],
+    "digitsLocal": [
+      "03"
+    ]
+  },
+  {
+    "viewport": 1440,
+    "step": 3,
+    "scrollY": 2200,
+    "titleYDelta": 0,
+    "digitsReference": [
+      "03"
+    ],
+    "digitsLocal": [
+      "03"
+    ]
+  },
+  {
+    "viewport": 1440,
+    "step": 4,
+    "scrollY": 2600,
+    "titleYDelta": 1.2343,
+    "digitsReference": [
+      "01"
+    ],
+    "digitsLocal": [
+      "01"
+    ]
+  },
+  {
+    "viewport": 1440,
+    "step": 5,
+    "scrollY": 3000,
+    "titleYDelta": 0,
+    "digitsReference": [
+      "01"
+    ],
+    "digitsLocal": [
+      "01"
+    ]
+  },
+  {
+    "viewport": 1440,
+    "step": 6,
+    "scrollY": 3400,
+    "titleYDelta": 0,
+    "digitsReference": [
+      "02"
+    ],
+    "digitsLocal": [
+      "02"
+    ]
+  },
+  {
+    "viewport": 1440,
+    "step": 7,
+    "scrollY": 3800,
+    "titleYDelta": 0,
+    "digitsReference": [
+      "03"
+    ],
+    "digitsLocal": [
+      "03"
+    ]
+  },
+  {
+    "viewport": 1440,
+    "step": 8,
+    "scrollY": 3400,
+    "titleYDelta": 0,
+    "digitsReference": [
+      "02"
+    ],
+    "digitsLocal": [
+      "02"
+    ]
+  },
+  {
+    "viewport": 1440,
+    "step": 9,
+    "scrollY": 3000,
+    "titleYDelta": 0,
+    "digitsReference": [
+      "01"
+    ],
+    "digitsLocal": [
+      "01"
+    ]
+  },
+  {
+    "viewport": 1920,
+    "step": 0,
+    "scrollY": 0,
+    "titleYDelta": 0,
+    "digitsReference": [
+      "03"
+    ],
+    "digitsLocal": [
+      "03"
+    ]
+  },
+  {
+    "viewport": 1920,
+    "step": 1,
+    "scrollY": 750,
+    "titleYDelta": 0,
+    "digitsReference": [
+      "03"
+    ],
+    "digitsLocal": [
+      "03"
+    ]
+  },
+  {
+    "viewport": 1920,
+    "step": 2,
+    "scrollY": 1450,
+    "titleYDelta": 0,
+    "digitsReference": [
+      "03"
+    ],
+    "digitsLocal": [
+      "03"
+    ]
+  },
+  {
+    "viewport": 1920,
+    "step": 3,
+    "scrollY": 2200,
+    "titleYDelta": 0,
+    "digitsReference": [
+      "03"
+    ],
+    "digitsLocal": [
+      "03"
+    ]
+  },
+  {
+    "viewport": 1920,
+    "step": 4,
+    "scrollY": 2600,
+    "titleYDelta": 1.223,
+    "digitsReference": [
+      "01"
+    ],
+    "digitsLocal": [
+      "01"
+    ]
+  },
+  {
+    "viewport": 1920,
+    "step": 5,
+    "scrollY": 3000,
+    "titleYDelta": 0,
+    "digitsReference": [
+      "01"
+    ],
+    "digitsLocal": [
+      "01"
+    ]
+  },
+  {
+    "viewport": 1920,
+    "step": 6,
+    "scrollY": 3400,
+    "titleYDelta": 37.0036,
+    "digitsReference": [
+      "02"
+    ],
+    "digitsLocal": [
+      "02"
+    ]
+  },
+  {
+    "viewport": 1920,
+    "step": 7,
+    "scrollY": 3800,
+    "titleYDelta": 0,
+    "digitsReference": [
+      "02"
+    ],
+    "digitsLocal": [
+      "02"
+    ]
+  },
+  {
+    "viewport": 1920,
+    "step": 8,
+    "scrollY": 3400,
+    "titleYDelta": 0,
+    "digitsReference": [
+      "02"
+    ],
+    "digitsLocal": [
+      "02"
+    ]
+  },
+  {
+    "viewport": 1920,
+    "step": 9,
+    "scrollY": 3000,
+    "titleYDelta": 0,
+    "digitsReference": [
+      "01"
+    ],
+    "digitsLocal": [
+      "01"
+    ]
+  },
+  {
+    "viewport": 390,
+    "step": 0,
+    "scrollY": 0,
+    "titleYDelta": -0.0469,
+    "digitsReference": [],
+    "digitsLocal": [
+      "01"
+    ]
+  },
+  {
+    "viewport": 390,
+    "step": 1,
+    "scrollY": 750,
+    "titleYDelta": -0.0469,
+    "digitsReference": [],
+    "digitsLocal": [
+      "01"
+    ]
+  },
+  {
+    "viewport": 390,
+    "step": 2,
+    "scrollY": 1450,
+    "titleYDelta": 1.5786,
+    "digitsReference": [],
+    "digitsLocal": [
+      "01"
+    ]
+  },
+  {
+    "viewport": 390,
+    "step": 3,
+    "scrollY": 2000,
+    "titleYDelta": -0.0469,
+    "digitsReference": [],
+    "digitsLocal": [
+      "01"
+    ]
+  },
+  {
+    "viewport": 390,
+    "step": 4,
+    "scrollY": 2400,
+    "titleYDelta": -0.0469,
+    "digitsReference": [],
+    "digitsLocal": [
+      "01"
+    ]
+  },
+  {
+    "viewport": 390,
+    "step": 5,
+    "scrollY": 2800,
+    "titleYDelta": -0.0469,
+    "digitsReference": [],
+    "digitsLocal": [
+      "01"
+    ]
+  }
+]
