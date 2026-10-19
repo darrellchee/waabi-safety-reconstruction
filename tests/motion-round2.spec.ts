@@ -68,17 +68,37 @@ test.describe("source-measured motion regression", () => {
       const activate = (index: number) => (panels[index].querySelector("button") as HTMLButtonElement).click();
       const sample = () => panels.map(p => ({ x: p.getBoundingClientRect().x, width: p.getBoundingClientRect().width }));
       activate(1); await new Promise(resolve => setTimeout(resolve, 100));
-      const before = sample(); activate(2);
-      await new Promise(requestAnimationFrame); const interrupted = sample();
-      await new Promise(resolve => setTimeout(resolve, 650)); const settled = sample();
+      const before = sample(); const activatedAt = performance.now(); activate(2);
+      await new Promise(requestAnimationFrame);
+      const elapsed = performance.now() - activatedAt; const interrupted = sample();
+      await new Promise(resolve => setTimeout(resolve, 100)); const intermediate = sample();
+      await new Promise(resolve => setTimeout(resolve, 550)); const settled = sample();
       activate(0); await new Promise(resolve => setTimeout(resolve, 650));
-      return { before, interrupted, settled, restored: sample() };
+      return { before, elapsed, interrupted, intermediate, settled, restored: sample() };
     });
-    for (let i = 0; i < result.before.length; i++) {
-      // Layout projection must continue from its displayed pose instead of snapping to CSS flex bounds.
-      expect(Math.abs(result.interrupted[i].x - result.before[i].x)).toBeLessThan(160);
-      expect(Math.abs(result.interrupted[i].width - result.before[i].width)).toBeLessThan(160);
-    }
+    // Fresh public-source audit: a valid first frame moved 209.53px at 22.9ms,
+    // exceeding the former 160px assertion. Compare remaining-distance progress
+    // with the actual .4s [.19,1,.22,1] curve and one cached 60Hz frame instead.
+    const snappy = (progress: number) => {
+      const x = Math.min(1, Math.max(0, progress));
+      let lo = 0, hi = 1;
+      for (let i = 0; i < 24; i++) {
+        const t = (lo + hi) / 2;
+        const curveX = 3 * (1 - t) ** 2 * t * .19 + 3 * (1 - t) * t ** 2 * .22 + t ** 3;
+        if (curveX < x) lo = t; else hi = t;
+      }
+      return 1 - (1 - (lo + hi) / 2) ** 3;
+    };
+    expect(result.elapsed, "capture an early frame, rather than a stalled browser's final pose").toBeLessThan(80);
+    const remaining = result.settled[2].width - result.before[2].width;
+    expect(remaining).toBeGreaterThan(500);
+    const firstProgress = (result.interrupted[2].width - result.before[2].width) / remaining;
+    const intermediateProgress = (result.intermediate[2].width - result.before[2].width) / remaining;
+    expect(firstProgress).toBeGreaterThanOrEqual(-.01);
+    expect(firstProgress, "projection must not jump straight to its new flex width").toBeLessThanOrEqual(snappy((result.elapsed + 1000 / 60) / 400) + .03);
+    expect(firstProgress).toBeLessThan(.9);
+    expect(intermediateProgress, "projection must continue after the interrupted first frame").toBeGreaterThan(firstProgress + .05);
+    expect(intermediateProgress).toBeLessThan(.999);
     expect(result.settled[2].width).toBeGreaterThan(result.settled[0].width * 2);
     expect(result.restored[0].width).toBeGreaterThan(result.restored[2].width * 2);
   });

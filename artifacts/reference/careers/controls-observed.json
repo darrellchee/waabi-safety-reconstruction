@@ -1,0 +1,60 @@
+{
+  "sections": [
+    {
+      "id": "",
+      "text": "Help us tackle the world's biggest challenges. Whether you're an engineer, an AI researcher, a transportation expert, a business specialist, or a student looking to grow your career, Waabi is where yo",
+      "top": 1020,
+      "height": 484,
+      "cls": "relative w-full overflow-clip bg-white py-50 md:py-40"
+    },
+    {
+      "id": "",
+      "text": "Pioneering tomorrow, together.\n\nWe wake up each day with a clear mission that goes far beyond technology\u2014we're empowering humanity to build a better tomorrow. Our team pours their expertise into pione",
+      "top": 1624,
+      "height": 1466,
+      "cls": "bg-cream relative w-full py-[var(--padding-y)]"
+    },
+    {
+      "id": "",
+      "text": "Waabi voices.\n\nI get to work on tough, meaningful problems with world-class peers who share a scientific mindset, constantly advancing our simulator to validate safe self-driving at the highest fideli",
+      "top": 3210,
+      "height": 820,
+      "cls": "relative w-full overflow-clip bg-white py-[calc(var(--padding-y)*0.5)]"
+    },
+    {
+      "id": "values",
+      "text": "How we work, and work together.\n\nOur values guide how we work to drive real-world impact, turning visionary ideas into systems that navigate highways and transform lives.\n\n01.\nScientific\n\nWe embrace o",
+      "top": 4150,
+      "height": 854,
+      "cls": "bg-cream-light relative flex w-full flex-col gap-60 overflow-clip py-[var(--padding-y)] md:gap-48"
+    },
+    {
+      "id": "",
+      "text": "Fuel your career's next mile.\nWaabi is where personal growth and breakthrough innovation go hand in hand. With 5 North American offices and remote flexibility, you can learn and thrive wherever you wo",
+      "top": 5124,
+      "height": 966,
+      "cls": "relative w-full overflow-clip bg-white py-[calc(var(--padding-y)*0.5)] lg:min-h-screen"
+    }
+  ],
+  "controls": [
+    {
+      "index": 0,
+      "before": "Waabi voices.\n\nI get to work on tough, meaningful problems with world-class peers who share a scientific mindset, constantly advancing our simulator to validate safe self-driving at the highest fidelity.\n\nSahil Jain\nSoftware Developer II, Sensor Simulation\n1\n/ 9",
+      "after": "Waabi voices.\n\nI get to play a hands-on role in building safe autonomous trucking, working with innovative, safety-minded teams where my feedback directly influences product decisions and company milestones.\n\nJaime Villalta\nSenior Test Engineer\n2\n/ 9",
+      "scrolls": []
+    },
+    {
+      "index": 1,
+      "before": "How we work, and work together.\n\nOur values guide how we work to drive real-world impact, turning visionary ideas into systems that navigate highways and transform lives.\n\n01.\nScientific\n\nWe embrace objectivity, act with integrity, and view leadership as what you bring to work every day.\n\n02.\nCurious\n\nWe ask hard questions, challenge our assumptions, and seek deeper understanding before answers.\n\n03.\nDiverse\n\nWe assume good intentions, encourage respectful discourse, and treat differences as essential, not optional.\n\n04.\nResilient\n\nWe meet challenges with grit, creativity, and optimism \u2013 turning setbacks into breakthroughs.\n\n05.\nAccountable\n\nWe own our words and actions. We follow through on commitments andcommunicate changes openly.\n\n06.\nSafe\n\nSafety is non-negotiable. Every decision and interaction strengthens the safety of our people, our product, and our world.\n\n07.\nEfficient\n\nWe work with focus and purpose, designing processes that favor reliability and efficiency over speed alone.\n\n08.\nData Driven\n\nWe take calculated risks, validate with evidence, and act decisively. Data fuels conviction, conviction accelerates progress, and progress generates more data \u2013 creating a virtuous cycle of innovation.",
+      "after": "How we work, and work together.\n\nOur values guide how we work to drive real-world impact, turning visionary ideas into systems that navigate highways and transform lives.\n\n01.\nScientific\n\nWe embrace objectivity, act with integrity, and view leadership as what you bring to work every day.\n\n02.\nCurious\n\nWe ask hard questions, challenge our assumptions, and seek deeper understanding before answers.\n\n03.\nDiverse\n\nWe assume good intentions, encourage respectful discourse, and treat differences as essential, not optional.\n\n04.\nResilient\n\nWe meet challenges with grit, creativity, and optimism \u2013 turning setbacks into breakthroughs.\n\n05.\nAccountable\n\nWe own our words and actions. We follow through on commitments andcommunicate changes openly.\n\n06.\nSafe\n\nSafety is non-negotiable. Every decision and interaction strengthens the safety of our people, our product, and our world.\n\n07.\nEfficient\n\nWe work with focus and purpose, designing processes that favor reliability and efficiency over speed alone.\n\n08.\nData Driven\n\nWe take calculated risks, validate with evidence, and act decisively. Data fuels conviction, conviction accelerates progress, and progress generates more data \u2013 creating a virtuous cycle of innovation.",
+      "scrolls": [
+        {
+          "left": 339,
+          "width": 1440,
+          "scrollWidth": 2799,
+          "cls": "px-calc flex snap-x snap-mandatory flex-nowrap gap-40 lg:gap-[calc(((min(123.4rem,1234/1440*100vw)-(21.5rem*4)))/3)]"
+        }
+      ]
+    }
+  ]
+}

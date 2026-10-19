@@ -1,0 +1,15 @@
+{
+  "check": "Safety technology layout remains continuous when its expansion is interrupted",
+  "concurrentWork": "REA screenshot capture in a second Chromium browser",
+  "threshold": 160,
+  "status": "Resolved: the public reference itself exceeds the fixed160px bound. Source-based time-normalized continuity check passed three isolated repeats; the complete final production-build suite passed39/39 in2.5minutes.",
+  "observedPositionDelta": 188.321533203125,
+  "publicReferenceMaximumPositionDelta": 209.53,
+  "publicReferenceElapsedMs": 22.9,
+  "isolatedRepeatPasses": 3,
+  "finalSuite": {
+    "passed": 39,
+    "failed": 0,
+    "durationMinutes": 2.5
+  }
+}

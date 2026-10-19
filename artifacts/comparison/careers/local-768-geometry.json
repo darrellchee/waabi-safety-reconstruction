@@ -1,0 +1,648 @@
+{
+  "height": 6777,
+  "overflow": 0,
+  "sections": [
+    {
+      "tag": "SECTION",
+      "text": "Help us tackle the world's biggest challenges. Whether you're an engineer, an AI researcher, a transportation expert, a business specialist, or a student looking to grow your career, Waabi is where you'll solve real problems for real vehicles on real roads\u2014while shaping entire industries.\n\nJoin the team",
+      "cls": "careers-intro",
+      "rect": {
+        "x": 0,
+        "y": 1084,
+        "width": 768,
+        "height": 572,
+        "top": 1084,
+        "right": 768,
+        "bottom": 1656,
+        "left": 0
+      },
+      "font": "16px Zagma, Georgia, serif",
+      "tracking": "normal",
+      "padding": "40px 0px",
+      "gap": "normal",
+      "background": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "SECTION",
+      "text": "Pioneering tomorrow, together.\n\nWe wake up each day with a clear mission that goes far beyond technology\u2014we're empowering humanity to build a better tomorrow. Our team pours their expertise into pioneering a groundbreaking approach that no one else has dared to imagine.\n\nThis bold vision has propelled Waabi into a global force with every achievement reflecting the unwavering commitment of the Waabi team.",
+      "cls": "careers-mission",
+      "rect": {
+        "x": 0,
+        "y": 1716,
+        "width": 768,
+        "height": 1766,
+        "top": 1716,
+        "right": 768,
+        "bottom": 3482,
+        "left": 0
+      },
+      "font": "16px Zagma, Georgia, serif",
+      "tracking": "normal",
+      "padding": "60px 0px",
+      "gap": "96px",
+      "background": "rgb(232, 230, 227)"
+    },
+    {
+      "tag": "SECTION",
+      "text": "Waabi voices.\n\nI get to work on tough, meaningful problems with world-class peers who share a scientific mindset, constantly advancing our simulator to validate safe self-driving at the highest fidelity.\n\nSahil Jain\nSoftware Developer II, Sensor Simulation\n1\n/ 9",
+      "cls": "careers-voices",
+      "rect": {
+        "x": 0,
+        "y": 3542,
+        "width": 768,
+        "height": 833.390625,
+        "top": 3542,
+        "right": 768,
+        "bottom": 4375.390625,
+        "left": 0
+      },
+      "font": "16px Zagma, Georgia, serif",
+      "tracking": "normal",
+      "padding": "30px 0px",
+      "gap": "normal",
+      "background": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "SECTION",
+      "text": "How we work, and work together.\n\nOur values guide how we work to drive real-world impact, turning visionary ideas into systems that navigate highways and transform lives.\n\n01.\nScientific\n\nWe embrace objectivity, act with integrity, and view leadership as what you bring to work every day.\n\n02.\nCurious\n\nWe ask hard questions, challenge our assumptions, and seek deeper understanding before answers.\n\n03.\nDiverse\n\nWe assume good intentions, encourage respectful discourse, and treat differences as essential, not optional.\n\n04.\nResilient\n\nWe meet challenges with grit, creativity, and optimism \u2013 turning setbacks into breakthroughs.\n\n05.\nAccountable\n\nWe own our words and actions. We follow through on commitments andcommunicate changes openly.\n\n06.\nSafe\n\nSafety is non-negotiable. Every decision and interaction strengthens the safety of our people, our product, and our world.\n\n07.\nEfficient\n\nWe work with focus and purpose, designing processes that favor reliability and efficiency over speed alone.\n\n08.\nData Driven\n\nWe take calculated risks, validate with evidence, and act decisively. Data fuels conviction, conviction accelerates progress, and progress generates more data \u2013 creating a virtuous cycle of innovation.",
+      "cls": "careers-values",
+      "rect": {
+        "x": 0,
+        "y": 4435.390625,
+        "width": 768,
+        "height": 734,
+        "top": 4435.390625,
+        "right": 768,
+        "bottom": 5169.390625,
+        "left": 0
+      },
+      "font": "16px Zagma, Georgia, serif",
+      "tracking": "normal",
+      "padding": "60px 0px",
+      "gap": "48px",
+      "background": "rgb(249, 246, 248)"
+    },
+    {
+      "tag": "SECTION",
+      "text": "Fuel your career's next mile.\n\nWaabi is where personal growth and breakthrough innovation go hand in hand. With 5 North American offices and remote flexibility, you can learn and thrive wherever you work best.\n\nExplore open roles",
+      "cls": "careers-closing",
+      "rect": {
+        "x": 0,
+        "y": 5229.390625,
+        "width": 768,
+        "height": 784.796875,
+        "top": 5229.390625,
+        "right": 768,
+        "bottom": 6014.1875,
+        "left": 0
+      },
+      "font": "16px Zagma, Georgia, serif",
+      "tracking": "normal",
+      "padding": "30px 0px",
+      "gap": "96px",
+      "background": "rgba(0, 0, 0, 0)"
+    }
+  ],
+  "nodes": [
+    {
+      "tag": "H1",
+      "text": "Find your place in Physical AI.",
+      "cls": "",
+      "rect": {
+        "x": 54.9375,
+        "y": 120,
+        "width": 658.125,
+        "height": 162,
+        "top": 120,
+        "right": 713.0625,
+        "bottom": 282,
+        "left": 54.9375
+      },
+      "font": "90px / 81px Zagma, Georgia, serif",
+      "tracking": "-5.2px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "Help us tackle the world's biggest challenges. Whether you're an engineer, an AI researcher, a transportation expert, a business specialist, or a student looking to grow your career, Waabi is where you'll solve real problems for real vehicles on real roads\u2014while shaping entire industries.",
+      "cls": "",
+      "rect": {
+        "x": 54.9375,
+        "y": 1124,
+        "width": 658.125,
+        "height": 396,
+        "top": 1124,
+        "right": 713.0625,
+        "bottom": 1520,
+        "left": 54.9375
+      },
+      "font": "40px / 44px Zagma, Georgia, serif",
+      "tracking": "-1.2px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H2",
+      "text": "Pioneering tomorrow, together.",
+      "cls": "",
+      "rect": {
+        "x": 54.9375,
+        "y": 2732,
+        "width": 390,
+        "height": 216,
+        "top": 2732,
+        "right": 444.9375,
+        "bottom": 2948,
+        "left": 54.9375
+      },
+      "font": "80px / 72px Zagma, Georgia, serif",
+      "tracking": "-3.2px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "We wake up each day with a clear mission that goes far beyond technology\u2014we're empowering humanity to build a better tomorrow. Our team pours their expertise into pioneering a groundbreaking approach that no one else has dared to imagine.\n\nThis bold vision has propelled Waabi into a global force with every achievement reflecting the unwavering commitment of the Waabi team.",
+      "cls": "",
+      "rect": {
+        "x": 484.9375,
+        "y": 2732,
+        "width": 228.125,
+        "height": 690,
+        "top": 2732,
+        "right": 713.0625,
+        "bottom": 3422,
+        "left": 484.9375
+      },
+      "font": "24px / 30px Zagma, Georgia, serif",
+      "tracking": "-0.72px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H2",
+      "text": "Waabi voices.",
+      "cls": "",
+      "rect": {
+        "x": 54.9375,
+        "y": 3572,
+        "width": 235.28125,
+        "height": 144,
+        "top": 3572,
+        "right": 290.21875,
+        "bottom": 3716,
+        "left": 54.9375
+      },
+      "font": "80px / 72px Zagma, Georgia, serif",
+      "tracking": "-3.2px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "I get to work on tough, meaningful problems with world-class peers who share a scientific mindset, constantly advancing our simulator to validate safe self-driving at the highest fidelity.",
+      "cls": "careers-voice-words",
+      "rect": {
+        "x": 54.9375,
+        "y": 3831,
+        "width": 235.28125,
+        "height": 300,
+        "top": 3831,
+        "right": 290.21875,
+        "bottom": 4131,
+        "left": 54.9375
+      },
+      "font": "24px / 30px Zagma, Georgia, serif",
+      "tracking": "-0.72px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H2",
+      "text": "Waabi voices.",
+      "cls": "",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": "80px / 72px Zagma, Georgia, serif",
+      "tracking": "-3.2px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H2",
+      "text": "How we work, and work together.",
+      "cls": "",
+      "rect": {
+        "x": 54.9375,
+        "y": 4495.390625,
+        "width": 658.125,
+        "height": 144,
+        "top": 4495.390625,
+        "right": 713.0625,
+        "bottom": 4639.390625,
+        "left": 54.9375
+      },
+      "font": "80px / 72px Zagma, Georgia, serif",
+      "tracking": "-3.2px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "Our values guide how we work to drive real-world impact, turning visionary ideas into systems that navigate highways and transform lives.",
+      "cls": "",
+      "rect": {
+        "x": 54.9375,
+        "y": 4688.390625,
+        "width": 525,
+        "height": 48,
+        "top": 4688.390625,
+        "right": 579.9375,
+        "bottom": 4736.390625,
+        "left": 54.9375
+      },
+      "font": "500 15px / 24px NeueHaas, Arial, sans-serif",
+      "tracking": "0.15px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H3",
+      "text": "Scientific",
+      "cls": "",
+      "rect": {
+        "x": 54.921875,
+        "y": 4825.390625,
+        "width": 215,
+        "height": 44,
+        "top": 4825.390625,
+        "right": 269.921875,
+        "bottom": 4869.390625,
+        "left": 54.921875
+      },
+      "font": "40px / 44px Zagma, Georgia, serif",
+      "tracking": "-1.2px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "We embrace objectivity, act with integrity, and view leadership as what you bring to work every day.",
+      "cls": "",
+      "rect": {
+        "x": 54.921875,
+        "y": 4893.390625,
+        "width": 215,
+        "height": 96,
+        "top": 4893.390625,
+        "right": 269.921875,
+        "bottom": 4989.390625,
+        "left": 54.921875
+      },
+      "font": "500 15px / 24px NeueHaas, Arial, sans-serif",
+      "tracking": "0.15px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H3",
+      "text": "Curious",
+      "cls": "",
+      "rect": {
+        "x": 309.921875,
+        "y": 4825.390625,
+        "width": 215,
+        "height": 44,
+        "top": 4825.390625,
+        "right": 524.921875,
+        "bottom": 4869.390625,
+        "left": 309.921875
+      },
+      "font": "40px / 44px Zagma, Georgia, serif",
+      "tracking": "-1.2px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "We ask hard questions, challenge our assumptions, and seek deeper understanding before answers.",
+      "cls": "",
+      "rect": {
+        "x": 309.921875,
+        "y": 4893.390625,
+        "width": 215,
+        "height": 120,
+        "top": 4893.390625,
+        "right": 524.921875,
+        "bottom": 5013.390625,
+        "left": 309.921875
+      },
+      "font": "500 15px / 24px NeueHaas, Arial, sans-serif",
+      "tracking": "0.15px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H3",
+      "text": "Diverse",
+      "cls": "",
+      "rect": {
+        "x": 564.921875,
+        "y": 4825.390625,
+        "width": 215,
+        "height": 44,
+        "top": 4825.390625,
+        "right": 779.921875,
+        "bottom": 4869.390625,
+        "left": 564.921875
+      },
+      "font": "40px / 44px Zagma, Georgia, serif",
+      "tracking": "-1.2px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "We assume good intentions, encourage respectful discourse, and treat differences as essential, not optional.",
+      "cls": "",
+      "rect": {
+        "x": 564.921875,
+        "y": 4893.390625,
+        "width": 215,
+        "height": 120,
+        "top": 4893.390625,
+        "right": 779.921875,
+        "bottom": 5013.390625,
+        "left": 564.921875
+      },
+      "font": "500 15px / 24px NeueHaas, Arial, sans-serif",
+      "tracking": "0.15px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H3",
+      "text": "Resilient",
+      "cls": "",
+      "rect": {
+        "x": 819.921875,
+        "y": 4825.390625,
+        "width": 215,
+        "height": 44,
+        "top": 4825.390625,
+        "right": 1034.921875,
+        "bottom": 4869.390625,
+        "left": 819.921875
+      },
+      "font": "40px / 44px Zagma, Georgia, serif",
+      "tracking": "-1.2px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "We meet challenges with grit, creativity, and optimism \u2013 turning setbacks into breakthroughs.",
+      "cls": "",
+      "rect": {
+        "x": 819.921875,
+        "y": 4893.390625,
+        "width": 215,
+        "height": 96,
+        "top": 4893.390625,
+        "right": 1034.921875,
+        "bottom": 4989.390625,
+        "left": 819.921875
+      },
+      "font": "500 15px / 24px NeueHaas, Arial, sans-serif",
+      "tracking": "0.15px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H3",
+      "text": "Accountable",
+      "cls": "",
+      "rect": {
+        "x": 1074.921875,
+        "y": 4825.390625,
+        "width": 215,
+        "height": 44,
+        "top": 4825.390625,
+        "right": 1289.921875,
+        "bottom": 4869.390625,
+        "left": 1074.921875
+      },
+      "font": "40px / 44px Zagma, Georgia, serif",
+      "tracking": "-1.2px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "We own our words and actions. We follow through on commitments andcommunicate changes openly.",
+      "cls": "",
+      "rect": {
+        "x": 1074.921875,
+        "y": 4893.390625,
+        "width": 215,
+        "height": 120,
+        "top": 4893.390625,
+        "right": 1289.921875,
+        "bottom": 5013.390625,
+        "left": 1074.921875
+      },
+      "font": "500 15px / 24px NeueHaas, Arial, sans-serif",
+      "tracking": "0.15px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H3",
+      "text": "Safe",
+      "cls": "",
+      "rect": {
+        "x": 1329.921875,
+        "y": 4825.390625,
+        "width": 215,
+        "height": 44,
+        "top": 4825.390625,
+        "right": 1544.921875,
+        "bottom": 4869.390625,
+        "left": 1329.921875
+      },
+      "font": "40px / 44px Zagma, Georgia, serif",
+      "tracking": "-1.2px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "Safety is non-negotiable. Every decision and interaction strengthens the safety of our people, our product, and our world.",
+      "cls": "",
+      "rect": {
+        "x": 1329.921875,
+        "y": 4893.390625,
+        "width": 215,
+        "height": 120,
+        "top": 4893.390625,
+        "right": 1544.921875,
+        "bottom": 5013.390625,
+        "left": 1329.921875
+      },
+      "font": "500 15px / 24px NeueHaas, Arial, sans-serif",
+      "tracking": "0.15px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H3",
+      "text": "Efficient",
+      "cls": "",
+      "rect": {
+        "x": 1584.921875,
+        "y": 4825.390625,
+        "width": 215,
+        "height": 44,
+        "top": 4825.390625,
+        "right": 1799.921875,
+        "bottom": 4869.390625,
+        "left": 1584.921875
+      },
+      "font": "40px / 44px Zagma, Georgia, serif",
+      "tracking": "-1.2px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "We work with focus and purpose, designing processes that favor reliability and efficiency over speed alone.",
+      "cls": "",
+      "rect": {
+        "x": 1584.921875,
+        "y": 4893.390625,
+        "width": 215,
+        "height": 120,
+        "top": 4893.390625,
+        "right": 1799.921875,
+        "bottom": 5013.390625,
+        "left": 1584.921875
+      },
+      "font": "500 15px / 24px NeueHaas, Arial, sans-serif",
+      "tracking": "0.15px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H3",
+      "text": "Data Driven",
+      "cls": "",
+      "rect": {
+        "x": 1839.921875,
+        "y": 4825.390625,
+        "width": 215,
+        "height": 44,
+        "top": 4825.390625,
+        "right": 2054.921875,
+        "bottom": 4869.390625,
+        "left": 1839.921875
+      },
+      "font": "40px / 44px Zagma, Georgia, serif",
+      "tracking": "-1.2px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "We take calculated risks, validate with evidence, and act decisively. Data fuels conviction, conviction accelerates progress, and progress generates more data \u2013 creating a virtuous cycle of innovation.",
+      "cls": "",
+      "rect": {
+        "x": 1839.921875,
+        "y": 4893.390625,
+        "width": 215,
+        "height": 192,
+        "top": 4893.390625,
+        "right": 2054.921875,
+        "bottom": 5085.390625,
+        "left": 1839.921875
+      },
+      "font": "500 15px / 24px NeueHaas, Arial, sans-serif",
+      "tracking": "0.15px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H2",
+      "text": "Fuel your career's next mile.",
+      "cls": "",
+      "rect": {
+        "x": 54.9375,
+        "y": 5259.390625,
+        "width": 658.125,
+        "height": 144,
+        "top": 5259.390625,
+        "right": 713.0625,
+        "bottom": 5403.390625,
+        "left": 54.9375
+      },
+      "font": "80px / 72px Zagma, Georgia, serif",
+      "tracking": "-3.2px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "Waabi is where personal growth and breakthrough innovation go hand in hand. With 5 North American offices and remote flexibility, you can learn and thrive wherever you work best.",
+      "cls": "",
+      "rect": {
+        "x": 54.9375,
+        "y": 5451.390625,
+        "width": 658.125,
+        "height": 90,
+        "top": 5451.390625,
+        "right": 713.0625,
+        "bottom": 5541.390625,
+        "left": 54.9375
+      },
+      "font": "24px / 30px Zagma, Georgia, serif",
+      "tracking": "-0.72px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    }
+  ]
+}

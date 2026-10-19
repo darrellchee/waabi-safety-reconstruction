@@ -1,0 +1,22 @@
+{
+  "initial1440MeanAbsoluteChannelError": {
+    "hero": 1.5088348765432098,
+    "intro": 0.27233899176954735,
+    "mission": 1.7146286008230451,
+    "voices": 0.8817556584362141
+  },
+  "final1440MeanAbsoluteChannelError": {
+    "hero": 0.09298173868312758,
+    "intro": 0.053553497942386834,
+    "mission": 0.11055581275720165,
+    "voices": 0.07477597736625514,
+    "values": 0.05414094650205761,
+    "closing": 0.058341820987654315
+  },
+  "correction": "Replace direct CMS WebP derivatives with exact optimized public image responses. Final captures use the frozen optimized production build.",
+  "mobileValuesHeadingCorrection": {
+    "beforeMeanAbsoluteChannelError": 1.387620002430429,
+    "afterMeanAbsoluteChannelError": 0.2082421922469316,
+    "cause": "Separate nested whitespace spans are significant to Chromium text-wrap:balance line grouping."
+  }
+}

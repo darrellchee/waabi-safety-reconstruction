@@ -28,3 +28,10 @@ Home combines local films and extracted poster frames, viewport-aware playback, 
 ## Motion refinement
 
 The subsequent source-informed animation pass is documented in `animation-refinement.md`. Root wheel scrolling now uses the reference's exact Lenis 1.3.14 configuration. Page-specific word reveals, scroll transforms, timed portrait buffers, native snap rails and the footer canvas are implemented with React, CSS, requestAnimationFrame and Web Animations. The shared root timing is 400ms cubic-bezier(.19,1,.22,1); explicit component timings override it. Reduced-motion users receive visible text and stationary media rather than delayed hidden content. No WebGL rendering is needed: the reference footer effect is a 2D canvas.
+
+
+## Careers route
+
+`app/careers/page.tsx` renders `CareersPage.tsx`. The complete content is in `careers-data.json`; assets and public source hashes are recorded separately. `CareersVoices.tsx` owns wrapped testimonial selection and its presence/layout/word/author/counter animations. `CareersPhotoStack.tsx` implements the source's shared portrait/landscape layout-projection slideshow, including visible-document timers and retained outgoing crops. `CareersPage.tsx` owns hero and mission parallax, per-word reveals, the values rail and the recruiting CTAs. The rail reuses the existing source-derived `useCarouselMotion` hook. All styles use distinct Careers names and avoid changing existing page layouts. Original public optimized raster files are isolated under `/assets/careers/`.
+
+The shared header remains limited to Home, Safety and Company and the removed promotional/cookie UI stays absent. Existing recruiting links and the footer now lead to local `/careers`. Both in-page recruiting CTAs retain the external public Lever destination. No recruitment backend or application form is invented.

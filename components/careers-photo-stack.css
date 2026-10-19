@@ -1,0 +1,22 @@
+.careers-photo-stack { position:relative; display:flex; width:100%; overflow:clip; }
+.careers-stack-track { position:relative; display:flex; align-items:center; width:100%; overflow:clip; }
+.careers-stack-photo { position:absolute; flex-shrink:0; }
+.careers-stack-photo.is-exiting { z-index:0!important; }
+.careers-stack-crop { width:100%; height:100%; overflow:clip; background:#d1d5db; }
+.careers-stack-image { width:100%; height:100%; }
+.careers-stack-image img { display:block; width:100%; height:100%; object-fit:cover; }
+.careers-photo-stack--portrait { max-width:685px; }
+.careers-photo-stack--portrait .careers-stack-track { height:302px; }
+.careers-photo-stack--portrait .careers-stack-photo { aspect-ratio:320/427; }
+.careers-photo-stack--portrait .careers-stack-photo[data-slot="0"] { left:0; width:46.71%; z-index:4; }
+.careers-photo-stack--portrait .careers-stack-photo[data-slot="1"] { right:0; width:70%; z-index:5; }
+.careers-photo-stack--landscape { padding:0 24px; }
+.careers-photo-stack--landscape .careers-stack-track { height:35vw; border-radius:12px; }
+.careers-photo-stack--landscape .careers-stack-photo[data-slot="0"] { left:0; height:17vw; width:23vw; }
+.careers-photo-stack--landscape .careers-stack-photo[data-slot="1"] { left:calc(100% - (47vw + 39vw*.5 + 31vw*.5)); height:23vw; width:31vw; }
+.careers-photo-stack--landscape .careers-stack-photo[data-slot="2"] { left:calc(100% - (47vw + 39vw*.5)); height:29vw; width:39vw; }
+.careers-photo-stack--landscape .careers-stack-photo[data-slot="3"] { left:calc(100% - 47vw); height:35vw; width:47vw; }
+@media(min-width:768px) {
+  .careers-photo-stack--portrait .careers-stack-track { height:700px; }
+  .careers-photo-stack--portrait .careers-stack-photo[data-slot="1"] { width:76.64%; }
+}

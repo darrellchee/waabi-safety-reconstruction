@@ -328,7 +328,7 @@ export default function CompanyPage() {
               from AI researchers and roboticists to trucking experts and
               operators.
             </p>
-            <a className="co-pill" href="https://waabi.ai/careers">
+            <a className="co-pill" href="/careers">
               Learn more
             </a>
           </div>

@@ -1,0 +1,190 @@
+{
+  "hero": {
+    "title": "Find your place in Physical AI.",
+    "image": {
+      "src": "/assets/careers/1761187390-251006_waabi_collab_03_0781.webp",
+      "width": 8192,
+      "height": 5464,
+      "alt": ""
+    }
+  },
+  "intro": {
+    "paragraph": "Help us tackle the world's biggest challenges. Whether you're an engineer, an AI researcher, a transportation expert, a business specialist, or a student looking to grow your career, Waabi is where you'll solve real problems for real vehicles on real roads—while shaping entire industries.",
+    "button": "Join the team",
+    "href": "https://jobs.lever.co/waabi"
+  },
+  "pioneering": {
+    "title": "Pioneering tomorrow, together.",
+    "paragraph": "We wake up each day with a clear mission that goes far beyond technology—we're empowering humanity to build a better tomorrow. Our team pours their expertise into pioneering a groundbreaking approach that no one else has dared to imagine. \n\nThis bold vision has propelled Waabi into a global force with every achievement reflecting the unwavering commitment of the Waabi team.",
+    "image": {
+      "src": "/assets/careers/1761699271-251006_waabi_collab_05_1012_a.webp",
+      "width": 7616,
+      "height": 5080,
+      "alt": ""
+    }
+  },
+  "voices": {
+    "title": "Waabi voices.",
+    "quotes": [
+      {
+        "quote": "I get to work on tough, meaningful problems with world-class peers who share a scientific mindset, constantly advancing our simulator to validate safe self-driving at the highest fidelity.",
+        "name": "Sahil Jain",
+        "role": "Software Developer II, Sensor Simulation"
+      },
+      {
+        "quote": "I get to play a hands-on role in building safe autonomous trucking, working with innovative, safety-minded teams where my feedback directly influences product decisions and company milestones.",
+        "name": "Jaime Villalta",
+        "role": "Senior Test Engineer"
+      },
+      {
+        "quote": "We bring together smart, curious folks with diverse backgrounds to tackle meaningful problems with humility and real collaboration, supported by a team that lifts each other up.",
+        "name": "Joseph Sunga",
+        "role": "Director of Product Management"
+      },
+      {
+        "quote": "I started as an intern and now I'm proud to build my career here at Waabi, solving diverse software and research challenges with brilliant colleagues, and knowing our work is making the road safer for all.",
+        "name": "Richard Xu",
+        "role": "Software Developer II, Perception & Prediction"
+      },
+      {
+        "quote": "I've had a front-row seat since day one to a team that's relentlessly innovative and genuinely supportive, driven by a shared sense of purpose to build technology that will truly change the world.",
+        "name": "Candyce Holloway",
+        "role": "Executive Business Partner Manager"
+      },
+      {
+        "quote": "I joined Waabi for its efficiency—we move quickly with cross-functional teams, everyone has a voice, and we're united in transforming transportation safely.",
+        "name": "Nicholas Vozza",
+        "role": "Director of Global Supply Chain"
+      },
+      {
+        "quote": "Waabi gives me the opportunity to contribute to diverse projects and see direct impact on our milestones, working alongside passionate, and ambitious people.",
+        "name": "Valeriia Fakhrutdinova",
+        "role": "Software Developer II, Simulation"
+      },
+      {
+        "quote": "I joined Waabi to transform how the world moves, and I stay for groundbreaking technology, measured approach, and the exceptional team making it reality.",
+        "name": "Niharika Bhargava",
+        "role": "Commercial Products Manager"
+      },
+      {
+        "quote": "I joined Waabi to build diverse teams where empathy and respect shape how we work, bringing together incredible people who inspire one another through different perspectives and shared passion.",
+        "name": "Corbin Jackson",
+        "role": "Senior Recruiter II "
+      }
+    ],
+    "images": [
+      {
+        "src": "/assets/careers/1761184004-251006_waabi_val_fakhrutdinova_0214.webp",
+        "width": 1024,
+        "height": 1535,
+        "alt": ""
+      },
+      {
+        "src": "/assets/careers/1760350326-waabi_portrait_neiel_00646_final.webp",
+        "width": 1600,
+        "height": 1067,
+        "alt": ""
+      },
+      {
+        "src": "/assets/careers/1761699279-251006_waabi_collab_06_1065.webp",
+        "width": 5354,
+        "height": 8027,
+        "alt": ""
+      },
+      {
+        "src": "/assets/careers/1761188995-251006_waabi_carter_fang_0171.webp",
+        "width": 7413,
+        "height": 4944,
+        "alt": ""
+      },
+      {
+        "src": "/assets/careers/1761188599-251006_waabi_ashwin_kumar_0866.webp",
+        "width": 5394,
+        "height": 8087,
+        "alt": ""
+      }
+    ]
+  },
+  "values": {
+    "title": "How we work, and work together.",
+    "description": "Our values guide how we work to drive real-world impact, turning visionary ideas into systems that navigate highways and transform lives.",
+    "slides": [
+      {
+        "title": "Scientific",
+        "paragraph": "We embrace objectivity, act with integrity, and view leadership as what you bring to work every day. "
+      },
+      {
+        "title": "Curious",
+        "paragraph": "We ask hard questions, challenge our assumptions, and seek deeper understanding before answers. "
+      },
+      {
+        "title": "Diverse",
+        "paragraph": "We assume good intentions, encourage respectful discourse, and treat differences as essential, not optional."
+      },
+      {
+        "title": "Resilient",
+        "paragraph": "We meet challenges with grit, creativity, and optimism – turning setbacks into breakthroughs."
+      },
+      {
+        "title": "Accountable",
+        "paragraph": "We own our words and actions. We follow through on commitments andcommunicate changes openly."
+      },
+      {
+        "title": "Safe",
+        "paragraph": "Safety is non-negotiable. Every decision and interaction strengthens the safety of our people, our product, and our world. "
+      },
+      {
+        "title": "Efficient",
+        "paragraph": "We work with focus and purpose, designing processes that favor reliability and efficiency over speed alone. "
+      },
+      {
+        "title": "Data Driven",
+        "paragraph": "We take calculated risks, validate with evidence, and act decisively. Data fuels conviction, conviction accelerates progress, and progress generates more data – creating a virtuous cycle of innovation."
+      }
+    ]
+  },
+  "closing": {
+    "title": "Fuel your career's next mile.",
+    "description": "Waabi is where personal growth and breakthrough innovation go hand in hand. With 5 North American offices and remote flexibility, you can learn and thrive wherever you work best.",
+    "button": "Explore open roles",
+    "href": "https://jobs.lever.co/waabi",
+    "images": [
+      {
+        "src": "/assets/careers/1761699271-251006_waabi_lunch_room_0456.webp",
+        "width": 7988,
+        "height": 5100,
+        "alt": ""
+      },
+      {
+        "src": "/assets/careers/1761183960-waabi_inspection_02285.webp",
+        "width": 1500,
+        "height": 1000,
+        "alt": ""
+      },
+      {
+        "src": "/assets/careers/1761700569-251006_waabi_collab_07_1184.webp",
+        "width": 5327,
+        "height": 7986,
+        "alt": ""
+      },
+      {
+        "src": "/assets/careers/1760350326-waabi_portrait_felicia_00336_final.webp",
+        "width": 1600,
+        "height": 1067,
+        "alt": ""
+      },
+      {
+        "src": "/assets/careers/1761698467-251006_waabi_collab_04_0922.webp",
+        "width": 7336,
+        "height": 4893,
+        "alt": ""
+      },
+      {
+        "src": "/assets/careers/1761183902-waabi_scout_00699.webp",
+        "width": 9334,
+        "height": 6223,
+        "alt": ""
+      }
+    ]
+  }
+}

@@ -790,7 +790,7 @@ export default function HomePage() {
         </section>
         <section className="home-careers">
           <MotionCopy>Build Physical AI with us.</MotionCopy>
-          <motion.a whileHover={{scale:1.05}} whileTap={{scale:.95}} className="home-pill" href="https://waabi.ai/careers">
+          <motion.a whileHover={{scale:1.05}} whileTap={{scale:.95}} className="home-pill" href="/careers">
             Join the team
           </motion.a>
           <div className="home-careers-collage" ref={careers}>

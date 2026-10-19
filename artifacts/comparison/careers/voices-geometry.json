@@ -1,0 +1,461 @@
+{
+  "method": "Playwright Chromium, reduced motion, initial quote Sahil, document fonts ready, section-relative coordinates; source metrics from original REA/browser inspection captures. Local http://127.0.0.1:3000/careers.",
+  "measurements": [
+    {
+      "viewportWidth": 1440,
+      "height": {
+        "reference": 820,
+        "local": 820,
+        "delta": 0
+      },
+      "heading": {
+        "x": {
+          "reference": 103,
+          "local": 103,
+          "delta": 0
+        },
+        "y": {
+          "reference": 91.703125,
+          "local": 91.703125,
+          "delta": 0.0
+        },
+        "width": {
+          "reference": 369.984375,
+          "local": 370,
+          "delta": 0.015625
+        },
+        "height": {
+          "reference": 144,
+          "local": 144,
+          "delta": 0
+        }
+      },
+      "quote": {
+        "x": {
+          "reference": 103,
+          "local": 103,
+          "delta": 0
+        },
+        "y": {
+          "reference": 350.703125,
+          "local": 350.703125,
+          "delta": 0.0
+        },
+        "width": {
+          "reference": 369.984375,
+          "local": 370,
+          "delta": 0.015625
+        },
+        "height": {
+          "reference": 180,
+          "local": 180,
+          "delta": 0
+        }
+      },
+      "localMeasuredNodes": [
+        {
+          "cls": "careers-voices-copy",
+          "text": "Waabi voices.I get to work on tough, meaningful problems with world-class peers who share a scientific mindset, constantly advancing our simulator to validate safe self-driving at the highest fidelity.Sahil JainSoftware Developer II, Sensor Simulation1/ 9",
+          "font": "16px Zagma, Georgia, serif",
+          "tracking": "normal",
+          "x": 103,
+          "y": 91.703125,
+          "width": 370,
+          "height": 636.59375
+        },
+        {
+          "cls": "",
+          "text": "Waabi voices.",
+          "font": "80px / 72px Zagma, Georgia, serif",
+          "tracking": "-3.2px",
+          "x": 103,
+          "y": 91.703125,
+          "width": 370,
+          "height": 144
+        },
+        {
+          "cls": "careers-voice-words",
+          "text": "I get to work on tough, meaningful problems with world-class peers who share a scientific mindset, constantly advancing our simulator to validate safe self-driving at the highest fidelity.",
+          "font": "24px / 30px Zagma, Georgia, serif",
+          "tracking": "-0.72px",
+          "x": 103,
+          "y": 350.703125,
+          "width": 370,
+          "height": 180
+        },
+        {
+          "cls": "careers-voice-author",
+          "text": "Sahil JainSoftware Developer II, Sensor Simulation",
+          "font": "500 12px / 16.8px NeueHaas, Arial, sans-serif",
+          "tracking": "0.24px",
+          "x": 103,
+          "y": 554.703125,
+          "width": 370,
+          "height": 33.59375
+        },
+        {
+          "cls": "careers-voices-controls",
+          "text": "1/ 9",
+          "font": "16px Zagma, Georgia, serif",
+          "tracking": "normal",
+          "x": 103,
+          "y": 678.296875,
+          "width": 370,
+          "height": 50
+        },
+        {
+          "cls": "",
+          "text": "Waabi voices.",
+          "font": "80px / 72px Zagma, Georgia, serif",
+          "tracking": "-3.2px",
+          "x": 0,
+          "y": -115,
+          "width": 0,
+          "height": 0
+        }
+      ]
+    },
+    {
+      "viewportWidth": 1920,
+      "height": {
+        "reference": 820,
+        "local": 820,
+        "delta": 0
+      },
+      "heading": {
+        "x": {
+          "reference": 343,
+          "local": 343,
+          "delta": 0
+        },
+        "y": {
+          "reference": 91.703125,
+          "local": 91.703125,
+          "delta": 0.0
+        },
+        "width": {
+          "reference": 370,
+          "local": 370,
+          "delta": 0
+        },
+        "height": {
+          "reference": 144,
+          "local": 144,
+          "delta": 0
+        }
+      },
+      "quote": {
+        "x": {
+          "reference": 343,
+          "local": 343,
+          "delta": 0
+        },
+        "y": {
+          "reference": 350.703125,
+          "local": 350.703125,
+          "delta": 0.0
+        },
+        "width": {
+          "reference": 370,
+          "local": 370,
+          "delta": 0
+        },
+        "height": {
+          "reference": 180,
+          "local": 180,
+          "delta": 0
+        }
+      },
+      "localMeasuredNodes": [
+        {
+          "cls": "careers-voices-copy",
+          "text": "Waabi voices.I get to work on tough, meaningful problems with world-class peers who share a scientific mindset, constantly advancing our simulator to validate safe self-driving at the highest fidelity.Sahil JainSoftware Developer II, Sensor Simulation1/ 9",
+          "font": "16px Zagma, Georgia, serif",
+          "tracking": "normal",
+          "x": 343,
+          "y": 91.703125,
+          "width": 370,
+          "height": 636.59375
+        },
+        {
+          "cls": "",
+          "text": "Waabi voices.",
+          "font": "80px / 72px Zagma, Georgia, serif",
+          "tracking": "-3.2px",
+          "x": 343,
+          "y": 91.703125,
+          "width": 370,
+          "height": 144
+        },
+        {
+          "cls": "careers-voice-words",
+          "text": "I get to work on tough, meaningful problems with world-class peers who share a scientific mindset, constantly advancing our simulator to validate safe self-driving at the highest fidelity.",
+          "font": "24px / 30px Zagma, Georgia, serif",
+          "tracking": "-0.72px",
+          "x": 343,
+          "y": 350.703125,
+          "width": 370,
+          "height": 180
+        },
+        {
+          "cls": "careers-voice-author",
+          "text": "Sahil JainSoftware Developer II, Sensor Simulation",
+          "font": "500 12px / 16.8px NeueHaas, Arial, sans-serif",
+          "tracking": "0.24px",
+          "x": 343,
+          "y": 554.703125,
+          "width": 370,
+          "height": 33.59375
+        },
+        {
+          "cls": "careers-voices-controls",
+          "text": "1/ 9",
+          "font": "16px Zagma, Georgia, serif",
+          "tracking": "normal",
+          "x": 343,
+          "y": 678.296875,
+          "width": 370,
+          "height": 50
+        },
+        {
+          "cls": "",
+          "text": "Waabi voices.",
+          "font": "80px / 72px Zagma, Georgia, serif",
+          "tracking": "-3.2px",
+          "x": 0,
+          "y": -205,
+          "width": 0,
+          "height": 0
+        }
+      ]
+    },
+    {
+      "viewportWidth": 768,
+      "height": {
+        "reference": 833.390625,
+        "local": 833.390625,
+        "delta": 0.0
+      },
+      "heading": {
+        "x": {
+          "reference": 54.9375,
+          "local": 54.9375,
+          "delta": 0.0
+        },
+        "y": {
+          "reference": 30,
+          "local": 30,
+          "delta": 0
+        },
+        "width": {
+          "reference": 235.28125,
+          "local": 235.28125,
+          "delta": 0.0
+        },
+        "height": {
+          "reference": 144,
+          "local": 144,
+          "delta": 0
+        }
+      },
+      "quote": {
+        "x": {
+          "reference": 54.9375,
+          "local": 54.9375,
+          "delta": 0.0
+        },
+        "y": {
+          "reference": 289,
+          "local": 289,
+          "delta": 0
+        },
+        "width": {
+          "reference": 235.28125,
+          "local": 235.28125,
+          "delta": 0.0
+        },
+        "height": {
+          "reference": 300,
+          "local": 300,
+          "delta": 0
+        }
+      },
+      "localMeasuredNodes": [
+        {
+          "cls": "careers-voices-copy",
+          "text": "Waabi voices.I get to work on tough, meaningful problems with world-class peers who share a scientific mindset, constantly advancing our simulator to validate safe self-driving at the highest fidelity.Sahil JainSoftware Developer II, Sensor Simulation1/ 9",
+          "font": "16px Zagma, Georgia, serif",
+          "tracking": "normal",
+          "x": 54.9375,
+          "y": 30,
+          "width": 235.28125,
+          "height": 773.390625
+        },
+        {
+          "cls": "",
+          "text": "Waabi voices.",
+          "font": "80px / 72px Zagma, Georgia, serif",
+          "tracking": "-3.2px",
+          "x": 54.9375,
+          "y": 30,
+          "width": 235.28125,
+          "height": 144
+        },
+        {
+          "cls": "careers-voice-words",
+          "text": "I get to work on tough, meaningful problems with world-class peers who share a scientific mindset, constantly advancing our simulator to validate safe self-driving at the highest fidelity.",
+          "font": "24px / 30px Zagma, Georgia, serif",
+          "tracking": "-0.72px",
+          "x": 54.9375,
+          "y": 289,
+          "width": 235.28125,
+          "height": 300
+        },
+        {
+          "cls": "careers-voice-author",
+          "text": "Sahil JainSoftware Developer II, Sensor Simulation",
+          "font": "500 12px / 16.8px NeueHaas, Arial, sans-serif",
+          "tracking": "0.24px",
+          "x": 54.9375,
+          "y": 613,
+          "width": 235.28125,
+          "height": 50.390625
+        },
+        {
+          "cls": "careers-voices-controls",
+          "text": "1/ 9",
+          "font": "16px Zagma, Georgia, serif",
+          "tracking": "normal",
+          "x": 54.9375,
+          "y": 753.390625,
+          "width": 235.28125,
+          "height": 50
+        },
+        {
+          "cls": "",
+          "text": "Waabi voices.",
+          "font": "80px / 72px Zagma, Georgia, serif",
+          "tracking": "-3.2px",
+          "x": 0,
+          "y": -170,
+          "width": 0,
+          "height": 0
+        }
+      ]
+    },
+    {
+      "viewportWidth": 390,
+      "height": {
+        "reference": 728.4375,
+        "local": 728.4375,
+        "delta": 0.0
+      },
+      "heading": {
+        "x": {
+          "reference": 40,
+          "local": 40,
+          "delta": 0
+        },
+        "y": {
+          "reference": 30.0,
+          "local": 30,
+          "delta": 0.0
+        },
+        "width": {
+          "reference": 310,
+          "local": 310,
+          "delta": 0
+        },
+        "height": {
+          "reference": 30.59375,
+          "local": 30.59375,
+          "delta": 0.0
+        }
+      },
+      "quote": {
+        "x": {
+          "reference": 40,
+          "local": 40,
+          "delta": 0
+        },
+        "y": {
+          "reference": 471.59375,
+          "local": 471.59375,
+          "delta": 0.0
+        },
+        "width": {
+          "reference": 310,
+          "local": 310,
+          "delta": 0
+        },
+        "height": {
+          "reference": 112.03125,
+          "local": 112.03125,
+          "delta": 0.0
+        }
+      },
+      "localMeasuredNodes": [
+        {
+          "cls": "careers-voices-copy",
+          "text": "Waabi voices.I get to work on tough, meaningful problems with world-class peers who share a scientific mindset, constantly advancing our simulator to validate safe self-driving at the highest fidelity.Sahil JainSoftware Developer II, Sensor Simulation1/ 9",
+          "font": "16px Zagma, Georgia, serif",
+          "tracking": "normal",
+          "x": 40,
+          "y": 442.59375,
+          "width": 310,
+          "height": 255.84375
+        },
+        {
+          "cls": "",
+          "text": "Waabi voices.",
+          "font": "34px / 30.6px Zagma, Georgia, serif",
+          "tracking": "-1.02px",
+          "x": 0,
+          "y": -132.75,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "cls": "careers-voice-words",
+          "text": "I get to work on tough, meaningful problems with world-class peers who share a scientific mindset, constantly advancing our simulator to validate safe self-driving at the highest fidelity.",
+          "font": "16px / 22.4px Zagma, Georgia, serif",
+          "tracking": "-0.32px",
+          "x": 40,
+          "y": 471.59375,
+          "width": 310,
+          "height": 112.03125
+        },
+        {
+          "cls": "careers-voice-author",
+          "text": "Sahil JainSoftware Developer II, Sensor Simulation",
+          "font": "500 11px / 15.4px NeueHaas, Arial, sans-serif",
+          "tracking": "0.22px",
+          "x": 40,
+          "y": 595.625,
+          "width": 310,
+          "height": 30.8125
+        },
+        {
+          "cls": "careers-voices-controls",
+          "text": "1/ 9",
+          "font": "16px Zagma, Georgia, serif",
+          "tracking": "normal",
+          "x": 40,
+          "y": 654.4375,
+          "width": 310,
+          "height": 44
+        },
+        {
+          "cls": "",
+          "text": "Waabi voices.",
+          "font": "34px / 30.6px Zagma, Georgia, serif",
+          "tracking": "-1.02px",
+          "x": 40,
+          "y": 30,
+          "width": 310,
+          "height": 30.59375
+        }
+      ]
+    }
+  ]
+}

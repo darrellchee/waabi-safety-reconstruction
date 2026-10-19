@@ -1,6 +1,6 @@
 # Waabi — educational reconstruction
 
-A standalone Next.js App Router / React / TypeScript reconstruction of Waabi’s Home, Safety, and Company pages. This private educational prototype is not an official Waabi product. Original trademarks, fonts and media remain their owners’ property; no redistribution license is asserted.
+A standalone Next.js App Router / React / TypeScript reconstruction of Waabi’s Home, Safety, Company, and Careers pages. This private educational prototype is not an official Waabi product. Original trademarks, fonts and media remain their owners’ property; no redistribution license is asserted.
 
 ## Run locally
 
@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000/ for Home, `/safety` for Safety, or `/company` for Company. Shared navigation connects these three local routes.
+Open http://localhost:3000/ for Home, `/safety` for Safety, `/company` for Company, or `/careers` for Careers. Shared navigation connects the local pages.
 
 ```bash
 npm run build
@@ -25,15 +25,15 @@ Playwright uses `/usr/bin/chromium` by default; set `CHROMIUM_PATH` to an instal
 
 ## Included
 
-- Complete Home, Safety, and Company pages with original photography, video, typography, shared navigation and footer.
+- Complete Home, Safety, Company, and Careers pages with original photography, video, typography, shared navigation and footer.
 - Home video hero, collage, product strengths, technology panels, safety showcase, partners, insights and careers.
 - Company founder story, team, investors, latest news, events and locations map.
 - Safety statistics, philosophy, technology accordion and practices slider.
 - Desktop sticky story and mobile swipeable story, hover/tap technology panels, bounded practices carousel, horizontally scrollable insights.
 - Responsive global navigation, original brand/media/font assets, keyboard controls and reduced motion.
-- Routes outside Home, Safety, and Company and article links lead to their known official public destinations. The prototype sends no analytics.
+- Routes outside Home, Safety, Company, and Careers and article links lead to their known official public destinations. The prototype sends no analytics.
 
-The header menu contains Home, Safety, and Company. The promotional announcement and cookie consent UI were removed at the owner's request.
+The header menu contains Home, Safety, and Company. Careers is available through the Home/Company recruiting links and footer at `/careers`. The promotional announcement and cookie consent UI were removed at the owner's request.
 
 ## Evidence and validation
 
@@ -50,4 +50,6 @@ New page inspection and fidelity evidence: `docs/home-reference-analysis.md`, `d
 
 The second measured motion pass uses Motion primitives for source spring/layout/presence behavior and a shared pointer-drag carousel hook. Current evidence and measured regression checks: `docs/home-motion-round2.md`, `docs/safety-motion-round2.md`, and `docs/motion-round2-validation.md`. Run `npx playwright test tests/motion-round2.spec.ts` for source-coordinate, transient, playback and drag checks.
 
-The latest optimized-build verification passed all 33 Playwright cases, lint and TypeScript checks. The obsolete cookie-consent case was removed; responsive checks now assert the three-link header and absence of both popups. See `docs/motion-round2-validation.md` for measurements, corrected defects and the limits of independently timed animation comparisons.
+The latest optimized-build verification passed all 39 Playwright cases, lint and TypeScript checks. Careers adds six cases covering source geometry, assets, testimonials, values, parallax and photo lifecycle; responsive checks also assert the three-link header and absence of both popups. See `docs/motion-round2-validation.md` for measurements, corrected defects and the limits of independently timed animation comparisons.
+
+Careers inspection, source motion details, original asset provenance and responsive comparisons: `docs/careers-reference-analysis.md`, `docs/careers-motion-analysis.md`, `docs/careers-assets.md`, and `docs/careers-fidelity.md`. Run `npx playwright test tests/careers.spec.ts` for Careers geometry, assets, controls, parallax and slideshow lifecycle.

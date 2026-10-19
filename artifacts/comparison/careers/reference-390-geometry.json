@@ -1,0 +1,468 @@
+{
+  "height": 5319,
+  "overflow": 0,
+  "sections": [
+    {
+      "tag": "SECTION",
+      "text": "Help us tackle the world's biggest challenges. Whether you're an engineer, an AI researcher, a transportation expert, a business specialist, or a student looking to grow your career, Waabi is where you'll solve real problems for real vehicles on real roads\u2014while shaping entire industries.\n\nJoin the team",
+      "cls": "relative w-full overflow-clip bg-white py-50 md:py-40",
+      "rect": {
+        "x": 0,
+        "y": 904,
+        "width": 390,
+        "height": 514,
+        "top": 904,
+        "right": 390,
+        "bottom": 1418,
+        "left": 0
+      },
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "normal",
+      "padding": "50px 0px",
+      "gap": "normal",
+      "background": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "SECTION",
+      "text": "Pioneering tomorrow, together.\n\nWe wake up each day with a clear mission that goes far beyond technology\u2014we're empowering humanity to build a better tomorrow. Our team pours their expertise into pioneering a groundbreaking approach that no one else has dared to imagine.\n\nThis bold vision has propelled Waabi into a global force with every achievement reflecting the unwavering commitment of the Waabi team.",
+      "cls": "bg-cream relative w-full py-[var(--padding-y)]",
+      "rect": {
+        "x": 0,
+        "y": 1478,
+        "width": 390,
+        "height": 1082.75,
+        "top": 1478,
+        "right": 390,
+        "bottom": 2560.75,
+        "left": 0
+      },
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "normal",
+      "padding": "60px 0px",
+      "gap": "normal",
+      "background": "rgb(232, 230, 227)"
+    },
+    {
+      "tag": "SECTION",
+      "text": "I get to work on tough, meaningful problems with world-class peers who share a scientific mindset, constantly advancing our simulator to validate safe self-driving at the highest fidelity.\n\nSahil Jain\nSoftware Developer II, Sensor Simulation\n1\n/ 9\nWaabi voices.",
+      "cls": "relative w-full overflow-clip bg-white py-[calc(var(--padding-y)*0.5)]",
+      "rect": {
+        "x": 0,
+        "y": 2620.75,
+        "width": 390,
+        "height": 728.4375,
+        "top": 2620.75,
+        "right": 390,
+        "bottom": 3349.1875,
+        "left": 0
+      },
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "normal",
+      "padding": "30px 0px",
+      "gap": "normal",
+      "background": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "SECTION",
+      "text": "How we work, and work together.\n\nOur values guide how we work to drive real-world impact, turning visionary ideas into systems that navigate highways and transform lives.\n\n01.\nScientific\n\nWe embrace objectivity, act with integrity, and view leadership as what you bring to work every day.\n\n02.\nCurious\n\nWe ask hard questions, challenge our assumptions, and seek deeper understanding before answers.\n\n03.\nDiverse\n\nWe assume good intentions, encourage respectful discourse, and treat differences as essential, not optional.\n\n04.\nResilient\n\nWe meet challenges with grit, creativity, and optimism \u2013 turning setbacks into breakthroughs.\n\n05.\nAccountable\n\nWe own our words and actions. We follow through on commitments andcommunicate changes openly.\n\n06.\nSafe\n\nSafety is non-negotiable. Every decision and interaction strengthens the safety of our people, our product, and our world.\n\n07.\nEfficient\n\nWe work with focus and purpose, designing processes that favor reliability and efficiency over speed alone.\n\n08.\nData Driven\n\nWe take calculated risks, validate with evidence, and act decisively. Data fuels conviction, conviction accelerates progress, and progress generates more data \u2013 creating a virtuous cycle of innovation.",
+      "cls": "bg-cream-light relative flex w-full flex-col gap-60 overflow-clip py-[var(--padding-y)] md:gap-48",
+      "rect": {
+        "x": 0,
+        "y": 3409.1875,
+        "width": 390,
+        "height": 637.84375,
+        "top": 3409.1875,
+        "right": 390,
+        "bottom": 4047.03125,
+        "left": 0
+      },
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "normal",
+      "padding": "60px 0px",
+      "gap": "60px",
+      "background": "rgb(249, 246, 248)"
+    },
+    {
+      "tag": "SECTION",
+      "text": "Fuel your career's next mile.\nWaabi is where personal growth and breakthrough innovation go hand in hand. With 5 North American offices and remote flexibility, you can learn and thrive wherever you work best.\nExplore open roles",
+      "cls": "relative w-full overflow-clip bg-white py-[calc(var(--padding-y)*0.5)] lg:min-h-screen",
+      "rect": {
+        "x": 0,
+        "y": 4107.03125,
+        "width": 390,
+        "height": 517.671875,
+        "top": 4107.03125,
+        "right": 390,
+        "bottom": 4624.703125,
+        "left": 0
+      },
+      "font": "10px / 15px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "normal",
+      "padding": "30px 0px",
+      "gap": "normal",
+      "background": "rgb(255, 255, 255)"
+    }
+  ],
+  "nodes": [
+    {
+      "tag": "H1",
+      "text": "Find your place in Physical AI.",
+      "cls": "text-[5.5rem] leading-[90%] tracking-[-0.22rem] md:text-[max(9rem,min(9vw,13rem))] md:tracking-[max(-0.6rem,min(-0.3vw,-0.52rem))] text-balance",
+      "rect": {
+        "x": 40,
+        "y": 120,
+        "width": 310,
+        "height": 148.5,
+        "top": 120,
+        "right": 350,
+        "bottom": 268.5,
+        "left": 40
+      },
+      "font": "55px / 49.5px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-2.2px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "Help us tackle the world's biggest challenges. Whether you're an engineer, an AI researcher, a transportation expert, a business specialist, or a student looking to grow your career, Waabi is where you'll solve real problems for real vehicles on real roads\u2014while shaping entire industries.",
+      "cls": "type-z-24 md:type-z-40",
+      "rect": {
+        "x": 40,
+        "y": 954,
+        "width": 310,
+        "height": 330,
+        "top": 954,
+        "right": 350,
+        "bottom": 1284,
+        "left": 40
+      },
+      "font": "24px / 30px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-0.72px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H2",
+      "text": "Pioneering tomorrow, together.",
+      "cls": "w-calc type-z-34 md:type-z-80 text-balance",
+      "rect": {
+        "x": 40,
+        "y": 2178,
+        "width": 310,
+        "height": 61.1875,
+        "top": 2178,
+        "right": 350,
+        "bottom": 2239.1875,
+        "left": 40
+      },
+      "font": "34px / 30.6px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-1.02px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "We wake up each day with a clear mission that goes far beyond technology\u2014we're empowering humanity to build a better tomorrow. Our team pours their expertise into pioneering a groundbreaking approach that no one else has dared to imagine.\n\nThis bold vision has propelled Waabi into a global force with every achievement reflecting the unwavering commitment of the Waabi team.",
+      "cls": "type-z-18 md:type-z-24",
+      "rect": {
+        "x": 40,
+        "y": 2263.1875,
+        "width": 310,
+        "height": 237.5625,
+        "top": 2263.1875,
+        "right": 350,
+        "bottom": 2500.75,
+        "left": 40
+      },
+      "font": "18px / 19.8px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-0.54px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H2",
+      "text": "Waabi voices.",
+      "cls": "type-z-34 md:type-z-80 text-balance",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": "34px / 30.6px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-1.02px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "I get to work on tough, meaningful problems with world-class peers who share a scientific mindset, constantly advancing our simulator to validate safe self-driving at the highest fidelity.",
+      "cls": "type-h-18 md:type-z-24",
+      "rect": {
+        "x": 40,
+        "y": 3092.34375,
+        "width": 310,
+        "height": 112.03125,
+        "top": 3092.34375,
+        "right": 350,
+        "bottom": 3204.375,
+        "left": 40
+      },
+      "font": "16px / 22.4px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-0.32px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H2",
+      "text": "Waabi voices.",
+      "cls": "w-calc type-z-34 md:type-z-80 text-balance",
+      "rect": {
+        "x": 40,
+        "y": 2650.75,
+        "width": 310,
+        "height": 30.59375,
+        "top": 2650.75,
+        "right": 350,
+        "bottom": 2681.34375,
+        "left": 40
+      },
+      "font": "34px / 30.6px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-1.02px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H2",
+      "text": "How we work, and work together.",
+      "cls": "type-z-34 md:type-z-80 text-balance",
+      "rect": {
+        "x": 40,
+        "y": 3469.1875,
+        "width": 238,
+        "height": 91.78125,
+        "top": 3469.1875,
+        "right": 278,
+        "bottom": 3560.96875,
+        "left": 40
+      },
+      "font": "34px / 30.6px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-1.02px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "Our values guide how we work to drive real-world impact, turning visionary ideas into systems that navigate highways and transform lives.",
+      "cls": "type-s-14 md:type-s-15 text-current/50",
+      "rect": {
+        "x": 40,
+        "y": 3584.96875,
+        "width": 310,
+        "height": 89.625,
+        "top": 3584.96875,
+        "right": 350,
+        "bottom": 3674.59375,
+        "left": 40
+      },
+      "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif",
+      "tracking": "0.28px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "We embrace objectivity, act with integrity, and view leadership as what you bring to work every day.",
+      "cls": "type-s-14 md:type-s-15 text-current/50",
+      "rect": {
+        "x": 40,
+        "y": 3828.59375,
+        "width": 245,
+        "height": 67.21875,
+        "top": 3828.59375,
+        "right": 285,
+        "bottom": 3895.8125,
+        "left": 40
+      },
+      "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif",
+      "tracking": "0.28px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "We ask hard questions, challenge our assumptions, and seek deeper understanding before answers.",
+      "cls": "type-s-14 md:type-s-15 text-current/50",
+      "rect": {
+        "x": 325,
+        "y": 3828.59375,
+        "width": 245,
+        "height": 67.21875,
+        "top": 3828.59375,
+        "right": 570,
+        "bottom": 3895.8125,
+        "left": 325
+      },
+      "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif",
+      "tracking": "0.28px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "We assume good intentions, encourage respectful discourse, and treat differences as essential, not optional.",
+      "cls": "type-s-14 md:type-s-15 text-current/50",
+      "rect": {
+        "x": 610,
+        "y": 3828.59375,
+        "width": 245,
+        "height": 89.625,
+        "top": 3828.59375,
+        "right": 855,
+        "bottom": 3918.21875,
+        "left": 610
+      },
+      "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif",
+      "tracking": "0.28px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "We meet challenges with grit, creativity, and optimism \u2013 turning setbacks into breakthroughs.",
+      "cls": "type-s-14 md:type-s-15 text-current/50",
+      "rect": {
+        "x": 895,
+        "y": 3828.59375,
+        "width": 245,
+        "height": 67.21875,
+        "top": 3828.59375,
+        "right": 1140,
+        "bottom": 3895.8125,
+        "left": 895
+      },
+      "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif",
+      "tracking": "0.28px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "We own our words and actions. We follow through on commitments andcommunicate changes openly.",
+      "cls": "type-s-14 md:type-s-15 text-current/50",
+      "rect": {
+        "x": 1180,
+        "y": 3828.59375,
+        "width": 245,
+        "height": 67.21875,
+        "top": 3828.59375,
+        "right": 1425,
+        "bottom": 3895.8125,
+        "left": 1180
+      },
+      "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif",
+      "tracking": "0.28px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "Safety is non-negotiable. Every decision and interaction strengthens the safety of our people, our product, and our world.",
+      "cls": "type-s-14 md:type-s-15 text-current/50",
+      "rect": {
+        "x": 1465,
+        "y": 3828.59375,
+        "width": 245,
+        "height": 89.625,
+        "top": 3828.59375,
+        "right": 1710,
+        "bottom": 3918.21875,
+        "left": 1465
+      },
+      "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif",
+      "tracking": "0.28px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "We work with focus and purpose, designing processes that favor reliability and efficiency over speed alone.",
+      "cls": "type-s-14 md:type-s-15 text-current/50",
+      "rect": {
+        "x": 1750,
+        "y": 3828.59375,
+        "width": 245,
+        "height": 89.625,
+        "top": 3828.59375,
+        "right": 1995,
+        "bottom": 3918.21875,
+        "left": 1750
+      },
+      "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif",
+      "tracking": "0.28px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "P",
+      "text": "We take calculated risks, validate with evidence, and act decisively. Data fuels conviction, conviction accelerates progress, and progress generates more data \u2013 creating a virtuous cycle of innovation.",
+      "cls": "type-s-14 md:type-s-15 text-current/50",
+      "rect": {
+        "x": 2035,
+        "y": 3828.59375,
+        "width": 245,
+        "height": 134.4375,
+        "top": 3828.59375,
+        "right": 2280,
+        "bottom": 3963.03125,
+        "left": 2035
+      },
+      "font": "500 14px / 22.4px NeueHaas, \"NeueHaas Fallback\", serif",
+      "tracking": "0.28px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H2",
+      "text": "Fuel your career's next mile.",
+      "cls": "type-z-34 md:type-z-80 text-balance",
+      "rect": {
+        "x": 40,
+        "y": 4137.03125,
+        "width": 310,
+        "height": 61.1875,
+        "top": 4137.03125,
+        "right": 350,
+        "bottom": 4198.21875,
+        "left": 40
+      },
+      "font": "34px / 30.6px Zagma, \"Zagma Fallback\", sans-serif",
+      "tracking": "-1.02px",
+      "padding": "0px",
+      "gap": "normal",
+      "background": "rgba(0, 0, 0, 0)"
+    }
+  ]
+}

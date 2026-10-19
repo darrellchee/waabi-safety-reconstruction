@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   icons: { icon: "/assets/1774553027-favicon-32x32.webp" },
   title: "Waabi | Educational Prototype",
   description:
-    "An educational reconstruction of Waabi’s Home, Safety, and Company pages.",
+    "An educational reconstruction of Waabi’s Home, Safety, Company, and Careers pages.",
 };
 export default function RootLayout({
   children,

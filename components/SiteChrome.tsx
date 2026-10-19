@@ -15,7 +15,7 @@ const pages = [
 ];
 const navigationPages = pages.filter(([, href]) => ["/", "/safety", "/company"].includes(href));
 const destination = (url: string) =>
-  ["/", "/safety", "/company"].includes(url) ? url : `https://waabi.ai${url}`;
+  ["/", "/safety", "/company", "/careers"].includes(url) ? url : `https://waabi.ai${url}`;
 
 export function Header() {
   const pathname = usePathname();

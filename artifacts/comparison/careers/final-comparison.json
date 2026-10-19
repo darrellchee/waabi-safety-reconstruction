@@ -1,0 +1,279 @@
+{
+  "geometry": [
+    {
+      "width": 1440,
+      "referencePageHeight": 6730,
+      "localPageHeight": 6730,
+      "localOverflow": 0,
+      "sections": [
+        {
+          "referenceTop": 1020,
+          "localTop": 1020,
+          "referenceHeight": 484,
+          "localHeight": 484
+        },
+        {
+          "referenceTop": 1624,
+          "localTop": 1624,
+          "referenceHeight": 1466,
+          "localHeight": 1466
+        },
+        {
+          "referenceTop": 3210,
+          "localTop": 3210,
+          "referenceHeight": 820,
+          "localHeight": 820
+        },
+        {
+          "referenceTop": 4150,
+          "localTop": 4150,
+          "referenceHeight": 854,
+          "localHeight": 854
+        },
+        {
+          "referenceTop": 5124,
+          "localTop": 5124,
+          "referenceHeight": 966,
+          "localHeight": 966
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "referencePageHeight": 7078,
+      "localPageHeight": 7078,
+      "localOverflow": 0,
+      "sections": [
+        {
+          "referenceTop": 1200,
+          "localTop": 1200,
+          "referenceHeight": 484,
+          "localHeight": 484
+        },
+        {
+          "referenceTop": 1804,
+          "localTop": 1804,
+          "referenceHeight": 1466,
+          "localHeight": 1466
+        },
+        {
+          "referenceTop": 3390,
+          "localTop": 3390,
+          "referenceHeight": 820,
+          "localHeight": 820
+        },
+        {
+          "referenceTop": 4330,
+          "localTop": 4330,
+          "referenceHeight": 854,
+          "localHeight": 854
+        },
+        {
+          "referenceTop": 5304,
+          "localTop": 5304,
+          "referenceHeight": 1134,
+          "localHeight": 1134
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "referencePageHeight": 6777,
+      "localPageHeight": 6777,
+      "localOverflow": 0,
+      "sections": [
+        {
+          "referenceTop": 1084,
+          "localTop": 1084,
+          "referenceHeight": 572,
+          "localHeight": 572
+        },
+        {
+          "referenceTop": 1716,
+          "localTop": 1716,
+          "referenceHeight": 1766,
+          "localHeight": 1766
+        },
+        {
+          "referenceTop": 3542,
+          "localTop": 3542,
+          "referenceHeight": 833.390625,
+          "localHeight": 833.390625
+        },
+        {
+          "referenceTop": 4435.390625,
+          "localTop": 4435.390625,
+          "referenceHeight": 734,
+          "localHeight": 734
+        },
+        {
+          "referenceTop": 5229.390625,
+          "localTop": 5229.390625,
+          "referenceHeight": 784.796875,
+          "localHeight": 784.796875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "referencePageHeight": 5319,
+      "localPageHeight": 5319,
+      "localOverflow": 0,
+      "sections": [
+        {
+          "referenceTop": 904,
+          "localTop": 904,
+          "referenceHeight": 514,
+          "localHeight": 514
+        },
+        {
+          "referenceTop": 1478,
+          "localTop": 1478,
+          "referenceHeight": 1082.75,
+          "localHeight": 1082.75
+        },
+        {
+          "referenceTop": 2620.75,
+          "localTop": 2620.75,
+          "referenceHeight": 728.4375,
+          "localHeight": 728.4375
+        },
+        {
+          "referenceTop": 3409.1875,
+          "localTop": 3409.1875,
+          "referenceHeight": 637.84375,
+          "localHeight": 637.84375
+        },
+        {
+          "referenceTop": 4107.03125,
+          "localTop": 4107.03125,
+          "referenceHeight": 517.671875,
+          "localHeight": 517.671875
+        }
+      ]
+    }
+  ],
+  "pixelComparisons": [
+    {
+      "width": 1440,
+      "state": "hero",
+      "meanAbsoluteRGBChannelError0to255": 0.09298173868312758
+    },
+    {
+      "width": 1440,
+      "state": "intro",
+      "meanAbsoluteRGBChannelError0to255": 0.053553497942386834
+    },
+    {
+      "width": 1440,
+      "state": "mission",
+      "meanAbsoluteRGBChannelError0to255": 0.11055581275720165
+    },
+    {
+      "width": 1440,
+      "state": "voices",
+      "meanAbsoluteRGBChannelError0to255": 0.07477597736625514
+    },
+    {
+      "width": 1440,
+      "state": "values",
+      "meanAbsoluteRGBChannelError0to255": 0.05414094650205761
+    },
+    {
+      "width": 1440,
+      "state": "closing",
+      "meanAbsoluteRGBChannelError0to255": 0.058341820987654315
+    },
+    {
+      "width": 1920,
+      "state": "hero",
+      "meanAbsoluteRGBChannelError0to255": 0.05818753215020576
+    },
+    {
+      "width": 1920,
+      "state": "intro",
+      "meanAbsoluteRGBChannelError0to255": 0.033465149176954735
+    },
+    {
+      "width": 1920,
+      "state": "mission",
+      "meanAbsoluteRGBChannelError0to255": 0.08630015432098766
+    },
+    {
+      "width": 1920,
+      "state": "voices",
+      "meanAbsoluteRGBChannelError0to255": 0.03366640946502058
+    },
+    {
+      "width": 1920,
+      "state": "values",
+      "meanAbsoluteRGBChannelError0to255": 0.03369711291152263
+    },
+    {
+      "width": 1920,
+      "state": "closing",
+      "meanAbsoluteRGBChannelError0to255": 0.03344200102880659
+    },
+    {
+      "width": 768,
+      "state": "hero",
+      "meanAbsoluteRGBChannelError0to255": 0.1541900634765625
+    },
+    {
+      "width": 768,
+      "state": "intro",
+      "meanAbsoluteRGBChannelError0to255": 0.13010872734917536
+    },
+    {
+      "width": 768,
+      "state": "mission",
+      "meanAbsoluteRGBChannelError0to255": 0.14036687215169272
+    },
+    {
+      "width": 768,
+      "state": "voices",
+      "meanAbsoluteRGBChannelError0to255": 0.10070843166775174
+    },
+    {
+      "width": 768,
+      "state": "values",
+      "meanAbsoluteRGBChannelError0to255": 0.1346282958984375
+    },
+    {
+      "width": 768,
+      "state": "closing",
+      "meanAbsoluteRGBChannelError0to255": 11.994369506835938
+    },
+    {
+      "width": 390,
+      "state": "hero",
+      "meanAbsoluteRGBChannelError0to255": 0.36642969984202206
+    },
+    {
+      "width": 390,
+      "state": "intro",
+      "meanAbsoluteRGBChannelError0to255": 0.21411572892615546
+    },
+    {
+      "width": 390,
+      "state": "mission",
+      "meanAbsoluteRGBChannelError0to255": 0.4513144570016608
+    },
+    {
+      "width": 390,
+      "state": "voices",
+      "meanAbsoluteRGBChannelError0to255": 0.21645501681046705
+    },
+    {
+      "width": 390,
+      "state": "values",
+      "meanAbsoluteRGBChannelError0to255": 0.2082421922469316
+    },
+    {
+      "width": 390,
+      "state": "closing",
+      "meanAbsoluteRGBChannelError0to255": 3.2349698221736136
+    }
+  ],
+  "notes": "Normal motion; 2000ms photo intervals suppressed equally for static alignment only. Footer decoder phases and inherited footer approximation contribute to differences."
+}
