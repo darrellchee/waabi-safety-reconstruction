@@ -4,7 +4,6 @@ test.describe("source-measured motion regression", () => {
   test.use({ reducedMotion: "no-preference" });
   test.beforeEach(async ({ page }) => {
     await page.goto("/", { waitUntil: "domcontentloaded" });
-    await page.getByRole("button", { name: "Reject All", exact: true }).click();
   });
 
   test("Home title lines follow the reference opposing parallax and reverse exactly", async ({ page }) => {

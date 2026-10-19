@@ -13,6 +13,7 @@ const pages = [
   ["Careers", "/careers", "1761187390-251006_waabi_collab_03_0781.webp"],
   ["Insights", "/insights", "1761183903-waabi_road2_04225.webp"],
 ];
+const navigationPages = pages.filter(([, href]) => ["/", "/safety", "/company"].includes(href));
 const destination = (url: string) =>
   ["/", "/safety", "/company"].includes(url) ? url : `https://waabi.ai${url}`;
 
@@ -20,13 +21,6 @@ export function Header() {
   const pathname = usePathname();
   const currentPage =
     pages.find(([, href]) => href === pathname)?.[0] || "Home";
-  const [banner, setBanner] = useState(true);
-  const [bannerMounted, setBannerMounted] = useState(true);
-  useEffect(() => {
-    if (banner) return;
-    const timeout = window.setTimeout(() => setBannerMounted(false), window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 400);
-    return () => window.clearTimeout(timeout);
-  }, [banner]);
   const [open, setOpen] = useState(false);
   const [progress, setProgress] = useState(0);
   const header = useRef<HTMLElement>(null);
@@ -86,31 +80,11 @@ export function Header() {
   }, [open]);
   return (
     <>
-      {bannerMounted && (
-        <div className={`announcement ${banner ? "" : "announcement-closing"}`}>
-          <span>
-            Let&apos;s talk autonomous trucking{" "}
-            <a
-              href="https://42di74.share-na2.hsforms.com/2iMiF5OoTRLWyYPBKhOxpsg"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Get in touch<span aria-hidden="true">↗</span>
-            </a>
-          </span>
-          <button
-            aria-label="Dismiss announcement"
-            onClick={() => setBanner(false)}
-          >
-            ×
-          </button>
-        </div>
-      )}
       <header
         ref={header}
         onPointerEnter={(event) => { if (event.pointerType === "mouse") setOpen(true); }}
         onPointerLeave={(event) => { if (event.pointerType === "mouse") setOpen(false); }}
-        className={`site-header ${open ? "menu-is-open" : ""} ${banner ? "with-announcement" : ""}`}
+        className={`site-header ${open ? "menu-is-open" : ""}`}
       >
         <div className="nav-bar">
           <Link href="/" aria-label="Waabi home">
@@ -148,7 +122,7 @@ export function Header() {
             <div className="menu-content">
             <span className="menu-caption">Menu</span>
             <div className="menu-links">
-              {pages.map(([label, href, image]) => (
+              {navigationPages.map(([label, href, image]) => (
                 <Link
                   key={label}
                   className={href === pathname ? "active" : ""}
@@ -361,114 +335,5 @@ export function Footer() {
       </div>
       </div>
     </footer>
-  );
-}
-
-export function CookieConsent() {
-  const [visible, setVisible] = useState(false);
-  const [customize, setCustomize] = useState(false);
-  const [analytics, setAnalytics] = useState(false);
-  const [marketing, setMarketing] = useState(false);
-  const customizeButton = useRef<HTMLButtonElement>(null);
-  useEffect(() => {
-    setVisible(!localStorage.getItem("waabi-prototype-cookie-consent"));
-  }, []);
-  useEffect(() => {
-    if (!customize) return;
-    const listener = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        setCustomize(false);
-        customizeButton.current?.focus();
-      }
-    };
-    document.addEventListener("keydown", listener);
-    return () => document.removeEventListener("keydown", listener);
-  }, [customize]);
-  const save = (value: string) => {
-    localStorage.setItem("waabi-prototype-cookie-consent", value);
-    setVisible(false);
-    setCustomize(false);
-  };
-  if (!visible) return null;
-  return (
-    <>
-      <aside className="cookie-notice" aria-label="Cookie privacy preferences">
-        <div className="cookie-copy">
-          <h2>We value your privacy</h2>
-          <p>
-            This site uses cookies to improve your browsing experience, analyze
-            site traffic, and show personalized content.
-          </p>
-        </div>
-        <div className="cookie-actions">
-          <button onClick={() => save("rejected")}>Reject All</button>
-          <button onClick={() => save("accepted")}>Accept All</button>
-          <button
-            ref={customizeButton}
-            className="cookie-customize"
-            onClick={() => setCustomize(true)}
-          >
-            Customize
-          </button>
-        </div>
-      </aside>
-      {customize && (
-        <div
-          className="cookie-modal-backdrop"
-          onClick={() => setCustomize(false)}
-        >
-          <section
-            className="cookie-modal"
-            data-lenis-prevent
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="cookie-preferences-title"
-            onClick={(event) => event.stopPropagation()}
-          >
-            <button
-              autoFocus
-              className="cookie-close"
-              aria-label="Close cookie preferences"
-              onClick={() => setCustomize(false)}
-            >
-              ×
-            </button>
-            <h2 id="cookie-preferences-title">Customize consent preferences</h2>
-            <p>
-              Choose which cookies you allow. Necessary cookies support basic
-              site functionality and are always enabled.
-            </p>
-            <label>
-              Necessary cookies <input type="checkbox" checked disabled />
-            </label>
-            <label>
-              Analytics cookies{" "}
-              <input
-                type="checkbox"
-                checked={analytics}
-                onChange={(event) => setAnalytics(event.target.checked)}
-              />
-            </label>
-            <label>
-              Personalized content{" "}
-              <input
-                type="checkbox"
-                checked={marketing}
-                onChange={(event) => setMarketing(event.target.checked)}
-              />
-            </label>
-            <div className="preference-actions">
-              <button onClick={() => save("rejected")}>Reject All</button>
-              <button
-                onClick={() => save(JSON.stringify({ analytics, marketing }))}
-              >
-                Save preferences
-              </button>
-              <button onClick={() => save("accepted")}>Accept All</button>
-            </div>
-          </section>
-        </div>
-      )}
-    </>
   );
 }

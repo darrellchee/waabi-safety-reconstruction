@@ -32,9 +32,7 @@ for (const path of ["/", "/company"]) {
       );
       await expect(page.locator("main")).toBeVisible();
       await expect(page.locator("h1")).toBeVisible();
-      await page
-        .getByRole("button", { name: "Reject All", exact: true })
-        .click();
+      await expect(page.locator(".announcement, .cookie-notice, .cookie-modal-backdrop")).toHaveCount(0);
       await page.evaluate(() => document.fonts.ready);
       await page.addStyleTag({
         content: "html { scroll-behavior: auto !important; }",
@@ -78,6 +76,7 @@ for (const path of ["/", "/company"]) {
         name: "Global navigation",
       });
       await expect(navigation).toBeVisible();
+      await expect(navigation.getByRole("link")).toHaveText(["Home", "Safety", "Company"]);
       for (const [name, href] of [
         ["Home", "/"],
         ["Safety", "/safety"],
@@ -95,7 +94,6 @@ for (const path of ["/", "/company"]) {
 
 test("menu connects Home, Company and Safety locally", async ({ page }) => {
   await page.goto("/", { waitUntil: "domcontentloaded" });
-  await page.getByRole("button", { name: "Reject All", exact: true }).click();
   for (const [name, path] of [
     ["Company", "/company"],
     ["Safety", "/safety"],
@@ -116,7 +114,6 @@ test("Home strengths, partner quotes, technology links and insights work", async
   page,
 }) => {
   await page.goto("/", { waitUntil: "domcontentloaded" });
-  await page.getByRole("button", { name: "Reject All", exact: true }).click();
   const strengths = page.getByRole("tablist", { name: "Our strengths" });
   await strengths.getByRole("tab", { name: "Scalable", exact: true }).click();
   await expect(
@@ -158,7 +155,6 @@ test("Company scroll action, news carousel and location controls work", async ({
   page,
 }) => {
   await page.goto("/company", { waitUntil: "domcontentloaded" });
-  await page.getByRole("button", { name: "Reject All", exact: true }).click();
   await page.getByRole("button", { name: "Scroll Down", exact: true }).click();
   await expect.poll(() => page.evaluate(() => scrollY)).toBeGreaterThan(100);
   await page.getByRole("button", { name: "Next news", exact: true }).click();

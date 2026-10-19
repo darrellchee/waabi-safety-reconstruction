@@ -30,8 +30,10 @@ Playwright uses `/usr/bin/chromium` by default; set `CHROMIUM_PATH` to an instal
 - Company founder story, team, investors, latest news, events and locations map.
 - Safety statistics, philosophy, technology accordion and practices slider.
 - Desktop sticky story and mobile swipeable story, hover/tap technology panels, bounded practices carousel, horizontally scrollable insights.
-- Responsive global navigation, original brand/media/font assets, cookie preference UI, keyboard controls and reduced motion.
-- Routes outside Home, Safety, and Company and article links lead to their known official public destinations. The prototype sends no analytics or cookie preference data.
+- Responsive global navigation, original brand/media/font assets, keyboard controls and reduced motion.
+- Routes outside Home, Safety, and Company and article links lead to their known official public destinations. The prototype sends no analytics.
+
+The header menu contains Home, Safety, and Company. The promotional announcement and cookie consent UI were removed at the owner's request.
 
 ## Evidence and validation
 
@@ -48,4 +50,4 @@ New page inspection and fidelity evidence: `docs/home-reference-analysis.md`, `d
 
 The second measured motion pass uses Motion primitives for source spring/layout/presence behavior and a shared pointer-drag carousel hook. Current evidence and measured regression checks: `docs/home-motion-round2.md`, `docs/safety-motion-round2.md`, and `docs/motion-round2-validation.md`. Run `npx playwright test tests/motion-round2.spec.ts` for source-coordinate, transient, playback and drag checks.
 
-The latest optimized-build verification passed all 34 Playwright cases, lint and TypeScript checks. See `docs/motion-round2-validation.md` for measurements, corrected defects and the limits of independently timed animation comparisons.
+The latest optimized-build verification passed all 33 Playwright cases, lint and TypeScript checks. The obsolete cookie-consent case was removed; responsive checks now assert the three-link header and absence of both popups. See `docs/motion-round2-validation.md` for measurements, corrected defects and the limits of independently timed animation comparisons.

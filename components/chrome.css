@@ -1,39 +1,3 @@
-.announcement {
-  position: fixed;
-  inset: 0 0 auto;
-  height: 42px;
-  z-index: 1100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  color: #191818;
-  border-bottom: 1px solid #d8d8d8;
-  font-family: var(--font-sans), Arial, sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.4;
-}
-.announcement a {
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-.announcement a span {
-  display: inline-block;
-  margin-left: 2px;
-  text-decoration: none;
-}
-.announcement > button {
-  position: absolute;
-  right: 16px;
-  top: 8px;
-  width: 20px;
-  height: 25px;
-  border: 0;
-  background: none;
-  font: 18px Arial;
-  cursor: pointer;
-}
 .site-header {
   position: fixed;
   z-index: 1000;
@@ -43,9 +7,7 @@
   transform: translateX(-50%);
   color: #191818;
 }
-.site-header.with-announcement {
-  top: 76px;
-}
+
 .nav-bar {
   height: 55px;
   border: 1px solid #d6d6d6;
@@ -285,131 +247,7 @@
 .footer-legal a:hover {
   text-decoration: underline;
 }
-.cookie-notice {
-  position: fixed;
-  z-index: 2000;
-  left: 15px;
-  bottom: 15px;
-  width: 440px;
-  background: white;
-  color: #191818;
-  border: 1px solid #e6e6e6;
-  border-radius: 12px;
-  overflow: hidden;
-  font:
-    12px/18px Arial,
-    sans-serif;
-  box-shadow: 0 4px 12px #00000003;
-}
-.cookie-copy {
-  padding: 14px 15px 15px;
-}
-.cookie-copy h2 {
-  font:
-    14px/20px Arial,
-    sans-serif;
-  margin: 0 0 2px;
-}
-.cookie-copy p {
-  margin: 0;
-  color: #555;
-}
-.cookie-actions {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 13px;
-  background: #f7f7f7;
-  border-top: 1px solid #e9e9e9;
-}
-.cookie-actions button {
-  border: 1px solid #e4e4e4;
-  border-radius: 3px;
-  background: white;
-  color: #555;
-  padding: 4px 7px;
-  font:
-    8px/13px Arial,
-    sans-serif;
-  box-shadow: 0 1px 3px #00000005;
-  cursor: pointer;
-}
-.cookie-actions .cookie-customize {
-  border-color: #ff286b;
-  color: #ff286b;
-  margin-left: auto;
-}
-.cookie-actions button:hover {
-  border-color: #ff286b;
-}
-.cookie-modal-backdrop {
-  position: fixed;
-  inset: 0;
-  background: #0008;
-  z-index: 2100;
-  display: grid;
-  place-items: center;
-  padding: 20px;
-}
-.cookie-modal {
-  background: #fff;
-  color: #191818;
-  border-radius: 12px;
-  padding: 30px;
-  width: 600px;
-  max-width: 100%;
-  position: relative;
-  font:
-    14px/1.5 Arial,
-    sans-serif;
-}
-.cookie-modal h2 {
-  font:
-    24px/1.2 Arial,
-    sans-serif;
-  margin: 0 30px 20px 0;
-}
-.cookie-modal p {
-  color: #555;
-}
-.cookie-close {
-  position: absolute;
-  right: 15px;
-  top: 12px;
-  border: 0;
-  background: none;
-  font-size: 25px;
-  cursor: pointer;
-}
-.cookie-modal label {
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid #eee;
-  padding: 15px 0;
-}
-.cookie-modal input {
-  accent-color: #ff286b;
-  width: 18px;
-  height: 18px;
-}
-.preference-actions {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-.preference-actions button {
-  padding: 8px 12px;
-  border: 1px solid #ff286b;
-  background: #fff;
-  color: #ff286b;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.preference-actions button:last-child {
-  background: #ff286b;
-  color: white;
-}
+
 button:focus-visible,
 a:focus-visible {
   outline: 2px solid #ff286b;
@@ -417,19 +255,12 @@ a:focus-visible {
 }
 
 @media (max-width: 639px) {
-  .announcement {
-    font-size: 11px;
-  }
-  .announcement > button {
-    right: 16px;
-  }
+
   .site-header {
     top: 24px;
     width: calc(100% - 24px);
   }
-  .site-header.with-announcement {
-    top: 66px;
-  }
+
   .nav-logo {
     width: 56px;
   }
@@ -444,9 +275,7 @@ a:focus-visible {
     width: 100%;
     top: 0;
   }
-  .site-header.menu-is-open.with-announcement {
-    top: 42px;
-  }
+
   .menu-is-open .nav-bar {
     border: 0;
     border-radius: 0;
@@ -466,9 +295,7 @@ a:focus-visible {
     height: calc(100svh - 101px);
     overflow-y: auto;
   }
-  .with-announcement .menu-panel {
-    height: calc(100svh - 143px);
-  }
+
   .menu-links {
     gap: 12px;
   }
@@ -530,35 +357,6 @@ a:focus-visible {
   .footer-legal {
     font-size: 10px;
   }
-  .cookie-notice {
-    left: 10px;
-    bottom: 10px;
-    width: calc(100% - 20px);
-  }
-  .cookie-copy {
-    padding: 8px 10px 10px;
-  }
-  .cookie-actions {
-    padding: 10px 13px;
-    gap: 8px 10px;
-    flex-wrap: wrap;
-  }
-  .cookie-actions button {
-    flex: 1;
-    padding: 3px 7px;
-    font-size: 8px;
-    line-height: 14px;
-  }
-  .cookie-actions .cookie-customize {
-    flex-basis: 100%;
-    margin-left: 0;
-  }
-  .cookie-modal {
-    padding: 25px 20px;
-  }
-  .cookie-modal h2 {
-    font-size: 21px;
-  }
 }
 @media (prefers-reduced-motion: reduce) {
   .menu-panel {
@@ -572,10 +370,7 @@ a:focus-visible {
     display: none;
   }
 }
-.cookie-copy h2,
-.cookie-modal h2 {
-  letter-spacing: normal;
-}
+
 /* Shared footer geometry measured from the original at desktop, tablet and mobile. */
 .footer-video {
   object-fit: fill;
@@ -700,8 +495,7 @@ a:focus-visible {
 }
 .footer-socials > a { transition: color .15s, background-color .15s; }
 .footer-socials > a:hover { transform: none; background: white; }
-.cookie-notice { animation: cookie-in .15s ease-out; }
-@keyframes cookie-in { from { opacity: 0; transform: scale(.95); } to { opacity: 1; transform: scale(1); } }
+
 @media (max-width: 1023px) {
   .site-footer { padding: 0; }
   .footer-motion { min-height: 0; height: auto; padding: 60px var(--gutter) 30px; }
@@ -711,7 +505,7 @@ a:focus-visible {
 }
 @media (prefers-reduced-motion: reduce) {
   .site-header, .nav-bar, .menu-toggle span { transition: none; }
-  .menu-panel > *, .cookie-notice { animation: none; }
+  .menu-panel > * { animation: none; }
   .footer-motion { transform: none; will-change: auto; }
   .footer-top, .footer-bottom { opacity: 1; }
   .footer-canvas { display: none; }
@@ -724,13 +518,3 @@ a:focus-visible {
 /* The serialized root MotionConfig overrides library spring defaults. */
 .menu-toggle span { transition: transform .4s cubic-bezier(.19,1,.22,1); }
 @media (prefers-reduced-motion: reduce) { .menu-toggle span { transition: none; } }
-
-.announcement { animation: announcement-in .4s cubic-bezier(.19,1,.22,1) both; }
-.announcement-closing { animation: announcement-out .4s cubic-bezier(.19,1,.22,1) both; }
-@keyframes announcement-in { from { transform: translateY(-100%); } to { transform: translateY(0); } }
-@keyframes announcement-out { from { transform: translateY(0); } to { transform: translateY(-100%); } }
-@media (prefers-reduced-motion: reduce) { .announcement { animation: none; } }
-/* The reference reserves 48px for dismissal and tracks its small sans text. */
-.announcement { letter-spacing: .02em; }
-.announcement > span { margin-right: 48px; }
-.announcement a span { font-size: 9px; width: 6px; line-height: 1; }

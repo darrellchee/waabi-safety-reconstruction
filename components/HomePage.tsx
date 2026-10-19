@@ -11,7 +11,7 @@ import {
   type ReactNode,
   type ReactElement,
 } from "react";
-import { Header, Footer, CookieConsent } from "./SiteChrome";
+import { Header, Footer } from "./SiteChrome";
 import partners from "./home-data.json";
 import { insights } from "./insights-data";
 import { useCarouselMotion } from "./useCarouselMotion";
@@ -817,7 +817,6 @@ export default function HomePage() {
         </section>
       </main>
       <Footer />
-      <CookieConsent />
     </>
   );
 }

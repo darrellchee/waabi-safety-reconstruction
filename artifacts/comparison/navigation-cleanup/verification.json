@@ -1,0 +1,62 @@
+[
+  {
+    "route": "home",
+    "width": 1440,
+    "menu": [
+      "Home",
+      "Safety",
+      "Company"
+    ],
+    "popups": 0
+  },
+  {
+    "route": "safety",
+    "width": 1440,
+    "menu": [
+      "Home",
+      "Safety",
+      "Company"
+    ],
+    "popups": 0
+  },
+  {
+    "route": "company",
+    "width": 1440,
+    "menu": [
+      "Home",
+      "Safety",
+      "Company"
+    ],
+    "popups": 0
+  },
+  {
+    "route": "home",
+    "width": 390,
+    "menu": [
+      "Home",
+      "Safety",
+      "Company"
+    ],
+    "popups": 0
+  },
+  {
+    "route": "safety",
+    "width": 390,
+    "menu": [
+      "Home",
+      "Safety",
+      "Company"
+    ],
+    "popups": 0
+  },
+  {
+    "route": "company",
+    "width": 390,
+    "menu": [
+      "Home",
+      "Safety",
+      "Company"
+    ],
+    "popups": 0
+  }
+]

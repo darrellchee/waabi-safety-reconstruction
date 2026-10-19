@@ -86,7 +86,6 @@ test("technology panels and safety practices respond to keyboard and click", asy
   page,
 }) => {
   await page.goto("/safety", { waitUntil: "domcontentloaded" });
-  await page.getByRole("button", { name: "Reject All", exact: true }).click();
   const world = page.getByRole("button", {
     name: "Explore Waabi World",
     exact: true,
@@ -119,31 +118,6 @@ test("technology panels and safety practices respond to keyboard and click", asy
   ).toContainText("Monitoring");
 });
 
-test("cookie choices persist and custom preferences can be saved", async ({
-  page,
-}) => {
-  await page.goto("/safety", { waitUntil: "domcontentloaded" });
-  await page.getByRole("button", { name: "Customize", exact: true }).click();
-  const dialog = page.getByRole("dialog", {
-    name: "Customize consent preferences",
-  });
-  await expect(dialog).toBeVisible();
-  await dialog.getByRole("checkbox", { name: "Analytics cookies" }).check();
-  await dialog.getByRole("button", { name: "Save preferences" }).click();
-  await expect(
-    page.getByRole("complementary", { name: "Cookie privacy preferences" }),
-  ).toHaveCount(0);
-  await page.reload({ waitUntil: "domcontentloaded" });
-  await expect(
-    page.getByRole("complementary", { name: "Cookie privacy preferences" }),
-  ).toHaveCount(0);
-  expect(
-    await page.evaluate(() =>
-      JSON.parse(localStorage.getItem("waabi-prototype-cookie-consent")!),
-    ),
-  ).toEqual({ analytics: true, marketing: false });
-});
-
 for (const viewport of [
   { width: 1440, height: 900 },
   { width: 1920, height: 1080 },
@@ -155,7 +129,7 @@ for (const viewport of [
   }) => {
     await page.setViewportSize(viewport);
     await page.goto("/safety", { waitUntil: "domcontentloaded" });
-    await page.getByRole("button", { name: "Reject All", exact: true }).click();
+    await expect(page.locator(".announcement, .cookie-notice, .cookie-modal-backdrop")).toHaveCount(0);
     await page.evaluate(() => document.fonts.ready);
     expect(
       await page.evaluate(
@@ -167,6 +141,7 @@ for (const viewport of [
     await expect(
       page.getByRole("navigation", { name: "Global navigation" }),
     ).toBeVisible();
+    await expect(page.getByRole("navigation", { name: "Global navigation" }).getByRole("link")).toHaveText(["Home", "Safety", "Company"]);
     await page.getByRole("button", { name: "Close menu" }).click();
     await expect(
       page.getByRole("navigation", { name: "Global navigation" }),

@@ -1,7 +1,7 @@
 "use client";
 import { Fragment, forwardRef, useEffect, useRef, useState } from "react";
 import { AnimatePresence, LayoutGroup, MotionConfig, motion, useInView, useMotionValue, useMotionValueEvent, usePresenceData, useReducedMotion, useScroll, useTransform } from "motion/react";
-import { Header, Footer, CookieConsent } from "./SiteChrome";
+import { Header, Footer } from "./SiteChrome";
 import { useCarouselMotion } from "./useCarouselMotion";
 import { insights } from "./insights-data";
 const A = "/assets/";
@@ -434,7 +434,6 @@ export default function SafetyPage() {
       </main>
       </MotionConfig>
       <Footer />
-      <CookieConsent />
     </>
   );
 }

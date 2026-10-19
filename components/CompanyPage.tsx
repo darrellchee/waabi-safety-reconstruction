@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { Header, Footer, CookieConsent } from "./SiteChrome";
+import { Header, Footer } from "./SiteChrome";
 import "./company.css";
 import { insights } from "./insights-data";
 import roads from "./company-roads.json";
@@ -479,7 +479,6 @@ export default function CompanyPage() {
         </section>
       </main>
       <Footer />
-      <CookieConsent />
     </>
   );
 }
