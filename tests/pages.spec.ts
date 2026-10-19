@@ -76,11 +76,12 @@ for (const path of ["/", "/company"]) {
         name: "Global navigation",
       });
       await expect(navigation).toBeVisible();
-      await expect(navigation.getByRole("link")).toHaveText(["Home", "Safety", "Company"]);
+      await expect(navigation.getByRole("link")).toHaveText(["Home", "Safety", "Company", "Careers"]);
       for (const [name, href] of [
         ["Home", "/"],
         ["Safety", "/safety"],
         ["Company", "/company"],
+        ["Careers", "/careers"],
       ]) {
         await expect(
           navigation.getByRole("link", { name, exact: true }),
@@ -92,11 +93,12 @@ for (const path of ["/", "/company"]) {
   }
 }
 
-test("menu connects Home, Company and Safety locally", async ({ page }) => {
+test("menu connects Home, Company, Safety and Careers locally", async ({ page }) => {
   await page.goto("/", { waitUntil: "domcontentloaded" });
   for (const [name, path] of [
     ["Company", "/company"],
     ["Safety", "/safety"],
+    ["Careers", "/careers"],
     ["Home", "/"],
   ]) {
     await page.getByRole("button", { name: "Menu", exact: true }).focus();

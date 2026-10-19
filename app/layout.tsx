@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SmoothScroll from "../components/SmoothScroll";
 import MotionProvider from "../components/MotionProvider";
+import { ViewTransitions } from "next-view-transitions";
+import "../components/page-transitions.css";
 export const metadata: Metadata = {
   icons: { icon: "/assets/1774553027-favicon-32x32.webp" },
   title: "Waabi | Educational Prototype",
@@ -14,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <ViewTransitions><html lang="en">
       <body><MotionProvider><SmoothScroll />{children}</MotionProvider></body>
-    </html>
+    </html></ViewTransitions>
   );
 }

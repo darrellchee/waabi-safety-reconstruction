@@ -39,7 +39,7 @@ for (const size of sizes) {
     await page.evaluate(() => scrollTo({ top: 0, behavior: "instant" }));
     await page.getByRole("button", { name: "Menu", exact: true }).focus();
     await page.keyboard.press("Enter");
-    await expect(page.getByRole("navigation", { name: "Global navigation" }).getByRole("link")).toHaveText(["Home", "Safety", "Company"]);
+    await expect(page.getByRole("navigation", { name: "Global navigation" }).getByRole("link")).toHaveText(["Home", "Safety", "Company", "Careers"]);
     expect(errors).toEqual([]);
   });
 }

@@ -12,11 +12,13 @@ import {
   type ReactElement,
 } from "react";
 import { Header, Footer } from "./SiteChrome";
+import AppLink from "./AppLink";
 import partners from "./home-data.json";
 import { insights } from "./insights-data";
 import { useCarouselMotion } from "./useCarouselMotion";
 import "./home.css";
 import { motion, AnimatePresence, useReducedMotion, useIsPresent } from "motion/react";
+const MotionLink = motion.create(AppLink);
 const sourceEase = [0.19, 1, 0.22, 1] as const;
 const careerTransition = { duration: 0.8, ease: [0.77, 0, 0.175, 1] as const };
 const media = (name: string) => `/assets/home/${name}`;
@@ -642,9 +644,9 @@ export default function HomePage() {
               approach, rigorous validation, and a culture where safety is
               everyone&apos;s job.
             </MotionCopy>
-            <motion.a whileHover={{scale:1.05}} whileTap={{scale:.95}} className="home-pill" href="/safety">
+            <MotionLink whileHover={{scale:1.05}} whileTap={{scale:.95}} className="home-pill" href="/safety">
               Explore our approach
-            </motion.a>
+            </MotionLink>
           </div>
         </section>
         <section
@@ -790,9 +792,9 @@ export default function HomePage() {
         </section>
         <section className="home-careers">
           <MotionCopy>Build Physical AI with us.</MotionCopy>
-          <motion.a whileHover={{scale:1.05}} whileTap={{scale:.95}} className="home-pill" href="/careers">
+          <MotionLink whileHover={{scale:1.05}} whileTap={{scale:.95}} className="home-pill" href="/careers">
             Join the team
-          </motion.a>
+          </MotionLink>
           <div className="home-careers-collage" ref={careers}>
             <AnimatePresence initial={false}>
               {[

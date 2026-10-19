@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
+import Link from "./AppLink";
 import "./chrome.css";
 
 const pages = [
@@ -13,7 +13,7 @@ const pages = [
   ["Careers", "/careers", "1761187390-251006_waabi_collab_03_0781.webp"],
   ["Insights", "/insights", "1761183903-waabi_road2_04225.webp"],
 ];
-const navigationPages = pages.filter(([, href]) => ["/", "/safety", "/company"].includes(href));
+const navigationPages = pages.filter(([, href]) => ["/", "/safety", "/company", "/careers"].includes(href));
 const destination = (url: string) =>
   ["/", "/safety", "/company", "/careers"].includes(url) ? url : `https://waabi.ai${url}`;
 

@@ -3,6 +3,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Header, Footer } from "./SiteChrome";
 import "./company.css";
 import { insights } from "./insights-data";
+import AppLink from "./AppLink";
 import roads from "./company-roads.json";
 const A = "/assets/company/";
 const news = insights;
@@ -328,9 +329,9 @@ export default function CompanyPage() {
               from AI researchers and roboticists to trucking experts and
               operators.
             </p>
-            <a className="co-pill" href="/careers">
+            <AppLink className="co-pill" href="/careers">
               Learn more
-            </a>
+            </AppLink>
           </div>
           <PeoplePortraits />
         </section>

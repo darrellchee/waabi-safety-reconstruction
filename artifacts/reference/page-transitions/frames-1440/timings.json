@@ -1,0 +1,62 @@
+[
+  {
+    "requestedMs": 0,
+    "actualMs": 0.0
+  },
+  {
+    "requestedMs": 50.0,
+    "actualMs": 23.660898208618164
+  },
+  {
+    "requestedMs": 100.0,
+    "actualMs": 78.71294021606445
+  },
+  {
+    "requestedMs": 150.0,
+    "actualMs": 134.14597511291504
+  },
+  {
+    "requestedMs": 200.0,
+    "actualMs": 194.50998306274414
+  },
+  {
+    "requestedMs": 250.0,
+    "actualMs": 227.9369831085205
+  },
+  {
+    "requestedMs": 300.0,
+    "actualMs": 285.308837890625
+  },
+  {
+    "requestedMs": 400.0,
+    "actualMs": 403.7959575653076
+  },
+  {
+    "requestedMs": 500.0,
+    "actualMs": 480.3009033203125
+  },
+  {
+    "requestedMs": 600.0,
+    "actualMs": 575.873851776123
+  },
+  {
+    "requestedMs": 800.0,
+    "actualMs": 902.703046798706
+  },
+  {
+    "requestedMs": 1000,
+    "actualMs": 991.4400577545166
+  },
+  {
+    "requestedMs": 1300.0,
+    "actualMs": 1296.278953552246
+  },
+  {
+    "requestedMs": 1700.0,
+    "actualMs": 1709.151029586792
+  },
+  {
+    "requestedMs": 2200.0,
+    "actualMs": 1805.4418563842773
+  }
+]

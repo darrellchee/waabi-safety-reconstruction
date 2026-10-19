@@ -1,0 +1,593 @@
+[
+  {
+    "ms": 200,
+    "animations": [
+      {
+        "name": "-ua-view-transition-group-anim-header",
+        "time": 200,
+        "duration": 250,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "height": "55px",
+            "backdropFilter": "none",
+            "width": "338px",
+            "transform": "matrix(1, 0, 0, 1, 551, 34)",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "replace",
+            "height": "55px",
+            "backdropFilter": "none",
+            "width": "338px",
+            "transform": "matrix(1, 0, 0, 1, 551, 34)",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "-ua-view-transition-group-anim-root",
+        "time": 200,
+        "duration": 250,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "height": "900px",
+            "backdropFilter": "none",
+            "width": "1440px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "replace",
+            "height": "900px",
+            "backdropFilter": "none",
+            "width": "1440px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "css-page-in",
+        "time": 200,
+        "duration": 800,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "clipPath": "inset(50% round 12px)",
+            "transform": "scale3d(1.1, 1.1, 1.1)",
+            "computedOffset": 0
+          },
+          {
+            "offset": 0.9,
+            "easing": "ease",
+            "composite": "auto",
+            "clipPath": "inset(0px round 12px)",
+            "transform": "scale(1)",
+            "computedOffset": 0.9
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "auto",
+            "clipPath": "inset(0px)",
+            "transform": "scale(1)",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "css-page-out",
+        "time": 200,
+        "duration": 800,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "opacity": "1",
+            "scale": "1",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "auto",
+            "opacity": "0.5",
+            "scale": "1.1",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "-ua-view-transition-fade-in",
+        "time": 200,
+        "duration": 250,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "opacity": "0",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "replace",
+            "opacity": "1",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "-ua-mix-blend-mode-plus-lighter",
+        "time": 200,
+        "duration": 250,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "mixBlendMode": "plus-lighter",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "auto",
+            "mixBlendMode": "plus-lighter",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "-ua-view-transition-fade-out",
+        "time": 200,
+        "duration": 250,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "replace",
+            "opacity": "1",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "auto",
+            "opacity": "0",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "-ua-mix-blend-mode-plus-lighter",
+        "time": 200,
+        "duration": 250,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "mixBlendMode": "plus-lighter",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "auto",
+            "mixBlendMode": "plus-lighter",
+            "computedOffset": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ms": 400,
+    "animations": [
+      {
+        "name": "-ua-view-transition-group-anim-header",
+        "time": 400,
+        "duration": 250,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "height": "55px",
+            "backdropFilter": "none",
+            "width": "338px",
+            "transform": "matrix(1, 0, 0, 1, 551, 34)",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "replace",
+            "height": "55px",
+            "backdropFilter": "none",
+            "width": "338px",
+            "transform": "matrix(1, 0, 0, 1, 551, 34)",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "-ua-view-transition-group-anim-root",
+        "time": 400,
+        "duration": 250,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "height": "900px",
+            "backdropFilter": "none",
+            "width": "1440px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "replace",
+            "height": "900px",
+            "backdropFilter": "none",
+            "width": "1440px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "css-page-in",
+        "time": 400,
+        "duration": 800,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "clipPath": "inset(50% round 12px)",
+            "transform": "scale3d(1.1, 1.1, 1.1)",
+            "computedOffset": 0
+          },
+          {
+            "offset": 0.9,
+            "easing": "ease",
+            "composite": "auto",
+            "clipPath": "inset(0px round 12px)",
+            "transform": "scale(1)",
+            "computedOffset": 0.9
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "auto",
+            "clipPath": "inset(0px)",
+            "transform": "scale(1)",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "css-page-out",
+        "time": 400,
+        "duration": 800,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "opacity": "1",
+            "scale": "1",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "auto",
+            "opacity": "0.5",
+            "scale": "1.1",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "-ua-view-transition-fade-in",
+        "time": 400,
+        "duration": 250,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "opacity": "0",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "replace",
+            "opacity": "1",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "-ua-mix-blend-mode-plus-lighter",
+        "time": 400,
+        "duration": 250,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "mixBlendMode": "plus-lighter",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "auto",
+            "mixBlendMode": "plus-lighter",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "-ua-view-transition-fade-out",
+        "time": 400,
+        "duration": 250,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "replace",
+            "opacity": "1",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "auto",
+            "opacity": "0",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "-ua-mix-blend-mode-plus-lighter",
+        "time": 400,
+        "duration": 250,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "mixBlendMode": "plus-lighter",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "auto",
+            "mixBlendMode": "plus-lighter",
+            "computedOffset": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ms": 720,
+    "animations": [
+      {
+        "name": "-ua-view-transition-group-anim-header",
+        "time": 720,
+        "duration": 250,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "height": "55px",
+            "backdropFilter": "none",
+            "width": "338px",
+            "transform": "matrix(1, 0, 0, 1, 551, 34)",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "replace",
+            "height": "55px",
+            "backdropFilter": "none",
+            "width": "338px",
+            "transform": "matrix(1, 0, 0, 1, 551, 34)",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "-ua-view-transition-group-anim-root",
+        "time": 720,
+        "duration": 250,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "height": "900px",
+            "backdropFilter": "none",
+            "width": "1440px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "replace",
+            "height": "900px",
+            "backdropFilter": "none",
+            "width": "1440px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "css-page-in",
+        "time": 720,
+        "duration": 800,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "clipPath": "inset(50% round 12px)",
+            "transform": "scale3d(1.1, 1.1, 1.1)",
+            "computedOffset": 0
+          },
+          {
+            "offset": 0.9,
+            "easing": "ease",
+            "composite": "auto",
+            "clipPath": "inset(0px round 12px)",
+            "transform": "scale(1)",
+            "computedOffset": 0.9
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "auto",
+            "clipPath": "inset(0px)",
+            "transform": "scale(1)",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "css-page-out",
+        "time": 720,
+        "duration": 800,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "opacity": "1",
+            "scale": "1",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "auto",
+            "opacity": "0.5",
+            "scale": "1.1",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "-ua-view-transition-fade-in",
+        "time": 720,
+        "duration": 250,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "opacity": "0",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "replace",
+            "opacity": "1",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "-ua-mix-blend-mode-plus-lighter",
+        "time": 720,
+        "duration": 250,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "mixBlendMode": "plus-lighter",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "auto",
+            "mixBlendMode": "plus-lighter",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "-ua-view-transition-fade-out",
+        "time": 720,
+        "duration": 250,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "replace",
+            "opacity": "1",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "auto",
+            "opacity": "0",
+            "computedOffset": 1
+          }
+        ]
+      },
+      {
+        "name": "-ua-mix-blend-mode-plus-lighter",
+        "time": 720,
+        "duration": 250,
+        "frames": [
+          {
+            "offset": 0,
+            "easing": "ease",
+            "composite": "auto",
+            "mixBlendMode": "plus-lighter",
+            "computedOffset": 0
+          },
+          {
+            "offset": 1,
+            "easing": "ease",
+            "composite": "auto",
+            "mixBlendMode": "plus-lighter",
+            "computedOffset": 1
+          }
+        ]
+      }
+    ]
+  }
+]

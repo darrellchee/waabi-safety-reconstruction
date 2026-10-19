@@ -141,7 +141,7 @@ for (const viewport of [
     await expect(
       page.getByRole("navigation", { name: "Global navigation" }),
     ).toBeVisible();
-    await expect(page.getByRole("navigation", { name: "Global navigation" }).getByRole("link")).toHaveText(["Home", "Safety", "Company"]);
+    await expect(page.getByRole("navigation", { name: "Global navigation" }).getByRole("link")).toHaveText(["Home", "Safety", "Company", "Careers"]);
     await page.getByRole("button", { name: "Close menu" }).click();
     await expect(
       page.getByRole("navigation", { name: "Global navigation" }),

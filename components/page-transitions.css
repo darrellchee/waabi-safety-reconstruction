@@ -1,0 +1,29 @@
+/* REA public-source evidence: docs/page-transition-source.md. */
+@view-transition { navigation: auto; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .site-header { view-transition-name: header; animation-duration: .8s; }
+  ::view-transition-group(root),
+  ::view-transition-image-pair(root) { background: #191818; }
+  ::view-transition-old(root) {
+    animation: .8s cubic-bezier(.25,.1,.25,1) both css-page-out;
+  }
+  ::view-transition-new(root) {
+    animation: .8s cubic-bezier(.25,.1,.25,1) both css-page-in;
+  }
+}
+
+@keyframes css-page-out {
+  0% { opacity: 1; scale: 1; }
+  100% { opacity: .5; scale: 1.1; }
+}
+@keyframes css-page-in {
+  0% { clip-path: inset(50% round 12px); transform: scale3d(1.1,1.1,1.1); }
+  90% { clip-path: inset(0% round 12px); transform: scale(1); }
+  100% { clip-path: inset(0%); transform: scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) { animation: none !important; }
+}

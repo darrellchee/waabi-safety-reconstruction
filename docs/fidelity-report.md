@@ -1,3 +1,5 @@
+Current update: Careers is in the four-link header, and the global route transition has been restored from fresh REA source and runtime evidence. See [page-transition-validation.md](page-transition-validation.md) for matched-frame desktop/mobile comparisons and current verification. The initial release notes below are historical.
+
 # Fidelity report
 
 This records the initial Safety-only release. Home now renders at `/`, and `/company` has been added. See `pages-qa.md` and the Home/Company fidelity reports for the current three-page verification.

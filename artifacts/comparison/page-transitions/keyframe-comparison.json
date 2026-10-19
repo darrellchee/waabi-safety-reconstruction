@@ -1,0 +1,32 @@
+[
+  {
+    "viewport": 1440,
+    "animationTimeMs": 200,
+    "normalizedRootKeyframesAndTimingMatch": true
+  },
+  {
+    "viewport": 1440,
+    "animationTimeMs": 400,
+    "normalizedRootKeyframesAndTimingMatch": true
+  },
+  {
+    "viewport": 1440,
+    "animationTimeMs": 720,
+    "normalizedRootKeyframesAndTimingMatch": true
+  },
+  {
+    "viewport": 390,
+    "animationTimeMs": 200,
+    "normalizedRootKeyframesAndTimingMatch": true
+  },
+  {
+    "viewport": 390,
+    "animationTimeMs": 400,
+    "normalizedRootKeyframesAndTimingMatch": true
+  },
+  {
+    "viewport": 390,
+    "animationTimeMs": 720,
+    "normalizedRootKeyframesAndTimingMatch": true
+  }
+]

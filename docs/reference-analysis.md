@@ -34,3 +34,8 @@ No page-specific interactive WebGL scene was observed. Exact private implementat
 ## Additional routes
 
 Home and Company evidence, original media, page-specific measurements and refinement reports are documented in `home-reference-analysis.md`, `home-fidelity.md`, `company-reference-analysis.md`, and `company-fidelity.md`. REA native captures remain the primary inspection evidence for those routes; Playwright supplements interaction and computed-style measurement.
+
+
+## Route-transition reinspection
+
+Fresh REA inspection of public source, computed CSS and desktop/mobile browser navigation identified the missing global native View Transition layer. See `page-transition-source.md` for evidence IDs, source hashes, exact 800ms keyframes and header grouping. Raw REA envelopes, native screenshots, CDP frame sequences and runtime root-animation samples are saved under `artifacts/reference/page-transitions/`. Browser frame sampling supplements REA because its passive capture cannot itself trigger navigation or guarantee subsecond screenshot timing.
