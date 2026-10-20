@@ -1,84 +1,91 @@
 "use client";
 import { Fragment, forwardRef, useEffect, useRef, useState } from "react";
-import { AnimatePresence, LayoutGroup, MotionConfig, motion, useInView, useMotionValue, useMotionValueEvent, usePresenceData, useReducedMotion, useScroll, useTransform } from "motion/react";
+import { AnimatePresence, LayoutGroup, MotionConfig, motion, useInView, useMotionValue, useMotionValueEvent, usePresenceData, useScroll, useTransform } from "motion/react";
+import { useReducedMotion } from "./useReducedMotion";
 import { Header, Footer } from "./SiteChrome";
 import { useCarouselMotion } from "./useCarouselMotion";
 import { insights } from "./insights-data";
 const A = "/assets/";
+const rows = (...items: string[]) => (
+  <>{items.map((item, i) => <Fragment key={i}>{i > 0 && <br />}{item}</Fragment>)}</>
+);
 const philosophy = [
   {
-    title: "Safety from the inside out.",
-    text: (
-      <>
-        Our governance structure ensures that every decision prioritizes safety.
-        Every team member, from engineers to operators, has the authority to
-        raise a concern. Our publicly shared{" "}
-        <a
-          href="https://research-assets.waabi.ai/Waabi%20VSSA/231030%20StAn%20Waabi%20Voluntary%20Safety%20Self-Assessment%2A.pdf"
-          target="_blank"
-          rel="noreferrer"
-        >
-          VSSA
-        </a>{" "}
-        openly documents our strategy—giving everyone access to the approaches
-        that guide our operations.
-      </>
-    ),
+    title: "Option A: Provisions Point",
+    text: "A raised supply and equipment-hire shelter at Warokutal. It stocks water, food, firewood and safety information, and hires out recovery kits, personal locator beacons (PLBs) and ultra high frequency (UHF) radios. TEAM TO ADD: source for this type of remote supply point.",
     image: "1761185044-waabi_road2_05683.webp",
   },
   {
-    title: "Built different. Built safer.",
-    text: "Our simulation-first approach tests thousands of safety-critical scenarios before they ever happen on public roads, making every mile driven more valuable and safe.",
+    title: "Option B: Distributed emergency checkpoints",
+    text: "Several small emergency points placed along the access route, each holding basic supplies and a radio. TEAM TO ADD: source for roadside emergency points, and confirm this description.",
     image: "1761183960-waabi_inspection_02285.webp",
   },
   {
-    title: "Pioneering new standards.",
-    text: "We rigorously adhere to many established industry best practices while pioneering new methodologies where existing standards fall short. Our work in simulation realism and Mixed Reality Testing is establishing benchmarks for the entire industry.",
+    title: "Option C: Elevated tent-site platform",
+    text: "Raised camping platforms that keep campers above floodwater. TEAM TO ADD: source for elevated camp platforms, and confirm this description.",
     image: "1760350326-shutterstock_1058062604_edited_final.webp",
   },
 ];
 const technology = [
   {
-    title: "Waabi Driver",
+    title: "Ideas A and B",
     image: "1761183903-waabi_road2_04462.webp",
-    text: "Our end-to-end trained system is fully interpretable, and can see exactly why a decision was made. Designed for generalizability, Waabi Driver adapts to new scenarios while maintaining multiple layers of redundancy across both hardware and software. This ensures that if a fault ever occurs, the system defaults to minimal-risk maneuvers.",
+    text: rows(
+      "Weights are in brackets.",
+      "Idea: A Provisions Point. Culture and Country (3): 5. Low cost (4): 3. Visitor support (5): 4. Feasibility (5): 3. Safety and access (4): 5. Community fit (4): 4. Flood resilience (5): 3. Revenue (3): 5. Total: 128. Rank: 1.",
+      "Idea: B Distributed checkpoints. Culture and Country (3): 4. Low cost (4): 3. Visitor support (5): 3. Feasibility (5): 3. Safety and access (4): 4. Community fit (4): 4. Flood resilience (5): 3. Revenue (3): 1. Total: 104. Rank: 2.",
+    ),
   },
   {
-    title: "Waabi World",
+    title: "Idea C and the beacon",
     image: "1761947979-screenshot-2025-10-31-at-2-59-29-pm.webp",
-    text: "Our high-fidelity neural simulator is capable of replicating both routine situations and rare edge cases with a high degree of realism.. Efficient, comprehensive testing allows us to launch responsibly and continually improve performance in the highest-risk scenarios.",
+    text: rows(
+      "Idea: C Tent-site platform. Culture and Country (3): 3. Low cost (4): 4. Visitor support (5): 2. Feasibility (5): 2. Safety and access (4): 3. Community fit (4): 3. Flood resilience (5): 4. Revenue (3): 2. Total: 95. Rank: 3.",
+      "Idea: Screened out, crossing beacon. Culture and Country (3): 3. Low cost (4): 4. Visitor support (5): 1. Feasibility (5): 3. Safety and access (4): 4. Community fit (4): 3. Flood resilience (5): 3. Revenue (3): 1. Total: 91. Rank: 4.",
+    ),
   },
   {
-    title: "Mixed Reality Testing",
+    title: "Reading the scores",
     image: "1762294277-screenshot-2025-11-04-at-2-11-01-pm.webp",
-    text: "By combining real trucks with real-time synthetic scenarios, we’re unlocking unlimited testing possibilities that were previously impossible to achieve safely or practically. MRT allows us to inject rare and dangerous situations into live operations without putting people or cargo at risk.",
+    text: rows(
+      "Option A scores 5 for culture, safety and revenue and 3 for low cost, feasibility and flood resilience. It scores 3 for flood resilience until the 2 m floor height is checked against flood data.",
+      "Option B scores 3 for visitor support and 1 for revenue.",
+      "Option C scores 4 for flood resilience, the highest of the four, and 2 for visitor support and feasibility.",
+      "TEAM TO ADD: confirm the reasons for each rating.",
+      "Decision: The team will develop Option A, Provisions Point, in detail.",
+    ),
   },
 ];
-const technologyLinks = [
-  "introducing-the-waabi-driver#waabi-driver",
-  "simulator-realism-the-new-safety-standard-for-the-av-industry#waabi-world",
-  "mixed-reality-testing-pushes-the-boundaries-of-av-safety#mixed-reality-testing",
-];
+const technologyLinks = ["/company", "/company", "/careers"];
 const practices = [
   {
-    title: "Design",
+    title: "What it is",
     image: "1761183902-waabi_road2_04965.webp",
-    text: "Well-defined requirements for each capability, with multiple layers of hardware and software redundancy.",
+    text: "A 24 square metre shelter at Warokutal, planned for ground that is already cleared and above flood level. A site survey must confirm this. It would stand on reinforced concrete piles (Menard Asia, 2025), with the floor planned 2 m above the ground. Walls would be watertight concrete (Leading Architecture, 2024) and the roof corrugated sheeting (material to be confirmed). Inside would be shelves, a counter, a solar panel and a battery. The shelter is unstaffed. Visitors serve themselves and pay by the method YAC sets.",
   },
   {
-    title: "Testing & Validation",
+    title: "Entry, stock and hire items",
     image: "1761183937-waabi_garageinterior_03851.webp",
-    text: "From simulation to closed course testing to low exposure driving, and finally, the public road. We only advance when safety criteria are met.",
+    text: rows(
+      "Entry: TEAM TO ADD: confirm the entry type (stairs or ramp) so it matches the prototype.",
+      "Stock: drinking water, non-perishable food, firewood and safety information.",
+      "Hire items: traction boards for soft ground, a tyre deflation kit (Supercheap Auto, 2017), a 12 V compressor, and shackles with a recovery strap (Bober, 2025). Each kit also holds a personal locator beacon (PLB) and an ultra high frequency (UHF) radio. YAC sets the check-out and payment method. One option is a lockable kit cage with a code given at booking.",
+    ),
   },
   {
-    title: "Deployment",
+    title: "How a visitor would use it",
     image: "1761183980-waabi_road1_01029.webp",
-    text: "Structured releases to ensure readiness before any expansion.",
+    text: rows(
+      "1. Check road conditions on the Cook Shire Council website before travel (Cook Shire Council, 2026).",
+      "2. Arrive at Warokutal and read the safety information at the shelter.",
+      "3. Buy water, food or firewood, or hire a recovery kit if the vehicle is stuck.",
+      "4. In a life-threatening emergency, use the PLB. If radio coverage is confirmed, the UHF radio can reach the Rangers. Then return the kit.",
+    ),
   },
   {
-    title: "Monitoring",
+    title: "Community concerns",
     image: "1760350326-waabi_laptop_03392_final.webp",
-    text: "Continuous performance tracking and immediate safety-critical handling within the onboard system.",
+    text: "Ground disturbance. The design uses a small number of drilled piles on cleared ground, not trench footings. No piles are drilled until Traditional Owners and heritage checks agree. Ranger workload. The routine would be one weekly restock in the open season and two inspections a year. Visitor numbers. The stock and kits suit small groups. The design is not for mass tourism. Theft or damage. The team proposes a lockable, raised building for the stock and kits. Fire and waste. Bagged firewood would be sold, and the team will check park rules with YAC and QPWS. A waste plan would be agreed with YAC. Cost. A grant would pay for the build. Sales and hire fees would pay for running costs.",
   },
 ];
 const ease = [.19, 1, .22, 1] as const;
@@ -169,36 +176,42 @@ export default function SafetyPage() {
         <section className="hero" id="top" ref={hero}>
           <motion.img style={{ y: reduced ? 0 : heroY }}
             src={A + "1760007662-e65a0af926da45b75ba890d3d0a5bb24469ce5be.webp"}
-            alt="Waabi truck and safety operators viewed from above"
+            alt="Concept image: aerial view of a raised shelter in a cleared bush campground in the dry season"
           />
           <div className="hero-shade" />
           <h1 className="container">
-            <SafetyTitle lines={["Redefining", "safety."]} />
+            <SafetyTitle lines={["Raising supplies", "and safety above", "the flood."]} />
           </h1>
         </section>
         <section className="stakes section-space" id="stakes">
           <div className="container section-heading">
             <h2>
-              <SafetyTitle lines={["The stakes are", "real and rising."]} />
+              <SafetyTitle lines={["Why it", "should work"]} />
             </h2>
             <p className="serif-description">
-              It’s time for an approach to safety that is designed for the
-              realities of our roads and the possibilities of Physical AI.
+              Safety and access: visitors could recover their own vehicles, call
+              for help and get water close by. The Ranger Base is not the only
+              point of help. Flood resilience: the building is raised and made
+              of concrete and steel, so it should need little upkeep after the
+              wet season. An engineer must confirm this. Culture and Country:
+              one hub on cleared ground keeps foot traffic away from restricted
+              sites, and the team proposes that Yintjingga Aboriginal
+              Corporation (YAC) co-designs how it runs.
             </p>
           </div>
           <div className="container stats" ref={stats}>
             {[
               [
-                "39,345",
-                "number of lives lost each year in vehicle accidents in the United States.",
+                "2 m",
+                "planned floor height above the ground (to be confirmed). Note on the 2 m height: this is a planning figure. An engineer must confirm it against local flood levels and wind loads.",
               ],
               [
-                "5,472",
-                "number of lives lost each year in large truck crashes in the United States.",
+                "22",
+                "weeks in the open season, July to November.",
               ],
               [
-                "87%",
-                "percent of fatal truck crashes where human error was a critical factor.",
+                "220",
+                "visitors a year in the base case.",
               ],
             ].map(([n, t], index) => (
               <motion.div className="stat" key={n} {...reveal(index, statsInView)}>
@@ -211,13 +224,14 @@ export default function SafetyPage() {
         <section className="philosophy" id="philosophy">
           <div className="philosophy-intro container">
             <h2>
-              <SafetyTitle lines={["Safety is core", "to our DNA."]} />
+              <SafetyTitle lines={["Design", "options"]} />
             </h2>
             <p>
-              The future of autonomous transportation requires us to build on
-              established safety constructs and leverage transformative
-              technologies that allow us to do more than what’s previously been
-              possible.
+              The team developed four ideas and scored them against the eight
+              criteria. The three highest scoring ideas are the design options
+              below. Screened out: a solar-powered river crossing status beacon
+              scored lowest (91 out of 165). It would warn drivers. TEAM TO ADD:
+              confirm this description.
             </p>
           </div>
           <div className="story container" ref={story}>
@@ -253,7 +267,7 @@ export default function SafetyPage() {
               <div className="story-visual-frame">
               <motion.div className="story-visual-inner" {...reveal(2, storyInView)}>
                 <AnimatePresence initial={false} mode="popLayout">
-                  {philosophy[active] && <motion.img key={active} src={A + philosophy[active].image} alt={philosophy[active].title}
+                  {philosophy[active] && <motion.img key={active} src={A + philosophy[active].image} alt={["Concept image: a raised shelter on concrete piles with brown floodwater around the piles in the wet season", "Placeholder image, to be replaced with a concept image of the shelter at Warokutal.", "Concept image: a bench with a concrete pile cross-section, a watertight concrete sample and a roof sheet sample"][active]}
                     className="is-active" initial={reduced ? false : { opacity: 0, scale: 1.2 }}
                     animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} transition={spring} />}
                 </AnimatePresence>
@@ -265,22 +279,28 @@ export default function SafetyPage() {
         <section className="technology section-space" id="technology">
           <div className="container section-heading">
             <h2>
-              <SafetyTitle lines={["Technology", "designed", "to protect."]} mobileJoinLast />
+              <SafetyTitle lines={["How the", "team", "chose"]} mobileJoinLast />
             </h2>
             <div className="technology-intro">
               <p className="serif-description">
-                Learn how our technology is delivering a safer path forward and
-                setting a new standard for the entire AV industry.
+                Each idea was rated from 1 (poor) to 5 (best) against the eight
+                criteria. Each criterion has a weight from 3 to 5, where 5
+                matters most. Weighted score is rating times weight. The maximum
+                score is 165. Why the weights differ: Visitor support,
+                feasibility and flood resilience carry weight 5, because a
+                shelter that is unusable, impossible to build or flooded fails
+                the brief. Culture and Country has weight 3 in the matrix, but
+                it is also a condition for every option. No option would go
+                ahead without Traditional Owner agreement.
               </p>
-              <motion.a className="pink-button" href="https://waabi.ai/insights" whileHover={{ scale: 1.05 }} whileTap={{ scale: .95 }}>
-                Explore our approach
+              <motion.a className="pink-button" href="/careers" whileHover={{ scale: 1.05 }} whileTap={{ scale: .95 }}>
+                See the plan
               </motion.a>
             </div>
           </div>
           <div className="technology-panels" ref={panels}><LayoutGroup>
             {technology.map((item, i) => (
-              <motion.article layout transition={{ layout: { duration: .4, ease } }} {...reveal(i, panelsInView)}
-                key={item.title}
+              <motion.article key={item.title} layout transition={{ layout: { duration: .4, ease } }} {...reveal(i, panelsInView)}
                 className={"technology-panel " + (tech === i ? "expanded" : "")}
                 onMouseEnter={() => setTech(i)}
                 onClick={() => setTech(i)}
@@ -291,7 +311,7 @@ export default function SafetyPage() {
                   className="technology-link"
                   tabIndex={tech === i ? 0 : -1}
                   aria-label={"Read about " + item.title}
-                  href={"https://waabi.ai/insights/" + technologyLinks[i]}
+                  href={technologyLinks[i]}
                   onClick={(e) => {
                     if (tech !== i) {
                       e.preventDefault();
@@ -318,7 +338,7 @@ export default function SafetyPage() {
         <section
           className="practices"
           id="practices"
-          aria-label="Safety-first best practices"
+          aria-label="How Provisions Point would work"
 
         >
           <div
@@ -340,7 +360,7 @@ export default function SafetyPage() {
                     <small>/4</small>
                   </div>
                   <h3>
-                    Safety-first best practices.
+                    How Provisions Point would work.
                     <br />
                     {item.title}
                   </h3>
@@ -353,14 +373,14 @@ export default function SafetyPage() {
             <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: .95 }}
               className="circle-button"
               onClick={() => move(-1)}
-              aria-label="Previous safety practice"
+              aria-label="Previous step"
             >
               ←
             </motion.button>
             <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: .95 }}
               className="circle-button"
               onClick={() => move(1)}
-              aria-label="Next safety practice"
+              aria-label="Next step"
             >
               →
             </motion.button>
@@ -378,15 +398,15 @@ export default function SafetyPage() {
         </section>
         <section className="insights section-space" id="insights">
           <div className="container">
-            <h2><SafetyTitle lines={["Insights"]} /></h2>
+            <h2><SafetyTitle lines={["Project stages"]} /></h2>
             <div className="insights-intro">
               <p>
-                Explore product deep dives, behind-the-scenes perspectives, and
-                the ideas shaping the future of autonomy.
+                The design is a student proposal. It is for the Yintjingga
+                Aboriginal Corporation to review, change or reject.
               </p>
               <div className="insights-controls">
-                <motion.a className="pink-button" href="https://waabi.ai/insights" style={{ x: narrow ? "-50%" : "0%" }} whileHover={{ scale: 1.05 }} whileTap={{ scale: .95 }}>
-                  View all
+                <motion.a className="pink-button" href="/careers" style={{ x: narrow ? "-50%" : "0%" }} whileHover={{ scale: 1.05 }} whileTap={{ scale: .95 }}>
+                  See the plan
                 </motion.a>
                 <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: .95 }}
                   className="circle-button"
@@ -411,19 +431,18 @@ export default function SafetyPage() {
           </div>
           <div className="insights-rail" ref={rail}>
             {insights.map(([image, date, title, slug], i) => (
-              <motion.a {...reveal(i, insightsInView)}
+              <motion.a key={slug} {...reveal(i, insightsInView)}
                 className="insight-card"
-                href={"https://waabi.ai/insights/" + slug}
-                key={title}
+                href="/careers"
               >
                 <div className="insight-image">
                   <img src={A + image} alt="" />
                 </div>
                 <div className="insight-meta">
                   {i !== 4 && (
-                    <span>{i === 5 ? "Research" : "Company news"}</span>
+                    <span>Project stage</span>
                   )}
-                  {i === 0 && <span>Trucks</span>}
+                  {i === 0 && <span>Project stage</span>}
                   <time>{date}</time>
                 </div>
                 <h3>{title}</h3>

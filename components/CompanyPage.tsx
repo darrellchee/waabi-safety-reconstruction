@@ -7,67 +7,68 @@ import AppLink from "./AppLink";
 import roads from "./company-roads.json";
 const A = "/assets/company/";
 const news = insights;
+const heroFirst = "The";
 const logos = [
-  ["1761842750-investor-logos-1.svg", "Khosla ventures"],
-  ["1769751291-investor-logos-13.svg", "G2 Venture Partners"],
-  ["1760431047-uber-logo.svg", "Uber"],
-  ["1760431057-nvidia-logo.svg", "Nvidia"],
-  ["1760431072-volvo-logo.svg", "Volvo"],
-  ["1769593390-blk_big-d.svg", "BlackRock"],
-  ["1769612389-porschese_logo_white_rgb.svg", "Porsche SE"],
-  ["1761843948-investor-logos-5.svg", "Scania"],
-  ["1761843971-investor-logos-4.svg", "Harbourvest"],
-  ["1761844105-investor-logos-6.svg", "BDC"],
-  ["1761845577-investor-logos-7.svg", "EDC"],
-  ["1761924223-radical-circle-logo-1.svg", "Radical"],
-  ["1761931707-10.svg", "Ingka"],
-  ["1761931728-11.svg", "Incharge"],
-  ["1769596790-investor-logos-10.svg", "BMO"],
+  ["1761842750-investor-logos-1.svg", "Plain text tile naming Yintjingga Aboriginal Corporation."],
+  ["1769751291-investor-logos-13.svg", "Plain text tile naming Lama Lama Rangers."],
+  ["1760431047-uber-logo.svg", "Plain text tile naming Engineers Without Borders Australia."],
+  ["1760431057-nvidia-logo.svg", "Plain text tile naming University of Technology Sydney."],
+  ["1760431072-volvo-logo.svg", "Plain text tile naming Queensland Parks and Wildlife Service."],
+  ["1769593390-blk_big-d.svg", "Plain text tile naming Cook Shire Council."],
+  ["1769612389-porschese_logo_white_rgb.svg", "Plain text tile naming Department of the Environment, Tourism, Science and Innovation."],
+  ["1761843948-investor-logos-5.svg", "Plain text tile naming National Indigenous Australians Agency."],
+  ["1761843971-investor-logos-4.svg", "Plain text tile naming Yintjingga Aboriginal Corporation."],
+  ["1761844105-investor-logos-6.svg", "Plain text tile naming Lama Lama Rangers."],
+  ["1761845577-investor-logos-7.svg", "Plain text tile naming Engineers Without Borders Australia."],
+  ["1761924223-radical-circle-logo-1.svg", "Plain text tile naming University of Technology Sydney."],
+  ["1761931707-10.svg", "Plain text tile naming Queensland Parks and Wildlife Service."],
+  ["1761931728-11.svg", "Plain text tile naming Cook Shire Council."],
+  ["1769596790-investor-logos-10.svg", "Plain text tile naming Department of the Environment, Tourism, Science and Innovation."],
 ];
 const events = [
   [
-    "October 17, 2026",
-    "ATA Management Conference & Exhibition",
-    "Charlotte, NC",
-    "https://mce.trucking.org/",
+    "Criterion 2",
+    "Flood resilience",
+    "The building and its stock must survive wet-season flooding with little repair. Reason: floods can damage roads and infrastructure, and Rangers carry out the repairs.",
+    "/safety",
   ],
   [
-    "October 26, 2026",
-    "FreightWaves F3: Future of Freight Festival",
-    "Chattanooga, TN",
-    "https://live.freightwaves.com/f3-future-of-freight-festival-2026",
+    "Criterion 3",
+    "Visitor support and comfort",
+    "Visitors can get water, food, firewood and safety information near the campground. Reason: stays are remote and long, so basic supplies cut risk and improve the visit.",
+    "/safety",
   ],
   [
-    "October 28, 2026",
-    "NASTC Annual Conference",
-    "Nashville, TN",
-    "https://nastc.com/",
+    "Criterion 4",
+    "Feasibility and maintenance",
+    "The design uses tough, durable materials and needs close to zero wet-season maintenance. Reason: Ranger time is limited.",
+    "/safety",
   ],
 ];
 const locations = [
   {
-    name: "San Francisco",
-    address: "1407 Indiana St. San Francisco, CA 94107",
+    name: "Culture and Country",
+    address: "The design respects Traditional Owner protocols, keeps visitors away from restricted places and disturbs little land, water or wildlife. Reason: the Lama Lama people are the Traditional Owners, and some areas ban infrastructure (QPWS, 2013).",
     style: { bottom: "36.2%", left: "3.2%" },
   },
   {
-    name: "Dallas",
-    address: "3005 West Wintergreen Rd. Lancaster, TX 75134",
-    style: { bottom: "16.8%", left: "41.2%" },
-  },
-  {
-    name: "Phoenix",
-    address: "23445 North 19th Ave. Phoenix, AZ 85027",
+    name: "Community fit",
+    address: "The design suits the small, self-reliant visitors at Port Stewart, such as campers and fishers, and not mass tourism. Reason: the place and its visitors are small scale.",
     style: { bottom: "23.8%", left: "18.3%" },
   },
   {
-    name: "Pittsburgh",
-    address: "1967 Eastern Avenue, Verona PA 15147",
+    name: "Low cost",
+    address: "The design is affordable to build and run. Reason: YAC has limited income from tourism and cattle (YAC, n.d.).",
+    style: { bottom: "16.8%", left: "41.2%" },
+  },
+  {
+    name: "Revenue",
+    address: "The design earns enough to cover its running costs. Reason: a site that pays its own running costs avoids new demands on Ranger budgets.",
     style: { top: "60.3%", right: "31.5%" },
   },
   {
-    name: "Toronto",
-    address: "440 Bathurst St. Toronto ON, M5T 2S6, Canada",
+    name: "Ecological and environmental values",
+    address: "Infrastructure is banned in the Alingina Wungku Living Area, the Goose Swamp and the Bull Swamp area, and no camping development is allowed inside the national park (QPWS, 2013). Camping stays outside the park at Warokutal and Maramba (DETSI, 2024a).",
     style: { top: "51.2%", right: "32.6%" },
   },
 ];
@@ -107,7 +108,7 @@ function MotionWords({ text, title = false, wordOffset = 0 }: { text: string; ti
           { opacity: 1, color: "rgb(0, 0, 0)" },
         ], {
           duration: title ? 400 : 100,
-          delay: (index + wordOffset) * 70,
+          delay: Math.min(index + wordOffset, 30) * 70,
           easing: title ? "cubic-bezier(.19,1,.22,1)" : "linear",
           fill: "both",
         });
@@ -125,8 +126,8 @@ function Story() {
   return (
     <section id="our-story" className="co-story">
       <div>
-        <p><MotionWords text="In 2021, AI visionary Raquel Urtasun founded Waabi with an unwavering belief that Physical AI could revolutionize how humanity moves and connects." /></p>
-        <p><MotionWords text="What began as a bold dream has become something far greater. Waabi is a global force pioneering a breakthrough approach that demonstrates autonomous vehicles can be scalable, efficient, and safe." /></p>
+        <p><MotionWords text="Climate and flooding. Heavy rain can flood roads and low ground across northern Cape York (Testa, 2026). The Lama Lama Rangers carry out infrastructure repairs (Reardon-Smith, 2023). Flood damage can therefore last after the water has gone." /></p>
+        <p><MotionWords text="Existing infrastructure and safety. There are two campgrounds, Warokutal at Port Stewart and Maramba at Silver Plains, three boat ramps and one staffed information point, the Lama Lama Ranger Base. A single road joins Port Stewart to Coen (Cook Shire Council, 2026; Engineers Without Borders Australia, n.d.)." /></p>
       </div>
     </section>
   );
@@ -188,7 +189,7 @@ function PeoplePortraits() {
   }, [step]);
   const cards = [...(exiting === null ? [] : [exiting]), step, step + 1];
   return <div ref={ref} className="co-portraits">{cards.map((generation) => <div key={generation} data-generation={generation} data-slot={generation === step + 1 ? 1 : 0} className={`co-portrait${generation === exiting ? " co-portrait-exit" : ""}`}>
-    <div className="co-portrait-clip"><img src={A + portraits[generation % portraits.length]} alt="Waabi team member" /></div>
+    <div className="co-portrait-clip"><img src={A + portraits[generation % portraits.length]} alt="Flat monogram tile with one letter for a team member." /></div>
   </div>)}</div>;
 }
 /** Overdamped spring from source: mass 1, stiffness 3.2, damping 4. */
@@ -280,13 +281,13 @@ export default function CompanyPage() {
         <section ref={heroRef} className="co-hero">
           <img
             src={A + "1760350326-waabi_washstation_03082_final.webp"}
-            alt="Waabi truck being prepared for the road"
+            alt="Concept image: aerial view of a raised concrete supply shelter in a cleared bush campground in the dry season."
           />
           <div className="co-hero-shade" />
           <div className="co-hero-content">
             <div className="co-hero-heading"><h1>
-              <MotionWords title text="We built our" />
-              <br className="co-desktop-break" /> <MotionWords title wordOffset={3} text="own road." />
+              <MotionWords title text={heroFirst} />
+              <br className="co-desktop-break" /> <MotionWords title wordOffset={heroFirst.split(" ").length} text="project" />
             </h1></div>
             <button
               aria-label="Scroll Down"
@@ -304,51 +305,57 @@ export default function CompanyPage() {
           <div className="co-quote-frame">
             <img
               src={A + "1761183960-waabi_portrait_raquel_02880.webp"}
-              alt="Raquel Urtasun"
+              alt="Concept image: red dirt road with floodwater across it and a four-wheel drive stopped at the edge."
             />
             <div className="co-quote-shade" />
             <div className="co-quote-copy">
               <p>
-                &quot;When this technology is at scale, it will save so many
-                lives. Improving safety on the road is one of the most important
-                motivators for me.&quot;
+                The design must lower the risk of vehicles becoming stranded and
+                help visitors recover or call for help. It must reduce reliance
+                on Rangers.
               </p>
               <div>
-                <span>Raquel Urtasun</span>
-                <span>Founder &amp; CEO of Waabi</span>
+                <span>Safety and access</span>
+                <span>Reason: visitors rely on one road, and Rangers run the one staffed safety point.</span>
               </div>
             </div>
           </div>
         </section>
         <section className="co-people co-width">
           <div className="co-people-copy">
-            <h2>The people moving us forward.</h2>
+            <h2>The team</h2>
             <p>
-              Behind every breakthrough at Waabi are people who care deeply
-              about reshaping the physical world through diverse perspectives,
-              from AI researchers and roboticists to trucking experts and
-              operators.
+              Pinhong: Climate and flooding research. Prototype. Darrell:
+              Existing infrastructure and safety. Design opportunity. Life
+              cycle. Revenue and cost. Tasneef: Visitor groups and experience.
+              Decision matrix. Ideas and design options. Isaac: Tourism economy
+              and maintenance. Current practice. Slide design. Jude: Cultural
+              values and protocols. Qijun: Ecological and environmental values.
+              Cost justification.
             </p>
             <AppLink className="co-pill" href="/careers">
-              Learn more
+              View the plan
             </AppLink>
           </div>
           <PeoplePortraits />
         </section>
         <section className="co-investors">
           <div className="co-investor-copy">
-            <h2>Investors</h2>
+            <h2>Organisations and sources in this proposal</h2>
             <p>
-              Our approach to Physical AI has earned the backing of world-class
-              investors who share our vision for efficient, safe, and scalable
-              autonomous solutions.
+              Visitors and experience. Visitors come for bird watching, boating,
+              fishing, camping and guided tours. The dry season brings most of
+              them. The park is closed from 1 December to 30 June. The open
+              season runs from July to November (Department of the
+              Environment, Tourism, Science and Innovation [DETSI], 2024b).
+              TEAM TO ADD: confirm the park closure dates apply to Warokutal.
             </p>
           </div>
           <div
             ref={marqueeRef}
             className="co-logo-window"
             tabIndex={0}
-            aria-label="Waabi investors"
+            aria-label="Organisations and sources in this proposal"
           >
             {[0, 1].map((group) => <div className="co-logo-track" key={group} aria-hidden={group === 1 ? true : undefined}>
               {[...logos, ...logos, ...logos].map(([file, alt], i) => (
@@ -361,21 +368,23 @@ export default function CompanyPage() {
         </section>
         <section className="co-news">
           <div className="co-width">
-            <h2>The latest from Waabi.</h2>
+            <h2>Project stages</h2>
             <div className="co-news-intro">
               <p>
-                We’re leading conversations across AI, autonomy, freight, and
-                transportation. Explore our latest news, insights, and
-                milestones.
+                Tourism economy and maintenance. Rangers manage tourism and
+                carry out infrastructure repairs (Reardon-Smith, 2023). YAC
+                earns income from tourism and from the YM2 cattle enterprise
+                (Yintjingga Aboriginal Corporation [YAC], n.d.). Ranger time is
+                limited, so new infrastructure must not add much work.
               </p>
-              <Controls name="news" move={(d) => move(newsRef, d)} />
+              <Controls name="stages" move={(d) => move(newsRef, d)} />
             </div>
           </div>
           <div ref={newsRef} className="co-news-track">
             {news.map(([img, date, title, slug], i) => (
               <a
                 className="co-news-card"
-                href={"https://waabi.ai/insights/" + slug}
+                href="/careers"
                 key={slug}
               >
                 <div className="co-news-image">
@@ -385,12 +394,12 @@ export default function CompanyPage() {
                   {(i === 4
                     ? []
                     : i === 5
-                      ? ["Research"]
+                      ? ["Project stage"]
                       : i > 6
-                        ? ["Technology", "Company news"]
+                        ? ["Project stage"]
                         : i === 0
-                          ? ["Company news", "Trucks"]
-                          : ["Company news"]
+                          ? ["Project stage"]
+                          : ["Project stage"]
                   ).map((t) => (
                     <span key={t}>{t}</span>
                   ))}
@@ -399,22 +408,22 @@ export default function CompanyPage() {
                 <h3>{title}</h3>
               </a>
             ))}
-            <a className="co-viewall co-pill" href="https://waabi.ai/insights">
-              View all ↗
+            <a className="co-viewall co-pill" href="/careers">
+              See the plan
             </a>
           </div>
           <a
             className="co-mobile-viewall co-pill"
-            href="https://waabi.ai/insights"
+            href="/careers"
           >
-            View all ↗
+            See the plan
           </a>
         </section>
         <section className="co-events">
           <div className="co-width">
             <div className="co-event-heading">
-              <h2>Upcoming events</h2>
-              <Controls name="events" move={(d) => move(eventsRef, d)} />
+              <h2>Design criteria</h2>
+              <Controls name="criteria" move={(d) => move(eventsRef, d)} />
             </div>
             <div ref={eventsRef} className="co-events-track">
               {events.map(([date, title, city, url], i) => (
@@ -422,14 +431,12 @@ export default function CompanyPage() {
                   className="co-event"
                   href={url}
                   key={title}
-                  target="_blank"
-                  rel="noreferrer"
                 >
                   <div className="co-event-image">
                     {i === 1 && (
                       <img
                         src={A + "1788170473-f3.webp"}
-                        alt="FreightWaves F3"
+                        alt="Placeholder image, to be replaced with a concept image of the shelter at Warokutal."
                       />
                     )}
                     <time>{date}</time>
@@ -444,7 +451,7 @@ export default function CompanyPage() {
         <section className="co-locations">
           <div className="co-map">
             <div className="co-map-art">
-              <img src={A + "map.svg"} alt="Map of North America" />
+              <img src={A + "map.svg"} alt="Abstract site plan of a cleared area with a small building footprint, a camp area and a track." />
               <MapMotion />
               {locations.map((l) => (
                 <button
@@ -469,11 +476,14 @@ export default function CompanyPage() {
               ))}
             </div>
             <div className="co-location-copy co-width">
-              <h2>Our locations.</h2>
+              <h2>Background</h2>
               <p>
-                With teams across Toronto, San Francisco, Dallas, Phoenix, and
-                Pittsburgh, Waabi is expanding within major tech and logistics
-                centers.
+                Cultural values and protocols. The Lama Lama people are the
+                Traditional Owners. The Alingina Wungku Living Area is closed
+                to visitors to protect cultural resources (YAC, n.d.). Entry to
+                areas of high cultural or environmental value is limited to
+                Traditional Owners or permit holders (Queensland Parks and
+                Wildlife Service [QPWS], 2013).
               </p>
             </div>
           </div>

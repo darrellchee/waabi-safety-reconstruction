@@ -6,9 +6,9 @@ import { ViewTransitions } from "next-view-transitions";
 import "../components/page-transitions.css";
 export const metadata: Metadata = {
   icons: { icon: "/assets/1774553027-favicon-32x32.webp" },
-  title: "Waabi | Educational Prototype",
+  title: "Provisions Point | Resilient visitor infrastructure for Lama Lama Country",
   description:
-    "An educational reconstruction of Waabi’s Home, Safety, Company, and Careers pages.",
+    "A proposed flood-resilient supply and recovery shelter at Warokutal (Safari Camp), Lama Lama Country, proposed to the Yintjingga Aboriginal Corporation. EWB Challenge 2026.",
 };
 export default function RootLayout({
   children,

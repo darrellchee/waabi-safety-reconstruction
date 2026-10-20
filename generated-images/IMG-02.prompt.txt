@@ -1,0 +1,10 @@
+Use the attached image as the reference. Draw the same building from the same aerial viewpoint on the same cleared red soil, with the same stair, solar panel and roof, but in the wet season: brown floodwater surrounds the concrete piles and covers the ground around the building, grey storm clouds overhead. Keep the same sky and light family. The building: one rectangular building, floor 2 m above the ground on concrete piles, plain concrete walls, low-pitch light grey corrugated roof with one solar panel, one entry on one side, no windows, no signs. Realistic architectural concept render, soft natural light, muted natural colours. No vehicles. Strict exclusions: no people, no text, no readable signs, no logos, no brand names, no Aboriginal or Torres Strait Islander people, silhouettes, art, patterns, dot painting, rock art, hand stencils, flags, ceremony, campfire gatherings, sacred-looking sites, real landmarks, and no close-ups of wildlife. Output a single landscape image, 16:9 aspect ratio. Keep the shelter centred and its raised floor above the floodwater. Remove the chairs from the reference.
+
+Tool: OpenAI built-in image_gen (model identifier not exposed)
+Requested aspect ratio: 16:9
+Date: 2026-10-20
+Attempts: 1
+Reference: IMG-01_16x9.png
+Source prompt: PROMPTS_TO_RUN.md
+Note: Generated with the built-in image tool, not Gemini. Native generated master; slot crops are deferred.
+

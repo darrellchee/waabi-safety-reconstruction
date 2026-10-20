@@ -1,6 +1,7 @@
 "use client";
 
-import { AnimatePresence, motion, useInView, useIsPresent, useReducedMotion } from "motion/react";
+import { AnimatePresence, motion, useInView, useIsPresent } from "motion/react";
+import { useReducedMotion } from "./useReducedMotion";
 import { forwardRef, useEffect, useMemo, useRef, useState } from "react";
 import "./careers-photo-stack.css";
 

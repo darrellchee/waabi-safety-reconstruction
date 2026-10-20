@@ -21,6 +21,8 @@ npm run typecheck
 npm test
 ```
 
+The `next` dependency has a scoped PostCSS override to `8.5.31` for security fixes. Keep this override until Next.js bundles a patched version. `npm audit --omit=dev` checks production dependencies. The full audit currently also reports the unpatched `braces` advisory [GHSA-vfj7-8cjw-p6xm](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm) through Next.js's ESLint tooling; npm's suggested forced fix downgrades `eslint-config-next` to a different major version.
+
 Playwright uses `/usr/bin/chromium` by default; set `CHROMIUM_PATH` to an installed Chromium executable. Alternatively install Chromium with `npx playwright install chromium` and use its executable path. Tests start a dev server unless one already exists; `PLAYWRIGHT_BASE_URL` can select an existing server. See `docs/qa-results.md` for the commands actually verified.
 
 ## Included
@@ -50,7 +52,7 @@ New page inspection and fidelity evidence: `docs/home-reference-analysis.md`, `d
 
 The second measured motion pass uses Motion primitives for source spring/layout/presence behavior and a shared pointer-drag carousel hook. Current evidence and measured regression checks: `docs/home-motion-round2.md`, `docs/safety-motion-round2.md`, and `docs/motion-round2-validation.md`. Run `npx playwright test tests/motion-round2.spec.ts` for source-coordinate, transient, playback and drag checks.
 
-The latest optimized-build verification passed all 46 Playwright cases, lint and TypeScript checks. Careers adds six cases covering source geometry, assets, testimonials, values, parallax and photo lifecycle; responsive checks also assert the four-link header and absence of both popups. See `docs/motion-round2-validation.md` for measurements, corrected defects and the limits of independently timed animation comparisons.
+The latest optimized-build verification passed all 54 Playwright cases, lint and TypeScript checks. Runtime checks cover hydration and browser console errors on all four pages with normal and reduced motion. Careers adds six cases covering source geometry, assets, testimonials, values, parallax and photo lifecycle; responsive checks also assert the four-link header and absence of both popups. See `docs/motion-round2-validation.md` for measurements, corrected defects and the limits of independently timed animation comparisons.
 
 Careers inspection, source motion details, original asset provenance and responsive comparisons: `docs/careers-reference-analysis.md`, `docs/careers-motion-analysis.md`, `docs/careers-assets.md`, and `docs/careers-fidelity.md`. Run `npx playwright test tests/careers.spec.ts` for Careers geometry, assets, controls, parallax and slideshow lifecycle.
 

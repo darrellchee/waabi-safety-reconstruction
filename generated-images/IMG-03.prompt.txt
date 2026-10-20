@@ -1,0 +1,10 @@
+Use the attached image as the reference for the building. Show the inside of that same building: steel shelves with water containers, canned food with blank plain labels, black traction boards, a counter, a wall-mounted handheld radio, a blank notice board, a plain concrete floor, daylight from the open door. Concrete walls, no windows. Realistic architectural concept render, soft natural light, muted natural colours. Strict exclusions: no people, no text, no readable signs, no logos, no brand names, no Aboriginal or Torres Strait Islander people, silhouettes, art, patterns, dot painting, rock art, hand stencils, flags, ceremony, campfire gatherings, sacred-looking sites, real landmarks, and no close-ups of wildlife. Output a single landscape image, 4:3 aspect ratio, with the main objects kept within the central area for a later 3:2 crop. This is an interior view, not a cutaway or exterior. The attached image is a building design reference.
+
+Tool: OpenAI built-in image_gen (model identifier not exposed)
+Requested aspect ratio: 4:3
+Date: 2026-10-20
+Attempts: 1
+Reference: IMG-01_16x9.png
+Source prompt: PROMPTS_TO_RUN.md
+Note: Generated with the built-in image tool, not Gemini. Native generated master; slot crops are deferred.
+

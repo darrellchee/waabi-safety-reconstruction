@@ -172,7 +172,7 @@ test("modified navigation opens another tab without snapshotting the current pag
   const [opened] = await Promise.all([
     page.context().waitForEvent("page", { timeout: 8000 }),
     page.getByRole("navigation", { name: "Global navigation" })
-      .getByRole("link", { name: "Careers", exact: true }).click({ modifiers: ["Control"] }),
+      .getByRole("link", { name: "Careers", exact: true }).click({ modifiers: ["ControlOrMeta"] }),
   ]);
   await opened.waitForURL(/\/careers$/);
   await expect(page).toHaveURL(/\/$/);

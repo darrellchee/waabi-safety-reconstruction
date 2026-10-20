@@ -1,0 +1,8 @@
+Prompt:
+Realistic architectural concept render, soft natural light, muted natural colours, red-brown soil and dry grass where land is visible. A red dirt road in tropical northern Australian bush with floodwater across it and a 4WD stopped at the edge of the water. Overcast sky. Strict exclusions: no people, no text, no readable signs, no logos, no brand names, no Aboriginal or Torres Strait Islander people, silhouettes, art, patterns, dot painting, rock art, hand stencils, flags, ceremony, campfire gatherings, sacred-looking sites, real landmarks, and no close-ups of wildlife.
+
+Model: 4 Argon, thinking level High
+Aspect ratio: 16:9
+Date: 2026-10-20
+Attempts: 1 (retry blocked by a Google CAPTCHA wall)
+Known minor defect: tiny Toyota-style emblem and illegible badge on the rear tailgate; number plate blank.

@@ -3,17 +3,17 @@
     "id": "RDp0c1yyTXqdGrtbmyTpgQ",
     "_modelApiKey": "partner_item",
     "__typename": "PartnerItemRecord",
-    "name": "Volvo",
-    "review": "Partnerships like the one between Volvo Autonomous Solutions and Waabi play an important role not only in advancing autonomous technology, but also in building the broader ecosystem required to support commercial deployment.",
+    "name": "Context",
+    "review": "Warokutal is a campground at Port Stewart in Lama Lama Country. Wet-season floods can damage the roads and other infrastructure (Engineers Without Borders Australia, 2024). Visitors are far from services, so a stuck vehicle can become an emergency. The Lama Lama Rangers manage tourism and carry out repairs (Reardon-Smith, 2023). Their time is limited.",
     "image": "1761262941-fya_one-1.jpg",
     "logo": "1760431072-volvo-logo.svg",
-    "author": "Nils Jaeger",
-    "authorTitle": "CEO of Volvo Autonomous Solutions",
+    "author": "Why this project matters",
+    "authorTitle": "Warokutal (Safari Camp), Port Stewart, Lama Lama Country",
     "button": {
       "id": "AEx8op6OQGGC8BjPF-Fucg",
       "_modelApiKey": "button",
       "__typename": "ButtonRecord",
-      "label": "See the details",
+      "label": "Read the background",
       "link": {
         "id": "RflscwXJS5WVrqPPYL8ZVg",
         "_modelApiKey": "internal_link",
@@ -21,22 +21,22 @@
         "anchor": "",
         "link": {
           "__typename": "ArticleRecord",
-          "slug": "waabi-and-volvo-demonstrate-the-future-of-autonomous-trucking"
+          "slug": "/company"
         }
       }
     },
-    "slug": "waabi-and-volvo-demonstrate-the-future-of-autonomous-trucking"
+    "slug": "/company"
   },
   {
     "id": "T9kYgjQ9QfOBJHlDBCGEtA",
     "_modelApiKey": "partner_item",
     "__typename": "PartnerItemRecord",
-    "name": "Uber",
-    "review": "Waabi's expanded focus on robotaxis marks an important milestone for their team and the AV industry more broadly. We’re very excited to deepen our partnership with Waabi as they significantly scale their Physical AI Platform and enter a new phase of an already remarkable journey.",
+    "name": "Opportunity",
+    "review": "The team chose Design Opportunity 2.1, Resilient visitor infrastructure. It asks for resilient infrastructure at a specific visitor destination in Lama Lama Country (Engineers Without Borders Australia, 2024).",
     "image": "1769592036-logo-partner.png",
     "logo": "1769597315-investor-logos-11.svg",
-    "author": "Dara Khosrowshahi",
-    "authorTitle": "CEO of Uber",
+    "author": "Why this project matters",
+    "authorTitle": "EWB Challenge Design Opportunity 2.1",
     "button": null,
     "slug": null
   },
@@ -44,17 +44,17 @@
     "id": "cMuqSnnCQ9mAsshK-KP7ig",
     "_modelApiKey": "partner_item",
     "__typename": "PartnerItemRecord",
-    "name": "Uber Freight",
-    "review": "Our partnership with Waabi represents the power of combining cutting-edge technology with a vast logistics network to drive meaningful industry impact. By advancing operational excellence and scaling real-world applications, this collaboration underscores our joint commitment to transforming autonomous freight.",
+    "name": "Cover",
+    "review": "Group name: FATZCC. Tutorial number and tutor: TEAM TO ADD: tutorial number and full tutor name. Prepared for: Yintjingga Aboriginal Corporation and EWB Challenge assessors.",
     "image": "1756426717-waabi_road2_04115.jpg",
     "logo": "1761945971-investor-logos-9.svg",
-    "author": "Olivia Hu",
-    "authorTitle": "Head of Autonomous Trucking & Electrification at Uber Freight",
+    "author": "Design Area: TEAM TO ADD: design area number and name (check it matches Design Opportunity 2.1)",
+    "authorTitle": "Design Opportunity: 2.1 Resilient visitor infrastructure",
     "button": {
       "id": "OhjUQE5mQryZnlZQdN0o9w",
       "_modelApiKey": "button",
       "__typename": "ButtonRecord",
-      "label": "See the details",
+      "label": "Read the background",
       "link": {
         "id": "Bawp9F2_SECFuLd6OpYDAA",
         "_modelApiKey": "internal_link",
@@ -62,27 +62,27 @@
         "anchor": "",
         "link": {
           "__typename": "ArticleRecord",
-          "slug": "waabi-uber-freight"
+          "slug": "/company"
         }
       }
     },
-    "slug": "waabi-uber-freight"
+    "slug": "/company"
   },
   {
     "id": "Gt9vEZluSjGuf-VZ4LAhaA",
     "_modelApiKey": "partner_item",
     "__typename": "PartnerItemRecord",
-    "name": "NVIDIA",
-    "review": "Waabi represents a true breakthrough by treating autonomy as a scalable intelligence problem. Built on NVIDIA compute, Waabi is unlocking real deployment—and we’re proud to support them as one of the future giants of AI.",
+    "name": "How might we",
+    "review": "How might we make a Lama Lama Country campground safer for visitors and more resilient to floods? The answer must cost little to build, add little work for Rangers, and protect cultural and ecological values.",
     "image": "1761186315-nvidia-waabi_logos_2x_final.png",
     "logo": "1760431057-nvidia-logo.svg",
-    "author": "Jensen Huang",
-    "authorTitle": "Founder and CEO of NVIDIA",
+    "author": "Why this project matters",
+    "authorTitle": "Questions about this proposal: TEAM TO ADD: contact route",
     "button": {
       "id": "MnrouAoeT-Ge5DWn-xfbbA",
       "_modelApiKey": "button",
       "__typename": "ButtonRecord",
-      "label": "See the details",
+      "label": "See the solution",
       "link": {
         "id": "EUUwsqp1S3iqlBOC58-HqA",
         "_modelApiKey": "internal_link",
@@ -90,10 +90,10 @@
         "anchor": "",
         "link": {
           "__typename": "ArticleRecord",
-          "slug": "nvidia-drivethor"
+          "slug": "/safety"
         }
       }
     },
-    "slug": "nvidia-drivethor"
+    "slug": "/safety"
   }
 ]

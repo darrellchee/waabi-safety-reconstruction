@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import CareersPage from "@/components/CareersPage";
 
 export const metadata: Metadata = {
-  title: "Careers — Waabi educational prototype",
-  description: "Find your place in Physical AI. An independent educational reconstruction of Waabi’s Careers page.",
+  title: "Delivering Provisions Point | Implementation and cost",
+  description: "Implementation plan, costs, funding, risks and recommendations for a proposed flood-resilient supply and recovery shelter at Warokutal.",
 };
 
 export default function Page() {

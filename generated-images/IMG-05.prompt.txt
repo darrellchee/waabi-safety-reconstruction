@@ -1,0 +1,5 @@
+Prompt: Realistic architectural concept render, soft natural light, muted natural colours. A steel shelf holding 20 litre water containers, tins with blank plain labels and bagged firewood, inside a plain concrete shelter. Strict exclusions: no people, no text, no logos, no brand names, no readable labels.
+Model: 4 Argon, thinking level High
+Aspect ratio: 1:1
+Date: 2026-10-20
+Attempts: 1

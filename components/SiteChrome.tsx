@@ -6,21 +6,21 @@ import Link from "./AppLink";
 import "./chrome.css";
 
 const pages = [
-  ["Home", "/", "1761183902-waabi_road2_05483.webp"],
-  ["Safety", "/safety", "1761183903-waabi_scout_00376.webp"],
-  ["Research", "/research", "1761218483-waabi_research_lighttunnel_wip.webp"],
-  ["Company", "/company", "1761185043-waabi_scout_00739.webp"],
-  ["Careers", "/careers", "1761187390-251006_waabi_collab_03_0781.webp"],
-  ["Insights", "/insights", "1761183903-waabi_road2_04225.webp"],
+  ["Overview", "/", "1761183902-waabi_road2_05483.webp"],
+  ["Solution", "/safety", "1761183903-waabi_scout_00376.webp"],
+  ["References", "/research", "1761218483-waabi_research_lighttunnel_wip.webp"],
+  ["Project", "/company", "1761185043-waabi_scout_00739.webp"],
+  ["Delivery", "/careers", "1761187390-251006_waabi_collab_03_0781.webp"],
+  ["Appendices", "/insights", "1761183903-waabi_road2_04225.webp"],
 ];
 const navigationPages = pages.filter(([, href]) => ["/", "/safety", "/company", "/careers"].includes(href));
 const destination = (url: string) =>
-  ["/", "/safety", "/company", "/careers"].includes(url) ? url : `https://waabi.ai${url}`;
+  ["/", "/safety", "/company", "/careers"].includes(url) ? url : "/careers";
 
 export function Header() {
   const pathname = usePathname();
   const currentPage =
-    pages.find(([, href]) => href === pathname)?.[0] || "Home";
+    pages.find(([, href]) => href === pathname)?.[0] || "Overview";
   const [open, setOpen] = useState(false);
   const [progress, setProgress] = useState(0);
   const header = useRef<HTMLElement>(null);
@@ -87,11 +87,11 @@ export function Header() {
         className={`site-header ${open ? "menu-is-open" : ""}`}
       >
         <div className="nav-bar">
-          <Link href="/" aria-label="Waabi home">
+          <Link href="/" aria-label="Provisions Point Overview">
             <img
               className="nav-logo"
               src="/assets/waabi-logo.svg"
-              alt="Waabi"
+              alt="Provisions Point"
             />
           </Link>
           <span className="nav-page">{currentPage}</span>
@@ -282,19 +282,19 @@ export function Footer() {
       <div className="footer-top">
         <div className="footer-contact">
           <h2>
-            We&apos;re just
-            <br className="footer-heading-break" /> getting started
+            Explore the problem,
+            <br className="footer-heading-break" /> the solution and the plan to deliver it.
           </h2>
           <p>
-            Follow along or reach out directly at
+            Questions about this proposal: TEAM TO ADD: contact route
             <br />
-            <a href="mailto:press@waabi.ai">press@waabi.ai</a>
+            <Link href="/">Ask a question</Link>
             <span className="mail-divider">|</span>
-            <a href="mailto:info@waabi.ai">info@waabi.ai</a>
+            <Link href="/careers">View the plan</Link>
           </p>
         </div>
         <nav className="footer-navigation" aria-label="Footer navigation">
-          <p>About us</p>
+          <p>Provisions Point</p>
           {pages.map(([label, href]) => (
             <Link key={label} href={destination(href)}>
               {label}
@@ -303,17 +303,14 @@ export function Footer() {
         </nav>
         <div className="footer-socials">
           {[
-            ["LinkedIn", "https://www.linkedin.com/company/waabi/"],
-            [
-              "YouTube",
-              "https://www.youtube.com/channel/UCNJWh6U6vfTz77SJCeWZloQ",
-            ],
-            ["X", "https://x.com/waabi_ai?lang=en"],
+            ["LinkedIn", "/"],
+            ["YouTube", "/"],
+            ["X", "/"],
           ].map(([label, href]) => (
             <a
               key={label}
               href={href}
-              aria-label={label}
+              aria-label="Overview"
               target="_blank"
               rel="noreferrer"
             >
@@ -324,13 +321,13 @@ export function Footer() {
       </div>
       <div className="footer-bottom">
         <div className="footer-legal">
-          <p>© 2026 Waabi. All Rights Reserved.</p>
-          <a href="https://waabi.ai/privacy-policy">Privacy Policy</a>
+          <p>Provisions Point. EWB Challenge 2026 student proposal.</p>
+          <Link href="/">Acknowledgement of Country</Link>
         </div>
         <img
           className="footer-logo"
           src="/assets/waabi-logo-footer.svg"
-          alt="Waabi"
+          alt="Provisions Point"
         />
       </div>
       </div>

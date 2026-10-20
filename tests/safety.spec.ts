@@ -6,6 +6,10 @@ test("Safety route contains complete page with healthy local assets", async ({
   const errors: string[] = [];
   const failedAssets: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
+  page.on("console", (message) => {
+    if (message.type() === "error")
+      errors.push(message.text());
+  });
   page.on("response", (response) => {
     if (
       new URL(response.url()).hostname === "127.0.0.1" &&
@@ -13,7 +17,7 @@ test("Safety route contains complete page with healthy local assets", async ({
     )
       failedAssets.push(`${response.status()} ${response.url()}`);
   });
-  await page.goto("/safety", { waitUntil: "domcontentloaded" });
+  await page.goto("/safety");
   await expect(page).toHaveURL(/\/safety$/);
   await expect(
     page.getByRole("heading", { name: "Redefining safety." }),
@@ -63,7 +67,7 @@ test("Safety route contains complete page with healthy local assets", async ({
 test("navigation opens, closes with Escape, and links Safety locally", async ({
   page,
 }) => {
-  await page.goto("/safety", { waitUntil: "domcontentloaded" });
+  await page.goto("/safety");
   const menu = page.getByRole("button", { name: "Menu", exact: true });
   await menu.focus();
   await page.keyboard.press("Enter");
@@ -85,7 +89,7 @@ test("navigation opens, closes with Escape, and links Safety locally", async ({
 test("technology panels and safety practices respond to keyboard and click", async ({
   page,
 }) => {
-  await page.goto("/safety", { waitUntil: "domcontentloaded" });
+  await page.goto("/safety");
   const world = page.getByRole("button", {
     name: "Explore Waabi World",
     exact: true,
@@ -128,7 +132,7 @@ for (const viewport of [
     page,
   }) => {
     await page.setViewportSize(viewport);
-    await page.goto("/safety", { waitUntil: "domcontentloaded" });
+    await page.goto("/safety");
     await expect(page.locator(".announcement, .cookie-notice, .cookie-modal-backdrop")).toHaveCount(0);
     await page.evaluate(() => document.fonts.ready);
     expect(

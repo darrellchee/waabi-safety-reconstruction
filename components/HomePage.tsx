@@ -17,7 +17,8 @@ import partners from "./home-data.json";
 import { insights } from "./insights-data";
 import { useCarouselMotion } from "./useCarouselMotion";
 import "./home.css";
-import { motion, AnimatePresence, useReducedMotion, useIsPresent } from "motion/react";
+import { motion, AnimatePresence, useIsPresent } from "motion/react";
+import { useReducedMotion } from "./useReducedMotion";
 const MotionLink = motion.create(AppLink);
 const sourceEase = [0.19, 1, 0.22, 1] as const;
 const careerTransition = { duration: 0.8, ease: [0.77, 0, 0.175, 1] as const };
@@ -101,20 +102,24 @@ function MotionCopy({
     </Tag>
   );
 }
+const heroIntroWords =
+  "A proposed supply and recovery shelter for Lama Lama Country.".split(" ");
+const titleLineOne = ["Provisions"];
+const titleLineTwo = ["Point"];
 const scaleItems = [
   [
-    "Safe",
-    "The combination of advanced AI and neural simulation sets a new standard for the entire industry.",
+    "Purchased",
+    "Purchased materials: reinforced concrete piles and structure, watertight concrete, corrugated roofing, shelving and counter, solar panel and battery, 2 recovery kits, 2 PLBs, 2 UHF radios.",
     "scene_1_v2_HD_FINAL.mp4",
   ],
   [
-    "Scalable",
-    "A single, verifiable end-to-end AI model capable of reasoning serves as a shared brain powering multiple verticals.",
+    "Other",
+    "Other materials: drinking water (240 L), canned food (120 cans), firewood (8 bags of 20 kg), safety flyers.",
     "Scalable.mp4",
   ],
   [
-    "Practical",
-    "Our highway and surface street capabilities enable an unprecedented Direct to Customer trucking model and seamless entry into the robotaxi market.",
+    "Total",
+    "Estimated total cost: about $87,400 AUD, including a 20% contingency. Running cost is about $3,950 AUD a year in the base case.",
     "scene_3_v5_HD_FINAL-small.mp4",
   ],
 ];
@@ -134,22 +139,22 @@ const collage = [
 ];
 const technology = [
   [
-    "Experience",
-    "Waabi World",
+    "Planned floor height above the ground (to be confirmed)",
+    "2 m",
     "intersection-trimmed.mp4",
-    "simulator-realism-the-new-safety-standard-for-the-av-industry",
+    "/safety",
   ],
   [
-    "Dive into",
-    "Mixed Reality Testing",
+    "Open season, July to November",
+    "22 weeks",
     "Crash_variant_1.mp4",
-    "mixed-reality-testing-pushes-the-boundaries-of-av-safety",
+    "/company",
   ],
   [
-    "Meet the",
-    "Waabi Driver",
+    "Visitors a year in the base case",
+    "220",
     "Copy_of_Copy_of_Full_Video_-_Solution_Ready_Blog-VEED__1_.mp4",
-    "introducing-the-waabi-driver#waabi-driver",
+    "/careers",
   ],
 ];
 export default function HomePage() {
@@ -436,26 +441,26 @@ export default function HomePage() {
               <div className="home-hero-shade" />
             </div>
             <p className="home-hero-intro">
-              {"Waabi is pioneering the future of Physical AI.".split(" ").map((word, i) => <span key={i}><motion.span initial={{ opacity: 0 }} animate={{ opacity: reducedMotion || introEntered ? 1 : 0 }} transition={{ duration: .1, ease: "linear", delay: i * .07 }} className="home-intro-word">{word}</motion.span>{i < 8 ? " " : ""}</span>)}
+              {heroIntroWords.map((word, i) => <span key={i}><motion.span initial={{ opacity: 0 }} animate={{ opacity: reducedMotion || introEntered ? 1 : 0 }} transition={{ duration: .1, ease: "linear", delay: i * .07 }} className="home-intro-word">{word}</motion.span>{i < heroIntroWords.length - 1 ? " " : ""}</span>)}
             </p>
             <h1>
               <span className="home-title-line">
-                {["Built", "to", "think."].map((word, i) => (
+                {titleLineOne.map((word, i) => (
                   <span key={word} style={{ animationDelay: `${i * 0.07}s` }}>
                     {word}
-                    {i < 2 ? " " : ""}
+                    {i < titleLineOne.length - 1 ? " " : ""}
                   </span>
                 ))}
               </span>
               <br />
               <span className="home-title-line">
-                {["Born", "to", "haul."].map((word, i) => (
+                {titleLineTwo.map((word, i) => (
                   <span
                     key={word}
                     style={{ animationDelay: `${0.07 + i * 0.07}s` }}
                   >
                     {word}
-                    {i < 2 ? " " : ""}
+                    {i < titleLineTwo.length - 1 ? " " : ""}
                   </span>
                 ))}
               </span>
@@ -473,7 +478,7 @@ export default function HomePage() {
                     : "smooth",
                 });
               }}
-              aria-label="Discover Waabi"
+              aria-label="Discover Provisions Point"
             ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 9v6m-3-3 3 3 3-3" stroke="white" strokeWidth=".9" strokeLinecap="round" strokeLinejoin="round" /></svg></a>
           </div>
         </section>
@@ -505,13 +510,14 @@ export default function HomePage() {
               alt=""
             />
             <div className="home-road-copy">
-              <p>We built our own road.</p>
+              <p>EWB Challenge 2026 | Design Opportunity 2.1</p>
               <p>
-                Our revolutionary Physical AI Platform enables—for the first
-                time ever—true scale, generalizing to different form factors,
-                geographies, and environments. This breakthrough is powered by
-                the same AI model acting as a shared brain for both autonomous
-                trucks and robotaxis.
+                The project aims to give visitors to Warokutal (Safari Camp)
+                access to water, supplies and vehicle recovery equipment when
+                floods damage the roads. It proposes an elevated, low-maintenance
+                shelter that stocks essentials and hires out recovery kits,
+                personal locator beacons (PLBs) and ultra high frequency (UHF)
+                radios.
               </p>
             </div>
           </div>
@@ -525,7 +531,7 @@ export default function HomePage() {
               <img
                 className="home-scale-preview"
                 src={media("1761183902-waabi_road2_05483.webp")}
-                alt="Waabi truck on a highway"
+                alt="Concept image: a shelf holding water containers, tins with blank labels and bagged firewood."
               />
               </motion.div>
               {scaleItems.map((item, i) => (
@@ -551,17 +557,17 @@ export default function HomePage() {
             </div>
             <div className="home-scale-copy">
               <div className="home-scale-heading">
-                <MotionCopy>Unlocking scale in the real world.</MotionCopy>
+                <MotionCopy>Overview of design</MotionCopy>
                 <p className="home-sans">
-                  We deliver a product that&apos;s faster, safer, more scalable,
-                  and efficient—unlocking the true potential of autonomous
-                  transportation.
+                  Provisions Point would improve visitor safety by raising a
+                  small supply shelter above the ground and filling it with
+                  what a stranded visitor needs.
                 </p>
               </div>
               <div
                 className="home-scale-tabs"
                 role="tablist"
-                aria-label="Our strengths"
+                aria-label="Materials and cost summary"
               >
                 {scaleItems.map((item, i) => (
                   <motion.div layout key={item[0]} data-active={scale===i} initial={{opacity:.3}} animate={{opacity:scale === i ? 1 : .46}}>
@@ -586,7 +592,7 @@ export default function HomePage() {
                 ))}
                 <div className="home-mobile-strength-controls">
                   <div className="home-mobile-strength-track"><motion.div key={scale} initial={{x:"-100%"}} animate={{x:"0%"}} transition={{duration:reducedMotion ? 0 : 5,ease:"easeInOut"}} /></div>
-                  <div className="home-mobile-strength-arrows"><motion.button whileHover={{scale:1.05}} whileTap={{scale:.95}} aria-label="Previous strength" onClick={() => setScale(value=>(value+2)%3)}>←</motion.button><motion.button whileHover={{scale:1.05}} whileTap={{scale:.95}} aria-label="Next strength" onClick={() => setScale(value=>(value+1)%3)}>→</motion.button></div>
+                  <div className="home-mobile-strength-arrows"><motion.button whileHover={{scale:1.05}} whileTap={{scale:.95}} aria-label="Previous summary item" onClick={() => setScale(value=>(value+2)%3)}>←</motion.button><motion.button whileHover={{scale:1.05}} whileTap={{scale:.95}} aria-label="Next summary item" onClick={() => setScale(value=>(value+1)%3)}>→</motion.button></div>
                 </div>
               </div>
             </div>
@@ -596,13 +602,13 @@ export default function HomePage() {
           <div className="home-tech-hero">
             <img
               src={media("1756426717-waabi_road1_00928.webp")}
-              alt="Waabi autonomous truck"
+              alt="Concept image: the raised shelter on concrete piles with brown floodwater around the piles under storm clouds."
             />
             <div className="home-cover-shade" />
             <div>
-              <MotionCopy>The technology behind Waabi.</MotionCopy>
-              <motion.a whileHover={{scale:1.05}} whileTap={{scale:.95}} className="home-pill" href="https://waabi.ai/insights">
-                Explore the tech
+              <MotionCopy>Key numbers</MotionCopy>
+              <motion.a whileHover={{scale:1.05}} whileTap={{scale:.95}} className="home-pill" href="/company">
+                Read the background
               </motion.a>
             </div>
           </div>
@@ -610,8 +616,8 @@ export default function HomePage() {
             {technology.map((item) => (
               <a
                 key={item[1]}
-                href={`https://waabi.ai/insights/${item[3]}`}
-                aria-label={`Explore ${item[1]}`}
+                href={item[3]}
+                aria-label={`${item[1]}: ${item[0]}`}
               >
                 <Film name={item[2]} />
                 <div className="home-cover-shade" />
@@ -627,25 +633,24 @@ export default function HomePage() {
         <section className="home-safety">
           <img
             src={media("1761185044-waabi_road2_05683.webp")}
-            alt="Waabi truck driving safely on a highway"
+            alt="Concept image: a red dirt road with floodwater across it and a 4WD stopped at the edge."
           />
           <div className="home-cover-shade" />
           <div>
             <MotionCopy>
-              Setting new
+              Why this
               <br />
-              standards for
+              project
               <br />
-              AV safety.
+              matters
             </MotionCopy>
             <MotionCopy as="p">
-              For us, safety isn&apos;t a box to check—it&apos;s a commitment we{" "}
-              <strong>strengthen daily with</strong> a simulation-first
-              approach, rigorous validation, and a culture where safety is
-              everyone&apos;s job.
+              Visitors to Warokutal need dependable access to water, supplies,
+              recovery equipment and safety information when roads are damaged
+              and help is far away.
             </MotionCopy>
             <MotionLink whileHover={{scale:1.05}} whileTap={{scale:.95}} className="home-pill" href="/safety">
-              Explore our approach
+              See the solution
             </MotionLink>
           </div>
         </section>
@@ -660,25 +665,31 @@ export default function HomePage() {
         >
           <div className="home-partners-intro">
             <MotionCopy>
-              <span>Trusted by</span> <span>the best in</span>{" "}
-              <span>the industry.</span>
+              <span>Acknowledgement</span> <span>of Country</span>
             </MotionCopy>
             <p>
-              From hardware providers and OEMs to retailers, logistics providers
-              and carriers, the best in the business count on Waabi to deliver
-              real results.
+              We acknowledge the Gadigal people, the Boorooberongal people of
+              the Dharug Nation, the Bidiagal people and the Gamaygal people,
+              upon whose ancestral lands our university stands. We also
+              acknowledge the Lama Lama people, the Traditional Owners of the
+              Country this project is about. We pay respect to Elders past and
+              present, as the traditional custodians of knowledge for these
+              lands. This is a student proposal. It is for the Yintjingga
+              Aboriginal Corporation to accept, change or reject. TEAM TO ADD:
+              confirm this wording against the current UTS Acknowledgement of
+              Country.
             </p>
           </div>
           <div className="home-partner-stage">
             <AnimatePresence initial={false}>
-              <motion.img key={current.image} initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:.4,ease:sourceEase}} className="home-partner-photo" src={media(current.image)} alt={`${current.name} and Waabi partnership`} />
+              <motion.img key={current.image} initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:.4,ease:sourceEase}} className="home-partner-photo" src={media(current.image)} alt="Placeholder image, to be replaced with a concept image of the shelter at Warokutal." />
             </AnimatePresence>
             <motion.div layout className="home-partner-card">
               <div
                 className="home-partner-tabs"
                 ref={partnerTabs}
                 role="tablist"
-                aria-label="Partners"
+                aria-label="Project details"
               >
                 {partners.map((p, i) => (
                   <button
@@ -725,14 +736,14 @@ export default function HomePage() {
                       r="40"
                     />
                   </svg>
-                  <img src={media(current.logo)} alt={current.name} />
+                  <img src={media(current.logo)} alt={`Plain text tile naming ${["Lama Lama Rangers","Engineers Without Borders Australia","University of Technology Sydney","Yintjingga Aboriginal Corporation"][partner % 4]}.`} />
                 </div>
                 {current.slug && (
                   <motion.a whileHover={{scale:1.05}} whileTap={{scale:.95}}
                     className="home-pill"
-                    href={`https://waabi.ai/insights/${current.slug}`}
+                    href={current.slug}
                   >
-                    See the details
+                    {current.button?.label}
                   </motion.a>
                 )}
               </div>
@@ -741,24 +752,24 @@ export default function HomePage() {
         </section>
         <section className="home-insights">
           <div className="home-insights-top">
-            <MotionCopy>Insights.</MotionCopy>
+            <MotionCopy>Project stages.</MotionCopy>
             <div>
               <p>
-                Explore technology deep dives, behind-the-scenes perspectives,
-                and the ideas shaping the future of autonomy.
+                Next steps: co-design with YAC, a site survey, engineering
+                design, and checks on beacon hire rules and radio coverage.
               </p>
               <div className="home-insights-controls">
-                <motion.a whileHover={{scale:1.05}} whileTap={{scale:.95}} className="home-pill" href="https://waabi.ai/insights">
-                  View all
+                <motion.a whileHover={{scale:1.05}} whileTap={{scale:.95}} className="home-pill" href="/careers">
+                  See the plan
                 </motion.a>
                 <motion.button whileHover={{scale:1.05}} whileTap={{scale:.95}}
-                  aria-label="Previous insights"
+                  aria-label="Previous project stages"
                   onClick={() => moveInsights(-1)}
                 >
                   ←
                 </motion.button>
                 <motion.button whileHover={{scale:1.05}} whileTap={{scale:.95}}
-                  aria-label="Next insights"
+                  aria-label="Next project stages"
                   onClick={() => moveInsights(1)}
                 >
                   →
@@ -771,7 +782,7 @@ export default function HomePage() {
               <a
                 key={slug}
                 className="home-insight-card"
-                href={`https://waabi.ai/insights/${slug}`}
+                href="/careers"
               >
                 <div className="home-insight-image">
                   <img src={`/assets/${image}`} alt="" />
@@ -779,9 +790,9 @@ export default function HomePage() {
                 <div className="home-insight-meta">
                   <div className="home-insight-tags">
                     {i !== 4 && (
-                      <span>{i === 5 ? "Research" : "Company news"}</span>
+                      <span>Project stage</span>
                     )}
-                    {i === 0 && <span>Trucks</span>}
+                    {i === 0 && <span>Project stage</span>}
                   </div>
                   <p className="home-insight-date">{date}</p>
                 </div>
@@ -791,9 +802,9 @@ export default function HomePage() {
           </div>
         </section>
         <section className="home-careers">
-          <MotionCopy>Build Physical AI with us.</MotionCopy>
+          <MotionCopy>Built with Lama Lama Country in mind</MotionCopy>
           <MotionLink whileHover={{scale:1.05}} whileTap={{scale:.95}} className="home-pill" href="/careers">
-            Join the team
+            View the plan
           </MotionLink>
           <div className="home-careers-collage" ref={careers}>
             <AnimatePresence initial={false}>
@@ -809,7 +820,7 @@ export default function HomePage() {
                 return slot < 4 ? <motion.div layout key={i} data-slot={slot} className="home-career-frame" exit={{zIndex:0}} transition={reducedMotion ? {duration:0} : {layout:careerTransition,...careerTransition,zIndex:{duration:0}}}>
                   <motion.div layout initial={{x:"100%"}} animate={{x:"0%"}} exit={{scale:.5,x:20}} transition={reducedMotion ? {duration:0} : careerTransition} className="home-career-window" style={{borderRadius:12}}>
                     <motion.div layout initial={{scale:1.5}} animate={{scale:1}} transition={reducedMotion ? {duration:0} : careerTransition} className="home-career-crop">
-                      <img src={media(name)} alt={["A Waabi team member","Waabi trucks on the road","The Waabi team collaborating","A team member inspecting a Waabi truck"][i%4]} />
+                      <img src={media(name)} alt={["Placeholder image, to be replaced with a concept image of the shelter at Warokutal.","Placeholder image, to be replaced with a concept image of the shelter at Warokutal.","Placeholder image, to be replaced with a concept image of the shelter at Warokutal.","Placeholder image, to be replaced with a concept image of the shelter at Warokutal."][i%4]} />
                     </motion.div>
                   </motion.div>
                 </motion.div> : null;

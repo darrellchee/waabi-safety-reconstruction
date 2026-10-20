@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title": "Find your place in Physical AI.",
+    "title": "Delivery",
     "image": {
       "src": "/assets/careers/1761187390-251006_waabi_collab_03_0781.webp",
       "width": 8192,
@@ -9,156 +9,156 @@
     }
   },
   "intro": {
-    "paragraph": "Help us tackle the world's biggest challenges. Whether you're an engineer, an AI researcher, a transportation expert, a business specialist, or a student looking to grow your career, Waabi is where you'll solve real problems for real vehicles on real roads—while shaping entire industries.",
-    "button": "Join the team",
-    "href": "https://jobs.lever.co/waabi"
+    "paragraph": "A plan YAC and the Lama Lama Rangers could carry out.",
+    "button": "See the solution",
+    "href": "/safety"
   },
   "pioneering": {
-    "title": "Pioneering tomorrow, together.",
-    "paragraph": "We wake up each day with a clear mission that goes far beyond technology—we're empowering humanity to build a better tomorrow. Our team pours their expertise into pioneering a groundbreaking approach that no one else has dared to imagine. \n\nThis bold vision has propelled Waabi into a global force with every achievement reflecting the unwavering commitment of the Waabi team.",
+    "title": "The plan",
+    "paragraph": "Implementation plan\n1. Preparation. Yintjingga Aboriginal Corporation (YAC) approval would take about 6 months. The site, design and running plan are agreed with YAC and Traditional Owners. Cultural heritage checks come before any ground work.\n2. Implementation. Four workers would build the shelter in the dry season in about 8 weeks, using a drill rig, steel and roof sheets. Each Ranger who will look after the site completes 4 hours of training.\n3. Operation. The shelter would run during the open season, July to November (Department of the Environment, Tourism, Science and Innovation [DETSI], 2024b). Rangers restock it weekly.\n4. Maintenance. Two Rangers carry out two checks a year, one before and one after the wet season.\n5. End of life. Four workers remove the building in 1 to 2 weeks. Shelves and kits are reused. Steel and roof sheets are recycled.\n\nCommunity, ownership and evaluation\nCommunity role: the team proposes that YAC co-designs the site and the rules, and decides which of these steps go ahead. The team encourages YAC to consider local people for the build and training.\nOwnership: the team proposes that YAC owns the shelter, sets prices and decides stock. Income would help fund the Lama Lama Rangers.\nEvaluation: after each open season YAC and Rangers would review kit hires, visitor numbers, empty shelves, uses of the beacons and radios, and Ranger time. They would adjust stock and prices.\nRepairs: Rangers fix small faults at the weekly and twice-yearly visits. Larger repairs use local trades. YAC and Rangers should agree a repair budget.\nFuture: if it works, the same model could be tried at Maramba.\n\nOther considerations\nStakeholders: YAC (owner and decision maker), Traditional Owners, the Lama Lama Rangers, visitors, Queensland Parks and Wildlife Service and Cook Shire Council. Not yet checked: land tenure and building approval, park rules for selling goods, personal locator beacon (PLB) hire rules, and insurance and liability for hired equipment. YAC should advise on each.\nVisitor journey, with the main worry at each step:\n1 Plan: check road conditions and park rules. Worry: will the road be open?\n2 Arrive: read the safety information, buy supplies. Worry: are there enough supplies?\n3 Stuck: hire a kit and recover the vehicle. Worry: cost and time.\n4 Emergency: use the PLB, or the radio if coverage is confirmed. Worry: will help come?\n5 Leave: return the kit and give feedback.\nRanger journey:\n1 Before the season: train and stock the shelter.\n2 Each week: restock and check kits.\n3 Twice a year: inspect before and after the wet season.\nCommunity reaction: The team has not yet asked YAC or Traditional Owners for their views. TEAM TO ADD: confirm this sentence is true, or add feedback received. Likely concerns are ground disturbance, extra Ranger work, visitor behaviour, theft and fire. This proposal is based on public sources and the EWB Challenge brief. It still needs to be checked with YAC and Traditional Owners.\nWider issues: waste from packaging, weeds and pests carried in firewood (use commercial bagged wood and check park rules), fire risk, theft, and wildlife safety. Safety flyers should warn visitors about estuarine crocodiles and say that swimming is unsafe. TEAM TO ADD: citation for the official crocodile warning.\n\nAppendices\nAppendix 1: Group charter. TEAM TO ADD: attach the charter before submission.\nAppendix 2: Meeting minutes. TEAM TO ADD: attach the meeting minutes before submission.\nAppendix 4: Full prototype test results. TEAM TO ADD: attach results before submission.\nAppendix 5: Decision matrix and cost workings. The matrix scores and the cost table are shown on the Solution and Delivery pages. The contingency is 20% of $72,207.34, which is $14,441.47.",
     "image": {
       "src": "/assets/careers/1761699271-251006_waabi_collab_05_1012_a.webp",
-      "width": 7616,
-      "height": 5080,
+      "width": 1448,
+      "height": 966,
       "alt": ""
     }
   },
   "voices": {
-    "title": "Waabi voices.",
+    "title": "What it costs",
     "quotes": [
       {
-        "quote": "I get to work on tough, meaningful problems with world-class peers who share a scientific mindset, constantly advancing our simulator to validate safe self-driving at the highest fidelity.",
-        "name": "Sahil Jain",
-        "role": "Software Developer II, Sensor Simulation"
+        "quote": "Item: Frame, walls, roof. Quantity and price: 24 m2 x $1,340 x 1.2. Total: $38,592.00. Source: Feasly (n.d.). Item: Pillars, decks, stairs. Quantity and price: 1. Total: $20,000.00. Source: Estimate. Item: Design documents (architect). Quantity and price: 10% of build. Total: $5,859.20. Source: Estimate. Item: Shelves, counter, solar, battery. Quantity and price: 1. Total: $5,000.00. Source: Estimate. Item: Traction boards (MAXTRAX MKII pair). Quantity and price: 2 x $249.99. Total: $499.98. Source: BuyWisely (n.d.-d).",
+        "name": "Table 1. Build and stock cost (AUD)",
+        "role": "Rows 1 to 5 of 16"
       },
       {
-        "quote": "I get to play a hands-on role in building safe autonomous trucking, working with innovative, safety-minded teams where my feedback directly influences product decisions and company milestones.",
-        "name": "Jaime Villalta",
-        "role": "Senior Test Engineer"
+        "quote": "Item: Tyre deflation hose (MAXTRAX Indeflate). Quantity and price: 2 x $159.20. Total: $318.40. Source: BuyWisely (n.d.-c). Item: 12 V compressor. Quantity and price: 2 x $99.99. Total: $199.98. Source: BuyWisely (n.d.-e). Item: 7-piece recovery kit (XTM). Quantity and price: 2 x $169.99. Total: $339.98. Source: BuyWisely (n.d.-f). Item: Personal locator beacon (PLB) (GME MT610G). Quantity and price: 2 x $439.90. Total: $879.80. Source: Down Under Pilot Shop (n.d.). Item: Ultra high frequency (UHF) radio (GME TX6160X). Quantity and price: 2 x $259.00. Total: $518.00. Source: BuyWisely (n.d.-a).",
+        "name": "Table 1. Build and stock cost (AUD)",
+        "role": "Rows 6 to 10 of 16"
       },
       {
-        "quote": "We bring together smart, curious folks with diverse backgrounds to tackle meaningful problems with humility and real collaboration, supported by a team that lifts each other up.",
-        "name": "Joseph Sunga",
-        "role": "Director of Product Management"
+        "quote": "Item: Contingency. Quantity and price: 20% of capital. Total: $14,441.47. Source: Estimate. Item: Water. Quantity and price: 240 L x $0.60. Total: $144.00. Source: Estimate. Item: Canned food. Quantity and price: 120 x $3.00. Total: $360.00. Source: Estimate. Item: Firewood, 20 kg bags. Quantity and price: 8 x $22.98. Total: $183.84. Source: BuyWisely (n.d.-b). Item: Safety flyers. Quantity and price: 1. Total: $50.00. Source: Estimate. Item: Total. Total: $87,386.65.",
+        "name": "Table 1. Build and stock cost (AUD)",
+        "role": "Rows 11 to 16 of 16"
       },
       {
-        "quote": "I started as an intern and now I'm proud to build my career here at Waabi, solving diverse software and research challenges with brilliant colleagues, and knowing our work is making the road safer for all.",
-        "name": "Richard Xu",
-        "role": "Software Developer II, Perception & Prediction"
+        "quote": "Build and equipment with contingency: $86,648.81. Opening stock: $737.84. The contingency is 20% of the capital cost of $72,207.34. Running cost: about $3,950 a year in the base case for restocking and kit wear and replacement. The team estimates restocking at about $2,500 of this.",
+        "name": "Notes under Table 1",
+        "role": "Totals and running cost"
       },
       {
-        "quote": "I've had a front-row seat since day one to a team that's relentlessly innovative and genuinely supportive, driven by a shared sense of purpose to build technology that will truly change the world.",
-        "name": "Candyce Holloway",
-        "role": "Executive Business Partner Manager"
+        "quote": "Lines marked Estimate are team allowances with no supplier quote. The three build lines marked Estimate (piles and stairs, design documents, shelves and solar) total $30,859.20, about 43% of the capital cost before contingency. They are the main cost uncertainty. The 1.2 factor on the frame line is an allowance for remote freight and site work. TEAM TO ADD: confirm what the 1.2 factor covers. The stock quantities are allowances sized for weekly restocking in a 22-week season. They are not measured demand. TEAM TO ADD: the basis for the stock quantities.",
+        "name": "Notes on estimates",
+        "role": "The main cost uncertainty"
       },
       {
-        "quote": "I joined Waabi for its efficiency—we move quickly with cross-functional teams, everyone has a voice, and we're united in transforming transportation safely.",
-        "name": "Nicholas Vozza",
-        "role": "Director of Global Supply Chain"
+        "quote": "Row: Visitors a year. Low: 110. Base: 220. High: 440. Row: Kit hires a year ($200 per week). Low: 18. Base: 44. High: 70. Row: Revenue a year. Low: $4,540. Base: $8,950. High: $17,900. Row: Running cost a year. Low: $2,630. Base: $3,950. High: $6,590. Row: Profit a year. Low: $1,910. Base: $5,000. High: $11,310. Row: Profit over 25 years. Low: $47,750. Base: $125,000. High: $282,750.",
+        "name": "Table 2. Revenue and profit estimates (AUD)",
+        "role": "Low, base and high cases"
       },
       {
-        "quote": "Waabi gives me the opportunity to contribute to diverse projects and see direct impact on our milestones, working alongside passionate, and ambitious people.",
-        "name": "Valeriia Fakhrutdinova",
-        "role": "Software Developer II, Simulation"
+        "quote": "The base case assumes 10 visitors a week for 22 weeks (Todio, n.d.). Revenue is the team's estimate of hire fees plus sales of water, food and firewood. TEAM TO ADD: the revenue workings for each case, and how the low and high running costs were worked out. Two kits can be hired for at most 44 kit-weeks in a 22-week season, so the high case of 70 hires needs shorter hires or more kits. Profit is before the build cost and before Ranger time, which is not costed.",
+        "name": "Revenue assumptions",
+        "role": "Notes on Table 2"
       },
       {
-        "quote": "I joined Waabi to transform how the world moves, and I stay for groundbreaking technology, measured approach, and the exceptional team making it reality.",
-        "name": "Niharika Bhargava",
-        "role": "Commercial Products Manager"
+        "quote": "The team proposes a one-off grant of about $86,650 for the build and equipment. Sales and hire fees would cover stock and running costs. Regional Tourism Infrastructure Fund (Queensland): build, design and equipment, up to $300,000 (DETSI, 2026). Eligibility must be confirmed. Indigenous Rangers Program (Australian Government): Ranger land care to 2028, which may help cover Ranger time (National Indigenous Australians Agency [NIAA], n.d.). Own income: stock and about $3,950 a year to run.",
+        "name": "Funding",
+        "role": "Grant and own income"
       },
       {
-        "quote": "I joined Waabi to build diverse teams where empathy and respect shape how we work, bringing together incredible people who inspire one another through different perspectives and shared passion.",
-        "name": "Corbin Jackson",
-        "role": "Senior Recruiter II "
+        "quote": "Without a grant, profit would repay the $87,387 build cost in about 46 years (low case), 17.5 years (base) or 7.7 years (high). In the low case, 25 years of profit does not cover the build. This is why the team proposes a grant for the build.",
+        "name": "Payback",
+        "role": "Without a grant"
       }
     ],
     "images": [
       {
         "src": "/assets/careers/1761184004-251006_waabi_val_fakhrutdinova_0214.webp",
-        "width": 1024,
-        "height": 1535,
+        "width": 1200,
+        "height": 1600,
         "alt": ""
       },
       {
         "src": "/assets/careers/1760350326-waabi_portrait_neiel_00646_final.webp",
-        "width": 1600,
-        "height": 1067,
+        "width": 1200,
+        "height": 1600,
         "alt": ""
       },
       {
         "src": "/assets/careers/1761699279-251006_waabi_collab_06_1065.webp",
-        "width": 5354,
-        "height": 8027,
+        "width": 1200,
+        "height": 1600,
         "alt": ""
       },
       {
         "src": "/assets/careers/1761188995-251006_waabi_carter_fang_0171.webp",
-        "width": 7413,
-        "height": 4944,
+        "width": 1200,
+        "height": 1600,
         "alt": ""
       },
       {
         "src": "/assets/careers/1761188599-251006_waabi_ashwin_kumar_0866.webp",
-        "width": 5394,
-        "height": 8087,
+        "width": 1200,
+        "height": 1600,
         "alt": ""
       }
     ]
   },
   "values": {
-    "title": "How we work, and work together.",
-    "description": "Our values guide how we work to drive real-world impact, turning visionary ideas into systems that navigate highways and transform lives.",
+    "title": "References and appendices",
+    "description": "Appendix 3: Statement of AI use and prompt log. The team used generative AI in four ways. Claude (Anthropic, 2026) helped find and summarise public sources and prices, draft background and criteria text, build the cost and revenue calculations, and turn the team's slides and research into website text. Gemini (Google, 2026) made the concept images for the team's presentation. An AI image tool made the concept images on this site. An AI coding agent placed the text and images into the website. The team used AI to work faster, keep the site consistent and show the idea visually. The team chose the design, built the Blender prototype and checked figures and citations against sources. AI images are concept images, not photographs. This is a draft declaration. TEAM TO ADD: read and confirm every sentence, the exact tool names and versions, and screenshots of every prompt and output.",
     "slides": [
       {
-        "title": "Scientific",
-        "paragraph": "We embrace objectivity, act with integrity, and view leadership as what you bring to work every day. "
+        "title": "Entries 1 to 4",
+        "paragraph": "Anthropic. (2026). Claude [Large language model]. https:/\u200b/\u200bclaude.ai\nBober, I. (2025, March). A simple guide to soft shackles. Unsealed 4X4. https:/\u200b/\u200bunsealed4x4.com.au/\u200bsoft-shackles-a-simple-guide/\nBuyWisely. (n.d.-a). GME TX6160X 5 watt IP67 UHF CB handheld radio. https:/\u200b/\u200bbuywisely.com.au/\u200bproduct/\u200bgme-tx6160x-5-watt-ip67-uhf-cb-handheld-radio-beyond-blue-foundation\nBuyWisely. (n.d.-b). Hot Shots 20kg firewood. https:/\u200b/\u200bbuywisely.com.au/\u200bproduct/\u200bhot-shots-20kg-firewood"
       },
       {
-        "title": "Curious",
-        "paragraph": "We ask hard questions, challenge our assumptions, and seek deeper understanding before answers. "
+        "title": "Entries 5 to 8",
+        "paragraph": "BuyWisely. (n.d.-c). MAXTRAX Indeflate (MTXIND). https:/\u200b/\u200bbuywisely.com.au/\u200bau/\u200bproduct/\u200bmaxtrax-indeflate-mtxind\nBuyWisely. (n.d.-d). MAXTRAX MKII recovery tracks - black. https:/\u200b/\u200bbuywisely.com.au/\u200bau/\u200bproduct/\u200bmaxtrax-mkii-recovery-tracks-black\nBuyWisely. (n.d.-e). SCA Hurricane 12V 150PSI 50LPM tyre inflator. https:/\u200b/\u200bbuywisely.com.au/\u200bproduct/\u200bsca-hurricane-12v-150psi-50lpm-tyre-inflator-sca-club\nBuyWisely. (n.d.-f). XTM 7 piece recovery kit. https:/\u200b/\u200bbuywisely.com.au/\u200bproduct/\u200bxtm-7-piece-recovery-kit-club-bcf"
       },
       {
-        "title": "Diverse",
-        "paragraph": "We assume good intentions, encourage respectful discourse, and treat differences as essential, not optional."
+        "title": "Entries 9 to 11",
+        "paragraph": "Cook Shire Council. (2026, August 26). Road conditions & closures. https:/\u200b/\u200bwww.cook.qld.gov.au/\u200bservices/\u200broads/\u200broad-conditions-closures/\nDepartment of the Environment, Tourism, Science and Innovation. (2024a, May 3). About: Lama Lama National Park (CYPAL). Parks and Forests. https:/\u200b/\u200bparks.qld.gov.au/\u200bparks/\u200blama-lama/\u200babout\nDepartment of the Environment, Tourism, Science and Innovation. (2024b, May 3). Lama Lama National Park (CYPAL). Parks and Forests. https:/\u200b/\u200bparks.qld.gov.au/\u200bparks/\u200blama-lama"
       },
       {
-        "title": "Resilient",
-        "paragraph": "We meet challenges with grit, creativity, and optimism – turning setbacks into breakthroughs."
+        "title": "Entries 12 to 13",
+        "paragraph": "Department of the Environment, Tourism, Science and Innovation. (2026, July). Regional Tourism Infrastructure Fund: Round 2 program guidelines. https:/\u200b/\u200bwww.detsi.qld.gov.au/\u200b_\u200b_\u200bdata/\u200bassets/\u200bpdf_\u200bfile/\u200b0023/\u200b406481/\u200bregional-tourism-infrastructure-fund-guidelines.pdf\nDown Under Pilot Shop. (n.d.). GME MT610G PLB / ELT - GPS personal locator beacon. https:/\u200b/\u200bdownunderpilotshop.com.au/\u200bproducts/\u200bmt610g-gps-personal-locator-beacon"
       },
       {
-        "title": "Accountable",
-        "paragraph": "We own our words and actions. We follow through on commitments andcommunicate changes openly."
+        "title": "Entries 14 to 16",
+        "paragraph": "Engineers Without Borders Australia. (n.d.). Design area 1: Infrastructure and access. EWB Challenge. https:/\u200b/\u200bewbchallenge.org/\u200bchallenge/\u200bport-stewart-lama-lama/\u200bdesign-area-1-infrastructure-and-access/\nEngineers Without Borders Australia. (2024). EWB Challenge: Port Stewart, Lama Lama Country. https:/\u200b/\u200bewbchallenge.org/\u200bchallenge/\u200bport-stewart-lama-lama/\nFeasly. (n.d.). Construction cost per square metre in Australia (2026). https:/\u200b/\u200bwww.feasly.com.au/\u200bguides/\u200bconstruction-cost-per-square-metre-australia"
       },
       {
-        "title": "Safe",
-        "paragraph": "Safety is non-negotiable. Every decision and interaction strengthens the safety of our people, our product, and our world. "
+        "title": "Entries 17 to 20",
+        "paragraph": "Google. (2026). Gemini [Large language model]. https:/\u200b/\u200bgemini.google.com\nLeading Architecture. (2024, June). Watertight concrete from Sika. https:/\u200b/\u200bwww.leadingarchitecture.co.za/\u200bwatertight-concrete-from-sika/\nMenard Asia. (2025, January 16). Concrete pile foundations: Types and benefits. https:/\u200b/\u200bwww.menard-asia.com/\u200b2025/\u200b01/\u200b16/\u200bconcrete-pile-foundations/\nNational Indigenous Australians Agency. (n.d.). Indigenous Rangers Program funding extension update 1. https:/\u200b/\u200bwww.niaa.gov.au/\u200bnews-and-media/\u200bindigenous-rangers-program-funding-extension-update-1"
       },
       {
-        "title": "Efficient",
-        "paragraph": "We work with focus and purpose, designing processes that favor reliability and efficiency over speed alone. "
+        "title": "Entries 21 to 23",
+        "paragraph": "Queensland Parks and Wildlife Service. (2013). Lama Lama National Park (Cape York Peninsula Aboriginal Land): Management statement. Department of Environment, Science and Innovation. https:/\u200b/\u200bparks.des.qld.gov.au/\u200b_\u200b_\u200bdata/\u200bassets/\u200bpdf_\u200bfile/\u200b0022/\u200b166423/\u200blama-lama.pdf\nReardon-Smith, M. (2023). The wet: Shifting seasons, climate change and natural cycles in Cape York Peninsula, Queensland. Oceania, 93(3), 302-320. https:/\u200b/\u200bdoi.org/\u200b10.1002/\u200bocea.5377\nSupercheap Auto. (2017, February). How to rapidly deflate your tyres. https:/\u200b/\u200bwww.supercheapauto.com.au/\u200bblog/\u200b4wd-adventure/\u200bhow-to-rapidly-deflate-your-tyres.html"
       },
       {
-        "title": "Data Driven",
-        "paragraph": "We take calculated risks, validate with evidence, and act decisively. Data fuels conviction, conviction accelerates progress, and progress generates more data – creating a virtuous cycle of innovation."
+        "title": "Entries 24 to 26",
+        "paragraph": "Testa, C. (2026, January 23). Tropical low forecast to bring heavy rain to northern Cape York, Gulf of Carpentaria. ABC News. https:/\u200b/\u200bwww.abc.net.au/\u200bnews/\u200b2026-01-23/\u200btropical-low-heavy-rain-cape-york-gulf-of-carpentaria/\u200b106260620\nTodio, E. (n.d.). Logistics of tourism in Port Stewart in Lama Lama Country. EWB Challenge. https:/\u200b/\u200bewbchallenge.org/\u200bforums/\u200btopic/\u200blogistics-of-tourism-in-port-stewart-in-lama-lama-country/\nYintjingga Aboriginal Corporation. (n.d.). Visiting. Welcome to Lama Lama Country. https:/\u200b/\u200bwww.lamalama.org.au/\u200bvisiting/"
       }
     ]
   },
   "closing": {
-    "title": "Fuel your career's next mile.",
-    "description": "Waabi is where personal growth and breakthrough innovation go hand in hand. With 5 North American offices and remote flexibility, you can learn and thrive wherever you work best.",
-    "button": "Explore open roles",
-    "href": "https://jobs.lever.co/waabi",
+    "title": "What should happen next",
+    "description": "1. Co-design the building, site and rules with YAC and Traditional Owners before any ground work. 2. Complete a site survey and cultural heritage clearance for the exact location. 3. Get flood level data and an engineer's design for flood and wind loads. Confirm the roof material. 4. Confirm the rules for hiring out beacons with the Australian Maritime Safety Authority, and test UHF radio coverage between Warokutal and the Ranger Base. TEAM TO ADD: citation for the beacon rules. 5. Check grant eligibility and apply. 6. Agree Ranger workload and repair budget with YAC. 7. Run a one-season trial of kit hire from the Ranger Base to test demand before building. Further research: visitor counts, local flood heights, hire demand and the price visitors will accept.",
+    "button": "Read the background",
+    "href": "/company",
     "images": [
       {
         "src": "/assets/careers/1761699271-251006_waabi_lunch_room_0456.webp",
-        "width": 7988,
-        "height": 5100,
+        "width": 1448,
+        "height": 925,
         "alt": ""
       },
       {
         "src": "/assets/careers/1761183960-waabi_inspection_02285.webp",
-        "width": 1500,
-        "height": 1000,
+        "width": 1448,
+        "height": 965,
         "alt": ""
       },
       {
@@ -170,7 +170,7 @@
       {
         "src": "/assets/careers/1760350326-waabi_portrait_felicia_00336_final.webp",
         "width": 1600,
-        "height": 1067,
+        "height": 1200,
         "alt": ""
       },
       {

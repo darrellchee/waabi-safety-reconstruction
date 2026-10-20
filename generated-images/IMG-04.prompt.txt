@@ -1,0 +1,10 @@
+Realistic architectural concept render, soft natural light, muted natural colours. A wooden bench with black traction boards, a coiled recovery strap, steel shackles, a 12 V tyre compressor, a tyre deflation hose, a yellow personal locator beacon and a black handheld radio, laid out neatly against a plain background. Output one standalone image, landscape 4:3 aspect ratio, with the objects centred and enough margin for a later 3:2 crop. No people, no text, no readable signs or labels, no logos, no brand names. No Aboriginal or Torres Strait Islander people, silhouettes, art, patterns, dot painting, rock art, hand stencils, flags, ceremony, campfire gatherings, sacred-looking sites, real landmarks, or wildlife close-ups.
+
+Tool: OpenAI built-in image_gen (model identifier not exposed)
+Requested aspect ratio: 4:3
+Date: 2026-10-20
+Attempts: 1
+Reference: none
+Source prompt: PROMPTS_TO_RUN.md
+Note: Generated with the built-in image tool, not Gemini. Native generated master; slot crops are deferred.
+
