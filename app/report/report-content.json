@@ -1,0 +1,308 @@
+{
+  "proposal": "The project aims to give visitors to Warokutal (Safari Camp) access to water, supplies and vehicle recovery equipment when floods damage the roads. It proposes an elevated, low-maintenance shelter that stocks essentials and hires out recovery kits, personal locator beacons (PLBs) and ultra high frequency (UHF) radios.",
+  "overview": "Provisions Point would improve visitor safety by raising a small supply shelter above the ground and filling it with what a stranded visitor needs.",
+  "needs": "Visitors to Warokutal need dependable access to water, supplies, recovery equipment and safety information when roads are damaged and help is far away.",
+  "acknowledgement": "We acknowledge the Gadigal people, the Boorooberongal people of the Dharug Nation, the Bidiagal people and the Gamaygal people, upon whose ancestral lands our university stands. We also acknowledge the Lama Lama people, the Traditional Owners of the Country this project is about. We pay respect to Elders past and present, as the traditional custodians of knowledge for these lands. This is a student proposal. It is for the Yintjingga Aboriginal Corporation to accept, change or reject. TEAM TO ADD: confirm this wording against the current UTS Acknowledgement of Country.",
+  "stagesIntro": "Next steps: co-design with YAC, a site survey, engineering design, and checks on beacon hire rules and radio coverage.",
+  "materials": [
+    [
+      "Purchased",
+      "Purchased materials: reinforced concrete piles and structure, watertight concrete, corrugated roofing, shelving and counter, solar panel and battery, 2 recovery kits, 2 PLBs, 2 UHF radios.",
+      "scene_1_v2_HD_FINAL.mp4"
+    ],
+    [
+      "Other",
+      "Other materials: drinking water (240 L), canned food (120 cans), firewood (8 bags of 20 kg), safety flyers.",
+      "Scalable.mp4"
+    ],
+    [
+      "Total",
+      "Estimated total cost: about $87,400 AUD, including a 20% contingency. Running cost is about $3,950 AUD a year in the base case.",
+      "scene_3_v5_HD_FINAL-small.mp4"
+    ]
+  ],
+  "stats": [
+    [
+      "Planned floor height above the ground (to be confirmed)",
+      "2 m",
+      "intersection-trimmed.mp4",
+      "/safety"
+    ],
+    [
+      "Open season, July to November",
+      "22 weeks",
+      "Crash_variant_1.mp4",
+      "/company"
+    ],
+    [
+      "Visitors a year in the base case",
+      "220",
+      "Copy_of_Copy_of_Full_Video_-_Solution_Ready_Blog-VEED__1_.mp4",
+      "/careers"
+    ]
+  ],
+  "background": [
+    "Climate and flooding. Heavy rain can flood roads and low ground across northern Cape York (Testa, 2026). The Lama Lama Rangers carry out infrastructure repairs (Reardon-Smith, 2023). Flood damage can therefore last after the water has gone.",
+    "Existing infrastructure and safety. There are two campgrounds, Warokutal at Port Stewart and Maramba at Silver Plains, three boat ramps and one staffed information point, the Lama Lama Ranger Base. A single road joins Port Stewart to Coen (Cook Shire Council, 2026; Engineers Without Borders Australia, n.d.).",
+    "Visitors and experience. Visitors come for bird watching, boating, fishing, camping and guided tours. The dry season brings most of them. The park is closed from 1 December to 30 June. The open season runs from July to November (Department of the Environment, Tourism, Science and Innovation [DETSI], 2024b). TEAM TO ADD: confirm the park closure dates apply to Warokutal.",
+    "Tourism economy and maintenance. Rangers manage tourism and carry out infrastructure repairs (Reardon-Smith, 2023). YAC earns income from tourism and from the YM2 cattle enterprise (Yintjingga Aboriginal Corporation [YAC], n.d.). Ranger time is limited, so new infrastructure must not add much work.",
+    "Cultural values and protocols. The Lama Lama people are the Traditional Owners. The Alingina Wungku Living Area is closed to visitors to protect cultural resources (YAC, n.d.). Entry to areas of high cultural or environmental value is limited to Traditional Owners or permit holders (Queensland Parks and Wildlife Service [QPWS], 2013)."
+  ],
+  "safetyCriterion": "The design must lower the risk of vehicles becoming stranded and help visitors recover or call for help. It must reduce reliance on Rangers.",
+  "team": "Pinhong: Climate and flooding research. Prototype. Darrell: Existing infrastructure and safety. Design opportunity. Life cycle. Revenue and cost. Tasneef: Visitor groups and experience. Decision matrix. Ideas and design options. Isaac: Tourism economy and maintenance. Current practice. Slide design. Jude: Cultural values and protocols. Qijun: Ecological and environmental values. Cost justification.",
+  "criteria": [
+    [
+      "Criterion 2",
+      "Flood resilience",
+      "The building and its stock must survive wet-season flooding with little repair. Reason: floods can damage roads and infrastructure, and Rangers carry out the repairs.",
+      "/safety"
+    ],
+    [
+      "Criterion 3",
+      "Visitor support and comfort",
+      "Visitors can get water, food, firewood and safety information near the campground. Reason: stays are remote and long, so basic supplies cut risk and improve the visit.",
+      "/safety"
+    ],
+    [
+      "Criterion 4",
+      "Feasibility and maintenance",
+      "The design uses tough, durable materials and needs close to zero wet-season maintenance. Reason: Ranger time is limited.",
+      "/safety"
+    ]
+  ],
+  "locations": [
+    {
+      "name": "Culture and Country",
+      "address": "The design respects Traditional Owner protocols, keeps visitors away from restricted places and disturbs little land, water or wildlife. Reason: the Lama Lama people are the Traditional Owners, and some areas ban infrastructure (QPWS, 2013).",
+      "style": {
+        "bottom": "36.2%",
+        "left": "3.2%"
+      }
+    },
+    {
+      "name": "Community fit",
+      "address": "The design suits the small, self-reliant visitors at Port Stewart, such as campers and fishers, and not mass tourism. Reason: the place and its visitors are small scale.",
+      "style": {
+        "bottom": "23.8%",
+        "left": "18.3%"
+      }
+    },
+    {
+      "name": "Low cost",
+      "address": "The design is affordable to build and run. Reason: YAC has limited income from tourism and cattle (YAC, n.d.).",
+      "style": {
+        "bottom": "16.8%",
+        "left": "41.2%"
+      }
+    },
+    {
+      "name": "Revenue",
+      "address": "The design earns enough to cover its running costs. Reason: a site that pays its own running costs avoids new demands on Ranger budgets.",
+      "style": {
+        "top": "60.3%",
+        "right": "31.5%"
+      }
+    },
+    {
+      "name": "Ecological and environmental values",
+      "address": "Infrastructure is banned in the Alingina Wungku Living Area, the Goose Swamp and the Bull Swamp area, and no camping development is allowed inside the national park (QPWS, 2013). Camping stays outside the park at Warokutal and Maramba (DETSI, 2024a).",
+      "style": {
+        "top": "51.2%",
+        "right": "32.6%"
+      }
+    }
+  ],
+  "options": [
+    {
+      "title": "3.1. Design option 1: Provisions Point",
+      "text": "The Provisions Point is a flood-resilient facility designed to provide visitors with essential supplies and emergency equipment during wet-season flooding. The proposed structure features an elevated platform, weather-resistant storage facilities, and secure compartments containing drinking water, non-perishable food, first-aid supplies, and vehicle recovery equipment. Personal Locator Beacons (PLBs) and UHF radios would also be available to support emergency communication. This solution aims to improve visitor safety and access to essential resources while creating potential revenue opportunities through equipment rental.",
+      "image": "1761185044-waabi_road2_05683.webp"
+    },
+    {
+      "title": "3.2. Design option 2: Elevated tent-site platform",
+      "text": "The Elevated Tent-site Platform proposes raised camping platforms designed to reduce visitors' exposure to ground-level flooding and wet conditions. The platforms would provide stable areas for setting up tents, potentially reducing damage to camping equipment and improving camping conditions during periods of heavy rainfall.\n\nThis solution focuses primarily on providing a safer camping environment rather than supplying emergency resources. Its relatively simple design could reduce initial construction costs, while its elevated structure offers improved flood resilience compared with ground-level campsites. However, the platforms would provide limited access to emergency supplies, communication equipment, and vehicle recovery services.",
+      "image": "1761183960-waabi_inspection_02285.webp"
+    },
+    {
+      "title": "3.3. Design option 3: Distributed emergency checkpoint",
+      "text": "The Distributed Emergency Checkpoint proposes a network of small emergency support stations positioned at selected locations around Warokutal. Each checkpoint could contain basic emergency supplies, safety information, and communication equipment, allowing visitors to access assistance without relying on a single central facility.\n\nBy distributing emergency resources across multiple locations, this solution aims to improve accessibility and provide support to visitors who may become stranded during flooding. The stations could also be adapted to local environmental and community requirements.",
+      "image": "1760350326-shutterstock_1058062604_edited_final.webp"
+    }
+  ],
+  "selection": [
+    {
+      "title": "Ideas A and B",
+      "image": "1761183903-waabi_road2_04462.webp",
+      "text": "Weights are in brackets.\nIdea: A Provisions Point. Culture and Country (3): 5. Low cost (4): 3. Visitor support (5): 4. Feasibility (5): 3. Safety and access (4): 5. Community fit (4): 4. Flood resilience (5): 3. Revenue (3): 5. Total: 128. Rank: 1.\nIdea: B Distributed checkpoints. Culture and Country (3): 4. Low cost (4): 3. Visitor support (5): 3. Feasibility (5): 3. Safety and access (4): 4. Community fit (4): 4. Flood resilience (5): 3. Revenue (3): 1. Total: 104. Rank: 2."
+    },
+    {
+      "title": "Idea C and the beacon",
+      "image": "1761947979-screenshot-2025-10-31-at-2-59-29-pm.webp",
+      "text": "Idea: C Tent-site platform. Culture and Country (3): 3. Low cost (4): 4. Visitor support (5): 2. Feasibility (5): 2. Safety and access (4): 3. Community fit (4): 3. Flood resilience (5): 4. Revenue (3): 2. Total: 95. Rank: 3.\nIdea: Screened out, crossing beacon. Culture and Country (3): 3. Low cost (4): 4. Visitor support (5): 1. Feasibility (5): 3. Safety and access (4): 4. Community fit (4): 3. Flood resilience (5): 3. Revenue (3): 1. Total: 91. Rank: 4."
+    },
+    {
+      "title": "Reading the scores",
+      "image": "1762294277-screenshot-2025-11-04-at-2-11-01-pm.webp",
+      "text": "Option A scores 5 for culture, safety and revenue and 3 for low cost, feasibility and flood resilience. It scores 3 for flood resilience until the 2 m floor height is checked against flood data.\nOption B scores 3 for visitor support and 1 for revenue.\nOption C scores 4 for flood resilience, the highest of the four, and 2 for visitor support and feasibility.\nTEAM TO ADD: confirm the reasons for each rating.\nDecision: The team will develop Option A, Provisions Point, in detail."
+    }
+  ],
+  "design": [
+    {
+      "title": "What it is",
+      "image": "1761183902-waabi_road2_04965.webp",
+      "text": "A 24 square metre shelter at Warokutal, planned for ground that is already cleared and above flood level. A site survey must confirm this. It would stand on reinforced concrete piles (Menard Asia, 2025), with the floor planned 2 m above the ground. Walls would be watertight concrete (Leading Architecture, 2024) and the roof corrugated sheeting (material to be confirmed). Inside would be shelves, a counter, a solar panel and a battery. The shelter is unstaffed. Visitors serve themselves and pay by the method YAC sets."
+    },
+    {
+      "title": "Entry, stock and hire items",
+      "image": "1761183937-waabi_garageinterior_03851.webp",
+      "text": "Entry: TEAM TO ADD: confirm the entry type (stairs or ramp) so it matches the prototype.\nStock: drinking water, non-perishable food, firewood and safety information.\nHire items: traction boards for soft ground, a tyre deflation kit (Supercheap Auto, 2017), a 12 V compressor, and shackles with a recovery strap (Bober, 2025). Each kit also holds a personal locator beacon (PLB) and an ultra high frequency (UHF) radio. YAC sets the check-out and payment method. One option is a lockable kit cage with a code given at booking."
+    },
+    {
+      "title": "How a visitor would use it",
+      "image": "1761183980-waabi_road1_01029.webp",
+      "text": "1. Check road conditions on the Cook Shire Council website before travel (Cook Shire Council, 2026).\n2. Arrive at Warokutal and read the safety information at the shelter.\n3. Buy water, food or firewood, or hire a recovery kit if the vehicle is stuck.\n4. In a life-threatening emergency, use the PLB. If radio coverage is confirmed, the UHF radio can reach the Rangers. Then return the kit."
+    },
+    {
+      "title": "Community concerns",
+      "image": "1760350326-waabi_laptop_03392_final.webp",
+      "text": "Ground disturbance. The design uses a small number of drilled piles on cleared ground, not trench footings. No piles are drilled until Traditional Owners and heritage checks agree. Ranger workload. The routine would be one weekly restock in the open season and two inspections a year. Visitor numbers. The stock and kits suit small groups. The design is not for mass tourism. Theft or damage. The team proposes a lockable, raised building for the stock and kits. Fire and waste. Bagged firewood would be sold, and the team will check park rules with YAC and QPWS. A waste plan would be agreed with YAC. Cost. A grant would pay for the build. Sales and hire fees would pay for running costs."
+    }
+  ],
+  "why": "Safety and access: visitors could recover their own vehicles, call for help and get water close by. The Ranger Base is not the only point of help. Flood resilience: the building is raised and made of concrete and steel, so it should need little upkeep after the wet season. An engineer must confirm this. Culture and Country: one hub on cleared ground keeps foot traffic away from restricted sites, and the team proposes that Yintjingga Aboriginal Corporation (YAC) co-designs how it runs.",
+  "optionsIntro": "The team developed four ideas and scored them against the eight criteria. The three highest scoring ideas are the design options below. Screened out: a solar-powered river crossing status beacon scored lowest (91 out of 165). It would warn drivers. TEAM TO ADD: confirm this description.",
+  "selectionIntro": "Each idea was rated from 1 (poor) to 5 (best) against the eight criteria. Each criterion has a weight from 3 to 5, where 5 matters most. Weighted score is rating times weight. The maximum score is 165. Why the weights differ: Visitor support, feasibility and flood resilience carry weight 5, because a shelter that is unusable, impossible to build or flooded fails the brief. Culture and Country has weight 3 in the matrix, but it is also a condition for every option. No option would go ahead without Traditional Owner agreement.",
+  "student": "The design is a student proposal. It is for the Yintjingga Aboriginal Corporation to review, change or reject.",
+  "keywords": "flood resilience, visitor safety, vehicle recovery, remote tourism, Warokutal, Lama Lama Country, Cape York, self-funding running costs, cultural protocols",
+  "considerations": [
+    "Materials are priced from Australian averages. Freight to Cape York may cost more, so the budget holds a 20% contingency.",
+    "Maintenance is light: one restock visit a week in the open season and two inspections a year. Ranger time is not costed and needs YAC agreement.",
+    "Delivery would take about 6 months of approval and an 8-week dry-season build.",
+    "The 2 m floor height is a planning figure. It must be checked against flood data for the site.",
+    "Ground disturbance must be cleared with Traditional Owners before any piles are drilled.",
+    "Visitor numbers and revenue are estimates (10 visitors a week for 22 weeks).",
+    "Next steps: co-design with YAC, a site survey, engineering design, and checks on beacon hire rules and radio coverage."
+  ],
+  "currentPractice": "Current practice is simple. Visitors check road conditions on the Cook Shire Council website before they travel (Cook Shire Council, 2026). They bring their own recovery equipment, because there is no alternative. The Ranger Base at Port Stewart is the one staffed safety point named for the area.\nHeading: Why it is not enough\nA visitor whose vehicle is stuck, or whose supplies run low, has no nearby source of equipment, water or safety information. Rangers cannot cover every site. The team wants a simple, flood-resistant supply point at Warokutal.",
+  "prototype": "Heading: Prototype\nWhat and why: The team built a 3D model in Blender to show what the shelter looks like inside and out. The tests below are planned and have not been run.\nHow built: The model shows the building on piles, the entry, the roof, and the interior shelves with water, canned food, firewood, safety flyers and PLBs. TEAM TO ADD: confirm whether medicines are stocked, because the Blender model includes them.\nPicture: TEAM TO ADD: Blender screenshots of the prototype\n\nPlanned tests:\n\n| Test | Method | Pass mark | Result |\n|---|---|---|---|\n| Flood clearance | Raise a water level in the model to 0.5, 1.0, 1.5 and 2.0 m | Floor and stock stay dry at 1.5 m | Pending. TEAM TO ADD: result |\n| Stock fit | Place 2 kits, 240 L of water, 120 cans and 8 firewood bags on the shelves | All items fit and a walkway stays clear | Pending. TEAM TO ADD: result |\n| Entry | Check entry slope or stair rise and door width | Easy entry with a loaded trolley | Pending. TEAM TO ADD: result |\n| Walk-through | 3 to 5 people find an item and plan a kit hire from the model | Most find items in under 1 minute | Pending. TEAM TO ADD: result |\n\nChanges made after testing: No changes yet. Tests are not complete. TEAM TO ADD: changes after testing.\nFull test results: Appendix 4.",
+  "costRows": [
+    [
+      "Frame, walls, roof",
+      "24 m² × $1340 × 1.2",
+      "$38,592.00",
+      "Feasly (n.d.)"
+    ],
+    [
+      "Pillars, decks, stairs",
+      "1",
+      "$20,000.00",
+      "BuyWisely (n.d.-d)"
+    ],
+    [
+      "Design documents (Architect Hire)",
+      "10% of build",
+      "$5,859.20",
+      "Estimate"
+    ],
+    [
+      "Shelves, counter, solar, battery",
+      "1",
+      "$5,000.00",
+      "Estimate"
+    ],
+    [
+      "MAXTRAX MKII pair",
+      "2 × $249.99",
+      "$499.98",
+      "BuyWisely (n.d.-d)"
+    ],
+    [
+      "MAXTRAX Indeflate hose",
+      "2 × $159.20",
+      "$318.40",
+      "BuyWisely (n.d.-c)"
+    ],
+    [
+      "12V compressor",
+      "2 × $99.99",
+      "$199.98",
+      "BuyWisely (n.d.-e)"
+    ],
+    [
+      "XTM 7-piece recovery kit",
+      "2 × $169.99",
+      "$339.98",
+      "BuyWisely (n.d.-f)"
+    ],
+    [
+      "GME MT610G PLB",
+      "2 × $439.90",
+      "$879.80",
+      "Down Under Pilot Shop (n.d.)"
+    ],
+    [
+      "GME TX6160X UHF radio",
+      "2 × $259.00",
+      "$518.00",
+      "BuyWisely (n.d.-a)"
+    ],
+    [
+      "Contingency",
+      "20% of capital",
+      "$14,441.47",
+      "Estimate"
+    ],
+    [
+      "Water",
+      "240 L × $0.60",
+      "$144.00",
+      "Estimate"
+    ],
+    [
+      "Canned food",
+      "120 × $3.00",
+      "$360.00",
+      "Estimate"
+    ],
+    [
+      "Firewood, 20 kg bags",
+      "8 × $22.98",
+      "$183.84",
+      "BuyWisely (n.d.-b)"
+    ],
+    [
+      "Safety flyers",
+      "1",
+      "$50.00",
+      "Estimate"
+    ],
+    [
+      "TOTAL",
+      "",
+      "$87,386.65",
+      ""
+    ]
+  ],
+  "costEstimateNotes": "Lines marked Estimate are team allowances with no supplier quote. The two build lines marked Estimate (design documents, shelves and solar) total $10,859.20, about 15% of the capital cost before contingency. They are the main cost uncertainty. The 1.2 factor on the frame line is an allowance for remote freight and site work. TEAM TO ADD: confirm what the 1.2 factor covers. The stock quantities are allowances sized for weekly restocking in a 22-week season. They are not measured demand. TEAM TO ADD: the basis for the stock quantities.",
+  "overviewImages": [
+    {
+      "image": "/assets/report/overview/flood-resilience.webp",
+      "alt": "Real example: a Queenslander house raised on posts in Laidley, Queensland.",
+      "position": "50% 50%"
+    },
+    {
+      "image": "/assets/report/overview/prefabricated-construction.webp",
+      "alt": "Real example: prefabricated home sections beside a prepared foundation during construction.",
+      "position": "50% 50%"
+    },
+    {
+      "image": "/assets/report/overview/solar-powered-shelter.webp",
+      "alt": "Real example: solar panels on the metal roof of a remote wooden cabin.",
+      "position": "30% 50%"
+    },
+    {
+      "image": "/assets/report/overview/facility-users.webp",
+      "alt": "Visitors fishing beside a waterway on Lama Lama Country.",
+      "position": "30% 50%"
+    }
+  ]
+}

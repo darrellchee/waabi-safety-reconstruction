@@ -1,0 +1,9 @@
+# Project guidance
+
+- The report page (`waabi-safety-reconstruction/app/report`) is the only page to modify. All other pages (home, `company`, `safety`, `careers`, etc.) are reference only: use them to look up elements and borrow UI, but do not edit them.
+- Keep `REPORT_CONTENT.md` in sync with applicable website changes in the same task. Changes to report text, headings, section order, tables, figures, images, alt text, captions, acknowledgements, or references must update the corresponding content or layout notes in `REPORT_CONTENT.md`. For internet-sourced images, record the local asset, source URL, creator credit, and any known licence, and add the source to the reference list. If exported block text changes, regenerate `app/report/report-blocks.json` with `python3 tools/export_report_blocks.py` and verify that the rendered content matches the Markdown. Purely internal changes that do not affect documented content or layout do not require a Markdown update. Do not finish an applicable website change with `REPORT_CONTENT.md` out of date.
+- Do not use a browser by default. Inspect and edit local files, and use targeted command-line checks first.
+- Use browser-use only when the user explicitly asks for browser interaction or when a required task cannot be completed through local files, command-line tools, or an available API.
+- Do not open a browser for routine code changes, documentation edits, or automatic visual checks after every change. A website task alone is not a reason to open a browser.
+- If browser interaction is required, use browser-use and keep the session limited to the specific task. Stop once the needed information or verification is obtained.
+- Keep testing focused on the change and its likely impact. You do not need to test everything or run the full test suite for every change.

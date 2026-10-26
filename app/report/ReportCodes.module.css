@@ -1,0 +1,61 @@
+/* Progress labels for /report. Every rule here is screen-only: badges and the panel are hidden in print. */
+.block { position: relative; display: flow-root; }
+/* Blocks that open with plain text (no heading margin) leave a strip for the badge. */
+.pad { padding-top: 20px; }
+.above { padding-top: 24px; }
+.contents { display: contents; }
+
+.badge {
+  --badge: #3f3e3c;
+  position: absolute; top: 0; left: 0; z-index: 6;
+  display: inline-block; max-width: none; margin: 0; padding: 3px 6px;
+  border-radius: 3px; background: var(--badge); color: #ffffff;
+  font: 600 10px/1.2 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  letter-spacing: 0; text-transform: none; text-shadow: none; text-align: left; white-space: nowrap;
+  opacity: .94; cursor: pointer;
+  user-select: none; -webkit-user-select: none; -webkit-touch-callout: none;
+}
+.badge:hover { opacity: 1; }
+.badge[data-status="SITE"], .badge[data-status="SLIDES"] { --badge: #1a7f37; }
+.badge[data-status="DRAFT"] { --badge: #92600a; }
+.badge[data-status="MISSING"] { --badge: #c62828; }
+.badge[data-status="MEDIA"] { --badge: #1d4ed8; }
+.badge.section { position: static; display: block; width: fit-content; margin: 0 0 12px; font-size: 11px; padding: 4px 8px; }
+.badge.inline { position: static; display: block; width: fit-content; margin: 0 0 6px; }
+.badge.fixed { position: absolute; left: 8px; }
+
+:global(body.report-codes-off) .badge { display: none; }
+/* codes off: no strip */
+:global(body.report-codes-off) .pad { padding-top: 0; }
+:global(body.report-codes-off) .above { padding-top: 0; }
+
+.panel {
+  position: fixed; right: 12px; bottom: 12px; z-index: 2000;
+  width: min(300px, calc(100vw - 24px)); max-height: calc(100svh - 24px); overflow-y: auto;
+  background: #191818; color: #ffffff; border-radius: 8px; box-shadow: 0 4px 24px rgba(0, 0, 0, .3);
+  font: 12px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+.bar { display: flex; gap: 6px; padding: 6px; }
+.bar button {
+  flex: 1; padding: 7px 8px; border: 1px solid #ffffff59; border-radius: 5px; background: transparent; color: #ffffff;
+  font: inherit; cursor: pointer; text-align: center;
+}
+.bar button:hover, .bar button:focus-visible { background: #ffffff1f; }
+.body { padding: 4px 12px 12px; }
+.body h2 { font-family: inherit; font-size: 11px; font-weight: 600; line-height: 1.4; margin: 8px 0 6px; text-transform: uppercase; letter-spacing: .04em; color: #ffffffb3; }
+.statuses { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.statuses li { padding: 3px 6px; border-radius: 3px; background: var(--badge); color: #ffffff; font-family: inherit; font-size: 11px; font-weight: 600; line-height: 1.2; margin: 0; }
+.statuses li[data-status="SITE"], .statuses li[data-status="SLIDES"] { --badge: #1a7f37; }
+.statuses li[data-status="DRAFT"] { --badge: #92600a; }
+.statuses li[data-status="MISSING"] { --badge: #c62828; }
+.statuses li[data-status="MEDIA"] { --badge: #1d4ed8; }
+.rows { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; margin: 0; }
+.rows dt, .rows dd { margin: 0; padding: 0; font: inherit; }
+.rows dd { text-align: right; font-weight: 600; }
+.words[data-over="true"] { color: #ff8a80; }
+
+@media print {
+  .pad { padding-top: 0 !important; }
+  .badge, .panel { display: none !important; }
+  .above { padding-top: 0 !important; }
+}

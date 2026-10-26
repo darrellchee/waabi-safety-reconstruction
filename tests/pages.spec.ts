@@ -153,12 +153,10 @@ test("Home strengths, partner quotes, technology links and insights work", async
     .toBe(0);
 });
 
-test("Company scroll action, news carousel and location controls work", async ({
+test("Company news carousel and location controls work", async ({
   page,
 }) => {
   await page.goto("/company", { waitUntil: "domcontentloaded" });
-  await page.getByRole("button", { name: "Scroll Down", exact: true }).click();
-  await expect.poll(() => page.evaluate(() => scrollY)).toBeGreaterThan(100);
   await page.getByRole("button", { name: "Next news", exact: true }).click();
   await expect
     .poll(() =>

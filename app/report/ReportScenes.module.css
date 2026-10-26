@@ -1,0 +1,404 @@
+/* Scoped copies of existing Home and Company card rules. */
+.scene :global(.home-page .home-tech-hero > img),
+.scene :global(.home-page .home-cover-shade) {
+  position: absolute;
+  inset: 0;
+}
+.scene :global(.home-page .home-cover-shade) {
+  background: linear-gradient(transparent 30%, rgba(0, 0, 0, 0.4));
+  pointer-events: none;
+}
+.scene :global(.home-page .home-tech-cards) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 24px;
+}
+.scene :global(.home-page .home-tech-cards > article) {
+  position: relative;
+  display: block;
+  height: 620px;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  background: #171717;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+.scene :global(.home-page .home-tech-cards > article > div:last-of-type) {
+  position: absolute;
+  bottom: 36px;
+  left: 48px;
+  right: 40px;
+}
+.scene :global(.home-page .home-tech-cards h3) {
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: -1.2px;
+}
+.scene :global(.home-page .home-tech-cards p) {
+  font: 14px/1.3 var(--font-sans);
+  margin-bottom: 6px;
+}
+.scene :global(.home-page .home-tech-cards video) {
+  transition: transform 0.8s;
+}
+.scene :global(.home-page .home-tech-cards article:hover video) {
+  transform: scale(1.04);
+}
+.scene :global(.home-page .home-tech-cards article:hover .home-card-plus) {
+  opacity: 1;
+}
+@media (max-width: 1023px) {
+  .scene :global(.home-page .home-tech-cards) {
+    grid-template-columns: 1fr;
+    padding-top: 80px;
+  }
+  .scene :global(.home-page .home-tech-cards > article) {
+    height: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .scene :global(.home-page .home-tech-cards) {
+    padding: 80px 12px 12px;
+    gap: 12px;
+  }
+  .scene :global(.home-page .home-tech-cards > article) {
+    height: 480px;
+    border-radius: 8px;
+  }
+  .scene :global(.home-page .home-tech-cards > article > div:last-of-type) {
+    left: 24px;
+    bottom: 24px;
+  }
+  .scene :global(.home-page .home-tech-cards p) {
+    font-size: 12px;
+  }
+  .scene :global(.home-page .home-tech-cards h3) {
+    font-size: 24px;
+    letter-spacing: -0.72px;
+  }
+}
+
+/* Measurements refined against live 390px and 1440px CDP evidence. */
+@media (max-width: 767px) {
+  .scene :global(.home-page .home-tech-cards) {
+    padding: 24px;
+    gap: 24px;
+  }
+  .scene :global(.home-page .home-tech-cards > article) {
+    height: 223px;
+  }
+  .scene :global(.home-page .home-tech-cards > article > div:last-of-type) {
+    left: 28px;
+    bottom: 24px;
+  }
+}
+/* Reference geometry: the road montage stays inside its scroll scene, and
+   the scale introduction gives way to the three strengths while pinned. */
+@media (max-width: 767px) {
+  .scene :global(.home-page .home-tech-cards > article) {
+    height: auto;
+    aspect-ratio: 1.588235;
+  }
+  .scene :global(.home-page .home-tech-cards h3) {
+    line-height: 1.25;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .scene :global(.home-page .home-tech-cards) {
+    padding: 24px;
+    gap: 24px;
+  }
+  .scene :global(.home-page .home-tech-cards > article) {
+    height: auto;
+    aspect-ratio: 1.588235;
+  }
+}
+/* Motion reconstructed from the public Hero, Parallax, Benefits and Images
+   modules. Scene height remains identical; only their inner layers move. */
+/* Four evenly distributed source columns, with the outer pair crossing
+   from +600 to -600 pixels over start-end → end-start. */
+/* Reference type-z tracking determines the montage's centered line wrapping. */
+/* Projection uses the same nested moving frame / clipped window / image crop
+   structure as the observed Images component. Exiting frames remain mounted. */
+/* Fresh computed styles confirm these source text-s utility names do not
+   override the inherited Zagma family in the published stylesheet. */
+/* Source round controls and CTAs animate through Motion's shared transition.
+   Solid CTAs keep their color; Down is a plain, unscaled button. */
+.scene :global(.home-page .home-tech-cards video) {transition:transform .5s cubic-bezier(.19,1,.22,1);}
+.scene :global(.home-page .home-tech-cards article:hover video) {transform:scale(1.2);}
+.scene :global(.home-page .home-tech-cards article:hover .home-card-plus) {background:#ff2f7d;border-color:transparent;}
+.scene :global(.home-page .home-tech-cards h3) {padding-right:50px;}
+@media(max-width:767px){.scene :global(.home-page .home-tech-cards h3){padding-right:35px;}}
+
+/* Keep the hydration tree stable; normal playback has no fabricated poster. */
+
+.scene :global(.company-page .co-width) {
+  width: calc(100% - var(--co-gutter) * 2);
+  margin-inline: auto;
+}
+.scene :global(.company-page .co-controls) {
+  display: flex;
+  gap: 12px;
+}
+.scene :global(.company-page .co-controls button) {
+  border: 1px solid #19181826;
+  color: #19181899;
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font: 16px Arial;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.scene :global(.company-page .co-controls button:hover) {
+  background: #ff2c6b;
+  color: white;
+  border-color: transparent;
+}
+.scene :global(.company-page .co-news-track::-webkit-scrollbar),
+.scene :global(.company-page .co-events-track::-webkit-scrollbar) {
+  display: none;
+}
+.scene :global(.company-page .co-events) {
+  background: #f9f6f8;
+  padding: 120px 0;
+  margin-bottom: 120px;
+}
+.scene :global(.company-page .co-event-heading) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.scene :global(.company-page .co-event-heading h2) {
+  font-size: 60px;
+  line-height: 0.9;
+  letter-spacing: -2.4px;
+}
+.scene :global(.company-page .co-events-track) {
+  display: flex;
+  gap: 24px;
+  overflow: auto;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+.scene :global(.company-page .co-event) {
+  width: 315px;
+  flex: 0 0 315px;
+  scroll-snap-align: start;
+}
+.scene :global(.company-page .co-event-image) {
+  position: relative;
+  height: 214px;
+  background: #e8e6e3;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.scene :global(.company-page .co-event-image img) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+.scene :global(.company-page .co-event:hover img) {
+  transform: scale(1.04);
+}
+.scene :global(.company-page .co-event-image time) {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: white;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font:
+    12px/1.5 NeueHaas,
+    Arial,
+    sans-serif;
+}
+.scene :global(.company-page .co-event h3) {
+  font:
+    24px/30px Zagma,
+    Georgia,
+    serif;
+  letter-spacing: -0.48px;
+}
+.scene :global(.company-page .co-event > span) {
+  display: block;
+  font:
+    12px/20px NeueHaas,
+    Arial,
+    sans-serif;
+  color: #19181880;
+  margin-top: 8px;
+}
+.scene :global(.company-page .co-location-copy.co-width) {
+  width: calc(100% - (var(--co-gutter) - 24px) * 2);
+}
+@media (max-width: 767px) {
+  .scene :global(.company-page .co-controls) {
+    gap: 12px;
+  }
+  .scene :global(.company-page .co-controls button) {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+  .scene :global(.company-page .co-events) {
+    padding: 60px 0;
+    margin-bottom: 60px;
+  }
+  .scene :global(.company-page .co-event-heading) {
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+  .scene :global(.company-page .co-event-heading h2) {
+    font-size: 34px;
+    line-height: 0.95;
+    letter-spacing: -1.36px;
+  }
+  .scene :global(.company-page .co-event) {
+    width: calc(100vw - 80px);
+    flex-basis: calc(100vw - 80px);
+  }
+  .scene :global(.company-page .co-event-image) {
+    height: auto;
+    aspect-ratio: 315/214;
+  }
+  .scene :global(.company-page .co-event h3) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .scene :global(.company-page .co-location-copy.co-width) {
+    width: calc(100% - 80px);
+  }
+}
+.scene :global(.company-page .co-width) {
+  max-width: 1234px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .scene :global(.company-page .co-hero),
+.scene :global(.company-page .co-story),
+.scene :global(.company-page .co-quote),
+.scene :global(.company-page .co-people),
+.scene :global(.company-page .co-investors),
+.scene :global(.company-page .co-news),
+.scene :global(.company-page .co-events) {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .scene :global(.company-page .co-news > .co-width > h2) {
+    max-width: 155px;
+  }
+  .scene :global(.company-page .co-news-intro > .co-controls) {
+    position: absolute;
+    right: 40px;
+    top: 60px;
+  }
+  .scene :global(.company-page .co-event-heading h2) {
+    font-size: 28px;
+    line-height: 25.2px;
+    letter-spacing: -1.12px;
+  }
+  .scene :global(.company-page .co-event-heading) {
+    gap: 8px;
+  }
+  .scene :global(.company-page .co-event > h3) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.scene :global(.company-page .co-quote-copy p),
+.scene :global(.company-page .co-people-copy p),
+.scene :global(.company-page .co-investor-copy p),
+.scene :global(.company-page .co-news-card h3),
+.scene :global(.company-page .co-event h3),
+.scene :global(.company-page .co-location-copy p) {
+  letter-spacing: -0.72px;
+}
+/* Source layout calibration from the four reference viewports. */
+.scene :global(.company-page .co-news-card h3),
+.scene :global(.company-page .co-event h3) {
+  transition: color 0.5s;
+}
+.scene :global(.company-page .co-news-card:hover h3),
+.scene :global(.company-page .co-event:hover h3) {
+  color: #ff2c6b;
+}
+.scene :global(.company-page .co-event-image) {
+  margin-bottom: 16px;
+}
+.scene :global(.company-page .co-event > span) {
+  margin-top: 6px;
+  line-height: 16.8px;
+}
+@media (max-width: 767px) {
+  .scene :global(.company-page .co-event-image) {
+    margin-bottom: 12px;
+  }
+  .scene :global(.company-page .co-event > h3) {
+    font-size: 18px;
+    line-height: 19.8px;
+    letter-spacing: -0.54px;
+  }
+  .scene :global(.company-page .co-event > span) {
+    font-size: 11px;
+    line-height: 15.4px;
+  }
+}
+.scene :global(.company-page .co-event-heading) {
+  margin-bottom: 48px;
+}
+@media (max-width: 767px) {
+  .scene :global(.company-page .co-event-heading) {
+    margin-bottom: 30px;
+  }
+}
+/* Source page wrapper includes 40px bottom padding at tablet/desktop. */
+
+/* Source motion constants: Title OUT_SNAPPY/.4s, Images IN_OUT_QUART/.8s. */
+.scene :global(.company-page .co-news-image img),
+.scene :global(.company-page .co-news-card h3),
+.scene :global(.company-page .co-event h3) { transition-timing-function: cubic-bezier(.19,1,.22,1); }
+.scene :global(.company-page .co-event:hover img) { transform: none; }
+.scene :global(.company-page .co-controls button) { transition: transform .4s cubic-bezier(.19,1,.22,1), background .2s, color .2s; }
+.scene :global(.company-page .co-controls button:hover) { transform: scale(1.05); }
+.scene :global(.company-page .co-controls button:active),
+.scene :global(.company-page .co-pill:active) { transform: scale(.95); }
+.scene :global(.company-page .co-controls button) { transition: transform .4s cubic-bezier(.19,1,.22,1); }
+
+.scene { overflow-wrap: normal; min-width: 0; scroll-margin-top: 0; }
+.scene :global(h3) { margin: 0; }
+
+
+.scene :global(.home-tech-cards) > article { position: relative; overflow: hidden; border-radius: 12px; color: white; }
+.scene :global(.home-tech-cards) > article h3 { font-family: Zagma, Georgia, serif; }
+.cardMedia { width: 100%; height: 100%; min-height: 0; border-radius: inherit; }
+.scene :global(.home-cover-shade) { pointer-events: none; }
+.stats { overflow: visible; margin-block: 60px; width: 100vw; margin-left: calc(-1 * var(--gutter)); }
+.stats .cardMedia { background: #171717; color: white; }
+.scene :global(.co-event) { text-decoration: none; }
+.scene :global(.co-event-image) { position: relative; }
+.designIntro { margin-block: 120px; }
+.scene :global(.serif-description) { font: 24px/1.2 Zagma, Georgia, serif; }
+.design .slideMedia { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 0; padding: 0; }
+.map { width: 160px; max-width: 40vw; height: auto; margin-top: 16px; border-radius: 12px; }
+.stages { width: calc(100vw - 0px); margin-left: calc(-1 * var(--gutter)); }
+.stages :global(.home-insights-top h3) { font-size: 80px; line-height: .9; letter-spacing: -3.2px; }
+.stages :global(.home-insight-card h3) { font-size: 24px; margin-top: 16px; }
+@media(max-width:767px) {
+ .designIntro { margin-block: 60px; }
+ .scene :global(.serif-description) { font-size: 18px; }
+ .stages :global(.home-insights-top h3) { font-size: 34px; }
+ .stages :global(.home-insight-card h3) { font-size: 24px; }
+}
+
+.design :global(.practice-copy h3) { margin-top: 24px; }
+@media(max-width:767px) { .design :global(.practice-copy h3) { margin-top: 0; } }

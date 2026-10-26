@@ -1,0 +1,13 @@
+/* Materials use the original home.css; only the report gutter is adjusted. */
+.word { display: inline-block; }
+.materials { margin-inline: calc(-1 * var(--gutter)); }
+.carousel { margin-top: 40px; }
+.controls { display: flex; align-items: center; justify-content: flex-end; gap: 12px; margin-bottom: 32px; }
+.controls > button { width: 44px; height: 44px; border-radius: 50%; border: 1px solid #ccc9c5; background: transparent; font: 18px Arial; color: #8f8b87; transition: background .3s; cursor: pointer; }
+.controls > button:hover { background: white; }
+.rail { scrollbar-width: none; padding-bottom: 12px; }
+.rail::-webkit-scrollbar { display: none; }
+.rail > * { flex: 0 0 450px; scroll-snap-align: start; }
+@media (max-width: 767px) {
+  .rail > * { flex-basis: min(100%, 450px); }
+}

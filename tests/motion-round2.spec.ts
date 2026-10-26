@@ -177,13 +177,19 @@ test.describe("source-measured motion regression", () => {
     });
   }
 
-  test("Home mobile selects the reference portrait hero media", async ({ page }) => {
+  test("Home mobile fills the hero with a plain video without player controls", async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto("/", { waitUntil: "domcontentloaded" });
-    const video = page.locator(".home-hero video");
-    await expect.poll(() => video.evaluate(e => (e as HTMLVideoElement).currentSrc)).toContain("Hero_27Sec_responsive.mp4");
-    await expect.poll(() => video.evaluate(e => (e as HTMLVideoElement).videoWidth), { timeout: 10_000 }).toBe(1080);
-    expect(await video.evaluate(e => (e as HTMLVideoElement).videoHeight)).toBe(1920);
+    const film = page.locator(".home-hero video");
+    await expect(film).toHaveAttribute("src", "/assets/home/gayini-aerial-overview.mp4");
+    expect(await film.evaluate(e => (e as HTMLVideoElement).controls)).toBe(false);
+    await expect(page.locator(".home-hero iframe")).toHaveCount(0);
+    const hero = (await page.locator(".home-hero-film").boundingBox())!;
+    const video = (await page.locator(".home-hero video").boundingBox())!;
+    expect(video.width).toBeGreaterThanOrEqual(hero.width);
+    expect(video.height).toBeGreaterThanOrEqual(hero.height - 1);
+    expect(Math.abs(video.x + video.width / 2 - hero.x - hero.width / 2)).toBeLessThan(1);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(390);
   });
 
 });

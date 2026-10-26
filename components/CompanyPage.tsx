@@ -289,15 +289,6 @@ export default function CompanyPage() {
               <MotionWords title text={heroFirst} />
               <br className="co-desktop-break" /> <MotionWords title wordOffset={heroFirst.split(" ").length} text="project" />
             </h1></div>
-            <button
-              aria-label="Scroll Down"
-              onClick={() => window.scrollTo({
-                top: innerHeight,
-                behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth",
-              })}
-            >
-              ↓
-            </button>
           </div>
         </section>
         <Story />

@@ -12,6 +12,8 @@ import {
   type ReactElement,
 } from "react";
 import { Header, Footer } from "./SiteChrome";
+import Film from "./Film";
+import HomeHero from "./HomeHero";
 import AppLink from "./AppLink";
 import partners from "./home-data.json";
 import { insights } from "./insights-data";
@@ -23,36 +25,6 @@ const MotionLink = motion.create(AppLink);
 const sourceEase = [0.19, 1, 0.22, 1] as const;
 const careerTransition = { duration: 0.8, ease: [0.77, 0, 0.175, 1] as const };
 const media = (name: string) => `/assets/home/${name}`;
-function Film({ name, className = "", responsiveName, poster }: { name: string; className?: string; responsiveName?: string; poster?: string }) {
-  const ref = useRef<HTMLVideoElement>(null);
-  const [visible, setVisible] = useState(false);
-  const [playing, setPlaying] = useState(false);
-  const reduced = useReducedMotion();
-  useEffect(() => {
-    const video = ref.current;
-    if (!video) return;
-    if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      video.pause();
-      return;
-    }
-    // Observe once only to reveal media. Native autoplay owns playback;
-    // calling play() here would disable Chromium's offscreen autoplay pause.
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setVisible(true);
-        observer.disconnect();
-      }
-    }, { rootMargin: "200px" });
-    observer.observe(video);
-    return () => observer.disconnect();
-  }, [responsiveName]);
-  return <>
-    <motion.img className={`home-film-poster${poster ? "" : " home-reduced-poster"}`} src={media(poster || `${name}.jpg`)} alt="" initial={false} animate={{opacity:playing && !reduced ? 0 : 1}} transition={{duration:.4,ease:sourceEase}} />
-    <motion.video ref={ref} className={className} src={responsiveName ? undefined : media(name)} muted loop playsInline autoPlay poster={poster ? media(poster) : undefined} preload="auto" aria-hidden="true" tabIndex={-1} onPlay={() => setPlaying(true)} initial={{opacity:0}} animate={{opacity:visible && !reduced ? 1 : 0}} transition={{duration:.4,ease:"linear"}}>
-      {responsiveName && <><source src={media(name)} media="(min-width:768px)" /><source src={media(responsiveName)} /></>}
-    </motion.video>
-  </>;
-}
 
 const PartnerQuote = forwardRef<HTMLQuoteElement, { children: ReactNode }>(function PartnerQuote({ children }, ref) {
   const present = useIsPresent();
@@ -102,10 +74,6 @@ function MotionCopy({
     </Tag>
   );
 }
-const heroIntroWords =
-  "A proposed supply and recovery shelter for Lama Lama Country.".split(" ");
-const titleLineOne = ["Provisions"];
-const titleLineTwo = ["Point"];
 const scaleItems = [
   [
     "Purchased",
@@ -169,13 +137,11 @@ export default function HomePage() {
   const [scale, setScale] = useState(0),
     [partner, setPartner] = useState(0),
     [scaleEntered, setScaleEntered] = useState(false),
-    [introEntered, setIntroEntered] = useState(false),
     [partnerPaused, setPartnerPaused] = useState(false),
     [partnersVisible, setPartnersVisible] = useState(false);
   const scaleSection = useRef<HTMLElement>(null),
     rail = useRef<HTMLDivElement>(null),
     partnerTabs = useRef<HTMLDivElement>(null),
-    hero = useRef<HTMLElement>(null),
     road = useRef<HTMLElement>(null),
     careers = useRef<HTMLDivElement>(null),
     partnerSection = useRef<HTMLElement>(null);
@@ -183,7 +149,6 @@ export default function HomePage() {
   useCarouselMotion(partnerTabs);
   const [careerIndex, setCareerIndex] = useState(0);
   useEffect(() => {
-    const reduced = matchMedia("(prefers-reduced-motion: reduce)");
     const clamp = (value: number) => Math.max(0, Math.min(1, value));
     // Solve the same cubic Bezier used by the source's useTransform easing.
     const ease = (
@@ -208,49 +173,6 @@ export default function HomePage() {
     const update = () => {
       frame = 0;
       const vh = innerHeight;
-      const h = hero.current;
-      if (h) {
-        const y = -h.getBoundingClientRect().top;
-        const shrink = clamp((y - vh) / (vh * 0.5));
-        const target = innerWidth >= 768 ? (innerWidth * 133) / 1440 : 133;
-        const targetScale = target / Math.min(innerWidth, vh);
-        const scale = 1 + (targetScale - 1) * ease(shrink, 0.25, 0.1, 0.25, 1);
-        const clip = (Math.max(innerWidth, vh) - Math.min(innerWidth, vh)) / 2;
-        h.style.setProperty(
-          "--hero-scale",
-          String(reduced.matches ? 1 : scale),
-        );
-        h.style.setProperty(
-          "--hero-clip-x",
-          `${innerWidth > vh ? clip * ease(shrink, 0.19, 1, 0.22, 1) : 0}px`,
-        );
-        h.style.setProperty(
-          "--hero-clip-y",
-          `${innerWidth <= vh ? clip * ease(shrink, 0.19, 1, 0.22, 1) : 0}px`,
-        );
-        h.style.setProperty(
-          "--hero-radius",
-          `${(16 * (1 - clamp((scale - 0.95) / 0.05))) / scale}px`,
-        );
-        h.style.setProperty(
-          "--hero-shade",
-          String(1 - clamp((shrink - 0.35) / 0.65)),
-        );
-        h.style.setProperty("--hero-title-y", `${-Math.min(y, vh * 1.5)}px`);
-        h.style.setProperty(
-          "--hero-title-x",
-          `${innerWidth >= 768 ? clamp(((y + vh - (h.querySelector("h1")?.offsetTop || 0)) / (vh + (h.querySelector("h1")?.offsetHeight || 255)) - 0.5) * 2) * 50 : 0}px`,
-        );
-        h.style.setProperty(
-          "--hero-intro",
-          String(
-            clamp((y / (vh * 1.5) - 0.1) / 0.1) *
-              (1 - clamp((y - vh * 0.875) / (vh * 0.125))),
-          ),
-        );
-        h.style.setProperty("--hero-dot", String(1 - clamp(y / (vh * 0.15))));
-        setIntroEntered(y > vh * 0.225);
-      }
       const r = road.current;
       if (r) {
         const top = r.getBoundingClientRect().top;
@@ -434,54 +356,7 @@ export default function HomePage() {
     <>
       <Header />
       <main className="home-page">
-        <section ref={hero} className="home-hero-scroll">
-          <div className="home-hero">
-            <div className="home-hero-film">
-              <Film name="WAABI_27s_2K_antinomy_export_250823.mp4" responsiveName="Hero_27Sec_responsive.mp4" />
-              <div className="home-hero-shade" />
-            </div>
-            <p className="home-hero-intro">
-              {heroIntroWords.map((word, i) => <span key={i}><motion.span initial={{ opacity: 0 }} animate={{ opacity: reducedMotion || introEntered ? 1 : 0 }} transition={{ duration: .1, ease: "linear", delay: i * .07 }} className="home-intro-word">{word}</motion.span>{i < heroIntroWords.length - 1 ? " " : ""}</span>)}
-            </p>
-            <h1>
-              <span className="home-title-line">
-                {titleLineOne.map((word, i) => (
-                  <span key={word} style={{ animationDelay: `${i * 0.07}s` }}>
-                    {word}
-                    {i < titleLineOne.length - 1 ? " " : ""}
-                  </span>
-                ))}
-              </span>
-              <br />
-              <span className="home-title-line">
-                {titleLineTwo.map((word, i) => (
-                  <span
-                    key={word}
-                    style={{ animationDelay: `${0.07 + i * 0.07}s` }}
-                  >
-                    {word}
-                    {i < titleLineTwo.length - 1 ? " " : ""}
-                  </span>
-                ))}
-              </span>
-            </h1>
-            <a
-              className="home-scroll-dot"
-              href="#our-road"
-              onClick={(event) => {
-                event.preventDefault();
-                window.scrollTo({
-                  top: innerHeight * 1.65,
-                  behavior: matchMedia("(prefers-reduced-motion: reduce)")
-                    .matches
-                    ? "instant"
-                    : "smooth",
-                });
-              }}
-              aria-label="Discover Provisions Point"
-            ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 9v6m-3-3 3 3 3-3" stroke="white" strokeWidth=".9" strokeLinecap="round" strokeLinejoin="round" /></svg></a>
-          </div>
-        </section>
+        <HomeHero />
         <section id="our-road" ref={road} className="home-road">
           <div className="home-road-sticky">
             <div className="home-collage">

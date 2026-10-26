@@ -937,3 +937,32 @@ Supercheap Auto. (2017, February). *How to rapidly deflate your tyres*. https://
 Testa, C. (2026, January 23). *Tropical low forecast to bring heavy rain to northern Cape York, Gulf of Carpentaria*. ABC News. https://www.abc.net.au/news/2026-01-23/tropical-low-heavy-rain-cape-york-gulf-of-carpentaria/106260620
 Todio, E. (n.d.). *Logistics of tourism in Port Stewart in Lama Lama Country*. EWB Challenge. https://ewbchallenge.org/forums/topic/logistics-of-tourism-in-port-stewart-in-lama-lama-country/
 Yintjingga Aboriginal Corporation. (n.d.). *Visiting*. Welcome to Lama Lama Country. https://www.lamalama.org.au/visiting/
+
+
+## Report montage photographs — 26 October 2026
+
+All 17 image placeholders in the montage below the `/report` hero use downloaded real photographs. Slots 0–15 are the surrounding tiles; slot 16 is the centre tile. The Victoria camping photograph is contextual imagery, not a photograph of Warokutal. Photos do not imply endorsement of the proposal.
+
+Images are stored locally as WebP files. Original framing is retained in the files; square tiles crop them with CSS. Source credit is Yintjingga Aboriginal Corporation unless a photographer is named on the source. Annette Ruzicka is credited for the two filenames that identify her. No open reuse licence was stated for the Lama Lama website photographs; attribution does not establish permission. The camping photograph is CC BY-SA 4.0; its resized WebP version retains that licence.
+
+| Slot | Local asset | Description | Credit | Source page | Original image |
+|---|---|---|---|---|---|
+| 0 | `/assets/report/montage/photo-00.webp` | Aerial view of the forested Lama Lama coastline | Yintjingga Aboriginal Corporation | https://www.lamalama.org.au/visiting/ | https://www.lamalama.org.au/wp-content/uploads/2016/08/Visiting-banner.png |
+| 1 | `/assets/report/montage/photo-01.webp` | Unsealed road through open woodland on Lama Lama Country | Annette Ruzicka | https://www.lamalama.org.au/visiting/ | https://www.lamalama.org.au/wp-content/uploads/2016/08/Visiting-banner-3-Photo-Annette-Ruzicka.png |
+| 2 | `/assets/report/montage/photo-02.webp` | Lama Lama rangers talking outdoors beneath trees | Yintjingga Aboriginal Corporation | https://www.lamalama.org.au/visiting/ | https://www.lamalama.org.au/wp-content/uploads/2016/08/Visiting-banner2.png |
+| 3 | `/assets/report/montage/photo-03.webp` | Lama Lama ranger standing among tall wetland reeds | Annette Ruzicka | https://www.lamalama.org.au/lama-lama-rangers/ | https://www.lamalama.org.au/wp-content/uploads/2016/08/Lama-Lama-rangers-banner-Photo-Annette-Ruzicka.png |
+| 4 | `/assets/report/montage/photo-04.webp` | Cattle grazing in open woodland on Lama Lama Country | Yintjingga Aboriginal Corporation | https://www.lamalama.org.au/enterprises/ | https://www.lamalama.org.au/wp-content/uploads/2016/08/MarinaPlainsCow-banner.png |
+| 5 | `/assets/report/montage/photo-05.webp` | Visitors beside a tree-lined waterway on Lama Lama Country | Yintjingga Aboriginal Corporation | https://www.lamalama.org.au/enterprises/ | https://www.lamalama.org.au/wp-content/uploads/2016/08/tourism-banner.png |
+| 6 | `/assets/report/montage/photo-06.webp` | Shaded rainforest creek on Lama Lama Country | Yintjingga Aboriginal Corporation | https://www.lamalama.org.au/rainforests/ | https://www.lamalama.org.au/wp-content/uploads/2016/12/research-rainforests-banner.png |
+| 7 | `/assets/report/montage/photo-07.webp` | Mangrove roots beside a tidal waterway | Yintjingga Aboriginal Corporation | https://www.lamalama.org.au/mangroves/ | https://www.lamalama.org.au/wp-content/uploads/2016/12/mangrove-banner.png |
+| 8 | `/assets/report/montage/photo-08.webp` | Aerial view of a wetland surrounded by forest on Lama Lama Country | Yintjingga Aboriginal Corporation | https://www.lamalama.org.au/special-places/ | https://www.lamalama.org.au/wp-content/uploads/2016/08/Special-Places-banner-1.jpg |
+| 9 | `/assets/report/montage/photo-09.webp` | Rangers reviewing a map during joint park management work | Yintjingga Aboriginal Corporation | https://www.lamalama.org.au/national-parks-joint-management/ | https://www.lamalama.org.au/wp-content/uploads/2016/08/Gav-Parks-Peter-fence-map-130905-6558.jpg |
+| 10 | `/assets/report/montage/photo-10.webp` | Freshwater wetland bordered by trees on Lama Lama Country | Yintjingga Aboriginal Corporation | https://www.lamalama.org.au/annual-wetland-monitoring-freshwater/ | https://www.lamalama.org.au/wp-content/uploads/2016/12/Our-research-freshwater-banner.jpg |
+| 11 | `/assets/report/montage/photo-11.webp` | Green beetle photographed during fauna and flora surveys | Yintjingga Aboriginal Corporation | https://www.lamalama.org.au/fauna-and-flora-surveys/ | https://www.lamalama.org.au/wp-content/uploads/2016/12/flora-and-fauna-banner.png |
+| 12 | `/assets/report/montage/photo-12.webp` | Managed roadside burn beside an unsealed road | Yintjingga Aboriginal Corporation | https://www.lamalama.org.au/monitoring-the-impact-of-fire/ | https://www.lamalama.org.au/wp-content/uploads/2016/12/fire-banner-1.jpg |
+| 13 | `/assets/report/montage/photo-13.webp` | Rocky shoreline and shallow sea on Lama Lama Country | Yintjingga Aboriginal Corporation | https://www.lamalama.org.au/sea-country-indigenous-knowledge-collation/ | https://www.lamalama.org.au/wp-content/uploads/2016/12/Our-research-sea-country-banner.png |
+| 14 | `/assets/report/montage/photo-14.webp` | Ranger examining a coastal site during turtle monitoring | Yintjingga Aboriginal Corporation | https://www.lamalama.org.au/marine-turtles-and-dugongs/ | https://www.lamalama.org.au/wp-content/uploads/2016/12/Our-research-Turtles-banner-2.jpg |
+| 15 | `/assets/report/montage/photo-15.webp` | Forested coastline beside Princess Charlotte Bay | Yintjingga Aboriginal Corporation | https://www.lamalama.org.au/princess-charlotte-bay-bird-surveys/ | https://www.lamalama.org.au/wp-content/uploads/2016/12/PCB-bird-surveys-banner.png |
+| 16 | `/assets/report/montage/photo-16.webp` | Family camping tent at a Great Ocean Road campground in Victoria | KeepActive Australia | https://commons.wikimedia.org/wiki/File:Large_family_camping_tent.jpg | https://upload.wikimedia.org/wikipedia/commons/a/a5/Large_family_camping_tent.jpg |
+
+Full photograph references are included in report block 17.1 and exported to `app/report/report-blocks.json`. The machine-readable image register is `app/report/montage-photos.json`.

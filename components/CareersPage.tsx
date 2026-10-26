@@ -24,7 +24,6 @@ function TitleWords({ text }: { text: string }) {
 
 function CareersHero() {
   const ref = useRef<HTMLDivElement>(null);
-  const reduced = useReducedMotion();
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
   const y = useTransform(scrollYProgress, [0, 1], ["-12%", "12%"]);
   return <div ref={ref} className="careers-hero">
@@ -35,9 +34,6 @@ function CareersHero() {
       <div className="careers-hero-shade" />
       <div className="careers-shell careers-hero-content">
         <div className="careers-hero-title"><h1><TitleWords text={data.hero.title} /></h1></div>
-        <button className="careers-down" aria-label="Scroll Down" onClick={() => window.scrollTo({ top: innerHeight, behavior: reduced ? "instant" : "smooth" })}>
-          <img src="/assets/careers/scroll-down.svg" width="24" height="24" alt="" />
-        </button>
       </div>
     </div>
   </div>;

@@ -1,0 +1,33 @@
+.summaryCopy { text-align: center; }
+.montage :global(img.home-tile), .montage :global(.home-road-center-tile) { object-fit: cover; }
+.photoCredits { position: relative; width: min(720px, calc(100% - 48px)); margin: 0 auto; padding-bottom: 24px; text-align: center; font: 500 12px/1.5 var(--font-sans); color: #595754; }
+.photoCredits a { color: inherit; text-decoration: underline; }
+.summaryCopy h2 { font: inherit; color: #969491; margin: 0 0 18px; letter-spacing: inherit; }
+.summaryCopy h3 { font: inherit; margin: 0 0 24px; letter-spacing: inherit; }
+
+/* Let the centered acknowledgement grow inside the montage. */
+.montage.montage:global(.home-road) { height: auto; min-height: 150vh; }
+.montage.montage > :global(.home-road-sticky) { height: auto; min-height: 150vh; }
+.montage .summaryCopy.summaryCopy {
+  position: relative;
+  left: auto;
+  top: auto;
+  width: min(558px, calc(100% - 80px));
+  margin-inline: auto;
+  /* Bottom padding covers the tile below plus the copy's +200px parallax shift. */
+  padding-block: 45vh 520px;
+  transform: translateY(var(--road-copy-y, 0px));
+}
+/* The index offsets this tile from the top for its short copy; here the copy is
+   taller, so pin the tile to the bottom, in the space reserved under the text. */
+.montage.montage :global(.home-road-center-tile) { top: auto; bottom: 80px; }
+.overview { margin-top: 120px; }
+.overview p + p { margin-top: 28px; }
+@media (max-width: 767px) {
+  .montage .summaryCopy.summaryCopy { padding-bottom: 260px; }
+  .montage.montage :global(.home-road-center-tile) { bottom: 60px; }
+  .overview { margin-top: 80px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .montage .summaryCopy.summaryCopy { transform: none; }
+}
