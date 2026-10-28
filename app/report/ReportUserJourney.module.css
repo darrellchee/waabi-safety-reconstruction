@@ -1,0 +1,75 @@
+/* User journey map – premium animated diagram */
+.wrapper { margin: 40px 0 80px; }
+.card { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.06), 0 8px 40px rgba(0,0,0,.04); }
+.heading { font: 600 clamp(28px, 3.5vw, 44px)/1.15 var(--font-sans); letter-spacing: -.035em; margin: 0 0 12px; color: #191818; }
+.subheading { font: 500 15px/1.5 var(--font-sans); color: #737270; margin: 0 0 40px; }
+
+/* Stage header strip */
+.stageStrip { display: grid; grid-template-columns: 180px repeat(5, 1fr); border-bottom: 1px solid #e9e7e4; }
+.touchpointLabel { padding: 24px 20px 20px; font: 600 13px/1.4 var(--font-sans); letter-spacing: .08em; text-transform: uppercase; color: #737270; background: #faf9f7; border-right: 1px solid #e9e7e4; display: flex; align-items: center; }
+.stageCell { padding: 20px 24px; border-right: 1px solid #e9e7e4; }
+.stageCell:last-child { border-right: none; }
+.stageNumber { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: var(--pink); color: #fff; font: 700 13px/1 var(--font-sans); margin-bottom: 8px; }
+.stageTitle { font: 600 15px/1.3 var(--font-sans); color: #191818; margin: 0; }
+.stageSubtitle { font: 400 13px/1.4 var(--font-sans); color: #737270; margin: 4px 0 0; }
+
+/* Emotion curve area */
+.curveArea { display: grid; grid-template-columns: 180px 1fr; }
+.curveLabels { background: #faf9f7; border-right: 1px solid #e9e7e4; padding: 24px 16px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; }
+.emotionTag {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 20px;
+  border-radius: 9999px;
+  border: 1.5px solid #4a784d;
+  background: #fff;
+  font: 600 13px/1.3 var(--font-sans);
+  color: #191818;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+.emotionTag span { display: block; }
+.satisfiedLabel { font: 600 14px/1.2 var(--font-sans); color: #0b6e4f; align-self: flex-start; }
+.unsatisfiedLabel { font: 600 14px/1.2 var(--font-sans); color: #c03744; align-self: flex-start; }
+.curveCanvas { position: relative; min-height: 240px; padding: 0 24px; overflow: visible; }
+
+/* Journey dots */
+.dot { position: absolute; width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font: 700 15px/1 var(--font-sans); color: #fff; z-index: 2; will-change: transform, opacity; }
+.dotSatisfied { background: #0b6e4f; box-shadow: 0 4px 16px rgba(11,110,79,.35); }
+.dotUnsatisfied { background: #c03744; box-shadow: 0 4px 16px rgba(192,55,68,.35); }
+.dotPulse { position: absolute; inset: -6px; border-radius: 50%; opacity: 0; }
+.dotSatisfied .dotPulse { border: 2px solid #0b6e4f; }
+.dotUnsatisfied .dotPulse { border: 2px solid #c03744; }
+
+/* Detail rows */
+.detailRows { border-top: 1px solid #e9e7e4; }
+.detailRow { display: grid; grid-template-columns: 180px repeat(5, 1fr); border-bottom: 1px solid #e9e7e4; }
+.detailRow:last-child { border-bottom: none; }
+.detailLabel { padding: 20px; font: 600 14.5px/1.4 var(--font-sans); background: #faf9f7; border-right: 1px solid #e9e7e4; display: flex; align-items: flex-start; }
+.detailLabelEvent { color: #191818; }
+.detailLabelBreakthrough { color: #0b6e4f; }
+.detailLabelPain { color: #c03744; }
+.detailCell { padding: 18px 22px; border-right: 1px solid #e9e7e4; font: 400 14.5px/1.6 var(--font-sans); color: #383734; }
+.detailCell:last-child { border-right: none; }
+
+/* SVG curve path */
+.curveSvg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; overflow: visible; }
+.curvePath { fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.curveGradient { fill: none; stroke-width: 12; stroke-linecap: round; opacity: .12; }
+
+/* Responsive */
+@media (max-width: 1023px) {
+  .stageStrip { grid-template-columns: 140px repeat(5, 1fr); }
+  .detailRow { grid-template-columns: 140px repeat(5, 1fr); }
+  .curveArea { grid-template-columns: 140px 1fr; }
+  .touchpointLabel, .detailLabel, .curveLabels { padding: 16px 12px; }
+  .stageCell { padding: 16px 12px; }
+  .detailCell { padding: 12px 10px; font-size: 12px; }
+}
+@media (max-width: 767px) {
+  .card { border-radius: 12px; overflow-x: auto; }
+  .stageStrip, .detailRow { min-width: 900px; }
+  .curveArea { min-width: 900px; }
+}

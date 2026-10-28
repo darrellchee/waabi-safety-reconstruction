@@ -15,10 +15,12 @@ import { Block, ReportProgress, SectionBadge } from "./ReportCodes";
 import { lines, parseTable, splitLabel, status, text, title } from "./blocks";
 
 import { ReportRecommendations } from "./ReportRecommendations";
+import { ReportUserJourney } from "./ReportUserJourney";
 import { ReportTeamCharter } from "./ReportTeamCharter";
 import { ReportMinutes } from "./ReportMinutes";
 import { ReportPrototype } from "./ReportPrototype";
 import { ReportPageHero } from "./ReportPageHero";
+import { ReportAiLogs } from "./ReportAiLogs";
 import { reportNavigation, type ReportPageId } from "./report-navigation";
 
 // Every piece of text on this page comes from REPORT_CONTENT.md through report-blocks.json (see tools/export_report_blocks.py).
@@ -112,7 +114,12 @@ export default function ReportPage({ page = "summary" }: { page?: ReportPageId }
       </ReportSection>
       }
       {page === "other-considerations" && <ReportSection id="other-considerations">
-        <Block code="15.6" status={status("15.6")}><p>{text("15.6")}</p></Block>
+        <Block code="15.6" status={status("15.6")}><p className={styles.considerationsLead}>{text("15.6")}</p></Block>
+        <ReportUserJourney />
+        <p className={styles.considerationsBody}>Visitors arrive near Warokutal during the early wet season, encountering deteriorating unsealed roads and unpredictable weather. Feelings of apprehension and isolation emerge.</p>
+        <p className={styles.considerationsBody}>Flash flooding washes out the road ahead, preventing forward or backward transit. Travellers notice that their mobile devices have no reception and their supplies are limited.</p>
+        <p className={styles.considerationsBody}>Travellers locate the elevated shelter. Clear signage and solar powered lighting offer immediate visual orientation and psychological relief.</p>
+        <p className={styles.considerationsBody}>Visitors buy supplies or hire a recovery kit, PLB or radio. If no Ranger is on site, they use the emergency cabinet to get water and radio for help until conditions improve.</p>
       </ReportSection>}
       {page === "recommendations" && <ReportSection id="recommendations">
         <ReportRecommendations />
@@ -131,6 +138,7 @@ export default function ReportPage({ page = "summary" }: { page?: ReportPageId }
         <Titled code="18.6" />
       </ReportSection>
       }
+      {page === "ai-logs" && <ReportAiLogs />}
     </main>
     <ReportFooter />
   </ReportFrame><ReportProgress /></>;

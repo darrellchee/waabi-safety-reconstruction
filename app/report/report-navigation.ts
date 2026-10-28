@@ -12,6 +12,7 @@ export const reportNavigation = [
   { label: "Supporting Documents", id: "supporting-documents", href: "/supporting-documents" },
   { label: "References", id: "references", href: "/references" },
   { label: "Appendices", id: "appendices", href: "/appendices" },
+  { label: "AI Logs", id: "ai-logs", href: "/ai-logs" },
 ] as const;
 
 export type ReportPageId = typeof reportNavigation[number]["id"];

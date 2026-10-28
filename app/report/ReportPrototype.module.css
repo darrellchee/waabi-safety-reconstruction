@@ -6,7 +6,7 @@
   padding: clamp(48px, 6vw, 96px) 0 clamp(64px, 7vw, 112px);
   color: #191818;
 }
-.purposeRow, .buildRow {
+.purposeRow, .buildRow, .checkRow {
   display: grid;
   align-items: center;
   gap: clamp(28px, 5vw, 80px);
@@ -33,24 +33,62 @@
 .figure a { display: block; border-radius: 12px; overflow: hidden; background: #eeede9; cursor: zoom-in; }
 .figure a:focus-visible { outline: 3px solid #191818; outline-offset: 5px; }
 .figure img { display: block; width: 100%; height: auto; }
-.interiors { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 24px; }
-.interiors .figure a { display: grid; height: clamp(210px, 26vw, 380px); align-items: center; }
-.interiors img { height: 100%; object-fit: contain; }
-.bottomGallery {
+.testing { margin-top: clamp(24px, 3vw, 48px); }
+.testing > p { margin-bottom: clamp(28px, 4vw, 48px); }
+.checkRow {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+  padding-block: clamp(28px, 4vw, 56px);
+  border-top: 1px solid #e4e2dc;
+}
+.checkRowReverse { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); }
+.checkRowReverse .checkCopy { grid-column: 2; grid-row: 1; }
+.checkRowReverse .checkGallery { grid-column: 1; grid-row: 1; }
+.checkCopy { min-width: 0; }
+.checkCopy p { max-width: 42ch; }
+.checkCopy strong, .structureChecks strong {
+  font-weight: 600;
+}
+.checkGallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  min-width: 0;
+}
+.checkGallery .figure a {
+  display: grid;
+  height: clamp(160px, 20vw, 280px);
+  align-items: center;
+}
+.checkGallery img { height: 100%; object-fit: contain; }
+.structureChecks {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
-  margin-top: clamp(48px, 6vw, 96px);
+  gap: clamp(20px, 3vw, 40px);
+  padding: clamp(24px, 3vw, 40px);
+  background: #f7f6f2;
+  border-radius: 12px;
 }
-.bottomGallery .figure a { display: grid; height: clamp(180px, 22vw, 320px); align-items: center; }
-.bottomGallery img { height: 100%; object-fit: contain; }
-.testing { margin-top: clamp(48px, 6vw, 96px); }
-.results { margin-top: 28px; padding: clamp(24px, 3vw, 44px); background: #f2f1ed; border-radius: 12px; }
+.structureChecks p { max-width: none; }
+.results {
+  margin-top: clamp(48px, 6vw, 96px);
+  padding: clamp(24px, 3vw, 44px);
+  background: #f2f1ed;
+  border-radius: 12px;
+}
+.results h2 { margin-bottom: 18px; }
 .results p { max-width: 75ch; }
 @media (max-width: 767px) {
-  .purposeRow, .buildRow, .interiors, .bottomGallery { grid-template-columns: minmax(0, 1fr); }
-  .buildRow .copy, .buildRow .figure { grid-column: auto; grid-row: auto; }
-  .interiors, .bottomGallery { gap: 20px; }
-  .interiors .figure a, .interiors img, .bottomGallery .figure a, .bottomGallery img { height: auto; }
+  .purposeRow, .buildRow, .checkRow, .checkRowReverse, .structureChecks, .checkGallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .buildRow .copy, .buildRow .figure,
+  .checkRowReverse .checkCopy, .checkRowReverse .checkGallery {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .checkRow, .checkRowReverse { gap: 20px; padding-block: 28px; }
+  .checkGallery { gap: 16px; }
+  .checkGallery .figure a, .checkGallery img { height: auto; }
+  .structureChecks { gap: 20px; }
   .copy h2 { margin-bottom: 18px; }
 }

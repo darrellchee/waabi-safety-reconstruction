@@ -704,7 +704,7 @@
    "title": "How it was built",
    "status": "SITE",
    "lines": [
-    "The model was built in Blender. AI was used to generate basic shapes quickly, which were then arranged, resized and assembled into the building. The model uses the same materials as the design: reinforced concrete piles, watertight concrete walls and a corrugated fibre cement roof, on elevated ground."
+    "The model was built in Blender. AI was used to generate basic shapes quickly, which were then arranged, resized and assembled into the building. The model uses the same materials as the design: reinforced concrete piles, watertight concrete walls and a corrugated fibre cement roof, on elevated ground. Each part was then measured in Blender at a 1:1 scale so it could be checked against the design."
    ]
   },
   "12.3": {
@@ -712,9 +712,21 @@
    "title": "Testing",
    "status": "SITE",
    "lines": [
-    "The model was used to check that the layout is logical, that the building’s size stays within budget, and that the recovery kits and supplies fit on the shelves and counter.",
-    "",
-    "The model showed that the building is well supported and sits on higher ground, so it is unlikely to be damaged by floods. The roof sits flush against the walls, and the size of the building matches the cost estimate. The recovery gear and supplies fit inside, although they were modelled simply and are hard to make out in the images. A more detailed model of the interior would be the next step."
+    "The model was measured and checked against the design and cost table:",
+    "Floor area: the footprint was measured at about 85.6 m², more than three times the 24 m² building that was costed.",
+    "Raised floor: the lowest column sections measure about 2 m, matching the design.",
+    "Wall thickness: the walls measure about 19 cm, a realistic thickness for concrete walls.",
+    "Roof fit: checked from all sides, the roof sits flush against the walls with no gaps.",
+    "Storage: the hire kits and supplies fit on the shelves and counter, but the items are hard to identify.",
+    "Match with cost table: spare tyres, a bike stand and fuel appear in the model, but are not part of the design."
+   ]
+  },
+  "12.4": {
+   "section": 12,
+   "title": "Results",
+   "status": "SITE",
+   "lines": [
+    "The model showed that the building is well supported, sits on higher ground and is raised about 2 m, as in the design. The main problem was size. The model is far larger than the 24 m² building that was costed, so the next version will be scaled down to about 6 m by 4 m to match the cost estimate. The interior items will be given more detail, and items that are not part of the design will be removed."
    ]
   },
   "13.1": {
@@ -722,7 +734,7 @@
    "title": "9.1 How will your solution be constructed and how will the community be trained in its construction and use?",
    "status": "SITE",
    "lines": [
-    "First, the project will be constructed on dry land; it will require a crew of four workers and is expected to take eight weeks to complete. Second, regarding site selection and building materials: the structure will be situated on flood-safe terrain, featuring an elevated foundation built on reinforced concrete piles, walls constructed from watertight concrete, and a roof made of corrugated fiber cement. We will also provide the rangers with a four-hour training session on how to use the facility and will leave an instructional manual inside the shelter. The local community provided a warehouse to store materials; upon completion of construction, they offered guidance on maintaining the Ranger and left behind instruction manuals."
+    "First, the project will be constructed on dry land; it will require a crew of four workers and is expected to take eight weeks to complete. Second, regarding site selection and building materials: the structure will be situated on flood-safe terrain, featuring an elevated foundation built on reinforced concrete piles, walls constructed from watertight concrete, and a roof made of corrugated fiber cement. We will also provide the rangers with a four-hour training session on how to use the facility and will leave an instructional manual inside the shelter."
    ]
   },
   "13.2": {
@@ -928,9 +940,9 @@
   "15.6": {
    "section": 15,
    "title": "Other Considerations",
-   "status": "MISSING",
+   "status": "SITE",
    "lines": [
-    "insert"
+    "When introducing remote infrastructure into Lama Lama Country, community and user reactions must be carefully managed. Local stakeholders, including Traditional Owners and rangers, will need to be confident that the project respects the cultural heritage, avoids environmental degradation, and does not encourage unsafe wet season travel."
    ]
   },
   "16.1": {
@@ -1009,7 +1021,6 @@
    "title": "Reference list",
    "status": "SITE",
    "lines": [
-    "2H Media. (2021, October 5). A group of people sitting around a wooden table [Photograph]. Unsplash. https://unsplash.com/photos/Rnd5TjLs0xg (Unsplash License: https://unsplash.com/license); resized, converted to WebP and displayed with a crop.",
     "Aerial view of serene river and forest landscape. (n.d.). [Video]. Pexels. https://www.pexels.com/video/aerial-view-of-serene-river-and-forest-landscape-31914486/",
     "Annette Ruzicka. (n.d.). Lama Lama ranger in wetland reeds [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/lama-lama-rangers/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/08/Lama-Lama-rangers-banner-Photo-Annette-Ruzicka.png",
     "Annette Ruzicka. (n.d.). Road through Lama Lama Country [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/visiting/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/08/Visiting-banner-3-Photo-Annette-Ruzicka.png",
@@ -1033,8 +1044,10 @@
     "Engineers Without Borders Australia. (n.d.). Design area 1: Infrastructure and access. EWB Challenge. https://ewbchallenge.org/challenge/port-stewart-lama-lama/design-area-1-infrastructure-and-access/",
     "Espejo, M. (2025, January 4). Aerial view of expansive wetlands landscape [Video]. Pexels. https://www.pexels.com/video/aerial-view-of-expansive-wetlands-landscape-30081634/",
     "Feasly. (n.d.). Construction cost per square metre in Australia (2026). https://www.feasly.com.au/guides/construction-cost-per-square-metre-australia",
+    "Gillis, D. (2018, January 27). People sitting on chair in front of table while holding pens during daytime [Photograph]. Unsplash. https://unsplash.com/photos/KdeqA3aTnBY (Unsplash License: https://unsplash.com/license); resized, converted to WebP and displayed with a crop.",
     "Google. (2026). Gemini [Large language model]. https://gemini.google.com",
     "Hawaiian Electric. (2025, July 17). Emergency food stock [Photograph]. In Tips for a heart-healthy emergency food supply. https://www.hawaiianelectric.com/powering-hawaiis-future/tips-for-a-heart-healthy-emergency-food-supply",
+    "Henderson, G. (2019, July 8). Woman signing on white printer paper beside woman about to touch the documents [Photograph]. Unsplash. https://unsplash.com/photos/HJckKnwCXxQ (Unsplash License: https://unsplash.com/license); resized, converted to WebP and displayed with a crop.",
     "Hillebrand, S. (n.d.). Cabin with solar panels [Photograph]. Wikimedia Commons. Public domain; resized and converted to WebP, displayed with a crop. https://commons.wikimedia.org/wiki/File:Cabin_with_solar_panels.jpg",
     "KeepActive Australia. (2022, January 30). Large family camping tent [Photograph]. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Large_family_camping_tent.jpg Photo by KeepActive.com.au (https://keepactive.com.au/). CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Resized and converted to WebP; displayed with a crop.",
     "Kepner, L. (2020, October 28). Architectural blueprints with drafting tools [Photograph]. Unsplash. https://unsplash.com/photos/Yn8D5B8C-eY (Unsplash License: https://unsplash.com/license)",

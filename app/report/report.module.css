@@ -196,6 +196,29 @@
 
 /* Compact criteria layout, keeping the shared table colours and typography. */
 .report .criteriaTable { min-width: 640px; margin: 0; }
+
+/* Considerations editorial typography hierarchy matching background page */
+.report .considerationsLead {
+  font: 500 clamp(20px, 1.8vw, 25px)/1.55 var(--font-sans);
+  color: #191818;
+  max-width: 980px;
+  margin: 0 0 52px;
+}
+
+.report .considerationsBody {
+  font: 500 clamp(16px, 1.25vw, 18px)/1.65 var(--font-sans);
+  color: #2b2a28;
+  max-width: 880px;
+  margin: 0;
+}
+
+.report .considerationsBody + .considerationsBody {
+  margin-top: 24px;
+}
+
+/* Large body copy – matches the background-page paragraph style. */
+.bodyLarge { font: 500 18px/1.6 var(--font-sans); color: #191818; margin: 0; }
+.bodyLarge + .bodyLarge { margin-top: 24px; }
 .report .criteriaTable :where(th, td) { padding: 12px 14px; vertical-align: middle; }
 .report .criteriaTable p { margin: 0; }
 .report .criteriaTable p + p { margin-top: 4px; }

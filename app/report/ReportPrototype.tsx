@@ -1,5 +1,5 @@
 import { Block, SectionBadge } from "./ReportCodes";
-import { lines, text, title, status } from "./blocks";
+import { lines, text, title, status, splitLabel } from "./blocks";
 import styles from "./ReportPrototype.module.css";
 
 function PrototypeImage({ number, alt, priority = false }: { number: number; alt: string; priority?: boolean }) {
@@ -16,8 +16,14 @@ function PrototypeImage({ number, alt, priority = false }: { number: number; alt
   </figure>;
 }
 
+function CheckCopy({ line }: { line: string }) {
+  const [label, rest] = splitLabel(line);
+  return <p><strong>{label}</strong>{" "}{rest}</p>;
+}
+
 export function ReportPrototype() {
   const testing = lines("12.3").filter(Boolean);
+  const [intro, floorArea, raisedFloor, wallThickness, roofFit, storage, costMatch] = testing;
   return <section id="prototyping" className={styles.prototype}>
     <SectionBadge n={12} />
     <div className={styles.purposeRow}>
@@ -34,19 +40,36 @@ export function ReportPrototype() {
       </Block>
       <PrototypeImage number={3} alt="Side view of the Blender model showing the building and supporting piles." />
     </div>
-    <div className={styles.interiors}>
-      <PrototypeImage number={4} alt="Interior Blender model showing shelves, a central table and supplies." />
-      <PrototypeImage number={1} alt="Close-up Blender model of recovery gear and supplies on shelving." />
-    </div>
     <Block code="12.3" status={status("12.3")} className={`${styles.copy} ${styles.testing}`}>
       <h2>{title("12.3")}</h2>
-      <p>{testing[0]}</p>
-      <div className={styles.results}><p>{testing[1]}</p></div>
+      <p>{intro}</p>
+      <div className={styles.checkRow}>
+        <div className={styles.checkCopy}><CheckCopy line={floorArea} /></div>
+        <PrototypeImage number={4} alt="Interior Blender model showing shelves, a central table and supplies." />
+      </div>
+      <div className={styles.structureChecks}>
+        <CheckCopy line={raisedFloor} />
+        <CheckCopy line={wallThickness} />
+        <CheckCopy line={roofFit} />
+      </div>
+      <div className={styles.checkRow}>
+        <div className={styles.checkCopy}><CheckCopy line={storage} /></div>
+        <div className={styles.checkGallery}>
+          <PrototypeImage number={1} alt="Close-up Blender model of recovery gear and supplies on shelving." />
+          <PrototypeImage number={7} alt="Interior Blender model showing storage shelves, a work table, bench and chair." />
+        </div>
+      </div>
+      <div className={`${styles.checkRow} ${styles.checkRowReverse}`}>
+        <div className={styles.checkCopy}><CheckCopy line={costMatch} /></div>
+        <div className={styles.checkGallery}>
+          <PrototypeImage number={5} alt="Blender model of stored supplies, including gas cylinders, water containers and cooking equipment." />
+          <PrototypeImage number={6} alt="Blender model of recovery equipment, including a battery, jack and spare tyre." />
+        </div>
+      </div>
     </Block>
-    <div className={styles.bottomGallery}>
-      <PrototypeImage number={5} alt="Blender model of stored supplies, including gas cylinders, water containers and cooking equipment." />
-      <PrototypeImage number={6} alt="Blender model of recovery equipment, including a battery, jack and spare tyre." />
-      <PrototypeImage number={7} alt="Interior Blender model showing storage shelves, a work table, bench and chair." />
-    </div>
+    <Block code="12.4" status={status("12.4")} className={`${styles.copy} ${styles.results}`}>
+      <h2>{title("12.4")}</h2>
+      <p>{text("12.4")}</p>
+    </Block>
   </section>;
 }

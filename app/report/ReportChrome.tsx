@@ -26,8 +26,8 @@ export function ReportHeader({ active }: { active: ReportPageId }) {
   const bar = useRef<HTMLElement>(null);
   const more = useRef<HTMLDivElement>(null);
   const toggle = useRef<HTMLButtonElement>(null);
-  const primary = navigation.filter(item => item.id !== "other-considerations" && item.id !== "recommendations" && item.id !== "supporting-documents" && item.id !== "references" && item.id !== "appendices");
-  const secondary = navigation.filter(item => item.id === "other-considerations" || item.id === "recommendations" || item.id === "supporting-documents" || item.id === "references" || item.id === "appendices");
+  const primary = navigation.filter(item => item.id !== "other-considerations" && item.id !== "recommendations" && item.id !== "supporting-documents" && item.id !== "references" && item.id !== "appendices" && item.id !== "ai-logs");
+  const secondary = navigation.filter(item => item.id === "other-considerations" || item.id === "recommendations" || item.id === "supporting-documents" || item.id === "references" || item.id === "appendices" || item.id === "ai-logs");
   useEffect(() => {
     let frame = 0;
     const updateContrast = () => {

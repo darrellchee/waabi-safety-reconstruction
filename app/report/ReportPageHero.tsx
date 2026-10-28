@@ -11,7 +11,7 @@ const ease = [.19, 1, .22, 1] as const;
 
 // Report-only copy of CareersHero and TitleWords; the reference page stays unchanged.
 export function ReportPageHero({ title, page }: { title: string; page: Exclude<ReportPageId, "summary"> }) {
-  const photo = photos.find(photo => photo.page === (page === "supporting-documents" ? "recommendations" : page))!;
+  const photo = photos.find(photo => photo.page === page) || photos.find(photo => photo.page === "appendices")!;
   const ref = useRef<HTMLDivElement>(null);
   const reduced = useReducedMotion();
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
