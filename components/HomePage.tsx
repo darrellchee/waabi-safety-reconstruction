@@ -93,17 +93,17 @@ const scaleItems = [
 ];
 const collage = [
   "1760006286-kevin-wang-1gwy7no_nr4-unsplash_edited_final.webp",
-  "1761183718-waabi_road1_01902.webp",
-  "1761183902-waabi_exterior_morning_00857.webp",
-  "1761183903-waabi_road2_04462.webp",
-  "1761184004-251006_waabi_val_fakhrutdinova_0214.webp",
-  "1761183902-waabi_road2_05483.webp",
-  "1761183903-waabi_scout_00826.webp",
-  "1760006943-waabi_scout_00286_final.webp",
-  "1761184004-251006_waabi_ashwin_kumar_0866.webp",
-  "1761183902-waabi_portrait_neiel_00646.webp",
-  "1761184005-251006_waabi_lunch_room_0489.webp",
-  "1761183980-waabi_inspection_02285.webp",
+  "1761183718-assignment_road1_01902.webp",
+  "1761183902-assignment_exterior_morning_00857.webp",
+  "1761183903-assignment_road2_04462.webp",
+  "1761184004-251006_assignment_val_fakhrutdinova_0214.webp",
+  "1761183902-assignment_road2_05483.webp",
+  "1761183903-assignment_scout_00826.webp",
+  "1760006943-assignment_scout_00286_final.webp",
+  "1761184004-251006_assignment_ashwin_kumar_0866.webp",
+  "1761183902-assignment_portrait_neiel_00646.webp",
+  "1761184005-251006_assignment_lunch_room_0489.webp",
+  "1761183980-assignment_inspection_02285.webp",
 ];
 const technology = [
   [
@@ -381,7 +381,7 @@ export default function HomePage() {
             </div>
             <img
               className="home-road-center-tile"
-              src={media("1761218404-waabi_inspection_02344.webp")}
+              src={media("1761218404-assignment_inspection_02344.webp")}
               alt=""
             />
             <div className="home-road-copy">
@@ -405,7 +405,7 @@ export default function HomePage() {
               <motion.div className="home-preview-visibility" animate={{opacity:scaleEntered && desktop ? 0 : 1,scale:scaleEntered && desktop ? .6 : 1}}>
               <img
                 className="home-scale-preview"
-                src={media("1761183902-waabi_road2_05483.webp")}
+                src={media("1761183902-assignment_road2_05483.webp")}
                 alt="Concept image: a shelf holding water containers, tins with blank labels and bagged firewood."
               />
               </motion.div>
@@ -476,7 +476,7 @@ export default function HomePage() {
         <section className="home-tech">
           <div className="home-tech-hero">
             <img
-              src={media("1756426717-waabi_road1_00928.webp")}
+              src={media("1756426717-assignment_road1_00928.webp")}
               alt="Concept image: the raised shelter on concrete piles with brown floodwater around the piles under storm clouds."
             />
             <div className="home-cover-shade" />
@@ -507,7 +507,7 @@ export default function HomePage() {
         </section>
         <section className="home-safety">
           <img
-            src={media("1761185044-waabi_road2_05683.webp")}
+            src={media("1761185044-assignment_road2_05683.webp")}
             alt="Concept image: a red dirt road with floodwater across it and a 4WD stopped at the edge."
           />
           <div className="home-cover-shade" />
@@ -684,12 +684,12 @@ export default function HomePage() {
           <div className="home-careers-collage" ref={careers}>
             <AnimatePresence initial={false}>
               {[
-                "1760350326-waabi_portrait_felicia_00336_final.webp",
-                "1760350326-waabi_scout_00761_final.webp",
-                "1761184004-251006_waabi_collab_05_1012_a.webp",
-                "1760350326-waabi_inspection_02613_final.webp",
-                "1760350326-waabi_portrait_felicia_00336_final.webp",
-                "1760350326-waabi_scout_00761_final.webp",
+                "1760350326-assignment_portrait_felicia_00336_final.webp",
+                "1760350326-assignment_scout_00761_final.webp",
+                "1761184004-251006_assignment_collab_05_1012_a.webp",
+                "1760350326-assignment_inspection_02613_final.webp",
+                "1760350326-assignment_portrait_felicia_00336_final.webp",
+                "1760350326-assignment_scout_00761_final.webp",
               ].map((name, i) => {
                 const slot = (i - (careerIndex % 6) + 6) % 6;
                 return slot < 4 ? <motion.div layout key={i} data-slot={slot} className="home-career-frame" exit={{zIndex:0}} transition={reducedMotion ? {duration:0} : {layout:careerTransition,...careerTransition,zIndex:{duration:0}}}>

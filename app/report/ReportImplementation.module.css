@@ -1,0 +1,95 @@
+.implementation {
+  width: calc(100% - var(--gutter) * 2);
+  max-width: 1440px;
+  margin: 0 auto;
+  color: #191818;
+}
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.525fr) minmax(0, .675fr);
+  align-items: start;
+  gap: clamp(32px, 5vw, 88px);
+  padding: clamp(48px, 6vw, 96px) 0;
+  border-top: 1px solid #19181826;
+}
+.row:first-child { border-top: 0; }
+.copy { min-width: 0; }
+.copy h2 {
+  margin: 0 0 28px;
+  font: 400 clamp(28px, 2.8vw, 46px)/1.08 Zagma, Georgia, serif;
+  letter-spacing: -.035em;
+}
+.copy p {
+  margin: 0;
+  font: 400 clamp(16px, 1.25vw, 18px)/1.75 var(--font-sans);
+}
+.gallery {
+  width: 100%;
+  justify-self: end;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 12px;
+  min-width: 0;
+}
+.gallery figure { min-width: 0; margin: 0; }
+.image {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 3;
+  padding: 12px;
+  overflow: hidden;
+  border: 1px solid #dce2d5;
+  border-radius: 12px;
+  background: #fff;
+}
+.image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
+}
+.gallery figcaption {
+  padding-top: 10px;
+  font: 400 13px/1.4 var(--font-sans);
+  color: #595e54;
+}
+.lifecycleRow {
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.3fr);
+  gap: clamp(28px, 4vw, 64px);
+}
+.lifecycleRow .copy h2 { font-size: clamp(28px, 2.45vw, 38px); }
+.lifecycleGallery { gap: 28px 16px; }
+.lifecycleGallery .stageCanvas {
+  padding: 0;
+  border-color: #d5d1ca;
+  background: #faf9f5;
+}
+.stageIllustration { display: block; width: 100%; height: 100%; }
+.figure { fill: none; stroke: #ff286b; stroke-width: 5.5; stroke-linecap: round; stroke-linejoin: round; }
+.props { stroke: #242327; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.ground { stroke: #dedbd4; stroke-width: 2; stroke-linecap: round; }
+.paper { fill: #faf9f5; }
+.accent { stroke: #ff286b; }
+.lens { fill: #e6f0ef; }
+.detail { stroke: #8b8882; stroke-width: 2; }
+.lifecycleGallery figcaption {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr);
+  gap: 4px 8px;
+  padding-top: 12px;
+}
+.stageNumber { grid-row: span 2; color: #ff286b; font-size: 12px; line-height: 22px; }
+.stageTitle { color: #242327; font-size: 15px; line-height: 22px; }
+.stageSubtitle { grid-column: 2; color: #6a665f; font-size: 13px; line-height: 1.45; }
+@media (max-width: 1023px) {
+  .row { grid-template-columns: 1fr; }
+  .gallery { width: 50%; }
+  .lifecycleGallery { width: 100%; }
+}
+@media (max-width: 767px) {
+  .row { gap: 28px; padding-block: 48px; }
+  .copy h2 { margin-bottom: 20px; }
+  .gallery { gap: 20px 8px; }
+  .image { padding: 6px; }
+}

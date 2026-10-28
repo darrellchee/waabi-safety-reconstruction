@@ -1,0 +1,27 @@
+.charter { max-width: 1200px; }
+.charter h3 { font-size: clamp(24px, 2.5vw, 36px); }
+.documentTitle { text-align: center; font-weight: 700 !important; }
+.groupName { margin-block: 32px; }
+.groupName span { display: inline-block; min-width: 200px; text-align: center; border-bottom: 1px solid currentColor; font-weight: 700; }
+.columns { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #ddd; }
+.column { min-width: 0; padding: 28px; }
+.column + .column { border-left: 1px solid #ddd; }
+.charter h4 { margin: 0 0 20px; padding: 16px; background: var(--cream); font: 600 20px/1.4 var(--font-sans); }
+.questions { margin: 0; }
+.questions > div + div { margin-top: 36px; }
+.questions dd { margin: 20px 0 0; }
+.topic + .topic { margin-top: 64px; }
+.signatureLabels, .signatures > div { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 12px; align-items: center; }
+.signatureLabels { margin-top: 32px; font: 500 15px/1.65 var(--font-sans); }
+.signatures { margin: 24px 0 0; }
+.signatures > div + div { margin-top: 28px; }
+.signatures dd { margin: 0; }
+.signature { display: block; position: relative; overflow: hidden; width: 100%; background: white; }
+.charter .signature img { position: absolute; max-width: none; height: auto; }
+
+@media (max-width: 767px) {
+  .columns { grid-template-columns: 1fr; }
+  .column { padding: 20px; }
+  .column + .column { border-left: 0; border-top: 1px solid #ddd; }
+  .signatureLabels, .signatures > div { grid-template-columns: 65px minmax(0, 1fr); }
+}

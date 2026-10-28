@@ -5,7 +5,7 @@ import styles from "./ReportCodes.module.css";
 
 export type Status = "SITE" | "SLIDES" | "DRAFT" | "MISSING" | "MEDIA";
 const STATUSES: Status[] = ["SITE", "SLIDES", "DRAFT", "MISSING", "MEDIA"];
-const OFF_CLASS = "report-codes-off";
+const ON_CLASS = "report-codes-on";
 const WORD_LIMIT = 4000;
 // Section ids for sections 3 to 16 (the body that counts toward the word limit).
 const BODY_IDS = ["group-declaration", "acknowledgement", "project-details", "background", "problem", "criteria", "options", "selection", "design", "prototyping", "implementation", "cost", "other", "recommendations"];
@@ -98,14 +98,17 @@ function measure(): Stats {
 /** Fixed, collapsible progress panel with the show/hide toggle for every badge. */
 export function ReportProgress() {
   const [collapsed, setCollapsed] = useState(true);
-  const [codesOn, setCodesOn] = useState(true);
+  const [codesOn, setCodesOn] = useState(false);
+  const [visible, setVisible] = useState(false);
   const [stats, setStats] = useState<Stats>(empty);
 
   useEffect(() => {
-    if (new URLSearchParams(location.search).get("codes") === "off") setCodesOn(false);
-    setCollapsed(matchMedia("(max-width: 767px)").matches);
+    const params = new URLSearchParams(location.search);
+    const showCodes = params.get("codes") === "on";
+    setCodesOn(showCodes);
+    setVisible(params.get("progress") === "on" || showCodes);
   }, []);
-  useEffect(() => { document.body.classList.toggle(OFF_CLASS, !codesOn); return () => document.body.classList.remove(OFF_CLASS); }, [codesOn]);
+  useEffect(() => { document.body.classList.toggle(ON_CLASS, codesOn); return () => document.body.classList.remove(ON_CLASS); }, [codesOn]);
   useEffect(() => {
     let timer: ReturnType<typeof setTimeout> | undefined;
     const update = () => setStats(measure());
@@ -116,6 +119,8 @@ export function ReportProgress() {
     observer.observe(document.body, { childList: true, characterData: true, subtree: true });
     return () => { observer.disconnect(); clearTimeout(timer); };
   }, []);
+
+  if (!visible) return null;
 
   return <aside className={styles.panel} aria-label="Report progress">
     <div className={styles.bar}>

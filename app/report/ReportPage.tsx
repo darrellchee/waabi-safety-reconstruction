@@ -1,17 +1,23 @@
 import { ReportHeader, ReportFooter } from "./ReportChrome";
-import { ReportFrame, Copy, MaterialsTabs, Placeholder, ReportSection, Paragraphs, Figure, SimpleTable } from "./ReportUI";
+import { ReportFrame, Copy, Placeholder, ReportSection, Paragraphs, SimpleTable } from "./ReportUI";
 import styles from "./report.module.css";
 import { ReportOptions, ReportSelection } from "./ReportSolution";
-import { ReportCriteria, ReportDesign, ReportStages } from "./ReportScenes";
-import { ReportStakeholders } from "./ReportStakeholders";
+import { ReportCriteria } from "./ReportScenes";
+import { ReportBackgroundSlideshow } from "./ReportStakeholders";
 import { ReportHero } from "./ReportHeroMedia";
-import { ReportCost } from "./ReportCost";
+import { ReportCostAnalysis } from "./ReportCostAnalysis";
 import { ReportFinancials } from "./ReportFinancials";
+import { ReportImplementation } from "./ReportImplementation";
+import { ReportDesign } from "./ReportDesign";
 import { ReportMaterials } from "./ReportMaterials";
 import { ReportDetails } from "./ReportDetails";
 import { Block, ReportProgress, SectionBadge } from "./ReportCodes";
 import { lines, parseTable, splitLabel, status, text, title } from "./blocks";
 
+import { ReportRecommendations } from "./ReportRecommendations";
+import { ReportTeamCharter } from "./ReportTeamCharter";
+import { ReportMinutes } from "./ReportMinutes";
+import { ReportPrototype } from "./ReportPrototype";
 import { ReportPageHero } from "./ReportPageHero";
 import { reportNavigation, type ReportPageId } from "./report-navigation";
 
@@ -33,16 +39,22 @@ function Table({ code }: { code: string }) {
 function Cover({ code }: { code: string }) {
   return <Block code={code} status={status(code)} className={styles.coverRow}>{lines(code).map(line => { const [label, value] = splitLabel(line); return <p key={label}><strong>{label}</strong>{" "}<Copy text={value} /></p>; })}</Block>;
 }
+function ReferenceEntry({ entry }: { entry: string }) {
+  return <>{entry.split(/(https?:\/\/[^\s]+)/g).map((part, index) => {
+    if (!part.startsWith("http")) return part;
+    const url = part.replace(/[),.;]+$/, "");
+    return <span key={index}><a href={url} target="_blank" rel="noreferrer">{url}</a>{part.slice(url.length)}</span>;
+  })}</>;
+}
 const range = (section: number, from: number, to: number) => Array.from({ length: to - from + 1 }, (_, i) => `${section}.${from + i}`);
 
 export default function ReportPage({ page = "summary" }: { page?: ReportPageId }) {
-  const buildCosts = parseTable("14.2");
   return <><ReportFrame>
     <ReportHeader active={page} />
     <main>
       {page !== "summary" && <ReportPageHero page={page} title={reportNavigation.find(item => item.id === page)!.label} />}
       {page === "summary" && <>
-      <ReportHero acknowledgement={<><h2>Acknowledgment</h2><Paragraphs text={text("4.1")} /></>}>
+      <ReportHero acknowledgement={<div id="acknowledgement"><h2>Acknowledgment</h2><Paragraphs text={text("4.1")} /></div>}>
         <div id="title-block" className={styles.coverPanel}>
           <SectionBadge n={1} />
           <h2>Cover details</h2>
@@ -60,11 +72,11 @@ export default function ReportPage({ page = "summary" }: { page?: ReportPageId }
             const [question, ...answers] = group.split("\n");
             return <li key={question} className={styles.considerationRow}>
               <span className={styles.considerationNumber} aria-hidden="true" data-nocount="">{String(index + 1).padStart(2, "0")}</span>
-              <h4 className={styles.considerationQuestion} data-counted=""><Copy text={question} /></h4>
+              <h4 className={styles.considerationQuestion} data-counted="">{question}</h4>
               <div className={styles.considerationAnswer}>
                 {answers.length > 1
-                  ? <ol>{answers.map(answer => <li key={answer}><Copy text={answer} /></li>)}</ol>
-                  : <Paragraphs text={answers.join("\n")} />}
+                  ? <ol>{answers.map(answer => <li key={answer}>{answer}</li>)}</ol>
+                  : answers.filter(Boolean).map(answer => <p key={answer}>{answer}</p>)}
               </div>
             </li>;
           })}</ol>
@@ -74,23 +86,17 @@ export default function ReportPage({ page = "summary" }: { page?: ReportPageId }
       <ReportSection id="group-declaration" num={3} title="Group Declaration">
         <Table code="3.1" />
       </ReportSection>
-      <ReportSection id="acknowledgement" num={4} title="Acknowledgment" className={styles.acknowledgement}>
-        <img className={styles.acknowledgementImage} src="/assets/company/1761183960-waabi_portrait_raquel_02880.webp" alt="" loading="lazy" />
-        <div className={styles.acknowledgementShade} />
-        <Block code="4.1" status={status("4.1")} className={styles.fullWidth}><p>EDIT HERE TEXT</p></Block>
-      </ReportSection>
       </>}
       {page === "project-details" && <ReportSection id="project-details" num={5}>
-        <ReportDetails title="Project details" slides={["5.1", "5.2", "5.3", "5.4"].map(code => ({ quote: text(code), name: title(code), code, status: status(code) }))} />
-        <ReportStakeholders />
+        <ReportDetails title="Project details" slides={["5.1", "5.6", "5.2", "5.3"].map(code => ({ quote: text(code), name: title(code), code, status: status(code) }))} />
       </ReportSection>}
       {page === "background" && <>
       <ReportSection id="background" num={6}>
-        <MaterialsTabs heading="Background" intro="" label="Background" idPrefix="background" items={range(6, 1, 9).map(code => [title(code), text(code)])} codes={range(6, 1, 9).map(code => [code, status(code)])} />
-        <Figure code="6.10" src="/assets/company/1761183960-waabi_portrait_raquel_02880.webp" alt="Concept image: red dirt road with floodwater across it and a four-wheel drive stopped at the edge." caption={text("6.10")} />
+        <ReportBackgroundSlideshow slides={range(6, 1, 7).map(code => ({ heading: title(code), paragraph: text(code), code, status: status(code) }))} />
       </ReportSection>
       <ReportSection id="problem" num={7} title="Problem Description">
-        <Titled code="7.1" /><Titled code="7.2" />
+        <Block code="7.2" status={status("7.2")}><Paragraphs text={text("7.2")} /></Block>
+        <Titled code="7.1" />
       </ReportSection>
       <ReportCriteria />
       </>}
@@ -98,32 +104,22 @@ export default function ReportPage({ page = "summary" }: { page?: ReportPageId }
       <ReportOptions />
       <ReportSelection />
       </>}
-      {page === "design" && <ReportDesign images={["1760350326-waabi_washstation_03082_final.webp"]} />}
-      {page === "prototyping" && <ReportSection id="prototyping" num={12} title="Prototyping">
-        <Placeholder id="prototyping-placeholder" name="Prototyping" code="12.1" />
-      </ReportSection>
-      }
-      {page === "implementation" && <ReportSection id="implementation" num={13} title="Implementation">
-        <Titled code="13.1" /><Titled code="13.2" />
-        <Block code="13.3" status={status("13.3")}><ReportStages /></Block>
-      </ReportSection>
-      }
+      {page === "design" && <ReportDesign />}
+      {page === "prototyping" && <ReportPrototype />}
+      {page === "implementation" && <ReportImplementation />}
       {page === "cost" && <ReportSection id="cost" num={14} title="Cost Analysis">
-        <Titled code="14.1" />
-        <ReportCost title={title("14.2")} status={status("14.2")} caption={buildCosts.caption} headings={buildCosts.head} rows={buildCosts.rows} /><Table code="14.3" /><Table code="14.4" />
-        <Placeholder id="maintenance-end-of-life" name="Maintenance and end-of-life costs" code="14.5" />
+        <ReportCostAnalysis />
       </ReportSection>
       }
-      {page === "implementation" && <>
-      <ReportSection id="other" num={15} title="Other considerations">
-        {range(15, 1, 5).map(code => <Titled key={code} code={code} />)}
-      </ReportSection>
-      <ReportSection id="recommendations" num={16} title="Recommendations">
-        <Titled code="16.1" /><Titled code="16.2" />
-      </ReportSection>
-      </>}
+      {page === "other-considerations" && <ReportSection id="other-considerations">
+        <Block code="15.6" status={status("15.6")}><p>{text("15.6")}</p></Block>
+      </ReportSection>}
+      {page === "recommendations" && <ReportSection id="recommendations">
+        <ReportRecommendations />
+      </ReportSection>}
+      {page === "supporting-documents" && <><ReportTeamCharter /><ReportMinutes /></>}
       {page === "references" && <ReportSection id="references" num={17} title="References">
-        <Block code="17.1" status={status("17.1")}><ol className={styles.references}>{lines("17.1").map(entry => <li key={entry}>{entry}</li>)}</ol></Block>
+        <Block code="17.1" status={status("17.1")}><ol className={styles.references}>{lines("17.1").map(entry => <li key={entry}><ReferenceEntry entry={entry} /></li>)}</ol></Block>
       </ReportSection>
       }
       {page === "appendices" && <ReportSection id="appendices" num={18} title="Supporting documentation">

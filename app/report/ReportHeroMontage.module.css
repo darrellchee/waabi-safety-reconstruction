@@ -1,7 +1,5 @@
 .summaryCopy { text-align: center; }
 .montage :global(img.home-tile), .montage :global(.home-road-center-tile) { object-fit: cover; }
-.photoCredits { position: relative; width: min(720px, calc(100% - 48px)); margin: 0 auto; padding-bottom: 24px; text-align: center; font: 500 12px/1.5 var(--font-sans); color: #595754; }
-.photoCredits a { color: inherit; text-decoration: underline; }
 .summaryCopy h2 { font: inherit; color: #969491; margin: 0 0 18px; letter-spacing: inherit; }
 .summaryCopy h3 { font: inherit; margin: 0 0 24px; letter-spacing: inherit; }
 

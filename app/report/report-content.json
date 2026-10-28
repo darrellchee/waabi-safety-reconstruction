@@ -115,24 +115,24 @@
   "options": [
     {
       "title": "3.1. Design option 1: Provisions Point",
-      "text": "The Provisions Point is a flood-resilient facility designed to provide visitors with essential supplies and emergency equipment during wet-season flooding. The proposed structure features an elevated platform, weather-resistant storage facilities, and secure compartments containing drinking water, non-perishable food, first-aid supplies, and vehicle recovery equipment. Personal Locator Beacons (PLBs) and UHF radios would also be available to support emergency communication. This solution aims to improve visitor safety and access to essential resources while creating potential revenue opportunities through equipment rental.",
-      "image": "1761185044-waabi_road2_05683.webp"
+      "text": "The Provisions Point is a small, raised building that stocks drinking water, non-perishable food, first-aid supplies and vehicle recovery gear. Visitors can also hire personal locator beacons (PLBs) and UHF radios to call for help. It is aimed at visitors caught out by wet-season flooding, and it earns income through sales and hire.\n\nThis option suits Warokutal because it can be built on ground that has already been cleared. No new vegetation needs to be removed, and visitors are kept away from culturally restricted areas such as the Alingina Wungku Living Area (Queensland Parks and Wildlife Service [QPWS], 2013). Its main drawbacks are cost and workload. It is the most expensive of the three options to build, and it adds a restocking task for Rangers, who already handle tourism and repairs on top of their other work (Reardon-Smith, 2023).",
+      "image": "1761185044-assignment_road2_05683.webp"
     },
     {
       "title": "3.2. Design option 2: Elevated tent-site platform",
-      "text": "The Elevated Tent-site Platform proposes raised camping platforms designed to reduce visitors' exposure to ground-level flooding and wet conditions. The platforms would provide stable areas for setting up tents, potentially reducing damage to camping equipment and improving camping conditions during periods of heavy rainfall.\n\nThis solution focuses primarily on providing a safer camping environment rather than supplying emergency resources. Its relatively simple design could reduce initial construction costs, while its elevated structure offers improved flood resilience compared with ground-level campsites. However, the platforms would provide limited access to emergency supplies, communication equipment, and vehicle recovery services.",
-      "image": "1761183960-waabi_inspection_02285.webp"
+      "text": "The Elevated Tent-site Platform would raise camping areas off the ground so that tents and gear stay dry during heavy rain. It is simple and fairly cheap to build, and the raised decks handle flooding well. However, it does nothing for visitors who are stranded, as it offers no supplies, communication or vehicle recovery. Building several platforms would also spread construction across the campground, and each one would need checking by Rangers after every wet season.",
+      "image": "1761183960-assignment_inspection_02285.webp"
     },
     {
       "title": "3.3. Design option 3: Distributed emergency checkpoint",
-      "text": "The Distributed Emergency Checkpoint proposes a network of small emergency support stations positioned at selected locations around Warokutal. Each checkpoint could contain basic emergency supplies, safety information, and communication equipment, allowing visitors to access assistance without relying on a single central facility.\n\nBy distributing emergency resources across multiple locations, this solution aims to improve accessibility and provide support to visitors who may become stranded during flooding. The stations could also be adapted to local environmental and community requirements.",
+      "text": "The Distributed Emergency Checkpoint would place several small stations around Warokutal, each with basic supplies, safety information and a radio, so that visitors are not relying on one central building.\n\nHaving stations in several places could mean a stranded visitor has less distance to travel for help. The downside is that each station would need its own approval to make sure it avoids culturally and environmentally sensitive areas (QPWS, 2013). Keeping several sites stocked would also add to the Rangers’ workload. The stations would be too small to hold vehicle recovery gear, and they would bring in little or no income for the community.",
       "image": "1760350326-shutterstock_1058062604_edited_final.webp"
     }
   ],
   "selection": [
     {
       "title": "Ideas A and B",
-      "image": "1761183903-waabi_road2_04462.webp",
+      "image": "1761183903-assignment_road2_04462.webp",
       "text": "Weights are in brackets.\nIdea: A Provisions Point. Culture and Country (3): 5. Low cost (4): 3. Visitor support (5): 4. Feasibility (5): 3. Safety and access (4): 5. Community fit (4): 4. Flood resilience (5): 3. Revenue (3): 5. Total: 128. Rank: 1.\nIdea: B Distributed checkpoints. Culture and Country (3): 4. Low cost (4): 3. Visitor support (5): 3. Feasibility (5): 3. Safety and access (4): 4. Community fit (4): 4. Flood resilience (5): 3. Revenue (3): 1. Total: 104. Rank: 2."
     },
     {
@@ -149,28 +149,28 @@
   "design": [
     {
       "title": "What it is",
-      "image": "1761183902-waabi_road2_04965.webp",
+      "image": "1761183902-assignment_road2_04965.webp",
       "text": "A 24 square metre shelter at Warokutal, planned for ground that is already cleared and above flood level. A site survey must confirm this. It would stand on reinforced concrete piles (Menard Asia, 2025), with the floor planned 2 m above the ground. Walls would be watertight concrete (Leading Architecture, 2024) and the roof corrugated sheeting (material to be confirmed). Inside would be shelves, a counter, a solar panel and a battery. The shelter is unstaffed. Visitors serve themselves and pay by the method YAC sets."
     },
     {
       "title": "Entry, stock and hire items",
-      "image": "1761183937-waabi_garageinterior_03851.webp",
+      "image": "1761183937-assignment_garageinterior_03851.webp",
       "text": "Entry: TEAM TO ADD: confirm the entry type (stairs or ramp) so it matches the prototype.\nStock: drinking water, non-perishable food, firewood and safety information.\nHire items: traction boards for soft ground, a tyre deflation kit (Supercheap Auto, 2017), a 12 V compressor, and shackles with a recovery strap (Bober, 2025). Each kit also holds a personal locator beacon (PLB) and an ultra high frequency (UHF) radio. YAC sets the check-out and payment method. One option is a lockable kit cage with a code given at booking."
     },
     {
       "title": "How a visitor would use it",
-      "image": "1761183980-waabi_road1_01029.webp",
+      "image": "1761183980-assignment_road1_01029.webp",
       "text": "1. Check road conditions on the Cook Shire Council website before travel (Cook Shire Council, 2026).\n2. Arrive at Warokutal and read the safety information at the shelter.\n3. Buy water, food or firewood, or hire a recovery kit if the vehicle is stuck.\n4. In a life-threatening emergency, use the PLB. If radio coverage is confirmed, the UHF radio can reach the Rangers. Then return the kit."
     },
     {
       "title": "Community concerns",
-      "image": "1760350326-waabi_laptop_03392_final.webp",
+      "image": "1760350326-assignment_laptop_03392_final.webp",
       "text": "Ground disturbance. The design uses a small number of drilled piles on cleared ground, not trench footings. No piles are drilled until Traditional Owners and heritage checks agree. Ranger workload. The routine would be one weekly restock in the open season and two inspections a year. Visitor numbers. The stock and kits suit small groups. The design is not for mass tourism. Theft or damage. The team proposes a lockable, raised building for the stock and kits. Fire and waste. Bagged firewood would be sold, and the team will check park rules with YAC and QPWS. A waste plan would be agreed with YAC. Cost. A grant would pay for the build. Sales and hire fees would pay for running costs."
     }
   ],
   "why": "Safety and access: visitors could recover their own vehicles, call for help and get water close by. The Ranger Base is not the only point of help. Flood resilience: the building is raised and made of concrete and steel, so it should need little upkeep after the wet season. An engineer must confirm this. Culture and Country: one hub on cleared ground keeps foot traffic away from restricted sites, and the team proposes that Yintjingga Aboriginal Corporation (YAC) co-designs how it runs.",
-  "optionsIntro": "The team developed four ideas and scored them against the eight criteria. The three highest scoring ideas are the design options below. Screened out: a solar-powered river crossing status beacon scored lowest (91 out of 165). It would warn drivers. TEAM TO ADD: confirm this description.",
-  "selectionIntro": "Each idea was rated from 1 (poor) to 5 (best) against the eight criteria. Each criterion has a weight from 3 to 5, where 5 matters most. Weighted score is rating times weight. The maximum score is 165. Why the weights differ: Visitor support, feasibility and flood resilience carry weight 5, because a shelter that is unusable, impossible to build or flooded fails the brief. Culture and Country has weight 3 in the matrix, but it is also a condition for every option. No option would go ahead without Traditional Owner agreement.",
+  "optionsIntro": "The team developed three options in response to the design problem. Each was looked at in terms of what it would mean for visitors, the Lama Lama Rangers and Traditional Owners. A fourth idea, a solar-powered beacon showing river crossing conditions, was also considered. It scored lowest in the decision matrix, so it is not covered in detail here.",
+  "selectionIntro": "The options were compared using a weighted decision matrix (Table 1). The matrix uses the eight criteria set out in the Design Criteria section. Each option was rated from 1 to 5 using the scale in Table 2, and each rating was multiplied by the weighting for that criterion.",
   "student": "The design is a student proposal. It is for the Yintjingga Aboriginal Corporation to review, change or reject.",
   "keywords": "flood resilience, visitor safety, vehicle recovery, remote tourism, Warokutal, Lama Lama Country, Cape York, self-funding running costs, cultural protocols",
   "considerations": [
@@ -183,7 +183,7 @@
     "Next steps: co-design with YAC, a site survey, engineering design, and checks on beacon hire rules and radio coverage."
   ],
   "currentPractice": "Current practice is simple. Visitors check road conditions on the Cook Shire Council website before they travel (Cook Shire Council, 2026). They bring their own recovery equipment, because there is no alternative. The Ranger Base at Port Stewart is the one staffed safety point named for the area.\nHeading: Why it is not enough\nA visitor whose vehicle is stuck, or whose supplies run low, has no nearby source of equipment, water or safety information. Rangers cannot cover every site. The team wants a simple, flood-resistant supply point at Warokutal.",
-  "prototype": "Heading: Prototype\nWhat and why: The team built a 3D model in Blender to show what the shelter looks like inside and out. The tests below are planned and have not been run.\nHow built: The model shows the building on piles, the entry, the roof, and the interior shelves with water, canned food, firewood, safety flyers and PLBs. TEAM TO ADD: confirm whether medicines are stocked, because the Blender model includes them.\nPicture: TEAM TO ADD: Blender screenshots of the prototype\n\nPlanned tests:\n\n| Test | Method | Pass mark | Result |\n|---|---|---|---|\n| Flood clearance | Raise a water level in the model to 0.5, 1.0, 1.5 and 2.0 m | Floor and stock stay dry at 1.5 m | Pending. TEAM TO ADD: result |\n| Stock fit | Place 2 kits, 240 L of water, 120 cans and 8 firewood bags on the shelves | All items fit and a walkway stays clear | Pending. TEAM TO ADD: result |\n| Entry | Check entry slope or stair rise and door width | Easy entry with a loaded trolley | Pending. TEAM TO ADD: result |\n| Walk-through | 3 to 5 people find an item and plan a kit hire from the model | Most find items in under 1 minute | Pending. TEAM TO ADD: result |\n\nChanges made after testing: No changes yet. Tests are not complete. TEAM TO ADD: changes after testing.\nFull test results: Appendix 4.",
+  "prototype": "Purpose\nThe prototype was made to show what the Provisions Point would look like and to check that its layout works in the space available.\n\nHow it was built\nThe model was built in Blender. AI was used to generate basic shapes quickly, which were then arranged, resized and assembled into the building. The model uses the same materials as the design: reinforced concrete piles, watertight concrete walls and a corrugated fibre cement roof, on elevated ground.\n\nTesting\nThe model was used to check that the layout is logical, that the building’s size stays within budget, and that the recovery kits and supplies fit on the shelves and counter.\n\nThe model showed that the building is well supported and sits on higher ground, so it is unlikely to be damaged by floods. The roof sits flush against the walls, and the size of the building matches the cost estimate. The recovery gear and supplies fit inside, although they were modelled simply and are hard to make out in the images. A more detailed model of the interior would be the next step.",
   "costRows": [
     [
       "Frame, walls, roof",

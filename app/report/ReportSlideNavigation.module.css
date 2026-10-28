@@ -1,0 +1,22 @@
+.markers { display: flex; flex-direction: row; align-items: flex-end; justify-content: center; }
+.marker { position: relative; display: grid; align-items: end; justify-items: center; width: 24px; height: 64px; padding: 0; border: 0; border-radius: 6px; background: transparent; color: #191818; cursor: pointer; }
+.markerLine { width: 3px; height: var(--marker-length, 9px); background: #d2d2d2; transition: height .2s ease; }
+.marker:is(:hover, :focus-visible) { --marker-length: 28px; }
+.marker:has(+ .marker:is(:hover, :focus-visible)),
+.marker:is(:hover, :focus-visible) + .marker { --marker-length: 22px; }
+.marker:has(+ .marker + .marker:is(:hover, :focus-visible)),
+.marker:is(:hover, :focus-visible) + .marker + .marker { --marker-length: 15px; }
+.marker[aria-current="step"] .markerLine, .marker:hover .markerLine, .marker:focus-visible .markerLine { background: #191818; }
+.marker:focus-visible { outline: 2px solid #53684a; outline-offset: 2px; }
+.markerTooltip { position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%); visibility: hidden; padding: 8px 12px; border: 1px solid #dedede; border-radius: 10px; background: #fff; color: #191818; box-shadow: 0 4px 16px #19181814; white-space: nowrap; pointer-events: none; z-index: 10; }
+.marker:hover .markerTooltip, .marker:focus-visible .markerTooltip { visibility: visible; }
+.markers.vertical { flex-direction: column; align-items: flex-start; flex-basis: auto; order: 0; }
+.vertical .marker { width: 40px; height: 24px; align-items: center; justify-items: start; }
+.vertical .markerLine { width: var(--marker-length, 9px); height: 3px; transition: width .2s ease; }
+.vertical .markerTooltip { top: 50%; bottom: auto; left: calc(100% + 8px); transform: translateY(-50%); }
+@media (prefers-reduced-motion: reduce) {
+  .markerLine, .vertical .markerLine { transition: none; }
+}
+@media (max-width: 480px) {
+  .markers { order: 1; flex-basis: 100%; }
+}

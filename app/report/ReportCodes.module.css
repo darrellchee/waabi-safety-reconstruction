@@ -24,10 +24,10 @@
 .badge.inline { position: static; display: block; width: fit-content; margin: 0 0 6px; }
 .badge.fixed { position: absolute; left: 8px; }
 
-:global(body.report-codes-off) .badge { display: none; }
+:global(body:not(.report-codes-on)) .badge { display: none; }
 /* codes off: no strip */
-:global(body.report-codes-off) .pad { padding-top: 0; }
-:global(body.report-codes-off) .above { padding-top: 0; }
+:global(body:not(.report-codes-on)) .pad { padding-top: 0; }
+:global(body:not(.report-codes-on)) .above { padding-top: 0; }
 
 .panel {
   position: fixed; right: 12px; bottom: 12px; z-index: 2000;

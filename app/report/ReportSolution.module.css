@@ -1,8 +1,54 @@
 /* Base layout, typography and motion come from the Safety page styles. */
 .options, .selection { overflow-wrap: normal; scroll-margin-top: 150px; }
+.selection .selectionHeading { flex-direction: column; gap: 32px; }
+.selectionHeading > :global(.serif-description) { width: 100%; max-width: 900px; padding-top: 0; }
 .selection :global(.technology-panel):focus-within { outline: 2px solid var(--pink); outline-offset: 3px; }
+.ratingDetails { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 40px; margin-bottom: 40px; }
+.ratingScale { min-width: 0; }
+.ratingScale table { width: 100%; table-layout: fixed; border-collapse: collapse; font: 18px/1.5 var(--font-sans); }
+.ratingScale th, .ratingScale td { border: 1px solid #191818; padding: 8px 12px; text-align: left; vertical-align: top; }
+.ratingScale thead th { font-weight: 600; }
+.ratingScale tr > :first-child { width: 80px; }
+.ratingScale tbody th { font-weight: 400; }
+.ratingScale caption { caption-side: bottom; text-align: left; padding-top: 16px; }
+.weightingExplanation { min-width: 0; margin: 0; font: 16px/1.6 var(--font-sans); }
+.optionRatings { margin-top: 48px; container-type: inline-size; }
+.optionRating { --table-growth: min(25vh, max(0px, calc((100cqw - 40px) / 2 - 240px))); display: grid; grid-template-columns: minmax(0, calc((100% - 40px) / 2 + var(--table-growth))) minmax(0, 1fr); align-items: start; gap: 24px 40px; padding-block: 40px; }
+.optionRating { border-top: 1px solid #e7e5e2; }
+.selection .optionRatingHeading { grid-column: 1 / -1; margin: 0; font-size: clamp(20px, 2vw, 28px); line-height: 1.25; letter-spacing: -.3px; }
+.optionLink { color: #168044; text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; border-radius: 3px; white-space: nowrap; }
+.optionLink:hover { color: #0c582d; text-decoration-thickness: 2px; }
+.optionLink:focus-visible { outline: 2px solid #168044; outline-offset: 4px; }
+.optionRating > *, .optionRatingText { min-width: 0; }
+.reasonsTable { width: 100%; table-layout: fixed; border-collapse: collapse; font: 16px/1.5 var(--font-sans); }
+.reasonsTable th, .reasonsTable td { border: 1px solid #191818; padding: 8px; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.reasonsTable thead th { font-weight: 600; }
+.reasonsTable .criterionColumn { width: calc((100cqw - 40px) / 2 * .3 + var(--table-growth) / 5); }
+.reasonsTable .scoreColumn { width: calc((100cqw - 40px) / 2 * .16); }
+.reasonsTable tbody th { font-weight: 400; }
+.reasonsTable td:nth-child(2) { text-align: center; }
+.reasonsTable caption { caption-side: bottom; padding-top: 16px; text-align: left; }
+.optionRating p { margin-top: 24px; font: 18px/1.6 var(--font-sans); }
+.optionRatingText > :first-child > p:first-of-type { margin-top: 0; }
+.selection .selectionConclusion { margin: 48px 0 0; font-size: clamp(24px, 2.6vw, 36px); line-height: 1.5; letter-spacing: -.5px; }
+.conclusionUnderline { padding-bottom: 4px; background-image: linear-gradient(#168044, #168044); background-repeat: no-repeat; background-position: left bottom; background-size: 100% 2px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+@media (min-width: 1024px) {
+  .optionRatingHeading { white-space: nowrap; }
+}
+@media (max-width: 767px) {
+  .ratingDetails { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .optionRating { --table-growth: 0px; grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .optionRatingText:empty { display: none; }
+  .reasonsTable .criterionColumn { width: 30%; }
+  .reasonsTable .scoreColumn { width: 16%; }
+}
 
 .options .overviewHeading { margin-top: 48px; }
+.overview :global(.story-copy) p { font-size: clamp(18px, 1.6vw, 22px); font-weight: 400; color: #000; line-height: 1.6; margin-top: 0; }
+
+.overview :global(.story-visual-inner) { background: #f4f3eb; }
+.overviewDiagram { position: absolute; inset: 0; }
+.optionDiagram { display: block; width: 100%; height: 100%; background: #f4f3eb; }
 
 /* Give the longer design options room without changing the overview story. */
 .designOptions :global(.story-copy) h3 { max-width: none; }
@@ -16,4 +62,17 @@
   .designOptions :global(.story-copy-content) { overflow-wrap: anywhere; }
   .designOptions :global(.story-visual) { flex: 1; min-width: 0; width: 0; }
   .designOptions :global(.story-visual-frame) { width: min(88%, 560px, calc(68svh * 525 / 600)); }
+}
+
+@media (max-width: 767px) {
+  .overview :global(.story-copies) { scroll-snap-type: x mandatory !important; }
+  .overview :global(.story-copy) { scroll-snap-align: center; }
+}
+
+.slideNavigation { display: flex; justify-content: center; }
+@media (min-width: 768px) {
+  .options :global(.story-counter-positioner) { flex-direction: column; gap: 24px; }
+}
+@media (max-width: 767px) {
+  .slideNavigation { order: 2; margin-top: 16px; }
 }

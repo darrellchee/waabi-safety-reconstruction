@@ -1,0 +1,122 @@
+.design {
+  width: calc(100% - var(--gutter) * 2);
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 0;
+  color: #191818;
+}
+.summary {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: clamp(56px, 7vw, 112px) 0;
+}
+.summary p {
+  font: 400 clamp(23px, 2.1vw, 32px)/1.45 Zagma, Georgia, serif;
+  letter-spacing: -.025em;
+}
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.35fr);
+  align-items: start;
+  gap: clamp(32px, 5vw, 88px);
+  padding: clamp(48px, 6vw, 96px) 0;
+  border-top: 1px solid #19181826;
+}
+.copy { min-width: 0; }
+.copy h2 {
+  margin: 0 0 28px;
+  font: 400 clamp(32px, 3.2vw, 52px)/1.08 Zagma, Georgia, serif;
+  letter-spacing: -.035em;
+}
+.copy p {
+  max-width: 62ch;
+  font: 400 clamp(16px, 1.25vw, 18px)/1.75 var(--font-sans);
+}
+.communityRow { grid-template-columns: 1fr; }
+.communityRow ul {
+  max-width: 62ch;
+  padding-left: 1.25em;
+  font: 400 clamp(16px, 1.25vw, 18px)/1.75 var(--font-sans);
+}
+.communityRow li + li { margin-top: 12px; }
+.structureRow .copy, .stockRow .copy { max-width: 860px; }
+.structureRow .copy p, .stockRow .copy p { max-width: none; }
+.structureVisuals { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 20px 12px; min-width: 0; }
+.exterior, .structureConcept { grid-column: span 3; min-width: 0; }
+.structureCard { grid-column: span 2; min-width: 0; }
+.structureImage, .equipmentImage { display: grid; place-items: center; aspect-ratio: 4 / 3; padding: 12px; border: 1px solid #dce2d5; border-radius: 12px; background: #fff; overflow: hidden; }
+.structureImage img, .equipmentImage img { display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; }
+.design figure { margin: 0; }
+.exterior img, .structureConcept img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; border-radius: 12px; background: #f3f5ef; }
+.design figcaption {
+  padding-top: 10px;
+  font: 400 13px/1.4 var(--font-sans);
+  color: #595e54;
+}
+.stockGrid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 20px 12px; min-width: 0; }
+.stockCard { grid-column: span 4; min-width: 0; }
+.equipmentCard { grid-column: span 3; }
+.crop { overflow: hidden; aspect-ratio: 4 / 5; border-radius: 10px; background: #eef0e9; }
+.crop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--image-origin);
+  transform: scale(var(--image-scale));
+  transform-origin: var(--image-origin);
+}
+.how { padding-top: 0; border-top: 0; }
+.how .copy, .how .copy p { max-width: none; width: 100%; }
+.scrollScene { width: 100vw; margin-left: calc(50% - 50vw); position: relative; height: calc(var(--step-height, 0px) + var(--step-travel, 0px)); background: #e9e7e4; }
+.how .carousel { position: sticky; top: var(--step-nav, 56px); width: 100%; margin: 0; background: #e9e7e4; }
+.railViewport { overflow: clip; touch-action: pan-y; }
+.how .carousel :global(.home-insight-card h3) { margin: 14px 0 0; color: #000; display: block; min-height: 0; overflow: visible; -webkit-line-clamp: unset; }
+@media (max-width: 1023px) {
+  .row { grid-template-columns: 1fr; }
+  .copy p { max-width: 75ch; }
+  .structureVisuals, .stockGrid { width: 100%; }
+}
+@media (max-width: 767px) {
+  .summary { padding-block: 48px; }
+  .row { gap: 28px; padding-block: 48px; }
+  .copy h2 { margin-bottom: 20px; }
+  .stockGrid { gap: 20px 8px; }
+  .equipmentImage { padding: 6px; }
+  .crop { aspect-ratio: 1; }
+  .structureVisuals { gap: 20px 8px; }
+  .structureImage { padding: 6px; }
+}
+
+.how .carousel :global(.home-insights) { padding: 5vh 0 0; overflow: visible; }
+.how .carousel :global(.home-insights-top) { margin: 0 0 5vh; }
+.how .carousel :global(.home-insights-rail) { gap: 16px; padding-block: 56px; overflow: visible; scroll-snap-type: none; will-change: transform; }
+.how .carousel :global(.home-insight-card) { position: relative; border-bottom: 0; padding-bottom: 0; }
+.stepConnector { position: absolute; right: -48px; width: 80px; height: 60px; overflow: visible; pointer-events: none; z-index: 1; stroke: #ff286b; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+.connectorTop { top: -52px; }
+.connectorBottom { bottom: -52px; transform: scaleY(-1); }
+.stepCanvas { background: #faf9f5; border: 1px solid #d5d1ca; }
+.stepIllustration { display: block; width: 100%; height: 100%; pointer-events: none; }
+.stickFigure { fill: none; stroke: #ff286b; stroke-width: 5.5; stroke-linecap: round; stroke-linejoin: round; }
+.illustrationProps { stroke: #242327; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.illustrationGround { stroke: #dedbd4; stroke-width: 2; stroke-linecap: round; }
+.illustrationPaper, .illustrationHead { fill: #faf9f5; }
+.illustrationAccent { stroke: #ff286b; }
+.illustrationDetail { stroke: #8b8882; stroke-width: 2; }
+.illustrationLens { fill: #e6f0ef; }
+.pinkCoin { fill: #ff286b; }
+.coinMark { stroke: #faf9f5; stroke-width: 2.5; }
+.stepProgress { height: 2px; margin: 5vh var(--home-gutter) 0; background: #c9c6c2; overflow: hidden; }
+.stepProgress > div { width: 100%; height: 100%; background: #ff286b; transform-origin: left; }
+
+.how .carousel .howIntro { display: flex; flex-direction: column; align-items: stretch; gap: 5vh; margin: 0; }
+.how .carousel .howIntro h2 { margin: 0; width: 100%; max-width: none; font-size: clamp(32px, 3.2vw, 52px); line-height: 1.08; }
+.how .carousel .howIntro p { margin: 0; max-width: none; width: 100%; color: #000; font: 400 clamp(20px, 1.8vw, 26px)/1.45 var(--font-sans); }
+
+@media (prefers-reduced-motion: reduce) {
+  .stepProgress { display: none; }
+  .scrollScene { height: auto; }
+  .how .carousel { position: static; }
+  .how .carousel :global(.home-insights-rail) { flex-direction: column; padding-block: 0; transform: none; will-change: auto; }
+  .stepConnector { display: none; }
+  .how .carousel :global(.home-insight-card) { flex: none; width: 100%; }
+}

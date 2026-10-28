@@ -1,0 +1,10 @@
+.figure { margin: 0; width: 100%; padding: 20px; border: 1px solid #d9dfd2; border-radius: 16px; background: #f5f6ef; color: #293526; }
+.heading { display: flex; gap: 12px; align-items: baseline; font: 500 16px/1.4 var(--font-sans), sans-serif; }
+.heading span { color: #66785b; font-size: 12px; }
+.diagram { display: block; width: 100%; height: auto; margin: 12px 0; overflow: hidden; font: 19px var(--font-sans), sans-serif; fill: #293526; }
+.small { font-size: 16px; fill: #5c6c52; }
+.emphasis { font-size: 23px; font-weight: 600; }
+.stepTitle { font-size: 20px; font-weight: 500; }
+@media (max-width: 767px) {
+  .figure { padding: 14px; }
+}

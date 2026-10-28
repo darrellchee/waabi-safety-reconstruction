@@ -133,10 +133,10 @@ function Story() {
   );
 }
 const portraits = [
-  "1761188599-251006_waabi_ashwin_kumar_0866.webp",
-  "1761700499-251006_waabi_collab_02_0612.webp",
-  "1761700304-251006_waabi_saloni_mulani_0355-1.webp",
-  "1761183937-waabi_portrait_dave_00283.webp",
+  "1761188599-251006_assignment_ashwin_kumar_0866.webp",
+  "1761700499-251006_assignment_collab_02_0612.webp",
+  "1761700304-251006_assignment_saloni_mulani_0355-1.webp",
+  "1761183937-assignment_portrait_dave_00283.webp",
 ];
 /** Native FLIP equivalent of the reference's two-slot AnimatePresence layout. */
 function PeoplePortraits() {
@@ -280,7 +280,7 @@ export default function CompanyPage() {
       <main className="company-page">
         <section ref={heroRef} className="co-hero">
           <img
-            src={A + "1760350326-waabi_washstation_03082_final.webp"}
+            src={A + "1760350326-assignment_washstation_03082_final.webp"}
             alt="Concept image: aerial view of a raised concrete supply shelter in a cleared bush campground in the dry season."
           />
           <div className="co-hero-shade" />
@@ -295,7 +295,7 @@ export default function CompanyPage() {
         <section ref={quoteRef} className="co-quote">
           <div className="co-quote-frame">
             <img
-              src={A + "1761183960-waabi_portrait_raquel_02880.webp"}
+              src={A + "1761183960-assignment_portrait_raquel_02880.webp"}
               alt="Concept image: red dirt road with floodwater across it and a four-wheel drive stopped at the edge."
             />
             <div className="co-quote-shade" />

@@ -1,21 +1,16 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { motion } from "motion/react";
-import { lines, splitLabel, status, text, title } from "./blocks";
+import { lines, splitLabel, status, title } from "./blocks";
 import { useCarouselMotion } from "../../components/useCarouselMotion";
 import { useReducedMotion } from "../../components/useReducedMotion";
-import { Copy, Figure, MediaReplacement } from "./ReportUI";
+import { Copy, MediaReplacement } from "./ReportUI";
 import { Block, SectionBadge } from "./ReportCodes";
 import styles from "./ReportScenes.module.css";
+import reportStyles from "./report.module.css";
 import "../../components/company.css";
 
-function Text({ text }: { text: string }) {
-  return <>{text.split("\n").map((line, i) => <p key={i}><Copy text={line} /></p>)}</>;
-}
-function Controls({ label, move }: { label: string; move: (direction: number) => void }) {
-  return <div className="co-controls">{[-1, 1].map(direction => <motion.button key={direction} whileHover={{ scale: 1.05 }} whileTap={{ scale: .95 }} aria-label={`${direction < 0 ? "Previous" : "Next"} ${label}`} onClick={() => move(direction)}>{direction < 0 ? "←" : "→"}</motion.button>)}</div>;
-}
 /** Block 2.7: three stat cards, one md line each ("2 m: Planned floor height ..."). */
 export function ReportStats() {
   const reduced = useReducedMotion();
@@ -23,30 +18,28 @@ export function ReportStats() {
     <MediaReplacement className={`home-film-poster ${styles.cardMedia}`} /><div className="home-cover-shade" /><div><p>{label}</p><h3 data-counted="">{number.replace(/:$/, "")}</h3></div>
   </motion.article>; })}</div></div></div>;
 }
-/** Blocks 8.1 to 8.8: one card each. The first md line ("Criterion 1: Safety and access") is the card's number and heading. */
+/** Blocks 8.1 to 8.8: criterion, description and justification in screenshot order. */
 export function ReportCriteria() {
-  const rail = useRef<HTMLDivElement>(null);
-  useCarouselMotion(rail);
-  const codes = Array.from({ length: 8 }, (_, i) => `8.${i + 1}`);
-  return <section id="criteria" className={styles.scene}><div className="company-page"><div className="co-events"><div className="co-width"><SectionBadge n={8} /><div className="co-event-heading"><h2>Design Criteria</h2><Controls label="criteria" move={direction => rail.current?.scrollBy({ left: direction * ((rail.current.firstElementChild as HTMLElement)?.clientWidth + 24), behavior: "smooth" })} /></div><div className="co-events-track" ref={rail} role="region" aria-label="Design criteria" tabIndex={0}>{codes.map((code, i) => { const [number, heading] = splitLabel(lines(code)[0]); return <Block as="article" className="co-event" code={code} status={status(code)} key={code}><div className="co-event-image">{i === 2 && <MediaReplacement className={styles.cardMedia} />}<time>{number}</time></div><h3 data-counted="">{heading}</h3><span><Copy text={lines(code).slice(1).join(" ")} /></span></Block>; })}</div></div></div></div></section>;
-}
-/** Section 11: intro blocks 11.1 and 11.2, the four slides 11.3 to 11.6, then the figures 11.7 and 11.8. */
-export function ReportDesign({ images }: { images: string[] }) {
-  const rail = useRef<HTMLDivElement>(null);
-  const [slide, setSlide] = useState(0);
-  const reduced = useReducedMotion();
-  useCarouselMotion(rail);
-  const slides = ["11.3", "11.4", "11.5", "11.6"];
-  return <section id="design" className={`${styles.scene} ${styles.design}`}><div className="safety-page">
-    <div className={`container section-space ${styles.designIntro}`}><div className="section-heading"><div><SectionBadge n={11} /><h2>Detailed Design</h2></div><div className="technology-intro"><h3>{title("11.1")}</h3><Block as="p" className="serif-description" code="11.1" status="SITE"><Copy text={text("11.1")} /></Block><Block as="p" code="11.2" status="SITE"><Copy text={text("11.2")} /></Block></div></div></div>
-    <div className="practices" aria-label="How Provisions Point would work"><div className="practice-slides" ref={rail} onScroll={event => setSlide(Math.round(event.currentTarget.scrollLeft / event.currentTarget.clientWidth))} role="region" aria-label="detailed design" tabIndex={0}>{slides.map((code, i) => <Block as="article" className="practice-slide" code={code} status={status(code)} key={code}>
-      <MediaReplacement className={styles.slideMedia} /><div className="practice-shade" /><div className={`container practice-copy ${styles.slideCopy}`}><div className="practice-counter" data-nocount="">0{i + 1}<small>/4</small></div><h3>{title(code)}</h3><Text text={text(code)} /></div>
-    </Block>)}</div><div className="practice-controls">{[-1, 1].map(direction => <motion.button key={direction} whileHover={{ scale: 1.05 }} whileTap={{ scale: .95 }} className="circle-button" aria-label={`${direction < 0 ? "Previous" : "Next"} detailed design`} onClick={() => rail.current?.scrollBy({ left: direction * rail.current.clientWidth, behavior: reduced ? "instant" : "smooth" })}>{direction < 0 ? "←" : "→"}</motion.button>)}</div><div className="practice-dots">{slides.map((code, i) => <button key={code} aria-label={`Show ${title(code)}`} aria-current={slide === i} onClick={() => rail.current?.scrollTo({ left: i * rail.current.clientWidth, behavior: reduced ? "instant" : "smooth" })} />)}</div></div>
-    <div className="container section-space">
-      <Figure code="11.7" src={`/assets/company/${images[0]}`} alt="Concept image: aerial view of a raised shelter in a cleared bush campground in the dry season." caption={text("11.7")} />
-      <Figure code="11.8" src="/assets/report/insert-image.svg" alt="(change to our assignment content)" caption={text("11.8")} />
+  const codes = ["8.5", "8.6", "8.3", "8.4", "8.1", "8.7", "8.2", "8.8"];
+  return <section id="criteria" className={`${styles.scene} ${styles.criteria}`}><div className="company-page"><div className="co-events"><div className="co-width">
+    <SectionBadge n={8} />
+    <div className="co-event-heading"><h2 id="criteria-heading">Design Criteria</h2></div>
+    <div className={reportStyles.tableWrap} role="region" aria-labelledby="criteria-heading" tabIndex={0}>
+      <table className={`${reportStyles.table} ${reportStyles.criteriaTable}`} aria-labelledby="criteria-heading">
+        <colgroup><col style={{ width: "19.2%" }} /><col style={{ width: "46.4%" }} /><col style={{ width: "34.4%" }} /></colgroup>
+        <thead><tr><th scope="col">Criteria</th><th scope="col">Description</th><th scope="col">Justification</th></tr></thead>
+        <tbody>{codes.map(code => {
+          const [heading, description, justification] = lines(code);
+          const weightingStart = heading.indexOf(" (weighting");
+          return <tr key={code}>
+            <th scope="row"><strong><Copy text={heading.slice(0, weightingStart)} /><br />{" "}<Copy text={heading.slice(weightingStart + 1)} /></strong></th>
+            <td><Block code={code} status={status(code)}><p><Copy text={description} /></p></Block></td>
+            <td><p><Copy text={justification} /></p></td>
+          </tr>;
+        })}</tbody>
+      </table>
     </div>
-  </div></section>;
+  </div></div></div></section>;
 }
 /** Block 13.3: the two intro lines, then eight stage cards ("Stage 1: Heading. Detail."). */
 export function ReportStages() {

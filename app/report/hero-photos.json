@@ -104,6 +104,36 @@
     "licenceUrl": "https://unsplash.com/license"
   },
   {
+    "page": "other-considerations",
+    "src": "/assets/report/heroes/other-considerations.webp",
+    "alt": "Team gathering around a table to brainstorm and review ideas",
+    "width": 2560,
+    "height": 1707,
+    "position": "50% 50%",
+    "credit": "Van Tay Media",
+    "date": "2019, August 9",
+    "title": "People having meeting beside table",
+    "source": "https://unsplash.com/photos/people-having-meeting-beside-table-YK1AJT_5e5Q",
+    "imageUrl": "https://images.unsplash.com/photo-1565351167686-7a19c5114965?w=2560&q=85&fm=webp&fit=max",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license"
+  },
+  {
+    "page": "recommendations",
+    "src": "/assets/report/heroes/recommendations.webp",
+    "alt": "Team seated around a wooden table discussing plans and next steps",
+    "width": 2560,
+    "height": 3200,
+    "position": "50% 50%",
+    "credit": "2H Media",
+    "date": "2021, October 5",
+    "title": "A group of people sitting around a wooden table",
+    "source": "https://unsplash.com/photos/Rnd5TjLs0xg",
+    "imageUrl": "https://images.unsplash.com/photo-1633457896836-f8d6025c85d1?w=2560&q=85&fm=webp&fit=max",
+    "licence": "Unsplash License",
+    "licenceUrl": "https://unsplash.com/license"
+  },
+  {
     "page": "references",
     "src": "/assets/report/heroes/references.webp",
     "alt": "Stack of books used to illustrate research and reference sources",

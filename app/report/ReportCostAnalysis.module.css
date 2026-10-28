@@ -1,0 +1,29 @@
+.narrative { max-width: 960px; margin-block: 40px 24px; }
+.funding { margin: 24px 0 40px; padding: clamp(20px, 3vw, 36px); background: var(--cream); border-radius: 20px; }
+.funding figcaption { font: 24px/1.3 Zagma, Georgia, serif; }
+.fundingTrack { display: flex; height: 18px; border-radius: 9px; overflow: hidden; margin-block: 24px 16px; }
+.fundingTrack span:first-child { flex: 86600; background: #191818; }
+.fundingTrack span:last-child { flex: 786.65; background: #ff2f7d; }
+.fundingLabels { display: flex; justify-content: space-between; gap: 24px; }
+.fundingLabels > span { display: grid; gap: 6px; font: 13px/1.5 var(--font-sans); }
+.fundingLabels > span:last-child { text-align: right; }
+.fundingLabels strong { font: 30px/1.2 Zagma, Georgia, serif; }
+.funding p, p.note { font: 13px/1.6 var(--font-sans); color: #595856; }
+.metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 20px; margin: 24px 0 40px; padding: 24px 0; border-block: 1px solid #19181826; }
+.metrics > div { display: flex; flex-direction: column; gap: 12px; }
+.metrics dt { font: 13px/1.5 var(--font-sans); color: #595856; }
+.metrics dd { margin: 0; font: clamp(30px, 4vw, 48px)/1.1 Zagma, Georgia, serif; }
+.chartNote { display: grid; gap: 8px; padding: 16px; background: #fff0f6; border-radius: 12px; font: 13px/1.6 var(--font-sans); }
+.lifespan { position: relative; display: flex; justify-content: space-between; gap: 24px; padding-top: 24px; margin-top: 56px; border-top: 2px solid #19181826; font: 14px/1.5 var(--font-sans); }
+.lifespan::before, .lifespan::after { content: ""; position: absolute; top: -6px; width: 10px; height: 10px; border-radius: 50%; background: #191818; }
+.lifespan::before { left: 0; }
+.lifespan::after { right: 0; background: #ff2f7d; }
+.lifespan > span:last-child { display: grid; gap: 8px; text-align: right; }
+.lifespan strong { font: 36px/1.1 Zagma, Georgia, serif; }
+.lifespan small { color: #595856; }
+.closing { margin-top: 48px; padding: clamp(24px, 4vw, 48px); border-radius: 20px; background: var(--cream); }
+.closing h3 { margin-top: 0; }
+@media (max-width: 767px) {
+  .fundingLabels { flex-direction: column; gap: 20px; }
+  .fundingLabels > span:last-child { text-align: left; }
+}

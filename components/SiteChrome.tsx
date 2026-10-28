@@ -6,12 +6,12 @@ import Link from "./AppLink";
 import "./chrome.css";
 
 const pages = [
-  ["Overview", "/", "1761183902-waabi_road2_05483.webp"],
-  ["Solution", "/safety", "1761183903-waabi_scout_00376.webp"],
-  ["References", "/research", "1761218483-waabi_research_lighttunnel_wip.webp"],
-  ["Project", "/company", "1761185043-waabi_scout_00739.webp"],
-  ["Delivery", "/careers", "1761187390-251006_waabi_collab_03_0781.webp"],
-  ["Appendices", "/insights", "1761183903-waabi_road2_04225.webp"],
+  ["Overview", "/", "1761183902-assignment_road2_05483.webp"],
+  ["Solution", "/safety", "1761183903-assignment_scout_00376.webp"],
+  ["References", "/research", "1761218483-assignment_research_lighttunnel_wip.webp"],
+  ["Project", "/company", "1761185043-assignment_scout_00739.webp"],
+  ["Delivery", "/careers", "1761187390-251006_assignment_collab_03_0781.webp"],
+  ["Appendices", "/insights", "1761183903-assignment_road2_04225.webp"],
 ];
 const navigationPages = pages.filter(([, href]) => ["/", "/safety", "/company", "/careers"].includes(href));
 const destination = (url: string) =>
@@ -90,7 +90,7 @@ export function Header() {
           <Link href="/" aria-label="Provisions Point Overview">
             <img
               className="nav-logo"
-              src="/assets/waabi-logo.svg"
+              src="/assets/assignment-logo.svg"
               alt="Provisions Point"
             />
           </Link>
@@ -276,7 +276,7 @@ export function Footer() {
         playsInline
         aria-hidden="true"
         tabIndex={-1}
-        src="/assets/Waabi_System_LightTunnel_1.mp4"
+        src="/assets/assignment_System_LightTunnel_1.mp4"
       />
       <canvas ref={canvas} className="footer-canvas" aria-hidden="true" />
       <div className="footer-top">
@@ -326,7 +326,7 @@ export function Footer() {
         </div>
         <img
           className="footer-logo"
-          src="/assets/waabi-logo-footer.svg"
+          src="/assets/assignment-logo-footer.svg"
           alt="Provisions Point"
         />
       </div>

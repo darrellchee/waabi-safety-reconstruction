@@ -12,9 +12,14 @@ export function headerToneForBackground(red: number, green: number, blue: number
   return blackContrast >= whiteContrast ? "dark" : "light";
 }
 
-export function headerToneAtPoint(x: number, y: number, header: HTMLElement): HeaderTone {
-  const underneath = document.elementsFromPoint(x, y).find(element => !header.contains(element));
-  for (let element = underneath; element; element = element.parentElement ?? undefined) {
+export function headerToneAtPoint(x: number, y: number, header: HTMLElement): HeaderTone | null {
+  // Walk painted layers, not ancestors: a transparent shade can have a white
+  // ancestor while a photo/video is painted immediately underneath the shade.
+  const underneath = document.elementsFromPoint(x, y).filter(element => !header.contains(element));
+  // Native page snapshots temporarily expose only <html> to hit testing.
+  // Wait for the real page instead of treating that temporary state as white.
+  if (!underneath.some(element => element !== document.documentElement)) return null;
+  for (const element of underneath) {
     const style = getComputedStyle(element);
     // Photos and video vary within one section; white lettering gets a dark edge.
     if (element.matches("img, video, canvas") || style.backgroundImage !== "none") return "light";

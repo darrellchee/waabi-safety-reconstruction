@@ -101,7 +101,7 @@
   position: absolute;
   top: 100%;
   right: 0;
-  min-width: 180px;
+  width: min(320px, calc(100vw - 24px));
   padding: 8px;
   color: #fff;
   background: rgba(25, 24, 24, .97);
@@ -171,14 +171,14 @@
 
 .site-footer {
   position: relative;
-  height: 600px;
-  min-height: 600px;
+  height: auto;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
   color: white;
-  background: #ec9fdf;
+  background: #172b24;
   padding: 80px max(40px, 7.15vw);
   isolation: isolate;
 }
@@ -293,7 +293,7 @@
 @media (max-width: 639px) {
   .site-footer {
     height: auto;
-    min-height: 680px;
+    min-height: 0;
     padding: 60px 40px 30px;
   }
   .footer-top {
@@ -429,9 +429,9 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 100%;
-  min-height: 600px;
-  padding: 80px max(40px, 7.15vw);
+  height: auto;
+  min-height: 0;
+  padding: 48px max(40px, 7.15vw);
   isolation: isolate;
   transform: translateY(var(--footer-y, 0px));
   will-change: transform;
@@ -455,7 +455,7 @@
 
 @media (max-width: 1023px) {
   .site-footer { padding: 0; }
-  .footer-motion { min-height: 0; height: auto; padding: 60px var(--gutter) 30px; }
+  .footer-motion { min-height: 0; height: auto; padding: 32px var(--gutter); }
 }
 @media (prefers-reduced-motion: reduce) {
   .footer-motion { transform: none; will-change: auto; }
@@ -478,10 +478,33 @@
   .site-footer .footer-navigation p, .site-footer .footer-legal p { font-size: 11px; }
 }
 
-/* Placeholder images retain the original media slots under reduced motion. */
-.site-footer img.footer-video { display: block; }
+/* Keep the poster beneath the video while loading and under reduced motion. */
+.footer-poster,
+.site-footer .footer-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+}
+.footer-motion::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .6);
+  pointer-events: none;
+  z-index: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-footer .footer-video { display: none; }
+}
 
 /* Match the reference header snapshot, separate from the page zoom/reveal. */
 @media (prefers-reduced-motion: no-preference) {
   .nav-bar { view-transition-name: header; animation-duration: .8s; }
 }
+
+/* Wrap labels only when the viewport limits the dropdown width. */
+.menu-panel a {white-space:normal;}

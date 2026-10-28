@@ -1,0 +1,86 @@
+[
+  {
+    "code": "6.1",
+    "src": "/assets/report/background/lama-lama-coastline.webp",
+    "alt": "Lama Lama coastline with coastal forest and wetlands.",
+    "credit": "Yintjingga Aboriginal Corporation",
+    "source": "https://www.lamalama.org.au/visiting/",
+    "imageUrl": "https://www.lamalama.org.au/wp-content/uploads/2016/08/Visiting-banner.png",
+    "licence": "No open reuse licence identified",
+    "context": "Lama Lama Country",
+    "width": 1500,
+    "height": 433
+  },
+  {
+    "code": "6.2",
+    "src": "/assets/report/background/lama-lama-wetland.webp",
+    "alt": "Forested wetland on Lama Lama Country.",
+    "credit": "Yintjingga Aboriginal Corporation",
+    "source": "https://www.lamalama.org.au/special-places/",
+    "imageUrl": "https://www.lamalama.org.au/wp-content/uploads/2016/08/Special-Places-banner-1.jpg",
+    "licence": "No open reuse licence identified",
+    "context": "Lama Lama Country",
+    "width": 1228,
+    "height": 354
+  },
+  {
+    "code": "6.3",
+    "src": "/assets/report/background/lama-lama-ranger.webp",
+    "alt": "Lama Lama ranger working among wetland reeds.",
+    "credit": "Annette Ruzicka",
+    "source": "https://www.lamalama.org.au/lama-lama-rangers/",
+    "imageUrl": "https://www.lamalama.org.au/wp-content/uploads/2016/08/Lama-Lama-rangers-banner-Photo-Annette-Ruzicka.png",
+    "licence": "No open reuse licence identified",
+    "context": "Ranger work; not a photograph of the Port Stewart Ranger Base",
+    "width": 1920,
+    "height": 554
+  },
+  {
+    "code": "6.4",
+    "src": "/assets/report/background/monsoon-squall.webp",
+    "alt": "Dark monsoon clouds and rain over the sea near Darwin.",
+    "credit": "Bidgee",
+    "source": "https://commons.wikimedia.org/wiki/File:Evening_monsoonal_squall.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Evening_monsoonal_squall.jpg",
+    "licence": "CC BY 3.0 — https://creativecommons.org/licenses/by/3.0/",
+    "context": "Darwin, Northern Territory; illustrative monsoon context, not Lama Lama Country",
+    "width": 1500,
+    "height": 997
+  },
+  {
+    "code": "6.5",
+    "src": "/assets/report/background/flooded-road.webp",
+    "alt": "Floodwater covering a road in the Herbert River catchment, northern Queensland.",
+    "credit": "CSIRO",
+    "source": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_10397_Flooded_road_in_the_Herbert_River_catchment_northern_Queensland.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/CSIRO_ScienceImage_10397_Flooded_road_in_the_Herbert_River_catchment_northern_Queensland.jpg",
+    "licence": "CC BY 3.0 — https://creativecommons.org/licenses/by/3.0/",
+    "context": "Herbert River catchment, northern Queensland; illustrative access disruption, not Warokutal",
+    "width": 1920,
+    "height": 1440
+  },
+  {
+    "code": "6.6",
+    "src": "/assets/report/background/lama-lama-access-road.webp",
+    "alt": "Unsealed red dirt access road through Lama Lama Country.",
+    "credit": "Annette Ruzicka",
+    "source": "https://www.lamalama.org.au/visiting/",
+    "imageUrl": "https://www.lamalama.org.au/wp-content/uploads/2016/08/Visiting-banner-3-Photo-Annette-Ruzicka.png",
+    "licence": "No open reuse licence identified",
+    "context": "Local visitor access; not a photograph of either named campground",
+    "width": 1500,
+    "height": 433
+  },
+  {
+    "code": "6.7",
+    "src": "/assets/report/background/joint-management.webp",
+    "alt": "Rangers reviewing a map together during joint park management.",
+    "credit": "Yintjingga Aboriginal Corporation",
+    "source": "https://www.lamalama.org.au/national-parks-joint-management/",
+    "imageUrl": "https://www.lamalama.org.au/wp-content/uploads/2016/08/Gav-Parks-Peter-fence-map-130905-6558.jpg",
+    "licence": "No open reuse licence identified",
+    "context": "Joint management; not consultation on this student proposal",
+    "width": 1842,
+    "height": 532
+  }
+]

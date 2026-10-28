@@ -13,12 +13,12 @@ const philosophy = [
   {
     title: "Option A: Provisions Point",
     text: "A raised supply and equipment-hire shelter at Warokutal. It stocks water, food, firewood and safety information, and hires out recovery kits, personal locator beacons (PLBs) and ultra high frequency (UHF) radios. TEAM TO ADD: source for this type of remote supply point.",
-    image: "1761185044-waabi_road2_05683.webp",
+    image: "1761185044-assignment_road2_05683.webp",
   },
   {
     title: "Option B: Distributed emergency checkpoints",
     text: "Several small emergency points placed along the access route, each holding basic supplies and a radio. TEAM TO ADD: source for roadside emergency points, and confirm this description.",
-    image: "1761183960-waabi_inspection_02285.webp",
+    image: "1761183960-assignment_inspection_02285.webp",
   },
   {
     title: "Option C: Elevated tent-site platform",
@@ -29,7 +29,7 @@ const philosophy = [
 const technology = [
   {
     title: "Ideas A and B",
-    image: "1761183903-waabi_road2_04462.webp",
+    image: "1761183903-assignment_road2_04462.webp",
     text: rows(
       "Weights are in brackets.",
       "Idea: A Provisions Point. Culture and Country (3): 5. Low cost (4): 3. Visitor support (5): 4. Feasibility (5): 3. Safety and access (4): 5. Community fit (4): 4. Flood resilience (5): 3. Revenue (3): 5. Total: 128. Rank: 1.",
@@ -60,12 +60,12 @@ const technologyLinks = ["/company", "/company", "/careers"];
 const practices = [
   {
     title: "What it is",
-    image: "1761183902-waabi_road2_04965.webp",
+    image: "1761183902-assignment_road2_04965.webp",
     text: "A 24 square metre shelter at Warokutal, planned for ground that is already cleared and above flood level. A site survey must confirm this. It would stand on reinforced concrete piles (Menard Asia, 2025), with the floor planned 2 m above the ground. Walls would be watertight concrete (Leading Architecture, 2024) and the roof corrugated sheeting (material to be confirmed). Inside would be shelves, a counter, a solar panel and a battery. The shelter is unstaffed. Visitors serve themselves and pay by the method YAC sets.",
   },
   {
     title: "Entry, stock and hire items",
-    image: "1761183937-waabi_garageinterior_03851.webp",
+    image: "1761183937-assignment_garageinterior_03851.webp",
     text: rows(
       "Entry: TEAM TO ADD: confirm the entry type (stairs or ramp) so it matches the prototype.",
       "Stock: drinking water, non-perishable food, firewood and safety information.",
@@ -74,7 +74,7 @@ const practices = [
   },
   {
     title: "How a visitor would use it",
-    image: "1761183980-waabi_road1_01029.webp",
+    image: "1761183980-assignment_road1_01029.webp",
     text: rows(
       "1. Check road conditions on the Cook Shire Council website before travel (Cook Shire Council, 2026).",
       "2. Arrive at Warokutal and read the safety information at the shelter.",
@@ -84,7 +84,7 @@ const practices = [
   },
   {
     title: "Community concerns",
-    image: "1760350326-waabi_laptop_03392_final.webp",
+    image: "1760350326-assignment_laptop_03392_final.webp",
     text: "Ground disturbance. The design uses a small number of drilled piles on cleared ground, not trench footings. No piles are drilled until Traditional Owners and heritage checks agree. Ranger workload. The routine would be one weekly restock in the open season and two inspections a year. Visitor numbers. The stock and kits suit small groups. The design is not for mass tourism. Theft or damage. The team proposes a lockable, raised building for the stock and kits. Fire and waste. Bagged firewood would be sold, and the team will check park rules with YAC and QPWS. A waste plan would be agreed with YAC. Cost. A grant would pay for the build. Sales and hire fees would pay for running costs.",
   },
 ];

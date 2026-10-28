@@ -1,0 +1,9 @@
+Use case: illustration-story
+Asset type: illustration for the fourth slide, "1.4 What is your needs statement?", on an academic project details website.
+Primary request: Illustrate independent visitors at Warokutal accessing an elevated, low maintenance emergency supply shelter when a remote road is damaged. Depict dependable access to drinking water, long shelf-life food, a handheld radio and personal locator beacon, and vehicle recovery equipment. Two adult travellers stand on the shelter's safe, dry raised deck: one accesses the stocked cabinet and one holds a radio. A parked four-wheel-drive vehicle on dry ground and a small eroded, impassable road in the distance establish the travel disruption. No ranger intervention is shown. Show a compact practical open-sided shelter on piles, shallow pitched roof, stairs and railings, shelves with water containers and sealed food tins, a small storage case and coiled recovery strap.
+Scene/backdrop: Simplified remote tropical Australian bushland near Cape York, sparse low trees and grasses, with plenty of uncluttered cream space.
+Style/medium: Refined flat editorial illustration with thin dark sage outlines, simple geometric shapes, restrained detail, matte solid fills, no gradients or photorealism. Match a clean existing website diagram system.
+Composition/framing: Near-square landscape 8:7 canvas, one cohesive isometric scene centered with generous margins, all objects fully within the frame.
+Color palette: Warm cream #f5f6ef background, pale sage #dce5d3 and #b8cbaa, dark olive #53684a outlines, muted blue #9bb9c3 water containers, tan #d7c49b, sparing terracotta #ac653e accents.
+Lighting/mood: Calm, practical, self-reliant and reassuring.
+Constraints: No words, letters, numbers, captions, logos, watermarks, labels or UI. No Indigenous patterns or symbols. No one driving or walking through floodwater. The illustration is a proposed design concept, not a map, photograph, or existing facility.

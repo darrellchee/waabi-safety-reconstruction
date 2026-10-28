@@ -64,18 +64,18 @@ export function ReportDecisionMatrix({ caption, headings, rows }: Props) {
   return <div ref={track} className={styles.track} data-pinned={pinned && !reduced}>
     <div className={styles.stage}>
       <div ref={surface} className={styles.surface} style={{ transform: pinned && !reduced ? `scale(${fitScale})` : undefined }}>
-        <div className={styles.guide} data-nocount="">
-          <span>{complete ? "Scores complete" : "Follow the weighted scores"}</span>
-          <span>{reduced ? "Final result" : pinned ? "Scroll to follow the arrows" : "Rating × weight = points"}</span>
-        </div>
         <div className={styles.tableWrap} tabIndex={0} role="region" aria-label="Decision matrix; scroll horizontally on smaller screens">
           <table className={styles.table}>
             <caption>{caption}</caption>
             <colgroup><col className={styles.ideaColumn} />{headings.slice(1).map((_, i) => <col key={i} />)}</colgroup>
-            <thead><tr>{headings.map((heading, i) => <th scope="col" key={heading} data-current={!complete && shown === i && i > 0}>{heading}</th>)}</tr></thead>
+            <thead>
+              <tr>{headings.map((heading, i) => <th scope="col" key={heading} data-current={!complete && shown === i && i > 0}>{heading.replace(/\s*\(\d+\)$/, "")}</th>)}</tr>
+              <tr className={styles.weighting}><th scope="row">Weighting</th>{weights.map((weight, i) => <td key={i}>×{weight}</td>)}<td /><td /></tr>
+            </thead>
             <tbody>{rows.map((row, r) => <tr key={row[0]} data-winner={complete && r === winner} style={{ "--score-color": color(r) } as CSSProperties}>
               {row.map((cell, c) => c === 0 ? <th scope="row" key={c}>{cell}</th> : <td key={c} data-reached={shown >= c}>
                 <span className={styles.cellValue}>{cell}</span>
+                {c <= criterionCount && <span className={styles.weightedScore}>{points[r][c - 1]}<span className={styles.srOnly}> weighted points</span></span>}
                 {c > criterionCount && <span className={styles.liveScore} aria-hidden="true" data-nocount="">{c === criterionCount + 1 && !complete ? `${totals[r]} so far` : c === criterionCount + 2 && complete && r === winner ? "Highest score" : ""}</span>}
                 <motion.span className={styles.arrow} aria-hidden="true" data-nocount="" initial={false} animate={{ opacity: shown >= c ? 1 : 0, scaleX: shown >= c ? 1 : 0 }} transition={{ duration: reduced ? 0 : .4, ease: [.19, 1, .22, 1] }}>
                   <span className={styles.arrowLine} />
@@ -86,10 +86,6 @@ export function ReportDecisionMatrix({ caption, headings, rows }: Props) {
               </td>)}
             </tr>)}</tbody>
           </table>
-        </div>
-        <div className={styles.footer} data-nocount="">
-          <span className={styles.scale}><i />Lower running score → Higher running score</span>
-          <span className={styles.result} data-complete={complete}>{complete ? `${rows[winner][0]} · ${rows[winner][criterionCount + 1]} points · Ranked 1st` : `${Math.min(shown, criterionCount)} of ${criterionCount} criteria scored`}</span>
         </div>
         <div className={styles.progress} aria-hidden="true" data-nocount=""><span style={{ transform: `scaleX(${shown / lastStep})` }} /></div>
       </div>

@@ -46,3 +46,7 @@
   .slice, .legend button, .table tbody tr { transition: none; }
   .chart { opacity: 1 !important; transform: none !important; }
 }
+.introduction { max-width: 960px; }
+.inlineAmount { display: inline; padding: 0; border: 0; border-bottom: 1px solid currentColor; background: transparent; color: inherit; font: inherit; font-weight: 600; cursor: pointer; }
+.inlineAmount:hover, .inlineAmount[aria-pressed="true"] { color: #c91b5d; }
+.inlineAmount:focus-visible { outline: 2px solid #191818; outline-offset: 3px; }

@@ -29,7 +29,7 @@ function slicePath(start: number, end: number) {
   return `M ${point(start, OUTER)} A ${OUTER} ${OUTER} 0 ${large} 1 ${point(end, OUTER)} L ${point(end, INNER)} A ${INNER} ${INNER} 0 ${large} 0 ${point(start, INNER)} Z`;
 }
 
-export function ReportCost({ title, status, caption, headings, rows }: { title: string; status: Status; caption: string; headings: string[]; rows: string[][] }) {
+export function ReportCost({ title, status, caption, headings, rows, introduction }: { title: string; status: Status; caption: string; headings: string[]; rows: string[][]; introduction?: string }) {
   const reduced = useReducedMotion();
   const [hover, setHover] = useState<string | null>(null);
   const [pinned, setPinned] = useState<string | null>(null);
@@ -68,11 +68,17 @@ export function ReportCost({ title, status, caption, headings, rows }: { title: 
     </table>
   </div>;
 
-  return <Block code="14.2" status={status}>
+  const linkedAmounts: Record<string, string> = { "$38,592": "structure", "$20,000": "structure", "$5,000": "fitout", "$2,756": "equipment" };
+
+  return <>
+  {introduction && <Block code="14.1" status="SITE">
+    <p className={styles.introduction} onKeyDown={event => { if (event.key === "Escape") { setPinned(null); setHover(null); } }}>{introduction.split(/(\$87,386\.65|\$38,592|\$20,000|\$5,000|\$2,756)/g).map((part, index) => linkedAmounts[part] ? <button key={index} type="button" data-counted="" className={styles.inlineAmount} aria-pressed={pinned === linkedAmounts[part]} aria-controls="construction-cost-chart" onClick={() => toggle(linkedAmounts[part])} {...handlers(linkedAmounts[part])}>{part}</button> : part === "$87,386.65" ? <strong key={index}>{part}</strong> : part)}</p>
+  </Block>}
+  <Block code="14.2" status={status}>
     <h3>{title}</h3>
     <div className={styles.layout} onKeyDown={event => { if (event.key === "Escape") { setPinned(null); setHover(null); } }}>
     {table}
-    <figure className={styles.card} data-nocount="" aria-label="Cost breakdown">
+    <figure id="construction-cost-chart" className={styles.card} data-nocount="" aria-label="Cost breakdown">
       <div className={styles.chartHeading}><span>Cost breakdown</span><p>Hover to explore · Select to pin</p></div>
       <motion.div className={styles.chart} initial={reduced ? false : { opacity: 0, scale: .9, rotate: -14 }} whileInView={{ opacity: 1, scale: 1, rotate: 0 }} viewport={{ once: true, margin: "-80px" }} transition={{ duration: .9, ease: [.19, 1, .22, 1] }}>
         <svg viewBox={`0 0 ${SIZE} ${SIZE}`} role="group" aria-label="Pie chart of cost by category. Select a slice to highlight its rows in the table.">
@@ -104,5 +110,5 @@ export function ReportCost({ title, status, caption, headings, rows }: { title: 
       <figcaption>Share of the {money.format(total)} total. Colours match the categories in the table.</figcaption>
     </figure>
     </div>
-  </Block>;
+  </Block></>;
 }

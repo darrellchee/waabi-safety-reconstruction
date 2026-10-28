@@ -25,3 +25,9 @@
  .image {transform:none!important;}
  .image video {display:none;}
 }
+
+/* Give the longer titles room without changing the other page heroes. */
+.hero:is([data-page="other-considerations"], [data-page="recommendations"], [data-page="supporting-documents"]) .title {max-width:100%;}
+@media(max-width:767px) {
+ .hero:is([data-page="other-considerations"], [data-page="recommendations"], [data-page="supporting-documents"]) h1 {font-size:clamp(28px,8vw,55px);line-height:1;letter-spacing:-1px;}
+}

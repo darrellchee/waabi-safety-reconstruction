@@ -8,7 +8,7 @@ import shared from "./ReportCost.module.css";
 import styles from "./ReportFinancials.module.css";
 import tableStyles from "./report.module.css";
 
-type Props = { code: "14.3" | "14.4"; title: string; status: Status; caption: string; headings: string[]; rows: string[][]; children?: ReactNode };
+type Props = { code: "14.3" | "14.4"; title: string; status: Status; caption: string; headings: string[]; rows: string[][]; children?: ReactNode; chartNote?: ReactNode };
 const money = new Intl.NumberFormat("en-AU", { style: "currency", currency: "AUD", maximumFractionDigits: 0 });
 const amount = (value: string) => Number(value.replace(/[+$,]/g, ""));
 const revenueMetrics = [
@@ -24,7 +24,7 @@ const coverage = [
 ];
 const areas = ["Build", "Design", "Equipment", "Ranger time", "Stock", "Running costs"];
 
-export function ReportFinancials({ code, title, status, caption, headings, rows, children }: Props) {
+export function ReportFinancials({ code, title, status, caption, headings, rows, children, chartNote }: Props) {
   const reduced = useReducedMotion();
   const isRevenue = code === "14.3";
   const [scenario, setScenario] = useState(2);
@@ -82,6 +82,7 @@ export function ReportFinancials({ code, title, status, caption, headings, rows,
           <div className={styles.sourceDetail} aria-live="polite">{active === null ? "Select a source to see its coverage in the table." : rows[active][1]}</div>
           <figcaption>Coverage described in Table 5, not confirmed funding. Ranger time is potential support. No funding proportions are assumed.</figcaption>
         </>}
+        {chartNote}
       </figure>
     </div>
     {children}

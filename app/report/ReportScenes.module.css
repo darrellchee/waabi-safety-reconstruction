@@ -1,4 +1,8 @@
 /* Scoped copies of existing Home and Company card rules. */
+.scene.criteria :global(.company-page .co-events) {
+  margin-bottom: 0;
+}
+
 .scene :global(.home-page .home-tech-hero > img),
 .scene :global(.home-page .home-cover-shade) {
   position: absolute;

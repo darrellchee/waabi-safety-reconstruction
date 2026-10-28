@@ -12,7 +12,7 @@ This is the source of truth for the report pages, starting at `/report`. Read `P
 
 ## Report navigation layout
 
-- The header is fixed at the top of the screen and spans the full width. Keep it slim with a 48px minimum bar height and 44px desktop link height; use 4px vertical bar padding on mobile. Use a translucent white background (15% opacity), an 18px backdrop blur, a faint bottom border and soft shadow. Use actual black or white header text, without colour-inversion blending. On initial render, each active-page change, after the native page-transition animations finish, and on scroll and resize, inspect the section background underneath each label and choose the stronger black/white contrast after the 15% white glass tint. Use white text with a fine dark outline and shadow over photos, video and gradients, and black text with a pale edge over light solid sections. Keep the dropdown white-on-dark independently of the page. Keep the glass background in a separate fixed layer and measure the navigation height with ResizeObserver so it stays aligned when links wrap. Use adaptive monochrome hover/focus text and underlines; retain the pink scroll progress line. Separate the brand from the links with a subtle vertical rule. Links have subtle translucent hover backgrounds and animated underlines, including a persistent underline for the active page. More rotates its chevron when open; its rounded dropdown fades/slides into view, with hover feedback on each entry. Disable these animations and transitions for reduced-motion users. Place “Provisions Point” at the far left, separate from the page links, in the same Zagma font at 22px and semibold (600) weight (19px on mobile). Right-align the navigation links with 24px desktop edge padding (12px on mobile). At tablet and mobile widths, let the page links wrap below the brand. Use the same F37 Zagma Serif Book font and regular (400) weight as the Background hero, sized at 18px on desktop and 15px on mobile. Load the bundled font directly with `next/font/local`, preload it and apply it explicitly to the header and dropdown; use block font display to avoid an initial fallback-font flash. Display text links for Summary, Project details, Background, Design Solution Options, Detailed Design, Prototype, Implementation and Cost, followed by More. More reveals a rounded dropdown containing References and Appendices on mouse hover, keyboard navigation or tap. Links wrap on smaller screens. Do not show placeholder thumbnails beside these links.
+- The header is fixed at the top of the screen and spans the full width. Keep it slim with a 48px minimum bar height and 44px desktop link height; use 4px vertical bar padding on mobile. Use a translucent white background (15% opacity), an 18px backdrop blur, a faint bottom border and soft shadow. Use actual black or white header text, without colour-inversion blending. If snapshot hit testing exposes only the HTML root, preserve the current tone and retry on animation frames until the incoming page is available; do not assume a white background or rely on an animation timer. On initial render, each active-page change, when the incoming page becomes available to browser hit testing after a native snapshot transition, and on scroll and resize, inspect the painted layers underneath each label (skip transparent overlays before checking the media or solid background below them) and choose the stronger black/white contrast after the 15% white glass tint. Use white text with a fine dark outline and shadow over photos, video and gradients, and black text with a pale edge over light solid sections. Keep the dropdown white-on-dark independently of the page. Keep the glass background in a separate fixed layer and measure the navigation height with ResizeObserver so it stays aligned when links wrap. Use adaptive monochrome hover/focus text and underlines; retain the pink scroll progress line. Separate the brand from the links with a subtle vertical rule. Links have subtle translucent hover backgrounds and animated underlines, including a persistent underline for the active page. More rotates its chevron when open; its rounded dropdown fades/slides into view, with hover feedback on each entry. Disable these animations and transitions for reduced-motion users. Place “Provisions Point” at the far left, separate from the page links, in the same Zagma font at 22px and semibold (600) weight (19px on mobile). Right-align the navigation links with 24px desktop edge padding (12px on mobile). At tablet and mobile widths, let the page links wrap below the brand. Use the same F37 Zagma Serif Book font and regular (400) weight as the Background hero, sized at 18px on desktop and 15px on mobile. Load the bundled font directly with `next/font/local`, preload it and apply it explicitly to the header and dropdown; use block font display to avoid an initial fallback-font flash. Display text links for Summary, Project details, Background, Design Solutions, Detailed Design, Prototype, Implementation and Cost, followed by More. More reveals a rounded dropdown containing Other Considerations first, Recommendations second, followed by References and Appendices on mouse hover, keyboard navigation or tap. Make the More dropdown 320px wide, capped at the viewport width minus 24px so it fits on phones. Labels can wrap when needed. Links wrap on smaller screens. Do not show placeholder thumbnails beside these links.
 
 - As requested on 28 October 2026, each navigation item opens a separate top-level page. This replaces the earlier single-page and anchor-only routing instructions in `PROJECT_CONTEXT.md` for the report. Existing reference pages remain unchanged.
 - Retain all existing section content, headings, media, numbering and interactive designs. Group sections as follows, preserving their relative order within each page:
@@ -22,17 +22,21 @@ This is the source of truth for the report pages, starting at `/report`. Read `P
 | Summary | `/report` | 0–4: existing hero, cover, summary, declaration and acknowledgement |
 | Project details | `/project-details` | 5: project details and stakeholders |
 | Background | `/background` | 6–8: background, problem description and design criteria |
-| Design Solution Options | `/design-solution-options` | 9–10: options and design selection |
+| Design Solutions | `/design-solutions` | 9–10: options and design selection |
 | Detailed Design | `/detailed-design` | 11 |
 | Prototype | `/prototype` | 12 |
-| Implementation | `/implementation` | 13, 15–16: implementation, other considerations and recommendations |
+| Implementation | `/implementation` | 13: six Implementation Plan questions, displayed as 9.1–9.6 |
 | Cost | `/cost` | 14 |
+| Other Considerations | `/other-considerations` | 15.6: placeholder only; blocks 15.1–15.5 remain archived |
+| Recommendations | `/recommendations` | 16.3–16.8: guiding questions and five recommendations; blocks 16.1–16.2 remain archived |
+| Supporting Documents | `/supporting-documents` | Hero only, copied from Recommendations with the title “Supporting Documents” |
 | References | `/references` | 17 |
 | Appendices | `/appendices` | 18 |
 
 - Report page links use the same shared `AppLink` as the reference pages: 800 ms outgoing zoom/fade and incoming clip reveal, using the existing global transition provider and keyframes. The report header has its own `header` snapshot, matching the reference header. Reduced-motion preferences disable the animation; local section links continue to scroll without a page transition.
-- Every page retains the report header, footer and progress panel. Header and footer navigation link to these routes and the header identifies the current page. Progress counts describe the current page's rendered content.
-- Each of the nine new pages starts with a report-only copy of the `/careers` hero: same full-viewport height, Zagma heading, responsive sizes, cover image crop, gradient, sticky title, parallax and word reveal. Each subpage uses topic-relevant internet media, described and credited in the hero media register below. Project details and Background use videos; the other seven use photographs. The title is exactly its navigation label, with no subtitle. Keep existing body headings even when repeated by the hero. Summary retains its original hero and montage.
+- Every page retains the report header, footer and progress panel. Header and footer navigation link to these routes and the header identifies the current page. Progress counts describe the current page's rendered content. Hide the progress menu and block labels by default on every screen size. Add `?progress=on` to a page URL to show the menu with progress collapsed and labels off; `?codes=on` shows the menu with labels enabled. The menu buttons can expand progress and toggle labels. Labels and their reserved spacing stay hidden from the initial render.
+- Each of the twelve report subpages starts with a report-only copy of the `/careers` hero: same full-viewport height, Zagma heading, responsive sizes, cover image crop, gradient, sticky title, parallax and word reveal. Each subpage uses topic-relevant internet media, described and credited in the hero media register below. Project details and Background use videos; the other ten use photographs. The title is exactly its navigation label, with no subtitle. Keep existing body headings even when repeated by the hero. Summary retains its original hero and montage.
+- Supporting Documents appears immediately above References in the header’s More dropdown and in the shared footer navigation. It reuses the Recommendations hero photograph, crop, title animation and responsive styling, with “Supporting Documents” as its title and no body content. The shared header, footer and progress panel remain.
 - Subpage heroes use the locally stored media listed below, replacing the original Careers placeholder image.
 - Project details was separated from Summary on 28 October 2026. Its existing carousel, stakeholders, content and section numbering remain unchanged; the shared page hero displays "Project details".
 - Cross-page links: the plan opens `/implementation`; Acknowledgment opens `/report#acknowledgement`; montage image references open `/references#references`. "Ask a question" remains a local footer link.
@@ -63,24 +67,24 @@ Counts are computed from the page text in each block. They include table cells, 
 | 1 | Cover details | `title-block` | 4 | 61 | 0 | 61 | no | 0 | 0 |
 | 2 | Executive Summary | `summary` | 13 | 567 | 0 | 567 | no | 0 | 6 |
 | 3 | Group Declaration | `group-declaration` | 1 | 81 | 0 | 81 | yes | 0 | 0 |
-| 4 | Acknowledgment | `acknowledgement` | 1 | 54 | 0 | 54 | yes | 0 | 0 |
-| 5 | Project details | `project-details` | 5 | 215 | 0 | 215 | yes | 0 | 1 |
+| 4 | Acknowledgment | `acknowledgement` | 1 | 72 | 0 | 72 | yes | 0 | 0 |
+| 5 | Project details | `project-details` | 6 | 309 | 0 | 309 | yes | 0 | 0 |
 | 6 | Background | `background` | 10 | 425 | 0 | 425 | yes | 0 | 1 |
 | 7 | Problem Description | `problem` | 2 | 114 | 0 | 114 | yes | 0 | 1 |
-| 8 | Design Criteria | `criteria` | 8 | 241 | 0 | 241 | yes | 0 | 4 |
-| 9 | Design Solution Options | `options` | 4 | 299 | 0 | 299 | yes | 0 | 0 |
+| 8 | Design Criteria | `criteria` | 8 | 404 | 0 | 404 | yes | 0 | 0 |
+| 9 | Design Solutions | `options` | 4 | 299 | 0 | 299 | yes | 0 | 0 |
 | 10 | Design Selection | `selection` | 4 | 273 | 0 | 273 | yes | 0 | 0 |
-| 11 | Detailed Design | `design` | 8 | 514 | 0 | 514 | yes | 0 | 0 |
+| 11 | Detailed Design | `design` | 5 | 313 | 0 | 313 | yes | 0 | 0 |
 | 12 | Prototyping | `prototyping` | 1 | 0 | 350 | 350 | yes | 1 | 0 |
-| 13 | Implementation | `implementation` | 3 | 372 | 0 | 372 | yes | 0 | 0 |
+| 13 | Implementation Plan | `implementation` | 6 | 524 | 0 | 524 | yes | 0 | 0 |
 | 14 | Cost Analysis | `cost` | 5 | 364 | 80 | 444 | yes | 1 | 0 |
 | 15 | Other considerations | `other` | 5 | 266 | 0 | 266 | yes | 0 | 0 |
-| 16 | Recommendations | `recommendations` | 2 | 127 | 0 | 127 | yes | 0 | 0 |
+| 16 | Recommendations | `recommendations` | 8 | 240 | 0 | 240 | yes | 0 | 0 |
 | 17 | References | `references` | 1 | 706 | 0 | 706 | no | 0 | 0 |
 | 18 | Supporting documentation | `appendices` | 6 | 187 | 0 | 187 | no | 4 | 0 |
 | 19 | Call to action and footer | `closing` | 2 | 36 | 0 | 36 | no | 0 | 0 |
-| | **Body (sections 3 to 16)** | | | **3345** | **430** | **3775** | | | |
-| | **Whole page** | | 87 | **4914** | | | | | |
+| | **Body (sections 3 to 16)** | | | **3602** | **430** | **4032** | | | |
+| | **Whole page** | | 88 | **5171** | | | | | |
 
 Per-block counts are in each block's `words` field below.
 
@@ -147,28 +151,29 @@ Per-block counts are in each block's `words` field below.
 - **code:** 2.3 | **status:** DRAFT | **words:** 16 | **source:** Built from the team's own text
 - layout: render once as a labelled row in the hero's cover details panel, after the How Might We statement. Retain code 2.3; do not render a second copy in the Executive Summary.
 
-> Keywords: flood resilience, visitor infrastructure, Lama Lama Country, Warokutal, vehicle recovery, remote tourism, safety, Cape York
+> Keywords: Visitor security, flood resilience, remote infrastructure, emergency supplies, vehicle recovery.
 
 ### [2.4] Proposal Summary
 - **code:** 2.4 | **status:** SITE | **words:** 46 | **source:** Home page
 - layout: show the "Proposal Summary" heading and this paragraph above the large "Overview of Design" heading.
 
-> This project aims to give visitors to Warokutal (Safari Camp) access to water, supplies and vehicle recovery equipment when floods damage the roads. It proposes an elevated, low maintenance shelter that stocks essentials and hires out recovery kits, personal locator beacons and ultra high frequency radios.
+> This project aims to give visitors to Warokutal (Safari Camp) access to water, supplies and vehicle recovery equipment when floods damage the roads. It proposes an elevated, minimal maintenance shelter that stocks essentials and hires out recovery kits, personal locator beacons and ultra high frequency radios.
 
 ### [2.5] Overview of design: summary
-- **code:** 2.5 | **status:** SITE | **words:** 146 | **source:** User-provided text, 26 October 2026
-- layout: reuse the Design Solution Options story layout, styling, counter, progress line, image transitions and desktop/mobile scroll animations. Show "Overview of Design" as the large heading below the Proposal Summary heading and paragraph (2.4), then the four supplied points as four story slides in order. Do not render the former "Overview of design: summary" subheading. Slide headings: "Flood resilience and supply security", "Implementation", "Physical components", "Facility users". Use the four real photographs documented below, in slide order. These are examples of the topics, not photographs of the proposed Provisions Point facility. Keep the following stats, considerations, materials and figures below this story.
+- **code:** 2.5 | **status:** SITE | **words:** 147 | **source:** User-provided text, 28 October 2026
+- layout: reuse the Design Solutions story layout, styling, counter, image transitions and desktop/mobile scroll animations. Retain the Overview pink scroll-progress line animation (vertical on desktop and horizontal on mobile, respecting reduced motion) alongside the shared point navigation beside the story content: four horizontal line markers in a vertical stack below the counter on desktop and between the counter and paragraph on mobile. Resting lines are 9px wide; hovering or focusing a marker extends it to 28px, its immediate neighbours to 22px and next neighbours to 15px. Show point numbers 1–4 in a bubble to the right and highlight the active point. Selecting a marker centres its paired paragraph in the viewport on desktop or in the horizontal swipe area on mobile, keeping the counter and diagram in sync. Retain the horizontal rows of vertical markers on Background and Project details. Show "Overview of Design" as the large heading below the Proposal Summary heading and paragraph (2.4), then the four supplied points as four story slides in order. Do not render the former "Overview of design: summary" subheading. Do not show individual slide headings; display each supplied point as a paragraph with larger responsive text (18–22px, regular 400 weight, black, line height 1.6) and no heading gap above it. Paragraphs remain fully opaque without per-word reveals. On desktop, snap the nearest point to the viewport centre after scrolling settles within the story, while allowing free entry and exit. Keep the counter and diagram aligned to the nearest point. On mobile, snap each horizontal paragraph to the centre. Respect reduced-motion preferences when snapping. Use four original vector diagrams in slide order: building elevation, operating workflow, annotated cutaway and flood-response journey. Fit the complete diagrams in the image panel without cropping or zooming; include accessible descriptions and no caption beneath them. Keep the following stats, considerations, materials and figures below this story.
 
 
-- image 1: `public/assets/report/overview/flood-resilience.webp`; source: https://commons.wikimedia.org/wiki/File:Queenslander_house_in_Laidley.jpg ; original: https://upload.wikimedia.org/wikipedia/commons/b/b1/Queenslander_house_in_Laidley.jpg ; creator: NJM2010; date: 15 January 2011; licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). Resized and converted to WebP, displayed with a crop under the same licence. Alt: "Real example: a Queenslander house raised on posts in Laidley, Queensland."
-- image 2: `public/assets/report/overview/prefabricated-construction.webp`; source: https://commons.wikimedia.org/wiki/File:Modular_home.jpg ; original: https://upload.wikimedia.org/wikipedia/commons/d/dd/Modular_home.jpg ; creator: Wikideas1; date: 1 July 2024; licence: CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/). Resized and converted to WebP, displayed with a crop. Alt: "Real example: prefabricated home sections beside a prepared foundation during construction."
-- image 3: `public/assets/report/overview/solar-powered-shelter.webp`; source: https://commons.wikimedia.org/wiki/File:Cabin_with_solar_panels.jpg ; original: https://upload.wikimedia.org/wikipedia/commons/5/52/Cabin_with_solar_panels.jpg ; creator: Steve Hillebrand, U.S. Fish and Wildlife Service; date: not given; licence: public domain, as stated on the source page. Resized and converted to WebP, displayed with a crop focused on the cabin. Alt: "Real example: solar panels on the metal roof of a remote wooden cabin."
-- image 4: `public/assets/report/overview/facility-users.webp`; source: https://www.lamalama.org.au/enterprises/ ; original: https://www.lamalama.org.au/wp-content/uploads/2016/08/tourism-banner.png ; credit: Yintjingga Aboriginal Corporation (individual photographer not stated); date: not stated; licence: no reuse licence stated on the source page. Converted to WebP, displayed with a crop focused on the visitors. Use the existing "Visitors beside a waterway" reference. Alt: "Visitors fishing beside a waterway on Lama Lama Country."
+- diagrams: authored directly in `app/report/ReportOverviewDiagram.tsx`, with shared styling in `app/report/ReportOverviewDiagram.module.css`. These original project illustrations replace the generic overview photographs; no external image source is used for these diagrams.
+- diagram 1: side elevation showing the floor 2 m above ground on reinforced concrete piles, the seasonal Ranger service area and the emergency cabinet available at all times. The dimension measures ground to floor; no flood clearance is asserted.
+- diagram 2: community partnerships, stocking, Ranger operation and maintenance, with a note about flood guidance signage.
+- diagram 3: building cutaway identifying watertight concrete walls, corrugated fibre cement roofing, solar lighting and charging, supplies and hire equipment.
+- diagram 4: Visitors, Traditional Owners and Rangers travelling through Warokutal, unusable roads during or after flooding, and access to supplies and equipment at Provisions Point. Distinguish the outside-hours emergency cabinet from seasonal staffing.
 
-> The design achieves emergency flood resilience and supply security through an elevated, low maintenance shelter design equipped with lockable storage vaults, and self-service recovery gear distribution racks.
-> The implementation of this design is supported through prefabricated durable building components, local community partnerships to aid with stocking and maintenance, and clear signage guiding users when flooding occurs.
-> The physical components of the design include an elevated stilt mounted platform designed to remain above peak flood levels, a weatherproof secure storage shed that contains non-perishable food and drink, equipment lockers for PLB’s, UHF radios and vehicle recovery kits, and most importantly, solar powered lighting and battery-charging stations to ensure visibility and access during day or night.
-> Visitors, traditional owners and rangers traveling through Warokutal will use this facility, either during or immediately after severe floods when unsealed roads become unusable, stranding travellers without immediate access to rescue services.
+> The design improves flood resilience and supply security through an elevated, low-maintenance building staffed by Lama Lama Rangers during the visitor season, with a small emergency cabinet available at all times.
+> The implementation of this design is supported through durable, low-maintenance materials, local community partnerships to aid with stocking and maintenance, and clear signage guiding users when flooding occurs.
+> The building sits 2 m above ground on reinforced concrete piles, with watertight concrete walls and a corrugated fibre cement roof. It stocks drinking water, non-perishable food, firewood and first-aid supplies, and hires out vehicle recovery kits, personal locator beacons and UHF radios. A small solar system powers the lighting and charges the radios and beacons.
+> Visitors, Traditional Owners and Rangers travelling through Warokutal will use this facility, either during or immediately after severe floods when unsealed roads become unusable, stranding travellers without immediate access to rescue services.
 
 ### [2.6] Overview of design: key points (removed)
 - **code:** 2.6 | **status:** DRAFT | **words:** 0 | **source:** Removed by the user, 26 October 2026
@@ -180,110 +185,115 @@ Per-block counts are in each block's `words` field below.
 
 ### [2.8] Key Considerations
 - **code:** 2.8 | **status:** DRAFT | **words:** 194 | **source:** User-provided content, 26 October 2026
-- layout: large Key Considerations heading followed by four editorial rows separated by thin rules, with muted 01–04 labels, bold questions in the middle and unchanged answers on the right. On mobile, answers sit beneath their questions. Implementation retains three numbered steps. No cards or images in this block. Blank blockquote lines separate each question group.
+- layout: large Key Considerations heading followed by four editorial rows separated by thin rules, with muted 01–04 labels, bold questions in the middle and unchanged answers on the right. Questions and answers render at full opacity from the start, with no text reveal animation. On mobile, answers sit beneath their questions. Implementation retains three numbered steps. No cards or images in this block. Blank blockquote lines separate each question group.
 
 > Where the recommended materials are sourced from? (i.e. externally or locally available)
-> Heavy duty galvanised steel posts and fiber-cement or marine-grade aluminium cladding sourced from regional industrial hubs to be able to resist corrosion and termite damage. They will be sourced in bulk from trusted regional suppliers, with stock that will be rotated on a seasonal wet-season schedule.
+> Reinforced concrete piles, watertight concrete and corrugated fibre cement sheeting, chosen for their resistance to flooding, termites, corrosion and cyclone winds. Materials will be sourced from regional suppliers and delivered during the dry season.
 >
 > What are the key maintenance requirements?
-> Annual structural inspections before wet seasons to make sure all is good, inventory audis every 6 months, water flitration units, and communication equipment batteries, and clear operational guidelines and user accountability protocols for borrowed vehicle recovery gear and PLB’s.
+> Rangers restock weekly during the visitor season (July to November) and carry out two inspections a year, before and after the wet season. Hire gear is checked on return, and damaged items are repaired or replaced. Structural or electrical faults are handled by qualified contractors.
 >
 > How do you propose the design might be implemented?
 > Community consultation with Lama Lama Traditional Owners and local land councils to finalise placement and cultural protocols.
-> Prefabrication of structural parts off-site to minimise environmental disturbance on Lama Lama country.
-> Assembly on-site by local work crews supported by specialised contractors, utilising light machinery.
+> Dry season construction by a crew of four, taking about eight weeks.
+> A four hour training session for Rangers, with an instruction manual kept on site.
 >
 > What additional consultation/feedback/research might be required to validate your design proposal? What might the next steps be to make this idea happen?
-> Conduction water assessments with Traditional Owners to determine precise historical flood heights for best and optimal elevation.
+> Conduct flood-height assessments with Traditional Owners to confirm the right building height. Seek YAC approval, which takes about six months.
 
 ### [2.9] Proposed Materials and Cost Summary
-- **code:** 2.9 | **status:** DRAFT | **source:** User-provided summary estimates
-- layout: centered heading and introduction, then a full-section-width 34px horizontal stacked bar (30px on phones) above the seven square cards. No chart panel or enclosing decorative parent. The subtotal appears above the bar and a compact item detail readout below it, followed by the cards with tight 16px horizontal / 24px vertical gaps. Cards remain four then three (centered) on desktop, two columns on tablets and one on narrow phones. The bar has six segments proportional to the $34,000 listed-item subtotal, matching colours and item numbers in cards and legend. Hover, keyboard focus, or click/tap to pin highlights a segment and its matching card and table row; clicking again unpins, Escape clears the pin and keyboard focus. Segments lift and glow, with reduced-motion support. Percentages and item numbers appear in the bar on desktop, numbers only on narrow phones. The seventh card shows the rough total budget, which is not an additional cost item. The legend table and budget note sit below the cards.
+- **code:** 2.9 | **status:** DRAFT | **source:** User-provided summary estimates, 28 October 2026
+- layout: centered heading, then a full-section-width 34px horizontal stacked bar (30px on phones) above the eight square cards. No chart panel or enclosing decorative parent. The sum of listed costs appears above the bar and a compact item detail readout below it, followed by the cards with tight 16px horizontal / 24px vertical gaps. Cards form two rows of four on desktop, two columns on tablets and one on narrow phones. The bar has seven segments proportional to the $87,386 sum of listed costs, including contingency, matching colours and item numbers in cards and legend. Hover, keyboard focus, or click/tap to pin highlights a segment and its matching card and table row; clicking again unpins, Escape clears the pin and keyboard focus. Segments lift and glow, with reduced-motion support. Percentages and item numbers appear in the bar on desktop, numbers only on narrow phones. The eighth card shows the $87,387 estimated total, which is not an additional cost item. The legend table sits below the cards. Omit the introductory paragraph, chart subtotal label, idle interaction hint, visible table captions and budget discrepancy note; keep the subtotal amount and active item readout.
+- photographs: fill the first seven square cards with the photographs in the Summary materials photograph register below, cover-cropped with a dark gradient so the existing item number and price stay readable. Add a linked photo credit below each item label. Keep the estimated total card without an image. The graph, table, cost amounts and interactions remain unchanged.
 
-> This section contains an overview of key materials, labour requirements, and an overall cost estimate for the project (in both local currency where your project is located and AUD). For example:
 
 ### [2.10] Cost breakdown
-- **code:** 2.10 | **status:** DRAFT | **source:** User-provided summary estimates
+- **code:** 2.10 | **status:** DRAFT | **source:** User-provided summary estimates, 28 October 2026
 
-> Estimated costs in AUD (also the project's local currency).
 > | Item | Approximate cost (AUD) |
 > |---|---|
-> | Structural steel framing, elevated platforms, marine-grade fixings | $12,000 |
-> | Weatherproof storage containers and secure locking mechanisms | $3,500 |
-> | Emergency supplies | $2,500 |
-> | Off grid solar power kit | $3,000 |
-> | Freight and remote transport logistics | $5,000 |
-> | Local Indigenous constructions workforce and labour costs | $8,000 |
+> | Frame, walls and roof | $38,592 |
+> | Piles, deck and stairs | $20,000 |
+> | Shelves, counter, solar panel and battery | $5,000 |
+> | Recovery kits, PLBs and UHF radios | $2,756 |
+> | Water, food, firewood and safety flyers | $738 |
+> | Design documents | $5,859 |
+> | Contingency (20%) | $14,441 |
 
 ### [2.11] Estimated Total Cost
-- **code:** 2.11 | **status:** DRAFT | **source:** User-provided rough budget; subtotal calculated from the six listed items
-- layout: seventh square card shows roughly $40,000 AUD. The explanatory note appears below the cost table. These summary estimates do not replace the separate detailed Cost Analysis tables in Section 14.
+- **code:** 2.11 | **status:** DRAFT | **source:** User-provided estimated total, 28 October 2026
+- layout: eighth square card shows $87,387 AUD. Include the estimated total as the table footer, outside the graph breakdown. No explanatory note appears below the cost table. These summary estimates do not replace the separate detailed Cost Analysis tables in Section 14.
 
-> Roughly about $40,000 AUD
-> The listed items total $34,000 AUD. The remaining $6,000 of the rough $40,000 budget is unallocated.
+> $87,387 AUD
 
 ---
 
 ## SECTION 3: Group Declaration (id: group-declaration)
-- **section words:** 81 | **counts toward 4000:** yes
+- **section words:** 65 | **counts toward 4000:** yes
 
 ### [3.1] Team member contributions
-- **code:** 3.1 | **status:** SITE | **words:** 81 | **source:** Project page, The team
-- layout: a 2-column table with the caption above it. Member image tiles: `(change to our assignment content)`.
+- **code:** 3.1 | **status:** SITE | **words:** 65 | **source:** Project page, The team
+- layout: a 2-column table with the caption above it. Member image tiles: `(change to our assignment content)`. Omit the website-contributions TEAM TO ADD note.
 
 > Table 1. Team member contributions to Assessment Task 3 Website
 > | Group Member Name | Project Contributions |
 > |---|---|
-> | Pinhong | Climate and flooding research. Prototype. |
-> | Darrell | Existing infrastructure and safety. Design opportunity. Life cycle. Revenue and cost. |
-> | Tasneef | Visitor groups and experience. Decision matrix. Ideas and design options. |
-> | Isaac | Tourism economy and maintenance. Current practice. Slide design. |
-> | Jude | Cultural values and protocols. |
-> | Qijun | Ecological and environmental values. Cost justification. |
-> TEAM TO ADD: add each member's contribution to this website (writing, building, editing and team management).
+> | Joud | Background, Journey Map, APA reference list, Appendix 1,2,3 |
+> | Pinhong | Implementation plan, Cost analysis, prototype, Appendix |
+> | Darrell | Website Development, Appendix, reference list, prompt log |
+> | Tasneef | Design solution options, design criteria, design selection, detailed design, editing and formatting, Appendix, executive summary |
+> | Isaac | Background, Problem description, design criteria, Appendix |
+> | Qijun | Design solution option, Detailed design, recommendations, Appendix |
 
 ---
 
 ## SECTION 4: Acknowledgment (id: acknowledgement)
-- **section words:** 54 | **counts toward 4000:** yes
+- **section words:** 72 | **counts toward 4000:** yes
 
 ### [4.1]
-- **code:** 4.1 | **status:** SITE | **words:** 54 | **source:** Wording supplied by the user, 26 October 2026
-- layout: render the acknowledgement text in the montage below the hero under "Acknowledgment", without a block subheading. The montage heading and body use 30px text on desktop and 22px on mobile. The old acknowledgement section uses the heading "Acknowledgment" and retains its styling with the body text `EDIT HERE TEXT`, without a block subheading.
+- **code:** 4.1 | **status:** SITE | **words:** 72 | **source:** Wording supplied by the user, 28 October 2026
+- layout: render the acknowledgement text in the montage below the hero under "Acknowledgment", without a block subheading. The montage heading and body use 30px text on desktop and 22px on mobile. Keep the `acknowledgement` anchor on this content for existing links. Remove the old standalone acknowledgement image placeholder and its `EDIT HERE TEXT` body from the Summary page.
 
-> We would like to acknowledge the Gadigal people, the Boorooberongal people of the Dharug Nation, the Bidiagal people and the Gamaygal people upon whose ancestral lands our university stands. We would also like to pay respect to the Elders both past and present, acknowledging them as the traditional custodians of knowledge for these lands.
+> We would like to acknowledge the Gadigal people, the Boorooberongal people of the Dharug Nation, the Bidiagal people and the Gamaygal people upon whose ancestral lands our university stands. We would also like to pay respect to the Elders both past and present, acknowledging them as the traditional custodians of knowledge for these lands. We also acknowledge the Lama Lama people, the Traditional Owners of the Country this project is designed for.
 
 ---
 
 ## SECTION 5: Project details (id: project-details)
-- **section words:** 215 | **counts toward 4000:** yes
+- **section words:** 309 | **counts toward 4000:** yes
+- Content order: render four slides: block 5.1 (1.1 context), block 5.6 (1.2 importance), block 5.2 (1.3 design area), and block 5.3 (1.4 needs statement). Preserve existing block codes; 5.6 is the next unused code. Use the exact user-supplied headings and paragraphs below, excluding pasted line-break escapes and the trailing HTML space entity.
+- Text sizing: enlarge the headings and paragraphs across all four Project details slides. Desktop headings use `clamp(28px, 5.5svh, 40px)` with 1.15 line height; paragraphs use `clamp(20px, 3.8svh, 30px)` with 1.3 line height. Below 768px, headings use 34px and paragraphs use 18px with 25.2px line height. Keep the exact wording, existing illustrations and slide controls.
+- layout: omit the repeated “Project details” heading inside the section. Show each block’s numbered question as the slide heading above its existing paragraph on desktop and mobile. Keep the page hero title unchanged. Replace the generic overlapping image placeholders with original SVG diagrams for points 1.1–1.3 and a generated illustration for point 1.4, implemented in `app/report/ReportDetailsVisual.tsx`. The diagram column uses at most 40% of the desktop row, capped at 440px; mobile diagrams sit above the text and are capped at 360px for legible labels. Keep the wider text column and the existing scroll-driven slide changes. Paragraphs appear fully visible immediately on each slide, without word-by-word reveals or opacity fades. Add circular previous and next arrow buttons beside the slide counter, with accessible labels, visible keyboard focus and 48px targets. Disable previous on the first slide and next on the last slide. Add the same shared horizontal row of vertical line navigation used by Background between the counter and arrows, with one marker per project detail (1.1–1.4). Hover or keyboard focus grows the selected marker to 28px, its immediate neighbours to 22px and next neighbours to 15px, from a 9px resting height. Show the point number in a bubble above the marker and highlight the current slide. Activating a marker uses the existing scroll selection function so text, diagram, counter and markers stay in sync. Wrap the marker row below the controls on narrow phones and respect reduced motion. Each button moves directly to the middle of the selected slide’s scroll interval so the question, paragraph, diagram and counter stay in sync with manual scrolling, including reduced motion. Diagrams resize without animation and respect reduced motion. Remove the bottom caption strips and their divider lines from all four visual cards so each card ends after the artwork. Keep diagram labels and accessible descriptions, excluded from the body word count. Retain the location source in this documentation and the existing reference list rather than below the diagram.
+- visual 1 / block 5.1: **The setting**. Original simplified location diagram of Cape York Peninsula with north arrow, Coen, Warokutal, Port Stewart, Lama Lama Country, and the road access highlighted. Legend: “Wet season flooding can disrupt access”. Accessible description: “Simplified location diagram of Cape York Peninsula, showing Coen and access towards Warokutal at Port Stewart in Lama Lama Country. The highlighted road represents access affected by wet season flooding; it does not show current road conditions or Country boundaries.” Documented location source: Lama Lama Country, https://www.lamalama.org.au/visiting/ (Yintjingga Aboriginal Corporation; accessed 28 October 2026; existing reference in block 17.1). No external map artwork or photographs are reproduced. Location relationships are simplified, without Country boundaries or a current road-status claim.
+- visual 2 / block 5.6: **From disruption to support**. Four connected steps: “01 Flooding closes roads / Unsealed access becomes unusable”; “02 Travellers become stranded / Supplies and support may be far away”; “03 Access the supply point / Essentials, communication + recovery kits”; “04 Manage the disruption / Reduce the need for risky interventions”. Closing label: “Protect cultural + environmental assets”. Caption: “Local supplies help visitors manage weather disruptions.” Accessible description: “Four connected steps: flooding closes roads, travellers become stranded, the supply point provides essentials and communication, and visitors manage the disruption. The intended outcome is fewer high risk ranger interventions and protection of cultural and environmental assets.” Based on the user-supplied project text; no external image assets.
+- visual 3 / block 5.2: **The supply point**. Original annotated shelter drawing, with raised floor and support piles. Labels: “Water + long shelf life rations”, “Radios + PLBs”, “Vehicle recovery equipment”, “Raised floor”, and “Essential supplies in one place”. Caption: “An elevated supply point brings essentials together.” Accessible description: “An elevated shelter with a raised floor and supporting piles. Labels identify water and long shelf life rations, radios and personal locator beacons, and vehicle recovery equipment.” Based on the user-supplied project text; no external image assets.
+- visual 4 / block 5.3: **Dependable access to essentials**. Original illustration generated with the built-in imagegen tool, saved as `app/report/assets/project-details-needs.webp` (1340 × 1174, optimized WebP), and imported locally by `ReportDetailsVisual.tsx`. Two travellers use an elevated supply shelter with water, canned food, recovery gear and a handheld radio; a parked four-wheel-drive and an eroded road establish the disrupted access. Use the existing diagram card and responsive width without cropping the illustration. Caption: “Concept illustration · supplies and communication when roads are damaged.” Alt text: “Concept illustration of two travellers at an elevated supply shelter in remote bushland. One accesses water and food while the other uses a handheld radio. Recovery equipment is stored below the shelves, a four-wheel-drive is parked on dry ground, and an eroded road is visible in the distance.” Palette: cream, sage, olive, muted blue, tan and terracotta. It is a proposed concept, with no external source image. Full generation prompt: `app/report/assets/project-details-needs-prompt.txt`.
 
-### [5.1] Why this project matters
-- **code:** 5.1 | **status:** SITE | **words:** 23 | **source:** Home page
+### [5.1] 1.1 The context of your project
+- **code:** 5.1 | **status:** SITE | **words:** 118 | **source:** Wording supplied by the user, 28 October 2026
 
-> Visitors to Warokutal need dependable access to water, supplies, recovery equipment and safety information when roads are damaged and help is far away.
+> The primary target audience for the project consists of independent travellers and managers of local tourism facilities that operate within Lama Lama country on the Cape York Peninsula. Warokutal (Safari Camp) is a remote campground at Port Stewart, reached by roads that can become impassable in the wet season, so the national park is typically closed from 1 December to 30 June (DETSI, 2024a). The park offers remote, low-key, self-reliant visitor experiences (QPWS, 2013), but the Ranger Base is staffed only from about 8 am to 4:30 pm and campground water is non-potable (YAC, n.d.). Visitors who get stuck can be left without water, supplies or a way to call for help, which is why this project matters.
 
-### [5.2] Context
-- **code:** 5.2 | **status:** SITE | **words:** 54 | **source:** Home page, Context tab
+### [5.6] 1.2 Why is this important?
+- **code:** 5.6 | **status:** SITE | **words:** 74 | **source:** Wording supplied by the user, 28 October 2026
 
-> Warokutal is a campground at Port Stewart in Lama Lama Country. Wet-season floods can damage the roads and other infrastructure (Engineers Without Borders Australia, 2024). Visitors are far from services, so a stuck vehicle can become an emergency. The Lama Lama Rangers manage tourism and carry out repairs (Reardon-Smith, 2023). Their time is limited.
+> For local tourism facility managers and rangers, the project addresses a critical operational gap. By establishing a durable supply point, the facility aims to reduce recurring emergency repair expenses and minimises the need for high-risk ranger interventions during flooding seasons’ extreme weather events. The project ultimately bridges the gap between the risks associated with tourism and wet season flooding, ensuring visitors can manage unexpected weather disruptions while safeguarding Lama Lama’s cultural and environmental assets.
 
-### [5.3] The design opportunity
-- **code:** 5.3 | **status:** DRAFT | **words:** 65 | **source:** Paraphrase of the EWB brief for Opportunity 2.1
-- note: the team must confirm which reference covers the brief text.
+### [5.2] 1.3 Which Design Area and Project Opportunity (Topic) has your group selected?
+- **code:** 5.2 | **status:** SITE | **words:** 48 | **source:** Wording supplied by the user, 28 October 2026
 
-> The EWB Challenge brief asks teams to design resilient infrastructure for a specific visitor destination in Lama Lama Country, such as a campground, creek crossing, boat ramp or visitor information point. The design must respond to wet-season flooding, visitor access, safety or maintenance needs, suit the expected visitor numbers, improve the visitor experience, and not harm cultural or environmental values (Engineers Without Borders Australia, 2024).
+> This project responds to Design Area 2, Eco-tourism and Visitor Experience, and Design Opportunity 2.1, Resilient visitor infrastructure, and focuses on Warokutal. The design is an elevated, low maintenance supply point that gives stranded visitors dependable access to water, long shelf-life food, radios, PLBs and vehicle recovery equipment.
 
-### [5.4] How might we statement
-- **code:** 5.4 | **status:** SLIDES | **words:** 39 | **source:** Slide 4, tidied
-- note: this repeats block 1.3 on purpose. The template asks for the statement in Project details too.
+### [5.3] 1.4 What is your needs statement?
+- **code:** 5.3 | **status:** SITE | **words:** 35 | **source:** Wording supplied by the user, 28 October 2026
 
-> How might we make a Lama Lama Country campground safer for visitors, more resilient to floods and unreliable roads, with low capital investment and without adding more maintenance duties to Rangers, while protecting the region's cultural and ecological values?
+> The needs statement is that visitors to Warokutal need dependable access to water, supplies, recovery equipment and a way to call for help when roads are damaged, without adding to the workload of the Rangers.
+
+### [5.4] How might we statement (removed)
+- **code:** 5.4 | **status:** SLIDES | **words:** 0 | **source:** Replaced by the three user-supplied project details points, 28 October 2026
 
 ### [5.5] Stakeholders and organisations
 - **code:** 5.5 | **status:** SITE | **words:** 34 | **source:** Project page, overview photo carousel (heading renamed)
-- layout: full-width overlapping photo carousel matching the overview below “Built with Lama Lama Country in mind”: four progressively larger frames, six cycling entries, 0.8-second transitions every two seconds while visible. Static when reduced motion is requested. The eight organisation names remain in a screen-reader-only list; no visible name tiles or logos.
-- images: reuse the overview's existing decorative Waabi placeholder photos from `/assets/home/`: `1760350326-waabi_portrait_felicia_00336_final.webp`, `1760350326-waabi_scout_00761_final.webp`, `1761184004-251006_waabi_collab_05_1012_a.webp`, and `1760350326-waabi_inspection_02613_final.webp`; repeat the first two to match its six-entry cycle. These do not depict the listed organisations. Empty alt text and an aria-hidden carousel keep these decorative placeholders out of the accessible content.
+- layout: removed from Project details at the user’s request on 28 October 2026, including the heading, decorative photo carousel and screen-reader organisation list. The organisation text below is retained as source material only and is not rendered. Background keeps its separate slideshow documented in Section 6.
 
 > Yintjingga Aboriginal Corporation
 > Lama Lama Rangers
@@ -298,320 +308,418 @@ Per-block counts are in each block's `words` field below.
 
 ## SECTION 6: Background (id: background)
 - **section words:** 425 | **counts toward 4000:** yes
-- layout: reuse the exact Proposed materials and cost component, including its image panel, heading styling, spacing, tabs and responsive animations. Use "Background" as the heading, no intro, and the nine unchanged sub-headings and paragraphs below as tabs in order. Keep Figure 3 and its caption below the component.
+- layout: replace the separate carousel and nine Background tabs with a seven-slide scroll-driven Background slideshow after the page hero. Each slide shows its numbered heading (2.1–2.7) and exact user-supplied paragraph above the five-card, full-viewport-width carousel. All seven paragraph–card pairings remain in the data; only five cards render at once, with two off-screen cards returning as scrolling changes the active paragraph. Match the home page’s “Built with Lama Lama Country in mind” carousel animation: retain outgoing cards during the 0.8-second transition, immediately place them behind the stack, and shrink their image window to half size while moving it 20px right. Incoming windows slide in from 100% right while their image crops zoom from 1.5 to 1. Use the same [0.77, 0, 0.175, 1] easing, disable initial mount animations, and use zero duration for reduced motion. Five cards occupy the settled layout; outgoing cards remain briefly during their exit. Explicitly restore each active card’s stacking level and its window’s full scale and zero horizontal offset when an interrupted exit is reversed, so rapid back-and-forth scrolling cannot leave a visible card behind the stack or shrunken. Scrolling forward or back through equal intervals changes the text and brings its permanently paired card into the largest right-hand slot. Keep the existing 11.9vw–24.5vw card height range. Disable timed autoplay for this slideshow. Include previous/next buttons and a slide counter for keyboard and touch access. Replace “Scroll to explore” with a horizontal row of seven vertical, bottom-aligned line buttons, one per paragraph. Highlight the current point with a dark line. On hover or keyboard focus, increase that marker’s height to 28px, its immediate neighbours to 22px and the next neighbours to 15px, leaving the other lines at 9px. Show its point number (2.1–2.7) in a small rounded bubble above the marker. Animate line heights over 0.2 seconds, without transitions for reduced motion. Clicking or activating a marker selects its paired slide. Wrap the horizontal marker row below the counter and arrows on narrow phones; respect reduced motion. Do not show the standalone floodwater concept image or its Figure 3 caption below the slideshow. Project details no longer renders the stakeholders carousel.
 
-### [6.1] Climate and flooding
-- **code:** 6.1 | **status:** SITE | **words:** 34 | **source:** Project page hero
+- Background text sizing and spacing: use 18px paragraph text on desktop and 16px on mobile, with responsive 24–32px slide headings. Let the text area follow its content height instead of reserving a fixed minimum height, and use an 8px top margin above the slide navigation to keep the controls close to the paragraph.
 
-> Heavy rain can flood roads and low ground across northern Cape York (Testa, 2026). The Lama Lama Rangers carry out infrastructure repairs (Reardon-Smith, 2023). Flood damage can therefore last after the water has gone.
+- Background carousel photographs: use the seven local WebP assets listed in the Background carousel image credits below, permanently paired to blocks 6.1–6.7 in that order. Preserve the existing carousel animation, card sizing and navigation. Serve local files, not hotlinks.
 
-### [6.2] Existing infrastructure and safety
-- **code:** 6.2 | **status:** SITE | **words:** 43 | **source:** Project page hero
+### [6.1] 2.1 Lama Lama Country and its climate
+- **code:** 6.1 | **status:** SITE | **words:** 85 | **source:** User-supplied Background paragraphs, 28 October 2026
 
-> There are two campgrounds, Warokutal at Port Stewart and Maramba at Silver Plains, three boat ramps and one staffed information point, the Lama Lama Ranger Base. A single road joins Port Stewart to Coen (Cook Shire Council, 2026; Engineers Without Borders Australia, n.d.).
+> Lama Lama Country is located on the eastern coast of the Cape York Peninsula, Queensland. The region experiences a tropical monsoon climate that is characterised by wet and dry seasons. Between October and April, the land experiences heavy and extensive rainfall, where historical data showed that early wet season (October to December) experiences concentrated precipitation that acts as a catalyst for sudden flash flooding. This impacts unsealed roads that connect remote camping areas such as Warokutal and Maramba and isolate visitors from external emergency services.
 
-### [6.3] Visitors and experience
-- **code:** 6.3 | **status:** SITE | **words:** 57 | **source:** Project page (moved from "Organisations and sources")
+### [6.2] 2.2 Cultural and environmental significance
+- **code:** 6.2 | **status:** SITE | **words:** 55 | **source:** User-supplied Background paragraphs, 28 October 2026
 
-> Visitors come for bird watching, boating, fishing, camping and guided tours. The dry season brings most of them. The park is closed from 1 December to 30 June. The open season runs from July to November (Department of the Environment, Tourism, Science and Innovation [DETSI], 2024b). TEAM TO ADD: confirm the park closure dates apply to Warokutal.
+> The landscape holds profound spiritual, historical and cultural significance for the Lama Lama Traditional Owners, who manage the region alongside the Queensland Parks and Wildlife Service. Because travel through the national park and surrounding areas is restricted as it is culturally and environmentally sensitive, any infrastructure intervention must respect sacred sites and minimise ecological disruption.
 
-### [6.4] Tourism economy and maintenance
-- **code:** 6.4 | **status:** SITE | **words:** 35 | **source:** Project page (moved from "Project stages")
+### [6.3] 2.3 Maintenance and remote safety
+- **code:** 6.3 | **status:** SITE | **words:** 60 | **source:** User-supplied Background paragraphs, 28 October 2026
 
-> Rangers manage tourism and carry out infrastructure repairs (Reardon-Smith, 2023). YAC earns income from tourism and from the YM2 cattle enterprise (YAC, n.d.). Ranger time is limited, so new infrastructure must not add much work.
+> Furthermore, since regional infrastructure is traditionally maintained reactively rather than proactively, leaving remote sites vulnerable to severe weathering damage, the aim is to build something that needs to be maintained as little as possible. Currently, the Port Stewart Ranger Base serves as the primary safety outpost that is staffed, for the entire region, leaving remote camps exposed during weather emergencies.
 
-### [6.5] Cultural values and protocols
-- **code:** 6.5 | **status:** SITE | **words:** 47 | **source:** Project page, Background
+### [6.4] 2.4 Unpredictable wet-season rainfall
+- **code:** 6.4 | **status:** SITE | **words:** 29 | **source:** User-supplied Background paragraphs, 28 October 2026
 
-> The Lama Lama people are the Traditional Owners. The Alingina Wungku Living Area is closed to visitors to protect cultural resources (YAC, n.d.). Entry to areas of high cultural or environmental value is limited to Traditional Owners or permit holders (Queensland Parks and Wildlife Service [QPWS], 2013).
+> Rainfall in the early wet season (October to December) varies widely from year to year, which leads to flooding that is both widespread and sudden (Bureau of Meteorology, 2018).
 
-### [6.6] Ecological and environmental values
-- **code:** 6.6 | **status:** SLIDES | **words:** 29 | **source:** Slide 7, tidied
-- note: check against QPWS (2013) before submission.
+### [6.5] 2.5 Flood damage and visitor emergencies
+- **code:** 6.5 | **status:** SITE | **words:** 47 | **source:** User-supplied Background paragraphs, 28 October 2026
 
-> Infrastructure is banned outright in the Alingina Wungku Living Area, the Goose Swamp and the Bull Swamp Area (QPWS, 2013). No camping development is permitted inside the national park.
+> During the rainy season, buildings and equipment are susceptible to damage from flash floods and sudden downpours, necessitating significant capital for repairs before they can be used again for tourism. For visitors, the lack of any nearby shelter or supply point makes emergencies extremely hard to manage.
 
-### [6.7] Current practices
-- **code:** 6.7 | **status:** SLIDES | **words:** 57 | **source:** Slide 8, tidied
+### [6.6] 2.6 Existing campgrounds and safety points
+- **code:** 6.6 | **status:** SITE | **words:** 47 | **source:** User-supplied Background paragraphs, 28 October 2026
 
-> Roads and other infrastructure are repaired when something breaks, not on a set schedule (Reardon-Smith, 2023). It is up to visitors to check road conditions on the Cook Shire Council website before they travel (Cook Shire Council, 2026). Entry to areas of high environmental or cultural value is limited to Traditional Owners or permit holders (QPWS, 2013).
+> Camping is currently kept outside the national park boundary, at the nearby campgrounds of Warokutal and Maramba (DETSI, 2024a). There is no alternative to visitors bringing their own recovery equipment. The Ranger Base at Port Stewart is currently the only staffed safety point for the whole area.
 
-### [6.8] Existing solutions
-- **code:** 6.8 | **status:** SLIDES | **words:** 40 | **source:** Slide 8, softened (see edits log)
+### [6.7] 2.7 Project aims and community consultation
+- **code:** 6.7 | **status:** SITE | **words:** 74 | **source:** User-supplied Background paragraphs, 28 October 2026
 
-> Camping is kept outside the national park boundary, at the campgrounds of Warokutal and Maramba (DETSI, 2024a). Visitors currently need to bring their own recovery equipment. The Lama Lama Ranger Base at Port Stewart is the only staffed information point.
-
-### [6.9] Why this is not enough
-- **code:** 6.9 | **status:** DRAFT | **words:** 55 | **source:** Built from Background and Detailed Design text
-
-> These measures leave a gap. A visitor who is stuck at Warokutal must wait for help from the Ranger Base, which is far away and has limited staff. The team wants visitors to be able to recover their own vehicles, get water and supplies close by, and call for help, without adding to Ranger workload.
-
-### [6.10] Figure 3
-- **code:** 6.10 | **status:** MEDIA | **words:** 28 | **source:** Old project page image
-- alt: Concept image: red dirt road with floodwater across it and a four-wheel drive stopped at the edge.
-
-> Figure 3. Concept image: a red dirt road with floodwater across it and a 4WD stopped at the edge. Made with an AI image tool (see Appendix 3).
+> The project aims to improve visitors’ access to essential supplies at Warokutal (Safari Camp), particularly when wet-season flooding disrupts road access. It seeks to develop an affordable, flood-resilient solution that reduces maintenance and repair demands on rangers. The design should minimise disturbance to the surrounding environment and protect culturally significant areas. Consultation with Traditional Owners should guide the design and its implementation to ensure that the proposed solution respects community need and cultural values.
 
 ---
 
 ## SECTION 7: Problem Description (id: problem)
-- **section words:** 114 | **counts toward 4000:** yes
+- **section words:** 146 | **counts toward 4000:** yes
+- layout: display the Warokutal problem paragraph (block 7.2) first, directly below Problem Description, without its own subheading or visible 3.2 number. Follow it with the 3.1 User needs statement heading and paragraph (block 7.1). Block 7.2’s title below is retained as source metadata only.
 
-### [7.1] User needs statement
-- **code:** 7.1 | **status:** SLIDES | **words:** 32 | **source:** Slide 4, tidied (see edits log)
+### [7.1] 3.1 User needs statement
+- **code:** 7.1 | **status:** SLIDES | **words:** 32 | **source:** User-supplied text, 28 October 2026
 
-> User needs statement: Visitors to Lama Lama Country need consistent access to essential supplies, water and safety information so they can manage the risks of remote travel, unpredictable weather and extended stays.
+> User needs statement: Visitors require consistent access to essential resources, water, and safety information to manage the risks associated with remote travel, unpredictable weather, and extended stays within Lama Lama National Park.
 
-### [7.2] The problem and the ideal situation
-- **code:** 7.2 | **status:** DRAFT | **words:** 82 | **source:** Built from Background and Detailed Design text
+### [7.2] 3.2 The problem and the ideal situation
+- **code:** 7.2 | **status:** DRAFT | **words:** 114 | **source:** User-supplied text, 28 October 2026
 
-> Wet-season floods can damage the roads to Warokutal, and flood damage can last into the dry season. Visitors are far from services, so a stuck vehicle can become an emergency. The only staffed information point is the Lama Lama Ranger Base, and Ranger time is limited. The ideal situation is that visitors can recover their own vehicles, call for help and get water close by, while the design stays low cost, adds little work for Rangers and protects cultural and ecological values.
+> Warokutal (Safari Camp) is a remote campground at Port Stewart, reached by roads that can become impassable in the wet season (DETSI, 2024a). A stuck vehicle can become an emergency, because the Ranger Base has limited hours and water at the campground is non-potable (YAC, n.d.). The ideal situation is that a stranded visitor can get drinking water and supplies, hire equipment to recover the vehicle, and call for help from the campground during the open season. This must be achieved at low cost, with little Ranger work, and without disturbing cultural sites or ecological values. The design must also withstand wet-season floods with little repair, because it is unstaffed during the wet season.
 
 ---
 
 ## SECTION 8: Design Criteria (id: criteria)
-- **section words:** 241 | **counts toward 4000:** yes
-- layout: 8 criterion cards in number order, using the existing criteria card UI.
-- note: the slides also had an Environmental impact criterion. The decision matrix has no such criterion. It is NOT on the page until the team decides (add a 9th criterion and rescore, or fold it into Culture and Country).
+- **section words:** 404 | **counts toward 4000:** yes
+- layout: a three-column table with nine rows (one header and eight criteria), in the screenshot order below. Headers are Criteria, Description, Justification. Each block has exactly three page-text lines: criterion name and weighting, description, justification. Copy all three cells word for word from the supplied screenshot, including punctuation. Put each weighting on a new line below its criterion name. Keep the existing compact rows, shared table fonts, colours and borders. Column widths are 19.2% / 46.4% / 34.4%: Criteria is 20% narrower than its previous 24% width, with the freed width split equally between Description and Justification. The table scrolls horizontally on narrow screens. Existing block codes stay attached to their criteria.
+- source: user-supplied screenshot, 28 October 2026. Environmental impact is included in Cultural appropriateness as stated in the supplied text.
+- footer spacing: remove the criteria panel's bottom margin at every screen width so its gray background meets the footer directly, with no white gap between them.
 
-### [8.1] Criterion 1: Safety and access
-- **code:** 8.1 | **status:** SITE | **words:** 43 | **source:** Project page hero text
+### [8.5] Cultural appropriateness (weighting 3)
+- **code:** 8.5 | **status:** SITE | **words:** 58 | **source:** User-supplied screenshot, 28 October 2026
 
-> Criterion 1: Safety and access
-> The design must lower the risk of vehicles becoming stranded and help visitors recover or call for help. It must reduce reliance on Rangers.
-> Reason: visitors rely on one road, and Rangers run the one staffed safety point.
+> Cultural appropriateness (weighting 3)
+> The design avoids culturally restricted areas, minimises disturbance to Country and is shaped by the Lama Lama Traditional Owners. Environmental impact is included here, as caring for Country covers both.
+> The Lama Lama people are the Traditional Owners and jointly manage the park with QPWS (QPWS, 2013), so no option proceeds without their agreement.
 
-### [8.2] Criterion 2: Flood resilience
-- **code:** 8.2 | **status:** SITE | **words:** 29 | **source:** Project page, criteria carousel
+### [8.6] Low cost (weighting 4)
+- **code:** 8.6 | **status:** SITE | **words:** 52 | **source:** User-supplied screenshot, 28 October 2026
 
-> Criterion 2: Flood resilience
-> The building and its stock must survive wet-season flooding with little repair.
-> Reason: floods can damage roads and infrastructure, and Rangers carry out the repairs.
+> Low cost (weighting 4)
+> The build cost must be realistic for a grant-funded project, and the facility should cover its own running costs through sales and hire income.
+> The build is assumed to be grant-funded and running costs paid from income (see Cost Analysis), so a design needing ongoing subsidy would fail.
 
-### [8.3] Criterion 3: Visitor support and comfort
-- **code:** 8.3 | **status:** SITE | **words:** 33 | **source:** Project page, criteria carousel
+### [8.3] Visitor support (weighting 5)
+- **code:** 8.3 | **status:** SITE | **words:** 43 | **source:** User-supplied screenshot, 28 October 2026
 
-> Criterion 3: Visitor support and comfort
-> Visitors can get water, food, firewood and safety information near the campground.
-> Reason: stays are remote and long, so basic supplies cut risk and improve the visit.
+> Visitor support (weighting 5)
+> Visitors can get drinking water, food, first aid, vehicle recovery gear and a way to call for help in one place.
+> Water at the campground is non-potable (YAC, n.d.), so visitors must bring their own drinking water and supplies.
 
-### [8.4] Criterion 4: Feasibility and maintenance
-- **code:** 8.4 | **status:** SITE | **words:** 23 | **source:** Project page, criteria carousel
+### [8.4] Feasibility and maintenance (weighting 5)
+- **code:** 8.4 | **status:** SITE | **words:** 66 | **source:** User-supplied screenshot, 28 October 2026
 
-> Criterion 4: Feasibility and maintenance
-> The design uses tough, durable materials and needs close to zero wet-season maintenance.
-> Reason: Ranger time is limited.
+> Feasibility and maintenance (weighting 5)
+> The design can be built in one dry season and kept running through simple, scheduled upkeep by Rangers, without adding much to their workload.
+> Roads can become impassable in the wet season and the national park is typically closed from 1 December to 30 June (DETSI, 2024a), so the building must stand largely unattended for months and need only simple upkeep.
 
-### [8.5] Criterion 5: Culture and Country
-- **code:** 8.5 | **status:** DRAFT | **words:** 29 | **source:** Slide 9 and Design Selection text
+### [8.1] Safety and access (weighting 4)
+- **code:** 8.1 | **status:** SITE | **words:** 62 | **source:** User-supplied screenshot, 28 October 2026
 
-> Criterion 5: Culture and Country
-> The design respects heritage and fits the land management goals of the Traditional Owners.
-> Reason: no option would go ahead without Traditional Owner agreement.
+> Safety and access (weighting 4)
+> The design lowers the risk to visitors stranded when roads become impassable, and gives them a way to recover their vehicle or call for help.
+> Visitors are directed to check road conditions themselves (DETSI, 2024a) and the Ranger Base is staffed only from about 8 am to 4:30 pm (YAC, n.d.), so help may be far away.
 
-### [8.6] Criterion 6: Low cost
-- **code:** 8.6 | **status:** DRAFT | **words:** 32 | **source:** Slide 9 and Community concerns text
+### [8.7] Community fit (weighting 4)
+- **code:** 8.7 | **status:** SITE | **words:** 41 | **source:** User-supplied screenshot, 28 October 2026
 
-> Criterion 6: Low cost
-> The design must be affordable to set up and run.
-> Reason: a grant would pay for the build, and sales and hire fees would pay for running costs.
+> Community fit (weighting 4)
+> The design suits self-reliant visitors to Warokutal and supports the way YAC and the Rangers work.
+> The park's management statement describes remote, low-key, self-reliant visitor experiences (QPWS, 2013), so a large or intrusive facility would not fit.
 
-### [8.7] Criterion 7: Community fit
-- **code:** 8.7 | **status:** DRAFT | **words:** 32 | **source:** Slide 9 and Community concerns text
+### [8.2] Flood resilience (weighting 5)
+- **code:** 8.2 | **status:** SITE | **words:** 38 | **source:** User-supplied screenshot, 28 October 2026
 
-> Criterion 7: Community fit
-> The design must suit the small, self-sufficient visitors to Port Stewart, such as campers and fishers, and not mass tourism.
-> Reason: the stock and kits suit small groups.
+> Flood resilience (weighting 5)
+> The structure and its stock survive repeated wet seasons with little or no damage.
+> Roads can become impassable in the wet season (DETSI, 2024a), and repairs at a remote site are slow and costly.
 
-### [8.8] Criterion 8: Revenue
-- **code:** 8.8 | **status:** DRAFT | **words:** 20 | **source:** Slide 9 and Implementation text
+### [8.8] Revenue (weighting 3)
+- **code:** 8.8 | **status:** SITE | **words:** 44 | **source:** User-supplied screenshot, 28 October 2026
 
-> Criterion 8: Revenue
-> The design should earn income of its own.
-> Reason: income would help fund the Lama Lama Rangers.
+> Revenue (weighting 3)
+> The design earns income from sales and equipment hire to help cover running costs and fund Ranger work.
+> Income from sales and hire reduces reliance on grants (see Cost Analysis). It is weighted lower because the main goal is visitor safety.
 
 ---
 
-## SECTION 9: Design Solution Options (id: options)
-- layout: use the full desktop width with 32px side gutters, equal-width text and image columns with clear space on either side of the centre progress line, and compact spacing around the counter. Let option headings wrap within the text column. Centre the smaller image within its column, capped at 560px wide and 68% of the viewport height. Give each option its own full-height scroll interval without overlapping articles. Select the option nearest the viewport centre, fade inactive text and badges to zero over 0.2 seconds, and crossfade images over 0.35 seconds with a subtle zoom. Reveal each option as one unit rather than staggering individual words. Respect reduced motion. Retain the mobile swipe layout and leave the Overview of Design layout unchanged.
-- **section words:** 299 | **counts toward 4000:** yes
+## SECTION 9: Design Solutions (id: options)
+- animation: on the Design Solutions page, show the hero title, section headings, introduction, option text and counter without text animations. Keep all option text fully visible while scrolling; retain the pink scroll-progress line animation (vertical on desktop, horizontal on mobile), image and diagram transitions, carousel navigation and the Summary page animations. Respect reduced motion for the progress line.
+- layout: Show "Design Options" as the large heading below the hero, followed directly by the introductory paragraph without a smaller "Design options" subheading. Use the full desktop width with 32px side gutters, equal-width text and image columns with a clear central gutter, and compact spacing around the counter. Let option headings wrap within the text column. Centre the smaller image within its column, capped at 560px wide and 68% of the viewport height. Give each option its own full-height scroll interval without overlapping articles. Select the option nearest the viewport centre and crossfade images over 0.35 seconds with a subtle zoom. Keep option text and badges fully opaque without reveals or fades. Respect reduced motion. Retain the mobile swipe layout and leave the Overview of Design layout unchanged. Retain the pink progress line alongside the same shared navigation as Overview of Design: three horizontal line markers in a vertical stack below the counter, numbered 3.1–3.3. Keep the 9px resting width, 28px hovered/focused width, 22px immediate-neighbour width and 15px next-neighbour width, with number bubbles to the right and a dark active marker. Clicking a marker centres its matching option in the desktop viewport or mobile swipe area, keeping the counter, text and image in sync. Respect reduced motion.
+- **section words:** 378 | **counts toward 4000:** yes
 
 ### [9.1] Introduction to the options
-- **code:** 9.1 | **status:** SITE | **words:** 46 | **source:** Solution page, Design options
+- **code:** 9.1 | **status:** SITE | **words:** 59 | **source:** Solution page, Design options
 
-> The team developed four ideas and scored them against the eight criteria. The three highest scoring ideas are the design options below. Screened out: a solar-powered river crossing status beacon scored lowest (91 out of 165). It would warn drivers. TEAM TO ADD: confirm this description.
+> The team developed three options in response to the design problem. Each was looked at in terms of what it would mean for visitors, the Lama Lama Rangers and Traditional Owners. A fourth idea, a solar-powered beacon showing river crossing conditions, was also considered. It scored lowest in the decision matrix, so it is not covered in detail here.
 
 ### [9.2] 3.1. Design option 1: Provisions Point
-- **code:** 9.2 | **status:** SITE | **words:** 79 | **source:** User-supplied design option content
+- **code:** 9.2 | **status:** SITE | **words:** 139 | **source:** User-supplied design option content
 
-> The Provisions Point is a flood-resilient facility designed to provide visitors with essential supplies and emergency equipment during wet-season flooding. The proposed structure features an elevated platform, weather-resistant storage facilities, and secure compartments containing drinking water, non-perishable food, first-aid supplies, and vehicle recovery equipment. Personal Locator Beacons (PLBs) and UHF radios would also be available to support emergency communication. This solution aims to improve visitor safety and access to essential resources while creating potential revenue opportunities through equipment rental.
+> The Provisions Point is a small, raised building that stocks drinking water, non-perishable food, first-aid supplies and vehicle recovery gear. Visitors can also hire personal locator beacons (PLBs) and UHF radios to call for help. It is aimed at visitors caught out by wet-season flooding, and it earns income through sales and hire.
+>
+> This option suits Warokutal because it can be built on ground that has already been cleared. No new vegetation needs to be removed, and visitors are kept away from culturally restricted areas such as the Alingina Wungku Living Area (Queensland Parks and Wildlife Service [QPWS], 2013). Its main drawbacks are cost and workload. It is the most expensive of the three options to build, and it adds a restocking task for Rangers, who already handle tourism and repairs on top of their other work (Reardon-Smith, 2023).
 
 ### [9.3] 3.2. Design option 2: Elevated tent-site platform
-- **code:** 9.3 | **status:** SITE | **words:** 96 | **source:** User-supplied design option content
+- **code:** 9.3 | **status:** SITE | **words:** 76 | **source:** User-supplied design option content
+- visual: Original inline SVG in `app/report/ReportOptionDiagram.tsx` replaces the image placeholder. A labelled tent and bags sit on a timber deck supported by posts over wet ground, with steps for access. Labels: “Tent + dry gear”, “Raised deck”, “Steps”, and “Wet ground below the platform”. Footer: “Camping support only; no emergency equipment.” and “Concept illustration · not to scale”. Accessible description: “A tent and bags sit on a raised timber deck supported by posts above wet ground. Steps provide access. The platform keeps camping gear off the ground but provides no emergency supplies or communication.” Use the existing card dimensions and crossfade, respect reduced motion, and scale the SVG without cropping. Based on the supplied option text; no external image assets.
 
-> The Elevated Tent-site Platform proposes raised camping platforms designed to reduce visitors' exposure to ground-level flooding and wet conditions. The platforms would provide stable areas for setting up tents, potentially reducing damage to camping equipment and improving camping conditions during periods of heavy rainfall.
->
-> This solution focuses primarily on providing a safer camping environment rather than supplying emergency resources. Its relatively simple design could reduce initial construction costs, while its elevated structure offers improved flood resilience compared with ground-level campsites. However, the platforms would provide limited access to emergency supplies, communication equipment, and vehicle recovery services.
+> The Elevated Tent-site Platform would raise camping areas off the ground so that tents and gear stay dry during heavy rain. It is simple and fairly cheap to build, and the raised decks handle flooding well. However, it does nothing for visitors who are stranded, as it offers no supplies, communication or vehicle recovery. Building several platforms would also spread construction across the campground, and each one would need checking by Rangers after every wet season.
 
 ### [9.4] 3.3. Design option 3: Distributed emergency checkpoint
-- **code:** 9.4 | **status:** SITE | **words:** 78 | **source:** User-supplied design option content
+- **code:** 9.4 | **status:** SITE | **words:** 104 | **source:** User-supplied design option content
+- visual: Original inline SVG in `app/report/ReportOptionDiagram.tsx` replaces the unrelated materials image. An illustrative campground route connects three labelled emergency stations. Below the map, icons identify “Basic supplies”, “Safety information”, and “Radio”. Footer: “Each site needs approval and Ranger restocking.” and “Illustrative layout · locations subject to approval”. Accessible description: “An illustrative campground map shows three small emergency stations spread along a route. Each station provides basic supplies, safety information and a radio. Locations are conceptual and require approval; Rangers must restock each station.” Use the existing card dimensions and crossfade, respect reduced motion, and scale the SVG without cropping. Based on the supplied option text; no external image assets.
 
-> The Distributed Emergency Checkpoint proposes a network of small emergency support stations positioned at selected locations around Warokutal. Each checkpoint could contain basic emergency supplies, safety information, and communication equipment, allowing visitors to access assistance without relying on a single central facility.
+> The Distributed Emergency Checkpoint would place several small stations around Warokutal, each with basic supplies, safety information and a radio, so that visitors are not relying on one central building.
 >
-> By distributing emergency resources across multiple locations, this solution aims to improve accessibility and provide support to visitors who may become stranded during flooding. The stations could also be adapted to local environmental and community requirements.
+> Having stations in several places could mean a stranded visitor has less distance to travel for help. The downside is that each station would need its own approval to make sure it avoids culturally and environmentally sensitive areas (QPWS, 2013). Keeping several sites stocked would also add to the Rangers’ workload. The stations would be too small to hold vehicle recovery gear, and they would bring in little or no income for the community.
 
 ---
 
 ## SECTION 10: Design Selection (id: selection)
+- animation: render the heading, introduction, weighting explanation and rating explanations without text reveals. Preserve the decision matrix animations, the concluding text underline animation and footer animations.
 - **section words:** 273 | **counts toward 4000:** yes
 
-### [10.1] How the team chose
-- **code:** 10.1 | **status:** SITE | **words:** 92 | **source:** Solution page
+### [10.1] Design Selection introduction
+- **code:** 10.1 | **status:** SITE | **words:** 49 | **source:** User-supplied paragraph
+- layout: show this paragraph directly below Design Selection. Do not render a separate introduction heading.
 
-> Each idea was rated from 1 (poor) to 5 (best) against the eight criteria. Each criterion has a weight from 3 to 5, where 5 matters most. Weighted score is rating times weight. The maximum score is 165. Why the weights differ: Visitor support, feasibility and flood resilience carry weight 5, because a shelter that is unusable, impossible to build or flooded fails the brief. Culture and Country has weight 3 in the matrix, but it is also a condition for every option. No option would go ahead without Traditional Owner agreement.
+> The options were compared using a weighted decision matrix (Table 1). The matrix uses the eight criteria set out in the Design Criteria section. Each option was rated from 1 to 5 using the scale in Table 2, and each rating was multiplied by the weighting for that criterion.
 
 ### [10.2] Decision matrix
 - **code:** 10.2 | **status:** SITE | **words:** 96 | **source:** Solution page matrix text, checked: every total adds up
-- layout: one real HTML table. Do not use the old screenshot images.
+- layout: one real HTML table. Use the supplied matrix screenshot's labels and values. Show a Weighting row (×3, ×4, ×5, ×5, ×4, ×4, ×5, ×3), with empty Total score and Rank cells. Show each rating with its smaller weighted score underneath. Keep the existing style, scrolling arrows, running totals and winner animation. Remove the guide text above the matrix and the colour-scale and scoring-status footer below it, including their alternate completion and reduced-motion text. Keep the bottom progress bar. Do not use the old screenshot images.
 
-> Table 2. Decision matrix (ratings from 1 to 5, weights in brackets, total out of 165)
-> | Idea | Culture and Country (3) | Low cost (4) | Visitor support (5) | Feasibility (5) | Safety and access (4) | Community fit (4) | Flood resilience (5) | Revenue (3) | Total | Rank |
+> Table 1. Weighted decision matrix used to compare the design options.
+> | Design option | Cultural appropriateness (3) | Low cost (4) | Visitor support (5) | Feasibility & maintenance (5) | Safety & access (4) | Community fit (4) | Flood resilience (5) | Revenue (3) | Total score | Rank |
 > |---|---|---|---|---|---|---|---|---|---|---|
-> | A Provisions Point | 5 | 3 | 4 | 3 | 5 | 4 | 3 | 5 | 128 | 1 |
-> | B Distributed checkpoints | 4 | 3 | 3 | 3 | 4 | 4 | 3 | 1 | 104 | 2 |
-> | C Tent-site platform | 3 | 4 | 2 | 2 | 3 | 3 | 4 | 2 | 95 | 3 |
-> | Screened out: crossing beacon | 3 | 4 | 1 | 3 | 4 | 3 | 3 | 1 | 91 | 4 |
+> | Provisions Point | 5 | 3 | 4 | 3 | 5 | 4 | 3 | 5 | 128 | 1 |
+> | Distributed Emergency Checkpoint | 4 | 3 | 3 | 3 | 4 | 4 | 3 | 1 | 104 | 2 |
+> | Elevated Tent-site Platform | 3 | 4 | 2 | 2 | 3 | 3 | 4 | 2 | 95 | 3 |
+> | Solar-powered River Crossing Beacon | 3 | 4 | 1 | 3 | 4 | 3 | 3 | 1 | 91 | 4 |
 
-### [10.3] Reading the scores
-- **code:** 10.3 | **status:** SITE | **words:** 74 | **source:** Solution page
+### [10.5] Rating scale
+- **code:** 10.5 | **status:** SITE | **source:** User-supplied rating scale screenshot
+- layout: below Table 1, place the simple rating table and weighting explanation in equal-width columns, with a 40px gap. Use a fixed table layout with an 80px Rating column and the remaining width assigned to Evaluation. Keep visible borders and a caption below the table. Allow evaluation text to wrap. Below 768px, stack the table above the explanation with a 24px gap.
 
-> Option A scores 5 for culture, safety and revenue and 3 for low cost, feasibility and flood resilience. It scores 3 for flood resilience until the 2 m floor height is checked against flood data. Option B scores 3 for visitor support and 1 for revenue. Option C scores 4 for flood resilience, the highest of the four, and 2 for visitor support and feasibility. TEAM TO ADD: confirm the reasons for each rating.
+> Table 2. Rating scale.
+> | Rating | Evaluation |
+> |---|---|
+> | 1 | Does not meet the criterion, or creates new problems |
+> | 2 | Only just meets the criterion |
+> | 3 | Partly meets the criterion, but with clear limits |
+> | 4 | Meets the criterion well, with minor limits |
+> | 5 | Fully meets the criterion with no major drawbacks |
+
+### [10.6] Weighting explanation
+- **code:** 10.6 | **status:** SITE | **source:** User-supplied weighting explanation screenshot
+- layout: paragraph to the right of Table 2 without a separate heading, aligned at the top. Use smaller 16px text with 1.6 line height and the same column width as the table. Stack below the table on small screens.
+
+> The weightings reflect how much each criterion matters to the client. Visitor support, feasibility and maintenance, and flood resilience were weighted 5, because the design cannot work at a remote, flood-prone site with limited Ranger staff unless it gets these right. Cost, safety and access, and community fit were weighted 4 as core requirements from the brief. Cultural appropriateness was weighted 3 because cultural protocols were treated as a must-have, so any option that broke them would have been ruled out before scoring. Revenue was weighted 3 as a useful extra rather than the main goal. Safety is also spread across three criteria (safety and access, visitor support and flood resilience), which together make up 14 of the 33 weighting points, more than any other area.
+
+### [10.7] Reasons for the Provisions Point ratings (Design option 3.1)
+- **code:** 10.7 | **status:** SITE | **source:** User-supplied ratings screenshot
+- layout: row 1 of three rows below the rating scale and weighting explanation. Add the same thin divider above this row as between the following rating rows, separating Tables 2 and 3. Each row has a subheading from the table title spanning both columns; use a smaller responsive 20–28px heading (2vw), kept on one line at widths of 1024px and above while allowing wrapping below that; keep each Design option link label together. Make its parenthesised Design option number an underlined green link with hover and keyboard focus feedback that navigates to and focuses the matching design option (including its mobile carousel position), a simple bordered table on the left and its narrower explanation on the right. Expand the table from the previous equal-width layout by 25vh: add 5vh to Criterion and 20vh to Why, retaining the original Score width through a length-based colgroup calculation (16% of the original half-row table width), with Why taking all remaining table width. Cap this growth when needed to leave at least 240px for the explanation; reduce both column additions proportionally. Reset the growth in the stacked mobile layout. Separate rows with a thin rule. Keep the caption below the table. Stack each row below 768px. Render block 10.3 as the paragraph to the right of this table, without a separate heading.
+
+> Table 3. Reasons for the Provisions Point ratings.
+> | Criterion (weight) | Score | Why |
+> |---|---|---|
+> | Cultural appropriateness (3) | 5 | One building on already-cleared ground, with shallow piles |
+> | Low cost (4) | 3 | Most expensive to build, at around $87,400 (see Cost Analysis) |
+> | Visitor support (5) | 4 | Supplies, recovery kits, PLBs and radios in one place, but only at Warokutal |
+> | Feasibility & maintenance (5) | 3 | Durable materials, but needs weekly restocking |
+> | Safety & access (4) | 5 | Visitors can recover their own vehicles and call for help |
+> | Community fit (4) | 4 | Suits small, self-sufficient groups, but needs Ranger staffing |
+> | Flood resilience (5) | 3 | Raised 2 m, but the tracks to it still flood (Cook Shire Council, 2026) |
+> | Revenue (3) | 5 | Sales and kit hire bring in around $8,950 a year (see Cost Analysis) |
+
+### [10.8] Reasons for the Distributed Emergency Checkpoint ratings (Design option 3.3)
+- **code:** 10.8 | **status:** SITE | **source:** User-supplied ratings screenshot
+- layout: row 2 of three rows below the rating scale and weighting explanation. Each row has a subheading from the table title spanning both columns; use a smaller responsive 20–28px heading (2vw), kept on one line at widths of 1024px and above while allowing wrapping below that; keep each Design option link label together. Make its parenthesised Design option number an underlined green link with hover and keyboard focus feedback that navigates to and focuses the matching design option (including its mobile carousel position), a simple bordered table on the left and its narrower explanation on the right. Expand the table from the previous equal-width layout by 25vh: add 5vh to Criterion and 20vh to Why, retaining the original Score width through a length-based colgroup calculation (16% of the original half-row table width), with Why taking all remaining table width. Cap this growth when needed to leave at least 240px for the explanation; reduce both column additions proportionally. Reset the growth in the stacked mobile layout. Separate rows with a thin rule. Keep the caption below the table. Stack each row below 768px. Render block 10.10 as the paragraph to the right of this table, without a separate heading.
+
+> Table 4. Reasons for the Distributed Emergency Checkpoint ratings.
+> | Criterion (weight) | Score | Why |
+> |---|---|---|
+> | Cultural appropriateness (3) | 4 | Small footprint, but every site needs checking against restricted areas |
+> | Low cost (4) | 3 | Several units, each needing freight and stock |
+> | Visitor support (5) | 3 | Basic supplies, but no room for recovery gear |
+> | Feasibility & maintenance (5) | 3 | Simple units, but spread over several sites |
+> | Safety & access (4) | 4 | Help is closer, but there is no vehicle recovery |
+> | Community fit (4) | 4 | Low-key and self-service |
+> | Flood resilience (5) | 3 | Some stations may end up on lower ground |
+> | Revenue (3) | 1 | Free emergency stations bring in no income |
+
+### [10.9] Reasons for the Elevated Tent-site Platform ratings (Design option 3.2)
+- **code:** 10.9 | **status:** SITE | **source:** User-supplied ratings screenshot
+- layout: row 3 of three rows below the rating scale and weighting explanation. Each row has a subheading from the table title spanning both columns; use a smaller responsive 20–28px heading (2vw), kept on one line at widths of 1024px and above while allowing wrapping below that; keep each Design option link label together. Make its parenthesised Design option number an underlined green link with hover and keyboard focus feedback that navigates to and focuses the matching design option (including its mobile carousel position), a simple bordered table on the left and its narrower explanation on the right. Expand the table from the previous equal-width layout by 25vh: add 5vh to Criterion and 20vh to Why, retaining the original Score width through a length-based colgroup calculation (16% of the original half-row table width), with Why taking all remaining table width. Cap this growth when needed to leave at least 240px for the explanation; reduce both column additions proportionally. Reset the growth in the stacked mobile layout. Separate rows with a thin rule. Keep the caption below the table. Stack each row below 768px. Render block 10.11 as the paragraph to the right of this table, without a separate heading.
+
+> Table 5. Reasons for the Elevated Tent-site Platform ratings.
+> | Criterion (weight) | Score | Why |
+> |---|---|---|
+> | Cultural appropriateness (3) | 3 | Several platforms spread disturbance across the campground |
+> | Low cost (4) | 4 | Simple decks with no stock or equipment |
+> | Visitor support (5) | 2 | Only improves sleeping conditions |
+> | Feasibility & maintenance (5) | 2 | Many platforms to inspect after each wet season |
+> | Safety & access (4) | 3 | Lowers flooding risk at night, but does nothing for stuck vehicles |
+> | Community fit (4) | 3 | May not suit the campervans and trailers that use Warokutal |
+> | Flood resilience (5) | 4 | Water flows under open decks, with little to damage |
+> | Revenue (3) | 2 | Could justify a small increase in site fees at most |
+
+### [10.3] Provisions Point score explanation
+- **code:** 10.3 | **status:** SITE | **source:** User-supplied score explanation
+- layout: one paragraph to the right of Table 3, without a separate heading.
+
+> The Provisions Point scored highest with 128 points, mainly because of its strong results for cultural appropriateness, safety and access, and revenue.
+
+### [10.10] Distributed Emergency Checkpoint score explanation
+- **code:** 10.10 | **status:** SITE | **source:** User-supplied score explanation
+- layout: one paragraph to the right of Table 4, without a separate heading.
+
+> The Distributed Emergency Checkpoint came second with 104 points, held back mostly by its lack of income.
+
+### [10.11] Elevated Tent-site Platform score explanation
+- **code:** 10.11 | **status:** SITE | **source:** User-supplied score explanation
+- layout: one paragraph to the right of Table 5, without a separate heading.
+
+> The Elevated Tent-site Platform came third with 95 points, as it offers little support to stranded visitors and would be harder to maintain.
 
 ### [10.4] Decision
-- **code:** 10.4 | **status:** SITE | **words:** 11 | **source:** Solution page
+- **code:** 10.4 | **status:** SITE | **source:** User-supplied selection conclusion
+- layout: render once as a standalone subheading at the bottom of Design Selection, after all three table rows. Use responsive 24–36px type and a green underline that draws from left to right when the subheading enters view. Underline each wrapped line and show the completed underline immediately for reduced-motion users. Do not include this conclusion in the Elevated Tent-site Platform row.
 
-> Decision: The team will develop Option A, Provisions Point, in detail.
+> The Provisions Point was therefore selected. It scored highest overall and offers the best mix of visitor safety, essential supplies and income for the community.
 
 ---
 
 ## SECTION 11: Detailed Design (id: design)
-- **section words:** 514 | **counts toward 4000:** yes
+- **section words:** 404 | **counts toward 4000:** yes
+- layout: Keep the existing Detailed Design hero unchanged. Below it: a compact summary; 7.1 text on the left with the structure gallery on the right: exactly two rows, with exterior and structure concept images in two columns in the first row and the three material references in three columns in the second row. Fit every complete image inside its cell without cropping, with small captions below. On tablet and mobile place the gallery below the text while preserving its two-column first row and three-column second row; 7.2 text on the left with the stock gallery on the right: exactly two rows, with three interior views in the first row and four recovery equipment references in the second row, retaining small captions below each image. On tablet and mobile place the gallery below the text while preserving its three-image first row and four-image second row; 7.3 heading and full-width unchanged paragraph inside the gray home-style operating-steps carousel, above its arrows and cards; remove the border, separate white partition and extra top margin between 7.2 images and 7.3. Reuse the original home carousel card styling with six operating-step cards from 7.3 and original SVG action illustrations on clean backgrounds; show each former small description as the black card heading, with no pills or metadata row. On small screens place text before visuals and preserve each gallery’s specified row layout. After the complete 7.3 carousel scroll track, display 7.4 Community concerns as a separate text section. Reuse 7.1’s heading, body typography, divider and responsive section spacing, with an introductory sentence and five bullet points. Keep all existing carousel markup, styles and scroll behaviour unchanged.
+- media: User-supplied solution reference images copied from `/Users/darrell/Downloads/prov-in.jpg`, `prov-in2.jpg` and `prov-out2.jpg` to `public/assets/report/design/`. Creator and licence not supplied. Three interior views use CSS crops of the two interior references (overview, shelves, counter); the separate water and canned food, recovery equipment and UHF radio crop cards have been removed; do not label unseen equipment. Images are concept references, not construction drawings. The structure concept uses the user-supplied building image in `public/assets/report/design/structure-concept.jpg`, copied unchanged from the attached `codex-clipboard-ecdc1cd9-0784-4c56-abc9-9d4d87d0c683.jpg`. It replaces the previous SVG diagram and has the caption “Structure concept reference”. Alt text describes a raised building with a corrugated pitched roof, verandah and stairs, surrounded by campsites and vehicles in bushland. Creator, source URL and licence were not supplied.
+- structure references: User-supplied `/Users/darrell/Downloads/resilient1.png`, `resilient2.png` and `resilient3.png` copied unchanged to `public/assets/report/design/`. Captions: “Reinforced concrete pile construction”, “Concrete material reference” and “Corrugated roof reference”. Alt text describes the four pile construction stages, the concrete block cutaway with internal fibres, and the corrugated roof with skylight and vent. These illustrate materials and construction only; they do not verify the specified concrete or roof performance. Source URLs, creators and licences were not supplied.
+- equipment references: User-supplied `/Users/darrell/Downloads/item1.jpg`, `item2.jpg`, `item3.jpg` and `item4.jpg` copied unchanged to `public/assets/report/design/`. Small captions below the images read “Traction boards”, “Tyre deflation kit”, “12V air compressor” and “Recovery strap and shackle”. Alt text describes the traction boards beside a vehicle on snow, the tyre tool and pressure gauge, the portable compressor and vehicle power plug, and the strap connected with a green soft shackle. Show the complete equipment images without cropping. Source URLs, creators and licences were not supplied.
+- retired blocks: 11.2, 11.6, 11.7 and 11.8 are no longer displayed; the user replaced the previous content with the finalized text below.
 
-### [11.1] Why it should work
-- **code:** 11.1 | **status:** SITE | **words:** 79 | **source:** Solution page (YAC short form, see edits log)
+### [11.1] Detailed Design
+- **code:** 11.1 | **status:** SITE | **words:** 37 | **source:** User-finalized Detailed Design content
 
-> Safety and access: visitors could recover their own vehicles, call for help and get water close by. The Ranger Base is not the only point of help. Flood resilience: the building is raised and made of concrete and steel, so it should need little upkeep after the wet season. An engineer must confirm this. Culture and Country: one hub on cleared ground keeps foot traffic away from restricted sites, and the team proposes that YAC co-designs how it runs.
+> The Provisions Point is a small building of about 24 m² at Warokutal (Safari Camp), placed on already-cleared, higher ground within the campground. It is staffed by Lama Lama Rangers during the visitor season (July to November).
 
-### [11.2] Note on the 2 m height
-- **code:** 11.2 | **status:** SITE | **words:** 23 | **source:** Solution page
+### [11.3] 7.1 Structure
+- **code:** 11.3 | **status:** SITE | **words:** 83 | **source:** User-finalized Detailed Design content
 
-> Note on the 2 m height: this is a planning figure. An engineer must confirm it against local flood levels and wind loads.
+> The building is raised 2 m on reinforced concrete piles so that floodwater can pass underneath. The walls are watertight concrete, which protects the steel reinforcement inside, and the roof is corrugated fibre cement, which handles heavy rain, strong sun and cyclone winds with very little upkeep. Shallow pile footings are used instead of deep trenches to limit digging on Country. A small solar panel and battery power the lighting and charge the radios and beacons, so no generator or fuel is needed.
 
-### [11.3] How Provisions Point would work: What it is
-- **code:** 11.3 | **status:** SITE | **words:** 86 | **source:** Solution page, detailed design slide 1
+### [11.4] 7.2 What it holds
+- **code:** 11.4 | **status:** SITE | **words:** 92 | **source:** User-finalized Detailed Design content
 
-> A 24 square metre shelter at Warokutal, planned for ground that is already cleared and above flood level. A site survey must confirm this. It would stand on reinforced concrete piles (Menard Asia, 2025), with the floor planned 2 m above the ground. Walls would be watertight concrete (Leading Architecture, 2024) and the roof corrugated sheeting (material to be confirmed). Inside would be shelves, a counter, a solar panel and a battery. The shelter is unstaffed. Visitors serve themselves and pay by the method YAC sets.
+> Shelves and a counter hold drinking water, canned food, firewood, first-aid supplies and safety flyers. Two vehicle recovery kits are available for hire, each with traction boards, a tyre deflation kit, a 12V compressor, and a snatch strap with shackles. Personal locator beacons (PLBs) and UHF radios can also be hired, so visitors can contact Rangers in areas with no phone reception. A small emergency cabinet stocked with water and a UHF radio is opened with a code given at check-in, so help is available even when no Ranger is on site.
 
-### [11.4] How Provisions Point would work: Entry, stock and hire items
-- **code:** 11.4 | **status:** SITE | **words:** 87 | **source:** Solution page, detailed design slide 2
-- note: do NOT add medicines. The prototype slide lists them. The website stock list does not.
+### [11.5] 7.3 How it works
+- **code:** 11.5 | **status:** SITE | **words:** 45 | **source:** User-finalized Detailed Design content
 
-> Entry: TEAM TO ADD: confirm the entry type (stairs or ramp) so it matches the prototype.
-> Stock: drinking water, non-perishable food, firewood and safety information.
-> Hire items: traction boards for soft ground, a tyre deflation kit (Supercheap Auto, 2017), a 12 V compressor, and shackles with a recovery strap (Bober, 2025). Each kit also holds a personal locator beacon (PLB) and an ultra high frequency (UHF) radio. YAC sets the check-out and payment method. One option is a lockable kit cage with a code given at booking.
+> A visitor checks in, buys supplies or hires gear, and returns it before leaving the area. Rangers restock weekly during the season and inspect the building twice a year, before and after the wet season. Sales and hire income covers running costs (see Cost Analysis).
 
-### [11.5] How Provisions Point would work: How a visitor would use it
-- **code:** 11.5 | **status:** SITE | **words:** 68 | **source:** Solution page, detailed design slide 3
+### [11.9] Operating steps
+- **code:** 11.9 | **status:** SITE | **words:** 56 | **source:** Carousel labels and excerpts adapted from the finalized 7.3 paragraph; original paragraph unchanged
+- media: Six original SVG action illustrations authored in `app/report/ReportStepIllustration.tsx`. As requested on 28 October 2026, replace the carousel photographs with a clean warm-white (#faf9f5) background, a light border and a subtle ground line. Retain the existing carousel card dimensions and 4:3 image area. The concept photographs in the structure and stock galleries above remain unchanged. No external source is used for these illustrations.
+- illustrations: Use simple rounded pink (#ff286b) stick figures and dark props. Visitors wear a backpack; Rangers wear a brimmed hat and collar. Step 1 lowers a held pen onto the form, writes a signature and reveals a check mark. Step 2 reaches for a kit, lifts it clear of the counter and brings it toward the visitor; Step 3 reverses that journey, setting the kit on the counter before withdrawing the hand. Small opposite-direction arrows distinguish collection and return. Step 4 lifts a supply crate onto a shelf and releases it. Step 5 holds a checklist while moving a magnifying glass over the building, then reveals inspection checks. Step 6 drops a pink coin into an upkeep jar bearing a building and completion check; a stationary currency coin beside the jar keeps the meaning clear in the completed and reduced-motion poses. Hands and held objects share movement coordinates during contact, so objects stay in the hand until placed. Scrub each action through its card’s visible horizontal travel, with short starting and ending holds and progress clamped before and after; scrolling backward reverses it and stopping scroll freezes it. Use no autoplay or timers. Reduced-motion users see static completed illustrations, including fully drawn signatures and checks. Hide undrawn strokes completely to avoid stray dots. Keep illustrations decorative and non-interactive, with the existing step headings providing the text descriptions.
+- connectors: Five short cartoon-style pink (#ff286b) semicircle arrows connect adjacent card corners, alternating top-to-top, bottom-to-bottom, then repeating. Use thick rounded SVG strokes, anchored 24px inside each adjoining corner across the 16px gap, with 56px of rail space above and below for the curves. Draw each curve gradually across its successive fifth of the existing horizontal scroll progress, revealing its arrowhead at the end; reverse the drawing when scrolling back. The arrows move with the cards and do not intercept input or appear in the accessibility tree. Hide these decorative connectors for the reduced-motion vertical list.
+- layout: Home carousel card styling, adapted to six operating steps. Vertical page scrolling drives the horizontal card translation as soon as the complete 7.3 section reaches the measured navigation height plus 8px; reverse page scrolling reverses it. Pin the heading, summary, cards and progress bar together, so horizontal movement begins while the introduction remains visible. Keep existing image dimensions and fitting. Remove the report design container’s bottom padding so the gray carousel ends without an extra white spacer before the following section. Give the entire carousel and pinned cards the same gray background as the section. Size the outer scroll track to the measured complete section height plus the horizontal travel, eliminating unused viewport-height filler. On desktop use the measured fixed navigation height plus 8px as the sticky top offset, with 5vh of top padding and no bottom padding beneath the progress track. On mobile, if the complete section is taller than the space below the navigation, pin its bottom to the viewport instead: let the introduction scroll up first, then start horizontal motion when the full-size illustrations and their captions fit on screen. Use that same measured offset for both pinning and scroll progress. Keep carousel image dimensions and fitting unchanged; do not resize images to fit the viewport. Remove individual card bottom borders and padding, replacing them with one continuous 2px progress track below the card row, inset by the carousel gutter and separated by 5vh. Its pink (#ff286b, matching the header progress line) fill uses the actual card translation divided by the total rail travel, growing from empty to full and reversing with scrolling. Hide the progress track for the reduced-motion vertical list. Disable horizontal scrolling, dragging and arrows. Measure the rail overflow, complete pinned section and navigation height with ResizeObserver; map the track from its arrival beneath the navigation to the end of its measured section, so the final card is visible and the progress bar reaches full. Reduced-motion users see a normal vertical list without pinning or horizontal motion. Each card has its image followed by the former small description as the main black heading, prefixed inline with “Step 1.” through “Step 6.”; remove the numbered pill, metadata row and old short heading. Allow the complete heading to wrap without line clamping. No duplicate Project stages title, project timeline, dates, or implementation links. The 7.3 heading and full-width summary sit inside the gray carousel section, above the cards; no separate divider from the 7.2 images. Use 5vh section top padding, zero section bottom padding and 5vh spacing between the heading, summary and cards; retain 16px horizontal card gaps and 14px between each card image and its heading. Explicitly stack the heading and summary in a single flex column, with full-width children and zero inherited margins. Scope these rules through the 7.3 wrapper so they outrank the shared home carousel layout and padding rules at every viewport. Place the summary directly beneath the heading with no paragraph margin; use solid black (#000) text sized responsively from 20px to 26px with line-height 1.45.
 
-> 1. Check road conditions on the Cook Shire Council website before travel (Cook Shire Council, 2026).
-> 2. Arrive at Warokutal and read the safety information at the shelter.
-> 3. Buy water, food or firewood, or hire a recovery kit if the vehicle is stuck.
-> 4. In a life-threatening emergency, use the PLB. If radio coverage is confirmed, the UHF radio can reach the Rangers. Then return the kit.
+> Step 1. A visitor checks in.
+> Step 2. Buys supplies or hires gear.
+> Step 3. Returns it before leaving the area.
+> Step 4. Rangers restock weekly during the season.
+> Step 5. Rangers inspect the building twice a year, before and after the wet season.
+> Step 6. Sales and hire income covers running costs (see Cost Analysis).
 
-### [11.6] How Provisions Point would work: Community concerns
-- **code:** 11.6 | **status:** SITE | **words:** 121 | **source:** Solution page, detailed design slide 4
-- layout: six labelled items.
+### [11.10] 7.4 Community concerns
+- **code:** 11.10 | **status:** SITE | **words:** 91 | **source:** User-supplied text, 28 October 2026
+- layout: Render the first line as an introductory paragraph and the remaining five lines as bullet points below the 7.3 carousel, using the same heading and body styling as 7.1.
 
-> Ground disturbance. The design uses a small number of drilled piles on cleared ground, not trench footings. No piles are drilled until Traditional Owners and heritage checks agree.
-> Ranger workload. The routine would be one weekly restock in the open season and two inspections a year.
-> Visitor numbers. The stock and kits suit small groups. The design is not for mass tourism.
-> Theft or damage. The team proposes a lockable, raised building for the stock and kits.
-> Fire and waste. Bagged firewood would be sold, and the team will check park rules with YAC and QPWS. A waste plan would be agreed with YAC.
-> Cost. A grant would pay for the build. Sales and hire fees would pay for running costs.
+> The likely concerns and how the design addresses them:
+> Damage to Country: The building is on already-cleared ground, and its placement is agreed with Traditional Owners first.
+> Extra Ranger work: Rangers restock weekly in the season, and hire income covers running costs.
+> Flood damage: The building is raised 2 m, with flood heights confirmed before construction.
+> Unsafe wet-season travel: The park stays closed from 1 December to 30 June (DETSI, 2024a), and the building is for stranded visitors.
+> Misuse of hire gear: Gear is checked on return and repaired or replaced.
 
-### [11.7] Figure 4
-- **code:** 11.7 | **status:** MEDIA | **words:** 28 | **source:** Old Solution and Project page hero image
-- alt: Concept image: aerial view of a raised shelter in a cleared bush campground in the dry season.
-
-> Figure 4. Concept image: aerial view of a raised shelter in a cleared bush campground in the dry season. Made with an AI image tool (see Appendix 3).
-
-### [11.8] Figure 5
-- **code:** 11.8 | **status:** MEDIA | **words:** 22 | **source:** Old project page graphic (map.svg)
-- note: the old map.svg looks like a template graphic, not the team's site plan. Show `(change to our assignment content)` unless the team supplies a real plan.
-- alt: Abstract site plan of a cleared area with a small building footprint, a camp area and a track.
-
-> Figure 5. Site plan of the proposed shelter on cleared ground at Warokutal, showing the building, the camp area and the track.
 
 ---
 
-## SECTION 12: Prototyping (id: prototyping)
-- **section words:** 0 | **counts toward 4000:** yes
+## SECTION 12: Prototype (id: prototyping)
+- **section words:** 176 | **counts toward 4000:** yes
+- layout: Retain the original full-screen Prototype hero with its existing stock photo and title above this section. Do not repeat the Prototype title inside the content; use responsive 48–96px spacing below the hero. Purpose sits beside a large Image 2 (one-third/two-thirds columns); How it was built sits to the right of Image 3. Below, Image 4 and Image 1 share a common-height, 60/40 interior row with contain fitting and no cropping. All four images stay visible and link to the full-size asset in a new tab. Mobile stacks each explanation before its image. Testing follows the gallery; its final paragraph stays intact in a softly shaded panel. After Testing, place Images 5, 6 and 7 in that order in a three-column bottom row, with equal-height frames and contain fitting so no image is cropped. Stack this row on mobile. No added visible captions or results headings.
+- media: User-supplied Blender screenshots copied unchanged from /Users/darrell/Downloads/proto-1.png through proto-4.png to /assets/report/prototype/. Image 2 alt: Exterior Blender model of Provisions Point showing the roof, raised supports and access ramp. Image 3 alt: Side view of the Blender model showing the building and supporting piles. Image 4 alt: Interior Blender model showing shelves, a central table and supplies. Image 1 alt: Close-up Blender model of recovery gear and supplies on shelving. Images 5–7 are also copied unchanged from /Users/darrell/Downloads/proto-5.png through proto-7.png into the same asset folder. Image 5 alt: Blender model of stored supplies, including gas cylinders, water containers and cooking equipment. Image 6 alt: Blender model of recovery equipment, including a battery, jack and spare tyre. Image 7 alt: Interior Blender model showing storage shelves, a work table, bench and chair. No external image source used.
 
-### [12.1] Prototyping
-- **code:** 12.1 | **status:** MISSING | **words:** 0 | **target:** 350 | **source:** none on the old site
-- placeholder: `insert: Prototyping`
-- the template needs 5 parts: why this was prototyped, how it was built, what it looks like and does, how it was tested, the results and changes.
-- facts the team already has (slide 14, NOT page text, for the team to write from): prototype built in Blender by Pinhong. Materials shown: reinforced concrete pile foundation, watertight concrete, corrugated fibre cement sheets. Site selection: high ground not susceptible to flooding. The renders show a raised building on piles, a ramp entry, shelving and a table inside.
-- gaps: no testing is recorded. The prototype shows a roof that looks like tiles and a ramp entry. The website says "corrugated sheeting (material to be confirmed)" and "stairs or ramp". Blender renders will become Figure 6 onwards.
+### [12.1] Purpose
+- **code:** 12.1 | **status:** SITE | **words:** 24 | **source:** Final text supplied by the user, 28 October 2026
+
+> The prototype was made to show what the Provisions Point would look like and to check that its layout works in the space available.
+
+### [12.2] How it was built
+- **code:** 12.2 | **status:** SITE | **words:** 48 | **source:** Final text supplied by the user, 28 October 2026
+
+> The model was built in Blender. AI was used to generate basic shapes quickly, which were then arranged, resized and assembled into the building. The model uses the same materials as the design: reinforced concrete piles, watertight concrete walls and a corrugated fibre cement roof, on elevated ground.
+
+### [12.3] Testing
+- **code:** 12.3 | **status:** SITE | **words:** 104 | **source:** Final text supplied by the user, 28 October 2026
+
+> The model was used to check that the layout is logical, that the building’s size stays within budget, and that the recovery kits and supplies fit on the shelves and counter.
+>
+> The model showed that the building is well supported and sits on higher ground, so it is unlikely to be damaged by floods. The roof sits flush against the walls, and the size of the building matches the cost estimate. The recovery gear and supplies fit inside, although they were modelled simply and are hard to make out in the images. A more detailed model of the interior would be the next step.
 
 ---
 
-## SECTION 13: Implementation (id: implementation)
-- **section words:** 372 | **counts toward 4000:** yes
+## SECTION 13: Implementation Plan (id: implementation)
+- **section words:** 524 | **counts toward 4000:** yes
+- layout: Keep the existing shared page hero unchanged, matching Detailed Design. Below it, show six numbered questions and their full answers on the left, with six original static SVG illustrations and captions on the right of each row. Reuse the approved 9.2 and 9.4 gallery layout for every question: 0.9fr / 1.3fr desktop columns, a 28–64px gap, question headings sized from 28px to 38px, and a two-column, three-row gallery with cream 4:3 illustration frames. Each caption has a small pink number, a dark title and a smaller subtitle. Keep the same report container, body typography, row spacing and thin dividers. Below 1024px, stack each gallery after its answer at full available width; keep two cards per row. Display 9.1–9.6 in the headings while retaining internal block keys 13.1–13.6. Preserve all user-provided answers, including the community handover text in 9.5. Sections 15–16 below remain archived reference text.
+- images: All six galleries now use original code-authored SVG illustrations in app/report. Reuse the approved rounded pink (#ff286b) stick figures, dark (#242327) props, cream (#faf9f5) backgrounds and subtle ground lines. The SVGs are static and decorative, with visible captions providing accessible descriptions. No generated raster images or external image sources are used. Preserve the existing 9.2 and 9.4 artwork and the separate 7.3 carousel. The former concept/equipment reference photographs remain available in Detailed Design, with provenance recorded there.
 
-### [13.1] Implementation plan
-- **code:** 13.1 | **status:** SITE | **words:** 129 | **source:** Delivery page, The plan (short forms for YAC and DETSI, see edits log)
-- layout: five numbered steps.
+### [13.1] 9.1 How will your solution be constructed and how will the community be trained in its construction and use?
+- **code:** 13.1 | **status:** SITE | **words:** 114 | **source:** User-provided Implementation Plan content
+- gallery: Six original static SVG scenes authored in app/report/ReportConstructionIllustration.tsx, matching the approved 9.2 and 9.4 pink stick-figure style. The scenes show a raised shelter on dry, flood-safe terrain; four helmeted workers with an eight-week calendar; reinforced concrete foundation piles; watertight walls and a corrugated roof; materials stored in the community warehouse; and a ranger training session with an instruction manual and clock. Use no generated images, animation or external image sources; the illustrations are decorative and described by their visible captions.
+- layout: Use the shared enlarged two-column, three-row illustration gallery beside the left-hand question and full answer. Match the approved cream 4:3 frames, small numbered titles and subtitles. Below 1024px, stack the full-width gallery after the answer.
+- captions: 01 Flood-safe site — Choose dry, flood-safe terrain for the shelter.; 02 Construction crew — Plan eight weeks for a crew of four workers.; 03 Reinforced foundations — Raise the shelter on reinforced concrete piles.; 04 Walls and roof — Use watertight concrete and a corrugated fibre cement roof.; 05 Warehouse storage — Use the community warehouse to store materials.; 06 Ranger training and manuals — Provide four hours of training and leave instruction manuals.
 
-> 1. Preparation. YAC approval would take about 6 months. The site, design and running plan are agreed with YAC and Traditional Owners. Cultural heritage checks come before any ground work.
-> 2. Implementation. Four workers would build the shelter in the dry season in about 8 weeks, using a drill rig, steel and roof sheets. Each Ranger who will look after the site completes 4 hours of training.
-> 3. Operation. The shelter would run during the open season, July to November (DETSI, 2024b). Rangers restock it weekly.
-> 4. Maintenance. Two Rangers carry out two checks a year, one before and one after the wet season.
-> 5. End of life. Four workers remove the building in 1 to 2 weeks. Shelves and kits are reused. Steel and roof sheets are recycled.
+> First, the project will be constructed on dry land; it will require a crew of four workers and is expected to take eight weeks to complete. Second, regarding site selection and building materials: the structure will be situated on flood-safe terrain, featuring an elevated foundation built on reinforced concrete piles, walls constructed from watertight concrete, and a roof made of corrugated fiber cement. We will also provide the rangers with a four-hour training session on how to use the facility and will leave an instructional manual inside the shelter. The local community provided a warehouse to store materials; upon completion of construction, they offered guidance on maintaining the Ranger and left behind instruction manuals.
 
-### [13.2] Community, ownership and evaluation
-- **code:** 13.2 | **status:** SITE | **words:** 123 | **source:** Delivery page
+### [13.2] 9.2 How will your solution be introduced to the client or community and used, constructed, managed, maintained etc. over time?
+- **code:** 13.2 | **status:** SITE | **words:** 87 | **source:** User-provided Implementation Plan content
+- gallery: Six static SVG illustrations authored in `app/report/ReportImplementationIllustration.tsx`, matching the supplied 7.3 screenshots: rounded pink (#ff286b) stick figures, dark (#242327) outlined props, cream (#faf9f5) backgrounds and a subtle ground line. Use no generated raster images, motion, carousel or external image sources. 7.3 remains unchanged. The scenes depict community members discussing a shelter plan; a representative reviewing and approving a plan beside a six-month calendar; a ranger handing a kit to a visitor; a ranger placing supplies on a shelf; two rangers inspecting the building with a checklist and magnifying glass; and reusable shelves and kits beside roof sheets, steel and recycling arrows. SVGs are decorative, with the visible captions providing accessible descriptions.
+- layout: Enlarge the 9.2 gallery beside the left-hand question and answer using 0.9fr / 1.3fr columns on desktop and a 28–64px gap. Use a two-column, three-row gallery with cream 4:3 frames and 28px vertical gaps. Reduce this question heading to a responsive 28–38px size. Stack the gallery below the text at widths below 1024px and let it use the full available width. Reuse this layout across questions 9.1–9.6. Each caption has a small pink stage number, a short dark title and a smaller subtitle; retain the full 9.2 answer.
+- captions: 01 Community co-design — Plan the shelter with YAC.; 02 YAC approval — Allow about six months for approval.; 03 Ranger-led operation — Rangers run the supply and hire point.; 04 Weekly restocking — Replenish supplies from July to November.; 05 Seasonal inspections — Two rangers check before and after the wet season.; 06 Reuse and recycling — Reuse shelves and kits; recycle steel and roof sheets.
 
-> Community role: the team proposes that YAC co-designs the site and the rules, and decides which of these steps go ahead. The team encourages YAC to consider local people for the build and training.
-> Ownership: the team proposes that YAC owns the shelter, sets prices and decides stock. Income would help fund the Lama Lama Rangers.
-> Evaluation: after each open season YAC and Rangers would review kit hires, visitor numbers, empty shelves, uses of the beacons and radios, and Ranger time. They would adjust stock and prices.
-> Repairs: Rangers fix small faults at the weekly and twice-yearly visits. Larger repairs use local trades. YAC and Rangers should agree a repair budget.
-> Future: if it works, the same model could be tried at Maramba.
+> First, the integration of the store will be co-designed with the Yintjingga Aboriginal Corporation, ensuring operations align perfectly with cultural protocols. Following this, YAC approval takes about 6 months. During operation, the ranger-operated supply and rental shelter is staffed by rangers. Rangers restock weekly, July to November. For maintenance, 2 checks are carried out by 2 rangers a year, before and after the wet season. Finally, at the end of its life: 4 workers, 1 to 2 weeks. Reuse shelves and kits. Recycle steel and roof sheets.
 
-### [13.3] Project stages
-- **code:** 13.3 | **status:** SITE | **words:** 120 | **source:** Home, Solution and Project pages (one copy only)
-- layout: the existing horizontal stages carousel, eight cards in order.
+### [13.3] 9.3 How will the design be evaluated?
+- **code:** 13.3 | **status:** SITE | **words:** 50 | **source:** User-provided Implementation Plan content
+- gallery: Six original static SVG scenes authored in app/report/ReportEvaluationIllustration.tsx, matching the approved 9.2 and 9.4 pink stick-figure style. The scenes show tourist and resident feedback on a clipboard; a satisfaction target; a monthly equipment inspection with a calendar and magnifying glass; repair or replacement of a damaged kit; building checks before and after the wet season; and an annual financial review with a ledger and calendar. Use no generated images, animation or external image sources; the illustrations are decorative and described by their visible captions.
+- layout: Use the shared enlarged two-column, three-row illustration gallery beside the left-hand question and full answer. Match the approved cream 4:3 frames, small numbered titles and subtitles. Below 1024px, stack the full-width gallery after the answer.
+- captions: 01 Collect feedback — Ask tourists and residents about their experience.; 02 Satisfaction target — Aim for at least 80% satisfaction.; 03 Monthly equipment checks — Inspect rental equipment every month.; 04 Repair or replace — Repair damaged items or replace them.; 05 Wet-season reviews — Check conditions before and after the wet season.; 06 Annual financial review — Track yearly spending and income for sustainable operation.
 
-> Next steps: co-design with YAC, a site survey, engineering design, and checks on beacon hire rules and radio coverage.
-> The design is a student proposal. It is for YAC to review, change or reject.
-> Stage 1: Consultation with YAC and Traditional Owners. Duration: part of about 6 months of approval.
-> Stage 2: Cultural heritage and site checks. Duration: part of about 6 months of approval.
-> Stage 3: Engineering design. Flood and wind loads confirmed.
-> Stage 4: Grant application. About $86,650 for the build and equipment.
-> Stage 5: Dry-season build. Four workers, about 8 weeks.
-> Stage 6: Ranger training. 4 hours per Ranger.
-> Stage 7: Open season. July to November, weekly restock.
-> Stage 8: Review. Annual check by YAC and Rangers.
+> Feedback will be collected periodically from tourists and residents, aiming for at least 80% satisfaction. Rental equipment will be inspected monthly, with damaged items repaired or replaced. Additionally, conditions can be evaluated before and after the rainy season, and annual expenditure and revenue can be tracked to ensure sustainable operations.
+
+### [13.4] 9.4 How will your project affect the future workings of the client or community?
+- **code:** 13.4 | **status:** SITE | **words:** 56 | **source:** User-provided Implementation Plan content
+- gallery: Six original static SVG benefit illustrations authored in `ReportImplementationBenefitIllustration` in `app/report/ReportImplementationIllustration.tsx`. Reuse 9.2's pink stick figures, dark outlined props, cream backgrounds, rounded linework and subtle ground line. The scenes show a visitor beside a checked safety shield; a visitor positioning traction boards under a stranded vehicle; a visitor taking water beside a first-aid cabinet; a ranger with a checklist and clock; a visitor paying a ranger to hire equipment; and rental income linked to a ranger. Use no generated raster images, animation or external image sources. SVGs remain decorative; visible captions describe the benefits. Leave 9.2 and 7.3 artwork unchanged.
+- layout: Reuse 9.2's enlarged two-column, three-row gallery beside the left-hand question and full answer, including the 0.9fr / 1.3fr desktop split, smaller question heading, cream 4:3 illustration frames, numbered captions and small subtitles. Below 1024px, stack the full-width gallery after the text.
+- captions: 01 Visitor safety — Keep essential support close at hand.; 02 Vehicle self-recovery — Visitors recover stranded vehicles with hired gear.; 03 Emergency supplies — Access water and first aid nearby.; 04 Reduced ranger workload — Fewer recovery call-outs free up ranger time.; 05 Community revenue — Equipment hire brings income to the community.; 06 Funding the Rangers — Rental income supports the Lama Lama Rangers.
+
+> The solution improves visitor safety and supports self-recovery for stranded vehicles. As a result, visitors can recover their own vehicles and access emergency supplies close by. In addition, the solution reduces ranger workload and generates community revenue. Specifically, the solution generates a reliable, passive income stream through equipment rentals; this directly funds the Lama Lama Rangers.
+
+### [13.5] 9.5 How can the client or community take ownership of the project?
+- **code:** 13.5 | **status:** SITE | **words:** 73 | **source:** User-provided Implementation Plan content
+- gallery: Six original static SVG scenes authored in app/report/ReportOwnershipIllustration.tsx, matching the approved 9.2 and 9.4 pink stick-figure style. The scenes show handover of the shelter key to a ranger; a management handbook representing YAC oversight and cultural rules; daily equipment rentals; weekly restocking; a routine facility inspection; and sales/hire income supporting community-run operation. Use no generated images, animation or external image sources; the illustrations are decorative and described by their visible captions.
+- layout: Use the shared enlarged two-column, three-row illustration gallery beside the left-hand question and full answer. Match the approved cream 4:3 frames, small numbered titles and subtitles. Below 1024px, stack the full-width gallery after the answer.
+- captions: 01 Community handover — Transfer the finished shelter to YAC and Rangers.; 02 YAC management — Manage the shelter in line with local cultural rules.; 03 Daily operation — Rangers manage the shelter and equipment rentals.; 04 Weekly restocking — Rangers top up supplies each week.; 05 Routine inspections — Rangers carry out regular facility checks.; 06 Community independence — Sales and hire income sustain community-run operations.
+> The project will be handed over to the Yintjingga Aboriginal Corporation (YAC) and Lama Lama Rangers after construction. YAC will oversee management and ensure the facility follows local cultural rules and expections, at the same time Rangers will be managing daily operations, equipment rentals, weekly restocking and some inspections regularly. Revenue from sales and rentals will cover ongoing operating costs, which allows the community to manage the project independently in the long term.
+
+### [13.6] 9.6 How will the solution be repaired if something goes wrong?
+- **code:** 13.6 | **status:** SITE | **words:** 59 | **source:** User-provided Implementation Plan content
+- gallery: Six original static SVG scenes authored in app/report/ReportRepairIllustration.tsx, matching the approved 9.2 and 9.4 pink stick-figure style. The scenes show a ranger documenting a malfunction; reporting the issue; removing damaged equipment from service; repairing or replacing equipment; qualified contractors handling structural or electrical damage; and a completed safety inspection before equipment or facilities return to service. Use no generated images, animation or external image sources; the illustrations are decorative and described by their visible captions.
+- layout: Use the shared enlarged two-column, three-row illustration gallery beside the left-hand question and full answer. Match the approved cream 4:3 frames, small numbered titles and subtitles. Below 1024px, stack the full-width gallery after the answer.
+- captions: 01 Document faults — Rangers record equipment or facility malfunctions.; 02 Report the issue — Rangers report malfunctions for follow-up.; 03 Remove from service — Keep damaged equipment out of use.; 04 Repair or replace — Repair damaged gear or replace it.; 05 Qualified contractors — Specialists handle structural and electrical damage.; 06 Return to service — Complete repairs and safety checks before reuse.
+
+> According to the established maintenance procedure, Rangers are responsible for documenting and reporting malfunctions. Damaged equipment shall be taken out of service and either repaired or replaced. Issues involving structural or electrical damage will be handled by qualified contractors. Equipment or facilities may only be returned to service once repairs have been completed and safety inspections have been conducted.
 
 ---
 
 ## SECTION 14: Cost Analysis (id: cost)
-- **section words:** 364 | **counts toward 4000:** yes
+- **section words:** 566 | **counts toward 4000:** yes
 
-### [14.1] Assumptions
-- **code:** 14.1 | **status:** SLIDES | **words:** 67 | **source:** Slide 16, tidied
-
-> The cost and income figures use these assumptions. About 10 visitors a week over the 22-week open season gives 220 visitors a year (Todio, n.d.). About 2 recovery kits would be hired each week. A recovery kit costs about $679, a personal locator beacon about $440 and a UHF radio about $259. Sources for each price are in Table 3. All costs are in Australian dollars (AUD).
+### [14.1] Initial construction and materials
+- **code:** 14.1 | **status:** SITE | **words:** 62 | **source:** User-supplied cost analysis, 28 October 2026
+- layout: above Table 3; selectable amounts highlight the existing donut categories. The structure category includes foundations; equipment includes recovery and communication items.
+> The total initial construction and material cost of the Provisions Point is estimated at $87,386.65, as shown in the Full Cost Table. This includes $38,592 for the building structure (Feasly, n.d.), $20,000 for foundations, decking and stairs, $5,000 for interior fittings and solar equipment, and approximately $2,756 for recovery and communication equipment. The remaining costs cover essential supplies, design documents and contingency.
 
 ### [14.2] Build and stock cost
 - **code:** 14.2 | **status:** SITE | **words:** 144 | **source:** Delivery page Table 1 (rows 1 to 5 read from the site, rows 6 to 15 from slide 17). Arithmetic checked: total is correct.
@@ -638,8 +746,8 @@ Per-block counts are in each block's `words` field below.
 > | Total | | $87,386.65 | |
 
 ### [14.3] Projected revenue and profit
-- **code:** 14.3 | **status:** SLIDES | **words:** 84 | **source:** Slide 18
-- note: CHECK BEFORE SUBMISSION. In the base case, 44 hires at $200 is $8,800 against $8,950 revenue, but the low and high cases have bigger gaps. The 25-year profits are each $10 above simple multiplication of the yearly profit. The TEAM TO ADD line stays until the team confirms the workings.
+- **code:** 14.3 | **status:** SLIDES | **words:** 54 | **source:** Slide 18
+- note: CHECK BEFORE SUBMISSION. In the base case, 44 hires at $200 is $8,800 against $8,950 revenue, but the low and high cases have bigger gaps. The 25-year profits are each $10 above simple multiplication of the yearly profit. The original explanatory note and TEAM TO ADD line were removed at the user’s request; table values remain unchanged.
 
 > Table 4. Projected revenue and profit (AUD)
 > | | Low estimate | Base estimate | High estimate |
@@ -650,11 +758,10 @@ Per-block counts are in each block's `words` field below.
 > | Costs a year | $2,630 | $3,950 | $6,590 |
 > | Profit a year | +$1,910 | +$5,000 | +$11,310 |
 > | Profit over 25 years | +$47,760 | +$125,010 | +$282,760 |
-> Profit is worked out after running costs and before the build cost, which a grant would pay for. TEAM TO ADD: confirm how revenue and the 25-year profit were calculated.
 
 ### [14.4] Funding
-- **code:** 14.4 | **status:** SLIDES | **words:** 69 | **source:** Slide 19, tidied
-- note: the slide says $86,600. Use $86,650 to match Table 3 and Stage 4. Do not use the slide's "$2,500 cost of restocks" figure.
+- **code:** 14.4 | **status:** SLIDES | **words:** 55 | **source:** Slide 19, tidied
+- note: table unchanged; original $86,650 grant estimate note removed at the user’s request. The supplied funding paragraph uses $86,600.
 
 > Table 5. Funding sources
 > | Funding source | What it covers |
@@ -662,12 +769,38 @@ Per-block counts are in each block's `words` field below.
 > | Regional Tourism Infrastructure Fund (Qld) | Build, design, equipment. Up to $300,000 (DETSI, 2026). |
 > | Indigenous Rangers Program (Australian Government) | Ranger land care to 2028 (National Indigenous Australians Agency [NIAA], n.d.). May cover Ranger time. |
 > | Own income: sales and rentals | Stock and about $3,950 a year to run. |
-> The team estimates a grant request of about $86,650 for the build and equipment.
 
 ### [14.5] Maintenance and end-of-life costs
-- **code:** 14.5 | **status:** MISSING | **words:** 0 | **target:** 80 | **source:** none
-- placeholder: `insert: Maintenance and end-of-life costs`
-- the template asks for both. The team has the activity (two Ranger checks a year, four workers for 1 to 2 weeks to remove) but no cost.
+- **code:** 14.5 | **status:** SITE | **words:** 36 | **source:** User-supplied cost analysis, 28 October 2026
+- layout: lifespan line ends at Year 25 with an $8,000 disposal estimate; replaces the missing-content placeholder.
+> At the end of the facility's estimated 25-year lifespan, dismantling, transportation, recycling and waste disposal are expected to cost approximately $8,000, subject to contractor quotations. Reusable equipment and recyclable construction materials will be recovered wherever possible.
+
+### [14.6] Funding plan
+- **code:** 14.6 | **status:** SITE | **words:** 36 | **source:** User-supplied cost analysis, 28 October 2026
+
+> The project aims to secure $86,600 through government and community grants, with the remaining $786.65 funded through community contributions or fundraising. Potential funding opportunities include Queensland regional tourism and community infrastructure grant programs, subject to eligibility.
+
+### [14.7] Annual operating costs
+- **code:** 14.7 | **status:** SITE | **words:** 40 | **source:** User-supplied cost analysis, 28 October 2026
+
+> Annual operating costs are estimated at $3,950, covering routine inspections, cleaning, minor repairs and equipment maintenance. An additional $2,500 is allocated for replenishing supplies, although this is not included in the operating cost figures presented in the revenue projection table.
+
+### [14.8] Expected demand and revenue
+- **code:** 14.8 | **status:** SITE | **words:** 50 | **source:** User-supplied cost analysis, 28 October 2026
+
+> Based on the projected revenue table, the facility is expected to serve 220 visitors and provide 44 equipment rentals annually, generating approximately $8,950 in revenue. These figures are preliminary planning estimates based on expected demand during the visitor season and should be verified against actual visitor numbers and rental records.
+
+### [14.9] Long-term operating surplus
+- **code:** 14.9 | **status:** SITE | **words:** 58 | **source:** User-supplied cost analysis, 28 October 2026
+
+> The financial projection table estimates an annual operating surplus of $5,000, equivalent to $125,000 over 25 years under the base scenario. However, this simplified projection excludes additional restocking costs, inflation, equipment replacement and major repairs. Equipment will be inspected regularly and replaced when necessary, while maintenance budgets and rental prices will be reviewed annually to account for inflation.
+
+### [14.10] Financial sustainability
+- **code:** 14.10 | **status:** SITE | **words:** 31 | **source:** User-supplied cost analysis, 28 October 2026
+
+> Overall, the project shows potential for long-term financial sustainability, provided that operating costs remain controlled, visitor demand meets expectations and sufficient funds are reserved for maintenance, equipment replacement and eventual disposal.
+
+- layout notes: reading order is 14.1, 14.2, 14.6, 14.4, 14.7, 14.8, 14.3, 14.9, 14.5, 14.10. All seven supplied paragraphs retain their exact wording. Existing tables, charts, scenarios and funding coverage remain. Add a proposed funding split bar ($86,600 / $786.65), base-scenario demand metrics (220 / 44 / $8,950), an additional-supplies label of $2,500 annually beside the revenue chart, a $5,000 / $125,000 surplus summary, and a shaded closing panel. New labels are supplementary UI; chart/table data is unchanged. The funding eligibility note, both figure-difference notes and the chart restocking-exclusion sentence are omitted at the user’s request. Supplied paragraphs remain unchanged. Original notes beneath the revenue and funding tables are removed at the user’s request.
 
 ---
 
@@ -710,8 +843,14 @@ Per-block counts are in each block's `words` field below.
 
 ---
 
+### [15.6] Other Considerations
+- **code:** 15.6 | **status:** MISSING | **words:** 1 | **source:** User request, 28 October 2026
+- layout: `/other-considerations` renders the same shared full-screen hero as Cost, with its own topic-relevant brainstorming photograph and the title "Other Considerations". Allow the longer hero title to use the full content width and reduce its font size on phones; let the dropdown label wrap within the viewport. Below it render only the plain text below, without a repeated heading or placeholder box. Keep blocks 15.1–15.5 archived.
+
+> insert
+
 ## SECTION 16: Recommendations (id: recommendations)
-- **section words:** 127 | **counts toward 4000:** yes
+- **section words:** 240 | **counts toward 4000:** yes
 
 ### [16.1] What should happen next
 - **code:** 16.1 | **status:** SITE | **words:** 112 | **source:** Delivery page
@@ -732,17 +871,55 @@ Per-block counts are in each block's `words` field below.
 
 ---
 
+### [16.3] Recommendations
+- **code:** 16.3 | **status:** SITE | **words:** 25 | **source:** Final text supplied by the user, 28 October 2026
+- layout: `/recommendations` retains the shared full-screen discussion-photo hero. Below it, show “12. Recommendations” and the two guiding questions in the left column, with five numbered editorial rows in the wider right column. The section number and each 12.1–12.5 label are black. Each row has a numbered label, a short serif heading and the supplied recommendation, separated by fine rules. Stack the introduction above the list on tablets and phones; on narrow phones put each number above its heading and copy. Keep blocks 16.1–16.2 archived. The visible numbering follows the user's section 12; internal source codes remain in section 16.
+
+> What further activity (outside your scope) is needed on the part of the client to ensure the project is successful?
+> Is any further research needed?
+
+### [16.4] Community consultation
+- **code:** 16.4 | **status:** SITE | **words:** 17 | **source:** Final text supplied by the user, 28 October 2026
+
+> A community consultation is recommended to ensure the Lama Lama community’s requirements and expectations are properly met.
+
+### [16.5] Cost and funding
+- **code:** 16.5 | **status:** SITE | **words:** 20 | **source:** Final text supplied by the user, 28 October 2026
+
+> The cost and funding should be verified, which aims to make sure the project can be fully supported on time.
+
+### [16.6] Regular maintenance
+- **code:** 16.6 | **status:** SITE | **words:** 18 | **source:** Final text supplied by the user, 28 October 2026
+
+> Regular maintenance to the project is recommended due to unavoidable wear and tear of equipment, infrastructure, buildings, etc.
+
+### [16.7] Visitor feedback
+- **code:** 16.7 | **status:** SITE | **words:** 15 | **source:** Final text supplied by the user, 28 October 2026
+
+> Feedback from tourists and users should be collected after the first season to find improvements.
+
+### [16.8] Card payments
+- **code:** 16.8 | **status:** SITE | **words:** 18 | **source:** Final text supplied by the user, 28 October 2026
+
+> Card payment (EFTPOS) should be added, as the current lack of card payments limits income for the community.
+
+---
+
 ## SECTION 17: References (id: references)
 - **section words:** 706 | **counts toward 4000:** no
-- layout: one plain list, alphabetical, no carousel. Titles in italics per APA 7 (the italic part is the title of the work, or the website name for web pages as in APA 7).
+- layout: one plain list, alphabetical, no carousel. Source URLs are clickable links that open in a new tab. Titles in italics per APA 7 (the italic part is the title of the work, or the website name for web pages as in APA 7).
 - note: preserve the original entries; add photograph sources when new internet images are used. Some slide sources are not here (see PROJECT_CONTEXT.md, known problems).
 
 ### [17.1] Reference list
-- **code:** 17.1 | **status:** SITE | **words:** 706 (original entries; photo credits added below) | **source:** Original references plus 17 montage and seven report subpage hero photograph credits and the Summary, Project details and Background hero video credits
+- **code:** 17.1 | **status:** SITE | **words:** 706 (original entries; photo credits added below) | **source:** Original references plus 17 montage and nine report subpage hero photograph credits and the Summary, Project details and Background hero video credits, plus the footer video source, seven Background carousel photographs and seven Summary materials photographs (two reuse existing Unsplash credits)
 
+
+> 2H Media. (2021, October 5). A group of people sitting around a wooden table [Photograph]. Unsplash. https://unsplash.com/photos/Rnd5TjLs0xg (Unsplash License: https://unsplash.com/license); resized, converted to WebP and displayed with a crop.
+> Aerial view of serene river and forest landscape. (n.d.). [Video]. Pexels. https://www.pexels.com/video/aerial-view-of-serene-river-and-forest-landscape-31914486/
 > Annette Ruzicka. (n.d.). Lama Lama ranger in wetland reeds [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/lama-lama-rangers/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/08/Lama-Lama-rangers-banner-Photo-Annette-Ruzicka.png
 > Annette Ruzicka. (n.d.). Road through Lama Lama Country [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/visiting/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/08/Visiting-banner-3-Photo-Annette-Ruzicka.png
 > Anthropic. (2026). Claude [Large language model]. https://claude.ai
+> Bidgee. (2008, February 11). Evening monsoonal squall [Photograph]. Wikimedia Commons. CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/); converted to WebP and displayed with a crop. https://commons.wikimedia.org/wiki/File:Evening_monsoonal_squall.jpg
 > Bober, I. (2025, March). A simple guide to soft shackles. Unsealed 4X4. https://unsealed4x4.com.au/soft-shackles-a-simple-guide/
 > BuyWisely. (n.d.-a). GME TX6160X 5 watt IP67 UHF CB handheld radio. https://buywisely.com.au/product/gme-tx6160x-5-watt-ip67-uhf-cb-handheld-radio-beyond-blue-foundation
 > BuyWisely. (n.d.-b). Hot Shots 20kg firewood. https://buywisely.com.au/product/hot-shots-20kg-firewood
@@ -750,7 +927,9 @@ Per-block counts are in each block's `words` field below.
 > BuyWisely. (n.d.-d). MAXTRAX MKII recovery tracks - black. https://buywisely.com.au/au/product/maxtrax-mkii-recovery-tracks-black
 > BuyWisely. (n.d.-e). SCA Hurricane 12V 150PSI 50LPM tyre inflator. https://buywisely.com.au/product/sca-hurricane-12v-150psi-50lpm-tyre-inflator-sca-club
 > BuyWisely. (n.d.-f). XTM 7 piece recovery kit. https://buywisely.com.au/product/xtm-7-piece-recovery-kit-club-bcf
+> Chain.com.au. (n.d.). Black Rat 4WD recovery kit [Photograph]. https://chain.com.au/collections/4wd-safety-recovery-kits
 > Cook Shire Council. (2026, August 26). Road conditions & closures. https://www.cook.qld.gov.au/services/roads/road-conditions-closures/
+> CSIRO. (2009, August 10). Flooded road in the Herbert River catchment, northern Queensland [Photograph]. Wikimedia Commons. CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/); resized, converted to WebP and displayed with a crop. https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_10397_Flooded_road_in_the_Herbert_River_catchment_northern_Queensland.jpg
 > Department of the Environment, Tourism, Science and Innovation. (2024a, May 3). About: Lama Lama National Park (CYPAL). Parks and Forests. https://parks.qld.gov.au/parks/lama-lama/about
 > Department of the Environment, Tourism, Science and Innovation. (2024b, May 3). Lama Lama National Park (CYPAL). Parks and Forests. https://parks.qld.gov.au/parks/lama-lama
 > Department of the Environment, Tourism, Science and Innovation. (2026, July). Regional Tourism Infrastructure Fund: Round 2 program guidelines. https://www.detsi.qld.gov.au/__data/assets/pdf_file/0023/406481/regional-tourism-infrastructure-fund-guidelines.pdf
@@ -760,6 +939,7 @@ Per-block counts are in each block's `words` field below.
 > Espejo, M. (2025, January 4). Aerial view of expansive wetlands landscape [Video]. Pexels. https://www.pexels.com/video/aerial-view-of-expansive-wetlands-landscape-30081634/
 > Feasly. (n.d.). Construction cost per square metre in Australia (2026). https://www.feasly.com.au/guides/construction-cost-per-square-metre-australia
 > Google. (2026). Gemini [Large language model]. https://gemini.google.com
+> Hawaiian Electric. (2025, July 17). Emergency food stock [Photograph]. In Tips for a heart-healthy emergency food supply. https://www.hawaiianelectric.com/powering-hawaiis-future/tips-for-a-heart-healthy-emergency-food-supply
 > Hillebrand, S. (n.d.). Cabin with solar panels [Photograph]. Wikimedia Commons. Public domain; resized and converted to WebP, displayed with a crop. https://commons.wikimedia.org/wiki/File:Cabin_with_solar_panels.jpg
 > KeepActive Australia. (2022, January 30). Large family camping tent [Photograph]. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Large_family_camping_tent.jpg Photo by KeepActive.com.au (https://keepactive.com.au/). CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Resized and converted to WebP; displayed with a crop.
 > Kepner, L. (2020, October 28). Architectural blueprints with drafting tools [Photograph]. Unsplash. https://unsplash.com/photos/Yn8D5B8C-eY (Unsplash License: https://unsplash.com/license)
@@ -772,15 +952,19 @@ Per-block counts are in each block's `words` field below.
 > Pimentel, A. (2026, February 11). Construction workers in hard hats and safety vests on site [Photograph]. Unsplash. https://unsplash.com/photos/xufUgY2AeGQ (Unsplash License: https://unsplash.com/license)
 > Queensland Parks and Wildlife Service. (2013). Lama Lama National Park (Cape York Peninsula Aboriginal Land): Management statement. Department of Environment, Science and Innovation. https://parks.des.qld.gov.au/__data/assets/pdf_file/0022/166423/lama-lama.pdf
 > Reardon-Smith, M. (2023). The wet: Shifting seasons, climate change and natural cycles in Cape York Peninsula, Queensland. Oceania, 93(3), 302-320. https://doi.org/10.1002/ocea.5377
+> The Shed Company. (n.d.). Three Bay Manor shed under construction [Photograph]. https://www.theshedcompany.com.au/projects/three-bay-manor/
 > Sun, D. (2026, July 1). Architectural model with blueprints on wall [Photograph]. Unsplash. https://unsplash.com/photos/1hEhb26Bn20 (Unsplash License: https://unsplash.com/license)
 > Supercheap Auto. (2017, February). How to rapidly deflate your tyres. https://www.supercheapauto.com.au/blog/4wd-adventure/how-to-rapidly-deflate-your-tyres.html
 > Testa, C. (2026, January 23). Tropical low forecast to bring heavy rain to northern Cape York, Gulf of Carpentaria. ABC News. https://www.abc.net.au/news/2026-01-23/tropical-low-heavy-rain-cape-york-gulf-of-carpentaria/106260620
 > Tetrakis Sphericon. (2021, April 28). Drone footage of a sunset in an Australian bushland [Video]. Pexels. https://www.pexels.com/video/drone-footage-of-a-sunset-in-an-australian-bushland-7691418/
 > Tingey, W. (2020, March 6). Stacks of paper documents and file folders [Photograph]. Unsplash. https://unsplash.com/photos/snNHKZ-mGfE (Unsplash License: https://unsplash.com/license)
 > Todio, E. (n.d.). Logistics of tourism in Port Stewart in Lama Lama Country. EWB Challenge. https://ewbchallenge.org/forums/topic/logistics-of-tourism-in-port-stewart-in-lama-lama-country/
+> Van Tay Media. (2019, August 9). People having meeting beside table [Photograph]. Unsplash. https://unsplash.com/photos/people-having-meeting-beside-table-YK1AJT_5e5Q (Unsplash License: https://unsplash.com/license); resized, converted to WebP and displayed with a crop.
 > usagito. (n.d.). Laura Aboriginal Dance Festival 2017 (17 min. Digest) [Video]. YouTube. https://www.youtube.com/watch?v=wR0iIcgOQ0E
+> Watson, G. (n.d.). Solar panels on house roof [Photograph]. Wikimedia Commons. CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/); resized and converted to WebP, displayed with a crop under the same licence. https://commons.wikimedia.org/wiki/File:Solar_panels_on_house_roof.jpg
 > Wikideas1. (2024, July 1). Modular home [Photograph]. Wikimedia Commons. CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/); resized and converted to WebP, displayed with a crop. https://commons.wikimedia.org/wiki/File:Modular_home.jpg
 > Wolff, C. (2018, March 8). Pile of assorted-color books [Photograph]. Unsplash. https://unsplash.com/photos/MiJTU6lqksg (Unsplash License: https://unsplash.com/license)
+> WoodSolutions. (n.d.). Exterior timber stairs and deck [Photograph]. https://www.woodsolutions.com.au/applications-products/exterior/stairs-exterior
 > Yintjingga Aboriginal Corporation. (n.d.). Cattle on Lama Lama Country [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/enterprises/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/08/MarinaPlainsCow-banner.png
 > Yintjingga Aboriginal Corporation. (n.d.). Fauna and flora survey: beetle [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/fauna-and-flora-surveys/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/12/flora-and-fauna-banner.png
 > Yintjingga Aboriginal Corporation. (n.d.). Fire management beside a road [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/monitoring-the-impact-of-fire/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/12/fire-banner-1.jpg
@@ -837,26 +1021,137 @@ Per-block counts are in each block's `words` field below.
 
 ---
 
-## SECTION 19: Call to action and footer (id: closing)
-- **section words:** 36 | **counts toward 4000:** no
+## SECTION 19: Project team and footer (id: closing)
+- **section words:** 14 | **counts toward 4000:** no
 
-### [19.1] Call to action
-- **code:** 19.1 | **status:** SITE | **words:** 26 | **source:** Bottom of every old page (one copy only)
-- buttons: "Ask a question" scrolls to this block. "View the plan" goes to `/implementation`. Decorative media: `(change to our assignment content)`.
+### [19.1] Project team
+- **code:** 19.1 | **status:** SITE | **words:** 14 | **source:** Project title and team details from blocks 0.1, 1.4 and 4.1
+- layout: “Provisions Point” is the heading. Below it, show the tutorial and group name, then the six group members on a new line. Do not render the two call-to-action buttons or social media icons.
 
-> Explore the problem, the solution and the plan to deliver it.
-> Questions about this proposal: TEAM TO ADD: contact route
-> Ask a question
-> View the plan
+> Provisions Point
+> Tutorial 4, Team 3 (FatZCC)
+> Pinhong, Darrell, Tasneef, Isaac, Jude and Qijun
 
-### [19.2] Footer
-- **code:** 19.2 | **status:** SITE | **words:** 10 | **source:** Old footer
-- the "Acknowledgment" link goes to `/report#acknowledgement`.
+- background media: use the full approximately 29-second user-supplied `/Users/darrell/Downloads/13594747_3840_2160_30fps.mp4`, optimized to 1920 × 1080 H.264 with fast-start metadata and no audio at `/assets/report/footer/river-forest.mp4`. The poster `/assets/report/footer/river-forest.jpg` is extracted at one second. Cover-crop both assets, with a 60% black overlay behind the text. Loop silently inline while the footer is visible; pause off-screen and show only the poster for reduced motion. Replace the former placeholder and animated gradient canvas. The footage is decorative landscape context, not a verified view of Lama Lama Country.
+- source and credit: *Aerial view of serene river and forest landscape*, Pexels, https://www.pexels.com/video/aerial-view-of-serene-river-and-forest-landscape-31914486/ (link supplied by the user). Creator and publication date could not be verified because the source page blocked access; use a title-first, n.d. citation in reference block 17.1. General licence: [Pexels License](https://www.pexels.com/license/). The supplied filename has a different numeric ID from the source URL; the source association is user-provided.
 
-> Provisions Point. EWB Challenge 2026 student proposal.
-> Acknowledgment
+### [19.2] Footer bottom row (removed)
+- **code:** 19.2 | **status:** SITE | **words:** 0 | **source:** Removed by the user, 28 October 2026
+- layout: do not render the student proposal text, Acknowledgment link or large bottom wordmark. Keep the project team and footer navigation above. Size the footer to its content, with no fixed or minimum height; use 48px vertical padding on desktop and 32px on tablet and mobile.
 
 ---
+
+## SECTION 20: Minutes (id: minutes)
+- **counts toward 4000:** no
+- layout: On Supporting Documents directly below the hero, show the Minutes heading, introductory note, two-column meeting details table, numbered headings, bullet lists and three-column action table. Use existing report typography, cream table headers and borders; keep the action table horizontally scrollable on small screens. Preserve screenshot wording and punctuation; do not reproduce editor spellcheck marks or table controls.
+
+### [20.1] Minutes
+- **code:** 20.1 | **status:** SITE | **source:** User-supplied meeting minutes screenshots
+
+> Task allocations were updated after this meeting. See the Group Declaration for final contributions.
+
+### [20.2] Meeting Minutes 120min
+- **code:** 20.2 | **status:** SITE | **source:** User-supplied meeting minutes screenshots
+
+> Date and Time | 24 October 2026, 8:00 – 10:00 Microsoft Teams (online)
+> Present | Joud, Tasneef, Isaac, Darrell, Pinhong, Qijun
+> Organiser | Darrell Chee
+> Minute Taker | Joud Al Arnaout
+> Next Meeting | To be confirmed
+
+### [20.3] 1. Agenda
+- **code:** 20.3 | **status:** SITE | **source:** User-supplied meeting minutes screenshots
+
+> Review the Assessment Task 3 website structure, rubric, and current progress.
+> Confirm task allocation and responsibilities for each team member.
+> Discuss website consistency, prototype/design progress, appendix requirements, AI evidence, and final review needs.
+
+### [20.4] 2. Action Items
+- **code:** 20.4 | **status:** SITE | **source:** User-supplied meeting minutes screenshots
+
+> | Action Item | Responsible Person | Due Date |
+> | --- | --- | --- |
+> | Complete the About the Project and Background sections; compile appendices and AI evidence. | Joud | Before final submission |
+> | Complete Problem & Design Criteria and Implementation Plan; review respectful language and community-focused content. | Isaac | Before final submission |
+> | Complete Design Options and Selection; standardise website fonts, formatting, and table styles. | Tasneef | Before final submission |
+> | Complete Prototyping; maintain the figure/table register; review the website against the rubric. | Qijun | Before final submission |
+> | Collect Detailed Design and check the reference list information and APA 7 formatting.Finish prototyping model and Briefly detail. Done implementation plane and analysis cost parts. | Pinhong | Before final submission |
+> | Complete Executive Summary, Cost Analysis, Other Considerations/Journey Map, and Recommendations; check word count and consistency. | Darrell | Before final submission |
+> | Complete a final whole-team review of content, citations, links, and website presentation. | All members | Before final submission |
+
+### [20.5] 3. Other items
+- **code:** 20.5 | **status:** SITE | **source:** User-supplied meeting minutes screenshots
+
+> The group agreed to use a consistent visual theme and formatting across all website pages.
+> Each member agreed to review and revise their own section against the assessment rubric before submission.
+> AI-use evidence and Prompt Log materials will be collected for the appendices together with the Group Charter and Meeting Minutes.
+
+---
+
+
+## SECTION 21: Team Charter (id: team-charter)
+- **counts toward 4000:** no
+- layout: Supporting Documents order is hero, Team Charter, Minutes. Retain the supplied Group Charter and GROUP CHARTER headings, group name with underlined FATZCC, two bordered columns, question/answer spacing, and six original signatures. Stack columns on narrow screens. Match existing report fonts, cream accents and borders. Original user screenshots are stored unchanged in `app/report/assets/team-charter-page-1.png` and `team-charter-page-2.png`; CSS windows show only the signature areas, with alt text identifying each signatory. Do not display editor controls or spellcheck marks.
+
+### [21.1] Team Charter
+- **code:** 21.1 | **status:** SITE | **source:** User-supplied charter screenshots
+
+> Group Charter
+> GROUP CHARTER
+> Group name:
+> FATZCC
+
+### [21.2] Our ground rules:
+- **code:** 21.2 | **status:** SITE | **source:** User-supplied charter screenshots
+
+> Other than in class, when will we meet (what time, how often)?
+> Once every week before our lecture on Tuesdays at 4:30 PM
+> On average, how long should our meetings be?
+> An hour and a half.
+> Where will our meetings take place?
+> In UTS library
+> How do we inform each other when we can’t be there or are running late?
+> Through our team group chat
+> What does “on time” mean?
+> Roughly 5 minutes before the meeting.
+> How will we deal with lateness to meetings?
+> Lateness is not an issue, if a team member has special circumstances that disallow them from being on time.
+> How do we deal with members who don't participate enough, participate too much, or distract the group from its task?
+> By completing our part, then supporting them in finishing their parts.
+> What will we do if a group member's work doesn't meet our standards?
+> Communicate about it and improve their work together.
+> How are we going to make decisions?
+> Through asking each member their opinion on a specific topic and working around disagreement.
+
+### [21.3] Our goals:
+- **code:** 21.3 | **status:** SITE | **source:** User-supplied charter screenshots
+
+> What is our group trying to accomplish?
+> To achieve the highest grade possible
+
+### [21.4] Leadership
+- **code:** 21.4 | **status:** SITE | **source:** User-supplied charter screenshots
+
+> Will we appoint a leader?
+> No
+> What are their responsibilities?
+> Ensuring that everyone contributes
+
+### [21.5] Our commitment to the charter:
+- **code:** 21.5 | **status:** SITE | **source:** User-supplied charter screenshots
+
+> We, the group named agree with the answers in our charter and will try our best to uphold them.
+> Name
+> Signature
+> Joud
+> Darrell
+> Isaac
+> Pinhong
+> Qijun
+> Tasneef
+
+---
+
 
 ## Edits log (differences from the old text, so nothing changes silently)
 
@@ -900,12 +1195,12 @@ Images are stored locally as WebP files. Original framing is retained in the fil
 | 15 | `/assets/report/montage/photo-15.webp` | Forested coastline beside Princess Charlotte Bay | Yintjingga Aboriginal Corporation | https://www.lamalama.org.au/princess-charlotte-bay-bird-surveys/ | https://www.lamalama.org.au/wp-content/uploads/2016/12/PCB-bird-surveys-banner.png |
 | 16 | `/assets/report/montage/photo-16.webp` | Family camping tent at a Great Ocean Road campground in Victoria | KeepActive Australia | https://commons.wikimedia.org/wiki/File:Large_family_camping_tent.jpg | https://upload.wikimedia.org/wikipedia/commons/a/a5/Large_family_camping_tent.jpg |
 
-Full photograph references are included in report block 17.1 and exported to `app/report/report-blocks.json`. The machine-readable image register is `app/report/montage-photos.json`.
+Do not display the photo-credit subtitle beneath the Summary montage. Full photograph references remain on the References page in report block 17.1 and are exported to `app/report/report-blocks.json`. The machine-readable image register is `app/report/montage-photos.json`.
 
 
 ## Report subpage hero media — 28 October 2026
 
-Seven subpages use distinct real photographs sourced from Unsplash; Project details uses user-supplied Pexels video footage and Background uses a user-supplied recording of a YouTube video. Summary (`/report`) retains its existing hero and montage. These media illustrate the page topics; they do not document Warokutal, the proposed shelter, its actual prototype or its construction. The bushland video provides Australian landscape context. The Background footage shows the Laura Aboriginal Dance Festival; it is contextual footage and does not identify the performers as Lama Lama Rangers or imply their endorsement. The prototype image is a photograph of a physical architectural model.
+Nine subpages use distinct real photographs sourced from Unsplash; Project details uses user-supplied Pexels video footage and Background uses a user-supplied recording of a YouTube video. Summary (`/report`) retains its existing hero and montage. These media illustrate the page topics; they do not document Warokutal, the proposed shelter, its actual prototype or its construction. The bushland video provides Australian landscape context. The Background footage shows the Laura Aboriginal Dance Festival; it is contextual footage and does not identify the performers as Lama Lama Rangers or imply their endorsement. The prototype image is a photograph of a physical architectural model.
 
 Each photograph source page identifies a photographer and the Unsplash License (https://unsplash.com/license). Downloaded photographs are served locally as 2560-pixel-wide WebP images; CSS crops them to fill the hero, with page-specific object positions. Source URLs, original image URLs, dimensions, descriptive alt text and licence details are stored in `app/report/hero-photos.json`. All current media sources also appear in reference block 17.1. Project details uses the full approximately 45-second clip from user-supplied `7691418-uhd_3840_2160_30fps.mp4`, optimized to a 1920 × 1080 H.264 MP4 with fast-start metadata. Its JPEG poster is extracted at one second. Video plays muted, loops inline and retains the hero crop, parallax and title; reduced-motion users see the static poster. The poster also remains beneath the video while it loads. The footage and derived poster are credited to Tetrakis Sphericon under the Pexels License.
 
@@ -913,14 +1208,54 @@ Each photograph source page identifies a photographer and the Unsplash License (
 |---|---|---|---|---|---|
 | Project Details | `/assets/report/heroes/project-details.mp4`; poster `/assets/report/heroes/project-details.jpg` | Aerial view of Australian bushland at sunset | Tetrakis Sphericon | https://www.pexels.com/video/drone-footage-of-a-sunset-in-an-australian-bushland-7691418/ | [Pexels License](https://www.pexels.com/license/) |
 | Background | `/assets/report/heroes/background.mp4`; poster `/assets/report/heroes/background.jpg` | Dancers performing at the Laura Aboriginal Dance Festival | usagito | https://www.youtube.com/watch?v=wR0iIcgOQ0E | No open reuse licence verified |
-| Design Solution Options | `/assets/report/heroes/options.webp` | Designer comparing and drafting architectural plans on a worktable | Daniel McCullough | https://unsplash.com/photos/-FPFq_trr2Y | [Unsplash License](https://unsplash.com/license) |
+| Design Solutions | `/assets/report/heroes/options.webp` | Designer comparing and drafting architectural plans on a worktable | Daniel McCullough | https://unsplash.com/photos/-FPFq_trr2Y | [Unsplash License](https://unsplash.com/license) |
 | Detailed Design | `/assets/report/heroes/design.webp` | Architectural plans with drafting pencils, a ruler and a storage tube | Lucas Kepner | https://unsplash.com/photos/Yn8D5B8C-eY | [Unsplash License](https://unsplash.com/license) |
 | Prototype | `/assets/report/heroes/prototyping.webp` | Physical architectural scale model displayed beside building plans | Declan Sun | https://unsplash.com/photos/1hEhb26Bn20 | [Unsplash License](https://unsplash.com/license) |
 | Implementation | `/assets/report/heroes/implementation.webp` | Construction workers wearing hard hats and safety vests at a building site | Agustín Pimentel | https://unsplash.com/photos/xufUgY2AeGQ | [Unsplash License](https://unsplash.com/license) |
 | Cost | `/assets/report/heroes/cost.webp` | Calculator, paperwork and office supplies for cost planning | maks_d | https://unsplash.com/photos/54bvLAWhWAM | [Unsplash License](https://unsplash.com/license) |
+| Other Considerations | `/assets/report/heroes/other-considerations.webp` | Team gathering around a table to brainstorm and review ideas | Van Tay Media | https://unsplash.com/photos/people-having-meeting-beside-table-YK1AJT_5e5Q | [Unsplash License](https://unsplash.com/license) |
+| Recommendations | `/assets/report/heroes/recommendations.webp` | Team seated around a wooden table discussing plans and next steps | 2H Media | https://unsplash.com/photos/Rnd5TjLs0xg | [Unsplash License](https://unsplash.com/license) |
 | References | `/assets/report/heroes/references.webp` | Stack of books used to illustrate research and reference sources | Claudia Wolff | https://unsplash.com/photos/MiJTU6lqksg | [Unsplash License](https://unsplash.com/license) |
 | Appendices | `/assets/report/heroes/appendices.webp` | Stacks of paper documents and folders illustrating supporting records | Wesley Tingey | https://unsplash.com/photos/snNHKZ-mGfE | [Unsplash License](https://unsplash.com/license) |
 
 ### Background hero video — 28 October 2026
 
 Use the full approximately 33-second user-supplied `Screen Recording 2026-10-28 at 15.55.29.mov`. The original 3024 × 1964 recording has a 164-pixel top black bar and a 98-pixel bottom black bar. Crop to `3024:1702:0:164` before scaling to 1920 × 1080, converting to 30 fps H.264 MP4 and adding fast-start metadata. Serve `/assets/report/heroes/background.mp4` and a matching cropped poster `/assets/report/heroes/background.jpg` extracted at one second. Retain muted, looping inline playback, cover cropping and the reduced-motion static poster. Credit usagito, *Laura Aboriginal Dance Festival 2017 (17 min. Digest)*, YouTube, https://www.youtube.com/watch?v=wR0iIcgOQ0E. The upload date could not be verified, so the reference uses n.d.; 2017 is part of the supplied video title. No open reuse licence was verified. Reference block 17.1 contains the citation.
+
+### Background carousel image credits — 28 October 2026
+
+Seven photographs replace the unrelated placeholder portraits and vehicle images. Original downloads were inspected at the carousel crop ratio. `app/report/background-photos.json` records each pairing, description, author, source page, original image URL, licence status, context and delivered dimensions. All files are converted to WebP at quality 90, limited to 1920 pixels wide without upscaling, and displayed using the existing cover crop.
+
+The photographs illustrate each paragraph; they do not document the proposed shelter, a visitor emergency or consultation about this student project. The monsoon photo is from Darwin and the flooded-road photo is from the Herbert River catchment, not Lama Lama Country. The access-road image illustrates visitor access rather than depicting either named campground. The ranger image illustrates ranger work rather than the staffed base.
+
+| Point | Local asset | Subject and relevance | Creator credit | Source page | Licence |
+| --- | --- | --- | --- | --- | --- |
+| 2.1 | `/assets/report/background/lama-lama-coastline.webp` | Lama Lama coastline with coastal forest and wetlands. Lama Lama Country. | Yintjingga Aboriginal Corporation | https://www.lamalama.org.au/visiting/ | No open reuse licence identified |
+| 2.2 | `/assets/report/background/lama-lama-wetland.webp` | Forested wetland on Lama Lama Country. Lama Lama Country. | Yintjingga Aboriginal Corporation | https://www.lamalama.org.au/special-places/ | No open reuse licence identified |
+| 2.3 | `/assets/report/background/lama-lama-ranger.webp` | Lama Lama ranger working among wetland reeds. Ranger work; not a photograph of the Port Stewart Ranger Base. | Annette Ruzicka | https://www.lamalama.org.au/lama-lama-rangers/ | No open reuse licence identified |
+| 2.4 | `/assets/report/background/monsoon-squall.webp` | Dark monsoon clouds and rain over the sea near Darwin. Darwin, Northern Territory; illustrative monsoon context, not Lama Lama Country. | Bidgee | https://commons.wikimedia.org/wiki/File:Evening_monsoonal_squall.jpg | CC BY 3.0 — https://creativecommons.org/licenses/by/3.0/ |
+| 2.5 | `/assets/report/background/flooded-road.webp` | Floodwater covering a road in the Herbert River catchment, northern Queensland. Herbert River catchment, northern Queensland; illustrative access disruption, not Warokutal. | CSIRO | https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_10397_Flooded_road_in_the_Herbert_River_catchment_northern_Queensland.jpg | CC BY 3.0 — https://creativecommons.org/licenses/by/3.0/ |
+| 2.6 | `/assets/report/background/lama-lama-access-road.webp` | Unsealed red dirt access road through Lama Lama Country. Local visitor access; not a photograph of either named campground. | Annette Ruzicka | https://www.lamalama.org.au/visiting/ | No open reuse licence identified |
+| 2.7 | `/assets/report/background/joint-management.webp` | Rangers reviewing a map together during joint park management. Joint management; not consultation on this student proposal. | Yintjingga Aboriginal Corporation | https://www.lamalama.org.au/national-parks-joint-management/ | No open reuse licence identified |
+
+All seven sources are included in reference block 17.1; existing credits for the five Lama Lama photographs are reused. Original URLs are recorded in the image manifest. The two Creative Commons photographs include author, source, licence links and conversion/crop notices in References. The five Lama Lama website images have no identified open reuse licence; attribution does not establish an open licence. Photograph-specific APA formatting is outside the four source types covered by the UTS referencing skill and should be checked against the full UTS guide.
+
+
+### Summary materials photograph register — 28 October 2026
+
+The first seven Proposed Materials and Cost Summary cards use real photographs. Each image illustrates part of its category rather than every bundled item. The contingency photograph illustrates budget planning. The images do not document the proposed building or establish the estimates. The estimated total has no photograph. Local images are resized without upscaling, converted to WebP and displayed with a square cover crop. `app/report/materials-photos.json` records the source image URL, attribution, licence status, alt text and delivered dimensions. Each card has a source link; reference block 17.1 includes all seven sources, reusing the existing Kepner and maks_d entries.
+
+| Cost item | Local asset | Creator or source credit | Source page | Licence or reuse status |
+| --- | --- | --- | --- | --- |
+| Frame, walls and roof | `/assets/report/materials/frame.webp` | The Shed Company | https://www.theshedcompany.com.au/projects/three-bay-manor/ | No open reuse licence identified; photographer not named |
+| Piles, deck and stairs | `/assets/report/materials/deck.webp` | WoodSolutions | https://www.woodsolutions.com.au/applications-products/exterior/stairs-exterior | No open reuse licence identified; photographer not named |
+| Shelves, counter, solar panel and battery | `/assets/report/materials/solar.webp` | Gray Watson | https://commons.wikimedia.org/wiki/File:Solar_panels_on_house_roof.jpg | CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) |
+| Recovery kits, PLBs and UHF radios | `/assets/report/materials/recovery.webp` | Chain.com.au | https://chain.com.au/collections/4wd-safety-recovery-kits | No open reuse licence identified; photographer not named |
+| Water, food, firewood and safety flyers | `/assets/report/materials/supplies.webp` | Hawaiian Electric | https://www.hawaiianelectric.com/powering-hawaiis-future/tips-for-a-heart-healthy-emergency-food-supply | No open reuse licence identified; article by Darren Pai, photographer not named |
+| Design documents | `/assets/report/materials/documents.webp` | Lucas Kepner | https://unsplash.com/photos/Yn8D5B8C-eY | Unsplash License (https://unsplash.com/license) |
+| Contingency (20%) | `/assets/report/materials/contingency.webp` | maks_d | https://unsplash.com/photos/54bvLAWhWAM | Unsplash License (https://unsplash.com/license) |
+
+
+### Public asset naming
+
+Browser-facing legacy brand names in asset filenames use `assignment`. All image, video and logo bytes, page wording, layout and interactions are preserved. Original asset download records are retained internally in `docs/asset-provenance/` instead of being served from `public/`.

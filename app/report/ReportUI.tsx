@@ -41,8 +41,8 @@ function Words({ text, heading = false }: { text: string; heading?: boolean }) {
     key={i}>{word}</motion.span> : word)}</>;
 }
 
-export function Copy({ text }: { text: string }) {
-  return <>{text.split(/(TEAM TO ADD:[^\n]*)/g).map((part, i) => part.startsWith("TEAM TO ADD:") ? <mark key={i}>{part}</mark> : <Words key={i} text={part} />)}</>;
+export function Copy({ text, animated = true }: { text: string; animated?: boolean }) {
+  return <>{text.split(/(TEAM TO ADD:[^\n]*)/g).map((part, i) => part.startsWith("TEAM TO ADD:") ? <mark key={i}>{part}</mark> : animated ? <Words key={i} text={part} /> : part)}</>;
 }
 
 export function Paragraphs({ text }: { text: string }) {

@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, type ReactNode } from "react";
 import styles from "./ReportHeroMontage.module.css";
-import Link from "../../components/AppLink";
 import photos from "./montage-photos.json";
 
 // The index page's road montage with report media and acknowledgement copy.
@@ -37,7 +36,6 @@ export default function ReportHeroMontage({ children }: { children: ReactNode })
       </div>
       <div className={`home-road-copy ${styles.summaryCopy}`}>{children}</div>
       <img className="home-road-center-tile" src={photos[16].src} alt={photos[16].alt} loading="lazy" />
-      <p className={styles.photoCredits}>Photos: <a href="https://www.lamalama.org.au/">Yintjingga Aboriginal Corporation</a> and Annette Ruzicka. Camping: <a href="https://keepactive.com.au/">KeepActive Australia</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> (resized and cropped). <Link href="/references#references">Full image references</Link>.</p>
     </div>
   </section>;
 }

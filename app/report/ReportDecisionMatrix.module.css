@@ -13,6 +13,7 @@
 .table caption { text-align: left; padding: 26px 12px; font: 26px/1.3 Zagma, Georgia, serif; }
 .table thead th { padding: 20px 12px; background: var(--cream); vertical-align: top; text-align: left; font: 600 16px/1.45 var(--font-sans); border-bottom: 2px solid transparent; transition: border-color .3s; }
 .table thead th[data-current="true"] { border-bottom-color: #168044; }
+.table .weighting > * { padding: 12px; background: #f8f7f5; text-align: left; font: 600 14px/1.45 var(--font-sans); color: #737270; border-bottom: 1px solid #e7e5e2; }
 .table tbody th, .table tbody td { position: relative; height: 116px; padding: 50px 12px 20px; border-bottom: 1px solid #e7e5e2; border-top: 2px solid transparent; vertical-align: middle; text-align: left; font: 500 20px/1.45 var(--font-sans); box-sizing: border-box; transition: background .4s, border-color .4s; }
 .table tbody th { padding-top: 18px; font-weight: 600; border-left: 2px solid transparent; }
 .table tbody td:last-child { border-right: 2px solid transparent; }
@@ -21,6 +22,8 @@
 .table tbody tr[data-winner="true"] > :last-child { border-right-color: #168044; border-radius: 0 10px 10px 0; }
 .table tbody td:nth-last-child(-n+2) .cellValue { font-size: 24px; }
 .cellValue { position: relative; z-index: 1; }
+.weightedScore { display: block; font: 500 14px/1.45 var(--font-sans); color: #737270; }
+.srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
 .table td[data-reached="true"] .cellValue { color: var(--score-color); font-weight: 600; }
 .liveScore { display: block; min-height: 16px; font: 12px/1.3 var(--font-sans); color: var(--score-color); }
 .arrow { position: absolute; top: 34px; left: -50%; width: 100%; height: 2px; color: var(--score-color); transform-origin: left; pointer-events: none; transition: color .3s; }
