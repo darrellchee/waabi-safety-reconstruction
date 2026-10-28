@@ -13,6 +13,7 @@
   left: auto;
   top: auto;
   width: min(558px, calc(100% - 80px));
+  font-size: 30px;
   margin-inline: auto;
   /* Bottom padding covers the tile below plus the copy's +200px parallax shift. */
   padding-block: 45vh 520px;
@@ -24,7 +25,7 @@
 .overview { margin-top: 120px; }
 .overview p + p { margin-top: 28px; }
 @media (max-width: 767px) {
-  .montage .summaryCopy.summaryCopy { padding-bottom: 260px; }
+  .montage .summaryCopy.summaryCopy { padding-bottom: 260px; font-size: 22px; }
   .montage.montage :global(.home-road-center-tile) { bottom: 60px; }
   .overview { margin-top: 80px; }
 }

@@ -1,117 +1,174 @@
 .site-header {
+  /* Glass and navigation share a measured height while keeping independent colours. */
+  display: contents;
+  font: 400 18px/1.6 var(--font-report-nav), Georgia, serif;
+  letter-spacing: .15px;
+}
+.header-glass {
   position: fixed;
   z-index: 1000;
-  top: 34px;
-  left: 50%;
-  width: 338px;
-  transform: translateX(-50%);
-  color: #191818;
+  inset: 0 0 auto;
+  width: 100%;
+  height: var(--report-header-height, 48px);
+  pointer-events: none;
+  background: rgba(255, 255, 255, .15);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  backdrop-filter: blur(18px) saturate(140%);
+  border-bottom: 1px solid rgba(25, 24, 24, .1);
+  box-shadow: 0 4px 24px rgba(25, 24, 24, .04);
 }
-
 .nav-bar {
-  height: 55px;
-  border: 1px solid #d6d6d6;
-  background: white;
-  border-radius: 12px;
+  position: fixed;
+  z-index: 1001;
+  inset: 0 0 auto;
+  width: 100%;
+  color: #fff;
+  min-height: 48px;
   display: flex;
   align-items: center;
-  padding: 0 13px 0 28px;
-  position: relative;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0 clamp(12px, 1.8vw, 28px);
+  padding: 0 24px;
 }
-.nav-page {
-  font:
-    500 15px/1.6 var(--font-sans),
-    Arial,
-    sans-serif;
-  letter-spacing: 0.15px;
+.nav-brand {
+  flex-shrink: 0;
+  margin-right: auto;
+  padding-right: 24px;
+  border-right: 1px solid currentColor;
+  font-size: 22px;
+  font-weight: 600;
+  white-space: nowrap;
 }
-.menu-toggle {
+.nav-links {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 4px;
+  flex: 1;
+  min-width: 0;
   align-items: center;
-  margin-left: auto;
-  width: 36px;
-  height: 36px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0 clamp(4px, .8vw, 12px);
+}
+.nav-bar a, .nav-bar button {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.nav-bar button {
+  gap: 8px;
   border: 0;
-  border-radius: 50%;
+  padding: 0;
   background: none;
   cursor: pointer;
 }
-.menu-toggle:hover {
-  background: #f2f2f2;
+.nav-bar a:hover, .nav-bar button:hover,
+.nav-bar .active { color: inherit; }
+.nav-links > a, .more-menu > button {
+  position: relative;
+  padding-inline: 8px;
+  border-radius: 8px;
+  transition: color .2s ease, background-color .2s ease;
 }
-.menu-toggle span {
-  display: block;
-  background: currentColor;
-  width: 12px;
+.nav-links > a::after, .more-menu > button::after {
+  content: "";
+  position: absolute;
+  inset: auto 8px 7px;
   height: 2px;
-  border-radius: 1px;
-  transition: transform 0.3s;
+  border-radius: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease;
 }
-.menu-is-open .menu-toggle {
-  gap: 0;
+.nav-links > a:hover, .nav-links > a:focus-visible,
+.more-menu > button:hover, .more-menu > button[aria-expanded="true"] {
+  color: inherit;
+  background: rgba(127, 127, 127, .12);
 }
-.menu-is-open .menu-toggle span:last-child {
-  transform: translateY(-2px);
+.nav-links > a:is(:hover, :focus-visible, .active)::after,
+.more-menu > button:is(:hover, :focus-visible, .active, [aria-expanded="true"])::after {
+  transform: scaleX(1);
+}
+.more-menu { position: relative; }
+.more-menu svg { transition: transform .25s ease; }
+.more-menu > button[aria-expanded="true"] svg { transform: rotate(180deg); }
+.menu-panel {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 180px;
+  padding: 8px;
+  color: #fff;
+  background: rgba(25, 24, 24, .97);
+  border: 1px solid rgba(25, 24, 24, .1);
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(25, 24, 24, .12);
+  transform-origin: top right;
+}
+.menu-panel:not([hidden]) { animation: dropdown-in .2s ease-out; }
+.menu-panel a {
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 7px;
+  transition: color .2s ease, background-color .2s ease, padding-left .2s ease;
+}
+.menu-panel a:is(:hover, :focus-visible) {
+  background: rgba(255, 255, 255, .12);
+  color: #fff;
+  padding-left: 18px;
+}
+/* Keep actual black/white text; inversion can produce low-contrast colours. */
+.nav-brand, .nav-links > a, .more-menu > button {
+  color: #fff;
+  -webkit-text-stroke: .3px rgba(0, 0, 0, .85);
+  paint-order: stroke fill;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .95), 0 0 4px rgba(0, 0, 0, .5);
+}
+.nav-brand[data-tone="dark"], .nav-links > a[data-tone="dark"],
+.more-menu > button[data-tone="dark"] {
+  color: #000;
+  -webkit-text-stroke: .3px rgba(255, 255, 255, .8);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, .9);
+}
+@keyframes dropdown-in {
+  from { opacity: 0; transform: translateY(-5px) scale(.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav-links > a, .nav-links > a::after,
+  .more-menu > button, .more-menu > button::after,
+  .more-menu svg, .menu-panel a { transition: none; }
+  .menu-panel:not([hidden]) { animation: none; }
 }
 .page-progress {
   position: absolute;
   bottom: -1px;
   height: 2px;
-  left: 25px;
-  right: 25px;
+  left: 0;
+  right: 0;
   background: #ff286b;
   transform-origin: left;
 }
-.menu-panel {
-  margin-top: 10px;
-  background: #fff;
-  border: 1px solid #d6d6d6;
-  border-radius: 12px;
-  padding: 20px 24px;
-  color: #191818;
-  animation: menu-in 0.3s ease-out;
+.site-header button:focus-visible, .site-header a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
 }
-.menu-caption {
-  font:
-    12px/1.4 var(--font-sans),
-    Arial,
-    sans-serif;
-  color: #909090;
-  display: block;
-  margin-bottom: 20px;
+@media (max-width: 1023px) {
+  .nav-links { flex-basis: 100%; }
 }
-.menu-links {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+@media (max-width: 639px) {
+  .nav-brand { font-size: 19px; padding-right: 16px; }
+  .nav-links { gap: 0 4px; }
+  .nav-bar { gap: 0 16px; padding: 4px 12px; }
+  .nav-links > a, .nav-bar button { min-height: 32px; font-size: 15px; }
 }
-.menu-links > a {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  height: 50px;
-  text-decoration: none;
-  font-size: 34px;
-  line-height: 1.1;
-  letter-spacing: -1.02px;
-}
-.menu-links a:hover,
-.menu-links .active {
-  color: #ff286b;
-}
-@keyframes menu-in {
-  from {
-    opacity: 0;
-    transform: translateY(-7px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
+
+
 .site-footer {
   position: relative;
   height: 600px;
@@ -228,57 +285,12 @@
 .footer-legal a:hover {
   text-decoration: underline;
 }
-
-.site-header button:focus-visible,
-.site-header a:focus-visible,
 .site-footer a:focus-visible {
   outline: 2px solid #ff286b;
   outline-offset: 4px;
 }
 
 @media (max-width: 639px) {
-
-  .site-header {
-    top: 24px;
-    width: calc(100% - 24px);
-  }
-
-  .nav-bar {
-    padding-left: 28px;
-    padding-right: 13px;
-  }
-  .site-header.menu-is-open {
-    width: 100%;
-    top: 0;
-  }
-
-  .menu-is-open .nav-bar {
-    border: 0;
-    border-radius: 0;
-    height: 101px;
-    padding-left: 40px;
-    padding-right: 25px;
-  }
-  .menu-is-open .page-progress {
-    display: none;
-  }
-  .menu-panel {
-    margin-top: 0;
-    border-radius: 0;
-    border: 0;
-    border-top: 1px solid #d8d8d8;
-    padding: 20px 40px;
-    height: calc(100svh - 101px);
-    overflow-y: auto;
-  }
-
-  .menu-links {
-    gap: 12px;
-  }
-  .menu-links > a {
-    font-size: 34px;
-    height: 50px;
-  }
   .site-footer {
     height: auto;
     min-height: 680px;
@@ -331,9 +343,6 @@
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .menu-panel {
-    animation: none;
-  }
   .footer-socials > a {
     transition: none;
   }
@@ -413,28 +422,6 @@
     line-height: 1.4;
   }
 }
-
-/* Motion constants measured from the reference shared chrome chunk. */
-.site-header {
-  transition: top .4s cubic-bezier(.19,1,.22,1), width .4s cubic-bezier(.19,1,.22,1);
-}
-.nav-bar {
-  transition: height .4s cubic-bezier(.19,1,.22,1), border-radius .4s cubic-bezier(.19,1,.22,1), padding .4s cubic-bezier(.19,1,.22,1);
-}
-.menu-toggle { background: none; }
-.menu-toggle:hover { background: none; }
-.menu-toggle span { transition: transform .3s cubic-bezier(.34,1.56,.64,1); }
-.menu-panel {
-  overflow: clip;
-  animation: none;
-}
-.menu-panel > * {
-  animation: menu-content-in .4s .15s cubic-bezier(.19,1,.22,1) backwards;
-}
-@keyframes menu-content-in {
-  from { opacity: 0; transform: scale(1.1); filter: blur(10px); }
-  to { opacity: 1; transform: scale(1); filter: blur(0); }
-}
 .site-footer { padding: 0; }
 .footer-motion {
   position: relative;
@@ -470,34 +457,16 @@
   .site-footer { padding: 0; }
   .footer-motion { min-height: 0; height: auto; padding: 60px var(--gutter) 30px; }
 }
-@media (max-width: 639px) {
-  .menu-panel { overflow-y: auto; }
-}
 @media (prefers-reduced-motion: reduce) {
-  .site-header, .nav-bar, .menu-toggle span { transition: none; }
-  .menu-panel > * { animation: none; }
   .footer-motion { transform: none; will-change: auto; }
   .footer-top, .footer-bottom { opacity: 1; }
   .footer-canvas { display: none; }
 }
-/* Both hamburger bars converge on the SVG's center line (y=3). */
-.menu-is-open .menu-toggle { gap: 4px; }
-.menu-is-open .menu-toggle span:first-child { transform: translateY(3px); }
-.menu-is-open .menu-toggle span:last-child { transform: translateY(-3px); }
-
-/* The serialized root MotionConfig overrides library spring defaults. */
-.menu-toggle span { transition: transform .4s cubic-bezier(.19,1,.22,1); }
-@media (prefers-reduced-motion: reduce) { .menu-toggle span { transition: none; } }
-
-/* Keep all report destinations accessible within the viewport. */
-.menu-panel { max-height: calc(100svh - 120px); overflow-y: auto; overscroll-behavior: contain; }
 .footer-contact .footer-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
 .footer-contact .footer-buttons a { color: #191818; text-decoration: none; }
 @media (max-width: 639px) {
-  .menu-panel { max-height: none; }
   .footer-contact h2 { white-space: normal; }
 }
-.menu-content { position: relative; }
 .site-footer .footer-contact p { font: 15px/1.4 var(--font-sans), Arial, sans-serif; }
 .site-footer .footer-navigation p { font: 12px/1.4 var(--font-sans), Arial, sans-serif; }
 .site-footer .footer-legal p { font: 11px/1.4 var(--font-sans), Arial, sans-serif; }
@@ -511,3 +480,8 @@
 
 /* Placeholder images retain the original media slots under reduced motion. */
 .site-footer img.footer-video { display: block; }
+
+/* Match the reference header snapshot, separate from the page zoom/reveal. */
+@media (prefers-reduced-motion: no-preference) {
+  .nav-bar { view-transition-name: header; animation-duration: .8s; }
+}

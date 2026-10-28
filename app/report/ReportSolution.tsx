@@ -47,7 +47,7 @@ export function ReportOptions({ overview = false }: { overview?: boolean }) {
     ? lines("2.5").map((body, index) => ({ heading: overviewHeadings[index], body, code: undefined, image: content.overviewImages[index].image, alt: content.overviewImages[index].alt }))
     : content.options.map((item, index) => ({ heading: title(`9.${index + 2}`), body: text(`9.${index + 2}`), code: `9.${index + 2}`, image: index === 1 ? "/assets/report/insert-image.svg" : `/assets/${item.image}`, alt: index === 1 ? "(change to our assignment content)" : index === 0 ? "Concept image: a raised shelter on concrete piles with brown floodwater around the piles in the wet season" : "Concept image: a bench with a concrete pile cross-section, a watertight concrete sample and a roof sheet sample" }));
   const count = items.length;
-  const heading = overview ? "Overview of Design" : "Design solution options";
+  const heading = overview ? "Overview of Design" : "Design Solution Options";
   const [active, setActive] = useState(0);
   const mobile = useMobile();
   const reduced = useReducedMotion();

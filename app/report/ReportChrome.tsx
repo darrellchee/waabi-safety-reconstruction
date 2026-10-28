@@ -1,88 +1,118 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import localFont from "next/font/local";
+import Link from "../../components/AppLink";
 import { Copy } from "./ReportUI";
 import { Block, SectionBadge } from "./ReportCodes";
 import { lines, status } from "./blocks";
 import styles from "./ReportChrome.module.css";
+import { headerToneAtPoint } from "./header-contrast";
 
-const navigation = [
-  ["Summary", "summary"], ["Background", "background"], ["Options", "options"],
-  ["Design", "design"], ["Prototype", "prototyping"], ["Delivery", "implementation"],
-  ["Cost", "cost"], ["References", "references"], ["Appendices", "appendices"],
-];
+import { reportNavigation as navigation, type ReportPageId } from "./report-navigation";
 
+const navigationFont = localFont({
+  src: "../../public/assets/F37ZagmaSerif_Book-s.p.07ww.6n-k2vcw.woff2",
+  weight: "400",
+  style: "normal",
+  display: "block",
+  variable: "--font-report-nav",
+});
 
-// Report-specific copies preserve SiteChrome's geometry and motion.
-export function ReportHeader() {
+// The report pages share the same full-width header and destinations.
+export function ReportHeader({ active }: { active: ReportPageId }) {
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState("summary");
   const [progress, setProgress] = useState(0);
   const header = useRef<HTMLElement>(null);
+  const bar = useRef<HTMLElement>(null);
+  const more = useRef<HTMLDivElement>(null);
   const toggle = useRef<HTMLButtonElement>(null);
-  const panel = useRef<HTMLElement>(null);
+  const primary = navigation.filter(item => item.id !== "references" && item.id !== "appendices");
+  const secondary = navigation.filter(item => item.id === "references" || item.id === "appendices");
   useEffect(() => {
+    let disposed = false;
+    let frame = 0;
+    const updateContrast = () => {
+      frame = 0;
+      const root = header.current;
+      if (!root || !bar.current) return;
+      const targets = bar.current.querySelectorAll<HTMLElement>(
+        `.${styles["nav-brand"]}, .${styles["nav-links"]} > a, .${styles["more-menu"]} > button`,
+      );
+      targets.forEach(target => {
+        const rect = target.getBoundingClientRect();
+        target.dataset.tone = headerToneAtPoint(rect.left + rect.width / 2, rect.top + rect.height / 2, root);
+      });
+    };
     const update = () => {
-      let current = "summary";
-      for (const [, id] of navigation) {
-        const section = document.getElementById(id);
-        if (section && section.getBoundingClientRect().top <= 180) current = id;
-      }
-      setActive(current);
+      if (!frame) frame = requestAnimationFrame(updateContrast);
       setProgress(window.scrollY / Math.max(1, document.documentElement.scrollHeight - window.innerHeight));
     };
     const dismiss = (event: PointerEvent) => {
-      if (header.current && !header.current.contains(event.target as Node)) setOpen(false);
+      if (more.current && !more.current.contains(event.target as Node)) setOpen(false);
     };
+    const resize = new ResizeObserver(([entry]) => {
+      header.current?.style.setProperty("--report-header-height", `${entry.target.getBoundingClientRect().height}px`);
+      update();
+    });
+    if (bar.current) resize.observe(bar.current);
+    // Refresh reused headers before the incoming page snapshot is captured.
+    updateContrast();
     update();
+    const transitionFrame = requestAnimationFrame(() => {
+      const transitions = document.getAnimations().filter(animation =>
+        animation.effect instanceof KeyframeEffect &&
+        animation.effect.pseudoElement?.startsWith("::view-transition"),
+      );
+      // Hit testing during a snapshot animation can still see its outgoing page.
+      void Promise.allSettled(transitions.map(animation => animation.finished)).then(() => {
+        if (!disposed) update();
+      });
+    });
     window.addEventListener("scroll", update, { passive: true });
     window.addEventListener("resize", update);
     document.addEventListener("pointerdown", dismiss);
+    document.addEventListener("load", update, true);
     return () => {
+      disposed = true;
+      cancelAnimationFrame(transitionFrame);
+      cancelAnimationFrame(frame);
+      resize.disconnect();
       window.removeEventListener("scroll", update);
       window.removeEventListener("resize", update);
       document.removeEventListener("pointerdown", dismiss);
+      document.removeEventListener("load", update, true);
     };
-  }, []);
-  useEffect(() => {
-    if (!open) return;
-    const menu = panel.current;
-    if (menu && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      menu.animate([{ height: "0px", opacity: 0 }, { height: `${menu.getBoundingClientRect().height}px`, opacity: 1 }], { duration: 400, delay: 150, easing: "cubic-bezier(.19,1,.22,1)", fill: "backwards" });
-    }
-    const previous = document.body.style.overflow;
-    if (window.innerWidth < 640) document.body.style.overflow = "hidden";
-    const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") { setOpen(false); toggle.current?.focus(); }
-      if (event.key === "Tab" && header.current) {
-        const links = [...header.current.querySelectorAll<HTMLElement>("a,button")];
-        if (event.shiftKey && document.activeElement === links[0]) { event.preventDefault(); links.at(-1)?.focus(); }
-        else if (!event.shiftKey && document.activeElement === links.at(-1)) { event.preventDefault(); links[0]?.focus(); }
-      }
-    };
-    document.addEventListener("keydown", onKey);
-    return () => {
-      document.body.style.overflow = previous;
-      document.removeEventListener("keydown", onKey);
-    };
-  }, [open]);
-  return <header ref={header}
-    onPointerEnter={event => { if (event.pointerType === "mouse") setOpen(true); }}
-    onPointerLeave={event => { if (event.pointerType === "mouse") setOpen(false); }}
-    className={`${styles["site-header"]} ${open ? styles["menu-is-open"] : ""}`}>
-    <div className={styles["nav-bar"]}>
-      <span className={styles["nav-page"]}>{navigation.find(([, id]) => id === active)?.[0]}</span>
-      <button ref={toggle} className={styles["menu-toggle"]} aria-label={open ? "Close menu" : "Menu"} aria-expanded={open} aria-controls="report-navigation" onClick={() => setOpen(!open)}><span /><span /></button>
+  }, [active]);
+  return <header ref={header} className={`${styles["site-header"]} ${navigationFont.variable}`}>
+    <div className={styles["header-glass"]} aria-hidden="true">
       <div className={styles["page-progress"]} style={{ transform: `scaleX(${progress})` }} />
     </div>
-    {open && <nav ref={panel} id="report-navigation" className={styles["menu-panel"]} aria-label="Report navigation" data-lenis-prevent>
-      <div className={styles["menu-content"]}>
-        <span className={styles["menu-caption"]}>Menu</span>
-        <div className={styles["menu-links"]}>
-          {navigation.map(([label, id]) => <a key={id} href={`#${id}`} className={active === id ? styles.active : ""} aria-current={active === id ? "location" : undefined} onClick={() => setOpen(false)}><span>{label}</span></a>)}
+    <nav ref={bar} className={styles["nav-bar"]} aria-label="Report navigation">
+      <span className={styles["nav-brand"]}>Provisions Point</span>
+      <div className={styles["nav-links"]}>
+      {primary.map(({ label, id, href }) => <Link key={id} href={href} className={active === id ? styles.active : undefined} aria-current={active === id ? "page" : undefined}>{label}</Link>)}
+      <div ref={more} className={styles["more-menu"]}
+        onPointerEnter={event => { if (event.pointerType === "mouse") setOpen(true); }}
+        onPointerLeave={event => { if (event.pointerType === "mouse" && !more.current?.contains(document.activeElement)) setOpen(false); }}
+        onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false); }}
+        onKeyDown={event => {
+          if (event.key === "Escape") { setOpen(false); toggle.current?.focus(); }
+          if (event.key === "ArrowDown" && event.target === toggle.current) {
+            event.preventDefault();
+            setOpen(true);
+            requestAnimationFrame(() => more.current?.querySelector("a")?.focus());
+          }
+        }}>
+        <button ref={toggle} className={secondary.some(item => item.id === active) ? styles.active : undefined} aria-expanded={open} aria-controls="report-more-navigation" onClick={() => setOpen(!open)}>
+          More <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="m3 4.5 3 3 3-3" fill="none" stroke="currentColor" strokeWidth="1.5" /></svg>
+        </button>
+        <div id="report-more-navigation" className={styles["menu-panel"]} hidden={!open}>
+          {secondary.map(({ label, id, href }) => <Link key={id} href={href} className={active === id ? styles.active : undefined} aria-current={active === id ? "page" : undefined} onClick={() => setOpen(false)}>{label}</Link>)}
         </div>
       </div>
-    </nav>}
+      </div>
+    </nav>
   </header>;
 }
 
@@ -213,18 +243,18 @@ export function ReportFooter() {
           <SectionBadge n={19} />
           <h2 data-counted="">{lines("19.1")[0].split(", ")[0]},<br className={styles["footer-heading-break"]} /> {lines("19.1")[0].split(", ").slice(1).join(", ")}</h2>
           <p><Copy text={lines("19.1")[1]} /></p>
-          <div className={styles["footer-buttons"]}><a className="pink-button" href="#closing">{lines("19.1")[2]}</a>{" "}<a className="pink-button" href="#implementation">{lines("19.1")[3]}</a></div>
+          <div className={styles["footer-buttons"]}><a className="pink-button" href="#closing">{lines("19.1")[2]}</a>{" "}<Link className="pink-button" href="/implementation">{lines("19.1")[3]}</Link></div>
         </Block>
         <nav className={styles["footer-navigation"]} data-nocount="" aria-label="Report footer navigation">
           <p>Provisions Point</p>
-          {navigation.map(([label, id]) => <a key={id} href={`#${id}`}>{label}</a>)}
+          {navigation.map(({ label, id, href }) => <Link key={id} href={href}>{label}</Link>)}
         </nav>
         <div className={styles["footer-socials"]}>
-          {[["LinkedIn", "summary", "Summary"], ["YouTube", "implementation", "View the plan"], ["X", "acknowledgement", "Acknowledgement of Country"]].map(([kind, id, label]) => <a key={kind} href={`#${id}`} aria-label={label}><SocialIcon kind={kind} /></a>)}
+          {[["LinkedIn", "summary", "Summary"], ["YouTube", "implementation", "View the plan"], ["X", "acknowledgement", "Acknowledgment"]].map(([kind, id, label]) => <Link key={kind} href={id === "summary" ? "/report" : id === "implementation" ? "/implementation" : "/report#acknowledgement"} aria-label={label}><SocialIcon kind={kind} /></Link>)}
         </div>
       </div>
       <div className={styles["footer-bottom"]}>
-        <Block className={styles["footer-legal"]} code="19.2" status={status("19.2")}><p>{lines("19.2")[0]}</p><a href="#acknowledgement">{lines("19.2")[1]}</a></Block>
+        <Block className={styles["footer-legal"]} code="19.2" status={status("19.2")}><p>{lines("19.2")[0]}</p><Link href="/report#acknowledgement">{lines("19.2")[1]}</Link></Block>
         <img className={styles["footer-logo"]} src="/assets/waabi-logo-footer.svg" alt="Provisions Point" />
       </div>
     </div>

@@ -114,7 +114,7 @@ export default function ReportHomeHero({ children, id, introClassName = "" }: { 
             <SectionBadge n={0} top={172} />
             <Block code="0.2" status="MEDIA" top={146}>
             <div className="home-hero-film">
-                <Film name="gayini-aerial-overview.mp4" poster="gayini-aerial-overview.jpg" />
+                <Film name="report-summary-hero.mp4" poster="report-summary-hero.jpg" />
                 <div className="home-hero-shade" />
               </div>
             </Block>

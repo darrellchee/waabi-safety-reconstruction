@@ -1,6 +1,6 @@
 # REPORT_CONTENT.md
 
-This is the source of truth for the `/report` page. Read `PROJECT_CONTEXT.md` first.
+This is the source of truth for the report pages, starting at `/report`. Read `PROJECT_CONTEXT.md` first.
 
 ## How to read this file
 
@@ -12,7 +12,30 @@ This is the source of truth for the `/report` page. Read `PROJECT_CONTEXT.md` fi
 
 ## Report navigation layout
 
-- The header menu shows text links only: Summary, Background, Options, Design, Prototype, Delivery, Cost, References and Appendices. Do not show placeholder thumbnails beside these links.
+- The header is fixed at the top of the screen and spans the full width. Keep it slim with a 48px minimum bar height and 44px desktop link height; use 4px vertical bar padding on mobile. Use a translucent white background (15% opacity), an 18px backdrop blur, a faint bottom border and soft shadow. Use actual black or white header text, without colour-inversion blending. On initial render, each active-page change, after the native page-transition animations finish, and on scroll and resize, inspect the section background underneath each label and choose the stronger black/white contrast after the 15% white glass tint. Use white text with a fine dark outline and shadow over photos, video and gradients, and black text with a pale edge over light solid sections. Keep the dropdown white-on-dark independently of the page. Keep the glass background in a separate fixed layer and measure the navigation height with ResizeObserver so it stays aligned when links wrap. Use adaptive monochrome hover/focus text and underlines; retain the pink scroll progress line. Separate the brand from the links with a subtle vertical rule. Links have subtle translucent hover backgrounds and animated underlines, including a persistent underline for the active page. More rotates its chevron when open; its rounded dropdown fades/slides into view, with hover feedback on each entry. Disable these animations and transitions for reduced-motion users. Place “Provisions Point” at the far left, separate from the page links, in the same Zagma font at 22px and semibold (600) weight (19px on mobile). Right-align the navigation links with 24px desktop edge padding (12px on mobile). At tablet and mobile widths, let the page links wrap below the brand. Use the same F37 Zagma Serif Book font and regular (400) weight as the Background hero, sized at 18px on desktop and 15px on mobile. Load the bundled font directly with `next/font/local`, preload it and apply it explicitly to the header and dropdown; use block font display to avoid an initial fallback-font flash. Display text links for Summary, Project details, Background, Design Solution Options, Detailed Design, Prototype, Implementation and Cost, followed by More. More reveals a rounded dropdown containing References and Appendices on mouse hover, keyboard navigation or tap. Links wrap on smaller screens. Do not show placeholder thumbnails beside these links.
+
+- As requested on 28 October 2026, each navigation item opens a separate top-level page. This replaces the earlier single-page and anchor-only routing instructions in `PROJECT_CONTEXT.md` for the report. Existing reference pages remain unchanged.
+- Retain all existing section content, headings, media, numbering and interactive designs. Group sections as follows, preserving their relative order within each page:
+
+| Navigation title | Route | Existing sections |
+|---|---|---|
+| Summary | `/report` | 0–4: existing hero, cover, summary, declaration and acknowledgement |
+| Project details | `/project-details` | 5: project details and stakeholders |
+| Background | `/background` | 6–8: background, problem description and design criteria |
+| Design Solution Options | `/design-solution-options` | 9–10: options and design selection |
+| Detailed Design | `/detailed-design` | 11 |
+| Prototype | `/prototype` | 12 |
+| Implementation | `/implementation` | 13, 15–16: implementation, other considerations and recommendations |
+| Cost | `/cost` | 14 |
+| References | `/references` | 17 |
+| Appendices | `/appendices` | 18 |
+
+- Report page links use the same shared `AppLink` as the reference pages: 800 ms outgoing zoom/fade and incoming clip reveal, using the existing global transition provider and keyframes. The report header has its own `header` snapshot, matching the reference header. Reduced-motion preferences disable the animation; local section links continue to scroll without a page transition.
+- Every page retains the report header, footer and progress panel. Header and footer navigation link to these routes and the header identifies the current page. Progress counts describe the current page's rendered content.
+- Each of the nine new pages starts with a report-only copy of the `/careers` hero: same full-viewport height, Zagma heading, responsive sizes, cover image crop, gradient, sticky title, parallax and word reveal. Each subpage uses topic-relevant internet media, described and credited in the hero media register below. Project details and Background use videos; the other seven use photographs. The title is exactly its navigation label, with no subtitle. Keep existing body headings even when repeated by the hero. Summary retains its original hero and montage.
+- Subpage heroes use the locally stored media listed below, replacing the original Careers placeholder image.
+- Project details was separated from Summary on 28 October 2026. Its existing carousel, stakeholders, content and section numbering remain unchanged; the shared page hero displays "Project details".
+- Cross-page links: the plan opens `/implementation`; Acknowledgment opens `/report#acknowledgement`; montage image references open `/references#references`. "Ask a question" remains a local footer link.
 
 ## Codes
 
@@ -40,16 +63,16 @@ Counts are computed from the page text in each block. They include table cells, 
 | 1 | Cover details | `title-block` | 4 | 61 | 0 | 61 | no | 0 | 0 |
 | 2 | Executive Summary | `summary` | 13 | 567 | 0 | 567 | no | 0 | 6 |
 | 3 | Group Declaration | `group-declaration` | 1 | 81 | 0 | 81 | yes | 0 | 0 |
-| 4 | Team Acknowledgement | `acknowledgement` | 1 | 54 | 0 | 54 | yes | 0 | 0 |
+| 4 | Acknowledgment | `acknowledgement` | 1 | 54 | 0 | 54 | yes | 0 | 0 |
 | 5 | Project details | `project-details` | 5 | 215 | 0 | 215 | yes | 0 | 1 |
 | 6 | Background | `background` | 10 | 425 | 0 | 425 | yes | 0 | 1 |
 | 7 | Problem Description | `problem` | 2 | 114 | 0 | 114 | yes | 0 | 1 |
 | 8 | Design Criteria | `criteria` | 8 | 241 | 0 | 241 | yes | 0 | 4 |
-| 9 | Design solution options | `options` | 4 | 299 | 0 | 299 | yes | 0 | 0 |
+| 9 | Design Solution Options | `options` | 4 | 299 | 0 | 299 | yes | 0 | 0 |
 | 10 | Design Selection | `selection` | 4 | 273 | 0 | 273 | yes | 0 | 0 |
 | 11 | Detailed Design | `design` | 8 | 514 | 0 | 514 | yes | 0 | 0 |
 | 12 | Prototyping | `prototyping` | 1 | 0 | 350 | 350 | yes | 1 | 0 |
-| 13 | Implementation Plan | `implementation` | 3 | 372 | 0 | 372 | yes | 0 | 0 |
+| 13 | Implementation | `implementation` | 3 | 372 | 0 | 372 | yes | 0 | 0 |
 | 14 | Cost Analysis | `cost` | 5 | 364 | 80 | 444 | yes | 1 | 0 |
 | 15 | Other considerations | `other` | 5 | 266 | 0 | 266 | yes | 0 | 0 |
 | 16 | Recommendations | `recommendations` | 2 | 127 | 0 | 127 | yes | 0 | 0 |
@@ -76,8 +99,8 @@ Per-block counts are in each block's `words` field below.
 > A proposed supply and recovery shelter for Lama Lama Country.
 
 ### [0.2] Hero media
-- **code:** 0.2 | **status:** MEDIA | **words:** 0 | **source:** Old home page hero
-- media: keep the hero image strip and video UI. Show `(change to our assignment content)` in place of the template images and videos.
+- **code:** 0.2 | **status:** MEDIA | **words:** 0 | **source:** User-supplied video, 28 October 2026
+- media: Summary (`/report`) uses the full user-supplied `12901857_3840_2160_60fps.mp4`, supplied from `/Users/darrell/Downloads/12901857_3840_2160_60fps.mp4`. Serve the optimized 1920 × 1080 H.264 MP4 at `/assets/home/report-summary-hero.mp4` with the matching poster `/assets/home/report-summary-hero.jpg` extracted at one second. Retain muted, looping, inline autoplay and the existing reduced-motion poster behaviour. Source: Marc Espejo, “Aerial view of expansive wetlands landscape” (4 January 2025), Pexels, https://www.pexels.com/video/aerial-view-of-expansive-wetlands-landscape-30081634/, under the Pexels License (https://www.pexels.com/license/). The matching poster is derived from the same footage. Full citation appears in reference block 17.1. Other pages retain their existing media.
 
 ---
 
@@ -134,7 +157,7 @@ Per-block counts are in each block's `words` field below.
 
 ### [2.5] Overview of design: summary
 - **code:** 2.5 | **status:** SITE | **words:** 146 | **source:** User-provided text, 26 October 2026
-- layout: reuse the Design solution options story layout, styling, counter, progress line, image transitions and desktop/mobile scroll animations. Show "Overview of Design" as the large heading below the Proposal Summary heading and paragraph (2.4), then the four supplied points as four story slides in order. Do not render the former "Overview of design: summary" subheading. Slide headings: "Flood resilience and supply security", "Implementation", "Physical components", "Facility users". Use the four real photographs documented below, in slide order. These are examples of the topics, not photographs of the proposed Provisions Point facility. Keep the following stats, considerations, materials and figures below this story.
+- layout: reuse the Design Solution Options story layout, styling, counter, progress line, image transitions and desktop/mobile scroll animations. Show "Overview of Design" as the large heading below the Proposal Summary heading and paragraph (2.4), then the four supplied points as four story slides in order. Do not render the former "Overview of design: summary" subheading. Slide headings: "Flood resilience and supply security", "Implementation", "Physical components", "Facility users". Use the four real photographs documented below, in slide order. These are examples of the topics, not photographs of the proposed Provisions Point facility. Keep the following stats, considerations, materials and figures below this story.
 
 
 - image 1: `public/assets/report/overview/flood-resilience.webp`; source: https://commons.wikimedia.org/wiki/File:Queenslander_house_in_Laidley.jpg ; original: https://upload.wikimedia.org/wikipedia/commons/b/b1/Queenslander_house_in_Laidley.jpg ; creator: NJM2010; date: 15 January 2011; licence: CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). Resized and converted to WebP, displayed with a crop under the same licence. Alt: "Real example: a Queenslander house raised on posts in Laidley, Queensland."
@@ -199,18 +222,6 @@ Per-block counts are in each block's `words` field below.
 > Roughly about $40,000 AUD
 > The listed items total $34,000 AUD. The remaining $6,000 of the rough $40,000 budget is unallocated.
 
-### [2.12] Figure 1
-- **code:** 2.12 | **status:** MEDIA | **words:** 25 | **source:** Old home page image
-- alt: Concept image: a shelf holding water containers, tins with blank labels and bagged firewood.
-
-> Figure 1. Concept image: a shelf holding water containers, tins with blank labels and bagged firewood. Made with an AI image tool (see Appendix 3).
-
-### [2.13] Figure 2
-- **code:** 2.13 | **status:** MEDIA | **words:** 28 | **source:** Old home page image
-- alt: Concept image: the raised shelter on concrete piles with brown floodwater around the piles under storm clouds.
-
-> Figure 2. Concept image: the raised shelter on concrete piles with brown floodwater around the piles under storm clouds. Made with an AI image tool (see Appendix 3).
-
 ---
 
 ## SECTION 3: Group Declaration (id: group-declaration)
@@ -233,12 +244,12 @@ Per-block counts are in each block's `words` field below.
 
 ---
 
-## SECTION 4: Team Acknowledgement (id: acknowledgement)
+## SECTION 4: Acknowledgment (id: acknowledgement)
 - **section words:** 54 | **counts toward 4000:** yes
 
-### [4.1] Acknowledgement of Country
+### [4.1]
 - **code:** 4.1 | **status:** SITE | **words:** 54 | **source:** Wording supplied by the user, 26 October 2026
-- layout: render the acknowledgement text in the montage below the hero. The old acknowledgement section retains its heading and styling with the body text `EDIT HERE TEXT`.
+- layout: render the acknowledgement text in the montage below the hero under "Acknowledgment", without a block subheading. The montage heading and body use 30px text on desktop and 22px on mobile. The old acknowledgement section uses the heading "Acknowledgment" and retains its styling with the body text `EDIT HERE TEXT`, without a block subheading.
 
 > We would like to acknowledge the Gadigal people, the Boorooberongal people of the Dharug Nation, the Bidiagal people and the Gamaygal people upon whose ancestral lands our university stands. We would also like to pay respect to the Elders both past and present, acknowledging them as the traditional custodians of knowledge for these lands.
 
@@ -421,7 +432,7 @@ Per-block counts are in each block's `words` field below.
 
 ---
 
-## SECTION 9: Design solution options (id: options)
+## SECTION 9: Design Solution Options (id: options)
 - layout: use the full desktop width with 32px side gutters, equal-width text and image columns with clear space on either side of the centre progress line, and compact spacing around the counter. Let option headings wrap within the text column. Centre the smaller image within its column, capped at 560px wide and 68% of the viewport height. Give each option its own full-height scroll interval without overlapping articles. Select the option nearest the viewport centre, fade inactive text and badges to zero over 0.2 seconds, and crossfade images over 0.35 seconds with a subtle zoom. Reveal each option as one unit rather than staggering individual words. Respect reduced motion. Retain the mobile swipe layout and leave the Overview of Design layout unchanged.
 - **section words:** 299 | **counts toward 4000:** yes
 
@@ -555,7 +566,7 @@ Per-block counts are in each block's `words` field below.
 
 ---
 
-## SECTION 13: Implementation Plan (id: implementation)
+## SECTION 13: Implementation (id: implementation)
 - **section words:** 372 | **counts toward 4000:** yes
 
 ### [13.1] Implementation plan
@@ -724,10 +735,10 @@ Per-block counts are in each block's `words` field below.
 ## SECTION 17: References (id: references)
 - **section words:** 706 | **counts toward 4000:** no
 - layout: one plain list, alphabetical, no carousel. Titles in italics per APA 7 (the italic part is the title of the work, or the website name for web pages as in APA 7).
-- note: do not add or remove entries. Some slide sources are not here (see PROJECT_CONTEXT.md, known problems).
+- note: preserve the original entries; add photograph sources when new internet images are used. Some slide sources are not here (see PROJECT_CONTEXT.md, known problems).
 
 ### [17.1] Reference list
-- **code:** 17.1 | **status:** SITE | **words:** 706 (original entries; photo credits added below) | **source:** Original references plus 17 montage photograph credits
+- **code:** 17.1 | **status:** SITE | **words:** 706 (original entries; photo credits added below) | **source:** Original references plus 17 montage and seven report subpage hero photograph credits and the Summary, Project details and Background hero video credits
 
 > Annette Ruzicka. (n.d.). Lama Lama ranger in wetland reeds [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/lama-lama-rangers/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/08/Lama-Lama-rangers-banner-Photo-Annette-Ruzicka.png
 > Annette Ruzicka. (n.d.). Road through Lama Lama Country [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/visiting/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/08/Visiting-banner-3-Photo-Annette-Ruzicka.png
@@ -746,20 +757,30 @@ Per-block counts are in each block's `words` field below.
 > Down Under Pilot Shop. (n.d.). GME MT610G PLB / ELT - GPS personal locator beacon. https://downunderpilotshop.com.au/products/mt610g-gps-personal-locator-beacon
 > Engineers Without Borders Australia. (2024). EWB Challenge: Port Stewart, Lama Lama Country. https://ewbchallenge.org/challenge/port-stewart-lama-lama/
 > Engineers Without Borders Australia. (n.d.). Design area 1: Infrastructure and access. EWB Challenge. https://ewbchallenge.org/challenge/port-stewart-lama-lama/design-area-1-infrastructure-and-access/
+> Espejo, M. (2025, January 4). Aerial view of expansive wetlands landscape [Video]. Pexels. https://www.pexels.com/video/aerial-view-of-expansive-wetlands-landscape-30081634/
 > Feasly. (n.d.). Construction cost per square metre in Australia (2026). https://www.feasly.com.au/guides/construction-cost-per-square-metre-australia
 > Google. (2026). Gemini [Large language model]. https://gemini.google.com
 > Hillebrand, S. (n.d.). Cabin with solar panels [Photograph]. Wikimedia Commons. Public domain; resized and converted to WebP, displayed with a crop. https://commons.wikimedia.org/wiki/File:Cabin_with_solar_panels.jpg
 > KeepActive Australia. (2022, January 30). Large family camping tent [Photograph]. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Large_family_camping_tent.jpg Photo by KeepActive.com.au (https://keepactive.com.au/). CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Resized and converted to WebP; displayed with a crop.
+> Kepner, L. (2020, October 28). Architectural blueprints with drafting tools [Photograph]. Unsplash. https://unsplash.com/photos/Yn8D5B8C-eY (Unsplash License: https://unsplash.com/license)
 > Leading Architecture. (2024, June). Watertight concrete from Sika. https://www.leadingarchitecture.co.za/watertight-concrete-from-sika/
+> maks_d. (2025, May 2). Calculator and office supplies on a desk [Photograph]. Unsplash. https://unsplash.com/photos/54bvLAWhWAM (Unsplash License: https://unsplash.com/license)
+> McCullough, D. (2017, August 22). Person drafting on blueprint [Photograph]. Unsplash. https://unsplash.com/photos/-FPFq_trr2Y (Unsplash License: https://unsplash.com/license)
 > Menard Asia. (2025, January 16). Concrete pile foundations: Types and benefits. https://www.menard-asia.com/2025/01/16/concrete-pile-foundations/
 > National Indigenous Australians Agency. (n.d.). Indigenous Rangers Program funding extension update 1. https://www.niaa.gov.au/news-and-media/indigenous-rangers-program-funding-extension-update-1
 > NJM2010. (2011, January 15). Queenslander house in Laidley [Photograph]. Wikimedia Commons. CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/); resized and converted to WebP, displayed with a crop under the same licence. https://commons.wikimedia.org/wiki/File:Queenslander_house_in_Laidley.jpg
+> Pimentel, A. (2026, February 11). Construction workers in hard hats and safety vests on site [Photograph]. Unsplash. https://unsplash.com/photos/xufUgY2AeGQ (Unsplash License: https://unsplash.com/license)
 > Queensland Parks and Wildlife Service. (2013). Lama Lama National Park (Cape York Peninsula Aboriginal Land): Management statement. Department of Environment, Science and Innovation. https://parks.des.qld.gov.au/__data/assets/pdf_file/0022/166423/lama-lama.pdf
 > Reardon-Smith, M. (2023). The wet: Shifting seasons, climate change and natural cycles in Cape York Peninsula, Queensland. Oceania, 93(3), 302-320. https://doi.org/10.1002/ocea.5377
+> Sun, D. (2026, July 1). Architectural model with blueprints on wall [Photograph]. Unsplash. https://unsplash.com/photos/1hEhb26Bn20 (Unsplash License: https://unsplash.com/license)
 > Supercheap Auto. (2017, February). How to rapidly deflate your tyres. https://www.supercheapauto.com.au/blog/4wd-adventure/how-to-rapidly-deflate-your-tyres.html
 > Testa, C. (2026, January 23). Tropical low forecast to bring heavy rain to northern Cape York, Gulf of Carpentaria. ABC News. https://www.abc.net.au/news/2026-01-23/tropical-low-heavy-rain-cape-york-gulf-of-carpentaria/106260620
+> Tetrakis Sphericon. (2021, April 28). Drone footage of a sunset in an Australian bushland [Video]. Pexels. https://www.pexels.com/video/drone-footage-of-a-sunset-in-an-australian-bushland-7691418/
+> Tingey, W. (2020, March 6). Stacks of paper documents and file folders [Photograph]. Unsplash. https://unsplash.com/photos/snNHKZ-mGfE (Unsplash License: https://unsplash.com/license)
 > Todio, E. (n.d.). Logistics of tourism in Port Stewart in Lama Lama Country. EWB Challenge. https://ewbchallenge.org/forums/topic/logistics-of-tourism-in-port-stewart-in-lama-lama-country/
+> usagito. (n.d.). Laura Aboriginal Dance Festival 2017 (17 min. Digest) [Video]. YouTube. https://www.youtube.com/watch?v=wR0iIcgOQ0E
 > Wikideas1. (2024, July 1). Modular home [Photograph]. Wikimedia Commons. CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/); resized and converted to WebP, displayed with a crop. https://commons.wikimedia.org/wiki/File:Modular_home.jpg
+> Wolff, C. (2018, March 8). Pile of assorted-color books [Photograph]. Unsplash. https://unsplash.com/photos/MiJTU6lqksg (Unsplash License: https://unsplash.com/license)
 > Yintjingga Aboriginal Corporation. (n.d.). Cattle on Lama Lama Country [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/enterprises/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/08/MarinaPlainsCow-banner.png
 > Yintjingga Aboriginal Corporation. (n.d.). Fauna and flora survey: beetle [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/fauna-and-flora-surveys/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/12/flora-and-fauna-banner.png
 > Yintjingga Aboriginal Corporation. (n.d.). Fire management beside a road [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/monitoring-the-impact-of-fire/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/12/fire-banner-1.jpg
@@ -821,7 +842,7 @@ Per-block counts are in each block's `words` field below.
 
 ### [19.1] Call to action
 - **code:** 19.1 | **status:** SITE | **words:** 26 | **source:** Bottom of every old page (one copy only)
-- buttons: "Ask a question" scrolls to this block. "View the plan" goes to `#implementation`. Decorative media: `(change to our assignment content)`.
+- buttons: "Ask a question" scrolls to this block. "View the plan" goes to `/implementation`. Decorative media: `(change to our assignment content)`.
 
 > Explore the problem, the solution and the plan to deliver it.
 > Questions about this proposal: TEAM TO ADD: contact route
@@ -830,10 +851,10 @@ Per-block counts are in each block's `words` field below.
 
 ### [19.2] Footer
 - **code:** 19.2 | **status:** SITE | **words:** 10 | **source:** Old footer
-- the "Acknowledgement of Country" link goes to `#acknowledgement`.
+- the "Acknowledgment" link goes to `/report#acknowledgement`.
 
 > Provisions Point. EWB Challenge 2026 student proposal.
-> Acknowledgement of Country
+> Acknowledgment
 
 ---
 
@@ -880,3 +901,26 @@ Images are stored locally as WebP files. Original framing is retained in the fil
 | 16 | `/assets/report/montage/photo-16.webp` | Family camping tent at a Great Ocean Road campground in Victoria | KeepActive Australia | https://commons.wikimedia.org/wiki/File:Large_family_camping_tent.jpg | https://upload.wikimedia.org/wikipedia/commons/a/a5/Large_family_camping_tent.jpg |
 
 Full photograph references are included in report block 17.1 and exported to `app/report/report-blocks.json`. The machine-readable image register is `app/report/montage-photos.json`.
+
+
+## Report subpage hero media — 28 October 2026
+
+Seven subpages use distinct real photographs sourced from Unsplash; Project details uses user-supplied Pexels video footage and Background uses a user-supplied recording of a YouTube video. Summary (`/report`) retains its existing hero and montage. These media illustrate the page topics; they do not document Warokutal, the proposed shelter, its actual prototype or its construction. The bushland video provides Australian landscape context. The Background footage shows the Laura Aboriginal Dance Festival; it is contextual footage and does not identify the performers as Lama Lama Rangers or imply their endorsement. The prototype image is a photograph of a physical architectural model.
+
+Each photograph source page identifies a photographer and the Unsplash License (https://unsplash.com/license). Downloaded photographs are served locally as 2560-pixel-wide WebP images; CSS crops them to fill the hero, with page-specific object positions. Source URLs, original image URLs, dimensions, descriptive alt text and licence details are stored in `app/report/hero-photos.json`. All current media sources also appear in reference block 17.1. Project details uses the full approximately 45-second clip from user-supplied `7691418-uhd_3840_2160_30fps.mp4`, optimized to a 1920 × 1080 H.264 MP4 with fast-start metadata. Its JPEG poster is extracted at one second. Video plays muted, loops inline and retains the hero crop, parallax and title; reduced-motion users see the static poster. The poster also remains beneath the video while it loads. The footage and derived poster are credited to Tetrakis Sphericon under the Pexels License.
+
+| Page | Local asset | Description / alt text | Photographer | Source | Licence |
+|---|---|---|---|---|---|
+| Project Details | `/assets/report/heroes/project-details.mp4`; poster `/assets/report/heroes/project-details.jpg` | Aerial view of Australian bushland at sunset | Tetrakis Sphericon | https://www.pexels.com/video/drone-footage-of-a-sunset-in-an-australian-bushland-7691418/ | [Pexels License](https://www.pexels.com/license/) |
+| Background | `/assets/report/heroes/background.mp4`; poster `/assets/report/heroes/background.jpg` | Dancers performing at the Laura Aboriginal Dance Festival | usagito | https://www.youtube.com/watch?v=wR0iIcgOQ0E | No open reuse licence verified |
+| Design Solution Options | `/assets/report/heroes/options.webp` | Designer comparing and drafting architectural plans on a worktable | Daniel McCullough | https://unsplash.com/photos/-FPFq_trr2Y | [Unsplash License](https://unsplash.com/license) |
+| Detailed Design | `/assets/report/heroes/design.webp` | Architectural plans with drafting pencils, a ruler and a storage tube | Lucas Kepner | https://unsplash.com/photos/Yn8D5B8C-eY | [Unsplash License](https://unsplash.com/license) |
+| Prototype | `/assets/report/heroes/prototyping.webp` | Physical architectural scale model displayed beside building plans | Declan Sun | https://unsplash.com/photos/1hEhb26Bn20 | [Unsplash License](https://unsplash.com/license) |
+| Implementation | `/assets/report/heroes/implementation.webp` | Construction workers wearing hard hats and safety vests at a building site | Agustín Pimentel | https://unsplash.com/photos/xufUgY2AeGQ | [Unsplash License](https://unsplash.com/license) |
+| Cost | `/assets/report/heroes/cost.webp` | Calculator, paperwork and office supplies for cost planning | maks_d | https://unsplash.com/photos/54bvLAWhWAM | [Unsplash License](https://unsplash.com/license) |
+| References | `/assets/report/heroes/references.webp` | Stack of books used to illustrate research and reference sources | Claudia Wolff | https://unsplash.com/photos/MiJTU6lqksg | [Unsplash License](https://unsplash.com/license) |
+| Appendices | `/assets/report/heroes/appendices.webp` | Stacks of paper documents and folders illustrating supporting records | Wesley Tingey | https://unsplash.com/photos/snNHKZ-mGfE | [Unsplash License](https://unsplash.com/license) |
+
+### Background hero video — 28 October 2026
+
+Use the full approximately 33-second user-supplied `Screen Recording 2026-10-28 at 15.55.29.mov`. The original 3024 × 1964 recording has a 164-pixel top black bar and a 98-pixel bottom black bar. Crop to `3024:1702:0:164` before scaling to 1920 × 1080, converting to 30 fps H.264 MP4 and adding fast-start metadata. Serve `/assets/report/heroes/background.mp4` and a matching cropped poster `/assets/report/heroes/background.jpg` extracted at one second. Retain muted, looping inline playback, cover cropping and the reduced-motion static poster. Credit usagito, *Laura Aboriginal Dance Festival 2017 (17 min. Digest)*, YouTube, https://www.youtube.com/watch?v=wR0iIcgOQ0E. The upload date could not be verified, so the reference uses n.d.; 2017 is part of the supplied video title. No open reuse licence was verified. Reference block 17.1 contains the citation.
