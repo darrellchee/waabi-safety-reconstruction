@@ -29,20 +29,20 @@ export function ReportFrame({ children }: { children: ReactNode }) {
   return <div className={styles.report} data-report="" onClick={navigate}>{children}</div>;
 }
 
-// The same per-word reveal used by HomePage's MotionCopy and SafetyTitle.
-function Words({ text, heading = false }: { text: string; heading?: boolean }) {
+// Keep the per-word entrance animation for section headings only.
+function Words({ text }: { text: string }) {
   const reduced = useReducedMotion();
   let index = 0;
   return <>{text.split(/(\s+)/).map((word, i) => /\S/.test(word) ? <motion.span
     className={elements.word}
-    initial={reduced ? false : heading ? { opacity: 0, x: 20 } : { opacity: .1 }}
+    initial={reduced ? false : { opacity: 0, x: 20 }}
     whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}
-    transition={{ duration: heading ? .4 : .1, ease: heading ? sourceEase : "linear", delay: reduced ? 0 : index++ * .07 }}
+    transition={{ duration: .4, ease: sourceEase, delay: reduced ? 0 : index++ * .07 }}
     key={i}>{word}</motion.span> : word)}</>;
 }
 
-export function Copy({ text, animated = true }: { text: string; animated?: boolean }) {
-  return <>{text.split(/(TEAM TO ADD:[^\n]*)/g).map((part, i) => part.startsWith("TEAM TO ADD:") ? <mark key={i}>{part}</mark> : animated ? <Words key={i} text={part} /> : part)}</>;
+export function Copy({ text }: { text: string }) {
+  return <>{text.split(/(TEAM TO ADD:[^\n]*)/g).map((part, i) => part.startsWith("TEAM TO ADD:") ? <mark key={i}>{part}</mark> : part)}</>;
 }
 
 export function Paragraphs({ text }: { text: string }) {
@@ -61,7 +61,7 @@ export function SimpleTable({ caption, headings, rows, wide = false }: { caption
 export function ReportSection({ id, num, title, centered, className, children }: { id: string; num?: number; title?: string; centered?: boolean; className?: string; children: ReactNode }) {
   return <section id={id} className={className ? `${styles.section} ${className}` : styles.section}>
     {num !== undefined && <SectionBadge n={num} />}
-    {title && <h2 className={centered ? styles.centered : undefined}><Words text={title} heading /></h2>}
+    {title && <h2 className={centered ? styles.centered : undefined}><Words text={title} /></h2>}
     {children}
   </section>;
 }
@@ -174,7 +174,7 @@ export function MaterialsTabs({ items, heading = "Proposed Materials and Cost Su
         </div>
         <div className="home-scale-copy">
           <div className="home-scale-heading">
-            <h2><Words text={heading} heading /></h2>
+            <h2><Words text={heading} /></h2>
             {intro && <p className="home-sans">{intro}</p>}
           </div>
           <div className="home-scale-tabs" role="tablist" aria-label={label} ref={tabs}>

@@ -508,3 +508,19 @@
 
 /* Wrap labels only when the viewport limits the dropdown width. */
 .menu-panel a {white-space:normal;}
+
+/* Phone navigation; the existing laptop and desktop bar stays intact. */
+.mobile-label, .mobile-destinations { display: none; }
+@media (max-width: 767px) {
+  .nav-bar { min-height: 56px; padding: 4px 20px; flex-wrap: nowrap; gap: 12px; padding-top: max(4px, env(safe-area-inset-top)); }
+  .nav-brand { font-size: 19px; padding-right: 0; border-right: 0; }
+  .nav-links { flex: 0 0 auto; }
+  .nav-links > a, .desktop-label { display: none; }
+  .mobile-label { display: inline; }
+  .mobile-destinations { display: contents; }
+  .nav-bar button { min-height: 48px; font-size: 18px; }
+  .menu-panel { position: fixed; top: var(--report-header-height, 56px); right: 12px; width: min(360px, calc(100vw - 24px)); max-height: calc(100svh - var(--report-header-height, 56px) - 12px - env(safe-area-inset-bottom)); overflow-y: auto; overscroll-behavior: contain; }
+  .menu-panel a { min-height: 48px; font-size: 18px; }
+  .menu-panel a[aria-current="page"] { background: rgba(255, 255, 255, .12); text-decoration: underline; }
+  .site-footer .footer-navigation > a { padding-block: 10px; min-height: 44px; }
+}

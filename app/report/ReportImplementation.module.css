@@ -93,3 +93,7 @@
   .gallery { gap: 20px 8px; }
   .image { padding: 6px; }
 }
+
+@media (max-width: 767px) {
+  .gallery { width: 100%; grid-template-columns: minmax(0, 1fr); gap: 24px; }
+}

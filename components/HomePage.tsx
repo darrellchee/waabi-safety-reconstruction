@@ -519,11 +519,11 @@ export default function HomePage() {
               <br />
               matters
             </MotionCopy>
-            <MotionCopy as="p">
+            <p className="home-motion-copy is-revealed motion-native-copy">
               Visitors to Warokutal need dependable access to water, supplies,
               recovery equipment and safety information when roads are damaged
               and help is far away.
-            </MotionCopy>
+            </p>
             <MotionLink whileHover={{scale:1.05}} whileTap={{scale:.95}} className="home-pill" href="/safety">
               See the solution
             </MotionLink>

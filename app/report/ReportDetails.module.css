@@ -42,3 +42,11 @@
 @media (max-width: 480px) {
   .details .controls { flex-wrap: wrap; }
 }
+
+.mobileSlides { display: none; }
+@media (max-width: 767px) {
+  .details { height: auto; }
+  .details .stage { display: none; }
+  .mobileSlides { display: grid; gap: 48px; }
+  .mobileSlide { display: grid; gap: 24px; min-width: 0; }
+}

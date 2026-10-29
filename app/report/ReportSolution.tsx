@@ -111,7 +111,7 @@ export function ReportOptions({ overview = false }: { overview?: boolean }) {
         </>}
         <h2 className={overview ? styles.overviewHeading : undefined}>{overview ? <Title text={heading} /> : heading}</h2>
         {!overview && <>
-          <Block as="p" code="9.1" status={status("9.1")}><Copy text={text("9.1")} animated={false} /></Block>
+          <Block as="p" code="9.1" status={status("9.1")}><Copy text={text("9.1")} /></Block>
         </>}
       </div>
       <div className="story container" ref={story} data-code={overview ? "2.5" : undefined} data-status={overview ? status("2.5") : undefined}>
@@ -158,7 +158,7 @@ export function ReportSelection() {
   return <section id="selection" className={`safety-page technology section-space ${styles.selection}`}>
     <div className={`container section-heading ${styles.selectionHeading}`}>
       <div><SectionBadge n={10} /><h2>Design Selection</h2></div>
-      <Block as="p" className="serif-description" code="10.1" status={status("10.1")}><Copy text={text("10.1")} animated={false} /></Block>
+      <Block as="p" className="serif-description" code="10.1" status={status("10.1")}><Copy text={text("10.1")} /></Block>
     </div>
     <div className="container">
       <Block code="10.2" status={status("10.2")}><h3>{title("10.2")}</h3><ReportDecisionMatrix caption={matrix.caption} headings={matrix.head} rows={matrix.rows} /></Block>
@@ -170,7 +170,7 @@ export function ReportSelection() {
             <tbody>{ratingScale.rows.map(row => <tr key={row[0]}><th scope="row">{row[0]}</th><td>{row[1]}</td></tr>)}</tbody>
           </table>
         </Block>
-        <Block as="p" code="10.6" status={status("10.6")} className={styles.weightingExplanation}><Copy text={text("10.6")} animated={false} /></Block>
+        <Block as="p" code="10.6" status={status("10.6")} className={styles.weightingExplanation}><Copy text={text("10.6")} /></Block>
       </div>
       <div className={styles.optionRatings}>
         {[["10.7", "10.3"], ["10.8", "10.10"], ["10.9", "10.11"]].map(([code, explanationCode]) => {
@@ -196,7 +196,7 @@ export function ReportSelection() {
               </table>
             </Block>
             <div className={styles.optionRatingText}>
-              <Block code={explanationCode} status={status(explanationCode)}><p><Copy text={text(explanationCode)} animated={false} /></p></Block>
+              <Block code={explanationCode} status={status(explanationCode)}><p><Copy text={text(explanationCode)} /></p></Block>
             </div>
           </div>;
         })}

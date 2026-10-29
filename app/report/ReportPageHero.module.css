@@ -31,3 +31,8 @@
 @media(max-width:767px) {
  .hero:is([data-page="other-considerations"], [data-page="recommendations"], [data-page="supporting-documents"]) h1 {font-size:clamp(28px,8vw,55px);line-height:1;letter-spacing:-1px;}
 }
+
+@media (max-width: 767px) {
+  .content { width: calc(100% - 40px); padding-top: max(100px, calc(76px + env(safe-area-inset-top))); }
+  .hero h1 { font-size: clamp(36px, 10vw, 55px); line-height: 1.05; letter-spacing: -.04em; overflow-wrap: anywhere; }
+}

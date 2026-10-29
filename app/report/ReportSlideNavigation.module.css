@@ -20,3 +20,8 @@
 @media (max-width: 480px) {
   .markers { order: 1; flex-basis: 100%; }
 }
+
+@media (max-width: 767px) {
+  .marker { width: 44px; height: 44px; }
+  .vertical .marker { width: 44px; height: 44px; }
+}

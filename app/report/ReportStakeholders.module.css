@@ -56,3 +56,12 @@
 @media (max-width: 480px) {
   .controls { flex-wrap: wrap; }
 }
+
+/* Long background paragraphs remain in normal reading flow on phones. */
+@media (max-width: 767px) {
+  .slideshow { height: auto; }
+  .stage { position: static; min-height: 0; padding-block: 0; }
+  .slides > div[hidden] { display: block; }
+  .slides > div + div { margin-top: 40px; }
+  .controls { display: none; }
+}

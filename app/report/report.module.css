@@ -102,8 +102,24 @@
 .stageCard > .mediaReplacement { height: 337px; }
 .stageMeta { display: flex; flex-wrap: wrap; gap: 12px; font: 12px/1.5 var(--font-sans); color: #737270; margin-top: 16px; }
 .stageMeta > span:first-child { background: #dedddb; border-radius: 30px; padding: 8px 12px; }
-.references { list-style: none; padding: 0; margin: 0; }
-.references li { margin-top: 24px; overflow-wrap: anywhere; }
+.references {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.references li {
+  margin-top: 24px;
+  padding-left: 0.5in;
+  text-indent: -0.5in;
+  overflow-wrap: anywhere;
+  line-height: 1.8;
+}
+@media (max-width: 640px) {
+  .references li {
+    padding-left: 1.5rem;
+    text-indent: -1.5rem;
+  }
+}
 .footer { background: #ec9fdf; padding: 80px var(--gutter); position: relative; }
 .footerMedia { margin-bottom: 48px; background: #f4c2eb; }
 .footerTop { display: grid; grid-template-columns: 2fr 1fr; gap: 60px; }
@@ -224,4 +240,18 @@
 .report .criteriaTable p + p { margin-top: 4px; }
 @media (max-width: 767px) {
   .report .criteriaTable :where(th, td) { padding: 10px 8px; }
+}
+
+/* Report-only phone spacing and readable tables. */
+@media (max-width: 767px) {
+  .report { --gutter: 20px; }
+  .report .heroPage { --home-gutter: 20px; }
+  .section { margin-block: 56px; }
+  .report .heroPage :global(.home-hero h1) { left: 20px; width: calc(100% - 40px); font-size: clamp(48px, 15vw, 80px); letter-spacing: -.045em; }
+  .report .heroPage .heroCover { left: 20px; }
+  .heroCover .coverRow > p { font-size: 16px; line-height: 1.5; }
+  .heroCover .coverPanel > div > p { font-size: 16px; }
+  .table { min-width: 560px; }
+  .table th, .table td { font-size: 14px; line-height: 1.6; padding: 12px; }
+  .tableWrap { overscroll-behavior-x: contain; }
 }

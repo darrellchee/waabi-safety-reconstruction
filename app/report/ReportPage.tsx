@@ -1,5 +1,5 @@
 import { ReportHeader, ReportFooter } from "./ReportChrome";
-import { ReportFrame, Copy, Placeholder, ReportSection, Paragraphs, SimpleTable } from "./ReportUI";
+import { ReportFrame, Copy, ReportSection, Paragraphs, SimpleTable } from "./ReportUI";
 import styles from "./report.module.css";
 import { ReportOptions, ReportSelection } from "./ReportSolution";
 import { ReportCriteria } from "./ReportScenes";
@@ -43,9 +43,17 @@ function Cover({ code }: { code: string }) {
 }
 function ReferenceEntry({ entry }: { entry: string }) {
   return <>{entry.split(/(https?:\/\/[^\s]+)/g).map((part, index) => {
-    if (!part.startsWith("http")) return part;
-    const url = part.replace(/[),.;]+$/, "");
-    return <span key={index}><a href={url} target="_blank" rel="noreferrer">{url}</a>{part.slice(url.length)}</span>;
+    if (part.startsWith("http")) {
+      const url = part.replace(/[),.;]+$/, "");
+      return <span key={index}><a href={url} target="_blank" rel="noreferrer">{url}</a>{part.slice(url.length)}</span>;
+    }
+    const chunks = part.split(/(\*[^*]+\*)/g);
+    return <span key={index}>{chunks.map((chunk, cIdx) => {
+      if (chunk.startsWith("*") && chunk.endsWith("*") && chunk.length > 2) {
+        return <em key={cIdx}>{chunk.slice(1, -1)}</em>;
+      }
+      return chunk;
+    })}</span>;
   })}</>;
 }
 const range = (section: number, from: number, to: number) => Array.from({ length: to - from + 1 }, (_, i) => `${section}.${from + i}`);
@@ -125,17 +133,13 @@ export default function ReportPage({ page = "summary" }: { page?: ReportPageId }
         <ReportRecommendations />
       </ReportSection>}
       {page === "supporting-documents" && <><ReportTeamCharter /><ReportMinutes /></>}
-      {page === "references" && <ReportSection id="references" num={17} title="References">
+      {page === "references" && <ReportSection id="references" num={17} title="References" centered>
         <Block code="17.1" status={status("17.1")}><ol className={styles.references}>{lines("17.1").map(entry => <li key={entry}><ReferenceEntry entry={entry} /></li>)}</ol></Block>
       </ReportSection>
       }
       {page === "appendices" && <ReportSection id="appendices" num={18} title="Supporting documentation">
-        <h3>{title("18.1")}</h3><Placeholder id="appendix-1" name="Appendix 1: Group charter" code="18.1" note={<Paragraphs text={text("18.1")} />} />
-        <h3>{title("18.2")}</h3><Placeholder id="appendix-2" name="Appendix 2: Meeting minutes" code="18.2" note={<Paragraphs text={text("18.2")} />} />
         <Titled code="18.3" />
-        <h3>{title("18.4")}</h3><Placeholder id="appendix-3" name="Appendix 3: Prompt screenshots" code="18.4" />
-        <h3>{title("18.5")}</h3><Placeholder id="appendix-4" name="Appendix 4: Prototype test results" code="18.5" note={<Paragraphs text={text("18.5")} />} />
-        <Titled code="18.6" />
+        <h3>{title("18.5")}</h3>
       </ReportSection>
       }
       {page === "ai-logs" && <ReportAiLogs />}

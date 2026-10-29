@@ -10,6 +10,16 @@ This is the source of truth for the report pages, starting at `/report`. Read `P
 4. "TEAM TO ADD: ..." inside page text is part of the page text. Keep it and highlight it.
 5. Block title (the `###` line) = the heading shown on the page for that block, unless the notes say "no heading".
 
+## Body text visibility
+
+- Body copy renders fully visible immediately, without the word-by-word opacity reveal. This includes cover values, tutorial/team text, the acknowledgment, Proposal Summary, problem description, user needs, design criteria, cost narratives and appendix prose. Keep existing heading entrance animations.
+
+## Mobile report layout
+
+- Below 768px only, use 20px report gutters, fluid hero titles and a compact fixed brand/Menu bar. The phone menu contains every report destination, shows the current page, provides 48px tap targets and scrolls within the available screen height. Keep laptop and desktop presentation unchanged.
+- On phones, Project Details and Background show every paragraph in normal page flow instead of pinned slide sequences. Project Details pairs each entry with its diagram. Detailed Design and Implementation figures stack at full content width so illustrations remain readable.
+- Keep report tables readable with 14px cell text and horizontal scrolling inside their existing table wrappers. Mobile slide markers have 44px touch targets and footer links have at least 44px height.
+
 ## Report navigation layout
 
 - The header is fixed at the top of the screen and spans the full width. Keep it slim with a 48px minimum bar height and 44px desktop link height; use 4px vertical bar padding on mobile. Use a translucent white background (15% opacity), an 18px backdrop blur, a faint bottom border and soft shadow. Use actual black or white header text, without colour-inversion blending. If snapshot hit testing exposes only the HTML root, preserve the current tone and retry on animation frames until the incoming page is available; do not assume a white background or rely on an animation timer. On initial render, each active-page change, when the incoming page becomes available to browser hit testing after a native snapshot transition, and on scroll and resize, inspect the painted layers underneath each label (skip transparent overlays before checking the media or solid background below them) and choose the stronger black/white contrast after the 15% white glass tint. Use white text with a fine dark outline and shadow over photos, video and gradients, and black text with a pale edge over light solid sections. Keep the dropdown white-on-dark independently of the page. Keep the glass background in a separate fixed layer and measure the navigation height with ResizeObserver so it stays aligned when links wrap. Use adaptive monochrome hover/focus text and underlines; retain the pink scroll progress line. Separate the brand from the links with a subtle vertical rule. Links have subtle translucent hover backgrounds and animated underlines, including a persistent underline for the active page. More rotates its chevron when open; its rounded dropdown fades/slides into view, with hover feedback on each entry. Disable these animations and transitions for reduced-motion users. Place “Provisions Point” at the far left, separate from the page links, in the same Zagma font at 22px and semibold (600) weight (19px on mobile). Right-align the navigation links with 24px desktop edge padding (12px on mobile). At tablet and mobile widths, let the page links wrap below the brand. Use the same F37 Zagma Serif Book font and regular (400) weight as the Background hero, sized at 18px on desktop and 15px on mobile. Load the bundled font directly with `next/font/local`, preload it and apply it explicitly to the header and dropdown; use block font display to avoid an initial fallback-font flash. Display text links for Summary, Project details, Background, Design Solutions, Detailed Design, Prototype, Implementation and Cost, followed by More. More reveals a rounded dropdown containing Other Considerations first, Recommendations second, Supporting Documents third, References fourth, Appendices fifth, and AI Logs as the bottom entry on mouse hover, keyboard navigation or tap. Make the More dropdown 320px wide, capped at the viewport width minus 24px so it fits on phones. Labels can wrap when needed. Links wrap on smaller screens. Do not show placeholder thumbnails beside these links.
@@ -81,13 +91,13 @@ Counts are computed from the page text in each block. They include table cells, 
 | 14 | Cost Analysis | `cost` | 10 | 566 | 0 | 566 | yes | 0 | 0 |
 | 15 | Other considerations | `other` | 6 | 267 | 0 | 267 | yes | 1 | 0 |
 | 16 | Recommendations | `recommendations` | 8 | 240 | 0 | 240 | yes | 0 | 0 |
-| 17 | References | `references` | 1 | 1066 | 0 | 1066 | no | 0 | 0 |
-| 18 | Supporting documentation | `appendices` | 6 | 187 | 0 | 187 | no | 4 | 0 |
+| 17 | References | `references` | 1 | 907 | 0 | 907 | no | 0 | 0 |
+| 18 | Supporting documentation | `appendices` | 2 | 118 | 0 | 118 | no | 1 | 0 |
 | 19 | Project team and footer | `closing` | 2 | 14 | 0 | 14 | no | 0 | 0 |
 | 20 | Minutes | `minutes` | 0 | 0 | 0 | 0 | no | 0 | 0 |
 | 21 | Team Charter | `team-charter` | 0 | 0 | 0 | 0 | no | 0 | 0 |
 | | **Body (sections 3 to 16)** | | | **4096** | **0** | **4096** | | | |
-| | **Whole page** | | 94 | **5831** | | | | | |
+| | **Whole page** | | 90 | **5603** | | | | | |
 
 Per-block counts are in each block's `words` field below.
 
@@ -355,7 +365,7 @@ Per-block counts are in each block's `words` field below.
 ---
 
 ## SECTION 7: Problem Description (id: problem)
-- **section words:** 146 | **counts toward 4000:** yes
+- **section words:** 118 | **counts toward 4000:** yes
 - layout: display the Warokutal problem paragraph (block 7.2) first, directly below Problem Description, without its own subheading or visible 3.2 number. Follow it with the 3.1 User needs statement heading and paragraph (block 7.1). Block 7.2’s title below is retained as source metadata only.
 
 ### [7.1] 3.1 User needs statement
@@ -920,119 +930,96 @@ Per-block counts are in each block's `words` field below.
 ---
 
 ## SECTION 17: References (id: references)
-- **section words:** 1066 | **counts toward 4000:** no
-- layout: one plain list, alphabetical, no carousel. Source URLs are clickable links that open in a new tab. Titles in italics per APA 7 (the italic part is the title of the work, or the website name for web pages as in APA 7).
+- **section words:** 907 | **counts toward 4000:** no
+- layout: one plain list, alphabetical, no carousel. Source URLs are clickable links that open in a new tab. Formatted according to UTS APA 7th referencing style, with hanging indents and titles in italics.
 - note: preserve the original entries; add photograph sources when new internet images are used. Some slide sources are not here (see PROJECT_CONTEXT.md, known problems).
 
 ### [17.1] Reference list
-- **code:** 17.1 | **status:** SITE | **words:** 1066 (original entries; photo credits added below) | **source:** Original references plus 17 montage and ten report subpage hero photograph credits and the Summary, Project details and Background hero video credits, plus the footer video source, seven Background carousel photographs and seven Summary materials photographs (two reuse existing Unsplash credits)
+- **code:** 17.1 | **status:** SITE | **words:** 907 (original entries; photo credits added below) | **source:** Original references plus 17 montage and ten report subpage hero photograph credits and the Summary, Project details and Background hero video credits, plus the footer video source, seven Background carousel photographs and seven Summary materials photographs (two reuse existing Unsplash credits)
 
 
-> Aerial view of serene river and forest landscape. (n.d.). [Video]. Pexels. https://www.pexels.com/video/aerial-view-of-serene-river-and-forest-landscape-31914486/
-> Annette Ruzicka. (n.d.). Lama Lama ranger in wetland reeds [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/lama-lama-rangers/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/08/Lama-Lama-rangers-banner-Photo-Annette-Ruzicka.png
-> Annette Ruzicka. (n.d.). Road through Lama Lama Country [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/visiting/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/08/Visiting-banner-3-Photo-Annette-Ruzicka.png
-> Anthropic. (2026). Claude [Large language model]. https://claude.ai
-> Bidgee. (2008, February 11). Evening monsoonal squall [Photograph]. Wikimedia Commons. CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/); converted to WebP and displayed with a crop. https://commons.wikimedia.org/wiki/File:Evening_monsoonal_squall.jpg
-> Bober, I. (2025, March). A simple guide to soft shackles. Unsealed 4X4. https://unsealed4x4.com.au/soft-shackles-a-simple-guide/
-> BuyWisely. (n.d.-a). GME TX6160X 5 watt IP67 UHF CB handheld radio. https://buywisely.com.au/product/gme-tx6160x-5-watt-ip67-uhf-cb-handheld-radio-beyond-blue-foundation
-> BuyWisely. (n.d.-b). Hot Shots 20kg firewood. https://buywisely.com.au/product/hot-shots-20kg-firewood
-> BuyWisely. (n.d.-c). MAXTRAX Indeflate (MTXIND). https://buywisely.com.au/au/product/maxtrax-indeflate-mtxind
-> BuyWisely. (n.d.-d). MAXTRAX MKII recovery tracks - black. https://buywisely.com.au/au/product/maxtrax-mkii-recovery-tracks-black
-> BuyWisely. (n.d.-e). SCA Hurricane 12V 150PSI 50LPM tyre inflator. https://buywisely.com.au/product/sca-hurricane-12v-150psi-50lpm-tyre-inflator-sca-club
-> BuyWisely. (n.d.-f). XTM 7 piece recovery kit. https://buywisely.com.au/product/xtm-7-piece-recovery-kit-club-bcf
-> Chain.com.au. (n.d.). Black Rat 4WD recovery kit [Photograph]. https://chain.com.au/collections/4wd-safety-recovery-kits
-> Cook Shire Council. (2026, August 26). Road conditions & closures. https://www.cook.qld.gov.au/services/roads/road-conditions-closures/
-> CSIRO. (2009, August 10). Flooded road in the Herbert River catchment, northern Queensland [Photograph]. Wikimedia Commons. CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/); resized, converted to WebP and displayed with a crop. https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_10397_Flooded_road_in_the_Herbert_River_catchment_northern_Queensland.jpg
-> Department of the Environment, Tourism, Science and Innovation. (2024a, May 3). About: Lama Lama National Park (CYPAL). Parks and Forests. https://parks.qld.gov.au/parks/lama-lama/about
-> Department of the Environment, Tourism, Science and Innovation. (2024b, May 3). Lama Lama National Park (CYPAL). Parks and Forests. https://parks.qld.gov.au/parks/lama-lama
-> Department of the Environment, Tourism, Science and Innovation. (2026, July). Regional Tourism Infrastructure Fund: Round 2 program guidelines. https://www.detsi.qld.gov.au/__data/assets/pdf_file/0023/406481/regional-tourism-infrastructure-fund-guidelines.pdf
-> Down Under Pilot Shop. (n.d.). GME MT610G PLB / ELT - GPS personal locator beacon. https://downunderpilotshop.com.au/products/mt610g-gps-personal-locator-beacon
-> Engineers Without Borders Australia. (2024). EWB Challenge: Port Stewart, Lama Lama Country. https://ewbchallenge.org/challenge/port-stewart-lama-lama/
-> Engineers Without Borders Australia. (n.d.). Design area 1: Infrastructure and access. EWB Challenge. https://ewbchallenge.org/challenge/port-stewart-lama-lama/design-area-1-infrastructure-and-access/
-> Espejo, M. (2025, January 4). Aerial view of expansive wetlands landscape [Video]. Pexels. https://www.pexels.com/video/aerial-view-of-expansive-wetlands-landscape-30081634/
-> Feasly. (n.d.). Construction cost per square metre in Australia (2026). https://www.feasly.com.au/guides/construction-cost-per-square-metre-australia
-> Gillis, D. (2018, January 27). People sitting on chair in front of table while holding pens during daytime [Photograph]. Unsplash. https://unsplash.com/photos/KdeqA3aTnBY (Unsplash License: https://unsplash.com/license); resized, converted to WebP and displayed with a crop.
-> Google. (2026). Gemini [Large language model]. https://gemini.google.com
-> Hawaiian Electric. (2025, July 17). Emergency food stock [Photograph]. In Tips for a heart-healthy emergency food supply. https://www.hawaiianelectric.com/powering-hawaiis-future/tips-for-a-heart-healthy-emergency-food-supply
-> Henderson, G. (2019, July 8). Woman signing on white printer paper beside woman about to touch the documents [Photograph]. Unsplash. https://unsplash.com/photos/HJckKnwCXxQ (Unsplash License: https://unsplash.com/license); resized, converted to WebP and displayed with a crop.
-> Hillebrand, S. (n.d.). Cabin with solar panels [Photograph]. Wikimedia Commons. Public domain; resized and converted to WebP, displayed with a crop. https://commons.wikimedia.org/wiki/File:Cabin_with_solar_panels.jpg
-> KeepActive Australia. (2022, January 30). Large family camping tent [Photograph]. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Large_family_camping_tent.jpg Photo by KeepActive.com.au (https://keepactive.com.au/). CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Resized and converted to WebP; displayed with a crop.
-> Kepner, L. (2020, October 28). Architectural blueprints with drafting tools [Photograph]. Unsplash. https://unsplash.com/photos/Yn8D5B8C-eY (Unsplash License: https://unsplash.com/license)
-> Leading Architecture. (2024, June). Watertight concrete from Sika. https://www.leadingarchitecture.co.za/watertight-concrete-from-sika/
-> maks_d. (2025, May 2). Calculator and office supplies on a desk [Photograph]. Unsplash. https://unsplash.com/photos/54bvLAWhWAM (Unsplash License: https://unsplash.com/license)
-> McCullough, D. (2017, August 22). Person drafting on blueprint [Photograph]. Unsplash. https://unsplash.com/photos/-FPFq_trr2Y (Unsplash License: https://unsplash.com/license)
-> Menard Asia. (2025, January 16). Concrete pile foundations: Types and benefits. https://www.menard-asia.com/2025/01/16/concrete-pile-foundations/
-> National Indigenous Australians Agency. (n.d.). Indigenous Rangers Program funding extension update 1. https://www.niaa.gov.au/news-and-media/indigenous-rangers-program-funding-extension-update-1
-> NJM2010. (2011, January 15). Queenslander house in Laidley [Photograph]. Wikimedia Commons. CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/); resized and converted to WebP, displayed with a crop under the same licence. https://commons.wikimedia.org/wiki/File:Queenslander_house_in_Laidley.jpg
-> Pimentel, A. (2026, February 11). Construction workers in hard hats and safety vests on site [Photograph]. Unsplash. https://unsplash.com/photos/xufUgY2AeGQ (Unsplash License: https://unsplash.com/license)
-> Queensland Parks and Wildlife Service. (2013). Lama Lama National Park (Cape York Peninsula Aboriginal Land): Management statement. Department of Environment, Science and Innovation. https://parks.des.qld.gov.au/__data/assets/pdf_file/0022/166423/lama-lama.pdf
-> Reardon-Smith, M. (2023). The wet: Shifting seasons, climate change and natural cycles in Cape York Peninsula, Queensland. Oceania, 93(3), 302-320. https://doi.org/10.1002/ocea.5377
-> The Shed Company. (n.d.). Three Bay Manor shed under construction [Photograph]. https://www.theshedcompany.com.au/projects/three-bay-manor/
-> Sun, D. (2026, July 1). Architectural model with blueprints on wall [Photograph]. Unsplash. https://unsplash.com/photos/1hEhb26Bn20 (Unsplash License: https://unsplash.com/license)
-> Supercheap Auto. (2017, February). How to rapidly deflate your tyres. https://www.supercheapauto.com.au/blog/4wd-adventure/how-to-rapidly-deflate-your-tyres.html
-> Testa, C. (2026, January 23). Tropical low forecast to bring heavy rain to northern Cape York, Gulf of Carpentaria. ABC News. https://www.abc.net.au/news/2026-01-23/tropical-low-heavy-rain-cape-york-gulf-of-carpentaria/106260620
-> Tetrakis Sphericon. (2021, April 28). Drone footage of a sunset in an Australian bushland [Video]. Pexels. https://www.pexels.com/video/drone-footage-of-a-sunset-in-an-australian-bushland-7691418/
-> Tingey, W. (2020, March 6). Stacks of paper documents and file folders [Photograph]. Unsplash. https://unsplash.com/photos/snNHKZ-mGfE (Unsplash License: https://unsplash.com/license)
-> Todio, E. (n.d.). Logistics of tourism in Port Stewart in Lama Lama Country. EWB Challenge. https://ewbchallenge.org/forums/topic/logistics-of-tourism-in-port-stewart-in-lama-lama-country/
-> Van Tay Media. (2019, August 9). People having meeting beside table [Photograph]. Unsplash. https://unsplash.com/photos/people-having-meeting-beside-table-YK1AJT_5e5Q (Unsplash License: https://unsplash.com/license); resized, converted to WebP and displayed with a crop.
-> usagito. (n.d.). Laura Aboriginal Dance Festival 2017 (17 min. Digest) [Video]. YouTube. https://www.youtube.com/watch?v=wR0iIcgOQ0E
-> Watson, G. (n.d.). Solar panels on house roof [Photograph]. Wikimedia Commons. CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/); resized and converted to WebP, displayed with a crop under the same licence. https://commons.wikimedia.org/wiki/File:Solar_panels_on_house_roof.jpg
-> Wikideas1. (2024, July 1). Modular home [Photograph]. Wikimedia Commons. CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/); resized and converted to WebP, displayed with a crop. https://commons.wikimedia.org/wiki/File:Modular_home.jpg
-> Wolff, C. (2018, March 8). Pile of assorted-color books [Photograph]. Unsplash. https://unsplash.com/photos/MiJTU6lqksg (Unsplash License: https://unsplash.com/license)
-> WoodSolutions. (n.d.). Exterior timber stairs and deck [Photograph]. https://www.woodsolutions.com.au/applications-products/exterior/stairs-exterior
-> Yintjingga Aboriginal Corporation. (n.d.). Cattle on Lama Lama Country [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/enterprises/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/08/MarinaPlainsCow-banner.png
-> Yintjingga Aboriginal Corporation. (n.d.). Fauna and flora survey: beetle [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/fauna-and-flora-surveys/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/12/flora-and-fauna-banner.png
-> Yintjingga Aboriginal Corporation. (n.d.). Fire management beside a road [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/monitoring-the-impact-of-fire/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/12/fire-banner-1.jpg
-> Yintjingga Aboriginal Corporation. (n.d.). Forested wetland [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/special-places/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/08/Special-Places-banner-1.jpg
-> Yintjingga Aboriginal Corporation. (n.d.). Freshwater wetland [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/annual-wetland-monitoring-freshwater/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/12/Our-research-freshwater-banner.jpg
-> Yintjingga Aboriginal Corporation. (n.d.). Lama Lama coastline [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/visiting/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/08/Visiting-banner.png
-> Yintjingga Aboriginal Corporation. (n.d.). Lama Lama rangers outdoors [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/visiting/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/08/Visiting-banner2.png
-> Yintjingga Aboriginal Corporation. (n.d.). Mangrove roots [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/mangroves/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/12/mangrove-banner.png
-> Yintjingga Aboriginal Corporation. (n.d.). Princess Charlotte Bay coastline [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/princess-charlotte-bay-bird-surveys/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/12/PCB-bird-surveys-banner.png
-> Yintjingga Aboriginal Corporation. (n.d.). Rainforest creek [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/rainforests/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/12/research-rainforests-banner.png
-> Yintjingga Aboriginal Corporation. (n.d.). Rangers reviewing a map [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/national-parks-joint-management/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/08/Gav-Parks-Peter-fence-map-130905-6558.jpg
-> Yintjingga Aboriginal Corporation. (n.d.). Sea Country shoreline [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/sea-country-indigenous-knowledge-collation/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/12/Our-research-sea-country-banner.png
-> Yintjingga Aboriginal Corporation. (n.d.). Turtle monitoring [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/marine-turtles-and-dugongs/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/12/Our-research-Turtles-banner-2.jpg
-> Yintjingga Aboriginal Corporation. (n.d.). Visiting. Welcome to Lama Lama Country. https://www.lamalama.org.au/visiting/
-> Yintjingga Aboriginal Corporation. (n.d.). Visitors beside a waterway [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/enterprises/ Image: https://www.lamalama.org.au/wp-content/uploads/2016/08/tourism-banner.png
+> *Aerial view of serene river and forest landscape* [Video]. (n.d.). Pexels. https://www.pexels.com/video/aerial-view-of-serene-river-and-forest-landscape-31914486/
+> Anthropic. (2026). *Claude* [Large language model]. https://claude.ai
+> Bidgee. (2008, February 11). *Evening monsoonal squall* [Photograph]. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Evening_monsoonal_squall.jpg
+> Bober, I. (2025, March). A simple guide to soft shackles. *Unsealed 4X4*. https://unsealed4x4.com.au/soft-shackles-a-simple-guide/
+> BuyWisely. (n.d.-a). *GME TX6160X 5 watt IP67 UHF CB handheld radio*. https://buywisely.com.au/product/gme-tx6160x-5-watt-ip67-uhf-cb-handheld-radio-beyond-blue-foundation
+> BuyWisely. (n.d.-b). *Hot Shots 20kg firewood*. https://buywisely.com.au/product/hot-shots-20kg-firewood
+> BuyWisely. (n.d.-c). *MAXTRAX Indeflate (MTXIND)*. https://buywisely.com.au/au/product/maxtrax-indeflate-mtxind
+> BuyWisely. (n.d.-d). *MAXTRAX MKII recovery tracks - black*. https://buywisely.com.au/au/product/maxtrax-mkii-recovery-tracks-black
+> BuyWisely. (n.d.-e). *SCA Hurricane 12V 150PSI 50LPM tyre inflator*. https://buywisely.com.au/product/sca-hurricane-12v-150psi-50lpm-tyre-inflator-sca-club
+> BuyWisely. (n.d.-f). *XTM 7 piece recovery kit*. https://buywisely.com.au/product/xtm-7-piece-recovery-kit-club-bcf
+> Chain.com.au. (n.d.). *Black Rat 4WD recovery kit* [Photograph]. https://chain.com.au/collections/4wd-safety-recovery-kits
+> Cook Shire Council. (2026, August 26). *Road conditions & closures*. https://www.cook.qld.gov.au/services/roads/road-conditions-closures/
+> CSIRO. (2009, August 10). *Flooded road in the Herbert River catchment, northern Queensland* [Photograph]. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_10397_Flooded_road_in_the_Herbert_River_catchment_northern_Queensland.jpg
+> Department of the Environment, Tourism, Science and Innovation. (2024a, May 3). *About: Lama Lama National Park (CYPAL)*. Parks and Forests. https://parks.qld.gov.au/parks/lama-lama/about
+> Department of the Environment, Tourism, Science and Innovation. (2024b, May 3). *Lama Lama National Park (CYPAL)*. Parks and Forests. https://parks.qld.gov.au/parks/lama-lama
+> Department of the Environment, Tourism, Science and Innovation. (2026, July). *Regional Tourism Infrastructure Fund: Round 2 program guidelines*. https://www.detsi.qld.gov.au/__data/assets/pdf_file/0023/406481/regional-tourism-infrastructure-fund-guidelines.pdf
+> Down Under Pilot Shop. (n.d.). *GME MT610G PLB / ELT - GPS personal locator beacon*. https://downunderpilotshop.com.au/products/mt610g-gps-personal-locator-beacon
+> Engineers Without Borders Australia. (n.d.). *Design area 1: Infrastructure and access*. EWB Challenge. https://ewbchallenge.org/challenge/port-stewart-lama-lama/design-area-1-infrastructure-and-access/
+> Engineers Without Borders Australia. (2024). *EWB Challenge: Port Stewart, Lama Lama Country*. https://ewbchallenge.org/challenge/port-stewart-lama-lama/
+> Espejo, M. (2025, January 4). *Aerial view of expansive wetlands landscape* [Video]. Pexels. https://www.pexels.com/video/aerial-view-of-expansive-wetlands-landscape-30081634/
+> Feasly. (n.d.). *Construction cost per square metre in Australia (2026)*. https://www.feasly.com.au/guides/construction-cost-per-square-metre-australia
+> Gillis, D. (2018, January 27). *People sitting on chair in front of table while holding pens during daytime* [Photograph]. Unsplash. https://unsplash.com/photos/KdeqA3aTnBY
+> Google. (2026). *Gemini* [Large language model]. https://gemini.google.com
+> Hawaiian Electric. (2025, July 17). *Emergency food stock* [Photograph]. https://www.hawaiianelectric.com/powering-hawaiis-future/tips-for-a-heart-healthy-emergency-food-supply
+> Henderson, G. (2019, July 8). *Woman signing on white printer paper beside woman about to touch the documents* [Photograph]. Unsplash. https://unsplash.com/photos/HJckKnwCXxQ
+> Hillebrand, S. (n.d.). *Cabin with solar panels* [Photograph]. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Cabin_with_solar_panels.jpg
+> KeepActive Australia. (2022, January 30). *Large family camping tent* [Photograph]. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Large_family_camping_tent.jpg
+> Kepner, L. (2020, October 28). *Architectural blueprints with drafting tools* [Photograph]. Unsplash. https://unsplash.com/photos/Yn8D5B8C-eY
+> Leading Architecture. (2024, June). *Watertight concrete from Sika*. https://www.leadingarchitecture.co.za/watertight-concrete-from-sika/
+> maks_d. (2025, May 2). *Calculator and office supplies on a desk* [Photograph]. Unsplash. https://unsplash.com/photos/54bvLAWhWAM
+> McCullough, D. (2017, August 22). *Person drafting on blueprint* [Photograph]. Unsplash. https://unsplash.com/photos/-FPFq_trr2Y
+> Menard Asia. (2025, January 16). *Concrete pile foundations: Types and benefits*. https://www.menard-asia.com/2025/01/16/concrete-pile-foundations/
+> National Indigenous Australians Agency. (n.d.). *Indigenous Rangers Program funding extension update 1*. https://www.niaa.gov.au/news-and-media/indigenous-rangers-program-funding-extension-update-1
+> NJM2010. (2011, January 15). *Queenslander house in Laidley* [Photograph]. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Queenslander_house_in_Laidley.jpg
+> Pimentel, A. (2026, February 11). *Construction workers in hard hats and safety vests on site* [Photograph]. Unsplash. https://unsplash.com/photos/xufUgY2AeGQ
+> Queensland Parks and Wildlife Service. (2013). *Lama Lama National Park (Cape York Peninsula Aboriginal Land): Management statement*. Department of Environment, Science and Innovation. https://parks.des.qld.gov.au/__data/assets/pdf_file/0022/166423/lama-lama.pdf
+> Reardon-Smith, M. (2023). The wet: Shifting seasons, climate change and natural cycles in Cape York Peninsula, Queensland. *Oceania*, *93*(3), 302–320. https://doi.org/10.1002/ocea.5377
+> Ruzicka, A. (n.d.-a). *Lama Lama ranger in wetland reeds* [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/lama-lama-rangers/
+> Ruzicka, A. (n.d.-b). *Road through Lama Lama Country* [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/visiting/
+> Sun, D. (2026, July 1). *Architectural model with blueprints on wall* [Photograph]. Unsplash. https://unsplash.com/photos/1hEhb26Bn20
+> Supercheap Auto. (2017, February). *How to rapidly deflate your tyres*. https://www.supercheapauto.com.au/blog/4wd-adventure/how-to-rapidly-deflate-your-tyres.html
+> Testa, C. (2026, January 23). Tropical low forecast to bring heavy rain to northern Cape York, Gulf of Carpentaria. *ABC News*. https://www.abc.net.au/news/2026-01-23/tropical-low-heavy-rain-cape-york-gulf-of-carpentaria/106260620
+> Tetrakis Sphericon. (2021, April 28). *Drone footage of a sunset in an Australian bushland* [Video]. Pexels. https://www.pexels.com/video/drone-footage-of-a-sunset-in-an-australian-bushland-7691418/
+> The Shed Company. (n.d.). *Three Bay Manor shed under construction* [Photograph]. https://www.theshedcompany.com.au/projects/three-bay-manor/
+> Tingey, W. (2020, March 6). *Stacks of paper documents and file folders* [Photograph]. Unsplash. https://unsplash.com/photos/snNHKZ-mGfE
+> Todio, E. (n.d.). *Logistics of tourism in Port Stewart in Lama Lama Country*. EWB Challenge. https://ewbchallenge.org/forums/topic/logistics-of-tourism-in-port-stewart-in-lama-lama-country/
+> usagito. (n.d.). *Laura Aboriginal Dance Festival 2017 (17 min. Digest)* [Video]. YouTube. https://www.youtube.com/watch?v=wR0iIcgOQ0E
+> Van Tay Media. (2019, August 9). *People having meeting beside table* [Photograph]. Unsplash. https://unsplash.com/photos/people-having-meeting-beside-table-YK1AJT_5e5Q
+> Watson, G. (n.d.). *Solar panels on house roof* [Photograph]. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Solar_panels_on_house_roof.jpg
+> Wikideas1. (2024, July 1). *Modular home* [Photograph]. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Modular_home.jpg
+> Wolff, C. (2018, March 8). *Pile of assorted-color books* [Photograph]. Unsplash. https://unsplash.com/photos/MiJTU6lqksg
+> WoodSolutions. (n.d.). *Exterior timber stairs and deck* [Photograph]. https://www.woodsolutions.com.au/applications-products/exterior/stairs-exterior
+> Yintjingga Aboriginal Corporation. (n.d.-a). *Cattle on Lama Lama Country* [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/enterprises/
+> Yintjingga Aboriginal Corporation. (n.d.-b). *Fauna and flora survey: Beetle* [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/fauna-and-flora-surveys/
+> Yintjingga Aboriginal Corporation. (n.d.-c). *Fire management beside a road* [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/monitoring-the-impact-of-fire/
+> Yintjingga Aboriginal Corporation. (n.d.-d). *Forested wetland* [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/special-places/
+> Yintjingga Aboriginal Corporation. (n.d.-e). *Freshwater wetland* [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/annual-wetland-monitoring-freshwater/
+> Yintjingga Aboriginal Corporation. (n.d.-f). *Lama Lama coastline* [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/visiting/
+> Yintjingga Aboriginal Corporation. (n.d.-g). *Lama Lama rangers outdoors* [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/visiting/
+> Yintjingga Aboriginal Corporation. (n.d.-h). *Mangrove roots* [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/mangroves/
+> Yintjingga Aboriginal Corporation. (n.d.-i). *Princess Charlotte Bay coastline* [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/princess-charlotte-bay-bird-surveys/
+> Yintjingga Aboriginal Corporation. (n.d.-j). *Rainforest creek* [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/rainforests/
+> Yintjingga Aboriginal Corporation. (n.d.-k). *Rangers reviewing a map* [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/national-parks-joint-management/
+> Yintjingga Aboriginal Corporation. (n.d.-l). *Sea Country shoreline* [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/sea-country-indigenous-knowledge-collation/
+> Yintjingga Aboriginal Corporation. (n.d.-m). *Turtle monitoring* [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/marine-turtles-and-dugongs/
+> Yintjingga Aboriginal Corporation. (n.d.-n). *Visiting*. Welcome to Lama Lama Country. https://www.lamalama.org.au/visiting/
+> Yintjingga Aboriginal Corporation. (n.d.-o). *Visitors beside a waterway* [Photograph]. Welcome to Lama Lama Country. https://www.lamalama.org.au/enterprises/
 
 ---
 
 ## SECTION 18: Supporting documentation (id: appendices)
-- **section words:** 187 | **counts toward 4000:** no
-- layout: each appendix has its own heading, in this order.
-
-### [18.1] Appendix 1: Group charter
-- **code:** 18.1 | **status:** MISSING | **words:** 8 | **target:** 0 | **source:** none
-- placeholder: `insert: Appendix 1: Group charter` (below the note)
-
-> TEAM TO ADD: attach the charter before submission.
-
-### [18.2] Appendix 2: Meeting minutes
-- **code:** 18.2 | **status:** MISSING | **words:** 9 | **target:** 0 | **source:** none
-- placeholder: `insert: Appendix 2: Meeting minutes` (below the note)
-
-> TEAM TO ADD: attach the meeting minutes before submission.
+- **section words:** 118 | **counts toward 4000:** no
+- layout: retain the AI-use statement and full prototype test results, each with its own heading. Group charter, meeting minutes, prompt screenshots, and decision matrix/cost workings sections are removed from this page.
 
 ### [18.3] Appendix 3: Statement of AI use and prompt log
-- **code:** 18.3 | **status:** SITE | **words:** 139 | **source:** Delivery page
+- **code:** 18.3 | **status:** SITE | **words:** 118 | **source:** Delivery page
 
-> The team used generative AI in four ways. Claude (Anthropic, 2026) helped find and summarise public sources and prices, draft background and criteria text, build the cost and revenue calculations, and turn the team's slides and research into website text. Gemini (Google, 2026) made the concept images for the team's presentation. An AI image tool made the concept images on this site. An AI coding agent placed the text and images into the website. The team used AI to work faster, keep the site consistent and show the idea visually. The team chose the design, built the Blender prototype and checked figures and citations against sources. AI images are concept images, not photographs. This is a draft declaration. TEAM TO ADD: read and confirm every sentence, the exact tool names and versions, and screenshots of every prompt and output.
-
-### [18.4] Appendix 3: Prompt screenshots
-- **code:** 18.4 | **status:** MISSING | **words:** 0 | **target:** 0 | **source:** none
-- placeholder: `insert: Appendix 3: Prompt screenshots`
+> The team used generative AI in four ways. Claude (Anthropic, 2026) helped find and summarise public sources and prices, draft background and criteria text, build the cost and revenue calculations, and turn the team's slides and research into website text. Gemini (Google, 2026) made the concept images for the team's presentation. An AI image tool made the concept images on this site. An AI coding agent placed the text and images into the website. The team used AI to work faster, keep the site consistent and show the idea visually. The team chose the design, built the Blender prototype and checked figures and citations against sources. AI images are concept images, not photographs. This is a draft declaration.
 
 ### [18.5] Appendix 4: Full prototype test results
-- **code:** 18.5 | **status:** MISSING | **words:** 7 | **target:** 0 | **source:** none
-- placeholder: `insert: Appendix 4: Prototype test results` (below the note)
-
-> TEAM TO ADD: attach results before submission.
-
-### [18.6] Appendix 5: Decision matrix and cost workings
-- **code:** 18.6 | **status:** SITE | **words:** 24 | **source:** Delivery page (links updated, see edits log)
-
-> The matrix scores and the cost table are shown in Design Selection and Cost Analysis. The contingency is 20% of $72,207.34, which is $14,441.47.
+- **code:** 18.5 | **status:** MISSING | **words:** 0 | **target:** 0 | **source:** none
+- layout: heading only; the submission note and insert placeholder are removed.
 
 ---
 

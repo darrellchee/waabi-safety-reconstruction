@@ -41,6 +41,13 @@ export function ReportDetails({ title, slides }: { title: string; slides: Slide[
     setCurrent(index);
   }
   return <div ref={track} className={styles.details} style={{ "--slides": slides.length } as React.CSSProperties} aria-label={title} role="region">
+    <div className={styles.mobileSlides}>
+      {slides.map((slide, index) => <section key={slide.code ?? index} className={styles.mobileSlide}>
+        <h2 className={styles.subheading}>{slide.name}</h2>
+        <p className={styles.words}>{slide.quote}</p>
+        <ReportDetailsVisual current={index} />
+      </section>)}
+    </div>
     <div className={styles.stage}>
     <div className={styles.layout}>
       <motion.div layout className={styles.copy}>

@@ -99,9 +99,10 @@ export function ReportHeader({ active }: { active: ReportPageId }) {
           }
         }}>
         <button ref={toggle} className={secondary.some(item => item.id === active) ? styles.active : undefined} aria-expanded={open} aria-controls="report-more-navigation" onClick={() => setOpen(!open)}>
-          More <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="m3 4.5 3 3 3-3" fill="none" stroke="currentColor" strokeWidth="1.5" /></svg>
+          <span className={styles["desktop-label"]}>More</span><span className={styles["mobile-label"]}>Menu</span> <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="m3 4.5 3 3 3-3" fill="none" stroke="currentColor" strokeWidth="1.5" /></svg>
         </button>
         <div id="report-more-navigation" className={styles["menu-panel"]} hidden={!open}>
+          <div className={styles["mobile-destinations"]}>{primary.map(({ label, id, href }) => <Link key={id} href={href} className={active === id ? styles.active : undefined} aria-current={active === id ? "page" : undefined} onClick={() => setOpen(false)}>{label}</Link>)}</div>
           {secondary.map(({ label, id, href }) => <Link key={id} href={href} className={active === id ? styles.active : undefined} aria-current={active === id ? "page" : undefined} onClick={() => setOpen(false)}>{label}</Link>)}
         </div>
       </div>

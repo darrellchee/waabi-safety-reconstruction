@@ -120,3 +120,8 @@
   .stepConnector { display: none; }
   .how .carousel :global(.home-insight-card) { flex: none; width: 100%; }
 }
+
+@media (max-width: 767px) {
+  .structureVisuals, .stockGrid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .exterior, .structureConcept, .structureCard, .stockCard, .equipmentCard { grid-column: auto; }
+}
