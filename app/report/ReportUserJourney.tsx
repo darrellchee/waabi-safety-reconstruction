@@ -1,5 +1,7 @@
 "use client";
 
+import { ReportHeadingAnchor } from "./ReportHeadingAnchor";
+
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { motion, useInView } from "motion/react";
 import { useReducedMotion } from "../../components/useReducedMotion";
@@ -150,7 +152,7 @@ export function ReportUserJourney() {
 
   return (
     <div ref={ref} className={styles.wrapper}>
-      <h3 className={styles.heading}>User Journey Map</h3>
+      <h3 className={styles.heading}><ReportHeadingAnchor text="9.1 User Journey Map" />9.1 User Journey Map</h3>
       <p className={styles.subheading}>
         A visitor stranded by flooding at Warokutal
       </p>

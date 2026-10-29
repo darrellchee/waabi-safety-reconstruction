@@ -1,5 +1,7 @@
 "use client";
 
+import { ReportHeadingAnchor } from "./ReportHeadingAnchor";
+
 import { useState } from "react";
 import { motion } from "motion/react";
 import { useReducedMotion } from "../../components/useReducedMotion";
@@ -75,7 +77,7 @@ export function ReportCost({ title, status, caption, headings, rows, introductio
     <p className={styles.introduction} onKeyDown={event => { if (event.key === "Escape") { setPinned(null); setHover(null); } }}>{introduction.split(/(\$87,386\.65|\$38,592|\$20,000|\$5,000|\$2,756)/g).map((part, index) => linkedAmounts[part] ? <button key={index} type="button" data-counted="" className={styles.inlineAmount} aria-pressed={pinned === linkedAmounts[part]} aria-controls="construction-cost-chart" onClick={() => toggle(linkedAmounts[part])} {...handlers(linkedAmounts[part])}>{part}</button> : part === "$87,386.65" ? <strong key={index}>{part}</strong> : part)}</p>
   </Block>}
   <Block code="14.2" status={status}>
-    <h3>{title}</h3>
+    <h3><ReportHeadingAnchor text={title} />{title}</h3>
     <div className={styles.layout} onKeyDown={event => { if (event.key === "Escape") { setPinned(null); setHover(null); } }}>
     {table}
     <figure id="construction-cost-chart" className={styles.card} data-nocount="" aria-label="Cost breakdown">

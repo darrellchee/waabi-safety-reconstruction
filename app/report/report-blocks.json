@@ -158,7 +158,7 @@
   },
   "2.4": {
    "section": 2,
-   "title": "Proposal Summary",
+   "title": "1.2 Proposal Summary",
    "status": "SITE",
    "lines": [
     "This project aims to give visitors to Warokutal (Safari Camp) access to water, supplies and vehicle recovery equipment when floods damage the roads. It proposes an elevated, minimal maintenance shelter that stocks essentials and hires out recovery kits, personal locator beacons and ultra high frequency radios."
@@ -189,33 +189,33 @@
   },
   "2.8": {
    "section": 2,
-   "title": "Key Considerations",
+   "title": "1.4 Key Considerations",
    "status": "DRAFT",
    "lines": [
-    "Where the recommended materials are sourced from? (i.e. externally or locally available)",
+    "1.41 Where the recommended materials are sourced from? (i.e. externally or locally available)",
     "Reinforced concrete piles, watertight concrete and corrugated fibre cement sheeting, chosen for their resistance to flooding, termites, corrosion and cyclone winds. Materials will be sourced from regional suppliers and delivered during the dry season.",
     "",
-    "What are the key maintenance requirements?",
+    "1.42 What are the key maintenance requirements?",
     "Rangers restock weekly during the visitor season (July to November) and carry out two inspections a year, before and after the wet season. Hire gear is checked on return, and damaged items are repaired or replaced. Structural or electrical faults are handled by qualified contractors.",
     "",
-    "How do you propose the design might be implemented?",
+    "1.43 How do you propose the design might be implemented?",
     "Community consultation with Lama Lama Traditional Owners and local land councils to finalise placement and cultural protocols.",
     "Dry season construction by a crew of four, taking about eight weeks.",
     "A four hour training session for Rangers, with an instruction manual kept on site.",
     "",
-    "What additional consultation/feedback/research might be required to validate your design proposal? What might the next steps be to make this idea happen?",
+    "1.44 What additional consultation/feedback/research might be required to validate your design proposal? What might the next steps be to make this idea happen?",
     "Conduct flood-height assessments with Traditional Owners to confirm the right building height. Seek YAC approval, which takes about six months."
    ]
   },
   "2.9": {
    "section": 2,
-   "title": "Proposed Materials and Cost Summary",
+   "title": "1.5 Proposed Materials and Cost Summary",
    "status": "DRAFT",
    "lines": []
   },
   "2.10": {
    "section": 2,
-   "title": "Cost breakdown",
+   "title": "1.51 Cost breakdown",
    "status": "DRAFT",
    "lines": [
     "| Item | Approximate cost (AUD) |",
@@ -239,7 +239,7 @@
   },
   "3.1": {
    "section": 3,
-   "title": "Team member contributions",
+   "title": "1.61 Team member contributions",
    "status": "SITE",
    "lines": [
     "Table 1. Team member contributions to Assessment Task 3 Website",
@@ -263,7 +263,7 @@
   },
   "5.1": {
    "section": 5,
-   "title": "1.1 The context of your project",
+   "title": "2.1 The context of your project",
    "status": "SITE",
    "lines": [
     "The primary target audience for the project consists of independent travellers and managers of local tourism facilities that operate within Lama Lama country on the Cape York Peninsula. Warokutal (Safari Camp) is a remote campground at Port Stewart, reached by roads that can become impassable in the wet season, so the national park is typically closed from 1 December to 30 June (DETSI, 2024a). The park offers remote, low-key, self-reliant visitor experiences (QPWS, 2013), but the Ranger Base is staffed only from about 8 am to 4:30 pm and campground water is non-potable (YAC, n.d.). Visitors who get stuck can be left without water, supplies or a way to call for help, which is why this project matters."
@@ -271,7 +271,7 @@
   },
   "5.6": {
    "section": 5,
-   "title": "1.2 Why is this important?",
+   "title": "2.2 Why is this important?",
    "status": "SITE",
    "lines": [
     "For local tourism facility managers and rangers, the project addresses a critical operational gap. By establishing a durable supply point, the facility aims to reduce recurring emergency repair expenses and minimises the need for high-risk ranger interventions during flooding seasons’ extreme weather events. The project ultimately bridges the gap between the risks associated with tourism and wet season flooding, ensuring visitors can manage unexpected weather disruptions while safeguarding Lama Lama’s cultural and environmental assets."
@@ -279,7 +279,7 @@
   },
   "5.2": {
    "section": 5,
-   "title": "1.3 Which Design Area and Project Opportunity (Topic) has your group selected?",
+   "title": "2.3 Which Design Area and Project Opportunity (Topic) has your group selected?",
    "status": "SITE",
    "lines": [
     "This project responds to Design Area 2, Eco-tourism and Visitor Experience, and Design Opportunity 2.1, Resilient visitor infrastructure, and focuses on Warokutal. The design is an elevated, low maintenance supply point that gives stranded visitors dependable access to water, long shelf-life food, radios, PLBs and vehicle recovery equipment."
@@ -287,7 +287,7 @@
   },
   "5.3": {
    "section": 5,
-   "title": "1.4 What is your needs statement?",
+   "title": "2.4 What is your needs statement?",
    "status": "SITE",
    "lines": [
     "The needs statement is that visitors to Warokutal need dependable access to water, supplies, recovery equipment and a way to call for help when roads are damaged, without adding to the workload of the Rangers."
@@ -316,7 +316,7 @@
   },
   "6.1": {
    "section": 6,
-   "title": "2.1 Lama Lama Country and its climate",
+   "title": "3.11 Lama Lama Country and its climate",
    "status": "SITE",
    "lines": [
     "Lama Lama Country is located on the eastern coast of the Cape York Peninsula, Queensland. The region experiences a tropical monsoon climate that is characterised by wet and dry seasons. Between October and April, the land experiences heavy and extensive rainfall, where historical data showed that early wet season (October to December) experiences concentrated precipitation that acts as a catalyst for sudden flash flooding. This impacts unsealed roads that connect remote camping areas such as Warokutal and Maramba and isolate visitors from external emergency services."
@@ -324,7 +324,7 @@
   },
   "6.2": {
    "section": 6,
-   "title": "2.2 Cultural and environmental significance",
+   "title": "3.12 Cultural and environmental significance",
    "status": "SITE",
    "lines": [
     "The landscape holds profound spiritual, historical and cultural significance for the Lama Lama Traditional Owners, who manage the region alongside the Queensland Parks and Wildlife Service. Because travel through the national park and surrounding areas is restricted as it is culturally and environmentally sensitive, any infrastructure intervention must respect sacred sites and minimise ecological disruption."
@@ -332,7 +332,7 @@
   },
   "6.3": {
    "section": 6,
-   "title": "2.3 Maintenance and remote safety",
+   "title": "3.13 Maintenance and remote safety",
    "status": "SITE",
    "lines": [
     "Furthermore, since regional infrastructure is traditionally maintained reactively rather than proactively, leaving remote sites vulnerable to severe weathering damage, the aim is to build something that needs to be maintained as little as possible. Currently, the Port Stewart Ranger Base serves as the primary safety outpost that is staffed, for the entire region, leaving remote camps exposed during weather emergencies."
@@ -340,7 +340,7 @@
   },
   "6.4": {
    "section": 6,
-   "title": "2.4 Unpredictable wet-season rainfall",
+   "title": "3.14 Unpredictable wet-season rainfall",
    "status": "SITE",
    "lines": [
     "Rainfall in the early wet season (October to December) varies widely from year to year, which leads to flooding that is both widespread and sudden (Bureau of Meteorology, 2018)."
@@ -348,7 +348,7 @@
   },
   "6.5": {
    "section": 6,
-   "title": "2.5 Flood damage and visitor emergencies",
+   "title": "3.15 Flood damage and visitor emergencies",
    "status": "SITE",
    "lines": [
     "During the rainy season, buildings and equipment are susceptible to damage from flash floods and sudden downpours, necessitating significant capital for repairs before they can be used again for tourism. For visitors, the lack of any nearby shelter or supply point makes emergencies extremely hard to manage."
@@ -356,7 +356,7 @@
   },
   "6.6": {
    "section": 6,
-   "title": "2.6 Existing campgrounds and safety points",
+   "title": "3.16 Existing campgrounds and safety points",
    "status": "SITE",
    "lines": [
     "Camping is currently kept outside the national park boundary, at the nearby campgrounds of Warokutal and Maramba (DETSI, 2024a). There is no alternative to visitors bringing their own recovery equipment. The Ranger Base at Port Stewart is currently the only staffed safety point for the whole area."
@@ -364,7 +364,7 @@
   },
   "6.7": {
    "section": 6,
-   "title": "2.7 Project aims and community consultation",
+   "title": "3.17 Project aims and community consultation",
    "status": "SITE",
    "lines": [
     "The project aims to improve visitors’ access to essential supplies at Warokutal (Safari Camp), particularly when wet-season flooding disrupts road access. It seeks to develop an affordable, flood-resilient solution that reduces maintenance and repair demands on rangers. The design should minimise disturbance to the surrounding environment and protect culturally significant areas. Consultation with Traditional Owners should guide the design and its implementation to ensure that the proposed solution respects community need and cultural values."
@@ -372,7 +372,7 @@
   },
   "7.1": {
    "section": 7,
-   "title": "3.1 User needs statement",
+   "title": "3.21 User needs statement",
    "status": "SLIDES",
    "lines": [
     "User needs statement: Visitors require consistent access to essential resources, water, and safety information to manage the risks associated with remote travel, unpredictable weather, and extended stays within Lama Lama National Park."
@@ -476,7 +476,7 @@
   },
   "9.2": {
    "section": 9,
-   "title": "3.1. Design option 1: Provisions Point",
+   "title": "4.11 Design option 1: Provisions Point",
    "status": "SITE",
    "lines": [
     "The Provisions Point is a small, raised building that stocks drinking water, non-perishable food, first-aid supplies and vehicle recovery gear. Visitors can also hire personal locator beacons (PLBs) and UHF radios to call for help. It is aimed at visitors caught out by wet-season flooding, and it earns income through sales and hire.",
@@ -486,7 +486,7 @@
   },
   "9.3": {
    "section": 9,
-   "title": "3.2. Design option 2: Elevated tent-site platform",
+   "title": "4.12 Design option 2: Elevated tent-site platform",
    "status": "SITE",
    "lines": [
     "The Elevated Tent-site Platform would raise camping areas off the ground so that tents and gear stay dry during heavy rain. It is simple and fairly cheap to build, and the raised decks handle flooding well. However, it does nothing for visitors who are stranded, as it offers no supplies, communication or vehicle recovery. Building several platforms would also spread construction across the campground, and each one would need checking by Rangers after every wet season."
@@ -494,7 +494,7 @@
   },
   "9.4": {
    "section": 9,
-   "title": "3.3. Design option 3: Distributed emergency checkpoint",
+   "title": "4.13 Design option 3: Distributed emergency checkpoint",
    "status": "SITE",
    "lines": [
     "The Distributed Emergency Checkpoint would place several small stations around Warokutal, each with basic supplies, safety information and a radio, so that visitors are not relying on one central building.",
@@ -512,7 +512,7 @@
   },
   "10.2": {
    "section": 10,
-   "title": "Decision matrix",
+   "title": "4.21 Decision matrix",
    "status": "SITE",
    "lines": [
     "Table 1. Weighted decision matrix used to compare the design options.",
@@ -549,7 +549,7 @@
   },
   "10.7": {
    "section": 10,
-   "title": "Reasons for the Provisions Point ratings (Design option 3.1)",
+   "title": "4.22 Reasons for the Provisions Point ratings (Design option 4.11)",
    "status": "SITE",
    "lines": [
     "Table 3. Reasons for the Provisions Point ratings.",
@@ -567,7 +567,7 @@
   },
   "10.8": {
    "section": 10,
-   "title": "Reasons for the Distributed Emergency Checkpoint ratings (Design option 3.3)",
+   "title": "4.23 Reasons for the Distributed Emergency Checkpoint ratings (Design option 4.13)",
    "status": "SITE",
    "lines": [
     "Table 4. Reasons for the Distributed Emergency Checkpoint ratings.",
@@ -585,7 +585,7 @@
   },
   "10.9": {
    "section": 10,
-   "title": "Reasons for the Elevated Tent-site Platform ratings (Design option 3.2)",
+   "title": "4.24 Reasons for the Elevated Tent-site Platform ratings (Design option 4.12)",
    "status": "SITE",
    "lines": [
     "Table 5. Reasons for the Elevated Tent-site Platform ratings.",
@@ -630,7 +630,7 @@
    "title": "Decision",
    "status": "SITE",
    "lines": [
-    "The Provisions Point was therefore selected. It scored highest overall and offers the best mix of visitor safety, essential supplies and income for the community."
+    "4.25 The Provisions Point was therefore selected. It scored highest overall and offers the best mix of visitor safety, essential supplies and income for the community."
    ]
   },
   "11.1": {
@@ -643,7 +643,7 @@
   },
   "11.3": {
    "section": 11,
-   "title": "7.1 Structure",
+   "title": "5.1 Structure",
    "status": "SITE",
    "lines": [
     "The building is raised 2 m on reinforced concrete piles so that floodwater can pass underneath. The walls are watertight concrete, which protects the steel reinforcement inside, and the roof is corrugated fibre cement, which handles heavy rain, strong sun and cyclone winds with very little upkeep. Shallow pile footings are used instead of deep trenches to limit digging on Country. A small solar panel and battery power the lighting and charge the radios and beacons, so no generator or fuel is needed."
@@ -651,7 +651,7 @@
   },
   "11.4": {
    "section": 11,
-   "title": "7.2 What it holds",
+   "title": "5.2 What it holds",
    "status": "SITE",
    "lines": [
     "Shelves and a counter hold drinking water, canned food, firewood, first-aid supplies and safety flyers. Two vehicle recovery kits are available for hire, each with traction boards, a tyre deflation kit, a 12V compressor, and a snatch strap with shackles. Personal locator beacons (PLBs) and UHF radios can also be hired, so visitors can contact Rangers in areas with no phone reception. A small emergency cabinet stocked with water and a UHF radio is opened with a code given at check-in, so help is available even when no Ranger is on site."
@@ -659,7 +659,7 @@
   },
   "11.5": {
    "section": 11,
-   "title": "7.3 How it works",
+   "title": "5.3 How it works",
    "status": "SITE",
    "lines": [
     "A visitor checks in, buys supplies or hires gear, and returns it before leaving the area. Rangers restock weekly during the season and inspect the building twice a year, before and after the wet season. Sales and hire income covers running costs (see Cost Analysis)."
@@ -670,17 +670,17 @@
    "title": "Operating steps",
    "status": "SITE",
    "lines": [
-    "Step 1. A visitor checks in.",
-    "Step 2. Buys supplies or hires gear.",
-    "Step 3. Returns it before leaving the area.",
-    "Step 4. Rangers restock weekly during the season.",
-    "Step 5. Rangers inspect the building twice a year, before and after the wet season.",
-    "Step 6. Sales and hire income covers running costs (see Cost Analysis)."
+    "5.31 A visitor checks in.",
+    "5.32 Buys supplies or hires gear.",
+    "5.33 Returns it before leaving the area.",
+    "5.34 Rangers restock weekly during the season.",
+    "5.35 Rangers inspect the building twice a year, before and after the wet season.",
+    "5.36 Sales and hire income covers running costs (see Cost Analysis)."
    ]
   },
   "11.10": {
    "section": 11,
-   "title": "7.4 Community concerns",
+   "title": "5.4 Community concerns",
    "status": "SITE",
    "lines": [
     "The likely concerns and how the design addresses them:",
@@ -693,7 +693,7 @@
   },
   "12.1": {
    "section": 12,
-   "title": "Purpose",
+   "title": "6.1 Purpose",
    "status": "SITE",
    "lines": [
     "The prototype was made to show what the Provisions Point would look like and to check that its layout works in the space available."
@@ -701,7 +701,7 @@
   },
   "12.2": {
    "section": 12,
-   "title": "How it was built",
+   "title": "6.2 How it was built",
    "status": "SITE",
    "lines": [
     "The model was built in Blender. AI was used to generate basic shapes quickly, which were then arranged, resized and assembled into the building. The model uses the same materials as the design: reinforced concrete piles, watertight concrete walls and a corrugated fibre cement roof, on elevated ground. Each part was then measured in Blender at a 1:1 scale so it could be checked against the design."
@@ -709,29 +709,67 @@
   },
   "12.3": {
    "section": 12,
-   "title": "Testing",
+   "title": "6.3 Testing approach",
    "status": "SITE",
    "lines": [
-    "The model was measured and checked against the design and cost table:",
-    "Floor area: the footprint was measured at about 85.6 m², more than three times the 24 m² building that was costed.",
-    "Raised floor: the lowest column sections measure about 2 m, matching the design.",
-    "Wall thickness: the walls measure about 19 cm, a realistic thickness for concrete walls.",
-    "Roof fit: checked from all sides, the roof sits flush against the walls with no gaps.",
-    "Storage: the hire kits and supplies fit on the shelves and counter, but the items are hard to identify.",
-    "Match with cost table: spare tyres, a bike stand and fuel appear in the model, but are not part of the design."
+    "The Blender prototype was used to check the building’s dimensions, arrangement of equipment and consistency with the proposed design and cost estimate. The checks covered floor area, raised supports, wall thickness, roof fit and storage."
+   ]
+  },
+  "12.5": {
+   "section": 12,
+   "title": "6.4 Floor area: prototype versus costed design",
+   "status": "SITE",
+   "lines": [
+    "The prototype footprint measured approximately 85.6 m², compared with the 24 m² building used in the cost estimate. The model therefore has approximately 3.57 times the intended floor area.",
+    "This difference means the current prototype does not demonstrate that the proposed layout fits within the costed building. The next version will use a footprint of approximately 6 m × 4 m. Its storage, counter and circulation space will then need to be checked again."
+   ]
+  },
+  "12.6": {
+   "section": 12,
+   "title": "6.5 Raised supports and wall dimensions",
+   "status": "SITE",
+   "lines": [
+    "The lowest column sections measured approximately 2 m, matching the dimension described in the design. The walls measured approximately 19 cm thick.",
+    "These measurements record the geometry of the digital model."
+   ]
+  },
+  "12.7": {
+   "section": 12,
+   "title": "6.6 Roof fit and visible gaps",
+   "status": "SITE",
+   "lines": [
+    "The roof was visually checked from all sides. It appeared to meet the walls without visible gaps in the model.",
+    "This check assessed the alignment of the modelled parts."
+   ]
+  },
+  "12.8": {
+   "section": 12,
+   "title": "6.7 Storage layout and equipment identification",
+   "status": "SITE",
+   "lines": [
+    "The model showed supplies placed on shelves and the counter. However, some items were difficult to identify, making it harder to compare the model with the intended equipment list.",
+    "The next version will use clearer equipment shapes and labels. Storage will also be checked again after the building is reduced to the intended 24 m² footprint."
    ]
   },
   "12.4": {
    "section": 12,
-   "title": "Results",
+   "title": "6.8 Testing findings and planned improvements",
    "status": "SITE",
    "lines": [
-    "The model showed that the building is well supported, sits on higher ground and is raised about 2 m, as in the design. The main problem was size. The model is far larger than the 24 m² building that was costed, so the next version will be scaled down to about 6 m by 4 m to match the cost estimate. The interior items will be given more detail, and items that are not part of the design will be removed."
+    "The checks identified the oversized footprint as the main issue.",
+    "The next prototype will address this by reducing the footprint to approximately 6 m × 4 m and improving equipment identification.",
+    "| Check | Recorded finding | Planned next step |",
+    "| --- | --- | --- |",
+    "| Floor area | Approximately 85.6 m² versus the costed 24 m² | Reduce the footprint to approximately 6 m × 4 m |",
+    "| Raised supports | Lowest column sections measured approximately 2 m | Recheck dimensions in the revised model |",
+    "| Wall thickness | Approximately 19 cm | Recheck thickness in the revised model |",
+    "| Roof fit | No visible gaps found during visual inspection | Recheck alignment after resizing |",
+    "| Storage | Equipment fits in the current model, but some items are difficult to identify | Improve detail and check storage within the smaller footprint |"
    ]
   },
   "13.1": {
    "section": 13,
-   "title": "9.1 How will your solution be constructed and how will the community be trained in its construction and use?",
+   "title": "7.1 How will your solution be constructed and how will the community be trained in its construction and use?",
    "status": "SITE",
    "lines": [
     "First, the project will be constructed on dry land; it will require a crew of four workers and is expected to take eight weeks to complete. Second, regarding site selection and building materials: the structure will be situated on flood-safe terrain, featuring an elevated foundation built on reinforced concrete piles, walls constructed from watertight concrete, and a roof made of corrugated fiber cement. We will also provide the rangers with a four-hour training session on how to use the facility and will leave an instructional manual inside the shelter."
@@ -739,7 +777,7 @@
   },
   "13.2": {
    "section": 13,
-   "title": "9.2 How will your solution be introduced to the client or community and used, constructed, managed, maintained etc. over time?",
+   "title": "7.2 How will your solution be introduced to the client or community and used, constructed, managed, maintained etc. over time?",
    "status": "SITE",
    "lines": [
     "First, the integration of the store will be co-designed with the Yintjingga Aboriginal Corporation, ensuring operations align perfectly with cultural protocols. Following this, YAC approval takes about 6 months. During operation, the ranger-operated supply and rental shelter is staffed by rangers. Rangers restock weekly, July to November. For maintenance, 2 checks are carried out by 2 rangers a year, before and after the wet season. Finally, at the end of its life: 4 workers, 1 to 2 weeks. Reuse shelves and kits. Recycle steel and roof sheets."
@@ -747,7 +785,7 @@
   },
   "13.3": {
    "section": 13,
-   "title": "9.3 How will the design be evaluated?",
+   "title": "7.3 How will the design be evaluated?",
    "status": "SITE",
    "lines": [
     "Feedback will be collected periodically from tourists and residents, aiming for at least 80% satisfaction. Rental equipment will be inspected monthly, with damaged items repaired or replaced. Additionally, conditions can be evaluated before and after the rainy season, and annual expenditure and revenue can be tracked to ensure sustainable operations."
@@ -755,7 +793,7 @@
   },
   "13.4": {
    "section": 13,
-   "title": "9.4 How will your project affect the future workings of the client or community?",
+   "title": "7.4 How will your project affect the future workings of the client or community?",
    "status": "SITE",
    "lines": [
     "The solution improves visitor safety and supports self-recovery for stranded vehicles. As a result, visitors can recover their own vehicles and access emergency supplies close by. In addition, the solution reduces ranger workload and generates community revenue. Specifically, the solution generates a reliable, passive income stream through equipment rentals; this directly funds the Lama Lama Rangers."
@@ -763,7 +801,7 @@
   },
   "13.5": {
    "section": 13,
-   "title": "9.5 How can the client or community take ownership of the project?",
+   "title": "7.5 How can the client or community take ownership of the project?",
    "status": "SITE",
    "lines": [
     "The project will be handed over to the Yintjingga Aboriginal Corporation (YAC) and Lama Lama Rangers after construction. YAC will oversee management and ensure the facility follows local cultural rules and expections, at the same time Rangers will be managing daily operations, equipment rentals, weekly restocking and some inspections regularly. Revenue from sales and rentals will cover ongoing operating costs, which allows the community to manage the project independently in the long term."
@@ -771,7 +809,7 @@
   },
   "13.6": {
    "section": 13,
-   "title": "9.6 How will the solution be repaired if something goes wrong?",
+   "title": "7.6 How will the solution be repaired if something goes wrong?",
    "status": "SITE",
    "lines": [
     "According to the established maintenance procedure, Rangers are responsible for documenting and reporting malfunctions. Damaged equipment shall be taken out of service and either repaired or replaced. Issues involving structural or electrical damage will be handled by qualified contractors. Equipment or facilities may only be returned to service once repairs have been completed and safety inspections have been conducted."
@@ -787,7 +825,7 @@
   },
   "14.2": {
    "section": 14,
-   "title": "Build and stock cost",
+   "title": "8.11 Build and stock cost",
    "status": "SITE",
    "lines": [
     "Table 3. Build and stock cost (AUD)",
@@ -813,7 +851,7 @@
   },
   "14.3": {
    "section": 14,
-   "title": "Projected revenue and profit",
+   "title": "8.16 Projected revenue and profit",
    "status": "SLIDES",
    "lines": [
     "Table 4. Projected revenue and profit (AUD)",
@@ -829,7 +867,7 @@
   },
   "14.4": {
    "section": 14,
-   "title": "Funding",
+   "title": "8.13 Funding",
    "status": "SLIDES",
    "lines": [
     "Table 5. Funding sources",
@@ -842,7 +880,7 @@
   },
   "14.5": {
    "section": 14,
-   "title": "Maintenance and end-of-life costs",
+   "title": "8.18 Maintenance and end-of-life costs",
    "status": "SITE",
    "lines": [
     "At the end of the facility's estimated 25-year lifespan, dismantling, transportation, recycling and waste disposal are expected to cost approximately $8,000, subject to contractor quotations. Reusable equipment and recyclable construction materials will be recovered wherever possible."
@@ -850,7 +888,7 @@
   },
   "14.6": {
    "section": 14,
-   "title": "Funding plan",
+   "title": "8.12 Funding plan",
    "status": "SITE",
    "lines": [
     "The project aims to secure $86,600 through government and community grants, with the remaining $786.65 funded through community contributions or fundraising. Potential funding opportunities include Queensland regional tourism and community infrastructure grant programs, subject to eligibility."
@@ -858,7 +896,7 @@
   },
   "14.7": {
    "section": 14,
-   "title": "Annual operating costs",
+   "title": "8.14 Annual operating costs",
    "status": "SITE",
    "lines": [
     "Annual operating costs are estimated at $3,950, covering routine inspections, cleaning, minor repairs and equipment maintenance. An additional $2,500 is allocated for replenishing supplies, although this is not included in the operating cost figures presented in the revenue projection table."
@@ -866,7 +904,7 @@
   },
   "14.8": {
    "section": 14,
-   "title": "Expected demand and revenue",
+   "title": "8.15 Expected demand and revenue",
    "status": "SITE",
    "lines": [
     "Based on the projected revenue table, the facility is expected to serve 220 visitors and provide 44 equipment rentals annually, generating approximately $8,950 in revenue. These figures are preliminary planning estimates based on expected demand during the visitor season and should be verified against actual visitor numbers and rental records."
@@ -874,7 +912,7 @@
   },
   "14.9": {
    "section": 14,
-   "title": "Long-term operating surplus",
+   "title": "8.17 Long-term operating surplus",
    "status": "SITE",
    "lines": [
     "The financial projection table estimates an annual operating surplus of $5,000, equivalent to $125,000 over 25 years under the base scenario. However, this simplified projection excludes additional restocking costs, inflation, equipment replacement and major repairs. Equipment will be inspected regularly and replaced when necessary, while maintenance budgets and rental prices will be reviewed annually to account for inflation."
@@ -882,7 +920,7 @@
   },
   "14.10": {
    "section": 14,
-   "title": "Financial sustainability",
+   "title": "8.19 Financial sustainability",
    "status": "SITE",
    "lines": [
     "Overall, the project shows potential for long-term financial sustainability, provided that operating costs remain controlled, visitor demand meets expectations and sufficient funds are reserved for maintenance, equipment replacement and eventual disposal."
@@ -969,7 +1007,7 @@
   },
   "16.3": {
    "section": 16,
-   "title": "Recommendations",
+   "title": "10.1 Recommendations",
    "status": "SITE",
    "lines": [
     "What further activity (outside your scope) is needed on the part of the client to ensure the project is successful?",
@@ -978,7 +1016,7 @@
   },
   "16.4": {
    "section": 16,
-   "title": "Community consultation",
+   "title": "10.11 Community consultation",
    "status": "SITE",
    "lines": [
     "A community consultation is recommended to ensure the Lama Lama community’s requirements and expectations are properly met."
@@ -986,7 +1024,7 @@
   },
   "16.5": {
    "section": 16,
-   "title": "Cost and funding",
+   "title": "10.12 Cost and funding",
    "status": "SITE",
    "lines": [
     "The cost and funding should be verified, which aims to make sure the project can be fully supported on time."
@@ -994,7 +1032,7 @@
   },
   "16.6": {
    "section": 16,
-   "title": "Regular maintenance",
+   "title": "10.13 Regular maintenance",
    "status": "SITE",
    "lines": [
     "Regular maintenance to the project is recommended due to unavoidable wear and tear of equipment, infrastructure, buildings, etc."
@@ -1002,7 +1040,7 @@
   },
   "16.7": {
    "section": 16,
-   "title": "Visitor feedback",
+   "title": "10.14 Visitor feedback",
    "status": "SITE",
    "lines": [
     "Feedback from tourists and users should be collected after the first season to find improvements."
@@ -1010,7 +1048,7 @@
   },
   "16.8": {
    "section": 16,
-   "title": "Card payments",
+   "title": "10.15 Card payments",
    "status": "SITE",
    "lines": [
     "Card payment (EFTPOS) should be added, as the current lack of card payments limits income for the community."
@@ -1092,17 +1130,11 @@
   },
   "18.3": {
    "section": 18,
-   "title": "Appendix 3: Statement of AI use and prompt log",
+   "title": "13.11 Statement of AI use and prompt log",
    "status": "SITE",
    "lines": [
     "The team used generative AI in four ways. Claude (Anthropic, 2026) helped find and summarise public sources and prices, draft background and criteria text, build the cost and revenue calculations, and turn the team's slides and research into website text. Gemini (Google, 2026) made the concept images for the team's presentation. An AI image tool made the concept images on this site. An AI coding agent placed the text and images into the website. The team used AI to work faster, keep the site consistent and show the idea visually. The team chose the design, built the Blender prototype and checked figures and citations against sources. AI images are concept images, not photographs. This is a draft declaration."
    ]
-  },
-  "18.5": {
-   "section": 18,
-   "title": "Appendix 4: Full prototype test results",
-   "status": "MISSING",
-   "lines": []
   },
   "19.1": {
    "section": 19,
@@ -1122,7 +1154,7 @@
   },
   "20.1": {
    "section": 20,
-   "title": "Minutes",
+   "title": "11.2 Minutes",
    "status": "SITE",
    "lines": [
     "Task allocations were updated after this meeting. See the Group Declaration for final contributions."
@@ -1142,7 +1174,7 @@
   },
   "20.3": {
    "section": 20,
-   "title": "1. Agenda",
+   "title": "11.21 Agenda",
    "status": "SITE",
    "lines": [
     "Review the Assessment Task 3 website structure, rubric, and current progress.",
@@ -1152,7 +1184,7 @@
   },
   "20.4": {
    "section": 20,
-   "title": "2. Action Items",
+   "title": "11.22 Action Items",
    "status": "SITE",
    "lines": [
     "| Action Item | Responsible Person | Due Date |",
@@ -1168,7 +1200,7 @@
   },
   "20.5": {
    "section": 20,
-   "title": "3. Other items",
+   "title": "11.23 Other items",
    "status": "SITE",
    "lines": [
     "The group agreed to use a consistent visual theme and formatting across all website pages.",
@@ -1176,12 +1208,20 @@
     "AI-use evidence and Prompt Log materials will be collected for the appendices together with the Group Charter and Meeting Minutes."
    ]
   },
-  "21.1": {
-   "section": 21,
-   "title": "Team Charter",
+  "20.6": {
+   "section": 20,
+   "title": "11.3 Statement of AI use and prompt log",
    "status": "SITE",
    "lines": [
-    "Group Charter",
+    "The team used generative AI in four ways. Claude (Anthropic, 2026) helped find and summarise public sources and prices, draft background and criteria text, build the cost and revenue calculations, and turn the team's slides and research into website text. Gemini (Google, 2026) made the concept images for the team's presentation. An AI image tool made the concept images on this site. An AI coding agent placed the text and images into the website. The team used AI to work faster, keep the site consistent and show the idea visually. The team chose the design, built the Blender prototype and checked figures and citations against sources. AI images are concept images, not photographs. This is a draft declaration."
+   ]
+  },
+  "21.1": {
+   "section": 21,
+   "title": "11.1 Team Charter",
+   "status": "SITE",
+   "lines": [
+    "11.11 Group Charter",
     "GROUP CHARTER",
     "Group name:",
     "FATZCC"
@@ -1189,7 +1229,7 @@
   },
   "21.2": {
    "section": 21,
-   "title": "Our ground rules:",
+   "title": "11.12 Our ground rules:",
    "status": "SITE",
    "lines": [
     "Other than in class, when will we meet (what time, how often)?",
@@ -1214,7 +1254,7 @@
   },
   "21.3": {
    "section": 21,
-   "title": "Our goals:",
+   "title": "11.13 Our goals:",
    "status": "SITE",
    "lines": [
     "What is our group trying to accomplish?",
@@ -1223,7 +1263,7 @@
   },
   "21.4": {
    "section": 21,
-   "title": "Leadership",
+   "title": "11.14 Leadership",
    "status": "SITE",
    "lines": [
     "Will we appoint a leader?",
@@ -1234,7 +1274,7 @@
   },
   "21.5": {
    "section": 21,
-   "title": "Our commitment to the charter:",
+   "title": "11.15 Our commitment to the charter:",
    "status": "SITE",
    "lines": [
     "We, the group named agree with the answers in our charter and will try our best to uphold them.",

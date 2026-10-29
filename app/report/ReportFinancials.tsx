@@ -1,5 +1,7 @@
 "use client";
 
+import { ReportHeadingAnchor } from "./ReportHeadingAnchor";
+
 import { useState, type ReactNode, type CSSProperties } from "react";
 import { motion } from "motion/react";
 import { useReducedMotion } from "../../components/useReducedMotion";
@@ -41,7 +43,7 @@ export function ReportFinancials({ code, title, status, caption, headings, rows,
   const toggle = (index: number) => setPinned(previous => previous === index ? null : index);
 
   return <Block code={code} status={status}>
-    <h3>{title}</h3>
+    <h3><ReportHeadingAnchor text={title} />{title}</h3>
     <div className={shared.layout} onKeyDown={event => { if (event.key === "Escape") { setPinned(null); setHover(null); } }}>
       <div className={tableStyles.tableWrap}>
         <table className={`${tableStyles.table} ${shared.table} ${styles.table}`}>

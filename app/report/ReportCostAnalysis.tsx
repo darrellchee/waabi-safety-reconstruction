@@ -1,3 +1,4 @@
+import { ReportHeadingAnchor } from "./ReportHeadingAnchor";
 import { Block } from "./ReportCodes";
 import { ReportCost } from "./ReportCost";
 import { ReportFinancials } from "./ReportFinancials";
@@ -7,7 +8,7 @@ import styles from "./ReportCostAnalysis.module.css";
 
 function Narrative({ code, closing = false }: { code: string; closing?: boolean }) {
   return <Block code={code} status={status(code)} className={closing ? styles.closing : styles.narrative}>
-    <h3>{title(code)}</h3>
+    <h3><ReportHeadingAnchor text={title(code)} />{title(code)}</h3>
     <Paragraphs text={text(code)} />
   </Block>;
 }

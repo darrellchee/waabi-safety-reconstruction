@@ -1,3 +1,4 @@
+import { ReportHeadingAnchor } from "./ReportHeadingAnchor";
 import type { CSSProperties } from "react";
 import { ReportDesignStages } from "./ReportDesignStages";
 import { Block } from "./ReportCodes";
@@ -30,7 +31,7 @@ export function ReportDesign() {
     </Block>
     <section className={`${styles.row} ${styles.structureRow}`} aria-labelledby="design-structure-heading">
       <Block code="11.3" status={status("11.3")} className={styles.copy}>
-        <h2 id="design-structure-heading">{title("11.3")}</h2>
+        <h2 id="design-structure-heading"><ReportHeadingAnchor text={title("11.3")} />{title("11.3")}</h2>
         <p>{text("11.3")}</p>
       </Block>
       <div className={styles.structureVisuals} aria-label="Structure concept and material reference images">
@@ -52,7 +53,7 @@ export function ReportDesign() {
     </section>
     <section className={`${styles.row} ${styles.stockRow}`} aria-labelledby="design-stock-heading">
       <Block code="11.4" status={status("11.4")} className={styles.copy}>
-        <h2 id="design-stock-heading">{title("11.4")}</h2>
+        <h2 id="design-stock-heading"><ReportHeadingAnchor text={title("11.4")} />{title("11.4")}</h2>
         <p>{text("11.4")}</p>
       </Block>
       <div className={styles.stockGrid} aria-label="Interior concept and recovery equipment reference images">
@@ -75,7 +76,7 @@ export function ReportDesign() {
     </section>
     <section className={`${styles.row} ${styles.communityRow}`} aria-labelledby="design-community-heading">
       <Block code="11.10" status={status("11.10")} className={styles.copy}>
-        <h2 id="design-community-heading">{title("11.10")}</h2>
+        <h2 id="design-community-heading"><ReportHeadingAnchor text={title("11.10")} />{title("11.10")}</h2>
         <p>{lines("11.10")[0]}</p>
         <ul>{lines("11.10").slice(1).map(concern => <li key={concern}>{concern}</li>)}</ul>
       </Block>

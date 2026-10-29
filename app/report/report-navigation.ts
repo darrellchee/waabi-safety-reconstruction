@@ -9,9 +9,8 @@ export const reportNavigation = [
   { label: "Cost", id: "cost", href: "/cost" },
   { label: "Other Considerations", id: "other-considerations", href: "/other-considerations" },
   { label: "Recommendations", id: "recommendations", href: "/recommendations" },
-  { label: "Supporting Documents", id: "supporting-documents", href: "/supporting-documents" },
+  { label: "Appendix and Supporting Documentation", id: "supporting-documents", href: "/appendix-and-supporting-documentation" },
   { label: "References", id: "references", href: "/references" },
-  { label: "Appendices", id: "appendices", href: "/appendices" },
   { label: "AI Logs", id: "ai-logs", href: "/ai-logs" },
 ] as const;
 

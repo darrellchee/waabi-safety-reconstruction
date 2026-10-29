@@ -1,4 +1,8 @@
+import type { CSSProperties } from "react";
 import styles from "./ReportImplementation.module.css";
+import art from "./ReportImplementationMotion.module.css";
+
+const shoulderMotion = { transformOrigin: "84px 94px", "--art-angle": "-4deg" } as CSSProperties;
 
 export const repairCards = [
   { title: "Document faults", subtitle: "Rangers record equipment or facility malfunctions." },
@@ -35,25 +39,39 @@ export function ReportRepairIllustration({ step }: { step: number }) {
 
     {step === 0 && <>
       <Person x={84} />
-      <path d="M84 94 63 116 75 141m9-47 42 19 47 25" className={styles.figure} />
+      <path d="M84 94 63 116 75 141" className={styles.figure} />
+      <g className={art.rotate} style={shoulderMotion}>
+        <path d="M84 94 126 113 173 138" className={styles.figure} />
+      </g>
       <g className={styles.props}>
         <path d="M169 104h65v82h-65Zm20 0v-7h25v7" className={styles.paper} />
-        <path d="M182 119h39m-39 35h39m-39 15h28m-38-31 10-22" />
-        <path d="m186 137 8-6 7 7 10-6" className={styles.accent} />
+        <path d="M182 119h39m-39 35h39m-39 15h28" />
+        <g className={art.rotate} style={shoulderMotion}>
+          <path d="m172 138 10-22" />
+        </g>
+        <path d="m186 137 8-6 7 7 10-6" className={`${styles.accent} ${art.draw}`} pathLength={1} />
       </g>
       <Kit x={244} y={176} />
-      <path d="m263 179-6 9 9 5-6 9" className={styles.accent} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="m263 179-6 9 9 5-6 9" className={`${styles.accent} ${art.pulse}`} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
     </>}
 
     {step === 1 && <>
       <Person x={84} />
-      <path d="M84 94 63 116 75 141m9-47 25 15 13-17" className={styles.figure} />
+      <path d="M84 94 63 116 75 141" className={styles.figure} />
+      <g className={art.rotate} style={shoulderMotion}>
+        <path d="M84 94 109 109 122 92" className={styles.figure} />
+        <g className={styles.props}>
+          <path d="M119 68h23v40h-23Zm5 0V50m1 43h10m-10 7h10" className={styles.paper} />
+          <path d="M130 77h1m7 0h1" className={`${styles.accent} ${art.pulse}`} />
+          <path d="m156 68q14 11 0 23" className={`${styles.accent} ${art.reveal}`} />
+          <path d="m165 61q23 18 0 38" className={`${styles.accent} ${art.reveal}`} />
+        </g>
+      </g>
       <g className={styles.props}>
-        <path d="M119 68h23v40h-23Zm5 0V50m1 43h10m-10 7h10" className={styles.paper} />
-        <path d="M130 77h1m7 0h1m17-9q14 11 0 23m9-30q23 18 0 38M177 124h22m-9-9 9 9-9 9" className={styles.accent} />
+        <path d="M177 124h22m-9-9 9 9-9 9" className={styles.accent} />
         <path d="M211 105h60v81h-60Zm18 0v-7h24v7" className={styles.paper} />
         <path d="M223 120h36m-36 15h36m-36 15h25" />
-        <path d="m228 168 6 6 13-15" className={styles.accent} />
+        <path d="m228 168 6 6 13-15" className={`${styles.accent} ${art.draw}`} pathLength={1} />
       </g>
     </>}
 
@@ -62,49 +80,65 @@ export function ReportRepairIllustration({ step }: { step: number }) {
       <path d="M84 94 63 116 75 141m9-47 39 24 29 25" className={styles.figure} />
       <Kit x={202} y={110} />
       <g className={styles.props}>
-        <circle cx="223" cy="128" r="36" className={styles.accent} />
-        <path d="m198 103 50 50" className={styles.accent} />
+        <g className={art.pulse}>
+          <circle cx="223" cy="128" r="36" className={styles.accent} />
+          <path d="m198 103 50 50" className={styles.accent} />
+        </g>
         <path d="M151 169h133v17H151Zm9 17v26m115-26v26" className={styles.paper} />
-        <path d="m168 170-10 14m33-14-10 14m33-14-10 14m33-14-10 14m33-14-10 14" className={styles.accent} />
+        {[168, 191, 214, 237, 260].map(x => <path key={x} d={`M${x} 170l-10 14`} className={`${styles.accent} ${art.draw}`} pathLength={1} />)}
       </g>
     </>}
 
     {step === 3 && <>
       <Person x={84} ranger={false} />
-      <path d="M84 94 63 116 75 141m9-47 52 25 48 22" className={styles.figure} />
+      <path d="M84 94 63 116 75 141" className={styles.figure} />
+      <g className={art.rotate} style={shoulderMotion}>
+        <path d="M84 94 136 119 184 141" className={styles.figure} />
+      </g>
       <Kit x={204} y={151} />
       <g className={styles.props}>
         <path d="M178 189h99m-88 0v23m76-23v23" />
-        <path d="m180 145 25-25a12 12 0 0 1 15-15l-7 7 7 7 7-7a12 12 0 0 1-15 15l-25 25Z" className={styles.paper} />
-        <path d="m252 116 6 6 12-14" className={styles.accent} />
+        <g className={art.rotate} style={shoulderMotion}>
+          <path d="m180 145 25-25a12 12 0 0 1 15-15l-7 7 7 7 7-7a12 12 0 0 1-15 15l-25 25Z" className={styles.paper} />
+        </g>
+        <path d="m252 116 6 6 12-14" className={`${styles.accent} ${art.draw}`} pathLength={1} />
       </g>
     </>}
 
     {step === 4 && <>
       <Person x={84} ranger={false} />
-      <path d="M84 94 63 116 75 141m9-47 26 23 33 21" className={styles.figure} />
-      <Kit x={143} y={133} />
+      <path d="M84 94 63 116 75 141" className={styles.figure} />
+      <g className={art.rotate} style={shoulderMotion}>
+        <path d="M84 94 110 117 143 138" className={styles.figure} />
+        <Kit x={143} y={133} />
+      </g>
       <g className={styles.props}>
         <path d="m191 93 45-38 46 38m-81-9v98h70V84m-58 98v30m45-30v30m-57-30h70" />
         <path d="M216 112h39v48h-39Zm4-15h15v10h-15Z" className={styles.paper} />
         <path d="m239 121-10 15h10l-8 15" className={styles.accent} />
         <path d="M249 132v8" />
         <path d="M134 49h35v39h-35Zm7 39-4 13 11-5 10 5-3-13" className={styles.paper} />
-        <path d="m142 68 6 6 12-14" className={styles.accent} />
+        <path d="m142 68 6 6 12-14" className={`${styles.accent} ${art.draw}`} pathLength={1} />
       </g>
     </>}
 
     {step === 5 && <>
       <Person x={84} />
-      <path d="M84 94 62 116 50 134m34-40 43 19 32 15" className={styles.figure} />
+      <path d="M84 94 62 116 50 134" className={styles.figure} />
+      <g className={art.rotate} style={shoulderMotion}>
+        <path d="M84 94 127 113 159 128" className={styles.figure} />
+      </g>
       <g className={styles.props}>
         <path d="M32 127h34v59H32Zm8 0v-7h18v7" className={styles.paper} />
-        <path d="m39 142 4 4 10-11m-14 26 4 4 10-11" className={styles.accent} />
-        <path d="m159 128 10-10" />
-        <circle cx="178" cy="108" r="14" className={styles.lens} />
-        <path d="m173 105 3-3" className={styles.detail} />
+        <path d="m39 142 4 4 10-11" className={`${styles.accent} ${art.draw}`} pathLength={1} />
+        <path d="m39 161 4 4 10-11" className={`${styles.accent} ${art.draw}`} pathLength={1} />
+        <g className={art.rotate} style={shoulderMotion}>
+          <path d="m159 128 10-10" />
+          <circle cx="178" cy="108" r="14" className={styles.lens} />
+          <path d="m173 105 3-3" className={styles.detail} />
+        </g>
         <path d="M182 184h101m-91 0v28m81-28v28" />
-        <path d="m221 103 12 12 23-29" className={styles.accent} />
+        <path d="m221 103 12 12 23-29" className={`${styles.accent} ${art.draw}`} pathLength={1} />
       </g>
       <Kit x={211} y={145} />
     </>}

@@ -1,5 +1,7 @@
 "use client";
 
+import { ReportHeadingAnchor } from "./ReportHeadingAnchor";
+
 import { Fragment, forwardRef, useEffect, useRef, useState } from "react";
 import { AnimatePresence, MotionConfig, motion, useInView, useMotionValue, useMotionValueEvent, usePresenceData, useScroll, useTransform } from "motion/react";
 import { useReducedMotion } from "../../components/useReducedMotion";
@@ -50,7 +52,7 @@ export function ReportOptions({ overview = false }: { overview?: boolean }) {
     ? lines("2.5").map((body, index) => ({ heading: overviewDiagrams[index].title, body, code: undefined, image: undefined, alt: overviewDiagrams[index].description }))
     : content.options.map((item, index) => ({ heading: title(`9.${index + 2}`), body: text(`9.${index + 2}`), code: `9.${index + 2}`, image: `/assets/${item.image}`, alt: "Concept image: a raised shelter on concrete piles with brown floodwater around the piles in the wet season" }));
   const count = items.length;
-  const heading = overview ? "Overview of Design" : "Design Options";
+  const heading = overview ? "1.3 Overview of Design" : "4.1 Design Options";
   const [active, setActive] = useState(0);
   const mobile = useMobile();
   const reduced = useReducedMotion();
@@ -106,10 +108,10 @@ export function ReportOptions({ overview = false }: { overview?: boolean }) {
       <div className="philosophy-intro container">
         <SectionBadge n={overview ? 2 : 9} />
         {overview && <>
-          <h3>{title("2.4")}</h3>
+          <h3><ReportHeadingAnchor text={title("2.4")} />{title("2.4")}</h3>
           <Block as="p" code="2.4" status={status("2.4")}><Copy text={text("2.4")} /></Block>
         </>}
-        <h2 className={overview ? styles.overviewHeading : undefined}>{overview ? <Title text={heading} /> : heading}</h2>
+        <h2 className={overview ? styles.overviewHeading : undefined}><ReportHeadingAnchor text={heading} />{overview ? <Title text={heading} /> : heading}</h2>
         {!overview && <>
           <Block as="p" code="9.1" status={status("9.1")}><Copy text={text("9.1")} /></Block>
         </>}
@@ -131,7 +133,7 @@ export function ReportOptions({ overview = false }: { overview?: boolean }) {
             {items.map((item, index) => <motion.article id={overview ? undefined : `design-option-${item.heading.match(/^\d+\.\d+/)?.[0]}`} tabIndex={overview ? undefined : -1} className={`story-copy ${active === index ? "is-active" : ""}`} key={item.heading} {...(overview ? reveal(index === 0 ? 1 : index) : {})}>
               <motion.div className="story-copy-content" data-code={item.code} data-status={item.code ? status(item.code) : undefined} style={{ position: "relative" }} initial={false} animate={{ opacity: 1 }}>
                 {item.code && <BlockBadge code={item.code} status={status(item.code)} top={-18} />}
-                {!overview && <h3>{item.heading}</h3>}{item.body.split("\n").filter(Boolean).map((paragraph, paragraphIndex) => <p key={paragraphIndex}>{paragraph}</p>)}
+                {!overview && <h3><ReportHeadingAnchor text={item.heading} />{item.heading}</h3>}{item.body.split("\n").filter(Boolean).map((paragraph, paragraphIndex) => <p key={paragraphIndex}>{paragraph}</p>)}
               </motion.div>
             </motion.article>)}
           </div>
@@ -157,11 +159,11 @@ export function ReportSelection() {
   const ratingScale = parseTable("10.5");
   return <section id="selection" className={`safety-page technology section-space ${styles.selection}`}>
     <div className={`container section-heading ${styles.selectionHeading}`}>
-      <div><SectionBadge n={10} /><h2>Design Selection</h2></div>
+      <div><SectionBadge n={10} /><h2><ReportHeadingAnchor text="4.2 Design Selection" />4.2 Design Selection</h2></div>
       <Block as="p" className="serif-description" code="10.1" status={status("10.1")}><Copy text={text("10.1")} /></Block>
     </div>
     <div className="container">
-      <Block code="10.2" status={status("10.2")}><h3>{title("10.2")}</h3><ReportDecisionMatrix caption={matrix.caption} headings={matrix.head} rows={matrix.rows} /></Block>
+      <Block code="10.2" status={status("10.2")}><h3><ReportHeadingAnchor text={title("10.2")} />{title("10.2")}</h3><ReportDecisionMatrix caption={matrix.caption} headings={matrix.head} rows={matrix.rows} /></Block>
       <div className={styles.ratingDetails}>
         <Block code="10.5" status={status("10.5")} className={styles.ratingScale}>
           <table>
@@ -178,7 +180,7 @@ export function ReportSelection() {
           const heading = title(code);
           const optionLabel = heading.match(/\(Design option (\d+\.\d+)\)$/);
           return <div className={styles.optionRating} key={code}>
-            <h3 className={styles.optionRatingHeading}>{heading.replace(/\s*\(Design option \d+\.\d+\)$/, "")} {optionLabel && <a className={styles.optionLink} href={`#design-option-${optionLabel[1]}`} onClick={event => {
+            <h3 className={styles.optionRatingHeading}><ReportHeadingAnchor text={heading} />{heading.replace(/\s*\(Design option \d+\.\d+\)$/, "")} {optionLabel && <a className={styles.optionLink} href={`#design-option-${optionLabel[1]}`} onClick={event => {
               if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
               const target = document.getElementById(`design-option-${optionLabel[1]}`);
               if (!target) return;
@@ -203,7 +205,7 @@ export function ReportSelection() {
       </div>
       <Block as="h3" code="10.4" status={status("10.4")} className={styles.selectionConclusion}>
         <motion.span className={styles.conclusionUnderline} initial={reduced ? false : { backgroundSize: "0% 2px" }} whileInView={{ backgroundSize: "100% 2px" }} viewport={{ once: true, amount: .5 }} transition={{ duration: reduced ? 0 : .9, ease }}>
-          {text("10.4")}
+          <ReportHeadingAnchor text={text("10.4")} />{text("10.4")}
         </motion.span>
       </Block>
     </div>

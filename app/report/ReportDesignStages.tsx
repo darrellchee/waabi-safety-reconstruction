@@ -1,5 +1,7 @@
 "use client";
 
+import { ReportHeadingAnchor } from "./ReportHeadingAnchor";
+
 import { useLayoutEffect, useRef, useState, type CSSProperties } from "react";
 import { motion, useScroll, useTransform, type MotionValue } from "motion/react";
 import { useReducedMotion } from "../../components/useReducedMotion";
@@ -61,12 +63,12 @@ export function ReportDesignStages() {
     return () => { observer.disconnect(); window.removeEventListener("resize", measure); };
   }, []);
 
-  return <div ref={scene} className={styles.scrollScene} style={{ "--step-nav": `${size.nav}px`, "--step-travel": `${reduced ? 0 : size.travel}px`, "--step-height": `${size.height}px` } as CSSProperties}>
+  return <div ref={scene} data-operating-steps="" className={styles.scrollScene} style={{ "--step-nav": `${size.nav}px`, "--step-travel": `${reduced ? 0 : size.travel}px`, "--step-height": `${size.height}px` } as CSSProperties}>
     <section ref={stage} className={`home-page ${styles.carousel}`} aria-labelledby="design-how-heading">
     <div className="home-insights">
       <div className="home-insights-top">
         <Block code="11.5" status={status("11.5")} className={`${styles.copy} ${styles.howIntro}`}>
-          <h2 id="design-how-heading">{title("11.5")}</h2>
+          <h2 id="design-how-heading"><ReportHeadingAnchor text={title("11.5")} />{title("11.5")}</h2>
           <p>{text("11.5")}</p>
         </Block>
       </div>
@@ -79,7 +81,7 @@ export function ReportDesignStages() {
               start={size.travel > 0 ? Math.max(0, (size.inset + index * (size.card + 16) - size.viewport + size.card * .5) / size.travel) : 0}
               end={size.travel > 0 ? Math.min(1, (size.inset + index * (size.card + 16) + size.card * .5) / size.travel) : 1} />
           </div>
-          <h3>{detail}</h3>
+          <h3><ReportHeadingAnchor text={detail} />{detail}</h3>
           {!reduced && index < steps.length - 1 && <StepConnector index={index} count={steps.length - 1} progress={progress} />}
         </article>)}
       </motion.div>

@@ -1,7 +1,13 @@
+"use client";
+
+import { ReportHeadingAnchor } from "./ReportHeadingAnchor";
+
 import { Block } from "./ReportCodes";
 import { ReportConstructionIllustration, constructionCards } from "./ReportConstructionIllustration";
 import { ReportEvaluationIllustration, evaluationCards } from "./ReportEvaluationIllustration";
-import { ReportImplementationBenefitIllustration, ReportImplementationIllustration } from "./ReportImplementationIllustration";
+import { ReportImplementationIllustration } from "./ReportImplementationIllustration";
+import { ReportImplementationBenefitIllustration } from "./ReportImplementationBenefitIllustration";
+import { ReportImplementationGallery } from "./ReportImplementationGallery";
 import { ReportOwnershipIllustration, ownershipCards } from "./ReportOwnershipIllustration";
 import { ReportRepairIllustration, repairCards } from "./ReportRepairIllustration";
 import { status, text, title } from "./blocks";
@@ -30,12 +36,12 @@ function BenefitIllustration({ step }: { step: number }) {
 }
 
 const galleries = [
-  { cards: constructionCards, Illustration: ReportConstructionIllustration, label: "Construction and training for question 9.1" },
-  { cards: implementationStages, Illustration: ReportImplementationIllustration, label: "Implementation stages for question 9.2" },
-  { cards: evaluationCards, Illustration: ReportEvaluationIllustration, label: "Design evaluation for question 9.3" },
-  { cards: communityBenefits, Illustration: BenefitIllustration, label: "Community benefits for question 9.4" },
-  { cards: ownershipCards, Illustration: ReportOwnershipIllustration, label: "Community ownership for question 9.5" },
-  { cards: repairCards, Illustration: ReportRepairIllustration, label: "Repair and safety procedures for question 9.6" },
+  { cards: constructionCards, Illustration: ReportConstructionIllustration, label: "Construction and training for question 7.1" },
+  { cards: implementationStages, Illustration: ReportImplementationIllustration, label: "Implementation stages for question 7.2" },
+  { cards: evaluationCards, Illustration: ReportEvaluationIllustration, label: "Design evaluation for question 7.3" },
+  { cards: communityBenefits, Illustration: BenefitIllustration, label: "Community benefits for question 7.4" },
+  { cards: ownershipCards, Illustration: ReportOwnershipIllustration, label: "Community ownership for question 7.5" },
+  { cards: repairCards, Illustration: ReportRepairIllustration, label: "Repair and safety procedures for question 7.6" },
 ];
 
 export function ReportImplementation() {
@@ -46,21 +52,10 @@ export function ReportImplementation() {
       const answer = text(code);
       return <section key={code} className={`${styles.row} ${styles.lifecycleRow}`} aria-labelledby={headingId}>
         <Block code={code} status={status(code)} className={styles.copy}>
-          <h2 id={headingId}>{title(code)}</h2>
+          <h2 id={headingId}><ReportHeadingAnchor text={title(code)} />{title(code)}</h2>
           {answer && <p>{answer}</p>}
         </Block>
-        <div className={`${styles.gallery} ${styles.lifecycleGallery}`} role="group" aria-label={label}>
-          {cards.map((stage, step) => <figure key={stage.title}>
-            <div className={`${styles.image} ${styles.stageCanvas}`}>
-              <Illustration step={step} />
-            </div>
-            <figcaption>
-              <span className={styles.stageNumber} aria-hidden="true">0{step + 1}</span>
-              <span className={styles.stageTitle}>{stage.title}</span>
-              <span className={styles.stageSubtitle}>{stage.subtitle}</span>
-            </figcaption>
-          </figure>)}
-        </div>
+        <ReportImplementationGallery cards={cards} Illustration={Illustration} label={label} />
       </section>;
     })}
   </section>;

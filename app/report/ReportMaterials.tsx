@@ -1,5 +1,7 @@
 "use client";
 
+import { ReportHeadingAnchor } from "./ReportHeadingAnchor";
+
 import { useState, type CSSProperties } from "react";
 import { Block } from "./ReportCodes";
 import { lines, parseTable, status, title } from "./blocks";
@@ -19,7 +21,7 @@ export function ReportMaterials() {
   const [total] = lines("2.11");
   return <section className={styles.summary} aria-labelledby="materials-heading">
     <Block code="2.9" status={status("2.9")}>
-      <h2 id="materials-heading" className={styles.heading}>{title("2.9")}</h2>
+      <h2 id="materials-heading" className={styles.heading}><ReportHeadingAnchor text={title("2.9")} />{title("2.9")}</h2>
     </Block>
     <div className={styles.chartHeader}><strong>${subtotal.toLocaleString("en-AU")} <small>AUD</small></strong></div>
     <div className={styles.track} role="group" aria-label="Explore the cost breakdown" data-exploring={active !== null} onKeyDown={event => { if (event.key === "Escape") { setPinned(null); event.currentTarget.querySelector<HTMLButtonElement>(":focus")?.blur(); } }}>
@@ -40,7 +42,7 @@ export function ReportMaterials() {
       </Block>
     </div>
     <Block code="2.10" status={status("2.10")} className={styles.breakdown}>
-      <h3>{title("2.10")}</h3>
+      <h3><ReportHeadingAnchor text={title("2.10")} />{title("2.10")}</h3>
       <table className={styles.legend} aria-label="Cost breakdown">
         <thead><tr>{table.head.map(heading => <th scope="col" key={heading}>{heading}</th>)}</tr></thead>
         <tbody>{items.map((item, i) => <tr key={item.name} data-active={active === i}>

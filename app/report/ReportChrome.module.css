@@ -524,3 +524,57 @@
   .menu-panel a[aria-current="page"] { background: rgba(255, 255, 255, .12); text-decoration: underline; }
   .site-footer .footer-navigation > a { padding-block: 10px; min-height: 44px; }
 }
+
+/* Page outlines reuse More's panel, row, hover and motion styles. */
+.page-trigger { display: flex; align-items: center; border-radius: 8px; }
+.page-trigger > a { position: relative; padding-inline: 8px; border-radius: 8px; }
+.page-trigger > a::after {
+  content: ""; position: absolute; inset: auto 8px 7px; height: 2px;
+  background: currentColor; transform: scaleX(0); transform-origin: left;
+  transition: transform .25s ease;
+}
+.page-trigger > a:is(:hover, :focus-visible, .active)::after { transform: scaleX(1); }
+.page-trigger:is(:hover, :focus-within) { background: rgba(127, 127, 127, .12); }
+.nav-links > .page-menu > .page-trigger {
+  color: #fff; -webkit-text-stroke: .3px rgba(0, 0, 0, .85); paint-order: stroke fill;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .95), 0 0 4px rgba(0, 0, 0, .5);
+}
+.nav-links > .page-menu > .page-trigger[data-tone="dark"] {
+  color: #000; -webkit-text-stroke: .3px rgba(255, 255, 255, .8);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, .9);
+}
+.page-menu > .menu-panel { left: var(--outline-left, 0px); right: auto; text-shadow: none; -webkit-text-stroke: 0; }
+.menu-panel { max-height: calc(100svh - var(--report-header-height, 64px) - 20px); overflow-y: auto; overscroll-behavior: contain; }
+.menu-panel a.subheading-link { padding-left: 30px; }
+.menu-panel a.subheading-link:is(:hover, :focus-visible) { padding-left: 34px; }
+.nested-menu > .menu-panel {
+  position: static; width: 100%; max-height: none; margin-block: 4px 8px;
+  box-shadow: none; transform-origin: top left;
+}
+.menu-panel .page-trigger > a { flex: 1; min-width: 0; }
+@media (max-width: 767px) {
+  .nav-links > .page-menu { display: none; }
+  .nested-menu > .menu-panel { position: static; width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-trigger > a::after { transition: none; }
+}
+
+/* Keep numbered labels on one line and let each parent disclose its subheadings. */
+.menu-panel { width: min(460px, calc(100vw - 24px)); }
+.menu-panel a { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; align-content: center; }
+.heading-trigger { display: flex; align-items: center; }
+.heading-trigger > a { flex: 1; min-width: 0; }
+.heading-trigger > button { flex-shrink: 0; min-width: 44px; min-height: 44px; justify-content: center; border-radius: 7px; }
+.heading-trigger > button:is(:hover, :focus-visible) { background: rgba(255, 255, 255, .12); }
+.heading-trigger > button[aria-expanded="true"] svg { transform: rotate(180deg); }
+@media (max-width: 767px) {
+  .menu-panel { width: min(460px, calc(100vw - 24px)); }
+  .nested-menu > .menu-panel { width: 100%; }
+  .heading-trigger > button { min-height: 48px; }
+}
+
+.page-outline-toggle { display: none; }
+@media (max-width: 767px) {
+  .page-trigger > .page-outline-toggle { display: flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; }
+}

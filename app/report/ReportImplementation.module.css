@@ -82,6 +82,54 @@
 .stageNumber { grid-row: span 2; color: #ff286b; font-size: 12px; line-height: 22px; }
 .stageTitle { color: #242327; font-size: 15px; line-height: 22px; }
 .stageSubtitle { grid-column: 2; color: #6a665f; font-size: 13px; line-height: 1.45; }
+.sequenceGallery { position: relative; }
+.sequenceCard { position: relative; }
+.sequenceCard .stageCanvas { position: relative; }
+.sequenceCard .stageCanvas::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 4px solid transparent;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(.985);
+  transition: border-color .7s ease, opacity .6s ease, transform .9s cubic-bezier(.22, 1, .36, 1), box-shadow .8s ease;
+}
+.sequenceCard[data-card-state="active"] .stageCanvas::after { border-color: #ff286b; opacity: 1; transform: scale(1); box-shadow: 0 0 0 3px #ff286b12, 0 4px 18px #ff286b18; }
+.sequenceCard[data-card-state="complete"] .stageCanvas::after { border-color: #44845b; opacity: 1; transform: scale(1); box-shadow: 0 0 0 2px #44845b10; }
+@media (min-width: 768px) {
+  .sequenceCard:nth-of-type(3) { grid-column: 2; grid-row: 2; }
+  .sequenceCard:nth-of-type(4) { grid-column: 1; grid-row: 2; }
+}
+.sequenceArrows {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .8s ease, visibility 0s;
+}
+.sequenceGallery[data-sequence-complete="true"] .sequenceArrows { opacity: 0; visibility: hidden; transition: opacity .8s ease, visibility 0s .8s; }
+.arrowLine { fill: none; stroke: #ff286b; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; animation: connectorDraw 1s cubic-bezier(.22, 1, .36, 1) both; animation-play-state: var(--sequence-play-state, paused); }
+.arrowHead { fill: none; stroke: none; animation: connectorHead .36s ease-out .7s both; animation-play-state: var(--sequence-play-state, paused); }
+@keyframes connectorDraw {
+  from { stroke-dashoffset: 1; opacity: 0; }
+  to { stroke-dashoffset: 0; opacity: 1; }
+}
+@keyframes connectorHead {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sequenceCard .stageCanvas::after { border-color: #44845b; opacity: 1; transform: none; transition: none; }
+  .sequenceArrows { display: none; transition: none; }
+  .arrowLine, .arrowHead { animation: none; }
+}
 @media (max-width: 1023px) {
   .row { grid-template-columns: 1fr; }
   .gallery { width: 50%; }
@@ -97,3 +145,7 @@
 @media (max-width: 767px) {
   .gallery { width: 100%; grid-template-columns: minmax(0, 1fr); gap: 24px; }
 }
+
+/* Paused animations are sampled directly from scroll progress. */
+.arrowLine { animation-delay: var(--connector-delay, 0ms); }
+.arrowHead { animation-delay: calc(var(--connector-delay, 0ms) + .7s); }

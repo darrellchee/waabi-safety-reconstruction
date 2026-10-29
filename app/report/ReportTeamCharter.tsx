@@ -1,3 +1,4 @@
+import { ReportHeadingAnchor } from "./ReportHeadingAnchor";
 import { lines, title } from "./blocks";
 import { ReportSection } from "./ReportUI";
 import pageOne from "./assets/team-charter-page-1.png";
@@ -24,19 +25,19 @@ export function ReportTeamCharter() {
   const intro = lines("21.1");
   const [commitment, nameLabel, signatureLabel, ...names] = lines("21.5");
   return <ReportSection id="team-charter" title={title("21.1")} className={styles.charter}>
-    <h3>{intro[0]}</h3>
+    <h3><ReportHeadingAnchor text={intro[0]} />{intro[0]}</h3>
     <p className={styles.documentTitle}>{intro[1]}</p>
     <p className={styles.groupName}><strong>{intro[2]}</strong> <span>{intro[3]}</span></p>
     <div className={styles.columns}>
       <div className={styles.column}>
-        <h4>{title("21.2")}</h4>
+        <h4><ReportHeadingAnchor text={title("21.2")} />{title("21.2")}</h4>
         <Questions code="21.2" />
       </div>
       <div className={styles.column}>
-        <div className={styles.topic}><h4>{title("21.3")}</h4><Questions code="21.3" /></div>
-        <div className={styles.topic}><h4>{title("21.4")}</h4><Questions code="21.4" /></div>
+        <div className={styles.topic}><h4><ReportHeadingAnchor text={title("21.3")} />{title("21.3")}</h4><Questions code="21.3" /></div>
+        <div className={styles.topic}><h4><ReportHeadingAnchor text={title("21.4")} />{title("21.4")}</h4><Questions code="21.4" /></div>
         <div className={styles.topic}>
-          <h4>{title("21.5")}</h4>
+          <h4><ReportHeadingAnchor text={title("21.5")} />{title("21.5")}</h4>
           <p>{commitment}</p>
           <div className={styles.signatureLabels}><span>{nameLabel}</span><span>{signatureLabel}</span></div>
           <dl className={styles.signatures}>{names.map((name, index) => {

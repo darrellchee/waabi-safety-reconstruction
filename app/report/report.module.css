@@ -255,3 +255,11 @@
   .table th, .table td { font-size: 14px; line-height: 1.6; padding: 12px; }
   .tableWrap { overscroll-behavior-x: contain; }
 }
+
+/* Larger reading text across the Background page only. */
+.report .backgroundPage p,
+.report .backgroundPage .criteriaTable tbody th { font-size: 22px; }
+@media (max-width: 767px) {
+  .report .backgroundPage p,
+  .report .backgroundPage .criteriaTable tbody th { font-size: 20px; }
+}

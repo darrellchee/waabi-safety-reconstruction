@@ -1,5 +1,7 @@
 "use client";
 
+import { ReportHeadingAnchor } from "./ReportHeadingAnchor";
+
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { AnimatePresence, motion, useIsPresent, useMotionValueEvent, useScroll } from "motion/react";
 import { useReducedMotion } from "../../components/useReducedMotion";
@@ -134,11 +136,11 @@ export function ReportBackgroundSlideshow({ slides }: { slides: BackgroundSlide[
   return <div ref={track} className={styles.slideshow} style={{ "--slides": slides.length } as CSSProperties} role="region" aria-label="Background slideshow">
     <div ref={stage} className={styles.stage}>
       <div className={styles.slideCopy}>
-        <h2 className={styles.heading}>Background</h2>
+        <h2 className={styles.heading}><ReportHeadingAnchor text="3.1 Background" />3.1 Background</h2>
         <div className={styles.slides}>
           {slides.map((slide, i) => <div key={slide.code} hidden={i !== current}>
             <Block code={slide.code} status={slide.status}>
-              <h3 className={styles.slideHeading}>{slide.heading}</h3>
+              <h3 className={styles.slideHeading}><ReportHeadingAnchor text={slide.heading} />{slide.heading}</h3>
               <p className={styles.paragraph}>{slide.paragraph}</p>
             </Block>
           </div>)}

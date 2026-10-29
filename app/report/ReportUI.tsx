@@ -1,5 +1,7 @@
 "use client";
 
+import { ReportHeadingAnchor } from "./ReportHeadingAnchor";
+
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode, type KeyboardEvent, type MouseEvent } from "react";
 import { motion } from "motion/react";
 import { useCarouselMotion } from "../../components/useCarouselMotion";
@@ -61,7 +63,7 @@ export function SimpleTable({ caption, headings, rows, wide = false }: { caption
 export function ReportSection({ id, num, title, centered, className, children }: { id: string; num?: number; title?: string; centered?: boolean; className?: string; children: ReactNode }) {
   return <section id={id} className={className ? `${styles.section} ${className}` : styles.section}>
     {num !== undefined && <SectionBadge n={num} />}
-    {title && <h2 className={centered ? styles.centered : undefined}><Words text={title} /></h2>}
+    {title && <h2 className={centered ? styles.centered : undefined}><ReportHeadingAnchor text={title} /><Words text={title} /></h2>}
     {children}
   </section>;
 }

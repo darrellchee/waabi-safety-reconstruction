@@ -1,3 +1,4 @@
+import { ReportHeadingAnchor } from "./ReportHeadingAnchor";
 import { ReportHeader, ReportFooter } from "./ReportChrome";
 import { ReportFrame, Copy, ReportSection, Paragraphs, SimpleTable } from "./ReportUI";
 import styles from "./report.module.css";
@@ -25,7 +26,7 @@ import { reportNavigation, type ReportPageId } from "./report-navigation";
 
 // Every piece of text on this page comes from REPORT_CONTENT.md through report-blocks.json (see tools/export_report_blocks.py).
 function Titled({ code, children }: { code: string; children?: React.ReactNode }) {
-  return <Block code={code} status={status(code)}><h3>{title(code)}</h3>{children ?? <Paragraphs text={text(code)} />}</Block>;
+  return <Block code={code} status={status(code)}><h3><ReportHeadingAnchor text={title(code)} />{title(code)}</h3>{children ?? <Paragraphs text={text(code)} />}</Block>;
 }
 function Table({ code }: { code: string }) {
   const table = parseTable(code);
@@ -33,7 +34,7 @@ function Table({ code }: { code: string }) {
     <Paragraphs text={table.notes.join("\n")} />
   </ReportFinancials>;
   return <Block code={code} status={status(code)}>
-    <h3>{title(code)}</h3>
+    <h3><ReportHeadingAnchor text={title(code)} />{title(code)}</h3>
     <SimpleTable caption={table.caption} headings={table.head} rows={table.rows} />
     <Paragraphs text={table.notes.join("\n")} />
   </Block>;
@@ -61,10 +62,10 @@ const range = (section: number, from: number, to: number) => Array.from({ length
 export default function ReportPage({ page = "summary" }: { page?: ReportPageId }) {
   return <><ReportFrame>
     <ReportHeader active={page} />
-    <main>
+    <main className={page === "background" ? styles.backgroundPage : undefined}>
       {page !== "summary" && <ReportPageHero page={page} title={reportNavigation.find(item => item.id === page)!.label} />}
       {page === "summary" && <>
-      <ReportHero acknowledgement={<div id="acknowledgement"><h2>Acknowledgment</h2><Paragraphs text={text("4.1")} /></div>}>
+      <ReportHero acknowledgement={<div id="acknowledgement"><h2><ReportHeadingAnchor text="1.1 Acknowledgment" />1.1 Acknowledgment</h2><Paragraphs text={text("4.1")} /></div>}>
         <div id="title-block" className={styles.coverPanel}>
           <SectionBadge n={1} />
           <h2>Cover details</h2>
@@ -77,12 +78,12 @@ export default function ReportPage({ page = "summary" }: { page?: ReportPageId }
       <ReportOptions overview />
       <ReportSection id="summary-details">
         <Block code="2.8" status={status("2.8")} className={styles.considerations}>
-          <h3 className={styles.considerationsTitle}>{title("2.8")}</h3>
+          <h3 className={styles.considerationsTitle}><ReportHeadingAnchor text={title("2.8")} />{title("2.8")}</h3>
           <ol className={styles.considerationsList}>{text("2.8").split("\n\n").map((group, index) => {
             const [question, ...answers] = group.split("\n");
             return <li key={question} className={styles.considerationRow}>
               <span className={styles.considerationNumber} aria-hidden="true" data-nocount="">{String(index + 1).padStart(2, "0")}</span>
-              <h4 className={styles.considerationQuestion} data-counted="">{question}</h4>
+              <h4 className={styles.considerationQuestion} data-counted=""><ReportHeadingAnchor text={question} />{question}</h4>
               <div className={styles.considerationAnswer}>
                 {answers.length > 1
                   ? <ol>{answers.map(answer => <li key={answer}>{answer}</li>)}</ol>
@@ -93,7 +94,7 @@ export default function ReportPage({ page = "summary" }: { page?: ReportPageId }
         </Block>
         <ReportMaterials />
       </ReportSection>
-      <ReportSection id="group-declaration" num={3} title="Group Declaration">
+      <ReportSection id="group-declaration" num={3} title="1.6 Group Declaration">
         <Table code="3.1" />
       </ReportSection>
       </>}
@@ -104,7 +105,7 @@ export default function ReportPage({ page = "summary" }: { page?: ReportPageId }
       <ReportSection id="background" num={6}>
         <ReportBackgroundSlideshow slides={range(6, 1, 7).map(code => ({ heading: title(code), paragraph: text(code), code, status: status(code) }))} />
       </ReportSection>
-      <ReportSection id="problem" num={7} title="Problem Description">
+      <ReportSection id="problem" num={7} title="3.2 Problem Description">
         <Block code="7.2" status={status("7.2")}><Paragraphs text={text("7.2")} /></Block>
         <Titled code="7.1" />
       </ReportSection>
@@ -117,7 +118,7 @@ export default function ReportPage({ page = "summary" }: { page?: ReportPageId }
       {page === "design" && <ReportDesign />}
       {page === "prototyping" && <ReportPrototype />}
       {page === "implementation" && <ReportImplementation />}
-      {page === "cost" && <ReportSection id="cost" num={14} title="Cost Analysis">
+      {page === "cost" && <ReportSection id="cost" num={14} title="8.1 Cost Analysis">
         <ReportCostAnalysis />
       </ReportSection>
       }
@@ -132,14 +133,15 @@ export default function ReportPage({ page = "summary" }: { page?: ReportPageId }
       {page === "recommendations" && <ReportSection id="recommendations">
         <ReportRecommendations />
       </ReportSection>}
-      {page === "supporting-documents" && <><ReportTeamCharter /><ReportMinutes /></>}
-      {page === "references" && <ReportSection id="references" num={17} title="References" centered>
+      {page === "supporting-documents" && <>
+        <ReportTeamCharter />
+        <ReportMinutes />
+        <ReportSection id="ai-use-statement" title={title("20.6")}>
+          <Block code="20.6" status={status("20.6")}><p><strong>{text("20.6")}</strong></p></Block>
+        </ReportSection>
+      </>}
+      {page === "references" && <ReportSection id="references" num={17} title="12.1 References" centered>
         <Block code="17.1" status={status("17.1")}><ol className={styles.references}>{lines("17.1").map(entry => <li key={entry}><ReferenceEntry entry={entry} /></li>)}</ol></Block>
-      </ReportSection>
-      }
-      {page === "appendices" && <ReportSection id="appendices" num={18} title="Supporting documentation">
-        <Titled code="18.3" />
-        <h3>{title("18.5")}</h3>
       </ReportSection>
       }
       {page === "ai-logs" && <ReportAiLogs />}

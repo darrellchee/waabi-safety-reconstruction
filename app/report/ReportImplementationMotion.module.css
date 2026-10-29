@@ -1,0 +1,50 @@
+.move, .rotate, .spin, .draw, .reveal, .pulse {
+  animation-duration: var(--art-duration, 2s);
+  animation-delay: var(--art-delay, 0ms);
+  animation-iteration-count: infinite;
+  animation-play-state: var(--art-play-state, paused);
+  animation-timing-function: ease-in-out;
+}
+.move { animation-name: artMove; }
+.rotate { animation-name: artRotate; transform-box: view-box; }
+.spin { animation-name: artSpin; transform-box: fill-box; transform-origin: center; animation-timing-function: linear; }
+.draw { animation-name: artDraw; stroke-dasharray: 1; }
+.reveal { animation-name: artReveal; }
+.pulse { animation-name: artPulse; }
+
+@keyframes artMove {
+  0%, 100% { transform: translate(0, 0); }
+  40%, 65% { transform: translate(var(--art-x, 0px), var(--art-y, -6px)); }
+}
+@keyframes artRotate {
+  0%, 100% { transform: rotate(0deg); }
+  40%, 65% { transform: rotate(var(--art-angle, -8deg)); }
+}
+@keyframes artSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes artDraw {
+  0%, 100% { stroke-dashoffset: 0; opacity: 1; }
+  12% { stroke-dashoffset: 1; opacity: 0; }
+  18% { stroke-dashoffset: 1; opacity: 1; }
+  70%, 90% { stroke-dashoffset: 0; opacity: 1; }
+}
+@keyframes artReveal {
+  0%, 100% { opacity: 1; }
+  15% { opacity: .1; }
+  65%, 90% { opacity: 1; }
+}
+@keyframes artPulse {
+  0%, 100% { opacity: 1; }
+  45% { opacity: .35; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .move, .rotate, .spin, .draw, .reveal, .pulse {
+    animation: none;
+    transform: none;
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}

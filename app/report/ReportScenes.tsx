@@ -1,5 +1,7 @@
 "use client";
 
+import { ReportHeadingAnchor } from "./ReportHeadingAnchor";
+
 import { useRef } from "react";
 import { motion } from "motion/react";
 import { lines, splitLabel, status, title } from "./blocks";
@@ -23,7 +25,7 @@ export function ReportCriteria() {
   const codes = ["8.5", "8.6", "8.3", "8.4", "8.1", "8.7", "8.2", "8.8"];
   return <section id="criteria" className={`${styles.scene} ${styles.criteria}`}><div className="company-page"><div className="co-events"><div className="co-width">
     <SectionBadge n={8} />
-    <div className="co-event-heading"><h2 id="criteria-heading">Design Criteria</h2></div>
+    <div className="co-event-heading"><h2 id="criteria-heading"><ReportHeadingAnchor text="3.3 Design Criteria" />3.3 Design Criteria</h2></div>
     <div className={reportStyles.tableWrap} role="region" aria-labelledby="criteria-heading" tabIndex={0}>
       <table className={`${reportStyles.table} ${reportStyles.criteriaTable}`} aria-labelledby="criteria-heading">
         <colgroup><col style={{ width: "19.2%" }} /><col style={{ width: "46.4%" }} /><col style={{ width: "34.4%" }} /></colgroup>
@@ -47,5 +49,5 @@ export function ReportStages() {
   useCarouselMotion(rail);
   const reduced = useReducedMotion();
   const [next, student, ...stages] = lines("13.3");
-  return <div className={`${styles.scene} ${styles.stages}`}><div className="home-page"><div className="home-insights"><div className="home-insights-top"><h3>{title("13.3")}</h3><div><p><Copy text={next} /></p><p><Copy text={student} /></p><div className="home-insights-controls">{[-1, 1].map(direction => <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: .95 }} key={direction} aria-label={`${direction < 0 ? "Previous" : "Next"} project stages`} onClick={() => rail.current?.scrollBy({ left: direction * (((rail.current.firstElementChild as HTMLElement)?.clientWidth || 450) + 24), behavior: reduced ? "instant" : "smooth" })}>{direction < 0 ? "←" : "→"}</motion.button>)}</div></div></div><div ref={rail} className="home-insights-rail" role="region" aria-label="project stages" tabIndex={0}>{stages.map(line => { const [label, rest] = splitLabel(line); const dot = rest.indexOf(". "); const heading = dot < 0 ? rest : rest.slice(0, dot + 1); const detail = dot < 0 ? "" : rest.slice(dot + 2); return <a key={label} className="home-insight-card" href="#implementation"><div className="home-insight-image"><MediaReplacement className={styles.cardMedia} /></div><div className="home-insight-meta"><span data-nocount="">Project stage</span><time>{label}</time></div><h3 data-counted="">{heading}</h3>{detail && <p><Copy text={detail} /></p>}</a>; })}</div></div></div></div>;
+  return <div className={`${styles.scene} ${styles.stages}`}><div className="home-page"><div className="home-insights"><div className="home-insights-top"><h3><ReportHeadingAnchor text={title("13.3")} />{title("13.3")}</h3><div><p><Copy text={next} /></p><p><Copy text={student} /></p><div className="home-insights-controls">{[-1, 1].map(direction => <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: .95 }} key={direction} aria-label={`${direction < 0 ? "Previous" : "Next"} project stages`} onClick={() => rail.current?.scrollBy({ left: direction * (((rail.current.firstElementChild as HTMLElement)?.clientWidth || 450) + 24), behavior: reduced ? "instant" : "smooth" })}>{direction < 0 ? "←" : "→"}</motion.button>)}</div></div></div><div ref={rail} className="home-insights-rail" role="region" aria-label="project stages" tabIndex={0}>{stages.map(line => { const [label, rest] = splitLabel(line); const dot = rest.indexOf(". "); const heading = dot < 0 ? rest : rest.slice(0, dot + 1); const detail = dot < 0 ? "" : rest.slice(dot + 2); return <a key={label} className="home-insight-card" href="#implementation"><div className="home-insight-image"><MediaReplacement className={styles.cardMedia} /></div><div className="home-insight-meta"><span data-nocount="">Project stage</span><time>{label}</time></div><h3 data-counted="">{heading}</h3>{detail && <p><Copy text={detail} /></p>}</a>; })}</div></div></div></div>;
 }

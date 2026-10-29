@@ -1,5 +1,7 @@
 "use client";
 
+import { ReportHeadingAnchor } from "./ReportHeadingAnchor";
+
 import { forwardRef, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useIsPresent, useMotionValueEvent, useScroll } from "motion/react";
 import { useReducedMotion } from "../../components/useReducedMotion";
@@ -43,7 +45,7 @@ export function ReportDetails({ title, slides }: { title: string; slides: Slide[
   return <div ref={track} className={styles.details} style={{ "--slides": slides.length } as React.CSSProperties} aria-label={title} role="region">
     <div className={styles.mobileSlides}>
       {slides.map((slide, index) => <section key={slide.code ?? index} className={styles.mobileSlide}>
-        <h2 className={styles.subheading}>{slide.name}</h2>
+        <h2 className={styles.subheading}><ReportHeadingAnchor text={slide.name} mobile />{slide.name}</h2>
         <p className={styles.words}>{slide.quote}</p>
         <ReportDetailsVisual current={index} />
       </section>)}
@@ -54,7 +56,7 @@ export function ReportDetails({ title, slides }: { title: string; slides: Slide[
         <motion.div layout className={styles.quoteArea}>
           <AnimatePresence initial={false} mode="popLayout"><motion.h2 key={current} className={styles.subheading}
             initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0 }}
-            transition={{ duration: reduced ? 0 : .4, ease }}>{slides[current].name}</motion.h2></AnimatePresence>
+            transition={{ duration: reduced ? 0 : .4, ease }}><ReportHeadingAnchor text={slides[current].name} />{slides[current].name}</motion.h2></AnimatePresence>
           <div className={styles.progress} aria-hidden="true">
             <motion.div initial={false} animate={{ scaleX: current / (slides.length - 1) }} transition={reduced ? { duration: 0 } : spring} />
           </div>

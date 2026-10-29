@@ -37,7 +37,7 @@
 
 .slideshow { position: relative; height: calc(100svh + var(--slides) * 75svh); }
 .stage { position: sticky; top: var(--stage-top, 100px); padding: 20px 0; min-height: calc(100svh - 100px); display: flex; flex-direction: column; justify-content: center; gap: 24px; }
-.slideCopy { width: 100%; max-width: 1000px; margin-inline: auto; }
+.slideCopy { width: 100%; max-width: calc(1000px + 30vh); margin-inline: auto; }
 .slideCopy .heading { margin: 0 0 16px; font: 400 clamp(28px, 3vw, 44px)/1.1 Zagma, Georgia, serif; }
 .slideCopy .slideHeading { margin: 0 0 12px; font: 400 clamp(24px, 2.3vw, 32px)/1.2 Zagma, Georgia, serif; }
 .slides { min-height: 0; }
