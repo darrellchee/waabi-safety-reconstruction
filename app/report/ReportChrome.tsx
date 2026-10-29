@@ -33,7 +33,7 @@ function PageNavigationMenu({ page, active, nested = false, onNavigate }: {
     children: headings.filter(child => child.subheading && child.number.startsWith(heading.number)),
   }));
   const panelId = `report-${nested ? "nested-" : ""}${page.id}-headings`;
-  const headingLink = (heading: typeof headings[number]) => <Link href={`${page.href}#${heading.anchor}`}
+  const headingLink = (heading: typeof headings[number]) => <Link href={`${page.href}#${heading.anchor}`} scroll={false}
     title={heading.title} className={heading.subheading ? styles["subheading-link"] : undefined}
     onClick={event => {
       if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;

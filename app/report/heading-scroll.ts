@@ -21,6 +21,8 @@ export function scrollToReportHeading(number: string) {
     window.scrollTo({ top: window.scrollY + scene.getBoundingClientRect().top + travel * index / 5, behavior: "instant" });
     return;
   }
-  target.style.scrollMarginTop = `${(document.querySelector("nav[aria-label=\"Report navigation\"]")?.getBoundingClientRect().bottom ?? 64) + 20}px`;
-  target.scrollIntoView({ behavior: "instant", block: "start" });
+  const offset = (document.querySelector("nav[aria-label=\"Report navigation\"]")?.getBoundingClientRect().bottom ?? 64) + 20;
+  // scrollIntoView also scrolls ancestor frames, clipping the header in Google Sites.
+  // Move only this document, keeping the embedded frame in its original position.
+  window.scrollTo({ top: Math.max(0, window.scrollY + target.getBoundingClientRect().top - offset), behavior: "instant" });
 }
